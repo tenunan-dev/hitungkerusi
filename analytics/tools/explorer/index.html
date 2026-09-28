@@ -1,0 +1,1659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GE16 Graph &amp; Vector Explorer — Reference</title>
+<style>
+  :root { color-scheme: light dark; }
+  * { box-sizing: border-box; }
+  body { font-family: -apple-system, 'Segoe UI', Roboto, sans-serif; margin: 0;
+         background: #f8fafc; color: #0f172a; height: 100vh; display: flex; flex-direction: column; }
+  header { padding: 10px 18px; border-bottom: 1px solid #e2e8f0; background: #fff;
+           display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+  header h1 { font-size: 16px; margin: 0; }
+  header .sub { font-size: 12px; color: #64748b; }
+  .tabs { display: flex; gap: 4px; }
+  .tab { padding: 6px 14px; border-radius: 8px; border: 1px solid #e2e8f0; cursor: pointer;
+         font-size: 13px; background: #f8fafc; }
+  .tab.active { background: #0f172a; color: #fff; border-color: #0f172a; }
+  main { flex: 1; display: flex; min-height: 0; }
+  .view { flex: 1; display: none; min-width: 0; }
+  .view.active { display: flex; }
+  /* ---- graph view ---- */
+  #graph-view { flex-direction: row; }
+  #graph-canvas-wrap { flex: 1; position: relative; background: #fff; }
+  canvas { width: 100%; height: 100%; display: block; }
+  #graph-sidebar { width: 310px; border-left: 1px solid #e2e8f0; background: #fff;
+                   padding: 12px; overflow-y: auto; }
+  #graph-sidebar h3 { font-size: 13px; margin: 0 0 8px; }
+  .ctrl { margin-bottom: 12px; }
+  .ctrl label { font-size: 12px; color: #64748b; display: block; margin-bottom: 4px; }
+  .ctrl input[type=text] { width: 100%; padding: 7px 9px; border: 1px solid #cbd5e1;
+                           border-radius: 8px; font-size: 13px; color: inherit; background: inherit; }
+  .chips { display: flex; flex-wrap: wrap; gap: 5px; }
+  .chip { font-size: 11px; padding: 3px 9px; border-radius: 999px; border: 1px solid #cbd5e1;
+          cursor: pointer; background: #fff; }
+  .chip.on { background: #0f172a; color: #fff; border-color: #0f172a; }
+  .legend { font-size: 11px; color: #64748b; margin-top: 8px; line-height: 1.7; }
+  .legend i { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 4px; }
+  .nodeinfo { font-size: 12px; }
+
+  /* ---- mobile/narrow layout (finding #15: fixed 310px sidebar left only
+     ~65px canvas at a 375px viewport — unusable). Below 700px, stack the
+     canvas above a collapsible sidebar instead of placing them side by
+     side, so both get the full viewport width. Desktop (>=700px) is
+     unchanged. ---- */
+  @media (max-width: 700px) {
+    #graph-view { flex-direction: column; }
+    #graph-canvas-wrap { flex: 1 1 55vh; min-height: 260px; }
+    #graph-sidebar { width: 100%; border-left: none; border-top: 1px solid #e2e8f0;
+                     flex: 0 0 auto; max-height: 40vh; }
+  }
+  .nodeinfo table { width: 100%; border-collapse: collapse; }
+  .nodeinfo td { padding: 3px 4px; border-bottom: 1px solid #f1f5f9; vertical-align: top; word-break: break-word; }
+  .nodeinfo td:first-child { color: #64748b; width: 86px; }
+  /* ---- node detail (structured) ---- */
+  .nd-head { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }
+  .nd-dot { width: 10px; height: 10px; border-radius: 50%; flex: 0 0 auto; }
+  .nd-type { font-size: 10px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase;
+             padding: 2px 8px; border-radius: 999px; color: #fff; }
+  .nd-conn { margin-top: 10px; }
+  .nd-conn .conn { display: flex; align-items: center; gap: 6px; padding: 5px 6px; border-radius: 7px;
+                   cursor: pointer; font-size: 12px; border-bottom: 1px solid #f1f5f9; }
+  .nd-conn .conn:hover { background: #f1f5f9; }
+  .nd-conn .etype { font-size: 10px; color: #64748b; background: #f1f5f9; padding: 1px 7px; border-radius: 999px; white-space: nowrap; }
+  .nd-conn .ename { flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .nd-conn .w { font-size: 10px; color: #94a3b8; }
+  details.nd-raw { margin-top: 10px; font-size: 11px; }
+  details.nd-raw summary { cursor: pointer; color: #64748b; }
+  details.nd-raw pre { background: #f1f5f9; border: 1px solid #e2e8f0; border-radius: 8px; padding: 8px;
+                       font-size: 10px; overflow: auto; max-height: 220px; margin: 6px 0 0; }
+  /* ---- graph loading overlay ---- */
+  #load-overlay { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center;
+                  background: rgba(248,250,252,.92); z-index: 200; transition: opacity .25s; }
+  #load-overlay.hidden { opacity: 0; pointer-events: none; }
+  .load-box { text-align: center; width: 260px; padding: 26px 20px; border: 1px solid #e2e8f0;
+              background: #fff; border-radius: 14px; box-shadow: 0 10px 40px rgba(0,0,0,.08); }
+  .load-spin { width: 34px; height: 34px; margin: 0 auto 12px; border-radius: 50%;
+               border: 3px solid #e2e8f0; border-top-color: #3b82f6; animation: lspin .8s linear infinite; }
+  @keyframes lspin { to { transform: rotate(360deg); } }
+  .load-pct { font-size: 30px; font-weight: 700; color: #0f172a; line-height: 1.1; }
+  .load-label { font-size: 13px; color: #334155; margin-top: 6px; }
+  .load-track { height: 5px; border-radius: 3px; background: #e2e8f0; margin: 14px 6px 0; overflow: hidden; }
+  .load-fill { height: 5px; width: 0%; border-radius: 3px; background: linear-gradient(90deg,#3b82f6,#8b5cf6);
+               transition: width .15s ease-out; }
+  .load-sub { font-size: 11px; color: #94a3b8; margin-top: 8px; }
+  @media (prefers-color-scheme: dark) {
+    #load-overlay { background: rgba(15,23,42,.92); }
+    .load-box { background: #1e293b; border-color: #334155; }
+    .load-pct { color: #e2e8f0; }
+    .load-label { color: #cbd5e1; }
+    .load-track { background: #334155; }
+  }
+  /* ---- vector detail modal ---- */
+  #vec-modal { position: fixed; inset: 0; display: none; align-items: center; justify-content: center; z-index: 100; }
+  #vec-modal.open { display: flex; }
+  .modal-backdrop { position: absolute; inset: 0; background: rgba(15,23,42,.6); }
+  .modal-panel { position: relative; width: min(920px, 94vw); height: min(86vh, 760px);
+                 background: #f8fafc; border-radius: 14px; box-shadow: 0 20px 60px rgba(0,0,0,.35);
+                 overflow: hidden; display: flex; flex-direction: column; }
+  .modal-panel iframe { flex: 1; border: 0; background: #fff; }
+  .modal-bar { display: flex; align-items: center; justify-content: space-between; padding: 8px 14px;
+               background: #0f172a; color: #e2e8f0; font-size: 12px; }
+  .modal-bar button { background: none; border: 1px solid #475569; color: #e2e8f0; border-radius: 8px;
+                      padding: 4px 12px; font-size: 12px; cursor: pointer; }
+  .modal-bar button:hover { background: #334155; }
+  .modal-close-x { position: absolute; top: 34px; right: 12px; z-index: 2; width: 28px; height: 28px;
+                   border-radius: 50%; border: 1px solid #cbd5e1; background: #fff; color: #334155;
+                   font-size: 15px; line-height: 1; cursor: pointer; }
+  .modal-close-x:hover { background: #f1f5f9; }
+  @media (prefers-color-scheme: dark) {
+    .modal-panel { background: #0f172a; }
+    .nd-conn .conn { border-color: #334155; }
+    .nd-conn .conn:hover { background: #1e293b; }
+    details.nd-raw pre { background: #0f172a; border-color: #334155; }
+    .modal-close-x { background: #1e293b; border-color: #475569; color: #e2e8f0; }
+    .modal-close-x:hover { background: #334155; }
+  }
+  #graph-status { position: absolute; bottom: 10px; left: 12px; font-size: 11px; color: #94a3b8;
+                  background: rgba(255,255,255,.85); padding: 4px 8px; border-radius: 6px; max-width: 80%; }
+  /* ---- vector view ---- */
+  #vector-view { flex-direction: column; padding: 18px; overflow-y: auto; }
+  .vctrl { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin-bottom: 14px; }
+  .vctrl input[type=text] { padding: 8px 12px; border: 1px solid #cbd5e1; border-radius: 8px;
+                            font-size: 14px; width: 340px; color: inherit; background: inherit; }
+  .vctrl select, .vctrl button { padding: 8px 12px; border-radius: 8px; border: 1px solid #cbd5e1;
+                                 font-size: 13px; background: #fff; cursor: pointer; color: inherit; }
+  .vresults { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 10px; }
+  .vcard { background: #fff; border: 1px solid #e2e8f0; border-radius: 10px; padding: 10px 12px; }
+  .vcard .nm { font-weight: 600; font-size: 13px; }
+  .vcard .sc { float: right; font-size: 11px; color: #64748b; }
+  .vcard .meta { font-size: 11px; color: #64748b; margin-top: 3px; }
+  .vcard .bar { height: 3px; border-radius: 2px; background: #e2e8f0; margin-top: 6px; }
+  .vcard .bar i { display: block; height: 3px; border-radius: 2px; background: #3b82f6; }
+  .vcard.clickable { cursor: pointer; transition: border-color .15s, box-shadow .15s, transform .15s; }
+  .vcard.clickable:hover { border-color: #3b82f6; box-shadow: 0 2px 10px rgba(59,130,246,.18); transform: translateY(-1px); }
+  .vcard .openhint { font-size: 10px; color: #94a3b8; text-align: right; margin-top: 4px; }
+  .empty { color: #94a3b8; font-size: 13px; padding: 30px; text-align: center; }
+  /* ===== T2: events + trackers views (four database families) ===== */
+  #events-view, #trackers-view { flex-direction: column; padding: 16px 18px 30px; overflow-y: auto; }
+  .fbar { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-bottom: 10px; }
+  .fbar input[type="text"] { padding: 7px 10px; border-radius: 8px; border: 1px solid #cbd5e1;
+                             font-size: 13px; width: 250px; color: inherit; background: inherit; }
+  .fbar input[type="date"], .fbar select { padding: 6px 9px; border-radius: 8px; border: 1px solid #cbd5e1;
+                                           font-size: 12px; background: #fff; color: inherit; cursor: pointer; }
+  .fbar button { padding: 6px 11px; border-radius: 8px; border: 1px solid #cbd5e1; font-size: 12px;
+                 background: #fff; color: inherit; cursor: pointer; }
+  .fbar label { font-size: 11px; color: #64748b; }
+  .count { font-size: 11px; color: #64748b; margin-left: auto; }
+  .sec { margin-bottom: 20px; }
+  .sec h3 { font-size: 11px; text-transform: uppercase; letter-spacing: .07em; color: #64748b;
+            margin: 0 0 8px; font-weight: 600; }
+  .sec h3 .count { font-weight: 400; text-transform: none; letter-spacing: 0; margin-left: 6px; }
+  table.grid { width: 100%; border-collapse: collapse; background: #fff; border: 1px solid #e2e8f0;
+               border-radius: 10px; overflow: hidden; }
+  table.grid th { font-size: 10px; text-transform: uppercase; letter-spacing: .05em; color: #64748b;
+                  text-align: left; padding: 7px 9px; border-bottom: 1px solid #cbd5e1; }
+  table.grid td { font-size: 12px; padding: 7px 9px; border-bottom: 1px solid #f1f5f9; vertical-align: top; }
+  table.grid tbody tr:hover { background: #f8fafc; }
+  table.grid tr.clickable { cursor: pointer; }
+  table.grid td.nw { white-space: nowrap; }
+  .scroll { max-height: 330px; overflow-y: auto; }
+  .pill { font-size: 10px; padding: 1px 7px; border-radius: 999px; border: 1px solid #cbd5e1;
+          color: #475569; white-space: nowrap; }
+  .pill.federal { background: #eff6ff; border-color: #bfdbfe; color: #1d4ed8; }
+  .pill.state { background: #f0fdf4; border-color: #bbf7d0; color: #15803d; }
+  .pill.other { background: #f8fafc; color: #64748b; }
+  a.plain { color: #2563eb; text-decoration: none; }
+  a.plain:hover { text-decoration: underline; }
+  .pager { display: flex; gap: 10px; align-items: center; justify-content: center; padding: 10px 0;
+           font-size: 12px; color: #64748b; }
+  .pager button { padding: 5px 12px; border-radius: 8px; border: 1px solid #cbd5e1; background: #fff;
+                  color: inherit; cursor: pointer; font-size: 12px; }
+  .pager button:disabled { opacity: .45; cursor: default; }
+  .detail { margin-top: 10px; background: #fff; border: 1px solid #e2e8f0; border-radius: 10px;
+            padding: 12px 14px; font-size: 12px; line-height: 1.5; }
+  .detail h4 { margin: 0 0 6px; font-size: 13px; }
+  .detail .kv { color: #64748b; }
+  .detail table { width: 100%; border-collapse: collapse; margin: 6px 0; }
+  .detail td.k { color: #64748b; width: 130px; padding: 2px 8px 2px 0; vertical-align: top; }
+  .stores { display: flex; gap: 6px; flex-wrap: wrap; margin: 4px 0 12px; }
+  .store { border: 1px solid #cbd5e1; border-radius: 999px; padding: 4px 12px; font-size: 12px;
+           cursor: pointer; background: #fff; color: inherit; user-select: none; }
+  .store.on { background: #0f172a; color: #fff; border-color: #0f172a; }
+  .store b { font-weight: 700; }
+  .badgebar { display: flex; gap: 6px; flex-wrap: wrap; margin: 2px 0 10px; }
+  .badge { font-size: 10px; padding: 2px 9px; border-radius: 999px; background: #f1f5f9;
+           border: 1px solid #e2e8f0; color: #475569; }
+  .badge b { font-weight: 700; color: #0f172a; }
+  .feedlist { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 8px; }
+  .feedcard { background: #fff; border: 1px solid #e2e8f0; border-radius: 10px; padding: 8px 10px; font-size: 12px; }
+  .feedcard .meta { font-size: 10px; color: #64748b; margin-top: 3px; }
+  @media (prefers-color-scheme: dark) {
+    .fbar input, .fbar select, .fbar button, .store, .pager button { background: #1e293b; color: #e2e8f0; border-color: #475569; }
+    table.grid, .detail, .feedcard { background: #1e293b; border-color: #334155; }
+    table.grid th { border-color: #475569; }
+    table.grid td { border-color: #1e293b; }
+    table.grid tbody tr:hover { background: #0f172a; }
+    .pill { background: #1e293b; border-color: #475569; color: #cbd5e1; }
+    .badge { background: #1e293b; border-color: #334155; color: #cbd5e1; }
+    .badge b { color: #e2e8f0; }
+    a.plain { color: #60a5fa; }
+  }
+  @media (prefers-color-scheme: dark) {
+    body { background: #0f172a; color: #e2e8f0; }
+    header, #graph-sidebar { background: #1e293b; border-color: #334155; }
+    #graph-canvas-wrap { background: #0f172a; }
+    .tab { background: #1e293b; border-color: #334155; color: #e2e8f0; }
+    .tab.active { background: #e2e8f0; color: #0f172a; border-color: #e2e8f0; }
+    .chip { background: #1e293b; border-color: #475569; color: #e2e8f0; }
+    .chip.on { background: #e2e8f0; color: #0f172a; }
+    .vctrl input, .vctrl select, .vctrl button { background: #1e293b; color: #e2e8f0; border-color: #475569; }
+    .vcard { background: #1e293b; border-color: #334155; }
+    .nodeinfo td { border-color: #334155; }
+    #graph-status { background: rgba(30,41,59,.85); }
+  }
+</style>
+</head>
+<body>
+<header>
+  <div>
+    <h1>🕸️ GE16 Graph &amp; Vector Explorer</h1>
+    <div class="sub">Knowledge graph + semantic vectors · reference only · not hosted · generated from the GE16 research layer</div>
+  </div>
+  <div class="tabs">
+    <div class="tab active" data-view="graph">Graph</div>
+    <div class="tab" data-view="vector">Vector Search</div>
+    <div class="tab" data-view="events">Events</div>
+    <div class="tab" data-view="trackers">Trackers</div>
+  </div>
+</header>
+
+<main>
+  <!-- ============ GRAPH VIEW ============ -->
+  <div id="graph-view" class="view active">
+    <div id="graph-canvas-wrap">
+      <canvas id="graph-canvas"></canvas>
+      <div id="graph-status">loading graph…</div>
+    </div>
+    <div id="graph-sidebar">
+      <div class="ctrl">
+        <label>Search node (name, alias or state)</label>
+        <input type="text" id="node-search" placeholder="e.g. Anwar, PAS, P115, Melaka, Sabah…" autocomplete="off">
+      </div>
+      <div class="ctrl">
+        <label>Node types</label>
+        <div class="chips" id="type-chips"></div>
+      </div>
+      <div class="ctrl">
+        <label>Edge types</label>
+        <div class="chips" id="edge-chips"></div>
+      </div>
+      <div class="ctrl">
+        <label>Neighbour depth (ego view)</label>
+        <select id="depth"><option value="1">1 hop</option><option value="2" selected>2 hops</option></select>
+      </div>
+      <div class="ctrl"><button id="reset-view">Reset view (full graph)</button></div>
+      <div id="graph-badges" class="badgebar"></div>
+      <div id="node-detail" class="nodeinfo"><h3>Click a node to inspect</h3></div>
+      <div class="legend">
+        <i style="background:#3b82f6"></i>person · <i style="background:#10b981"></i>party ·
+        <i style="background:#8b5cf6"></i>seat · <i style="background:#f59e0b"></i>cluster ·
+        <i style="background:#ef4444"></i>news · <i style="background:#14b8a6"></i>scenario ·
+        <i style="background:#a3e635"></i>state · <i style="background:#f472b6"></i>federal ·
+        <i style="background:#facc15"></i>territory
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ VECTOR VIEW ============ -->
+  <div id="vector-view" class="view">
+    <div class="vctrl">
+      <input type="text" id="vec-query" placeholder="Semantic query — e.g. 'UMNO president', 'young Malay candidate'…" autocomplete="off">
+      <select id="vec-db"></select>
+      <button id="vec-go">Search</button>
+      <span style="font-size:11px;color:#94a3b8">hybrid score = 55% cosine (hash-space vectors) + 45% keyword on name/role/party</span>
+    </div>
+    <!-- store chooser: all 7 vector DBs with live record counts (filled from
+         the loaded *_vecs.js bundles, so a count can never drift from data) -->
+    <div class="stores" id="store-chooser"></div>
+    <div class="badgebar" id="vec-store-badges"></div>
+    <div class="vresults" id="vec-results"></div>
+    <div class="empty" id="vec-empty">Type a semantic query, or click a suggestion below.<br><br>
+      <span class="sugg" style="cursor:pointer;color:#3b82f6">"chairman of BN"</span> ·
+      <span class="sugg" style="cursor:pointer;color:#3b82f6">"young Malay leader"</span> ·
+      <span class="sugg" style="cursor:pointer;color:#3b82f6">"Bersatu faction"</span> ·
+      <span class="sugg" style="cursor:pointer;color:#3b82f6">"Sabah local party"</span> ·
+      <span class="sugg" style="cursor:pointer;color:#3b82f6">"PKR women"</span>
+    </div>
+  </div>
+
+  <!-- ============ EVENTS VIEW (family 1: events DB, read-only slice) ============ -->
+  <div id="events-view" class="view">
+    <div class="fbar" id="ev-filters">
+      <input type="text" id="ev-q" placeholder="Filter headline / detail / entity text…" autocomplete="off">
+      <label>from</label><input type="date" id="ev-from">
+      <label>to</label><input type="date" id="ev-to">
+      <select id="ev-level"><option value="">level: all</option></select>
+      <select id="ev-state"><option value="">state: all</option></select>
+      <select id="ev-type"><option value="">category: all</option></select>
+      <select id="ev-bloc"><option value="">bloc: all</option></select>
+      <select id="ev-significance"><option value="">significance: all</option></select>
+      <button id="ev-clear">Clear</button>
+      <span class="count" id="ev-count">loading events_data.js…</span>
+    </div>
+    <div class="sec">
+      <h3>Events<span class="count" id="ev-subcount"></span></h3>
+      <table class="grid" id="ev-table">
+        <thead><tr>
+          <th>Date</th><th>Level / state</th><th>Category</th><th>Headline</th>
+          <th>Entities</th><th>Blocs</th><th>Sig.</th>
+        </tr></thead>
+        <tbody id="ev-rows"></tbody>
+      </table>
+      <div class="pager">
+        <button id="ev-prev">‹ prev</button><span id="ev-page">—</span><button id="ev-next">next ›</button>
+      </div>
+      <div class="detail" id="ev-detail">Click an event row for the full record (detail, entities, story, dossier).</div>
+    </div>
+    <div class="sec">
+      <h3>Stories<span class="count" id="ev-story-count"></span></h3>
+      <div class="scroll">
+        <table class="grid" id="ev-stories">
+          <thead><tr><th>Headline</th><th>Theme</th><th>Anchor</th><th>Status</th><th>Events</th><th>Last update</th></tr></thead>
+          <tbody id="ev-story-rows"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ TRACKERS VIEW (family 4: 1_DATA accepted news + polls) ============ -->
+  <div id="trackers-view" class="view">
+    <div class="fbar" id="tk-filters">
+      <input type="text" id="tk-q" placeholder="Search accepted-news title…" autocomplete="off">
+      <select id="tk-source"><option value="">source: all</option></select>
+      <select id="tk-month"><option value="">month: all</option></select>
+      <select id="tk-category"><option value="">category: all</option></select>
+      <button id="tk-clear">Clear</button>
+      <span class="count" id="tk-count">loading trackers_data.js…</span>
+    </div>
+    <div class="chips" id="tk-blocs"></div>
+    <div class="sec" style="margin-top:10px">
+      <h3>Accepted news<span class="count" id="tk-accepted-count"></span></h3>
+      <table class="grid" id="tk-table">
+        <thead><tr>
+          <th>Date</th><th>Source</th><th>Title</th><th>Cat.</th><th>Blocs</th><th>Lang</th><th>Score</th><th>Link</th>
+        </tr></thead>
+        <tbody id="tk-rows"></tbody>
+      </table>
+      <div class="pager">
+        <button id="tk-prev">‹ prev</button><span id="tk-page">—</span><button id="tk-next">next ›</button>
+      </div>
+    </div>
+    <div class="sec">
+      <h3>Polls tracked<span class="count" id="tk-poll-count"></span></h3>
+      <div class="scroll">
+        <table class="grid" id="tk-polls">
+          <thead><tr><th>Scan date</th><th>Pollster</th><th>Item</th></tr></thead>
+          <tbody id="tk-poll-rows"></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="sec">
+      <h3>News feed (7-day window)<span class="count" id="tk-feed-count"></span></h3>
+      <div class="feedlist" id="tk-feed"></div>
+    </div>
+  </div>
+</main>
+
+<!-- graph loading overlay (centred) -->
+<div id="load-overlay">
+  <div class="load-box">
+    <div class="load-spin"></div>
+    <div class="load-pct" id="load-pct">0%</div>
+    <div class="load-label" id="load-label">Loading graph…</div>
+    <div class="load-track"><div class="load-fill" id="load-fill"></div></div>
+    <div class="load-sub" id="load-sub">fetching graph.json</div>
+  </div>
+</div>
+
+<!-- vector detail modal -->
+<div id="vec-modal">
+  <div class="modal-backdrop" onclick="closeVecModal()"></div>
+  <div class="modal-panel">
+    <div class="modal-bar"><span id="vec-modal-title">Detail</span><button onclick="closeVecModal()">Close (Esc)</button></div>
+    <iframe id="vec-modal-frame" title="vector detail"></iframe>
+  </div>
+</div>
+
+<script src="figure_vecs.js"></script>
+<script src="party_vecs.js"></script>
+<script src="personnel_vecs.js"></script>
+<script src="seat_vecs.js"></script>
+<script src="news_vecs.js"></script>
+<script src="scenario_vecs.js"></script>
+<script src="cluster_vecs.js"></script>
+<script src="events_data.js"></script>
+<script src="trackers_data.js"></script>
+<script src="graph_data.js"></script>
+<script>
+'use strict';
+/* ================= helpers ================= */
+function esc(s){ return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+function norm(v){ var s=0; for(var i=0;i<v.length;i++) s+=v[i]*v[i]; return Math.sqrt(s); }
+function cosine(a,b){ var d=0,na=0,nb=0; for(var i=0;i<a.length;i++){ d+=a[i]*b[i]; na+=a[i]*a[i]; nb+=b[i]*b[i]; }
+  return d/(Math.sqrt(na)*Math.sqrt(nb)||1); }
+
+/* ================= tabs ================= */
+document.querySelectorAll('.tab').forEach(function(t){
+  t.addEventListener('click', function(){
+    document.querySelectorAll('.tab').forEach(function(x){x.classList.remove('active');});
+    document.querySelectorAll('.view').forEach(function(x){x.classList.remove('active');});
+    t.classList.add('active');
+    var v=document.getElementById(t.dataset.view+'-view'); v.classList.add('active');
+    if(t.dataset.view==='graph' && graph.ready) { scheduleLayout(); }
+    if(t.dataset.view==='events') renderEvents();          // family 1: events DB slice
+    if(t.dataset.view==='trackers') renderTrackers();      // family 4: 1_DATA trackers
+  });
+});
+
+/* ================= GRAPH ================= */
+var graph = { ready:false, rawNodes:[], rawEdges:[], nodes:[], edges:[], nodeMap:{},
+              filters:{types:{},edges:{}}, depth:2, sel:null, pos:{}, vel:{} };
+
+var TYPE_COLORS = { person:'#3b82f6', party:'#10b981', seat:'#8b5cf6', cluster:'#f59e0b',
+                    news:'#ef4444', scenario:'#14b8a6', state:'#a3e635', federal:'#f472b6',
+                    federal_territory:'#facc15' };
+
+var LOAD={pct:0,label:'',sub:''};
+function loadUI(pct,label,sub){
+  LOAD.pct=pct; LOAD.label=label||LOAD.label; LOAD.sub=sub||LOAD.sub;
+  var p=document.getElementById('load-pct'), f=document.getElementById('load-fill'),
+      l=document.getElementById('load-label'), s=document.getElementById('load-sub');
+  if(p) p.textContent=Math.round(pct)+'%';
+  if(f) f.style.width=Math.min(100,pct)+'%';
+  if(l) l.textContent=LOAD.label;
+  if(s) s.textContent=LOAD.sub;
+}
+function hideLoad(){ document.getElementById('load-overlay').classList.add('hidden'); }
+
+function loadGraph(){
+  // Preferred path: graph_data.js loaded via <script> tag → works under file://
+  // (browsers block fetch() of local files on file:// but allow script tags).
+  // Fallback path: fetch graph.json (works when served over http://).
+  if(typeof window.GRAPH_DATA!=='undefined' && window.GRAPH_DATA){
+    loadUI(20,'Loading graph…','reading embedded data');
+    setTimeout(function(){
+      loadUI(50,'Loading graph…','indexing nodes');
+      var g=window.GRAPH_DATA;
+      graph.rawNodes=g.nodes; graph.rawEdges=g.edges;
+      g.nodes.forEach(function(n){ graph.nodeMap[n.id]=n; });
+      ['person','party','seat','cluster','news','scenario','state','federal','federal_territory'].forEach(function(t){ graph.filters.types[t]=true; });
+      ['person->party','person->seat','seat->party','person->cluster','co_member',
+       'news->party','news->person','news->news','scenario->party','seat_state',
+       'seat_territory','seat_federal','federal_seat','state_federal',
+       'territory_federal','news->state'].forEach(function(t){ graph.filters.edges[t]=true; });
+      buildChips();
+      graph.ready=true;
+      setGraphBadges(g);
+      loadUI(85,'Loading graph…','computing layout');
+      graph.suppressLayout=true;   // applyFilters must NOT run the blocking layout
+      applyFilters();
+      layoutProgressive(80,function(){
+        loadUI(100,'Loading graph…','done');
+        setTimeout(hideLoad,120);
+      });
+      graph.suppressLayout=false;
+    },30);
+    return;
+  }
+  // Fallback: streaming fetch with REAL byte progress (Content-Length based)
+  fetch('graph.json')
+    .then(function(r){
+      if(!r.ok) throw new Error('HTTP '+r.status);
+      var total=+r.headers.get('Content-Length')||0;
+      var recv=0;
+      var reader=r.body.getReader();
+      var chunks=[];
+      function pump(){
+        return reader.read().then(function(res){
+          if(res.done) return chunks;
+          recv+=res.value.byteLength||res.value.length;
+          chunks.push(res.value);
+          if(total>0){
+            loadUI(recv/total*78, 'Loading graph…',
+                   'fetching graph.json — '+Math.round(recv/1024)+'/'+Math.round(total/1024)+' KB');
+          } else {
+            loadUI(78,'Loading graph…','fetching graph.json — '+Math.round(recv/1024)+' KB');
+          }
+          return pump();
+        });
+      }
+      return pump().then(function(parts){
+        loadUI(80,'Loading graph…','parsing JSON');
+        // assemble (TextDecoder handles multibyte across chunk boundaries)
+        var dec=new TextDecoder();
+        var txt='';
+        parts.forEach(function(c){ txt+=dec.decode(c,{stream:true}); });
+        txt+=dec.decode();
+        return JSON.parse(txt);
+      });
+    })
+    .then(function(g){
+      loadUI(86,'Loading graph…','indexing '+g.nodes.length+' nodes');
+      graph.rawNodes=g.nodes; graph.rawEdges=g.edges;
+      g.nodes.forEach(function(n){ graph.nodeMap[n.id]=n; });
+      ['person','party','seat','cluster','news','scenario','state','federal','federal_territory'].forEach(function(t){ graph.filters.types[t]=true; });
+      ['person->party','person->seat','seat->party','person->cluster','co_member',
+       'news->party','news->person','news->news','scenario->party','seat_state',
+       'seat_territory','seat_federal','federal_seat','state_federal',
+       'territory_federal','news->state'].forEach(function(t){ graph.filters.edges[t]=true; });
+      buildChips();
+      graph.ready=true;
+      setGraphBadges(g);
+      loadUI(92,'Loading graph…','computing layout');
+      graph.suppressLayout=true;   // applyFilters must NOT run the blocking layout
+      applyFilters();
+      layoutProgressive(80,function(){
+        loadUI(100,'Loading graph…','done');
+        setTimeout(hideLoad,120);
+      });
+      graph.suppressLayout=false;
+    })
+    .catch(function(e){
+      loadUI(100,'Load error','');
+      document.getElementById('graph-status').textContent='Load error: '+e.message+
+        ' — serve via "python3 -m http.server" in this folder, or open the JSON path correctly';
+      setTimeout(hideLoad,2000);
+    });
+}
+
+function buildChips(){
+  var tc=document.getElementById('type-chips'), ec=document.getElementById('edge-chips');
+  tc.innerHTML=''; ec.innerHTML='';
+  Object.keys(graph.filters.types).forEach(function(t){
+    var c=document.createElement('span'); c.className='chip on'; c.textContent=t;
+    c.onclick=function(){ graph.filters.types[t]=!graph.filters.types[t]; c.classList.toggle('on'); applyFilters(); };
+    tc.appendChild(c);
+  });
+  Object.keys(graph.filters.edges).forEach(function(t){
+    var c=document.createElement('span'); c.className='chip on'; c.textContent=t;
+    c.onclick=function(){ graph.filters.edges[t]=!graph.filters.edges[t]; c.classList.toggle('on'); applyFilters(); };
+    ec.appendChild(c);
+  });
+  document.getElementById('depth').onchange=function(){ graph.depth=+this.value; if(graph.sel) applyFilters(); };
+  document.getElementById('reset-view').onclick=function(){ graph.sel=null; applyFilters(); };
+  document.getElementById('node-search').onkeydown=function(e){
+    if(e.key==='Enter'){ var q=this.value.trim(); if(q) findNode(q); }
+  };
+}
+
+function applyFilters(){
+  var types=graph.filters.types, etypes=graph.filters.edges;
+  var keepEdge=function(e){ return etypes[e.type]!==false; };
+  var keepNode=function(n){ return types[n.type]!==false; };
+  var sel=graph.sel, nodes=[], nodeSet={}, edges=[];
+  if(sel){
+    var seen={}, frontier=[sel.id], depth=graph.depth;
+    seen[sel.id]=0;
+    var allE=graph.rawEdges.filter(keepEdge);
+    for(var d=0;d<depth;d++){
+      var next=[];
+      frontier.forEach(function(id){
+        allE.forEach(function(e){
+          if(e.src===id && !(e.dst in seen)){ seen[e.dst]=d+1; next.push(e.dst); }
+          else if(e.dst===id && !(e.src in seen)){ seen[e.src]=d+1; next.push(e.src); }
+        });
+      });
+      frontier=next;
+    }
+    Object.keys(seen).forEach(function(id){
+      var n=graph.nodeMap[id];
+      if(n && keepNode(n)){ nodes.push(n); nodeSet[id]=true; }
+    });
+    allE.forEach(function(e){ if(nodeSet[e.src]&&nodeSet[e.dst]) edges.push(e); });
+  } else {
+    graph.rawNodes.forEach(function(n){ if(keepNode(n)){ nodes.push(n); nodeSet[n.id]=true; } });
+    graph.rawEdges.forEach(function(e){ if(keepEdge(e)&&nodeSet[e.src]&&nodeSet[e.dst]) edges.push(e); });
+  }
+  graph.nodes=nodes; graph.edges=edges;
+  document.getElementById('graph-status').textContent=
+    (sel?'ego · '+sel.name+' · ':'')+nodes.length+' nodes · '+edges.length+' edges';
+  if(!graph.suppressLayout){ scheduleLayout(); }
+}
+
+/* ---------- node search (alias-aware) ----------
+   The owner types the name they know ("Melaka", "Melaka state", "Penang"), the
+   canonical data uses its own spelling ("Melaka" vs "Malacca" in the GE15
+   files). Scoring, highest wins:
+     exact name / exact alias        20
+     alias substring                 12
+     name substring                  10
+     id substring                     6
+     name word hit                    4
+     seat/state whose own state hit   8   -> "melaka" reaches state:Melaka
+   An exact name/alias hit always outranks substring noise, which is what makes
+   the short aliases ("NS", "N9", "federal") unambiguous. */
+var QUERY_NOISE=/\b(state|negeri|wilayah|territory|federal|government|parlimen|parliament|malaysia)\b/g;
+
+function queryVariants(q){
+  // "Melaka state" must still resolve to the Melaka node: score the query as
+  // typed AND with jurisdiction noise words stripped.
+  var variants=[q];
+  var stripped=q.replace(QUERY_NOISE,' ').replace(/\s+/g,' ').trim();
+  if(stripped && stripped!==q) variants.push(stripped);
+  return variants;
+}
+
+function nodeScore(n,q){
+  var name=(n.name||'').toLowerCase(), id=(n.id||'').toLowerCase(), sc=0;
+  if(name===q) sc+=20;
+  if(name.indexOf(q)>=0) sc+=10;
+  if(id.indexOf(q)>=0) sc+=6;
+  if(name.split(/\s+/).some(function(w){return w.indexOf(q)>=0;})) sc+=4;
+  (n.aliases||[]).forEach(function(a){
+    var al=String(a).toLowerCase();
+    if(al===q) sc+=20;
+    else if(q && al.indexOf(q)>=0) sc+=12;
+  });
+  if((n.type==='seat'||n.type==='state'||n.type==='federal_territory') &&
+     (n.state||n.ft_label) &&
+     String(n.state||n.ft_label).toLowerCase().indexOf(q)>=0) sc+=8;
+  return sc;
+}
+
+function nodeExactMatch(n,q){
+  if((n.name||'').toLowerCase()===q) return true;
+  return (n.aliases||[]).some(function(a){ return String(a).toLowerCase()===q; });
+}
+
+function bestNodeMatches(q,nodes){
+  q=(q||'').trim().toLowerCase();
+  if(!q) return null;
+  var variants=queryVariants(q), best=null, bscore=-1, exact=null, escore=-1;
+  nodes.forEach(function(n){
+    var sc=0, isExact=false;
+    variants.forEach(function(v){
+      var s=nodeScore(n,v);
+      if(s>sc) sc=s;
+      if(nodeExactMatch(n,v)) isExact=true;
+    });
+    if(isExact && sc>escore){ escore=sc; exact=n; }
+    if(sc>bscore){ bscore=sc; best=n; }
+  });
+  return exact||best;
+}
+
+function findNode(q){
+  q=(q||'').trim();
+  if(!q) return;
+  var best=bestNodeMatches(q,graph.rawNodes);
+  if(best){ graph.sel=best; applyFilters(); showNode(best); }
+  else document.getElementById('graph-status').textContent='no node matched "'+q+'"';
+}
+
+var NODE_TYPE_COLORS={person:'#3b82f6',party:'#10b981',seat:'#8b5cf6',
+  cluster:'#f59e0b',news:'#ef4444',scenario:'#14b8a6',state:'#a3e635',
+  federal:'#f472b6',federal_territory:'#facc15'};
+var NODE_TYPE_LABELS={person:'Person',party:'Party',seat:'Seat',
+  cluster:'Cluster',news:'News',scenario:'Scenario',state:'State',
+  federal:'Federal',federal_territory:'Federal Territory'};
+var NODE_FIELD_ORDER={
+  person:['name','party','bloc','cluster','id'],
+  party:['name','bloc','mp_seats','id'],
+  seat:['name','constituency','kind','state','id'],
+  state:['name','aliases','dun_seats','parliament_seats','ge15_label','id'],
+  federal_territory:['name','code','ft_label','aliases','parliament_seats','ge15_label','id'],
+  federal:['name','aliases','parliament_seats','id'],
+  cluster:['name','id'],
+  news:['name','date','category','source','score','id'],
+  scenario:['name','template','recommendation','id']
+};
+var NODE_FIELD_LABELS={name:'Name',party:'Party',bloc:'Bloc',cluster:'Cluster',
+  id:'Key',kind:'Kind',mp_seats:'MP seats',date:'Date',category:'Category',
+  source:'Source',score:'Score',template:'Template',recommendation:'Recommendation',
+  constituency:'Constituency',state:'State',aliases:'Aliases',
+  dun_seats:'DUN seats',parliament_seats:'Parliament seats',
+  ge15_label:'GE15 label',code:'Code',ft_label:'Master-list label'};
+
+function showNode(n){
+  var d=document.getElementById('node-detail');
+  var t=n.type||'cluster', color=NODE_TYPE_COLORS[t]||'#475569';
+  var label=NODE_TYPE_LABELS[t]||t;
+  var head='<div class="nd-head"><span class="nd-dot" style="background:'+color+'"></span>'+
+    '<b>'+esc(n.name||n.id)+'</b>'+
+    '<span class="nd-type" style="background:'+color+'">'+esc(label)+'</span></div>';
+  // ordered, meaningful fields only (skip layout junk x/y and undefined)
+  var rows='';
+  var order=NODE_FIELD_ORDER[t]||Object.keys(n).filter(function(k){return k!=='x'&&k!=='y';});
+  order.forEach(function(k){
+    var v=n[k];
+    if(v===undefined||v===null||v==='') return;
+    var lab=NODE_FIELD_LABELS[k]||k;
+    var vs;
+    if(Array.isArray(v)) vs=esc(v.join(', '));
+    else if(typeof v==='object') vs=esc(JSON.stringify(v));
+    else vs=esc(String(v));
+    rows+='<tr><td>'+esc(lab)+'</td><td>'+vs+'</td></tr>';
+  });
+  var html=head+'<table>'+rows+'</table>';
+  // connections (edges touching this node)
+  var conns=[];
+  (graph.rawEdges||[]).forEach(function(e){
+    if(e.src===n.id) conns.push({other:e.dst,type:e.type,w:e.weight||1,dir:'out'});
+    else if(e.dst===n.id) conns.push({other:e.src,type:e.type,w:e.weight||1,dir:'in'});
+  });
+  // dedupe by other+type, keep max weight, sort by weight desc
+  var seen={};
+  conns=conns.filter(function(c){
+    var k=c.other+'|'+c.type;
+    if(seen[k]) return false; seen[k]=true; return true;
+  }).sort(function(a,b){return b.w-a.w;}).slice(0,60);
+  if(conns.length){
+    html+='<div class="nd-conn"><b style="font-size:11px;color:#64748b">Connections ('+conns.length+' shown)</b>';
+    conns.forEach(function(c){
+      var on=graph.rawNodes.find(function(x){return x.id===c.other;});
+      var nm=on?(on.name||on.id):c.other;
+      html+='<div class="conn" onclick="selectNodeById(\''+escRe(c.other)+'\')" title="click to open">'+
+        '<span class="etype">'+esc(c.type)+'</span>'+
+        '<span class="ename">'+esc(nm)+'</span>'+
+        '<span class="w">'+c.w.toFixed(2)+'</span></div>';
+    });
+    html+='</div>';
+  }
+  // raw JSON (all data — nothing truncated)
+  html+='<details class="nd-raw"><summary>Raw record (full JSON)</summary><pre>'+esc(JSON.stringify(n,null,2))+'</pre></details>';
+  d.innerHTML=html;
+}
+
+function selectNodeById(id){
+  var n=graph.rawNodes.find(function(x){return x.id===id;});
+  if(!n) return;
+  graph.sel=n; applyFilters(); showNode(n);
+}
+
+/* ---------- force layout (canvas) ---------- */
+var canvas, ctx, W=0, H=0;
+function initCanvas(){
+  canvas=document.getElementById('graph-canvas');
+  ctx=canvas.getContext('2d');
+  function resize(){ W=canvas.width=canvas.clientWidth||900; H=canvas.height=canvas.clientHeight||640; draw(); }
+  resize(); window.addEventListener('resize',resize);
+  canvas.addEventListener('click',function(ev){
+    var r=canvas.getBoundingClientRect();
+    var x=ev.clientX-r.left, y=ev.clientY-r.top;
+    var hit=null, best=25;
+    graph.nodes.forEach(function(n){
+      if(n.x==null) return;
+      var dx=n.x-x, dy=n.y-y, dd=Math.sqrt(dx*dx+dy*dy);
+      if(dd<best){ best=dd; hit=n; }
+    });
+    if(hit){ showNode(hit); }
+  });
+}
+
+function layoutOnce(iterations){
+  if(!graph.nodes.length) return;
+  var n=graph.nodes, m=n.length;
+  if(!graph.ready) return;
+  var it=iterations||80;
+  var Wc=W||900, Hc=H||640;
+  // CENTERED SEARCH (8 Aug 2026, user request): when a node is selected via
+  // search, pin it at the exact canvas centre so the result is always the
+  // middle of the graph. Neighbours orbit around it.
+  var selIdx=-1;
+  if(graph.sel){
+    for(var si=0;si<m;si++){ if(n[si].id===graph.sel.id){ selIdx=si; break; } }
+  }
+  // seed missing positions on a circle
+  for(var i=0;i<m;i++){
+    var nd=n[i];
+    if(nd.x==null){
+      var ang=(i/m)*Math.PI*2;
+      nd.x=Wc/2+Math.cos(ang)*(Wc*0.32);
+      nd.y=Hc/2+Math.sin(ang)*(Hc*0.32);
+    }
+  }
+  if(selIdx>=0){
+    n[selIdx].x=Wc/2; n[selIdx].y=Hc/2;  // hard-pin centre
+  }
+  var idx={}; for(i=0;i<m;i++) idx[n[i].id]=i;
+  var links=[];
+  graph.edges.forEach(function(e){
+    var a=idx[e.src], b=idx[e.dst];
+    if(a!=null&&b!=null&&a!==b) links.push([a,b,e.weight||1]);
+  });
+  var k=Math.sqrt(Wc*Hc/m)*0.9, rep=k*k*2.4, att=0.02;
+  for(var iter=0;iter<it;iter++){
+    var fx=new Array(m).fill(0), fy=new Array(m).fill(0);
+    for(i=0;i<m;i++){
+      for(var j=i+1;j<m;j++){
+        var dx=n[i].x-n[j].x, dy=n[i].y-n[j].y, d2=dx*dx+dy*dy+1;
+        var f=rep/d2, dd=Math.sqrt(d2);
+        fx[i]+=dx/dd*f; fy[i]+=dy/dd*f; fx[j]-=dx/dd*f; fy[j]-=dy/dd*f;
+      }
+    }
+    links.forEach(function(l){
+      var a=l[0],b=l[1],w=l[2]||1;
+      var dx=n[b].x-n[a].x, dy=n[b].y-n[a].y, d=Math.sqrt(dx*dx+dy*dy+1);
+      var f=att*w*(d-k)*0.6;
+      fx[a]+=dx/d*f; fy[a]+=dy/d*f; fx[b]-=dx/d*f; fy[b]-=dy/d*f;
+    });
+    for(i=0;i<m;i++){
+      if(i===selIdx) continue;   // centre node never moves
+      n[i].x+=fx[i]*0.08; n[i].y+=fy[i]*0.08;
+      // soft boundary: gentle pull-back instead of hard clamp (avoids
+      // nodes flattening along the edges)
+      var pad=30;
+      if(n[i].x<pad) n[i].x=pad+(pad-n[i].x)*0.2;
+      if(n[i].x>Wc-pad) n[i].x=(Wc-pad)-(n[i].x-(Wc-pad))*0.2;
+      if(n[i].y<pad) n[i].y=pad+(pad-n[i].y)*0.2;
+      if(n[i].y>Hc-pad) n[i].y=(Hc-pad)-(n[i].y-(Hc-pad))*0.2;
+    }
+  }
+}
+
+// Progressive (non-blocking) force layout: runs layoutOnce in small batches so
+// the UI stays responsive (the O(n^2) repulsion loop is heavy at ~4.4k nodes —
+// synchronous full layouts freeze the page and make the tab buttons unclickable).
+// Debounced entry point: scheduleLayout() coalesces repeated triggers.
+var _layoutTimer=null;
+// MUTUAL EXCLUSION (one stepper at a time). _layoutRunning is the token held by
+// the stepper that is currently mid-flight; _layoutPending is the newest request
+// that arrived while it ran. The pending request starts the NEXT stepper the
+// instant the current one finishes, so two steppers can never step over the same
+// shared graph.nodes positions at once and a trigger is never lost.
+var _layoutRunning=false, _layoutPending=null;
+function scheduleLayout(totalIter, onDone){
+  if(_layoutTimer) clearTimeout(_layoutTimer);   // collapse bursts: rapid tab toggles
+  _layoutTimer=setTimeout(function(){
+    _layoutTimer=null;
+    layoutProgressive(totalIter||80, onDone);
+  }, 50);
+}
+function layoutProgressive(totalIter, onDone){
+  totalIter=totalIter||80;
+  if(_layoutRunning){                            // token held → queue, never overlap
+    _layoutPending={totalIter:totalIter, onDone:onDone||null};
+    return;
+  }
+  _layoutRunning=true;
+  var batch=Math.max(1,Math.round(totalIter/20));  // ~20 visible updates
+  var doneIter=0, startPct=LOAD.pct||85, spanPct=100-startPct;
+  function finish(){
+    _layoutRunning=false;                        // release the token BEFORE callbacks
+    var next=_layoutPending; _layoutPending=null;
+    if(onDone) onDone();
+    if(next) layoutProgressive(next.totalIter, next.onDone);  // newest state, once
+  }
+  function step(){
+    var nIt=Math.min(batch,totalIter-doneIter);
+    try{
+      layoutOnce(nIt);
+      doneIter+=nIt;
+      if(LOAD.pct<100) loadUI(startPct+spanPct*(doneIter/totalIter),'Loading graph…','computing layout');
+      draw();  // incremental paint so the user sees the graph forming
+    }catch(err){ finish(); throw err; }          // an error must not hold the token
+    if(doneIter>=totalIter){ finish(); }
+    else setTimeout(step,30);  // yield → overlay + canvas repaint
+  }
+  step();
+}
+
+function draw(){
+  if(!ctx) return;
+  ctx.clearRect(0,0,W,H);
+  var dark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  ctx.fillStyle=dark?'#0f172a':'#ffffff'; ctx.fillRect(0,0,W,H);
+  var nodes=graph.nodes;
+  if(!nodes.length) return;
+  var idx={}; nodes.forEach(function(nd,i){ idx[nd.id]=i; });
+  ctx.lineWidth=dark?0.6:0.5;
+  graph.edges.forEach(function(e){
+    var a=nodes[idx[e.src]], b=nodes[idx[e.dst]];
+    if(!a||!b||a.x==null) return;
+    ctx.strokeStyle=dark?'rgba(148,163,184,0.18)':'rgba(100,116,139,0.22)';
+    ctx.beginPath(); ctx.moveTo(a.x,a.y); ctx.lineTo(b.x,b.y); ctx.stroke();
+  });
+  nodes.forEach(function(nd){
+    var r=nd.type==='news'?3:(nd.type==='person'?5:(nd.type==='seat'?4:(nd.type==='party'?8:6)));
+    ctx.beginPath(); ctx.arc(nd.x,nd.y,r,0,6.283);
+    ctx.fillStyle=TYPE_COLORS[nd.type]||'#94a3b8';
+    ctx.globalAlpha=0.9; ctx.fill(); ctx.globalAlpha=1;
+  });
+  // CENTRE-NODE HIGHLIGHT: pulsing ring + name label for the searched node
+  if(graph.sel){
+    var cx=graph.sel.x, cy=graph.sel.y;
+    if(cx!=null){
+      var tcol=TYPE_COLORS[graph.sel.type]||'#3b82f6';
+      var pulse=3+Math.sin(Date.now()/300)*2;
+      ctx.beginPath(); ctx.arc(cx,cy,16+pulse,0,6.283);
+      ctx.strokeStyle=tcol;
+      ctx.lineWidth=2; ctx.stroke();
+      ctx.beginPath(); ctx.arc(cx,cy,22+pulse,0,6.283);
+      ctx.globalAlpha=0.35; ctx.strokeStyle=tcol; ctx.lineWidth=1; ctx.stroke(); ctx.globalAlpha=1;
+      ctx.font='600 12px -apple-system, Segoe UI, sans-serif';
+      ctx.textAlign='center';
+      ctx.fillStyle=dark?'#e2e8f0':'#0f172a';
+      var label=graph.sel.name||graph.sel.id;
+      ctx.fillText(label,cx,cy-24);
+    }
+  }
+  // animate the pulse ring
+  if(graph.sel && graph.sel.x!=null){
+    requestAnimationFrame(function(){
+      if(document.getElementById('graph-view').classList.contains('active')) draw();
+    });
+  }
+}
+
+/* ================= VECTOR VIEW ================= */
+var vecDB = {
+  figures: (typeof window.FIGURE_VECS!=='undefined')?window.FIGURE_VECS:[],
+  parties: (typeof window.PARTY_VECS!=='undefined')?window.PARTY_VECS:[],
+  personnel: (typeof window.PERSONNEL_VECS!=='undefined')?window.PERSONNEL_VECS:[],
+  seats: (typeof window.SEAT_VECS!=='undefined')?window.SEAT_VECS:[],
+  news: (typeof window.NEWS_VECS!=='undefined')?window.NEWS_VECS:[],
+  scenarios: (typeof window.SCENARIO_VECS!=='undefined')?window.SCENARIO_VECS:[],
+  clusters: (typeof window.CLUSTER_VECS!=='undefined')?window.CLUSTER_VECS:[]
+};
+
+function vecSearch(q, db){
+  var qv = embedQuery(q);
+  var toks = q.toLowerCase().split(/[^a-z0-9]+/).filter(function(t){return t.length>1;});
+  var rows = vecDB[db].map(function(r){
+    var sim = cosine(qv, r.vec);
+    // lexical boost: query tokens appearing in any identifying text (incl.
+    // seat code, constituency, state — so "p102" or "kajang"/"bangi" hits)
+    var text = ((r.name||'')+' '+(r.role||'')+' '+(r.party||'')+' '+(r.bloc||'')+' '+(r.seat||'')+' '+(r.constituency||'')+' '+(r.state||'')).toLowerCase();
+    var hits = 0;
+    toks.forEach(function(t){ if(text.indexOf(t)>=0) hits++; });
+    var lex = toks.length ? hits/toks.length : 0;
+    var score = sim*0.55 + lex*0.45;   // hybrid: semantics + keyword match
+    return {r:r, sim:sim, score:score, lex:lex};
+  }).sort(function(a,b){ return b.score-a.score; });
+  return rows.slice(0,20);
+}
+
+function embedQuery(q){
+  var dim=384, v=new Array(dim).fill(0);
+  var toks=q.toLowerCase().split(/[^a-z0-9]+/).filter(Boolean);
+  toks.forEach(function(t){
+    var h=2166136261;
+    for(var i=0;i<t.length;i++){ h^=t.charCodeAt(i); h=Math.imul(h,16777619); }
+    var idx=(h>>>8)%dim, s=((h&255)/255)*2-1;
+    v[idx]+=s; v[(idx+97)%dim]+=s*0.5; v[(idx+211)%dim]+=s*0.25;
+  });
+  var n=norm(v); if(n>0) for(var i=0;i<dim;i++) v[i]/=n;
+  return v;
+}
+
+var _vecHits=[]; var _vecDb='personnel';
+// Auto-route seat-like queries (codes P001/N.25 or constituency names) to the
+// seats DB — so searching "kajang"/"p102"/"bangi" surfaces the SEAT, not people.
+var _seatNameSet=null;
+function autoSeatDb(q){
+  var t=q.trim().toLowerCase();
+  if(/^(p\d{3}|n\.?\d{1,2})($|\s)/.test(t)) return true;      // P102 / N.25
+  if(!_seatNameSet){
+    _seatNameSet={};
+    (vecDB.seats||[]).forEach(function(s){
+      (s.name||'').toLowerCase().split(/[^a-z0-9]+/).forEach(function(w){ if(w.length>2) _seatNameSet[w]=1; });
+      (s.constituency||'').toLowerCase().split(/[^a-z0-9]+/).forEach(function(w){ if(w.length>2) _seatNameSet[w]=1; });
+      (s.state||'').toLowerCase().split(/[^a-z0-9]+/).forEach(function(w){ if(w.length>2) _seatNameSet[w]=1; });
+    });
+  }
+  var toks=t.split(/[^a-z0-9]+/).filter(function(w){return w.length>2;});
+  var seatHits=0;
+  toks.forEach(function(w){ if(_seatNameSet[w]) seatHits++; });
+  return toks.length>0 && seatHits>=Math.min(1,toks.length);
+}
+function renderVec(){
+  var q=document.getElementById('vec-query').value.trim();
+  var sel=document.getElementById('vec-db');
+  var db=sel.value;
+  // auto-route seat queries unless the user explicitly chose a non-seat DB
+  if(autoSeatDb(q) && db!=='seats' && db!=='personnel' && db!=='figures'){
+    // keep user's explicit choice; just prefer seats ranking by default below
+  }
+  var box=document.getElementById('vec-results'), empty=document.getElementById('vec-empty');
+  if(!q){ box.innerHTML=''; empty.style.display='block'; return; }
+  empty.style.display='none';
+  // If the query is seat-like and the user is on the default personnel DB,
+  // search seats instead (they clearly want the seat, not people named Kajang).
+  var effectiveDb=db;
+  if(autoSeatDb(q) && db==='personnel'){
+    effectiveDb='seats';
+    if(sel.value!=='seats'){ /* show seats results without forcing the dropdown */ }
+  }
+  var hits=vecSearch(q,effectiveDb);
+  _vecHits=hits; _vecDb=effectiveDb;
+  markStore(effectiveDb);                       // which of the 7 stores matched
+  if(!hits.length){ box.innerHTML='<div class="empty">No results.</div>'; return; }
+  box.innerHTML=hits.map(function(h,i){
+    var r=h.r, pct=Math.round(h.score*100);
+    return '<div class="vcard clickable" onclick="openVecDetail('+i+')">'+
+      '<span class="sc">'+pct+'%</span>'+
+      '<div class="nm">'+esc(r.name)+'</div>'+
+      '<div class="meta">'+esc(r.role||r.party||'')+(r.bloc?' · '+esc(r.bloc):'')+(r.seat?' · '+esc(r.seat):'')+' <span class="pill">store: '+esc(effectiveDb)+'</span></div>'+
+      '<div class="bar"><i style="width:'+Math.max(4,pct)+'%"></i></div>'+
+      '<div class="openhint">details ↗</div></div>';
+  }).join('');
+}
+
+function openVecDetail(i){
+  var h=_vecHits[i]; if(!h) return;
+  var q=document.getElementById('vec-query').value.trim();
+  var db=_vecDb||document.getElementById('vec-db').value;   // use the DB that actually produced the hits
+  var html=buildVecDetailHTML(h,q,db,i+1,_vecHits.length);
+  var frame=document.getElementById('vec-modal-frame');
+  frame.srcdoc=html;
+  document.getElementById('vec-modal-title').textContent=
+    (db==='parties'?'Party':(db==='personnel'?'Person':(db==='seats'?'Seat':(db==='news'?'News':(db==='scenarios'?'Scenario':(db==='clusters'?'Cluster':'Key figure'))))))+' — '+h.r.name;
+  document.getElementById('vec-modal').classList.add('open');
+  frame.focus();
+}
+function closeVecModal(){
+  document.getElementById('vec-modal').classList.remove('open');
+  document.getElementById('vec-modal-frame').srcdoc='';
+}
+document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeVecModal(); });
+
+var DETAIL_CSS=':root{color-scheme:light dark;}*{box-sizing:border-box;}'+
+'body{font-family:-apple-system,Segoe UI,Roboto,sans-serif;margin:0;background:#f8fafc;color:#0f172a;line-height:1.5;}'+
+'.wrap{max-width:880px;margin:0 auto;padding:30px 20px 70px;}'+
+'.crumb{font-size:12px;color:#64748b;margin-bottom:14px;}'+
+'.big{border-bottom:1px solid #e2e8f0;padding-bottom:16px;margin-bottom:24px;}'+
+'h1{margin:0 0 10px;font-size:26px;}'+
+'.badges{display:flex;gap:6px;flex-wrap:wrap;}'+
+'.bdg{font-size:11px;padding:3px 11px;border-radius:999px;border:1px solid #cbd5e1;background:#fff;color:#334155;font-weight:600;}'+
+'section{margin-bottom:24px;}'+
+'h2{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:#64748b;margin:0 0 10px;}'+
+'.card{background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:14px 18px;}'+
+'table{width:100%;border-collapse:collapse;}'+
+'td{padding:7px 6px;border-bottom:1px solid #f1f5f9;vertical-align:top;font-size:13px;word-break:break-word;}'+
+'tr:last-child td{border-bottom:none;}'+
+'td.k{color:#64748b;width:150px;white-space:nowrap;}'+
+'table.list th,table.list td{text-align:left;}'+
+'thead th{font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:#64748b;text-align:left;padding:4px 6px;border-bottom:1px solid #cbd5e1;font-weight:600;}'+
+'td.y{color:#64748b;white-space:nowrap;width:110px;}'+
+'.note{font-size:11px;color:#94a3b8;margin-top:2px;}'+
+'ul{margin:0;padding-left:20px;}'+
+'li{font-size:13px;margin:5px 0;}'+
+'.stats{display:flex;gap:12px;flex-wrap:wrap;margin-top:14px;}'+
+'.stat{flex:1;min-width:130px;background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:12px 14px;text-align:center;}'+
+'.stat b{display:block;font-size:22px;}'+
+'.stat span{font-size:11px;color:#64748b;}'+
+'details{margin-top:12px;font-size:12px;}'+
+'pre{background:#f1f5f9;border:1px solid #e2e8f0;border-radius:8px;padding:10px;font-size:11px;overflow:auto;max-height:300px;}'+
+'.hint{font-size:12px;color:#94a3b8;text-align:center;margin-top:36px;}'+
+'@media (prefers-color-scheme:dark){'+
+'body{background:#0f172a;color:#e2e8f0;}'+
+'.card{background:#1e293b;border-color:#334155;}'+
+'.stat{background:#1e293b;border-color:#334155;}'+
+'td{border-color:#334155;}'+
+'thead th{color:#94a3b8;border-color:#475569;}'+
+'.big{border-color:#334155;}'+
+'.bdg{background:#1e293b;border-color:#475569;color:#e2e8f0;}'+
+'pre{background:#0f172a;border-color:#334155;}}';
+
+/* ---- structured role/seat parsing (reverse-chronological tables) ---- */
+var ORG_PATTERNS=[['Barisan Nasional','BN'],['Pakatan Harapan','PH'],['Perikatan Nasional','PN'],['Gabungan Parti Sarawak','GPS'],['Gabungan Rakyat Sabah','GRS'],['BN','BN'],['PH','PH'],['PN','PN'],['GPS','GPS'],['GRS','GRS'],['UMNO','UMNO'],['MCA','MCA'],['MIC','MIC'],['Gerakan','GERAKAN'],['PKR','PKR'],['DAP','DAP'],['AMANAH','AMANAH'],['PAS','PAS'],['Bersatu','BERSATU'],['MUDA','MUDA'],['PBM','PBM'],['Warisan','WARISAN'],['Bersama','BERSAMA'],['PSM','PSM'],['MARA','MARA'],['Felda','FELDA'],['WAWASAN','WAWASAN']];
+var STATE_NAMES=['Negeri Sembilan','Terengganu','Kelantan','Pahang','Perak','Perlis','Kedah','Johor','Melaka','Selangor','Penang','Pulau Pinang','Sabah','Sarawak','Kuala Lumpur','Putrajaya','Labuan'];
+
+function escRe(s){ return s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'); }
+
+function findOrg(text){
+  var found=[];
+  for(var i=0;i<ORG_PATTERNS.length;i++){
+    var name=ORG_PATTERNS[i][0], label=ORG_PATTERNS[i][1];
+    var re=new RegExp('\\b'+escRe(name)+'\\b','i');
+    if(re.test(text) && found.indexOf(label)<0) found.push(label);
+  }
+  if(found.length) return found.join(' · ');
+  if(/Menteri Besar|Chief Minister|Premier/i.test(text)) return 'State Government';
+  if(/Minister|government|Prime Minister/i.test(text)) return 'Federal Government';
+  if(/Senator|Dewan Negara/i.test(text)) return 'Senate · Dewan Negara';
+  if(/\(P\d{3}\)|P\.\d+|P\d{3}|\bMP\b|Member of Parliament|Leader of the Opposition|Speaker/i.test(text)) return 'Parliament · Dewan Rakyat';
+  if(/MLA|N\.\d+|state seat|DUN|Assemblyman|ADUN/i.test(text)) return 'State Assembly · DUN';
+  return '';
+}
+
+function extractYear(seg){
+  var years=[]; var mm, re=/(19|20)\d{2}/g;
+  while((mm=re.exec(seg))) years.push(+mm[0]);
+  if(!years.length) return {label:'—', start:-1, end:-1};
+  var mn=Math.min.apply(null,years), mx=Math.max.apply(null,years);
+  if(/since/i.test(seg)) return {label:'since '+mn, start:mn, end:2026};
+  var s2=seg.replace(/[–—]/g,'-'), ranges=[], rm;
+  var rre=/((?:19|20)\d{2})\s*-\s*((?:19|20)\d{2})/g;
+  while((rm=rre.exec(s2))) ranges.push([+rm[1],+rm[2]]);
+  if(ranges.length){
+    var maxEnd=Math.max.apply(null,ranges.map(function(r){return r[1];}));
+    var minStart=Math.min.apply(null,ranges.map(function(r){return r[0];}));
+    return {label:ranges.map(function(r){return r[0]+'–'+r[1];}).join(' · '), start:minStart, end:maxEnd};
+  }
+  if(mn!==mx) return {label:mn+'–'+mx, start:mn, end:mx};
+  return {label:String(mn), start:mn, end:mn};
+}
+
+function removeYearParens(t){
+  return t.replace(/\([^)]*\d{4}[^)]*\)/g,' ').replace(/\s{2,}/g,' ').trim();
+}
+function stripLead(t){ return t.replace(/^(MP|MLA|Senator|State Assembly|DUN)\s*/i,'').trim(); }
+function cleanPos(t){
+  var s=removeYearParens(t).replace(/^[\s\-–—:;·,]+|[\s\-–—:;·,]+$/g,'').trim();
+  return stripLead(s) || s;
+}
+function splitSemiOutsideParens(s){
+  var parts=[], depth=0, cur='';
+  for(var i=0;i<s.length;i++){
+    var c=s[i];
+    if(c==='(') depth++;
+    else if(c===')') depth--;
+    if(c===';' && depth===0){ parts.push(cur); cur=''; }
+    else cur+=c;
+  }
+  if(cur.trim()) parts.push(cur);
+  return parts;
+}
+function cmpDesc(a,b){
+  if(b.end!==a.end) return b.end-a.end;
+  if(b.start!==a.start) return b.start-a.start;
+  return a._i-b._i;
+}
+
+function parseRoles(roleStr){
+  var segs=String(roleStr||'').split(/\s*[\/;]\s*/), rows=[];
+  segs.forEach(function(seg){
+    seg=seg.trim(); if(!seg) return;
+    var note='', em=seg.indexOf('—');
+    if(em>=0){ note=seg.slice(em+1).trim(); seg=seg.slice(0,em).trim(); }
+    if(!seg) return;
+    var yr=extractYear(seg);
+    rows.push({pos:cleanPos(seg), org:findOrg(seg), year:yr.label, start:yr.start, end:yr.end, note:note, _i:rows.length});
+  });
+  rows.sort(cmpDesc);
+  rows.forEach(function(r){ delete r._i; });
+  return rows;
+}
+
+function parseSeats(seatStr){
+  var s=String(seatStr||'').trim();
+  if(!s) return [];
+  var rows=[];
+  if(/^None/i.test(s)){
+    rows.push({name:'None (no current seat)', org:'—', year:'—', start:2026, end:2026, note:'', _i:rows.length});
+    s=s.replace(/^None\s*/i,'').replace(/^\(/,'').replace(/\)\s*$/,'');
+  }
+  splitSemiOutsideParens(s).forEach(function(ch){
+    ch=ch.trim(); if(!ch) return;
+    var yr=extractYear(ch), org='—';
+    if(/Senator|Dewan Negara/i.test(ch)) org='Senate · Dewan Negara';
+    else if(/state seat|State Assembly|DUN|MLA|N\.\d+|Assemblyman|ADUN/i.test(ch)) org='State Assembly · DUN';
+    else if(/P\.\d+|\(P\d{3}\)|P\d{3}|\bMP\b|Member of Parliament/i.test(ch)) org='Parliament · Dewan Rakyat';
+    var region='';
+    for(var i=0;i<STATE_NAMES.length;i++){
+      if(ch.indexOf(STATE_NAMES[i])>=0){ region=STATE_NAMES[i]; break; }
+    }
+    if(region && org!=='—' && org.indexOf(region)<0) org+=' · '+region;
+    var t=removeYearParens(ch), notes=[];
+    t=t.replace(/\(([^)]*)\)/g,function(m,inner){
+      if(/(P\d{3}|N\.\d+|state seat|DUN|Dewan Negara|Senator)/i.test(inner)) return ' ';
+      notes.push(inner); return ' ';
+    });
+    var name=stripLead(t).replace(/^[\s\-–—:;·,]+|[\s\-–—:;·,]+$/g,'').trim();
+    if(!name) name=ch.replace(/\([^)]*\)/g,'').trim() || ch;
+    rows.push({name:name, org:org, year:yr.label, start:yr.start, end:yr.end, note:notes.join(' · '), _i:rows.length});
+  });
+  rows.sort(cmpDesc);
+  rows.forEach(function(r){ delete r._i; });
+  return rows;
+}
+
+function buildVecDetailHTML(h,q,db,rank,total){
+  var r=h.r, isParty=(db==='parties'), isPerson=(db==='personnel');
+  var DB_META={'parties':['Party','#10b981','Parties'],'personnel':['Person','#3b82f6','All personnel'],
+    'seats':['Seat','#8b5cf6','Seats'],'news':['News','#ef4444','News'],
+    'scenarios':['Scenario','#14b8a6','Scenarios'],'clusters':['Cluster','#f59e0b','Clusters'],
+    'figures':['Key figure','#3b82f6','Key figures']};
+  var dm=DB_META[db]||DB_META['figures'];
+  var typeLabel=dm[0], typeColor=dm[1], dbLabel=dm[2];
+  var count=vecDB[db].length;
+
+  var vec=r.vec||[], dim=vec.length, nrm=norm(vec), mn=Infinity, mx=-Infinity, pos=0;
+  for(var i=0;i<dim;i++){ var v=vec[i]; if(v<mn) mn=v; if(v>mx) mx=v; if(v>0) pos++; }
+  if(dim===0){ mn=0; mx=0; }
+
+  var posRows=parseRoles(r.role), seatRows=parseSeats(r.seat);
+
+  var bloc=String(r.bloc||'').trim();
+  var blocColor={'BN':'#2563eb','PH':'#dc2626','PN':'#16a34a','GRS':'#7c3aed',
+    'GPS':'#0ea5e9','WARISAN':'#ea580c','PSM':'#dc2626','IND':'#64748b'}[bloc.toUpperCase()]||'#475569';
+
+  var json=esc(JSON.stringify(r,null,2));
+  var pct=Math.round(h.score*100);
+
+  var badges='<span class="bdg" style="background:'+typeColor+';border-color:'+typeColor+';color:#fff">'+typeLabel+'</span>';
+  if(bloc)    badges+='<span class="bdg" style="color:'+blocColor+';border-color:'+blocColor+'">'+esc(bloc)+'</span>';
+  if(r.party) badges+='<span class="bdg">'+esc(r.party)+'</span>';
+  if(r.seat)  badges+='<span class="bdg">'+esc(r.seat)+'</span>';
+
+  var identRows='';
+  identRows+='<tr><td class="k">Name</td><td>'+esc(r.name)+'</td></tr>';
+  identRows+='<tr><td class="k">Type</td><td>'+typeLabel+'</td></tr>';
+  if(bloc)    identRows+='<tr><td class="k">Bloc</td><td>'+esc(bloc)+'</td></tr>';
+  if(r.party) identRows+='<tr><td class="k">Party</td><td>'+esc(r.party)+'</td></tr>';
+  if(r.seat)  identRows+='<tr><td class="k">Seat</td><td>'+esc(r.seat)+'</td></tr>';
+  if(r.constituency) identRows+='<tr><td class="k">Constituency</td><td>'+esc(r.constituency)+'</td></tr>';
+  if(r.state)  identRows+='<tr><td class="k">State</td><td>'+esc(r.state)+'</td></tr>';
+
+  var posHTML='';
+  if(posRows.length){
+    posHTML='<section><h2>Role / positions</h2><div class="card"><table class="list">'+
+      '<thead><tr><th class="y">Year</th><th>Position</th><th>Party / Org / Govt</th></tr></thead><tbody>'+
+      posRows.map(function(p){
+        return '<tr><td class="y">'+esc(p.year)+'</td><td>'+esc(p.pos)+
+          (p.note?'<div class="note">'+esc(p.note)+'</div>':'')+
+          '</td><td>'+esc(p.org||'—')+'</td></tr>';
+      }).join('')+'</tbody></table></div></section>';
+  }
+  var seatHTML='';
+  if(seatRows.length){
+    seatHTML='<section><h2>Parliament / state assembly seat</h2><div class="card"><table class="list">'+
+      '<thead><tr><th class="y">Year</th><th>Seat</th><th>Chamber</th></tr></thead><tbody>'+
+      seatRows.map(function(p){
+        return '<tr><td class="y">'+esc(p.year)+'</td><td>'+esc(p.name)+
+          (p.note?'<div class="note">'+esc(p.note)+'</div>':'')+
+          '</td><td>'+esc(p.org||'—')+'</td></tr>';
+      }).join('')+'</tbody></table></div></section>';
+  }
+
+  return '<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">'+
+  '<meta name="viewport" content="width=device-width, initial-scale=1">'+
+  '<title>'+esc(r.name)+' — GE16 Vector Detail</title><style>'+DETAIL_CSS+'</style></head>'+
+  '<body><div class="wrap">'+
+  '<div class="crumb">GE16 Vector Search · '+dbLabel+' · rank #'+rank+'</div>'+
+  '<header class="big"><h1>'+esc(r.name)+'</h1><div class="badges">'+badges+'</div></header>'+
+
+  '<section><h2>Search match</h2><div class="card"><table>'+
+  '<tr><td class="k">Query</td><td>'+esc(q)+'</td></tr>'+
+  '<tr><td class="k">Database</td><td>'+dbLabel+' ('+count+' records)</td></tr>'+
+  '<tr><td class="k">Rank</td><td>#'+rank+' of '+total+' matches</td></tr>'+
+  '</table><div class="stats">'+
+  '<div class="stat"><b>'+pct+'%</b><span>Hybrid score</span></div>'+
+  '<div class="stat"><b>'+h.sim.toFixed(3)+'</b><span>Cosine · ×0.55</span></div>'+
+  '<div class="stat"><b>'+h.lex.toFixed(3)+'</b><span>Lexical · ×0.45</span></div>'+
+  '</div></div></section>'+
+
+  '<section><h2>Identity</h2><div class="card"><table>'+identRows+'</table></div></section>'+
+
+  posHTML+seatHTML+
+
+  '<section><h2>Embedding vector</h2><div class="card"><table>'+
+  '<tr><td class="k">Dimensions</td><td>'+dim+'</td></tr>'+
+  '<tr><td class="k">L2 norm</td><td>'+nrm.toFixed(4)+'</td></tr>'+
+  '<tr><td class="k">Value range</td><td>'+mn.toFixed(4)+' … '+mx.toFixed(4)+'</td></tr>'+
+  '<tr><td class="k">Positive dims</td><td>'+pos+' / '+dim+'</td></tr>'+
+  '<tr><td class="k">Model</td><td>sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2</td></tr>'+
+  '</table><details><summary>Raw record (JSON)</summary><pre>'+json+'</pre></details></div></section>'+
+
+  '<div class="hint">Opened from the GE16 Graph &amp; Vector Explorer — close this tab to return to search.</div>'+
+  '</div></body></html>';
+}
+
+document.getElementById('vec-go').onclick=renderVec;
+document.getElementById('vec-query').onkeydown=function(e){ if(e.key==='Enter') renderVec(); };
+document.querySelectorAll('.sugg').forEach(function(s){
+  s.onclick=function(){ document.getElementById('vec-query').value=s.textContent.replace(/"/g,''); renderVec(); };
+});
+
+/* ============================================================
+   T2 UPGRADE — browse all four GE16 database families.
+   family 1 events DB -> events_data.js   (EVENTS_DATA)
+   family 2 graph     -> graph_data.js    (GRAPH_DATA, badges only)
+   family 3 vectors   -> *_vecs.js        (store chooser over the 7 stores)
+   family 4 trackers  -> trackers_data.js (TRACKERS_DATA)
+   ============================================================ */
+
+function fmtCount(n){ var v=+n||0; return v.toLocaleString('en-US'); }
+function fmtBytes(n){
+  n=+n||0;
+  if(n<1024) return n+' B';
+  if(n<1048576) return (n/1024).toFixed(1)+' KB';
+  return (n/1048576).toFixed(2)+' MB';
+}
+function fmtStamp(s){ return s ? String(s).replace('T',' ').slice(0,16) : '—'; }
+function fillSelect(id, entries, label){
+  var sel=document.getElementById(id); if(!sel) return;
+  sel.innerHTML='<option value="">'+esc(label)+': all</option>';
+  (entries||[]).forEach(function(entry){
+    var opt=document.createElement('option');
+    opt.value=entry.value;
+    opt.textContent=entry.value+' ('+fmtCount(entry.count)+')';
+    sel.appendChild(opt);
+  });
+}
+
+/* ---------- family 2: graph tab badges (nodes / edges / bundle size) ---------- */
+function setGraphBadges(g){
+  if(!g) return;
+  var status=document.getElementById('graph-status');
+  if(status) status.textContent=g.node_count+' nodes · '+g.edge_count+' edges (news→news thinned)';
+  var box=document.getElementById('graph-badges'); if(!box) return;
+  var n2n=0, news=0, typed={};
+  (g.edges||[]).forEach(function(e){
+    if(e.type==='news->news') n2n++;
+    if(e.type) typed[e.type]=1;
+  });
+  (g.nodes||[]).forEach(function(n){ if(n.type==='news') news++; });
+  var edgeTypes=Object.keys(typed).length;
+  var parts=[
+    ['nodes', fmtCount(g.node_count||(g.nodes||[]).length)],
+    ['edges', fmtCount(g.edge_count||(g.edges||[]).length)],
+    ['news→news kept', fmtCount(n2n)],
+    ['edge types', fmtCount(edgeTypes)],
+    ['bundle', g.file_bytes?fmtBytes(g.file_bytes):'n/a'],
+    ['schema', g.schema||'—'],
+    ['generated', fmtStamp(g.generated_at)]
+  ];
+  box.innerHTML=parts.map(function(pair){
+    return '<span class="badge">'+esc(pair[0])+' <b>'+esc(pair[1])+'</b></span>';
+  }).join('');
+}
+
+/* ---------- family 3: store chooser over the 7 vector DBs ---------- */
+var STORE_ORDER=['personnel','figures','parties','seats','news','scenarios','clusters'];
+var STORE_LABEL={ personnel:'All personnel', figures:'Key figures', parties:'Parties',
+                  seats:'Seats', news:'News', scenarios:'Scenarios', clusters:'Clusters' };
+var STORE_FIELDS={ personnel:'name · role · party · bloc · seat · constituency · state',
+                   figures:'name · role · party · bloc · seat',
+                   parties:'name · bloc',
+                   seats:'name · seat code · constituency · state · kind',
+                   news:'title · date · source · category · blocs · parties · seats',
+                   scenarios:'name · template · logic · recommendation',
+                   clusters:'name' };
+function storeRows(key){ return (vecDB && vecDB[key]) || []; }
+function storeCount(key){ return storeRows(key).length; }
+function markStore(key){
+  document.querySelectorAll('#store-chooser .store').forEach(function(node){
+    node.classList.toggle('on', node.getAttribute('data-store')===key);
+  });
+  var badges=document.getElementById('vec-store-badges');
+  if(!badges) return;
+  badges.innerHTML=
+    '<span class="badge">matched store <b>'+esc(STORE_LABEL[key]||key)+'</b></span>'+
+    '<span class="badge">key <b>'+esc(key)+'</b></span>'+
+    '<span class="badge">records <b>'+fmtCount(storeCount(key))+'</b></span>'+
+    '<span class="badge">matchable fields <b>'+esc(STORE_FIELDS[key]||'—')+'</b></span>';
+}
+function fillStoreChooser(){
+  var sel=document.getElementById('vec-db');
+  sel.innerHTML='';
+  STORE_ORDER.forEach(function(key){
+    var opt=document.createElement('option');
+    opt.value=key;
+    opt.textContent=(STORE_LABEL[key]||key)+' ('+fmtCount(storeCount(key))+')';
+    sel.appendChild(opt);
+  });
+  sel.value='personnel';
+  var box=document.getElementById('store-chooser');
+  box.innerHTML='';
+  STORE_ORDER.forEach(function(key){
+    var chip=document.createElement('span');
+    chip.className='store';
+    chip.setAttribute('data-store',key);
+    chip.innerHTML='<b>'+fmtCount(storeCount(key))+'</b> '+esc(STORE_LABEL[key]||key);
+    chip.title='store: '+key+' · fields: '+(STORE_FIELDS[key]||'—');
+    chip.onclick=function(){ sel.value=key; markStore(key); };
+    box.appendChild(chip);
+  });
+  sel.onchange=function(){ markStore(sel.value); };
+  markStore(sel.value);
+}
+
+/* ---------- family 1: events DB browser ---------- */
+var EV={ data:(typeof window.EVENTS_DATA!=='undefined')?window.EVENTS_DATA:null,
+         rows:[], page:0, size:50, inited:false };
+function evText(e){
+  var names=(e.entities||[]).map(function(x){ return x.name; }).join(' ');
+  return (e.title+' '+(e.detail||'')+' '+names).toLowerCase();
+}
+function evPill(e){
+  var cls=e.level==='federal'?'federal':(e.level==='state'?'state':'other');
+  var label=e.level==='federal'?'federal':(e.level==='state'?('state · '+(e.state||'—')):(e.jurisdiction||'other'));
+  return '<span class="pill '+cls+'">'+esc(label)+'</span>';
+}
+function evInit(){
+  if(EV.inited || !EV.data) return;
+  EV.inited=true;
+  var f=EV.data.facets||{};
+  fillSelect('ev-level', f.levels, 'level');
+  fillSelect('ev-state', f.states, 'state');
+  fillSelect('ev-type', f.categories, 'category');
+  fillSelect('ev-bloc', f.blocs, 'bloc');
+  fillSelect('ev-significance', f.significance, 'significance');
+  if(f.date_min) document.getElementById('ev-from').min=f.date_min;
+  if(f.date_max) document.getElementById('ev-to').max=f.date_max;
+  ['ev-q','ev-from','ev-to','ev-level','ev-state','ev-type','ev-bloc','ev-significance']
+    .forEach(function(id){
+      var el=document.getElementById(id);
+      el.addEventListener('input', function(){ EV.page=0; renderEvents(); });
+      el.addEventListener('change', function(){ EV.page=0; renderEvents(); });
+    });
+  document.getElementById('ev-clear').onclick=function(){
+    ['ev-q','ev-from','ev-to','ev-level','ev-state','ev-type','ev-bloc','ev-significance']
+      .forEach(function(id){ document.getElementById(id).value=''; });
+    EV.page=0; renderEvents();
+  };
+  document.getElementById('ev-prev').onclick=function(){ if(EV.page>0){ EV.page--; renderEvents(); } };
+  document.getElementById('ev-next').onclick=function(){ EV.page++; renderEvents(); };
+  renderStories();
+}
+function evFiltered(){
+  if(!EV.data) return [];
+  var q=document.getElementById('ev-q').value.trim().toLowerCase();
+  var from=document.getElementById('ev-from').value, to=document.getElementById('ev-to').value;
+  var level=document.getElementById('ev-level').value, state=document.getElementById('ev-state').value;
+  var type=document.getElementById('ev-type').value, bloc=document.getElementById('ev-bloc').value;
+  var sig=document.getElementById('ev-significance').value;
+  var toks=q?q.split(/\s+/).filter(Boolean):[];
+  return EV.data.events.filter(function(e){
+    if(from && (e.date||'')<from) return false;
+    if(to && (e.date||'')>to) return false;
+    if(level && e.level!==level) return false;
+    if(state && e.state!==state) return false;
+    if(type && e.event_type!==type) return false;
+    if(sig && e.significance!==sig) return false;
+    if(bloc && (e.blocs||[]).indexOf(bloc)<0) return false;
+    if(toks.length){
+      var hay=evText(e);
+      for(var i=0;i<toks.length;i++){ if(hay.indexOf(toks[i])<0) return false; }
+    }
+    return true;
+  });
+}
+function renderEvents(){
+  if(!EV.data){
+    document.getElementById('ev-count').textContent='events_data.js not loaded — run build_data.py';
+    return;
+  }
+  evInit();
+  var rows=evFiltered();
+  EV.rows=rows;
+  var pages=Math.max(1, Math.ceil(rows.length/EV.size));
+  if(EV.page>=pages) EV.page=pages-1;
+  if(EV.page<0) EV.page=0;
+  var counts=EV.data.counts||{};
+  document.getElementById('ev-count').textContent=
+    fmtCount(rows.length)+' of '+fmtCount(counts.events)+' events · '+fmtCount(counts.stories)+
+    ' stories · DB '+fmtBytes(EV.data.source.bytes)+' (read-only)';
+  document.getElementById('ev-subcount').textContent=
+    fmtCount(rows.length)+' matched · newest first · '+fmtCount(rows.length?pages:0)+' page(s)';
+  var start=EV.page*EV.size;
+  document.getElementById('ev-rows').innerHTML=rows.slice(start,start+EV.size).map(function(e,i){
+    var names=(e.entities||[]).map(function(x){ return x.name; });
+    var shown=names.slice(0,3).join(', ')+(names.length>3?' +'+(names.length-3):'');
+    return '<tr class="clickable" onclick="evDetail('+(start+i)+')">'+
+      '<td class="nw">'+esc(e.date||'—')+'</td>'+
+      '<td>'+evPill(e)+'</td>'+
+      '<td class="nw">'+esc(e.event_type)+'</td>'+
+      '<td>'+esc(e.title)+'</td>'+
+      '<td>'+esc(shown||'—')+'</td>'+
+      '<td>'+esc((e.blocs||[]).join(', ')||'—')+'</td>'+
+      '<td class="nw">'+esc(e.significance)+'</td></tr>';
+  }).join('');
+  document.getElementById('ev-page').textContent='page '+(EV.page+1)+' / '+pages;
+  document.getElementById('ev-prev').disabled=EV.page<=0;
+  document.getElementById('ev-next').disabled=EV.page>=pages-1;
+}
+function evDetail(globalIndex){
+  var e=EV.rows[globalIndex]; if(!e) return;
+  var ents=(e.entities||[]).map(function(x){
+    return esc(x.name)+' <span class="kv">('+esc(x.role)+')</span>';
+  }).join('<br>');
+  var links=(e.links||[]).map(function(l){
+    return esc(l.relation)+' → '+esc(l.to);
+  }).join('<br>');
+  var story='—';
+  if((e.stories||[]).length && EV.data.stories){
+    var hit=EV.data.stories.filter(function(s){ return e.stories.indexOf(s.id)>=0; })[0];
+    if(hit) story=esc(hit.headline)+' <span class="kv">('+esc(hit.theme||'')+')</span>';
+  }
+  document.getElementById('ev-detail').innerHTML=
+    '<h4>'+esc(e.title)+'</h4>'+
+    '<div class="kv">'+esc(e.date||'—')+' · '+esc(e.date_precision)+' precision · '+evPill(e)+
+      (e.seat_code?' · seat '+esc(e.seat_code):'')+'</div>'+
+    '<p style="margin:8px 0 4px">'+esc(e.detail)+'</p>'+
+    '<table>'+
+    '<tr><td class="k">event id</td><td>'+esc(e.id)+'</td></tr>'+
+    '<tr><td class="k">category</td><td>'+esc(e.event_type)+(e.subtype?' / '+esc(e.subtype):'')+'</td></tr>'+
+    '<tr><td class="k">significance</td><td>'+esc(e.significance)+' · confidence '+esc(e.confidence)+'</td></tr>'+
+    '<tr><td class="k">window class</td><td>'+esc(e.window_class)+'</td></tr>'+
+    '<tr><td class="k">dossier</td><td>'+esc(e.dossier)+(e.section?' · '+esc(e.section):'')+'</td></tr>'+
+    '<tr><td class="k">source layer</td><td>'+esc(e.source_layer)+'</td></tr>'+
+    '<tr><td class="k">corroboration</td><td>'+esc(e.corroboration_count)+' · '+esc(e.source_count)+' linked sources</td></tr>'+
+    '<tr><td class="k">blocs</td><td>'+esc((e.blocs||[]).join(', ')||'—')+'</td></tr>'+
+    '<tr><td class="k">entities</td><td>'+(ents||'—')+'</td></tr>'+
+    '<tr><td class="k">story</td><td>'+story+'</td></tr>'+
+    (links?'<tr><td class="k">event links</td><td>'+links+'</td></tr>':'')+
+    '</table>';
+}
+function renderStories(){
+  if(!EV.data) return;
+  var stories=EV.data.stories||[];
+  var linked=stories.reduce(function(acc,s){ return acc+(s.event_ids||[]).length; },0);
+  document.getElementById('ev-story-count').textContent=
+    fmtCount(stories.length)+' stories · '+fmtCount(linked)+' linked events · newest update first';
+  document.getElementById('ev-story-rows').innerHTML=stories.map(function(s){
+    return '<tr><td>'+esc(s.headline)+'</td>'+
+      '<td class="nw">'+esc(s.theme||'—')+'</td>'+
+      '<td class="nw">'+esc(s.anchor||'—')+'</td>'+
+      '<td class="nw">'+esc(s.status)+'</td>'+
+      '<td class="nw">'+esc(s.event_count)+'</td>'+
+      '<td class="nw">'+esc(s.last_update||'—')+'</td></tr>';
+  }).join('');
+}
+
+/* ---------- family 4: 1_DATA trackers (accepted news + polls + feed) ---------- */
+var TK={ data:(typeof window.TRACKERS_DATA!=='undefined')?window.TRACKERS_DATA:null,
+         rows:[], page:0, size:50, inited:false, blocs:{} };
+function tkInit(){
+  if(TK.inited || !TK.data) return;
+  TK.inited=true;
+  var f=TK.data.facets||{};
+  fillSelect('tk-source', f.sources, 'source');
+  fillSelect('tk-month', f.months, 'month');
+  fillSelect('tk-category', f.categories, 'category');
+  ['tk-q','tk-source','tk-month','tk-category'].forEach(function(id){
+    var el=document.getElementById(id);
+    el.addEventListener('input', function(){ TK.page=0; renderTrackers(); });
+    el.addEventListener('change', function(){ TK.page=0; renderTrackers(); });
+  });
+  document.getElementById('tk-clear').onclick=function(){
+    ['tk-q','tk-source','tk-month','tk-category'].forEach(function(id){
+      document.getElementById(id).value='';
+    });
+    Object.keys(TK.blocs).forEach(function(key){ TK.blocs[key]=false; });
+    document.querySelectorAll('#tk-blocs .chip').forEach(function(chip){ chip.classList.remove('on'); });
+    TK.page=0; renderTrackers();
+  };
+  document.getElementById('tk-prev').onclick=function(){ if(TK.page>0){ TK.page--; renderTrackers(); } };
+  document.getElementById('tk-next').onclick=function(){ TK.page++; renderTrackers(); };
+  var box=document.getElementById('tk-blocs');
+  box.innerHTML='';
+  (f.blocs||[]).slice(0,14).forEach(function(entry){
+    TK.blocs[entry.value]=false;
+    var chip=document.createElement('span');
+    chip.className='chip';
+    chip.textContent=entry.value+' ('+fmtCount(entry.count)+')';
+    chip.onclick=function(){
+      TK.blocs[entry.value]=!TK.blocs[entry.value];
+      chip.classList.toggle('on');
+      TK.page=0; renderTrackers();
+    };
+    box.appendChild(chip);
+  });
+  renderPolls();
+  renderFeed();
+}
+function tkFiltered(){
+  if(!TK.data) return [];
+  var q=document.getElementById('tk-q').value.trim().toLowerCase();
+  var source=document.getElementById('tk-source').value;
+  var month=document.getElementById('tk-month').value;
+  var cat=document.getElementById('tk-category').value;
+  var active=Object.keys(TK.blocs).filter(function(key){ return TK.blocs[key]; });
+  return TK.data.accepted.filter(function(a){
+    if(source && a.source!==source) return false;
+    if(month && (a.date||'').slice(0,7)!==month) return false;
+    if(cat && a.category!==cat) return false;
+    if(active.length){
+      var hit=false;
+      for(var i=0;i<active.length;i++){
+        if((a.blocs||[]).indexOf(active[i])>=0){ hit=true; break; }
+      }
+      if(!hit) return false;
+    }
+    if(q){
+      var hay=((a.title||'')+' '+(a.source||'')).toLowerCase();
+      if(hay.indexOf(q)<0) return false;
+    }
+    return true;
+  });
+}
+function renderTrackers(){
+  if(!TK.data){
+    document.getElementById('tk-count').textContent='trackers_data.js not loaded — run build_data.py';
+    return;
+  }
+  tkInit();
+  var rows=tkFiltered();
+  TK.rows=rows;
+  var pages=Math.max(1, Math.ceil(rows.length/TK.size));
+  if(TK.page>=pages) TK.page=pages-1;
+  if(TK.page<0) TK.page=0;
+  var counts=TK.data.counts||{};
+  document.getElementById('tk-count').textContent=
+    fmtCount(rows.length)+' of '+fmtCount(counts.accepted)+' accepted items · tracker '+
+    fmtBytes(TK.data.sources.accepted.bytes)+' · '+fmtCount(counts.polls)+' polls (read-only)';
+  document.getElementById('tk-accepted-count').textContent=
+    fmtCount(rows.length)+' matched · newest first';
+  var start=TK.page*TK.size;
+  document.getElementById('tk-rows').innerHTML=rows.slice(start,start+TK.size).map(function(a){
+    var link=a.link?'<a class="plain" href="'+esc(a.link)+'" target="_blank" rel="noopener">open ↗</a>':'—';
+    return '<tr>'+
+      '<td class="nw">'+esc(fmtStamp(a.date))+'</td>'+
+      '<td class="nw">'+esc(a.source)+'</td>'+
+      '<td>'+esc(a.title)+'</td>'+
+      '<td class="nw">'+esc(a.category)+'</td>'+
+      '<td>'+esc((a.blocs||[]).join(', ')||'—')+'</td>'+
+      '<td class="nw">'+esc(a.lang)+'</td>'+
+      '<td class="nw">'+esc(a.score==null?'—':a.score)+'</td>'+
+      '<td class="nw">'+link+'</td></tr>';
+  }).join('');
+  document.getElementById('tk-page').textContent='page '+(TK.page+1)+' / '+pages;
+  document.getElementById('tk-prev').disabled=TK.page<=0;
+  document.getElementById('tk-next').disabled=TK.page>=pages-1;
+}
+function renderPolls(){
+  if(!TK.data) return;
+  var polls=TK.data.polls||[], scans=TK.data.poll_scans||[];
+  document.getElementById('tk-poll-count').textContent=
+    fmtCount(polls.length)+' deduped items · '+fmtCount(scans.length)+' scan runs · newest scan first';
+  document.getElementById('tk-poll-rows').innerHTML=polls.map(function(p){
+    return '<tr><td class="nw">'+esc(fmtStamp(p.scan))+'</td>'+
+      '<td class="nw">'+esc(p.pollster)+'</td>'+
+      '<td>'+esc(p.title)+'</td></tr>';
+  }).join('');
+}
+function renderFeed(){
+  if(!TK.data) return;
+  var feed=TK.data.feed||[];
+  document.getElementById('tk-feed-count').textContent=
+    fmtCount(feed.length)+' items (7-day window)';
+  document.getElementById('tk-feed').innerHTML=feed.map(function(f){
+    var link=f.link?'<a class="plain" href="'+esc(f.link)+'" target="_blank" rel="noopener">'+
+      esc(f.source||'link')+' ↗</a>':esc(f.source||'');
+    return '<div class="feedcard">'+esc(f.title)+
+      '<div class="meta">'+esc(fmtStamp(f.date))+' · '+link+' · '+esc(f.category||'—')+
+      ((f.blocs||[]).length?' · '+esc(f.blocs.join(', ')):'')+'</div></div>';
+  }).join('');
+}
+
+/* ================= boot ================= */
+initCanvas();
+fillStoreChooser();
+loadGraph();
+/* Deep links (#graph / #vector / #events / #trackers) select the tab at load —
+   works under file:// too, and lets headless checks render a tab's rows. */
+(function(){
+  var want = (location.hash || '').replace(/^#/, '');
+  if(!want) return;
+  var tab = document.querySelector('.tab[data-view="' + want + '"]');
+  if(tab) tab.click();
+})();
+</script>
+</body>
+</html>

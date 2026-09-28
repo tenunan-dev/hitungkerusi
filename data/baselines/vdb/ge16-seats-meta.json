@@ -1,0 +1,7423 @@
+{
+ "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+ "dim": 384,
+ "count": 824,
+ "items": [
+  {
+   "id": "seat:N.01 AYER HANGAT",
+   "code": "N.01",
+   "name": "N.01 Ayer Hangat",
+   "constituency": "Ayer Hangat",
+   "state": "Kedah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.01 BANGGI",
+   "code": "N.01",
+   "name": "N.01 Banggi",
+   "constituency": "Banggi",
+   "state": "Sabah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.01 BULOH KASAP",
+   "code": "N.01",
+   "name": "N.01 Buloh Kasap",
+   "constituency": "Buloh Kasap",
+   "state": "Johor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.01 CHENNAH",
+   "code": "N.01",
+   "name": "N.01 Chennah",
+   "constituency": "Chennah",
+   "state": "Negeri Sembilan",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.01 KUALA BESUT",
+   "code": "N.01",
+   "name": "N.01 Kuala Besut",
+   "constituency": "Kuala Besut",
+   "state": "Terengganu",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.01 KUALA LINGGI",
+   "code": "N.01",
+   "name": "N.01 Kuala Linggi",
+   "constituency": "Kuala Linggi",
+   "state": "Malacca",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.01 OPAR",
+   "code": "N.01",
+   "name": "N.01 Opar",
+   "constituency": "Opar",
+   "state": "Sarawak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.01 PENAGA",
+   "code": "N.01",
+   "name": "N.01 Penaga",
+   "constituency": "Penaga",
+   "state": "Penang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.01 PENGKALAN HULU",
+   "code": "N.01",
+   "name": "N.01 Pengkalan Hulu",
+   "constituency": "Pengkalan Hulu",
+   "state": "Perak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.01 PENGKALAN KUBOR",
+   "code": "N.01",
+   "name": "N.01 Pengkalan Kubor",
+   "constituency": "Pengkalan Kubor",
+   "state": "Kelantan",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.01 SUNGAI AIR TAWAR",
+   "code": "N.01",
+   "name": "N.01 Sungai Air Tawar",
+   "constituency": "Sungai Air Tawar",
+   "state": "Selangor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.01 TANAH RATA",
+   "code": "N.01",
+   "name": "N.01 Tanah Rata",
+   "constituency": "Tanah Rata",
+   "state": "Pahang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.01 TITI TINGGI",
+   "code": "N.01",
+   "name": "N.01 Titi Tinggi",
+   "constituency": "Titi Tinggi",
+   "state": "Perlis",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.02 BENGKOKA",
+   "code": "N.02",
+   "name": "N.02 Bengkoka",
+   "constituency": "Bengkoka",
+   "state": "Sabah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.02 BERTAM",
+   "code": "N.02",
+   "name": "N.02 Bertam",
+   "constituency": "Bertam",
+   "state": "Penang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.02 BESERI",
+   "code": "N.02",
+   "name": "N.02 Beseri",
+   "constituency": "Beseri",
+   "state": "Perlis",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.02 JELAI",
+   "code": "N.02",
+   "name": "N.02 Jelai",
+   "constituency": "Jelai",
+   "state": "Pahang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.02 JEMENTAH",
+   "code": "N.02",
+   "name": "N.02 Jementah",
+   "constituency": "Jementah",
+   "state": "Johor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.02 KELABORAN",
+   "code": "N.02",
+   "name": "N.02 Kelaboran",
+   "constituency": "Kelaboran",
+   "state": "Kelantan",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.02 KOTA PUTERA",
+   "code": "N.02",
+   "name": "N.02 Kota Putera",
+   "constituency": "Kota Putera",
+   "state": "Terengganu",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.02 KUAH",
+   "code": "N.02",
+   "name": "N.02 Kuah",
+   "constituency": "Kuah",
+   "state": "Kedah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.02 PERTANG",
+   "code": "N.02",
+   "name": "N.02 Pertang",
+   "constituency": "Pertang",
+   "state": "Negeri Sembilan",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.02 SABAK",
+   "code": "N.02",
+   "name": "N.02 Sabak",
+   "constituency": "Sabak",
+   "state": "Selangor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.02 TANJUNG BIDARA",
+   "code": "N.02",
+   "name": "N.02 Tanjung Bidara",
+   "constituency": "Tanjung Bidara",
+   "state": "Malacca",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.02 TASIK BIRU",
+   "code": "N.02",
+   "name": "N.02 Tasik Biru",
+   "constituency": "Tasik Biru",
+   "state": "Sarawak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.02 TEMENGOR",
+   "code": "N.02",
+   "name": "N.02 Temengor",
+   "constituency": "Temengor",
+   "state": "Perak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.03 AYER LIMAU",
+   "code": "N.03",
+   "name": "N.03 Ayer Limau",
+   "constituency": "Ayer Limau",
+   "state": "Malacca",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.03 CHUPING",
+   "code": "N.03",
+   "name": "N.03 Chuping",
+   "constituency": "Chuping",
+   "state": "Perlis",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.03 JERTIH",
+   "code": "N.03",
+   "name": "N.03 Jertih",
+   "constituency": "Jertih",
+   "state": "Terengganu",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.03 KENERING",
+   "code": "N.03",
+   "name": "N.03 Kenering",
+   "constituency": "Kenering",
+   "state": "Perak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.03 KOTA SIPUTEH",
+   "code": "N.03",
+   "name": "N.03 Kota Siputeh",
+   "constituency": "Kota Siputeh",
+   "state": "Kedah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.03 PADANG TENGKU",
+   "code": "N.03",
+   "name": "N.03 Padang Tengku",
+   "constituency": "Padang Tengku",
+   "state": "Pahang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.03 PASIR PEKAN",
+   "code": "N.03",
+   "name": "N.03 Pasir Pekan",
+   "constituency": "Pasir Pekan",
+   "state": "Kelantan",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.03 PEMANIS",
+   "code": "N.03",
+   "name": "N.03 Pemanis",
+   "constituency": "Pemanis",
+   "state": "Johor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.03 PINANG TUNGGAL",
+   "code": "N.03",
+   "name": "N.03 Pinang Tunggal",
+   "constituency": "Pinang Tunggal",
+   "state": "Penang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.03 PITAS",
+   "code": "N.03",
+   "name": "N.03 Pitas",
+   "constituency": "Pitas",
+   "state": "Sabah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.03 SUNGAI LUI",
+   "code": "N.03",
+   "name": "N.03 Sungai Lui",
+   "constituency": "Sungai Lui",
+   "state": "Negeri Sembilan",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.03 SUNGAI PANJANG",
+   "code": "N.03",
+   "name": "N.03 Sungai Panjang",
+   "constituency": "Sungai Panjang",
+   "state": "Selangor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.03 TANJONG DATU",
+   "code": "N.03",
+   "name": "N.03 Tanjong Datu",
+   "constituency": "Tanjong Datu",
+   "state": "Sarawak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.04 AYER HITAM",
+   "code": "N.04",
+   "name": "N.04 Ayer Hitam",
+   "constituency": "Ayer Hitam",
+   "state": "Kedah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.04 CHEKA",
+   "code": "N.04",
+   "name": "N.04 Cheka",
+   "constituency": "Cheka",
+   "state": "Pahang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.04 HULU BESUT",
+   "code": "N.04",
+   "name": "N.04 Hulu Besut",
+   "constituency": "Hulu Besut",
+   "state": "Terengganu",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.04 KEMELAH",
+   "code": "N.04",
+   "name": "N.04 Kemelah",
+   "constituency": "Kemelah",
+   "state": "Johor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.04 KLAWANG",
+   "code": "N.04",
+   "name": "N.04 Klawang",
+   "constituency": "Klawang",
+   "state": "Negeri Sembilan",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.04 KOTA TAMPAN",
+   "code": "N.04",
+   "name": "N.04 Kota Tampan",
+   "constituency": "Kota Tampan",
+   "state": "Perak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.04 LENDU",
+   "code": "N.04",
+   "name": "N.04 Lendu",
+   "constituency": "Lendu",
+   "state": "Malacca",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.04 MATA AYER",
+   "code": "N.04",
+   "name": "N.04 Mata Ayer",
+   "constituency": "Mata Ayer",
+   "state": "Perlis",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.04 PANTAI DAMAI",
+   "code": "N.04",
+   "name": "N.04 Pantai Damai",
+   "constituency": "Pantai Damai",
+   "state": "Sarawak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.04 PERMATANG BERANGAN",
+   "code": "N.04",
+   "name": "N.04 Permatang Berangan",
+   "constituency": "Permatang Berangan",
+   "state": "Penang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.04 SEKINCHAN",
+   "code": "N.04",
+   "name": "N.04 Sekinchan",
+   "constituency": "Sekinchan",
+   "state": "Selangor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.04 TANJONG KAPOR",
+   "code": "N.04",
+   "name": "N.04 Tanjong Kapor",
+   "constituency": "Tanjong Kapor",
+   "state": "Sabah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.04 WAKAF BHARU",
+   "code": "N.04",
+   "name": "N.04 Wakaf Bharu",
+   "constituency": "Wakaf Bharu",
+   "state": "Kelantan",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.05 BENTA",
+   "code": "N.05",
+   "name": "N.05 Benta",
+   "constituency": "Benta",
+   "state": "Pahang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.05 BUKIT KAYU HITAM",
+   "code": "N.05",
+   "name": "N.05 Bukit Kayu Hitam",
+   "constituency": "Bukit Kayu Hitam",
+   "state": "Kedah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.05 DEMAK LAUT",
+   "code": "N.05",
+   "name": "N.05 Demak Laut",
+   "constituency": "Demak Laut",
+   "state": "Sarawak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.05 HULU BERNAM",
+   "code": "N.05",
+   "name": "N.05 Hulu Bernam",
+   "constituency": "Hulu Bernam",
+   "state": "Selangor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.05 JABI",
+   "code": "N.05",
+   "name": "N.05 Jabi",
+   "constituency": "Jabi",
+   "state": "Terengganu",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.05 KIJANG",
+   "code": "N.05",
+   "name": "N.05 Kijang",
+   "constituency": "Kijang",
+   "state": "Kelantan",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.05 MATUNGGONG",
+   "code": "N.05",
+   "name": "N.05 Matunggong",
+   "constituency": "Matunggong",
+   "state": "Sabah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.05 SANTAN",
+   "code": "N.05",
+   "name": "N.05 Santan",
+   "constituency": "Santan",
+   "state": "Perlis",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.05 SELAMA",
+   "code": "N.05",
+   "name": "N.05 Selama",
+   "constituency": "Selama",
+   "state": "Perak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.05 SERTING",
+   "code": "N.05",
+   "name": "N.05 Serting",
+   "constituency": "Serting",
+   "state": "Negeri Sembilan",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.05 SUNGAI DUA",
+   "code": "N.05",
+   "name": "N.05 Sungai Dua",
+   "constituency": "Sungai Dua",
+   "state": "Penang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.05 TABOH NANING",
+   "code": "N.05",
+   "name": "N.05 Taboh Naning",
+   "constituency": "Taboh Naning",
+   "state": "Malacca",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.05 TENANG",
+   "code": "N.05",
+   "name": "N.05 Tenang",
+   "constituency": "Tenang",
+   "state": "Johor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.06 BANDAU",
+   "code": "N.06",
+   "name": "N.06 Bandau",
+   "constituency": "Bandau",
+   "state": "Sabah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.06 BATU TALAM",
+   "code": "N.06",
+   "name": "N.06 Batu Talam",
+   "constituency": "Batu Talam",
+   "state": "Pahang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.06 BEKOK",
+   "code": "N.06",
+   "name": "N.06 Bekok",
+   "constituency": "Bekok",
+   "state": "Johor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.06 BINTONG",
+   "code": "N.06",
+   "name": "N.06 Bintong",
+   "constituency": "Bintong",
+   "state": "Perlis",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.06 CHEMPAKA",
+   "code": "N.06",
+   "name": "N.06 Chempaka",
+   "constituency": "Chempaka",
+   "state": "Kelantan",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.06 JITRA",
+   "code": "N.06",
+   "name": "N.06 Jitra",
+   "constituency": "Jitra",
+   "state": "Kedah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.06 KUALA KUBU BAHARU",
+   "code": "N.06",
+   "name": "N.06 Kuala Kubu Baharu",
+   "constituency": "Kuala Kubu Baharu",
+   "state": "Selangor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.06 KUBU GAJAH",
+   "code": "N.06",
+   "name": "N.06 Kubu Gajah",
+   "constituency": "Kubu Gajah",
+   "state": "Perak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.06 PALONG",
+   "code": "N.06",
+   "name": "N.06 Palong",
+   "constituency": "Palong",
+   "state": "Negeri Sembilan",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.06 PERMAISURI",
+   "code": "N.06",
+   "name": "N.06 Permaisuri",
+   "constituency": "Permaisuri",
+   "state": "Terengganu",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.06 REMBIA",
+   "code": "N.06",
+   "name": "N.06 Rembia",
+   "constituency": "Rembia",
+   "state": "Malacca",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.06 TELOK AYER TAWAR",
+   "code": "N.06",
+   "name": "N.06 Telok Ayer Tawar",
+   "constituency": "Telok Ayer Tawar",
+   "state": "Penang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.06 TUPONG",
+   "code": "N.06",
+   "name": "N.06 Tupong",
+   "constituency": "Tupong",
+   "state": "Sarawak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.07 BATANG KALI",
+   "code": "N.07",
+   "name": "N.07 Batang Kali",
+   "constituency": "Batang Kali",
+   "state": "Selangor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.07 BATU KURAU",
+   "code": "N.07",
+   "name": "N.07 Batu Kurau",
+   "constituency": "Batu Kurau",
+   "state": "Perak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.07 BUKIT KEPONG",
+   "code": "N.07",
+   "name": "N.07 Bukit Kepong",
+   "constituency": "Bukit Kepong",
+   "state": "Johor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.07 GADEK",
+   "code": "N.07",
+   "name": "N.07 Gadek",
+   "constituency": "Gadek",
+   "state": "Malacca",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.07 JERAM PADANG",
+   "code": "N.07",
+   "name": "N.07 Jeram Padang",
+   "constituency": "Jeram Padang",
+   "state": "Negeri Sembilan",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.07 KUALA NERANG",
+   "code": "N.07",
+   "name": "N.07 Kuala Nerang",
+   "constituency": "Kuala Nerang",
+   "state": "Kedah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.07 LANGKAP",
+   "code": "N.07",
+   "name": "N.07 Langkap",
+   "constituency": "Langkap",
+   "state": "Terengganu",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.07 PANCHOR",
+   "code": "N.07",
+   "name": "N.07 Panchor",
+   "constituency": "Panchor",
+   "state": "Kelantan",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.07 SAMARIANG",
+   "code": "N.07",
+   "name": "N.07 Samariang",
+   "constituency": "Samariang",
+   "state": "Sarawak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.07 SENA",
+   "code": "N.07",
+   "name": "N.07 Sena",
+   "constituency": "Sena",
+   "state": "Perlis",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.07 SUNGAI PUYU",
+   "code": "N.07",
+   "name": "N.07 Sungai Puyu",
+   "constituency": "Sungai Puyu",
+   "state": "Penang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.07 TANDEK",
+   "code": "N.07",
+   "name": "N.07 Tandek",
+   "constituency": "Tandek",
+   "state": "Sabah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.07 TRAS",
+   "code": "N.07",
+   "name": "N.07 Tras",
+   "constituency": "Tras",
+   "state": "Pahang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.08 BAGAN JERMAL",
+   "code": "N.08",
+   "name": "N.08 Bagan Jermal",
+   "constituency": "Bagan Jermal",
+   "state": "Penang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.08 BAHAU",
+   "code": "N.08",
+   "name": "N.08 Bahau",
+   "constituency": "Bahau",
+   "state": "Negeri Sembilan",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.08 BATU RAKIT",
+   "code": "N.08",
+   "name": "N.08 Batu Rakit",
+   "constituency": "Batu Rakit",
+   "state": "Terengganu",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.08 BUKIT PASIR",
+   "code": "N.08",
+   "name": "N.08 Bukit Pasir",
+   "constituency": "Bukit Pasir",
+   "state": "Johor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.08 DONG",
+   "code": "N.08",
+   "name": "N.08 Dong",
+   "constituency": "Dong",
+   "state": "Pahang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.08 INDERA KAYANGAN",
+   "code": "N.08",
+   "name": "N.08 Indera Kayangan",
+   "constituency": "Indera Kayangan",
+   "state": "Perlis",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.08 MACHAP JAYA",
+   "code": "N.08",
+   "name": "N.08 Machap Jaya",
+   "constituency": "Machap Jaya",
+   "state": "Malacca",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.08 PEDU",
+   "code": "N.08",
+   "name": "N.08 Pedu",
+   "constituency": "Pedu",
+   "state": "Kedah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.08 PINTASAN",
+   "code": "N.08",
+   "name": "N.08 Pintasan",
+   "constituency": "Pintasan",
+   "state": "Sabah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.08 SATOK",
+   "code": "N.08",
+   "name": "N.08 Satok",
+   "constituency": "Satok",
+   "state": "Sarawak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.08 SUNGAI BURONG",
+   "code": "N.08",
+   "name": "N.08 Sungai Burong",
+   "constituency": "Sungai Burong",
+   "state": "Selangor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.08 TANJONG MAS",
+   "code": "N.08",
+   "name": "N.08 Tanjong Mas",
+   "constituency": "Tanjong Mas",
+   "state": "Kelantan",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.08 TITI SERONG",
+   "code": "N.08",
+   "name": "N.08 Titi Serong",
+   "constituency": "Titi Serong",
+   "state": "Perak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.09 BAGAN DALAM",
+   "code": "N.09",
+   "name": "N.09 Bagan Dalam",
+   "constituency": "Bagan Dalam",
+   "state": "Penang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.09 BUKIT LADA",
+   "code": "N.09",
+   "name": "N.09 Bukit Lada",
+   "constituency": "Bukit Lada",
+   "state": "Kedah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.09 DURIAN TUNGGAL",
+   "code": "N.09",
+   "name": "N.09 Durian Tunggal",
+   "constituency": "Durian Tunggal",
+   "state": "Malacca",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.09 GAMBIR",
+   "code": "N.09",
+   "name": "N.09 Gambir",
+   "constituency": "Gambir",
+   "state": "Johor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.09 KOTA LAMA",
+   "code": "N.09",
+   "name": "N.09 Kota Lama",
+   "constituency": "Kota Lama",
+   "state": "Kelantan",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.09 KUALA KURAU",
+   "code": "N.09",
+   "name": "N.09 Kuala Kurau",
+   "constituency": "Kuala Kurau",
+   "state": "Perak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.09 KUALA PERLIS",
+   "code": "N.09",
+   "name": "N.09 Kuala Perlis",
+   "constituency": "Kuala Perlis",
+   "state": "Perlis",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.09 LENGGENG",
+   "code": "N.09",
+   "name": "N.09 Lenggeng",
+   "constituency": "Lenggeng",
+   "state": "Negeri Sembilan",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.09 PADUNGAN",
+   "code": "N.09",
+   "name": "N.09 Padungan",
+   "constituency": "Padungan",
+   "state": "Sarawak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.09 PERMATANG",
+   "code": "N.09",
+   "name": "N.09 Permatang",
+   "constituency": "Permatang",
+   "state": "Selangor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.09 TAHAN",
+   "code": "N.09",
+   "name": "N.09 Tahan",
+   "constituency": "Tahan",
+   "state": "Pahang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.09 TEMPASUK",
+   "code": "N.09",
+   "name": "N.09 Tempasuk",
+   "constituency": "Tempasuk",
+   "state": "Sabah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.09 TEPUH",
+   "code": "N.09",
+   "name": "N.09 Tepuh",
+   "constituency": "Tepuh",
+   "state": "Terengganu",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.10 ALOR PONGSU",
+   "code": "N.10",
+   "name": "N.10 Alor Pongsu",
+   "constituency": "Alor Pongsu",
+   "state": "Perak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.10 ASAHAN",
+   "code": "N.10",
+   "name": "N.10 Asahan",
+   "constituency": "Asahan",
+   "state": "Malacca",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.10 BUKIT MELAWATI",
+   "code": "N.10",
+   "name": "N.10 Bukit Melawati",
+   "constituency": "Bukit Melawati",
+   "state": "Selangor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.10 BUKIT PINANG",
+   "code": "N.10",
+   "name": "N.10 Bukit Pinang",
+   "constituency": "Bukit Pinang",
+   "state": "Kedah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.10 BULUH GADING",
+   "code": "N.10",
+   "name": "N.10 Buluh Gading",
+   "constituency": "Buluh Gading",
+   "state": "Terengganu",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.10 BUNUT PAYONG",
+   "code": "N.10",
+   "name": "N.10 Bunut Payong",
+   "constituency": "Bunut Payong",
+   "state": "Kelantan",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.10 DAMAK",
+   "code": "N.10",
+   "name": "N.10 Damak",
+   "constituency": "Damak",
+   "state": "Pahang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.10 KAYANG",
+   "code": "N.10",
+   "name": "N.10 Kayang",
+   "constituency": "Kayang",
+   "state": "Perlis",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.10 NILAI",
+   "code": "N.10",
+   "name": "N.10 Nilai",
+   "constituency": "Nilai",
+   "state": "Negeri Sembilan",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.10 PENDING",
+   "code": "N.10",
+   "name": "N.10 Pending",
+   "constituency": "Pending",
+   "state": "Sarawak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.10 SEBERANG JAYA",
+   "code": "N.10",
+   "name": "N.10 Seberang Jaya",
+   "constituency": "Seberang Jaya",
+   "state": "Penang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.10 TANGKAK",
+   "code": "N.10",
+   "name": "N.10 Tangkak",
+   "constituency": "Tangkak",
+   "state": "Johor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.10 USUKAN",
+   "code": "N.10",
+   "name": "N.10 Usukan",
+   "constituency": "Usukan",
+   "state": "Sabah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.11 BATU LINTANG",
+   "code": "N.11",
+   "name": "N.11 Batu Lintang",
+   "constituency": "Batu Lintang",
+   "state": "Sarawak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.11 DERGA",
+   "code": "N.11",
+   "name": "N.11 Derga",
+   "constituency": "Derga",
+   "state": "Kedah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.11 GUNONG SEMANGGOL",
+   "code": "N.11",
+   "name": "N.11 Gunong Semanggol",
+   "constituency": "Gunong Semanggol",
+   "state": "Perak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.11 IJOK",
+   "code": "N.11",
+   "name": "N.11 Ijok",
+   "constituency": "Ijok",
+   "state": "Selangor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.11 KADAMAIAN",
+   "code": "N.11",
+   "name": "N.11 Kadamaian",
+   "constituency": "Kadamaian",
+   "state": "Sabah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.11 LOBAK",
+   "code": "N.11",
+   "name": "N.11 Lobak",
+   "constituency": "Lobak",
+   "state": "Negeri Sembilan",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.11 PAUH",
+   "code": "N.11",
+   "name": "N.11 Pauh",
+   "constituency": "Pauh",
+   "state": "Perlis",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.11 PERMATANG PASIR",
+   "code": "N.11",
+   "name": "N.11 Permatang Pasir",
+   "constituency": "Permatang Pasir",
+   "state": "Penang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.11 PULAU TAWAR",
+   "code": "N.11",
+   "name": "N.11 Pulau Tawar",
+   "constituency": "Pulau Tawar",
+   "state": "Pahang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.11 SEBERANG TAKIR",
+   "code": "N.11",
+   "name": "N.11 Seberang Takir",
+   "constituency": "Seberang Takir",
+   "state": "Terengganu",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.11 SEROM",
+   "code": "N.11",
+   "name": "N.11 Serom",
+   "constituency": "Serom",
+   "state": "Johor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.11 SUNGAI UDANG",
+   "code": "N.11",
+   "name": "N.11 Sungai Udang",
+   "constituency": "Sungai Udang",
+   "state": "Malacca",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.11 TENDONG",
+   "code": "N.11",
+   "name": "N.11 Tendong",
+   "constituency": "Tendong",
+   "state": "Kelantan",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.12 BENTAYAN",
+   "code": "N.12",
+   "name": "N.12 Bentayan",
+   "constituency": "Bentayan",
+   "state": "Johor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.12 BESERAH",
+   "code": "N.12",
+   "name": "N.12 Beserah",
+   "constituency": "Beserah",
+   "state": "Pahang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.12 BUKIT TUNGGAL",
+   "code": "N.12",
+   "name": "N.12 Bukit Tunggal",
+   "constituency": "Bukit Tunggal",
+   "state": "Terengganu",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.12 JERAM",
+   "code": "N.12",
+   "name": "N.12 Jeram",
+   "constituency": "Jeram",
+   "state": "Selangor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.12 KOTA SENTOSA",
+   "code": "N.12",
+   "name": "N.12 Kota Sentosa",
+   "constituency": "Kota Sentosa",
+   "state": "Sarawak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.12 PANTAI KUNDOR",
+   "code": "N.12",
+   "name": "N.12 Pantai Kundor",
+   "constituency": "Pantai Kundor",
+   "state": "Malacca",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.12 PENANTI",
+   "code": "N.12",
+   "name": "N.12 Penanti",
+   "constituency": "Penanti",
+   "state": "Penang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.12 PENGKALAN PASIR",
+   "code": "N.12",
+   "name": "N.12 Pengkalan Pasir",
+   "constituency": "Pengkalan Pasir",
+   "state": "Kelantan",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.12 SELINSING",
+   "code": "N.12",
+   "name": "N.12 Selinsing",
+   "constituency": "Selinsing",
+   "state": "Perak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.12 SUKA MENANTI",
+   "code": "N.12",
+   "name": "N.12 Suka Menanti",
+   "constituency": "Suka Menanti",
+   "state": "Kedah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.12 SULAMAN",
+   "code": "N.12",
+   "name": "N.12 Sulaman",
+   "constituency": "Sulaman",
+   "state": "Sabah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.12 TAMBUN TULANG",
+   "code": "N.12",
+   "name": "N.12 Tambun Tulang",
+   "constituency": "Tambun Tulang",
+   "state": "Perlis",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.12 TEMIANG",
+   "code": "N.12",
+   "name": "N.12 Temiang",
+   "constituency": "Temiang",
+   "state": "Negeri Sembilan",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.13 BATU KITANG",
+   "code": "N.13",
+   "name": "N.13 Batu Kitang",
+   "constituency": "Batu Kitang",
+   "state": "Sarawak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.13 BERAPIT",
+   "code": "N.13",
+   "name": "N.13 Berapit",
+   "constituency": "Berapit",
+   "state": "Penang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.13 GUAR SANJI",
+   "code": "N.13",
+   "name": "N.13 Guar Sanji",
+   "constituency": "Guar Sanji",
+   "state": "Perlis",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.13 KOTA DARUL AMAN",
+   "code": "N.13",
+   "name": "N.13 Kota Darul Aman",
+   "constituency": "Kota Darul Aman",
+   "state": "Kedah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.13 KUALA SEPETANG",
+   "code": "N.13",
+   "name": "N.13 Kuala Sepetang",
+   "constituency": "Kuala Sepetang",
+   "state": "Perak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.13 KUANG",
+   "code": "N.13",
+   "name": "N.13 Kuang",
+   "constituency": "Kuang",
+   "state": "Selangor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.13 MERANTI",
+   "code": "N.13",
+   "name": "N.13 Meranti",
+   "constituency": "Meranti",
+   "state": "Kelantan",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.13 PANTAI DALIT",
+   "code": "N.13",
+   "name": "N.13 Pantai Dalit",
+   "constituency": "Pantai Dalit",
+   "state": "Sabah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.13 PAYA RUMPUT",
+   "code": "N.13",
+   "name": "N.13 Paya Rumput",
+   "constituency": "Paya Rumput",
+   "state": "Malacca",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.13 SEMAMBU",
+   "code": "N.13",
+   "name": "N.13 Semambu",
+   "constituency": "Semambu",
+   "state": "Pahang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.13 SIKAMAT",
+   "code": "N.13",
+   "name": "N.13 Sikamat",
+   "constituency": "Sikamat",
+   "state": "Negeri Sembilan",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.13 SIMPANG JERAM",
+   "code": "N.13",
+   "name": "N.13 Simpang Jeram",
+   "constituency": "Simpang Jeram",
+   "state": "Johor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.13 WAKAF MEMPELAM",
+   "code": "N.13",
+   "name": "N.13 Wakaf Mempelam",
+   "constituency": "Wakaf Mempelam",
+   "state": "Terengganu",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.14 ALOR MENGKUDU",
+   "code": "N.14",
+   "name": "N.14 Alor Mengkudu",
+   "constituency": "Alor Mengkudu",
+   "state": "Kedah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.14 AMPANGAN",
+   "code": "N.14",
+   "name": "N.14 Ampangan",
+   "constituency": "Ampangan",
+   "state": "Negeri Sembilan",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.14 BANDAR",
+   "code": "N.14",
+   "name": "N.14 Bandar",
+   "constituency": "Bandar",
+   "state": "Terengganu",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.14 BATU KAWAH",
+   "code": "N.14",
+   "name": "N.14 Batu Kawah",
+   "constituency": "Batu Kawah",
+   "state": "Sarawak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.14 BUKIT NANING",
+   "code": "N.14",
+   "name": "N.14 Bukit Naning",
+   "constituency": "Bukit Naning",
+   "state": "Johor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.14 CHANGKAT JERING",
+   "code": "N.14",
+   "name": "N.14 Changkat Jering",
+   "constituency": "Changkat Jering",
+   "state": "Perak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.14 CHETOK",
+   "code": "N.14",
+   "name": "N.14 Chetok",
+   "constituency": "Chetok",
+   "state": "Kelantan",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.14 KELEBANG",
+   "code": "N.14",
+   "name": "N.14 Kelebang",
+   "constituency": "Kelebang",
+   "state": "Malacca",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.14 MACHANG BUBUK",
+   "code": "N.14",
+   "name": "N.14 Machang Bubuk",
+   "constituency": "Machang Bubuk",
+   "state": "Penang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.14 RAWANG",
+   "code": "N.14",
+   "name": "N.14 Rawang",
+   "constituency": "Rawang",
+   "state": "Selangor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.14 SIMPANG EMPAT",
+   "code": "N.14",
+   "name": "N.14 Simpang Empat",
+   "constituency": "Simpang Empat",
+   "state": "Perlis",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.14 TAMPARULI",
+   "code": "N.14",
+   "name": "N.14 Tamparuli",
+   "constituency": "Tamparuli",
+   "state": "Sabah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.14 TERUNTUM",
+   "code": "N.14",
+   "name": "N.14 Teruntum",
+   "constituency": "Teruntum",
+   "state": "Pahang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.15 ANAK BUKIT",
+   "code": "N.15",
+   "name": "N.15 Anak Bukit",
+   "constituency": "Anak Bukit",
+   "state": "Kedah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.15 ASAJAYA",
+   "code": "N.15",
+   "name": "N.15 Asajaya",
+   "constituency": "Asajaya",
+   "state": "Sarawak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.15 GUAL PERIOK",
+   "code": "N.15",
+   "name": "N.15 Gual Periok",
+   "constituency": "Gual Periok",
+   "state": "Kelantan",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.15 JUASSEH",
+   "code": "N.15",
+   "name": "N.15 Juasseh",
+   "constituency": "Juasseh",
+   "state": "Negeri Sembilan",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.15 KIULU",
+   "code": "N.15",
+   "name": "N.15 Kiulu",
+   "constituency": "Kiulu",
+   "state": "Sabah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.15 LADANG",
+   "code": "N.15",
+   "name": "N.15 Ladang",
+   "constituency": "Ladang",
+   "state": "Terengganu",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.15 MAHARANI",
+   "code": "N.15",
+   "name": "N.15 Maharani",
+   "constituency": "Maharani",
+   "state": "Johor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.15 PADANG LALANG",
+   "code": "N.15",
+   "name": "N.15 Padang Lalang",
+   "constituency": "Padang Lalang",
+   "state": "Penang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.15 PENGKALAN BATU",
+   "code": "N.15",
+   "name": "N.15 Pengkalan Batu",
+   "constituency": "Pengkalan Batu",
+   "state": "Malacca",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.15 SANGLANG",
+   "code": "N.15",
+   "name": "N.15 Sanglang",
+   "constituency": "Sanglang",
+   "state": "Perlis",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.15 TAMAN TEMPLER",
+   "code": "N.15",
+   "name": "N.15 Taman Templer",
+   "constituency": "Taman Templer",
+   "state": "Selangor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.15 TANJUNG LUMPUR",
+   "code": "N.15",
+   "name": "N.15 Tanjung Lumpur",
+   "constituency": "Tanjung Lumpur",
+   "state": "Pahang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.15 TRONG",
+   "code": "N.15",
+   "name": "N.15 Trong",
+   "constituency": "Trong",
+   "state": "Perak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.16 APAM PUTRA",
+   "code": "N.16",
+   "name": "N.16 Apam Putra",
+   "constituency": "Apam Putra",
+   "state": "Kelantan",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.16 AYER KEROH",
+   "code": "N.16",
+   "name": "N.16 Ayer Keroh",
+   "constituency": "Ayer Keroh",
+   "state": "Malacca",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.16 BATU BURUK",
+   "code": "N.16",
+   "name": "N.16 Batu Buruk",
+   "constituency": "Batu Buruk",
+   "state": "Terengganu",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.16 INDERAPURA",
+   "code": "N.16",
+   "name": "N.16 Inderapura",
+   "constituency": "Inderapura",
+   "state": "Pahang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.16 KAMUNTING",
+   "code": "N.16",
+   "name": "N.16 Kamunting",
+   "constituency": "Kamunting",
+   "state": "Perak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.16 KARAMBUNAI",
+   "code": "N.16",
+   "name": "N.16 Karambunai",
+   "constituency": "Karambunai",
+   "state": "Sabah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.16 KUBANG ROTAN",
+   "code": "N.16",
+   "name": "N.16 Kubang Rotan",
+   "constituency": "Kubang Rotan",
+   "state": "Kedah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.16 MUARA TUANG",
+   "code": "N.16",
+   "name": "N.16 Muara Tuang",
+   "constituency": "Muara Tuang",
+   "state": "Sarawak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.16 PERAI",
+   "code": "N.16",
+   "name": "N.16 Perai",
+   "constituency": "Perai",
+   "state": "Penang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.16 SERI MENANTI",
+   "code": "N.16",
+   "name": "N.16 Seri Menanti",
+   "constituency": "Seri Menanti",
+   "state": "Negeri Sembilan",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.16 SUNGAI BALANG",
+   "code": "N.16",
+   "name": "N.16 Sungai Balang",
+   "constituency": "Sungai Balang",
+   "state": "Johor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.16 SUNGAI TUA",
+   "code": "N.16",
+   "name": "N.16 Sungai Tua",
+   "constituency": "Sungai Tua",
+   "state": "Selangor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.17 ALUR LIMBAT",
+   "code": "N.17",
+   "name": "N.17 Alur Limbat",
+   "constituency": "Alur Limbat",
+   "state": "Terengganu",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.17 BUKIT KATIL",
+   "code": "N.17",
+   "name": "N.17 Bukit Katil",
+   "constituency": "Bukit Katil",
+   "state": "Malacca",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.17 BUKIT TENGAH",
+   "code": "N.17",
+   "name": "N.17 Bukit Tengah",
+   "constituency": "Bukit Tengah",
+   "state": "Penang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.17 DARAU",
+   "code": "N.17",
+   "name": "N.17 Darau",
+   "constituency": "Darau",
+   "state": "Sabah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.17 GOMBAK SETIA",
+   "code": "N.17",
+   "name": "N.17 Gombak Setia",
+   "constituency": "Gombak Setia",
+   "state": "Selangor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.17 PENGKALAN KUNDOR",
+   "code": "N.17",
+   "name": "N.17 Pengkalan Kundor",
+   "constituency": "Pengkalan Kundor",
+   "state": "Kedah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.17 POKOK ASSAM",
+   "code": "N.17",
+   "name": "N.17 Pokok Assam",
+   "constituency": "Pokok Assam",
+   "state": "Perak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.17 SALOR",
+   "code": "N.17",
+   "name": "N.17 Salor",
+   "constituency": "Salor",
+   "state": "Kelantan",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.17 SEMERAH",
+   "code": "N.17",
+   "name": "N.17 Semerah",
+   "constituency": "Semerah",
+   "state": "Johor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.17 SENALING",
+   "code": "N.17",
+   "name": "N.17 Senaling",
+   "constituency": "Senaling",
+   "state": "Negeri Sembilan",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.17 STAKAN",
+   "code": "N.17",
+   "name": "N.17 Stakan",
+   "constituency": "Stakan",
+   "state": "Sarawak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.17 SUNGAI LEMBING",
+   "code": "N.17",
+   "name": "N.17 Sungai Lembing",
+   "constituency": "Sungai Lembing",
+   "state": "Pahang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.18 AULONG",
+   "code": "N.18",
+   "name": "N.18 Aulong",
+   "constituency": "Aulong",
+   "state": "Perak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.18 AYER MOLEK",
+   "code": "N.18",
+   "name": "N.18 Ayer Molek",
+   "constituency": "Ayer Molek",
+   "state": "Malacca",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.18 BUKIT PAYUNG",
+   "code": "N.18",
+   "name": "N.18 Bukit Payung",
+   "constituency": "Bukit Payung",
+   "state": "Terengganu",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.18 BUKIT TAMBUN",
+   "code": "N.18",
+   "name": "N.18 Bukit Tambun",
+   "constituency": "Bukit Tambun",
+   "state": "Penang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.18 HULU KELANG",
+   "code": "N.18",
+   "name": "N.18 Hulu Kelang",
+   "constituency": "Hulu Kelang",
+   "state": "Selangor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.18 INANAM",
+   "code": "N.18",
+   "name": "N.18 Inanam",
+   "constituency": "Inanam",
+   "state": "Sabah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.18 LEPAR",
+   "code": "N.18",
+   "name": "N.18 Lepar",
+   "constituency": "Lepar",
+   "state": "Pahang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.18 PASIR TUMBOH",
+   "code": "N.18",
+   "name": "N.18 Pasir Tumboh",
+   "constituency": "Pasir Tumboh",
+   "state": "Kelantan",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.18 PILAH",
+   "code": "N.18",
+   "name": "N.18 Pilah",
+   "constituency": "Pilah",
+   "state": "Negeri Sembilan",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.18 SEREMBU",
+   "code": "N.18",
+   "name": "N.18 Serembu",
+   "constituency": "Serembu",
+   "state": "Sarawak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.18 SRI MEDAN",
+   "code": "N.18",
+   "name": "N.18 Sri Medan",
+   "constituency": "Sri Medan",
+   "state": "Johor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.18 TOKAI",
+   "code": "N.18",
+   "name": "N.18 Tokai",
+   "constituency": "Tokai",
+   "state": "Kedah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.19 BUKIT ANTARABANGSA",
+   "code": "N.19",
+   "name": "N.19 Bukit Antarabangsa",
+   "constituency": "Bukit Antarabangsa",
+   "state": "Selangor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.19 CHENDEROH",
+   "code": "N.19",
+   "name": "N.19 Chenderoh",
+   "constituency": "Chenderoh",
+   "state": "Perak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.19 DEMIT",
+   "code": "N.19",
+   "name": "N.19 Demit",
+   "constituency": "Demit",
+   "state": "Kelantan",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.19 JAWI",
+   "code": "N.19",
+   "name": "N.19 Jawi",
+   "constituency": "Jawi",
+   "state": "Penang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.19 JOHOL",
+   "code": "N.19",
+   "name": "N.19 Johol",
+   "constituency": "Johol",
+   "state": "Negeri Sembilan",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.19 KESIDANG",
+   "code": "N.19",
+   "name": "N.19 Kesidang",
+   "constituency": "Kesidang",
+   "state": "Malacca",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.19 LIKAS",
+   "code": "N.19",
+   "name": "N.19 Likas",
+   "constituency": "Likas",
+   "state": "Sabah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.19 MAMBONG",
+   "code": "N.19",
+   "name": "N.19 Mambong",
+   "constituency": "Mambong",
+   "state": "Sarawak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.19 PANCHING",
+   "code": "N.19",
+   "name": "N.19 Panching",
+   "constituency": "Panching",
+   "state": "Pahang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.19 RU RENDANG",
+   "code": "N.19",
+   "name": "N.19 Ru Rendang",
+   "constituency": "Ru Rendang",
+   "state": "Terengganu",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.19 SUNGAI TIANG",
+   "code": "N.19",
+   "name": "N.19 Sungai Tiang",
+   "constituency": "Sungai Tiang",
+   "state": "Kedah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.19 YONG PENG",
+   "code": "N.19",
+   "name": "N.19 Yong Peng",
+   "constituency": "Yong Peng",
+   "state": "Johor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.20 API-API",
+   "code": "N.20",
+   "name": "N.20 Api-Api",
+   "constituency": "Api-Api",
+   "state": "Sabah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.20 KOTA LAKSAMANA",
+   "code": "N.20",
+   "name": "N.20 Kota Laksamana",
+   "constituency": "Kota Laksamana",
+   "state": "Malacca",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.20 LABU",
+   "code": "N.20",
+   "name": "N.20 Labu",
+   "constituency": "Labu",
+   "state": "Negeri Sembilan",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.20 LEMBAH JAYA",
+   "code": "N.20",
+   "name": "N.20 Lembah Jaya",
+   "constituency": "Lembah Jaya",
+   "state": "Selangor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.20 LUBOK MERBAU",
+   "code": "N.20",
+   "name": "N.20 Lubok Merbau",
+   "constituency": "Lubok Merbau",
+   "state": "Perak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.20 PENGKALAN BERANGAN",
+   "code": "N.20",
+   "name": "N.20 Pengkalan Berangan",
+   "constituency": "Pengkalan Berangan",
+   "state": "Terengganu",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.20 PULAU MANIS",
+   "code": "N.20",
+   "name": "N.20 Pulau Manis",
+   "constituency": "Pulau Manis",
+   "state": "Pahang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.20 SEMARANG",
+   "code": "N.20",
+   "name": "N.20 Semarang",
+   "constituency": "Semarang",
+   "state": "Johor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.20 SUNGAI BAKAP",
+   "code": "N.20",
+   "name": "N.20 Sungai Bakap",
+   "constituency": "Sungai Bakap",
+   "state": "Penang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.20 SUNGAI LIMAU",
+   "code": "N.20",
+   "name": "N.20 Sungai Limau",
+   "constituency": "Sungai Limau",
+   "state": "Kedah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.20 TARAT",
+   "code": "N.20",
+   "name": "N.20 Tarat",
+   "constituency": "Tarat",
+   "state": "Sarawak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.20 TAWANG",
+   "code": "N.20",
+   "name": "N.20 Tawang",
+   "constituency": "Tawang",
+   "state": "Kelantan",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.21 BUKIT KEPAYANG",
+   "code": "N.21",
+   "name": "N.21 Bukit Kepayang",
+   "constituency": "Bukit Kepayang",
+   "state": "Negeri Sembilan",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.21 DUYONG",
+   "code": "N.21",
+   "name": "N.21 Duyong",
+   "constituency": "Duyong",
+   "state": "Malacca",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.21 GUAR CHEMPEDAK",
+   "code": "N.21",
+   "name": "N.21 Guar Chempedak",
+   "constituency": "Guar Chempedak",
+   "state": "Kedah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.21 LINTANG",
+   "code": "N.21",
+   "name": "N.21 Lintang",
+   "constituency": "Lintang",
+   "state": "Perak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.21 LUYANG",
+   "code": "N.21",
+   "name": "N.21 Luyang",
+   "constituency": "Luyang",
+   "state": "Sabah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.21 PANDAN INDAH",
+   "code": "N.21",
+   "name": "N.21 Pandan Indah",
+   "constituency": "Pandan Indah",
+   "state": "Selangor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.21 PANTAI IRAMA",
+   "code": "N.21",
+   "name": "N.21 Pantai Irama",
+   "constituency": "Pantai Irama",
+   "state": "Kelantan",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.21 PARIT YAANI",
+   "code": "N.21",
+   "name": "N.21 Parit Yaani",
+   "constituency": "Parit Yaani",
+   "state": "Johor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.21 PERAMU JAYA",
+   "code": "N.21",
+   "name": "N.21 Peramu Jaya",
+   "constituency": "Peramu Jaya",
+   "state": "Pahang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.21 SUNGAI ACHEH",
+   "code": "N.21",
+   "name": "N.21 Sungai Acheh",
+   "constituency": "Sungai Acheh",
+   "state": "Penang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.21 TEBEDU",
+   "code": "N.21",
+   "name": "N.21 Tebedu",
+   "constituency": "Tebedu",
+   "state": "Sarawak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.21 TELEMUNG",
+   "code": "N.21",
+   "name": "N.21 Telemung",
+   "constituency": "Telemung",
+   "state": "Terengganu",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.22 BANDAR HILIR",
+   "code": "N.22",
+   "name": "N.22 Bandar Hilir",
+   "constituency": "Bandar Hilir",
+   "state": "Malacca",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.22 BEBAR",
+   "code": "N.22",
+   "name": "N.22 Bebar",
+   "constituency": "Bebar",
+   "state": "Pahang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.22 GURUN",
+   "code": "N.22",
+   "name": "N.22 Gurun",
+   "constituency": "Gurun",
+   "state": "Kedah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.22 JALONG",
+   "code": "N.22",
+   "name": "N.22 Jalong",
+   "constituency": "Jalong",
+   "state": "Perak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.22 JELAWAT",
+   "code": "N.22",
+   "name": "N.22 Jelawat",
+   "constituency": "Jelawat",
+   "state": "Kelantan",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.22 KEDUP",
+   "code": "N.22",
+   "name": "N.22 Kedup",
+   "constituency": "Kedup",
+   "state": "Sarawak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.22 MANIR",
+   "code": "N.22",
+   "name": "N.22 Manir",
+   "constituency": "Manir",
+   "state": "Terengganu",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.22 PARIT RAJA",
+   "code": "N.22",
+   "name": "N.22 Parit Raja",
+   "constituency": "Parit Raja",
+   "state": "Johor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.22 RAHANG",
+   "code": "N.22",
+   "name": "N.22 Rahang",
+   "constituency": "Rahang",
+   "state": "Negeri Sembilan",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.22 TANJONG BUNGA",
+   "code": "N.22",
+   "name": "N.22 Tanjong Bunga",
+   "constituency": "Tanjong Bunga",
+   "state": "Penang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.22 TANJUNG ARU",
+   "code": "N.22",
+   "name": "N.22 Tanjung Aru",
+   "constituency": "Tanjung Aru",
+   "state": "Sabah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.22 TERATAI",
+   "code": "N.22",
+   "name": "N.22 Teratai",
+   "constituency": "Teratai",
+   "state": "Selangor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.23 AIR PUTIH",
+   "code": "N.23",
+   "name": "N.23 Air Putih",
+   "constituency": "Air Putih",
+   "state": "Penang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.23 BELANTEK",
+   "code": "N.23",
+   "name": "N.23 Belantek",
+   "constituency": "Belantek",
+   "state": "Kedah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.23 BUKIT SEMUJA",
+   "code": "N.23",
+   "name": "N.23 Bukit Semuja",
+   "constituency": "Bukit Semuja",
+   "state": "Sarawak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.23 CHINI",
+   "code": "N.23",
+   "name": "N.23 Chini",
+   "constituency": "Chini",
+   "state": "Pahang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.23 DUSUN TUA",
+   "code": "N.23",
+   "name": "N.23 Dusun Tua",
+   "constituency": "Dusun Tua",
+   "state": "Selangor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.23 KUALA BERANG",
+   "code": "N.23",
+   "name": "N.23 Kuala Berang",
+   "constituency": "Kuala Berang",
+   "state": "Terengganu",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.23 MAMBAU",
+   "code": "N.23",
+   "name": "N.23 Mambau",
+   "constituency": "Mambau",
+   "state": "Negeri Sembilan",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.23 MANJOI",
+   "code": "N.23",
+   "name": "N.23 Manjoi",
+   "constituency": "Manjoi",
+   "state": "Perak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.23 MELOR",
+   "code": "N.23",
+   "name": "N.23 Melor",
+   "constituency": "Melor",
+   "state": "Kelantan",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.23 PENGGARAM",
+   "code": "N.23",
+   "name": "N.23 Penggaram",
+   "constituency": "Penggaram",
+   "state": "Johor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.23 PETAGAS",
+   "code": "N.23",
+   "name": "N.23 Petagas",
+   "constituency": "Petagas",
+   "state": "Sabah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.23 TELOK MAS",
+   "code": "N.23",
+   "name": "N.23 Telok Mas",
+   "constituency": "Telok Mas",
+   "state": "Malacca",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.24 AJIL",
+   "code": "N.24",
+   "name": "N.24 Ajil",
+   "constituency": "Ajil",
+   "state": "Terengganu",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.24 BEMBAN",
+   "code": "N.24",
+   "name": "N.24 Bemban",
+   "constituency": "Bemban",
+   "state": "Malacca",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.24 HULU KINTA",
+   "code": "N.24",
+   "name": "N.24 Hulu Kinta",
+   "constituency": "Hulu Kinta",
+   "state": "Perak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.24 JENERI",
+   "code": "N.24",
+   "name": "N.24 Jeneri",
+   "constituency": "Jeneri",
+   "state": "Kedah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.24 KADOK",
+   "code": "N.24",
+   "name": "N.24 Kadok",
+   "constituency": "Kadok",
+   "state": "Kelantan",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.24 KEBUN BUNGA",
+   "code": "N.24",
+   "name": "N.24 Kebun Bunga",
+   "constituency": "Kebun Bunga",
+   "state": "Penang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.24 LUIT",
+   "code": "N.24",
+   "name": "N.24 Luit",
+   "constituency": "Luit",
+   "state": "Pahang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.24 SADONG JAYA",
+   "code": "N.24",
+   "name": "N.24 Sadong Jaya",
+   "constituency": "Sadong Jaya",
+   "state": "Sarawak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.24 SEMENYIH",
+   "code": "N.24",
+   "name": "N.24 Semenyih",
+   "constituency": "Semenyih",
+   "state": "Selangor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.24 SENGGARANG",
+   "code": "N.24",
+   "name": "N.24 Senggarang",
+   "constituency": "Senggarang",
+   "state": "Johor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.24 SEREMBAN JAYA",
+   "code": "N.24",
+   "name": "N.24 Seremban Jaya",
+   "constituency": "Seremban Jaya",
+   "state": "Negeri Sembilan",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.24 TANJUNG KERAMAT",
+   "code": "N.24",
+   "name": "N.24 Tanjung Keramat",
+   "constituency": "Tanjung Keramat",
+   "state": "Sabah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.25 BUKIT BESI",
+   "code": "N.25",
+   "name": "N.25 Bukit Besi",
+   "constituency": "Bukit Besi",
+   "state": "Terengganu",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.25 BUKIT SELAMBAU",
+   "code": "N.25",
+   "name": "N.25 Bukit Selambau",
+   "constituency": "Bukit Selambau",
+   "state": "Kedah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.25 CANNING",
+   "code": "N.25",
+   "name": "N.25 Canning",
+   "constituency": "Canning",
+   "state": "Perak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.25 KAJANG",
+   "code": "N.25",
+   "name": "N.25 Kajang",
+   "constituency": "Kajang",
+   "state": "Selangor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.25 KAPAYAN",
+   "code": "N.25",
+   "name": "N.25 Kapayan",
+   "constituency": "Kapayan",
+   "state": "Sabah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.25 KOK LANAS",
+   "code": "N.25",
+   "name": "N.25 Kok Lanas",
+   "constituency": "Kok Lanas",
+   "state": "Kelantan",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.25 KUALA SENTUL",
+   "code": "N.25",
+   "name": "N.25 Kuala Sentul",
+   "constituency": "Kuala Sentul",
+   "state": "Pahang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.25 PAROI",
+   "code": "N.25",
+   "name": "N.25 Paroi",
+   "constituency": "Paroi",
+   "state": "Negeri Sembilan",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.25 PULAU TIKUS",
+   "code": "N.25",
+   "name": "N.25 Pulau Tikus",
+   "constituency": "Pulau Tikus",
+   "state": "Penang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.25 RENGIT",
+   "code": "N.25",
+   "name": "N.25 Rengit",
+   "constituency": "Rengit",
+   "state": "Johor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.25 RIM",
+   "code": "N.25",
+   "name": "N.25 Rim",
+   "constituency": "Rim",
+   "state": "Malacca",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.25 SIMUNJAN",
+   "code": "N.25",
+   "name": "N.25 Simunjan",
+   "constituency": "Simunjan",
+   "state": "Sarawak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.26",
+   "code": "N.26",
+   "name": "N.26",
+   "constituency": "",
+   "state": "",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.26 BUKIT PANAU",
+   "code": "N.26",
+   "name": "N.26 Bukit Panau",
+   "constituency": "Bukit Panau",
+   "state": "Kelantan",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.26 CHEMBONG",
+   "code": "N.26",
+   "name": "N.26 Chembong",
+   "constituency": "Chembong",
+   "state": "Negeri Sembilan",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.26 CHENOR",
+   "code": "N.26",
+   "name": "N.26 Chenor",
+   "constituency": "Chenor",
+   "state": "Pahang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.26 GEDONG",
+   "code": "N.26",
+   "name": "N.26 Gedong",
+   "constituency": "Gedong",
+   "state": "Sarawak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.26 MACHAP",
+   "code": "N.26",
+   "name": "N.26 Machap",
+   "constituency": "Machap",
+   "state": "Johor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.26 MOYOG",
+   "code": "N.26",
+   "name": "N.26 Moyog",
+   "constituency": "Moyog",
+   "state": "Sabah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.26 PADANG KOTA",
+   "code": "N.26",
+   "name": "N.26 Padang Kota",
+   "constituency": "Padang Kota",
+   "state": "Penang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.26 RANTAU ABANG",
+   "code": "N.26",
+   "name": "N.26 Rantau Abang",
+   "constituency": "Rantau Abang",
+   "state": "Terengganu",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.26 SERKAM",
+   "code": "N.26",
+   "name": "N.26 Serkam",
+   "constituency": "Serkam",
+   "state": "Malacca",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.26 SUNGAI RAMAL",
+   "code": "N.26",
+   "name": "N.26 Sungai Ramal",
+   "constituency": "Sungai Ramal",
+   "state": "Selangor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.26 TANJONG DAWAI",
+   "code": "N.26",
+   "name": "N.26 Tanjong Dawai",
+   "constituency": "Tanjong Dawai",
+   "state": "Kedah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.26 TEBING TINGGI",
+   "code": "N.26",
+   "name": "N.26 Tebing Tinggi",
+   "constituency": "Tebing Tinggi",
+   "state": "Perak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.27 BALAKONG",
+   "code": "N.27",
+   "name": "N.27 Balakong",
+   "constituency": "Balakong",
+   "state": "Selangor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.27 GUAL IPOH",
+   "code": "N.27",
+   "name": "N.27 Gual Ipoh",
+   "constituency": "Gual Ipoh",
+   "state": "Kelantan",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.27 JENDERAK",
+   "code": "N.27",
+   "name": "N.27 Jenderak",
+   "constituency": "Jenderak",
+   "state": "Pahang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.27 LAYANG-LAYANG",
+   "code": "N.27",
+   "name": "N.27 Layang-Layang",
+   "constituency": "Layang-Layang",
+   "state": "Johor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.27 LIMBAHAU",
+   "code": "N.27",
+   "name": "N.27 Limbahau",
+   "constituency": "Limbahau",
+   "state": "Sabah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.27 MERLIMAU",
+   "code": "N.27",
+   "name": "N.27 Merlimau",
+   "constituency": "Merlimau",
+   "state": "Malacca",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.27 PANTAI MERDEKA",
+   "code": "N.27",
+   "name": "N.27 Pantai Merdeka",
+   "constituency": "Pantai Merdeka",
+   "state": "Kedah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.27 PASIR PINJI",
+   "code": "N.27",
+   "name": "N.27 Pasir Pinji",
+   "constituency": "Pasir Pinji",
+   "state": "Perak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.27 PENGKALAN KOTA",
+   "code": "N.27",
+   "name": "N.27 Pengkalan Kota",
+   "constituency": "Pengkalan Kota",
+   "state": "Penang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.27 RANTAU",
+   "code": "N.27",
+   "name": "N.27 Rantau",
+   "constituency": "Rantau",
+   "state": "Negeri Sembilan",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.27 SEBUYAU",
+   "code": "N.27",
+   "name": "N.27 Sebuyau",
+   "constituency": "Sebuyau",
+   "state": "Sarawak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.27 SURA",
+   "code": "N.27",
+   "name": "N.27 Sura",
+   "constituency": "Sura",
+   "state": "Terengganu",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.28 BAKAR ARANG",
+   "code": "N.28",
+   "name": "N.28 Bakar Arang",
+   "constituency": "Bakar Arang",
+   "state": "Kedah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.28 BERCHAM",
+   "code": "N.28",
+   "name": "N.28 Bercham",
+   "constituency": "Bercham",
+   "state": "Perak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.28 KAWANG",
+   "code": "N.28",
+   "name": "N.28 Kawang",
+   "constituency": "Kawang",
+   "state": "Sabah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.28 KEMAHANG",
+   "code": "N.28",
+   "name": "N.28 Kemahang",
+   "constituency": "Kemahang",
+   "state": "Kelantan",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.28 KERDAU",
+   "code": "N.28",
+   "name": "N.28 Kerdau",
+   "constituency": "Kerdau",
+   "state": "Pahang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.28 KOMTAR",
+   "code": "N.28",
+   "name": "N.28 Komtar",
+   "constituency": "Komtar",
+   "state": "Penang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.28 KOTA",
+   "code": "N.28",
+   "name": "N.28 Kota",
+   "constituency": "Kota",
+   "state": "Negeri Sembilan",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.28 LINGGA",
+   "code": "N.28",
+   "name": "N.28 Lingga",
+   "constituency": "Lingga",
+   "state": "Sarawak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.28 MENGKIBOL",
+   "code": "N.28",
+   "name": "N.28 Mengkibol",
+   "constituency": "Mengkibol",
+   "state": "Johor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.28 PAKA",
+   "code": "N.28",
+   "name": "N.28 Paka",
+   "constituency": "Paka",
+   "state": "Terengganu",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.28 SERI KEMBANGAN",
+   "code": "N.28",
+   "name": "N.28 Seri Kembangan",
+   "constituency": "Seri Kembangan",
+   "state": "Selangor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.28 SUNGAI RAMBAI",
+   "code": "N.28",
+   "name": "N.28 Sungai Rambai",
+   "constituency": "Sungai Rambai",
+   "state": "Malacca",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.29 BETING MARO",
+   "code": "N.29",
+   "name": "N.29 Beting Maro",
+   "constituency": "Beting Maro",
+   "state": "Sarawak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.29 CHUAH",
+   "code": "N.29",
+   "name": "N.29 Chuah",
+   "constituency": "Chuah",
+   "state": "Negeri Sembilan",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.29 DATOK KERAMAT",
+   "code": "N.29",
+   "name": "N.29 Datok Keramat",
+   "constituency": "Datok Keramat",
+   "state": "Penang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.29 JENGKA",
+   "code": "N.29",
+   "name": "N.29 Jengka",
+   "constituency": "Jengka",
+   "state": "Pahang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.29 KEMASIK",
+   "code": "N.29",
+   "name": "N.29 Kemasik",
+   "constituency": "Kemasik",
+   "state": "Terengganu",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.29 KEPAYANG",
+   "code": "N.29",
+   "name": "N.29 Kepayang",
+   "constituency": "Kepayang",
+   "state": "Perak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.29 MAHKOTA",
+   "code": "N.29",
+   "name": "N.29 Mahkota",
+   "constituency": "Mahkota",
+   "state": "Johor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.29 PANTAI MANIS",
+   "code": "N.29",
+   "name": "N.29 Pantai Manis",
+   "constituency": "Pantai Manis",
+   "state": "Sabah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.29 SELISING",
+   "code": "N.29",
+   "name": "N.29 Selising",
+   "constituency": "Selising",
+   "state": "Kelantan",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.29 SERI SERDANG",
+   "code": "N.29",
+   "name": "N.29 Seri Serdang",
+   "constituency": "Seri Serdang",
+   "state": "Selangor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.29 SIDAM",
+   "code": "N.29",
+   "name": "N.29 Sidam",
+   "constituency": "Sidam",
+   "state": "Kedah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.30 BALAI RINGIN",
+   "code": "N.30",
+   "name": "N.30 Balai Ringin",
+   "constituency": "Balai Ringin",
+   "state": "Sarawak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.30 BAYU",
+   "code": "N.30",
+   "name": "N.30 Bayu",
+   "constituency": "Bayu",
+   "state": "Kedah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.30 BONGAWAN",
+   "code": "N.30",
+   "name": "N.30 Bongawan",
+   "constituency": "Bongawan",
+   "state": "Sabah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.30 BUNTONG",
+   "code": "N.30",
+   "name": "N.30 Buntong",
+   "constituency": "Buntong",
+   "state": "Perak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.30 KIJAL",
+   "code": "N.30",
+   "name": "N.30 Kijal",
+   "constituency": "Kijal",
+   "state": "Terengganu",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.30 KINRARA",
+   "code": "N.30",
+   "name": "N.30 Kinrara",
+   "constituency": "Kinrara",
+   "state": "Selangor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.30 LIMBONGAN",
+   "code": "N.30",
+   "name": "N.30 Limbongan",
+   "constituency": "Limbongan",
+   "state": "Kelantan",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.30 LUKUT",
+   "code": "N.30",
+   "name": "N.30 Lukut",
+   "constituency": "Lukut",
+   "state": "Negeri Sembilan",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.30 MENTAKAB",
+   "code": "N.30",
+   "name": "N.30 Mentakab",
+   "constituency": "Mentakab",
+   "state": "Pahang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.30 PALOH",
+   "code": "N.30",
+   "name": "N.30 Paloh",
+   "constituency": "Paloh",
+   "state": "Johor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.30 SUNGAI PINANG",
+   "code": "N.30",
+   "name": "N.30 Sungai Pinang",
+   "constituency": "Sungai Pinang",
+   "state": "Penang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.31 BAGAN PINANG",
+   "code": "N.31",
+   "name": "N.31 Bagan Pinang",
+   "constituency": "Bagan Pinang",
+   "state": "Negeri Sembilan",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.31 BATU LANCANG",
+   "code": "N.31",
+   "name": "N.31 Batu Lancang",
+   "constituency": "Batu Lancang",
+   "state": "Penang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.31 BUKIT BEGUNAN",
+   "code": "N.31",
+   "name": "N.31 Bukit Begunan",
+   "constituency": "Bukit Begunan",
+   "state": "Sarawak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.31 CUKAI",
+   "code": "N.31",
+   "name": "N.31 Cukai",
+   "constituency": "Cukai",
+   "state": "Terengganu",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.31 JELAPANG",
+   "code": "N.31",
+   "name": "N.31 Jelapang",
+   "constituency": "Jelapang",
+   "state": "Perak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.31 KAHANG",
+   "code": "N.31",
+   "name": "N.31 Kahang",
+   "constituency": "Kahang",
+   "state": "Johor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.31 KUPANG",
+   "code": "N.31",
+   "name": "N.31 Kupang",
+   "constituency": "Kupang",
+   "state": "Kedah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.31 LANCHANG",
+   "code": "N.31",
+   "name": "N.31 Lanchang",
+   "constituency": "Lanchang",
+   "state": "Pahang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.31 MEMBAKUT",
+   "code": "N.31",
+   "name": "N.31 Membakut",
+   "constituency": "Membakut",
+   "state": "Sabah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.31 SEMERAK",
+   "code": "N.31",
+   "name": "N.31 Semerak",
+   "constituency": "Semerak",
+   "state": "Kelantan",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.31 SUBANG JAYA",
+   "code": "N.31",
+   "name": "N.31 Subang Jaya",
+   "constituency": "Subang Jaya",
+   "state": "Selangor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.32 AIR PUTIH",
+   "code": "N.32",
+   "name": "N.32 Air Putih",
+   "constituency": "Air Putih",
+   "state": "Penang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.32 ENDAU",
+   "code": "N.32",
+   "name": "N.32 Endau",
+   "constituency": "Endau",
+   "state": "Johor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.32 GAAL",
+   "code": "N.32",
+   "name": "N.32 Gaal",
+   "constituency": "Gaal",
+   "state": "Kelantan",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.32 KLIAS",
+   "code": "N.32",
+   "name": "N.32 Klias",
+   "constituency": "Klias",
+   "state": "Sabah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.32 KUALA KETIL",
+   "code": "N.32",
+   "name": "N.32 Kuala Ketil",
+   "constituency": "Kuala Ketil",
+   "state": "Kedah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.32 KUALA SEMANTAN",
+   "code": "N.32",
+   "name": "N.32 Kuala Semantan",
+   "constituency": "Kuala Semantan",
+   "state": "Pahang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.32 LINGGI",
+   "code": "N.32",
+   "name": "N.32 Linggi",
+   "constituency": "Linggi",
+   "state": "Negeri Sembilan",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.32 MENGLEMBU",
+   "code": "N.32",
+   "name": "N.32 Menglembu",
+   "constituency": "Menglembu",
+   "state": "Perak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.32 SERI DELIMA",
+   "code": "N.32",
+   "name": "N.32 Seri Delima",
+   "constituency": "Seri Delima",
+   "state": "Penang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.32 SERI SETIA",
+   "code": "N.32",
+   "name": "N.32 Seri Setia",
+   "constituency": "Seri Setia",
+   "state": "Selangor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.32 SIMANGGANG",
+   "code": "N.32",
+   "name": "N.32 Simanggang",
+   "constituency": "Simanggang",
+   "state": "Sarawak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.33 AIR ITAM",
+   "code": "N.33",
+   "name": "N.33 Air Itam",
+   "constituency": "Air Itam",
+   "state": "Penang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.33 BILUT",
+   "code": "N.33",
+   "name": "N.33 Bilut",
+   "constituency": "Bilut",
+   "state": "Pahang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.33 ENGKILILI",
+   "code": "N.33",
+   "name": "N.33 Engkilili",
+   "constituency": "Engkilili",
+   "state": "Sarawak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.33 KUALA PENYU",
+   "code": "N.33",
+   "name": "N.33 Kuala Penyu",
+   "constituency": "Kuala Penyu",
+   "state": "Sabah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.33 MERBAU PULAS",
+   "code": "N.33",
+   "name": "N.33 Merbau Pulas",
+   "constituency": "Merbau Pulas",
+   "state": "Kedah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.33 PULAI CHONDONG",
+   "code": "N.33",
+   "name": "N.33 Pulai Chondong",
+   "constituency": "Pulai Chondong",
+   "state": "Kelantan",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.33 SRI TANJUNG",
+   "code": "N.33",
+   "name": "N.33 Sri Tanjung",
+   "constituency": "Sri Tanjung",
+   "state": "Negeri Sembilan",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.33 TAMAN MEDAN",
+   "code": "N.33",
+   "name": "N.33 Taman Medan",
+   "constituency": "Taman Medan",
+   "state": "Selangor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.33 TENGGAROH",
+   "code": "N.33",
+   "name": "N.33 Tenggaroh",
+   "constituency": "Tenggaroh",
+   "state": "Johor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.33 TRONOH",
+   "code": "N.33",
+   "name": "N.33 Tronoh",
+   "constituency": "Tronoh",
+   "state": "Perak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.34 BATANG AI",
+   "code": "N.34",
+   "name": "N.34 Batang Ai",
+   "constituency": "Batang Ai",
+   "state": "Sarawak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.34 BUKIT CHANDAN",
+   "code": "N.34",
+   "name": "N.34 Bukit Chandan",
+   "constituency": "Bukit Chandan",
+   "state": "Perak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.34 BUKIT GASING",
+   "code": "N.34",
+   "name": "N.34 Bukit Gasing",
+   "constituency": "Bukit Gasing",
+   "state": "Selangor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.34 GEMAS",
+   "code": "N.34",
+   "name": "N.34 Gemas",
+   "constituency": "Gemas",
+   "state": "Negeri Sembilan",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.34 KETARI",
+   "code": "N.34",
+   "name": "N.34 Ketari",
+   "constituency": "Ketari",
+   "state": "Pahang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.34 LUMADAN",
+   "code": "N.34",
+   "name": "N.34 Lumadan",
+   "constituency": "Lumadan",
+   "state": "Sabah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.34 LUNAS",
+   "code": "N.34",
+   "name": "N.34 Lunas",
+   "constituency": "Lunas",
+   "state": "Kedah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.34 PANTI",
+   "code": "N.34",
+   "name": "N.34 Panti",
+   "constituency": "Panti",
+   "state": "Johor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.34 PAYA TERUBONG",
+   "code": "N.34",
+   "name": "N.34 Paya Terubong",
+   "constituency": "Paya Terubong",
+   "state": "Penang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.34 TEMANGAN",
+   "code": "N.34",
+   "name": "N.34 Temangan",
+   "constituency": "Temangan",
+   "state": "Kelantan",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.35 BATU UBAN",
+   "code": "N.35",
+   "name": "N.35 Batu Uban",
+   "constituency": "Batu Uban",
+   "state": "Penang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.35 GEMENCHEH",
+   "code": "N.35",
+   "name": "N.35 Gemencheh",
+   "constituency": "Gemencheh",
+   "state": "Negeri Sembilan",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.35 KAMPUNG TUNKU",
+   "code": "N.35",
+   "name": "N.35 Kampung Tunku",
+   "constituency": "Kampung Tunku",
+   "state": "Selangor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.35 KEMUNING",
+   "code": "N.35",
+   "name": "N.35 Kemuning",
+   "constituency": "Kemuning",
+   "state": "Kelantan",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.35 KULIM",
+   "code": "N.35",
+   "name": "N.35 Kulim",
+   "constituency": "Kulim",
+   "state": "Kedah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.35 MANONG",
+   "code": "N.35",
+   "name": "N.35 Manong",
+   "constituency": "Manong",
+   "state": "Perak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.35 PASIR RAJA",
+   "code": "N.35",
+   "name": "N.35 Pasir Raja",
+   "constituency": "Pasir Raja",
+   "state": "Johor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.35 SABAI",
+   "code": "N.35",
+   "name": "N.35 Sabai",
+   "constituency": "Sabai",
+   "state": "Pahang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.35 SARIBAS",
+   "code": "N.35",
+   "name": "N.35 Saribas",
+   "constituency": "Saribas",
+   "state": "Sarawak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.35 SINDUMIN",
+   "code": "N.35",
+   "name": "N.35 Sindumin",
+   "constituency": "Sindumin",
+   "state": "Sabah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.36 BANDAR BAHARU",
+   "code": "N.36",
+   "name": "N.36 Bandar Baharu",
+   "constituency": "Bandar Baharu",
+   "state": "Kedah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.36 BANDAR UTAMA",
+   "code": "N.36",
+   "name": "N.36 Bandar Utama",
+   "constituency": "Bandar Utama",
+   "state": "Selangor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.36 BUKIT BUNGA",
+   "code": "N.36",
+   "name": "N.36 Bukit Bunga",
+   "constituency": "Bukit Bunga",
+   "state": "Kelantan",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.36 KUNDASANG",
+   "code": "N.36",
+   "name": "N.36 Kundasang",
+   "constituency": "Kundasang",
+   "state": "Sabah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.36 LAYAR",
+   "code": "N.36",
+   "name": "N.36 Layar",
+   "constituency": "Layar",
+   "state": "Sarawak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.36 PANTAI JEREJAK",
+   "code": "N.36",
+   "name": "N.36 Pantai Jerejak",
+   "constituency": "Pantai Jerejak",
+   "state": "Penang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.36 PELANGAI",
+   "code": "N.36",
+   "name": "N.36 Pelangai",
+   "constituency": "Pelangai",
+   "state": "Pahang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.36 PENGKALAN BAHARU",
+   "code": "N.36",
+   "name": "N.36 Pengkalan Baharu",
+   "constituency": "Pengkalan Baharu",
+   "state": "Perak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.36 REPAH",
+   "code": "N.36",
+   "name": "N.36 Repah",
+   "constituency": "Repah",
+   "state": "Negeri Sembilan",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.36 SEDILI",
+   "code": "N.36",
+   "name": "N.36 Sedili",
+   "constituency": "Sedili",
+   "state": "Johor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.37 AIR LANAS",
+   "code": "N.37",
+   "name": "N.37 Air Lanas",
+   "constituency": "Air Lanas",
+   "state": "Kelantan",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.37 BATU MAUNG",
+   "code": "N.37",
+   "name": "N.37 Batu Maung",
+   "constituency": "Batu Maung",
+   "state": "Penang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.37 BUKIT LANJAN",
+   "code": "N.37",
+   "name": "N.37 Bukit Lanjan",
+   "constituency": "Bukit Lanjan",
+   "state": "Selangor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.37 BUKIT SABAN",
+   "code": "N.37",
+   "name": "N.37 Bukit Saban",
+   "constituency": "Bukit Saban",
+   "state": "Sarawak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.37 GUAI",
+   "code": "N.37",
+   "name": "N.37 Guai",
+   "constituency": "Guai",
+   "state": "Pahang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.37 JOHOR LAMA",
+   "code": "N.37",
+   "name": "N.37 Johor Lama",
+   "constituency": "Johor Lama",
+   "state": "Johor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.37 KARANAAN",
+   "code": "N.37",
+   "name": "N.37 Karanaan",
+   "constituency": "Karanaan",
+   "state": "Sabah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.37 PANTAI REMIS",
+   "code": "N.37",
+   "name": "N.37 Pantai Remis",
+   "constituency": "Pantai Remis",
+   "state": "Perak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.38 ASTAKA",
+   "code": "N.38",
+   "name": "N.38 Astaka",
+   "constituency": "Astaka",
+   "state": "Perak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.38 BAYAN LEPAS",
+   "code": "N.38",
+   "name": "N.38 Bayan Lepas",
+   "constituency": "Bayan Lepas",
+   "state": "Penang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.38 KALAKA",
+   "code": "N.38",
+   "name": "N.38 Kalaka",
+   "constituency": "Kalaka",
+   "state": "Sarawak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.38 KUALA BALAH",
+   "code": "N.38",
+   "name": "N.38 Kuala Balah",
+   "constituency": "Kuala Balah",
+   "state": "Kelantan",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.38 PAGINATAN",
+   "code": "N.38",
+   "name": "N.38 Paginatan",
+   "constituency": "Paginatan",
+   "state": "Sabah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.38 PAYA JARAS",
+   "code": "N.38",
+   "name": "N.38 Paya Jaras",
+   "constituency": "Paya Jaras",
+   "state": "Selangor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.38 PENAWAR",
+   "code": "N.38",
+   "name": "N.38 Penawar",
+   "constituency": "Penawar",
+   "state": "Johor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.38 TRIANG",
+   "code": "N.38",
+   "name": "N.38 Triang",
+   "constituency": "Triang",
+   "state": "Pahang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.39 BELANJA",
+   "code": "N.39",
+   "name": "N.39 Belanja",
+   "constituency": "Belanja",
+   "state": "Perak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.39 KEMAYAN",
+   "code": "N.39",
+   "name": "N.39 Kemayan",
+   "constituency": "Kemayan",
+   "state": "Pahang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.39 KOTA DAMANSARA",
+   "code": "N.39",
+   "name": "N.39 Kota Damansara",
+   "constituency": "Kota Damansara",
+   "state": "Selangor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.39 KRIAN",
+   "code": "N.39",
+   "name": "N.39 Krian",
+   "constituency": "Krian",
+   "state": "Sarawak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.39 MENGKEBANG",
+   "code": "N.39",
+   "name": "N.39 Mengkebang",
+   "constituency": "Mengkebang",
+   "state": "Kelantan",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.39 PULAU BETONG",
+   "code": "N.39",
+   "name": "N.39 Pulau Betong",
+   "constituency": "Pulau Betong",
+   "state": "Penang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.39 TAMBUNAN",
+   "code": "N.39",
+   "name": "N.39 Tambunan",
+   "constituency": "Tambunan",
+   "state": "Sabah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.39 TANJUNG SURAT",
+   "code": "N.39",
+   "name": "N.39 Tanjung Surat",
+   "constituency": "Tanjung Surat",
+   "state": "Johor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.40 BINGKOR",
+   "code": "N.40",
+   "name": "N.40 Bingkor",
+   "constituency": "Bingkor",
+   "state": "Sabah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.40 BOTA",
+   "code": "N.40",
+   "name": "N.40 Bota",
+   "constituency": "Bota",
+   "state": "Perak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.40 BUKIT IBAM",
+   "code": "N.40",
+   "name": "N.40 Bukit Ibam",
+   "constituency": "Bukit Ibam",
+   "state": "Pahang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.40 GUCHIL",
+   "code": "N.40",
+   "name": "N.40 Guchil",
+   "constituency": "Guchil",
+   "state": "Kelantan",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.40 KABONG",
+   "code": "N.40",
+   "name": "N.40 Kabong",
+   "constituency": "Kabong",
+   "state": "Sarawak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.40 KOTA ANGGERIK",
+   "code": "N.40",
+   "name": "N.40 Kota Anggerik",
+   "constituency": "Kota Anggerik",
+   "state": "Selangor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.40 TELOK BAHANG",
+   "code": "N.40",
+   "name": "N.40 Telok Bahang",
+   "constituency": "Telok Bahang",
+   "state": "Penang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.40 TIRAM",
+   "code": "N.40",
+   "name": "N.40 Tiram",
+   "constituency": "Tiram",
+   "state": "Johor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.41 BATU TIGA",
+   "code": "N.41",
+   "name": "N.41 Batu Tiga",
+   "constituency": "Batu Tiga",
+   "state": "Selangor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.41 KUALA RAJANG",
+   "code": "N.41",
+   "name": "N.41 Kuala Rajang",
+   "constituency": "Kuala Rajang",
+   "state": "Sarawak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.41 LIAWAN",
+   "code": "N.41",
+   "name": "N.41 Liawan",
+   "constituency": "Liawan",
+   "state": "Sabah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.41 MALIM NAWAR",
+   "code": "N.41",
+   "name": "N.41 Malim Nawar",
+   "constituency": "Malim Nawar",
+   "state": "Perak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.41 MANEK URAI",
+   "code": "N.41",
+   "name": "N.41 Manek Urai",
+   "constituency": "Manek Urai",
+   "state": "Kelantan",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.41 MUADZAM SHAH",
+   "code": "N.41",
+   "name": "N.41 Muadzam Shah",
+   "constituency": "Muadzam Shah",
+   "state": "Pahang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.41 PUTERI WANGSA",
+   "code": "N.41",
+   "name": "N.41 Puteri Wangsa",
+   "constituency": "Puteri Wangsa",
+   "state": "Johor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.42 DABONG",
+   "code": "N.42",
+   "name": "N.42 Dabong",
+   "constituency": "Dabong",
+   "state": "Kelantan",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.42 JOHOR JAYA",
+   "code": "N.42",
+   "name": "N.42 Johor Jaya",
+   "constituency": "Johor Jaya",
+   "state": "Johor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.42 KERANJI",
+   "code": "N.42",
+   "name": "N.42 Keranji",
+   "constituency": "Keranji",
+   "state": "Perak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.42 MELALAP",
+   "code": "N.42",
+   "name": "N.42 Melalap",
+   "constituency": "Melalap",
+   "state": "Sabah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.42 MERU",
+   "code": "N.42",
+   "name": "N.42 Meru",
+   "constituency": "Meru",
+   "state": "Selangor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.42 SEMOP",
+   "code": "N.42",
+   "name": "N.42 Semop",
+   "constituency": "Semop",
+   "state": "Sarawak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.42 TIOMAN",
+   "code": "N.42",
+   "name": "N.42 Tioman",
+   "constituency": "Tioman",
+   "state": "Pahang",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.43 DARO",
+   "code": "N.43",
+   "name": "N.43 Daro",
+   "constituency": "Daro",
+   "state": "Sarawak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.43 KEMABONG",
+   "code": "N.43",
+   "name": "N.43 Kemabong",
+   "constituency": "Kemabong",
+   "state": "Sabah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.43 NENGGIRI",
+   "code": "N.43",
+   "name": "N.43 Nenggiri",
+   "constituency": "Nenggiri",
+   "state": "Kelantan",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.43 PERMAS",
+   "code": "N.43",
+   "name": "N.43 Permas",
+   "constituency": "Permas",
+   "state": "Johor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.43 SEMENTA",
+   "code": "N.43",
+   "name": "N.43 Sementa",
+   "constituency": "Sementa",
+   "state": "Selangor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.43 TUALANG SEKAH",
+   "code": "N.43",
+   "name": "N.43 Tualang Sekah",
+   "constituency": "Tualang Sekah",
+   "state": "Perak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.44 JEMORENG",
+   "code": "N.44",
+   "name": "N.44 Jemoreng",
+   "constituency": "Jemoreng",
+   "state": "Sarawak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.44 LARKIN",
+   "code": "N.44",
+   "name": "N.44 Larkin",
+   "constituency": "Larkin",
+   "state": "Johor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.44 PALOH",
+   "code": "N.44",
+   "name": "N.44 Paloh",
+   "constituency": "Paloh",
+   "state": "Johor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.44 SELAT KLANG",
+   "code": "N.44",
+   "name": "N.44 Selat Klang",
+   "constituency": "Selat Klang",
+   "state": "Selangor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.44 SUNGAI RAPAT",
+   "code": "N.44",
+   "name": "N.44 Sungai Rapat",
+   "constituency": "Sungai Rapat",
+   "state": "Perak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.44 TULID",
+   "code": "N.44",
+   "name": "N.44 Tulid",
+   "constituency": "Tulid",
+   "state": "Sabah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.45 BANDAR BARU KLANG",
+   "code": "N.45",
+   "name": "N.45 Bandar Baru Klang",
+   "constituency": "Bandar Baru Klang",
+   "state": "Selangor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.45 GALAS",
+   "code": "N.45",
+   "name": "N.45 Galas",
+   "constituency": "Galas",
+   "state": "Kelantan",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.45 REPOK",
+   "code": "N.45",
+   "name": "N.45 Repok",
+   "constituency": "Repok",
+   "state": "Sarawak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.45 SIMPANG PULAI",
+   "code": "N.45",
+   "name": "N.45 Simpang Pulai",
+   "constituency": "Simpang Pulai",
+   "state": "Perak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.45 SOOK",
+   "code": "N.45",
+   "name": "N.45 Sook",
+   "constituency": "Sook",
+   "state": "Sabah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.45 STULANG",
+   "code": "N.45",
+   "name": "N.45 Stulang",
+   "constituency": "Stulang",
+   "state": "Johor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.46 MERADONG",
+   "code": "N.46",
+   "name": "N.46 Meradong",
+   "constituency": "Meradong",
+   "state": "Sarawak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.46 NABAWAN",
+   "code": "N.46",
+   "name": "N.46 Nabawan",
+   "constituency": "Nabawan",
+   "state": "Sabah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.46 PELABUHAN KLANG",
+   "code": "N.46",
+   "name": "N.46 Pelabuhan Klang",
+   "constituency": "Pelabuhan Klang",
+   "state": "Selangor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.46 PERLING",
+   "code": "N.46",
+   "name": "N.46 Perling",
+   "constituency": "Perling",
+   "state": "Johor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.46 TEJA",
+   "code": "N.46",
+   "name": "N.46 Teja",
+   "constituency": "Teja",
+   "state": "Perak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.47 CHENDERIANG",
+   "code": "N.47",
+   "name": "N.47 Chenderiang",
+   "constituency": "Chenderiang",
+   "state": "Perak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.47 KEMPAS",
+   "code": "N.47",
+   "name": "N.47 Kempas",
+   "constituency": "Kempas",
+   "state": "Johor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.47 PAKAN",
+   "code": "N.47",
+   "name": "N.47 Pakan",
+   "constituency": "Pakan",
+   "state": "Sarawak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.47 PANDAMARAN",
+   "code": "N.47",
+   "name": "N.47 Pandamaran",
+   "constituency": "Pandamaran",
+   "state": "Selangor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.47 TELUPID",
+   "code": "N.47",
+   "name": "N.47 Telupid",
+   "constituency": "Telupid",
+   "state": "Sabah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.48 AYER KUNING",
+   "code": "N.48",
+   "name": "N.48 Ayer Kuning",
+   "constituency": "Ayer Kuning",
+   "state": "Perak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.48 MELUAN",
+   "code": "N.48",
+   "name": "N.48 Meluan",
+   "constituency": "Meluan",
+   "state": "Sarawak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.48 SENTOSA",
+   "code": "N.48",
+   "name": "N.48 Sentosa",
+   "constituency": "Sentosa",
+   "state": "Selangor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.48 SKUDAI",
+   "code": "N.48",
+   "name": "N.48 Skudai",
+   "constituency": "Skudai",
+   "state": "Johor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.48 SUGUT",
+   "code": "N.48",
+   "name": "N.48 Sugut",
+   "constituency": "Sugut",
+   "state": "Sabah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.49 KOTA ISKANDAR",
+   "code": "N.49",
+   "name": "N.49 Kota Iskandar",
+   "constituency": "Kota Iskandar",
+   "state": "Johor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.49 LABUK",
+   "code": "N.49",
+   "name": "N.49 Labuk",
+   "constituency": "Labuk",
+   "state": "Sabah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.49 NGEMAH",
+   "code": "N.49",
+   "name": "N.49 Ngemah",
+   "constituency": "Ngemah",
+   "state": "Sarawak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.49 SUNGAI KANDIS",
+   "code": "N.49",
+   "name": "N.49 Sungai Kandis",
+   "constituency": "Sungai Kandis",
+   "state": "Selangor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.49 SUNGAI MANIK",
+   "code": "N.49",
+   "name": "N.49 Sungai Manik",
+   "constituency": "Sungai Manik",
+   "state": "Perak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.50 BUKIT PERMAI",
+   "code": "N.50",
+   "name": "N.50 Bukit Permai",
+   "constituency": "Bukit Permai",
+   "state": "Johor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.50 GUM-GUM",
+   "code": "N.50",
+   "name": "N.50 Gum-Gum",
+   "constituency": "Gum-Gum",
+   "state": "Sabah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.50 KAMPONG GAJAH",
+   "code": "N.50",
+   "name": "N.50 Kampong Gajah",
+   "constituency": "Kampong Gajah",
+   "state": "Perak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.50 KOTA KEMUNING",
+   "code": "N.50",
+   "name": "N.50 Kota Kemuning",
+   "constituency": "Kota Kemuning",
+   "state": "Selangor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.50 MACHAN",
+   "code": "N.50",
+   "name": "N.50 Machan",
+   "constituency": "Machan",
+   "state": "Sarawak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.51 BUKIT ASSEK",
+   "code": "N.51",
+   "name": "N.51 Bukit Assek",
+   "constituency": "Bukit Assek",
+   "state": "Sarawak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.51 BUKIT BATU",
+   "code": "N.51",
+   "name": "N.51 Bukit Batu",
+   "constituency": "Bukit Batu",
+   "state": "Johor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.51 PASIR PANJANG",
+   "code": "N.51",
+   "name": "N.51 Pasir Panjang",
+   "constituency": "Pasir Panjang",
+   "state": "Perak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.51 SIJANGKANG",
+   "code": "N.51",
+   "name": "N.51 Sijangkang",
+   "constituency": "Sijangkang",
+   "state": "Selangor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.51 SUNGAI MANILA",
+   "code": "N.51",
+   "name": "N.51 Sungai Manila",
+   "constituency": "Sungai Manila",
+   "state": "Sabah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.52 BANTING",
+   "code": "N.52",
+   "name": "N.52 Banting",
+   "constituency": "Banting",
+   "state": "Selangor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.52 DUDONG",
+   "code": "N.52",
+   "name": "N.52 Dudong",
+   "constituency": "Dudong",
+   "state": "Sarawak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.52 PANGKOR",
+   "code": "N.52",
+   "name": "N.52 Pangkor",
+   "constituency": "Pangkor",
+   "state": "Perak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.52 SENAI",
+   "code": "N.52",
+   "name": "N.52 Senai",
+   "constituency": "Senai",
+   "state": "Johor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.52 SUNGAI SIBUGA",
+   "code": "N.52",
+   "name": "N.52 Sungai Sibuga",
+   "constituency": "Sungai Sibuga",
+   "state": "Sabah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.53 BAWANG ASSAN",
+   "code": "N.53",
+   "name": "N.53 Bawang Assan",
+   "constituency": "Bawang Assan",
+   "state": "Sarawak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.53 BENUT",
+   "code": "N.53",
+   "name": "N.53 Benut",
+   "constituency": "Benut",
+   "state": "Johor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.53 MORIB",
+   "code": "N.53",
+   "name": "N.53 Morib",
+   "constituency": "Morib",
+   "state": "Selangor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.53 RUNGKUP",
+   "code": "N.53",
+   "name": "N.53 Rungkup",
+   "constituency": "Rungkup",
+   "state": "Perak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.53 SEKONG",
+   "code": "N.53",
+   "name": "N.53 Sekong",
+   "constituency": "Sekong",
+   "state": "Sabah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.54 HUTAN MELINTANG",
+   "code": "N.54",
+   "name": "N.54 Hutan Melintang",
+   "constituency": "Hutan Melintang",
+   "state": "Perak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.54 KARAMUNTING",
+   "code": "N.54",
+   "name": "N.54 Karamunting",
+   "constituency": "Karamunting",
+   "state": "Sabah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.54 PELAWAN",
+   "code": "N.54",
+   "name": "N.54 Pelawan",
+   "constituency": "Pelawan",
+   "state": "Sarawak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.54 PULAI SEBATANG",
+   "code": "N.54",
+   "name": "N.54 Pulai Sebatang",
+   "constituency": "Pulai Sebatang",
+   "state": "Johor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.54 TANJONG SEPAT",
+   "code": "N.54",
+   "name": "N.54 Tanjong Sepat",
+   "constituency": "Tanjong Sepat",
+   "state": "Selangor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.55 DENGKIL",
+   "code": "N.55",
+   "name": "N.55 Dengkil",
+   "constituency": "Dengkil",
+   "state": "Selangor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.55 ELOPURA",
+   "code": "N.55",
+   "name": "N.55 Elopura",
+   "constituency": "Elopura",
+   "state": "Sabah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.55 NANGKA",
+   "code": "N.55",
+   "name": "N.55 Nangka",
+   "constituency": "Nangka",
+   "state": "Sarawak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.55 PASIR BEDAMAR",
+   "code": "N.55",
+   "name": "N.55 Pasir Bedamar",
+   "constituency": "Pasir Bedamar",
+   "state": "Perak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.55 PEKAN NANAS",
+   "code": "N.55",
+   "name": "N.55 Pekan Nanas",
+   "constituency": "Pekan Nanas",
+   "state": "Johor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.56 CHANGKAT JONG",
+   "code": "N.56",
+   "name": "N.56 Changkat Jong",
+   "constituency": "Changkat Jong",
+   "state": "Perak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.56 DALAT",
+   "code": "N.56",
+   "name": "N.56 Dalat",
+   "constituency": "Dalat",
+   "state": "Sarawak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.56 KUKUP",
+   "code": "N.56",
+   "name": "N.56 Kukup",
+   "constituency": "Kukup",
+   "state": "Johor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.56 SUNGAI PELEK",
+   "code": "N.56",
+   "name": "N.56 Sungai Pelek",
+   "constituency": "Sungai Pelek",
+   "state": "Selangor",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.56 TANJONG PAPAT",
+   "code": "N.56",
+   "name": "N.56 Tanjong Papat",
+   "constituency": "Tanjong Papat",
+   "state": "Sabah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.57 KUAMUT",
+   "code": "N.57",
+   "name": "N.57 Kuamut",
+   "constituency": "Kuamut",
+   "state": "Sabah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.57 SUNGKAI",
+   "code": "N.57",
+   "name": "N.57 Sungkai",
+   "constituency": "Sungkai",
+   "state": "Perak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.57 TELLIAN",
+   "code": "N.57",
+   "name": "N.57 Tellian",
+   "constituency": "Tellian",
+   "state": "Sarawak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.58",
+   "code": "N.58",
+   "name": "N.58",
+   "constituency": "",
+   "state": "",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.58 BALINGIAN",
+   "code": "N.58",
+   "name": "N.58 Balingian",
+   "constituency": "Balingian",
+   "state": "Sarawak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.58 LAMAG",
+   "code": "N.58",
+   "name": "N.58 Lamag",
+   "constituency": "Lamag",
+   "state": "Sabah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.58 SLIM",
+   "code": "N.58",
+   "name": "N.58 Slim",
+   "constituency": "Slim",
+   "state": "Perak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.59 BEHRANG",
+   "code": "N.59",
+   "name": "N.59 Behrang",
+   "constituency": "Behrang",
+   "state": "Perak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.59 SUKAU",
+   "code": "N.59",
+   "name": "N.59 Sukau",
+   "constituency": "Sukau",
+   "state": "Sabah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.59 TAMIN",
+   "code": "N.59",
+   "name": "N.59 Tamin",
+   "constituency": "Tamin",
+   "state": "Sarawak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.60 KAKUS",
+   "code": "N.60",
+   "name": "N.60 Kakus",
+   "constituency": "Kakus",
+   "state": "Sarawak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.60 TUNGKU",
+   "code": "N.60",
+   "name": "N.60 Tungku",
+   "constituency": "Tungku",
+   "state": "Sabah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.61 PELAGUS",
+   "code": "N.61",
+   "name": "N.61 Pelagus",
+   "constituency": "Pelagus",
+   "state": "Sarawak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.61 SEGAMA",
+   "code": "N.61",
+   "name": "N.61 Segama",
+   "constituency": "Segama",
+   "state": "Sabah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.62 KATIBAS",
+   "code": "N.62",
+   "name": "N.62 Katibas",
+   "constituency": "Katibas",
+   "state": "Sarawak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.62 SILAM",
+   "code": "N.62",
+   "name": "N.62 Silam",
+   "constituency": "Silam",
+   "state": "Sabah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.63 BUKIT GORAM",
+   "code": "N.63",
+   "name": "N.63 Bukit Goram",
+   "constituency": "Bukit Goram",
+   "state": "Sarawak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.63 KUNAK",
+   "code": "N.63",
+   "name": "N.63 Kunak",
+   "constituency": "Kunak",
+   "state": "Sabah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.64 BALEH",
+   "code": "N.64",
+   "name": "N.64 Baleh",
+   "constituency": "Baleh",
+   "state": "Sarawak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.64 SULABAYAN",
+   "code": "N.64",
+   "name": "N.64 Sulabayan",
+   "constituency": "Sulabayan",
+   "state": "Sabah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.65 BELAGA",
+   "code": "N.65",
+   "name": "N.65 Belaga",
+   "constituency": "Belaga",
+   "state": "Sarawak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.65 SENALLANG",
+   "code": "N.65",
+   "name": "N.65 Senallang",
+   "constituency": "Senallang",
+   "state": "Sabah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.66 BUGAYA",
+   "code": "N.66",
+   "name": "N.66 Bugaya",
+   "constituency": "Bugaya",
+   "state": "Sabah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.66 MURUM",
+   "code": "N.66",
+   "name": "N.66 Murum",
+   "constituency": "Murum",
+   "state": "Sarawak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.67 BALUNG",
+   "code": "N.67",
+   "name": "N.67 Balung",
+   "constituency": "Balung",
+   "state": "Sabah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.67 JEPAK",
+   "code": "N.67",
+   "name": "N.67 Jepak",
+   "constituency": "Jepak",
+   "state": "Sarawak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.68 APAS",
+   "code": "N.68",
+   "name": "N.68 Apas",
+   "constituency": "Apas",
+   "state": "Sabah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.68 TANJONG BATU",
+   "code": "N.68",
+   "name": "N.68 Tanjong Batu",
+   "constituency": "Tanjong Batu",
+   "state": "Sarawak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.69 KEMENA",
+   "code": "N.69",
+   "name": "N.69 Kemena",
+   "constituency": "Kemena",
+   "state": "Sarawak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.69 SRI TANJONG",
+   "code": "N.69",
+   "name": "N.69 Sri Tanjong",
+   "constituency": "Sri Tanjong",
+   "state": "Sabah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.70 KUKUSAN",
+   "code": "N.70",
+   "name": "N.70 Kukusan",
+   "constituency": "Kukusan",
+   "state": "Sabah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.70 SAMALAJU",
+   "code": "N.70",
+   "name": "N.70 Samalaju",
+   "constituency": "Samalaju",
+   "state": "Sarawak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.71 BEKENU",
+   "code": "N.71",
+   "name": "N.71 Bekenu",
+   "constituency": "Bekenu",
+   "state": "Sarawak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.71 TANJUNG BATU",
+   "code": "N.71",
+   "name": "N.71 Tanjung Batu",
+   "constituency": "Tanjung Batu",
+   "state": "Sabah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.72 LAMBIR",
+   "code": "N.72",
+   "name": "N.72 Lambir",
+   "constituency": "Lambir",
+   "state": "Sarawak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.72 MEROTAI",
+   "code": "N.72",
+   "name": "N.72 Merotai",
+   "constituency": "Merotai",
+   "state": "Sabah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.73 PIASAU",
+   "code": "N.73",
+   "name": "N.73 Piasau",
+   "constituency": "Piasau",
+   "state": "Sarawak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.73 SEBATIK",
+   "code": "N.73",
+   "name": "N.73 Sebatik",
+   "constituency": "Sebatik",
+   "state": "Sabah",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.74 PUJUT",
+   "code": "N.74",
+   "name": "N.74 Pujut",
+   "constituency": "Pujut",
+   "state": "Sarawak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.75 SENADIN",
+   "code": "N.75",
+   "name": "N.75 Senadin",
+   "constituency": "Senadin",
+   "state": "Sarawak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.76 MARUDI",
+   "code": "N.76",
+   "name": "N.76 Marudi",
+   "constituency": "Marudi",
+   "state": "Sarawak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.77 TELANG USAN",
+   "code": "N.77",
+   "name": "N.77 Telang Usan",
+   "constituency": "Telang Usan",
+   "state": "Sarawak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.78 MULU",
+   "code": "N.78",
+   "name": "N.78 Mulu",
+   "constituency": "Mulu",
+   "state": "Sarawak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.79 BUKIT KOTA",
+   "code": "N.79",
+   "name": "N.79 Bukit Kota",
+   "constituency": "Bukit Kota",
+   "state": "Sarawak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.80 BATU DANAU",
+   "code": "N.80",
+   "name": "N.80 Batu Danau",
+   "constituency": "Batu Danau",
+   "state": "Sarawak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.81 BA'KELALAN",
+   "code": "N.81",
+   "name": "N.81 Ba'kelalan",
+   "constituency": "Ba'kelalan",
+   "state": "Sarawak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:N.82 BUKIT SARI",
+   "code": "N.82",
+   "name": "N.82 Bukit Sari",
+   "constituency": "Bukit Sari",
+   "state": "Sarawak",
+   "kind": "dun",
+   "chamber": "State Assembly (DUN)"
+  },
+  {
+   "id": "seat:P001",
+   "code": "P001",
+   "name": "P001 Padang Besar",
+   "constituency": "Padang Besar",
+   "state": "Perlis",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P002",
+   "code": "P002",
+   "name": "P002 Kangar",
+   "constituency": "Kangar",
+   "state": "Perlis",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P003",
+   "code": "P003",
+   "name": "P003 Arau",
+   "constituency": "Arau",
+   "state": "Perlis",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P004",
+   "code": "P004",
+   "name": "P004 Langkawi",
+   "constituency": "Langkawi",
+   "state": "Kedah",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P005",
+   "code": "P005",
+   "name": "P005 Jerlun",
+   "constituency": "Jerlun",
+   "state": "Kedah",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P006",
+   "code": "P006",
+   "name": "P006 Kubang Pasu",
+   "constituency": "Kubang Pasu",
+   "state": "Kedah",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P007",
+   "code": "P007",
+   "name": "P007 Padang Terap",
+   "constituency": "Padang Terap",
+   "state": "Kedah",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P008",
+   "code": "P008",
+   "name": "P008 Pokok Sena",
+   "constituency": "Pokok Sena",
+   "state": "Kedah",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P009",
+   "code": "P009",
+   "name": "P009 Alor Setar",
+   "constituency": "Alor Setar",
+   "state": "Kedah",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P010",
+   "code": "P010",
+   "name": "P010 Kuala Kedah",
+   "constituency": "Kuala Kedah",
+   "state": "Kedah",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P011",
+   "code": "P011",
+   "name": "P011 Pendang",
+   "constituency": "Pendang",
+   "state": "Kedah",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P012",
+   "code": "P012",
+   "name": "P012 Jerai",
+   "constituency": "Jerai",
+   "state": "Kedah",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P013",
+   "code": "P013",
+   "name": "P013 Sik",
+   "constituency": "Sik",
+   "state": "Kedah",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P014",
+   "code": "P014",
+   "name": "P014 Merbok",
+   "constituency": "Merbok",
+   "state": "Kedah",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P015",
+   "code": "P015",
+   "name": "P015 Sungai Petani",
+   "constituency": "Sungai Petani",
+   "state": "Kedah",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P016",
+   "code": "P016",
+   "name": "P016 Baling",
+   "constituency": "Baling",
+   "state": "Kedah",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P017",
+   "code": "P017",
+   "name": "P017 Padang Serai",
+   "constituency": "Padang Serai",
+   "state": "Kedah",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P018",
+   "code": "P018",
+   "name": "P018 Kulim-Bandar Baharu",
+   "constituency": "Kulim-Bandar Baharu",
+   "state": "Kedah",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P019",
+   "code": "P019",
+   "name": "P019 Tumpat",
+   "constituency": "Tumpat",
+   "state": "Kelantan",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P020",
+   "code": "P020",
+   "name": "P020 Pengkalan Chepa",
+   "constituency": "Pengkalan Chepa",
+   "state": "Kelantan",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P021",
+   "code": "P021",
+   "name": "P021 Kota Bharu",
+   "constituency": "Kota Bharu",
+   "state": "Kelantan",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P022",
+   "code": "P022",
+   "name": "P022 Pasir Mas",
+   "constituency": "Pasir Mas",
+   "state": "Kelantan",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P023",
+   "code": "P023",
+   "name": "P023 Rantau Panjang",
+   "constituency": "Rantau Panjang",
+   "state": "Kelantan",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P024",
+   "code": "P024",
+   "name": "P024 Kubang Kerian",
+   "constituency": "Kubang Kerian",
+   "state": "Kelantan",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P025",
+   "code": "P025",
+   "name": "P025 Bachok",
+   "constituency": "Bachok",
+   "state": "Kelantan",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P026",
+   "code": "P026",
+   "name": "P026 Ketereh",
+   "constituency": "Ketereh",
+   "state": "Kelantan",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P027",
+   "code": "P027",
+   "name": "P027 Tanah Merah",
+   "constituency": "Tanah Merah",
+   "state": "Kelantan",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P028",
+   "code": "P028",
+   "name": "P028 Pasir Puteh",
+   "constituency": "Pasir Puteh",
+   "state": "Kelantan",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P029",
+   "code": "P029",
+   "name": "P029 Machang",
+   "constituency": "Machang",
+   "state": "Kelantan",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P030",
+   "code": "P030",
+   "name": "P030 Jeli",
+   "constituency": "Jeli",
+   "state": "Kelantan",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P031",
+   "code": "P031",
+   "name": "P031 Kuala Krai",
+   "constituency": "Kuala Krai",
+   "state": "Kelantan",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P032",
+   "code": "P032",
+   "name": "P032 Gua Musang",
+   "constituency": "Gua Musang",
+   "state": "Kelantan",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P033",
+   "code": "P033",
+   "name": "P033 Besut",
+   "constituency": "Besut",
+   "state": "Terengganu",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P034",
+   "code": "P034",
+   "name": "P034 Setiu",
+   "constituency": "Setiu",
+   "state": "Terengganu",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P035",
+   "code": "P035",
+   "name": "P035 Kuala Nerus",
+   "constituency": "Kuala Nerus",
+   "state": "Terengganu",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P036",
+   "code": "P036",
+   "name": "P036 Kuala Terengganu",
+   "constituency": "Kuala Terengganu",
+   "state": "Terengganu",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P037",
+   "code": "P037",
+   "name": "P037 Marang",
+   "constituency": "Marang",
+   "state": "Terengganu",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P038",
+   "code": "P038",
+   "name": "P038 Hulu Terengganu",
+   "constituency": "Hulu Terengganu",
+   "state": "Terengganu",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P039",
+   "code": "P039",
+   "name": "P039 Dungun",
+   "constituency": "Dungun",
+   "state": "Terengganu",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P040",
+   "code": "P040",
+   "name": "P040 Kemaman",
+   "constituency": "Kemaman",
+   "state": "Terengganu",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P041",
+   "code": "P041",
+   "name": "P041 Kepala Batas",
+   "constituency": "Kepala Batas",
+   "state": "Penang",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P042",
+   "code": "P042",
+   "name": "P042 Tasek Gelugor",
+   "constituency": "Tasek Gelugor",
+   "state": "Penang",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P043",
+   "code": "P043",
+   "name": "P043 Bagan",
+   "constituency": "Bagan",
+   "state": "Penang",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P044",
+   "code": "P044",
+   "name": "P044 Permatang Pauh",
+   "constituency": "Permatang Pauh",
+   "state": "Penang",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P045",
+   "code": "P045",
+   "name": "P045 Bukit Mertajam",
+   "constituency": "Bukit Mertajam",
+   "state": "Penang",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P046",
+   "code": "P046",
+   "name": "P046 Batu Kawan",
+   "constituency": "Batu Kawan",
+   "state": "Penang",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P047",
+   "code": "P047",
+   "name": "P047 Nibong Tebal",
+   "constituency": "Nibong Tebal",
+   "state": "Penang",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P048",
+   "code": "P048",
+   "name": "P048 Bukit Bendera",
+   "constituency": "Bukit Bendera",
+   "state": "Penang",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P049",
+   "code": "P049",
+   "name": "P049 Tanjong",
+   "constituency": "Tanjong",
+   "state": "Penang",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P050",
+   "code": "P050",
+   "name": "P050 Jelutong",
+   "constituency": "Jelutong",
+   "state": "Penang",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P051",
+   "code": "P051",
+   "name": "P051 Bukit Gelugor",
+   "constituency": "Bukit Gelugor",
+   "state": "Penang",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P052",
+   "code": "P052",
+   "name": "P052 Bayan Baru",
+   "constituency": "Bayan Baru",
+   "state": "Penang",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P053",
+   "code": "P053",
+   "name": "P053 Balik Pulau",
+   "constituency": "Balik Pulau",
+   "state": "Penang",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P054",
+   "code": "P054",
+   "name": "P054 Gerik",
+   "constituency": "Gerik",
+   "state": "Perak",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P055",
+   "code": "P055",
+   "name": "P055 Lenggong",
+   "constituency": "Lenggong",
+   "state": "Perak",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P056",
+   "code": "P056",
+   "name": "P056 Larut",
+   "constituency": "Larut",
+   "state": "Perak",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P057",
+   "code": "P057",
+   "name": "P057 Parit Buntar",
+   "constituency": "Parit Buntar",
+   "state": "Perak",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P058",
+   "code": "P058",
+   "name": "P058 Bagan Serai",
+   "constituency": "Bagan Serai",
+   "state": "Perak",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P059",
+   "code": "P059",
+   "name": "P059 Bukit Gantang",
+   "constituency": "Bukit Gantang",
+   "state": "Perak",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P060",
+   "code": "P060",
+   "name": "P060 Taiping",
+   "constituency": "Taiping",
+   "state": "Perak",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P061",
+   "code": "P061",
+   "name": "P061 Padang Rengas",
+   "constituency": "Padang Rengas",
+   "state": "Perak",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P062",
+   "code": "P062",
+   "name": "P062 Sungai Siput",
+   "constituency": "Sungai Siput",
+   "state": "Perak",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P063",
+   "code": "P063",
+   "name": "P063 Tambun",
+   "constituency": "Tambun",
+   "state": "Perak",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P064",
+   "code": "P064",
+   "name": "P064 Ipoh Timor",
+   "constituency": "Ipoh Timor",
+   "state": "Perak",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P065",
+   "code": "P065",
+   "name": "P065 Ipoh Barat",
+   "constituency": "Ipoh Barat",
+   "state": "Perak",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P066",
+   "code": "P066",
+   "name": "P066 Batu Gajah",
+   "constituency": "Batu Gajah",
+   "state": "Perak",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P067",
+   "code": "P067",
+   "name": "P067 Kuala Kangsar",
+   "constituency": "Kuala Kangsar",
+   "state": "Perak",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P068",
+   "code": "P068",
+   "name": "P068 Beruas",
+   "constituency": "Beruas",
+   "state": "Perak",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P069",
+   "code": "P069",
+   "name": "P069 Parit",
+   "constituency": "Parit",
+   "state": "Perak",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P070",
+   "code": "P070",
+   "name": "P070 Kampar",
+   "constituency": "Kampar",
+   "state": "Perak",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P071",
+   "code": "P071",
+   "name": "P071 Gopeng",
+   "constituency": "Gopeng",
+   "state": "Perak",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P072",
+   "code": "P072",
+   "name": "P072 Tapah",
+   "constituency": "Tapah",
+   "state": "Perak",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P073",
+   "code": "P073",
+   "name": "P073 Pasir Salak",
+   "constituency": "Pasir Salak",
+   "state": "Perak",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P074",
+   "code": "P074",
+   "name": "P074 Lumut",
+   "constituency": "Lumut",
+   "state": "Perak",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P075",
+   "code": "P075",
+   "name": "P075 Bagan Datuk",
+   "constituency": "Bagan Datuk",
+   "state": "Perak",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P076",
+   "code": "P076",
+   "name": "P076 Teluk Intan",
+   "constituency": "Teluk Intan",
+   "state": "Perak",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P077",
+   "code": "P077",
+   "name": "P077 Tanjong Malim",
+   "constituency": "Tanjong Malim",
+   "state": "Perak",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P078",
+   "code": "P078",
+   "name": "P078 Cameron Highlands",
+   "constituency": "Cameron Highlands",
+   "state": "Pahang",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P079",
+   "code": "P079",
+   "name": "P079 Lipis",
+   "constituency": "Lipis",
+   "state": "Pahang",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P080",
+   "code": "P080",
+   "name": "P080 Raub",
+   "constituency": "Raub",
+   "state": "Pahang",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P081",
+   "code": "P081",
+   "name": "P081 Jerantut",
+   "constituency": "Jerantut",
+   "state": "Pahang",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P082",
+   "code": "P082",
+   "name": "P082 Indera Mahkota",
+   "constituency": "Indera Mahkota",
+   "state": "Pahang",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P083",
+   "code": "P083",
+   "name": "P083 Kuantan",
+   "constituency": "Kuantan",
+   "state": "Pahang",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P084",
+   "code": "P084",
+   "name": "P084 Paya Besar",
+   "constituency": "Paya Besar",
+   "state": "Pahang",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P085",
+   "code": "P085",
+   "name": "P085 Pekan",
+   "constituency": "Pekan",
+   "state": "Pahang",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P086",
+   "code": "P086",
+   "name": "P086 Maran",
+   "constituency": "Maran",
+   "state": "Pahang",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P087",
+   "code": "P087",
+   "name": "P087 Kuala Krau",
+   "constituency": "Kuala Krau",
+   "state": "Pahang",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P088",
+   "code": "P088",
+   "name": "P088 Temerloh",
+   "constituency": "Temerloh",
+   "state": "Pahang",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P089",
+   "code": "P089",
+   "name": "P089 Bentong",
+   "constituency": "Bentong",
+   "state": "Pahang",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P090",
+   "code": "P090",
+   "name": "P090 Bera",
+   "constituency": "Bera",
+   "state": "Pahang",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P091",
+   "code": "P091",
+   "name": "P091 Rompin",
+   "constituency": "Rompin",
+   "state": "Pahang",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P092",
+   "code": "P092",
+   "name": "P092 Sabak Bernam",
+   "constituency": "Sabak Bernam",
+   "state": "Selangor",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P093",
+   "code": "P093",
+   "name": "P093 Sungai Besar",
+   "constituency": "Sungai Besar",
+   "state": "Selangor",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P094",
+   "code": "P094",
+   "name": "P094 Hulu Selangor",
+   "constituency": "Hulu Selangor",
+   "state": "Selangor",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P095",
+   "code": "P095",
+   "name": "P095 Tanjong Karang",
+   "constituency": "Tanjong Karang",
+   "state": "Selangor",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P096",
+   "code": "P096",
+   "name": "P096 Kuala Selangor",
+   "constituency": "Kuala Selangor",
+   "state": "Selangor",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P097",
+   "code": "P097",
+   "name": "P097 Selayang",
+   "constituency": "Selayang",
+   "state": "Selangor",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P098",
+   "code": "P098",
+   "name": "P098 Gombak",
+   "constituency": "Gombak",
+   "state": "Selangor",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P099",
+   "code": "P099",
+   "name": "P099 Ampang",
+   "constituency": "Ampang",
+   "state": "Selangor",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P100",
+   "code": "P100",
+   "name": "P100 Pandan",
+   "constituency": "Pandan",
+   "state": "Selangor",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P101",
+   "code": "P101",
+   "name": "P101 Hulu Langat",
+   "constituency": "Hulu Langat",
+   "state": "Selangor",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P102",
+   "code": "P102",
+   "name": "P102 Bangi",
+   "constituency": "Bangi",
+   "state": "Selangor",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P103",
+   "code": "P103",
+   "name": "P103 Puchong",
+   "constituency": "Puchong",
+   "state": "Selangor",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P104",
+   "code": "P104",
+   "name": "P104 Subang",
+   "constituency": "Subang",
+   "state": "Selangor",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P105",
+   "code": "P105",
+   "name": "P105 Petaling Jaya",
+   "constituency": "Petaling Jaya",
+   "state": "Selangor",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P106",
+   "code": "P106",
+   "name": "P106 Damansara",
+   "constituency": "Damansara",
+   "state": "Selangor",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P107",
+   "code": "P107",
+   "name": "P107 Sungai Buloh",
+   "constituency": "Sungai Buloh",
+   "state": "Selangor",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P108",
+   "code": "P108",
+   "name": "P108 Shah Alam",
+   "constituency": "Shah Alam",
+   "state": "Selangor",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P109",
+   "code": "P109",
+   "name": "P109 Kapar",
+   "constituency": "Kapar",
+   "state": "Selangor",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P110",
+   "code": "P110",
+   "name": "P110 Klang",
+   "constituency": "Klang",
+   "state": "Selangor",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P111",
+   "code": "P111",
+   "name": "P111 Kota Raja",
+   "constituency": "Kota Raja",
+   "state": "Selangor",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P112",
+   "code": "P112",
+   "name": "P112 Kuala Langat",
+   "constituency": "Kuala Langat",
+   "state": "Selangor",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P113",
+   "code": "P113",
+   "name": "P113 Sepang",
+   "constituency": "Sepang",
+   "state": "Selangor",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P114",
+   "code": "P114",
+   "name": "P114 Kepong",
+   "constituency": "Kepong",
+   "state": "Kuala Lumpur (FT)",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P115",
+   "code": "P115",
+   "name": "P115 Batu",
+   "constituency": "Batu",
+   "state": "Kuala Lumpur (FT)",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P116",
+   "code": "P116",
+   "name": "P116 Wangsa Maju",
+   "constituency": "Wangsa Maju",
+   "state": "Kuala Lumpur (FT)",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P117",
+   "code": "P117",
+   "name": "P117 Segambut",
+   "constituency": "Segambut",
+   "state": "Kuala Lumpur (FT)",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P118",
+   "code": "P118",
+   "name": "P118 Setiawangsa",
+   "constituency": "Setiawangsa",
+   "state": "Kuala Lumpur (FT)",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P119",
+   "code": "P119",
+   "name": "P119 Titiwangsa",
+   "constituency": "Titiwangsa",
+   "state": "Kuala Lumpur (FT)",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P120",
+   "code": "P120",
+   "name": "P120 Bukit Bintang",
+   "constituency": "Bukit Bintang",
+   "state": "Kuala Lumpur (FT)",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P121",
+   "code": "P121",
+   "name": "P121 Lembah Pantai",
+   "constituency": "Lembah Pantai",
+   "state": "Kuala Lumpur (FT)",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P122",
+   "code": "P122",
+   "name": "P122 Seputeh",
+   "constituency": "Seputeh",
+   "state": "Kuala Lumpur (FT)",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P123",
+   "code": "P123",
+   "name": "P123 Cheras",
+   "constituency": "Cheras",
+   "state": "Kuala Lumpur (FT)",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P124",
+   "code": "P124",
+   "name": "P124 Bandar Tun Razak",
+   "constituency": "Bandar Tun Razak",
+   "state": "Kuala Lumpur (FT)",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P125",
+   "code": "P125",
+   "name": "P125 Putrajaya",
+   "constituency": "Putrajaya",
+   "state": "Putrajaya (FT)",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P126",
+   "code": "P126",
+   "name": "P126 Jelebu",
+   "constituency": "Jelebu",
+   "state": "Negeri Sembilan",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P127",
+   "code": "P127",
+   "name": "P127 Jempol",
+   "constituency": "Jempol",
+   "state": "Negeri Sembilan",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P128",
+   "code": "P128",
+   "name": "P128 Seremban",
+   "constituency": "Seremban",
+   "state": "Negeri Sembilan",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P129",
+   "code": "P129",
+   "name": "P129 Kuala Pilah",
+   "constituency": "Kuala Pilah",
+   "state": "Negeri Sembilan",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P130",
+   "code": "P130",
+   "name": "P130 Rasah",
+   "constituency": "Rasah",
+   "state": "Negeri Sembilan",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P131",
+   "code": "P131",
+   "name": "P131 Rembau",
+   "constituency": "Rembau",
+   "state": "Negeri Sembilan",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P132",
+   "code": "P132",
+   "name": "P132 Port Dickson",
+   "constituency": "Port Dickson",
+   "state": "Negeri Sembilan",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P133",
+   "code": "P133",
+   "name": "P133 Tampin",
+   "constituency": "Tampin",
+   "state": "Negeri Sembilan",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P134",
+   "code": "P134",
+   "name": "P134 Masjid Tanah",
+   "constituency": "Masjid Tanah",
+   "state": "Malacca",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P135",
+   "code": "P135",
+   "name": "P135 Alor Gajah",
+   "constituency": "Alor Gajah",
+   "state": "Malacca",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P136",
+   "code": "P136",
+   "name": "P136 Tangga Batu",
+   "constituency": "Tangga Batu",
+   "state": "Malacca",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P137",
+   "code": "P137",
+   "name": "P137 Hang Tuah Jaya",
+   "constituency": "Hang Tuah Jaya",
+   "state": "Malacca",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P138",
+   "code": "P138",
+   "name": "P138 Kota Melaka",
+   "constituency": "Kota Melaka",
+   "state": "Malacca",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P139",
+   "code": "P139",
+   "name": "P139 Jasin",
+   "constituency": "Jasin",
+   "state": "Malacca",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P140",
+   "code": "P140",
+   "name": "P140 Segamat",
+   "constituency": "Segamat",
+   "state": "Johor",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P141",
+   "code": "P141",
+   "name": "P141 Sekijang",
+   "constituency": "Sekijang",
+   "state": "Johor",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P142",
+   "code": "P142",
+   "name": "P142 Labis",
+   "constituency": "Labis",
+   "state": "Johor",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P143",
+   "code": "P143",
+   "name": "P143 Pagoh",
+   "constituency": "Pagoh",
+   "state": "Johor",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P144",
+   "code": "P144",
+   "name": "P144 Ledang",
+   "constituency": "Ledang",
+   "state": "Johor",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P145",
+   "code": "P145",
+   "name": "P145 Bakri",
+   "constituency": "Bakri",
+   "state": "Johor",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P146",
+   "code": "P146",
+   "name": "P146 Muar",
+   "constituency": "Muar",
+   "state": "Johor",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P147",
+   "code": "P147",
+   "name": "P147 Parit Sulong",
+   "constituency": "Parit Sulong",
+   "state": "Johor",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P148",
+   "code": "P148",
+   "name": "P148 Ayer Hitam",
+   "constituency": "Ayer Hitam",
+   "state": "Johor",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P149",
+   "code": "P149",
+   "name": "P149 Sri Gading",
+   "constituency": "Sri Gading",
+   "state": "Johor",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P150",
+   "code": "P150",
+   "name": "P150 Batu Pahat",
+   "constituency": "Batu Pahat",
+   "state": "Johor",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P151",
+   "code": "P151",
+   "name": "P151 Simpang Renggam",
+   "constituency": "Simpang Renggam",
+   "state": "Johor",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P152",
+   "code": "P152",
+   "name": "P152 Kluang",
+   "constituency": "Kluang",
+   "state": "Johor",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P153",
+   "code": "P153",
+   "name": "P153 Sembrong",
+   "constituency": "Sembrong",
+   "state": "Johor",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P154",
+   "code": "P154",
+   "name": "P154 Mersing",
+   "constituency": "Mersing",
+   "state": "Johor",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P155",
+   "code": "P155",
+   "name": "P155 Tenggara",
+   "constituency": "Tenggara",
+   "state": "Johor",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P156",
+   "code": "P156",
+   "name": "P156 Kota Tinggi",
+   "constituency": "Kota Tinggi",
+   "state": "Johor",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P157",
+   "code": "P157",
+   "name": "P157 Pengerang",
+   "constituency": "Pengerang",
+   "state": "Johor",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P158",
+   "code": "P158",
+   "name": "P158 Tebrau",
+   "constituency": "Tebrau",
+   "state": "Johor",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P159",
+   "code": "P159",
+   "name": "P159 Pasir Gudang",
+   "constituency": "Pasir Gudang",
+   "state": "Johor",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P160",
+   "code": "P160",
+   "name": "P160 Johor Bahru",
+   "constituency": "Johor Bahru",
+   "state": "Johor",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P161",
+   "code": "P161",
+   "name": "P161 Pulai",
+   "constituency": "Pulai",
+   "state": "Johor",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P162",
+   "code": "P162",
+   "name": "P162 Iskandar Puteri",
+   "constituency": "Iskandar Puteri",
+   "state": "Johor",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P163",
+   "code": "P163",
+   "name": "P163 Kulai",
+   "constituency": "Kulai",
+   "state": "Johor",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P164",
+   "code": "P164",
+   "name": "P164 Pontian",
+   "constituency": "Pontian",
+   "state": "Johor",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P165",
+   "code": "P165",
+   "name": "P165 Tanjung Piai",
+   "constituency": "Tanjung Piai",
+   "state": "Johor",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P166",
+   "code": "P166",
+   "name": "P166 Labuan",
+   "constituency": "Labuan",
+   "state": "Labuan (FT)",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P167",
+   "code": "P167",
+   "name": "P167 Kudat",
+   "constituency": "Kudat",
+   "state": "Sabah",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P168",
+   "code": "P168",
+   "name": "P168 Kota Marudu",
+   "constituency": "Kota Marudu",
+   "state": "Sabah",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P169",
+   "code": "P169",
+   "name": "P169 Kota Belud",
+   "constituency": "Kota Belud",
+   "state": "Sabah",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P170",
+   "code": "P170",
+   "name": "P170 Tuaran",
+   "constituency": "Tuaran",
+   "state": "Sabah",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P171",
+   "code": "P171",
+   "name": "P171 Sepanggar",
+   "constituency": "Sepanggar",
+   "state": "Sabah",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P172",
+   "code": "P172",
+   "name": "P172 Kota Kinabalu",
+   "constituency": "Kota Kinabalu",
+   "state": "Sabah",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P173",
+   "code": "P173",
+   "name": "P173 Putatan",
+   "constituency": "Putatan",
+   "state": "Sabah",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P174",
+   "code": "P174",
+   "name": "P174 Penampang",
+   "constituency": "Penampang",
+   "state": "Sabah",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P175",
+   "code": "P175",
+   "name": "P175 Papar",
+   "constituency": "Papar",
+   "state": "Sabah",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P176",
+   "code": "P176",
+   "name": "P176 Kimanis",
+   "constituency": "Kimanis",
+   "state": "Sabah",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P177",
+   "code": "P177",
+   "name": "P177 Beaufort",
+   "constituency": "Beaufort",
+   "state": "Sabah",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P178",
+   "code": "P178",
+   "name": "P178 Sipitang",
+   "constituency": "Sipitang",
+   "state": "Sabah",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P179",
+   "code": "P179",
+   "name": "P179 Ranau",
+   "constituency": "Ranau",
+   "state": "Sabah",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P180",
+   "code": "P180",
+   "name": "P180 Keningau",
+   "constituency": "Keningau",
+   "state": "Sabah",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P181",
+   "code": "P181",
+   "name": "P181 Tenom",
+   "constituency": "Tenom",
+   "state": "Sabah",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P182",
+   "code": "P182",
+   "name": "P182 Pensiangan",
+   "constituency": "Pensiangan",
+   "state": "Sabah",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P183",
+   "code": "P183",
+   "name": "P183 Beluran",
+   "constituency": "Beluran",
+   "state": "Sabah",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P184",
+   "code": "P184",
+   "name": "P184 Libaran",
+   "constituency": "Libaran",
+   "state": "Sabah",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P185",
+   "code": "P185",
+   "name": "P185 Batu Sapi",
+   "constituency": "Batu Sapi",
+   "state": "Sabah",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P186",
+   "code": "P186",
+   "name": "P186 Sandakan",
+   "constituency": "Sandakan",
+   "state": "Sabah",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P187",
+   "code": "P187",
+   "name": "P187 Kinabatangan",
+   "constituency": "Kinabatangan",
+   "state": "Sabah",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P188",
+   "code": "P188",
+   "name": "P188 Lahad Datu",
+   "constituency": "Lahad Datu",
+   "state": "Sabah",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P189",
+   "code": "P189",
+   "name": "P189 Semporna",
+   "constituency": "Semporna",
+   "state": "Sabah",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P190",
+   "code": "P190",
+   "name": "P190 Tawau",
+   "constituency": "Tawau",
+   "state": "Sabah",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P191",
+   "code": "P191",
+   "name": "P191 Kalabakan",
+   "constituency": "Kalabakan",
+   "state": "Sabah",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P192",
+   "code": "P192",
+   "name": "P192 Mas Gading",
+   "constituency": "Mas Gading",
+   "state": "Sarawak",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P193",
+   "code": "P193",
+   "name": "P193 Santubong",
+   "constituency": "Santubong",
+   "state": "Sarawak",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P194",
+   "code": "P194",
+   "name": "P194 Petra Jaya",
+   "constituency": "Petra Jaya",
+   "state": "Sarawak",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P195",
+   "code": "P195",
+   "name": "P195 Bandar Kuching",
+   "constituency": "Bandar Kuching",
+   "state": "Sarawak",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P196",
+   "code": "P196",
+   "name": "P196 Stampin",
+   "constituency": "Stampin",
+   "state": "Sarawak",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P197",
+   "code": "P197",
+   "name": "P197 Kota Samarahan",
+   "constituency": "Kota Samarahan",
+   "state": "Sarawak",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P198",
+   "code": "P198",
+   "name": "P198 Puncak Borneo",
+   "constituency": "Puncak Borneo",
+   "state": "Sarawak",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P199",
+   "code": "P199",
+   "name": "P199 Serian",
+   "constituency": "Serian",
+   "state": "Sarawak",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P200",
+   "code": "P200",
+   "name": "P200 Batang Sadong",
+   "constituency": "Batang Sadong",
+   "state": "Sarawak",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P201",
+   "code": "P201",
+   "name": "P201 Batang Lupar",
+   "constituency": "Batang Lupar",
+   "state": "Sarawak",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P202",
+   "code": "P202",
+   "name": "P202 Sri Aman",
+   "constituency": "Sri Aman",
+   "state": "Sarawak",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P203",
+   "code": "P203",
+   "name": "P203 Lubok Antu",
+   "constituency": "Lubok Antu",
+   "state": "Sarawak",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P204",
+   "code": "P204",
+   "name": "P204 Betong",
+   "constituency": "Betong",
+   "state": "Sarawak",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P205",
+   "code": "P205",
+   "name": "P205 Saratok",
+   "constituency": "Saratok",
+   "state": "Sarawak",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P206",
+   "code": "P206",
+   "name": "P206 Tanjong Manis",
+   "constituency": "Tanjong Manis",
+   "state": "Sarawak",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P207",
+   "code": "P207",
+   "name": "P207 Igan",
+   "constituency": "Igan",
+   "state": "Sarawak",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P208",
+   "code": "P208",
+   "name": "P208 Sarikei",
+   "constituency": "Sarikei",
+   "state": "Sarawak",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P209",
+   "code": "P209",
+   "name": "P209 Julau",
+   "constituency": "Julau",
+   "state": "Sarawak",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P210",
+   "code": "P210",
+   "name": "P210 Kanowit",
+   "constituency": "Kanowit",
+   "state": "Sarawak",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P211",
+   "code": "P211",
+   "name": "P211 Lanang",
+   "constituency": "Lanang",
+   "state": "Sarawak",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P212",
+   "code": "P212",
+   "name": "P212 Sibu",
+   "constituency": "Sibu",
+   "state": "Sarawak",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P213",
+   "code": "P213",
+   "name": "P213 Mukah",
+   "constituency": "Mukah",
+   "state": "Sarawak",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P214",
+   "code": "P214",
+   "name": "P214 Selangau",
+   "constituency": "Selangau",
+   "state": "Sarawak",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P215",
+   "code": "P215",
+   "name": "P215 Kapit",
+   "constituency": "Kapit",
+   "state": "Sarawak",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P216",
+   "code": "P216",
+   "name": "P216 Hulu Rajang",
+   "constituency": "Hulu Rajang",
+   "state": "Sarawak",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P217",
+   "code": "P217",
+   "name": "P217 Bintulu",
+   "constituency": "Bintulu",
+   "state": "Sarawak",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P218",
+   "code": "P218",
+   "name": "P218 Sibuti",
+   "constituency": "Sibuti",
+   "state": "Sarawak",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P219",
+   "code": "P219",
+   "name": "P219 Miri",
+   "constituency": "Miri",
+   "state": "Sarawak",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P220",
+   "code": "P220",
+   "name": "P220 Baram",
+   "constituency": "Baram",
+   "state": "Sarawak",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P221",
+   "code": "P221",
+   "name": "P221 Limbang",
+   "constituency": "Limbang",
+   "state": "Sarawak",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  },
+  {
+   "id": "seat:P222",
+   "code": "P222",
+   "name": "P222 Lawas",
+   "constituency": "Lawas",
+   "state": "Sarawak",
+   "kind": "federal",
+   "chamber": "Parliament (Dewan Rakyat)"
+  }
+ ]
+}

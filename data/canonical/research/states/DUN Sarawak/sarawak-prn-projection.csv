@@ -1,0 +1,83 @@
+seat,constituency,w_2021,r_2021,margin_2021,w_party,proj_winner,proj_margin,flip
+N.01 Opar,Opar,GPS,ALONE,30.01,SUPP,GPS,30.01,False
+N.02 Tasik Biru,Tasik Biru,GPS,ALONE,49.92,PDP,GPS,49.92,False
+N.03 Tanjong Datu,Tanjong Datu,GPS,ALONE,70.96,PBB,GPS,70.96,False
+N.04 Pantai Damai,Pantai Damai,GPS,ALONE,64.39,PBB,GPS,64.39,False
+N.05 Demak Laut,Demak Laut,GPS,ALONE,72.12,PBB,GPS,72.12,False
+N.06 Tupong,Tupong,GPS,PH,80.76,PBB,GPS,76.86,False
+N.07 Samariang,Samariang,GPS,PH,82.76,PBB,GPS,78.86,False
+N.08 Satok,Satok,GPS,PH,75.9,PBB,GPS,72.0,False
+N.09 Padungan,Padungan,PH,GPS,14.66,DAP,PH,18.56,False
+N.10 Pending,Pending,PH,GPS,5.49,DAP,PH,9.39,False
+N.11 Batu Lintang,Batu Lintang,ALONE,GPS,1.06,PSB,ALONE,1.06,False
+N.12 Kota Sentosa,Kota Sentosa,GPS,PH,16.95,SUPP,GPS,13.05,False
+N.13 Batu Kitang,Batu Kitang,GPS,PH,49.26,SUPP,GPS,45.36,False
+N.14 Batu Kawah,Batu Kawah,GPS,PH,52.56,SUPP,GPS,48.66,False
+N.15 Asajaya,Asajaya,GPS,ALONE,55.06,PBB,GPS,55.06,False
+N.16 Muara Tuang,Muara Tuang,GPS,ALONE,58.66,PBB,GPS,58.66,False
+N.17 Stakan,Stakan,GPS,ALONE,58.65,PBB,GPS,58.65,False
+N.18 Serembu,Serembu,GPS,ALONE,25.44,PBB,GPS,25.44,False
+N.19 Mambong,Mambong,GPS,ALONE,35.47,PBB,GPS,35.47,False
+N.20 Tarat,Tarat,GPS,ALONE,62.66,PBB,GPS,62.66,False
+N.21 Tebedu,Tebedu,GPS,ALONE,47.5,PBB,GPS,47.5,False
+N.22 Kedup,Kedup,GPS,ALONE,52.52,PBB,GPS,52.52,False
+N.23 Bukit Semuja,Bukit Semuja,GPS,ALONE,62.56,PBB,GPS,62.56,False
+N.24 Sadong Jaya,Sadong Jaya,GPS,ALONE,80.96,PBB,GPS,80.96,False
+N.25 Simunjan,Simunjan,GPS,ALONE,64.43,PBB,GPS,64.43,False
+N.26 Gedong,Gedong,GPS,ALONE,71.95,PBB,GPS,71.95,False
+N.27 Sebuyau,Sebuyau,GPS,PH,72.02,PBB,GPS,68.12,False
+N.28 Lingga,Lingga,GPS,ALONE,44.33,PBB,GPS,44.33,False
+N.29 Beting Maro,Beting Maro,GPS,PN,29.36,PBB,GPS,46.76,False
+N.30 Balai Ringin,Balai Ringin,GPS,ALONE,15.39,PRS,GPS,15.39,False
+N.31 Bukit Begunan,Bukit Begunan,GPS,ALONE,20.91,PRS,GPS,20.91,False
+N.32 Simanggang,Simanggang,GPS,ALONE,2.26,SUPP,GPS,2.26,False
+N.33 Engkilili,Engkilili,ALONE,GPS,22.47,PSB,ALONE,22.47,False
+N.34 Batang Ai,Batang Ai,GPS,ALONE,13.0,PRS,GPS,13.0,False
+N.35 Saribas,Saribas,GPS,PH,45.97,PBB,GPS,42.07,False
+N.36 Layar,Layar,GPS,ALONE,35.5,PBB,GPS,35.5,False
+N.37 Bukit Saban,Bukit Saban,GPS,ALONE,59.01,PBB,GPS,59.01,False
+N.38 Kalaka,Kalaka,GPS,ALONE,58.32,PBB,GPS,58.32,False
+N.39 Krian,Krian,GPS,ALONE,13.63,PDP,GPS,13.63,False
+N.40 Kabong,Kabong,GPS,ALONE,40.54,PBB,GPS,40.54,False
+N.41 Kuala Rajang,Kuala Rajang,GPS,ALONE,46.11,PBB,GPS,46.11,False
+N.42 Semop,Semop,GPS,ALONE,57.23,PBB,GPS,57.23,False
+N.43 Daro,Daro,GPS,ALONE,92.58,PBB,GPS,92.58,False
+N.44 Jemoreng,Jemoreng,GPS,ALONE,80.4,PBB,GPS,80.4,False
+N.45 Repok,Repok,GPS,PH,57.24,SUPP,GPS,53.34,False
+N.46 Meradong,Meradong,GPS,ALONE,32.67,SUPP,GPS,32.67,False
+N.47 Pakan,Pakan,GPS,ALONE,12.26,PBB,GPS,12.26,False
+N.48 Meluan,Meluan,GPS,ALONE,8.46,PDP,GPS,8.46,False
+N.49 Ngemah,Ngemah,GPS,ALONE,4.26,PRS,GPS,4.26,False
+N.50 Machan,Machan,GPS,ALONE,33.58,PBB,GPS,33.58,False
+N.51 Bukit Assek,Bukit Assek,GPS,PH,10.29,SUPP,GPS,6.39,False
+N.52 Dudong,Dudong,GPS,ALONE,44.75,PDP,GPS,44.75,False
+N.53 Bawang Assan,Bawang Assan,ALONE,GPS,8.31,PSB,ALONE,8.31,False
+N.54 Pelawan,Pelawan,GPS,PH,1.15,SUPP,PH,2.75,True
+N.55 Nangka,Nangka,GPS,ALONE,81.15,PBB,GPS,81.15,False
+N.56 Dalat,Dalat,GPS,ALONE,87.81,PBB,GPS,87.81,False
+N.57 Tellian,Tellian,GPS,ALONE,51.66,PBB,GPS,51.66,False
+N.58 Balingian,Balingian,GPS,ALONE,55.89,PBB,GPS,55.89,False
+N.59 Tamin,Tamin,GPS,ALONE,29.98,PRS,GPS,29.98,False
+N.60 Kakus,Kakus,GPS,ALONE,21.76,PRS,GPS,21.76,False
+N.61 Pelagus,Pelagus,GPS,ALONE,22.62,PRS,GPS,22.62,False
+N.62 Katibas,Katibas,GPS,ALONE,55.51,PBB,GPS,55.51,False
+N.63 Bukit Goram,Bukit Goram,GPS,PH,71.22,PBB,GPS,67.32,False
+N.64 Baleh,Baleh,GPS,ALONE,36.9,PRS,GPS,36.9,False
+N.65 Belaga,Belaga,GPS,ALONE,46.2,PRS,GPS,46.2,False
+N.66 Murum,Murum,GPS,ALONE,46.71,PRS,GPS,46.71,False
+N.67 Jepak,Jepak,GPS,ALONE,51.05,PBB,GPS,51.05,False
+N.68 Tanjong Batu,Tanjong Batu,GPS,PH,0.28,SUPP,PH,3.62,True
+N.69 Kemena,Kemena,GPS,ALONE,39.83,PBB,GPS,39.83,False
+N.70 Samalaju,Samalaju,GPS,PH,66.77,PRS,GPS,62.87,False
+N.71 Bekenu,Bekenu,GPS,PH,73.82,PBB,GPS,69.92,False
+N.72 Lambir,Lambir,GPS,ALONE,68.18,PBB,GPS,68.18,False
+N.73 Piasau,Piasau,GPS,PH,58.05,SUPP,GPS,54.15,False
+N.74 Pujut,Pujut,GPS,PH,16.4,SUPP,GPS,12.5,False
+N.75 Senadin,Senadin,GPS,PH,56.32,SUPP,GPS,52.42,False
+N.76 Marudi,Marudi,GPS,ALONE,57.67,PDP,GPS,57.67,False
+N.77 Telang Usan,Telang Usan,GPS,ALONE,45.7,PBB,GPS,45.7,False
+N.78 Mulu,Mulu,GPS,ALONE,62.68,PBB,GPS,62.68,False
+N.79 Bukit Kota,Bukit Kota,GPS,ALONE,62.94,PBB,GPS,62.94,False
+N.80 Batu Danau,Batu Danau,GPS,ALONE,13.19,PBB,GPS,13.19,False
+N.81 Ba'kelalan,Ba'kelalan,ALONE,GPS,14.49,PSB,ALONE,14.49,False
+N.82 Bukit Sari,Bukit Sari,GPS,ALONE,79.0,PBB,GPS,79.0,False

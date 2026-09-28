@@ -1,0 +1,223 @@
+code,constituency,state,member,coalition,party
+P001,Padang Besar,Perlis,Rushdan Rusmi,PN,PAS
+P002,Kangar,Perlis,Zakri Hassan,PN,BERSATU
+P003,Arau,Perlis,Shahidan Kassim,PN,PAS
+P004,Langkawi,Kedah,Mohd Suhaimi Abdullah,PN,BERSATU
+P005,Jerlun,Kedah,Abd Ghani Ahmad,PN,PAS
+P006,Kubang Pasu,Kedah,Ku Abd Rahman Ku Ismail,PN,BERSATU
+P007,Padang Terap,Kedah,Nurul Amin Hamid,PN,PAS
+P008,Pokok Sena,Kedah,Ahmad Saad @ Yahaya,PN,PAS
+P009,Alor Setar,Kedah,Afnan Hamimi Taib Azamudden,PN,PAS
+P010,Kuala Kedah,Kedah,Ahmad Fakhruddin Fakhrurazi,PN,PAS
+P011,Pendang,Kedah,Awang Hashim,PN,PAS
+P012,Jerai,Kedah,Sabri Azit,PN,PAS
+P013,Sik,Kedah,Ahmad Tarmizi Sulaiman,PN,PAS
+P014,Merbok,Kedah,Mohd Nazri Abu Hassan,PN,BERSATU
+P015,Sungai Petani,Kedah,Mohammed Taufiq Johari,PH,PKR
+P016,Baling,Kedah,Hassan Saad,PN,PAS
+P017,Padang Serai,Kedah,Azman Nasrudin,PN,BERSATU
+P018,Kulim-Bandar Baharu,Kedah,Roslan Hashim,PN,BERSATU
+P019,Tumpat,Kelantan,Mumtaz Md Nawi,PN,PAS
+P020,Pengkalan Chepa,Kelantan,Ahmad Marzuk Shaary,PN,PAS
+P021,Kota Bharu,Kelantan,Takiyuddin Hassan,PN,PAS
+P022,Pasir Mas,Kelantan,Ahmad Fadhli Shaari,PN,PAS
+P023,Rantau Panjang,Kelantan,Siti Zailah Mohd Yusoff,PN,PAS
+P024,Kubang Kerian,Kelantan,Tuan Ibrahim Tuan Man,PN,PAS
+P025,Bachok,Kelantan,Mohd Syahir Che Sulaiman,PN,PAS
+P026,Ketereh,Kelantan,Khlir Mohd Nor,PN,BERSATU
+P027,Tanah Merah,Kelantan,Ikmal Hisham Abdul Aziz,PN,BERSATU
+P028,Pasir Puteh,Kelantan,Nik Muhammad Zawawi Salleh,PN,PAS
+P029,Machang,Kelantan,Wan Ahmad Fayhsal Wan Ahmad Kamal,PN,WAWASAN
+P030,Jeli,Kelantan,Zahari Kechik,IND,IND
+P031,Kuala Krai,Kelantan,Abdul Latiff Abdul Rahman,PN,PAS
+P032,Gua Musang,Kelantan,Mohd Azizi Abu Naim,IND,IND
+P033,Besut,Terengganu,Che Mohamad Zulkifly Jusoh,PN,PAS
+P034,Setiu,Terengganu,Shaharizukirnain Abdul Kadir,PN,PAS
+P035,Kuala Nerus,Terengganu,Alias Razak,PN,PAS
+P036,Kuala Terengganu,Terengganu,Ahmad Amzad Hashim recontest and won on 12 August 2023,PN,PAS
+P037,Marang,Terengganu,Abdul Hadi Awang,PN,PAS
+P038,Hulu Terengganu,Terengganu,Rosol Wahid,PN,BERSATU
+P039,Dungun,Terengganu,Wan Hassan Mohd Ramli,PN,PAS
+P040,Kemaman,Terengganu,Ahmad Samsuri Mokhtar from 2 December 2023,PN,PAS
+P041,Kepala Batas,Penang,Siti Mastura Muhammad,PN,PAS
+P042,Tasek Gelugor,Penang,Wan Saifulruddin Wan Jan,PN,WAWASAN
+P043,Bagan,Penang,Lim Guan Eng,PH,DAP
+P044,Permatang Pauh,Penang,Muhammad Fawwaz Mohamad Jan,PN,PAS
+P045,Bukit Mertajam,Penang,Steven Sim Chee Keong,PH,DAP
+P046,Batu Kawan,Penang,Chow Kon Yeow,PH,DAP
+P047,Nibong Tebal,Penang,Fadhlina Sidek,PH,PKR
+P048,Bukit Bendera,Penang,Syerleena Abdul Rashid,PH,DAP
+P049,Tanjong,Penang,Lim Hui Ying,PH,DAP
+P050,Jelutong,Penang,Sanisvara Nethaji Rayer Rajaji Rayer,PH,DAP
+P051,Bukit Gelugor,Penang,Ramkarpal Singh,PH,DAP
+P052,Bayan Baru,Penang,Sim Tze Tzin,PH,PKR
+P053,Balik Pulau,Penang,Muhammad Bakhtiar Wan Chik,PH,PKR
+P054,Gerik,Perak,Fathul Huzir Ayob,PN,WAWASAN
+P055,Lenggong,Perak,Shamsul Anuar Nasarah,BN,UMNO
+P056,Larut,Perak,Hamzah Zainudin,PN,WAWASAN
+P057,Parit Buntar,Perak,Mohd Misbahul Munir Masduki,PN,PAS
+P058,Bagan Serai,Perak,Idris Ahmad,PN,PAS
+P059,Bukit Gantang,Perak,Syed Abu Hussin Hafiz Syed Abdul Fasal,IND,IND
+P060,Taiping,Perak,Wong Kah Woh,PH,DAP
+P061,Padang Rengas,Perak,Azahari Hasan,PN,WAWASAN
+P062,Sungai Siput,Perak,Kesavan Subramaniam,PH,PKR
+P063,Tambun,Perak,Anwar Ibrahim,PH,PKR
+P064,Ipoh Timor,Perak,Howard Lee Chuan How,PH,DAP
+P065,Ipoh Barat,Perak,Kulasegaran Murugeson,PH,DAP
+P066,Batu Gajah,Perak,Sivakumar Varatharaju Naidu,PH,DAP
+P067,Kuala Kangsar,Perak,Iskandar Dzulkarnain Abdul Khalid,IND,IND
+P068,Beruas,Perak,Ngeh Koo Ham,PH,DAP
+P069,Parit,Perak,Muhammad Ismi Mat Taib,PN,PAS
+P070,Kampar,Perak,Chong Zhemin,PH,DAP
+P071,Gopeng,Perak,Tan Kar Hing,PH,PKR
+P072,Tapah,Perak,Saravanan Murugan,BN,MIC
+P073,Pasir Salak,Perak,Jamaludin Yahya,PN,PAS
+P074,Lumut,Perak,Nordin Ahmad Ismail,PN,BERSATU
+P075,Bagan Datuk,Perak,Ahmad Zahid Hamidi,BN,UMNO
+P076,Teluk Intan,Perak,Nga Kor Ming,PH,DAP
+P077,Tanjong Malim,Perak,Chang Lih Kang,PH,PKR
+P078,Cameron Highlands,Pahang,Ramli Mohd Nor (Deputy Speaker),BN,UMNO
+P079,Lipis,Pahang,Abdul Rahman Mohamad,BN,UMNO
+P080,Raub,Pahang,Chow Yu Hui,PH,DAP
+P081,Jerantut,Pahang,Khairil Nizam Khirudin,PN,PAS
+P082,Indera Mahkota,Pahang,Saifuddin Abdullah,PN,WAWASAN
+P083,Kuantan,Pahang,Wan Razali Wan Nor,PN,PAS
+P084,Paya Besar,Pahang,Mohd Shahar Abdullah,BN,UMNO
+P085,Pekan,Pahang,Sh Mohmed Puzi Sh Ali,BN,UMNO
+P086,Maran,Pahang,Ismail Abdul Muttalib,PN,PAS
+P087,Kuala Krau,Pahang,Kamal Ashaari,PN,PAS
+P088,Temerloh,Pahang,Salamiah Mohd Nor,PN,PAS
+P089,Bentong,Pahang,Young Syefura Othman,PH,DAP
+P090,Bera,Pahang,Ismail Sabri Yaakob,BN,UMNO
+P091,Rompin,Pahang,Abdul Khalib Abdullah,PN,BERSATU
+P092,Sabak Bernam,Selangor,Kalam Salan,PN,BERSATU
+P093,Sungai Besar,Selangor,Muslimin Yahaya,PN,BERSATU
+P094,Hulu Selangor,Selangor,Mohd Hasnizan Harun,PN,PAS
+P095,Tanjong Karang,Selangor,Zulkafperi Hanapi,IND,IND
+P096,Kuala Selangor,Selangor,Dzulkefly Ahmad,PH,AMANAH
+P097,Selayang,Selangor,William Leong Jee Keen,PH,PKR
+P098,Gombak,Selangor,Amirudin Shari,PH,PKR
+P099,Ampang,Selangor,Rodziah Ismail,PH,PKR
+P100,Pandan,Selangor,VACANT (resigned for Bersama),VAC,VAC
+P101,Hulu Langat,Selangor,Mohd Sany Hamzan,PH,AMANAH
+P102,Bangi,Selangor,Syahredzan Johan,PH,DAP
+P103,Puchong,Selangor,Yeo Bee Yin,PH,DAP
+P104,Subang,Selangor,Wong Chen,PH,PKR
+P105,Petaling Jaya,Selangor,Lee Chean Chung,PH,PKR
+P106,Damansara,Selangor,Gobind Singh Deo,PH,DAP
+P107,Sungai Buloh,Selangor,Ramanan Ramakrishnan,PH,PKR
+P108,Shah Alam,Selangor,Azli Yusof,PH,AMANAH
+P109,Kapar,Selangor,Halimah Ali,PN,PAS
+P110,Klang,Selangor,Ganabatirau Veraman,PH,DAP
+P111,Kota Raja,Selangor,Mohamad Sabu,PH,AMANAH
+P112,Kuala Langat,Selangor,Ahmad Yunus Hairi,PN,PAS
+P113,Sepang,Selangor,Aiman Athirah Sabu,PH,AMANAH
+P114,Kepong,Kuala Lumpur (FT),Lim Lip Eng,PH,DAP
+P115,Batu,Kuala Lumpur (FT),Prabakaran Parameswaran,PH,PKR
+P116,Wangsa Maju,Kuala Lumpur (FT),Zahir Hassan,PH,PKR
+P117,Segambut,Kuala Lumpur (FT),Hannah Yeoh Tseow Suan,PH,DAP
+P118,Setiawangsa,Kuala Lumpur (FT),VACANT (resigned for Bersama),VAC,VAC
+P119,Titiwangsa,Kuala Lumpur (FT),Johari Abdul Ghani,BN,UMNO
+P120,Bukit Bintang,Kuala Lumpur (FT),Fong Kui Lun,PH,DAP
+P121,Lembah Pantai,Kuala Lumpur (FT),Ahmad Fahmi Mohamed Fadzil,PH,PKR
+P122,Seputeh,Kuala Lumpur (FT),Teresa Kok Suh Sim,PH,DAP
+P123,Cheras,Kuala Lumpur (FT),Tan Kok Wai,PH,DAP
+P124,Bandar Tun Razak,Kuala Lumpur (FT),Wan Azizah Wan Ismail,PH,PKR
+P125,Putrajaya,Putrajaya (FT),Mohd Radzi Md Jidin,PN,BERSATU
+P126,Jelebu,Negeri Sembilan,Jalaluddin Alias,BN,UMNO
+P127,Jempol,Negeri Sembilan,Shamshulkahar Mohd Deli,BN,UMNO
+P128,Seremban,Negeri Sembilan,Loke Siew Fook,PH,DAP
+P129,Kuala Pilah,Negeri Sembilan,Adnan Abu Hassan,BN,UMNO
+P130,Rasah,Negeri Sembilan,Cha Kee Chin,PH,DAP
+P131,Rembau,Negeri Sembilan,Mohamad Hasan,BN,UMNO
+P132,Port Dickson,Negeri Sembilan,Aminuddin Harun,PH,PKR
+P133,Tampin,Negeri Sembilan,Mohd Isam Mohd Isa,BN,UMNO
+P134,Masjid Tanah,Malacca,Mas Ermieyati Samsudin,PN,BERSATU
+P135,Alor Gajah,Malacca,Adly Zahari,PH,AMANAH
+P136,Tangga Batu,Malacca,Bakri Jamaluddin,PN,PAS
+P137,Hang Tuah Jaya,Malacca,Adam Adli Abdul Halim,PH,PKR
+P138,Kota Melaka,Malacca,Khoo Poay Tiong,PH,DAP
+P139,Jasin,Malacca,Zulkifli Ismail,PN,PAS
+P140,Segamat,Johor,Yuneswaran Ramaraj,PH,PKR
+P141,Sekijang,Johor,Zaliha Mustafa,PH,PKR
+P142,Labis,Johor,Pang Hok Liong,PH,DAP
+P143,Pagoh,Johor,Muhyiddin Yassin,PN,BERSATU
+P144,Ledang,Johor,Syed Ibrahim Syed Noh,PH,PKR
+P145,Bakri,Johor,Tan Hong Pin,PH,DAP
+P146,Muar,Johor,Syed Saddiq Syed Abdul Rahman,MUDA,MUDA
+P147,Parit Sulong,Johor,Noraini Ahmad,BN,UMNO
+P148,Ayer Hitam,Johor,Wee Ka Siong,BN,MCA
+P149,Sri Gading,Johor,Aminolhuda Hassan,PH,AMANAH
+P150,Batu Pahat,Johor,Onn Abu Bakar,PH,PKR
+P151,Simpang Renggam,Johor,Hasni Mohammad,BN,UMNO
+P152,Kluang,Johor,Wong Shu Qi,PH,DAP
+P153,Sembrong,Johor,Hishammuddin Hussein,BN,UMNO
+P154,Mersing,Johor,Muhammad Islahuddin Abas,PN,BERSATU
+P155,Tenggara,Johor,Manndzri Nasib,BN,UMNO
+P156,Kota Tinggi,Johor,Mohamed Khaled Nordin,BN,UMNO
+P157,Pengerang,Johor,Azalina Othman Said,BN,UMNO
+P158,Tebrau,Johor,Jimmy Puah Wee Tse,PH,PKR
+P159,Pasir Gudang,Johor,Hassan Abdul Karim,PH,PKR
+P160,Johor Bahru,Johor,Akmal Nasrullah Mohd Nasir,PH,PKR
+P161,Pulai,Johor,Suhaizan Kayat since 9 September 2023,PH,AMANAH
+P162,Iskandar Puteri,Johor,Liew Chin Tong,PH,DAP
+P163,Kulai,Johor,Teo Nie Ching,PH,DAP
+P164,Pontian,Johor,Ahmad Maslan,BN,UMNO
+P165,Tanjung Piai,Johor,Wee Jeck Seng,BN,MCA
+P166,Labuan,Labuan (FT),Suhaili Abdul Rahman,IND,IND
+P167,Kudat,Sabah,Verdon Bahanda,IND,IND
+P168,Kota Marudu,Sabah,Wetrom Bahanda,KDM,Direct
+P169,Kota Belud,Sabah,Isnaraissah Munirah Majilis,WARISAN,Direct
+P170,Tuaran,Sabah,Wilfred Madius Tangau,GRS,UPKO
+P171,Sepanggar,Sabah,Mustapha @ Mohd Yunus Sakmud,PH,PKR
+P172,Kota Kinabalu,Sabah,Chan Foong Hin,PH,DAP
+P173,Putatan,Sabah,Shahelmey Yahya,BN,UMNO
+P174,Penampang,Sabah,Ewon Benedick,GRS,UPKO
+P175,Papar,Sabah,Armizan Mohd Ali,GRS,Direct
+P176,Kimanis,Sabah,Mohamad Alamin,BN,UMNO
+P177,Beaufort,Sabah,Siti Aminah Aching,BN,UMNO
+P178,Sipitang,Sabah,Matbali Musah,GRS,Direct
+P179,Ranau,Sabah,Jonathan Yasin,GRS,Direct
+P180,Keningau,Sabah,Jeffrey Kitingan,STAR,Direct
+P181,Tenom,Sabah,Riduan Rubin,KDM,Direct
+P182,Pensiangan,Sabah,Arthur Joseph Kurup,BN,PBRS
+P183,Beluran,Sabah,Ronald Kiandee,PN,BERSATU
+P184,Libaran,Sabah,Suhaimi Nasir,BN,UMNO
+P185,Batu Sapi,Sabah,Khairul Firdaus Akbar Khan,GRS,Direct
+P186,Sandakan,Sabah,Vivian Wong Shir Yee,PH,DAP
+P187,Kinabatangan,Sabah,Mohammad Naim Kurniawan Moktar since 24 January 2026,BN,UMNO
+P188,Lahad Datu,Sabah,Mohammad Yusof Apdal,WARISAN,Direct
+P189,Semporna,Sabah,Mohd Shafie Apdal,WARISAN,Direct
+P190,Tawau,Sabah,Lo Su Fui,GRS,PBS
+P191,Kalabakan,Sabah,Andi Muhammad Suryady Bandy,BN,UMNO
+P192,Mas Gading,Sarawak,Mordi Bimol,PH,DAP
+P193,Santubong,Sarawak,Nancy Shukri,GPS,PBB
+P194,Petra Jaya,Sarawak,Fadillah Yusof,GPS,PBB
+P195,Bandar Kuching,Sarawak,Kelvin Yii Lee Wuen,PH,DAP
+P196,Stampin,Sarawak,Chong Chieng Jen,PH,DAP
+P197,Kota Samarahan,Sarawak,Rubiah Wang,GPS,PBB
+P198,Puncak Borneo,Sarawak,Willie Mongin,GPS,PBB
+P199,Serian,Sarawak,Richard Riot Jaem,GPS,SUPP
+P200,Batang Sadong,Sarawak,Rodiyah Sapiee,GPS,PBB
+P201,Batang Lupar,Sarawak,Mohamad Shafizan Kepli,GPS,PBB
+P202,Sri Aman,Sarawak,Doris Sophia Brodi,GPS,PRS
+P203,Lubok Antu,Sarawak,Roy Angau Gingkoi,GPS,PRS
+P204,Betong,Sarawak,Richard Rapu,GPS,PBB
+P205,Saratok,Sarawak,Ali Biju,PN,BERSATU
+P206,Tanjong Manis,Sarawak,Yusuf Abd Wahab,GPS,PBB
+P207,Igan,Sarawak,Ahmad Johnie Zawawi,GPS,PBB
+P208,Sarikei,Sarawak,Huang Tiong Sii,GPS,SUPP
+P209,Julau,Sarawak,Larry Sng Wei Shien,PBM,Direct
+P210,Kanowit,Sarawak,Aaron Ago Dagang,GPS,PRS
+P211,Lanang,Sarawak,Alice Lau Kiong Yieng (Deputy Speaker),PH,DAP
+P212,Sibu,Sarawak,Oscar Ling Chai Yew,PH,DAP
+P213,Mukah,Sarawak,Hanifah Hajar Taib,GPS,PBB
+P214,Selangau,Sarawak,Edwin Banta,GPS,PRS
+P215,Kapit,Sarawak,Alexander Nanta Linggi,GPS,PBB
+P216,Hulu Rajang,Sarawak,Wilson Ugak Kumbong,GPS,PRS
+P217,Bintulu,Sarawak,Tiong King Sing,GPS,PDP
+P218,Sibuti,Sarawak,Lukanisman Awang Sauni,GPS,PBB
+P219,Miri,Sarawak,Chiew Choon Man,PH,PKR
+P220,Baram,Sarawak,Anyi Ngau,GPS,PDP
+P221,Limbang,Sarawak,Hasbi Habibollah,GPS,PBB
+P222,Lawas,Sarawak,Henry Sum Agong,GPS,PBB

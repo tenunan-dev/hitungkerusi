@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pilihan Raya Negeri Selangor (PRN) — Laporan Lengkap (BM)</title>
+<style>
+:root{
+  --bg:#0b1220; --panel:#111a2c; --panel2:#16213a; --line:#243350;
+  --text:#e6edf7; --body:#c9d6ea; --muted:#aab8cc; --accent:#38bdf8;
+  --gold:#a16207; --ph:#e6423e; --pn:#16a34a; --bn:#1d4ed8; --gps:#a16207;
+  --grs:#0d9488; --ind:#94a3b8; --bloc:#64748b;
+  --shadow:0 2px 14px rgba(0,0,0,.25);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--body);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;line-height:1.65;font-size:16px}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:1180px;margin:0 auto;padding:0 18px}
+
+/* header */
+header{background:linear-gradient(135deg,#0e1728 0%,#13233c 60%,#16305a 100%);border-bottom:1px solid var(--line);padding:26px 0 22px}
+header h1{margin:0;font-size:1.5rem;color:var(--text);letter-spacing:.01em}
+header .sub{color:var(--muted);font-size:.85rem;margin-top:6px}
+header .meta{color:var(--muted);font-size:.72rem;margin-top:10px;line-height:1.5}
+
+/* layout: left TOC + content */
+.layout{display:flex;gap:26px;padding:26px 18px 60px;align-items:flex-start}
+.toc{position:sticky;top:18px;flex:0 0 240px;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 12px;max-height:calc(100vh - 40px);overflow-y:auto;box-shadow:var(--shadow)}
+.toc .toc-h{color:var(--accent);font-weight:700;font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px;padding:0 6px}
+.toc a{display:block;color:var(--muted);padding:5px 8px;border-radius:7px;border-left:2px solid transparent;font-size:.8rem;line-height:1.4;margin-bottom:2px}
+.toc a:hover{color:var(--text);background:var(--panel2)}
+.toc a.active{color:var(--accent);font-weight:700;border-left-color:var(--accent);background:var(--panel2)}
+.toc .toc-lang{margin-top:14px;padding-top:12px;border-top:1px solid var(--line)}
+.toc .toc-lang a{display:inline-block;font-size:.75rem;padding:4px 10px;border:1px solid var(--line);border-radius:7px;margin:2px 4px 2px 0}
+.toc .toc-lang a.on{background:var(--accent);color:#06121f;border-color:var(--accent);font-weight:700}
+
+/* content */
+.content{flex:1 1 auto;min-width:0;max-width:820px}
+.content h2{color:var(--accent);font-size:1.45rem;margin:2.2em 0 .9em;border-bottom:1px solid var(--line);padding-bottom:10px;scroll-margin-top:20px}
+.content h2:first-child{margin-top:.2em}
+.content p{margin:0 0 1.15em;text-align:justify}
+.content p.lead{font-size:1.08rem;color:var(--text);font-weight:500}
+.content strong{color:var(--text)}
+.content .tag{color:var(--accent);font-size:.78em;background:rgba(56,189,248,.1);border:1px solid rgba(56,189,248,.25);border-radius:5px;padding:1px 6px;white-space:nowrap}
+.table-wrap{overflow-x:auto;margin:0 0 1.4em;border:1px solid var(--line);border-radius:10px;box-shadow:var(--shadow)}
+table{border-collapse:collapse;width:100%;font-size:.85rem}
+th{background:var(--panel2);color:var(--text);text-align:left;padding:9px 12px;border-bottom:1px solid var(--line);font-weight:700;white-space:nowrap}
+td{padding:8px 12px;border-bottom:1px solid var(--line);color:var(--body);vertical-align:top}
+tr:nth-child(even) td{background:rgba(255,255,255,.015)}
+tr:last-child td{border-bottom:0}
+ul,ol{margin:0 0 1.2em;padding-left:1.5em}
+li{margin-bottom:.45em}
+hr{border:0;border-top:1px solid var(--line);margin:2em 0}
+
+/* bottom tab strip — aligned RIGHT (user directive) */
+.tabbar{display:flex;justify-content:flex-end;align-items:center;gap:10px;flex-wrap:wrap;margin:34px 0 0;padding-top:18px;border-top:1px solid var(--line)}
+.tabbar .lbl{color:var(--muted);font-size:.78rem;margin-right:auto}
+.tabbar a{display:inline-block;padding:7px 14px;border:1px solid var(--line);border-radius:8px;background:var(--panel);color:var(--accent);font-size:.82rem;font-weight:600}
+.tabbar a:hover{background:var(--panel2);text-decoration:none}
+
+/* footer */
+footer{background:#0a0f1c;border-top:1px solid var(--line);padding:22px 0;color:var(--muted);font-size:.72rem;text-align:center}
+
+@media (max-width:900px){
+  .layout{flex-direction:column}
+  .toc{position:static;flex:none;width:100%;max-height:280px}
+}
+@media print{
+  .toc,.tabbar,header{display:none}
+  body{background:#fff;color:#111}
+  .content p{text-align:left}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1>Pilihan Raya Negeri Selangor (PRN) — Laporan Lengkap (BM)</h1>
+    <div class="sub">Laporan DUN Selangor — analisis penuh negeri dalam konteks PRU16 · Selangor State Assembly report in the GE16 context</div>
+  </div>
+</header>
+<div class="wrap layout">
+  <nav class="toc" aria-label="Table of contents">
+    <div class="toc-h">Senarai Kandungan · Contents</div>
+    <a href="#0-ringkasan-eksekutif">0. Ringkasan Eksekutif</a>
+<a href="#1-pengenalan-konteks">1. Pengenalan & Konteks</a>
+<a href="#2-dewan-undangan-negeri-rangka-kerja-pilihan-raya">2. Dewan Undangan Negeri & Rangka Kerja Pilihan Raya</a>
+<a href="#3-pengundi">3. Pengundi</a>
+<a href="#4-garis-dasar-prn-se-15-12-august-2023">4. Garis Dasar PRN SE-15 (12 August 2023)</a>
+<a href="#5-demografi-calon">5. Demografi Calon</a>
+<a href="#6-kerusi-persekutuan-di-negeri-ini">6. Kerusi Persekutuan di Negeri Ini</a>
+<a href="#7-isyarat-sejak-prn-terakhir">7. Isyarat Sejak PRN Terakhir</a>
+<a href="#8-metodologi">8. Metodologi</a>
+<a href="#9-tinjauan-unjuran">9. Tinjauan Unjuran</a>
+<a href="#10-medan-pertempuran-kerusi-yang-perlu-diperhatikan">10. Medan Pertempuran & Kerusi yang Perlu Diperhatikan</a>
+<a href="#11-implikasi-strategik">11. Implikasi Strategik</a>
+<a href="#12-rujukan-provenans">12. Rujukan & Provenans</a>
+    <div class="toc-lang">
+      <a class="on">ms</a>
+      <a href="selangor-en.html">EN</a>
+    </div>
+  </nav>
+  <article class="content">
+    <h1>Pilihan Raya Negeri (PRN) Selangor — Laporan Lengkap</h1>
+<p class="lead"><strong>Disusun:</strong> 15 August 2026 · <strong>Kerusi DUN:</strong> 56 (daftar: 56) · <strong>Pilihan raya terakhir:</strong> SE-15 (12 August 2023) · <strong>Keputusan:</strong> PH 32, PN 22, BN 2 · <strong>Pembubaran seterusnya:</strong> ~10 August 2028 · <strong>Status:</strong> PRN selepas tetingkap GE16 · <strong>Model:</strong> uniform-swing v1.0</p>
+<p><strong>Arkib:</strong> setiap laporan terdahulu disimpan dalam <code>Report/states/DUN Selangor/archive/</code></p>
+<hr>
+<h2 id="0-ringkasan-eksekutif">0. Ringkasan Eksekutif</h2>
+<p>Laporan ini membentangkan analisis lengkap dan berdikari mengenai Dewan Undangan Negeri (DUN) Selangor sewaktu memasuki kitaran pilihan raya umum keenam belas, yang dibina dari bawah ke atas: setiap kiraan kerusi, setiap margin, setiap angka keluar mengundi, dan setiap statistik demografi calon dihitung secara langsung daripada set data projek pada masa pembinaan laporan. Tiada apa-apa yang ditaip secara manual. Laporan ini mengikut disiplin tesis yang sama seperti laporan persekutuan — Selangor dilayan bukan sebagai himpunan jadual tetapi sebagai sebuah sistem politik yang mempunyai logiknya sendiri, imbangan kuasanya sendiri, dan trajektorinya sendiri menuju GE16.</p>
+<p>Dapatan utama untuk Selangor adalah <strong>dominasi PH dengan 32 daripada 56 kerusi</strong> (57.1 peratus daripada dewan). Selangor ialah hadiah terbesar dalam aritmetik persekutuan — 22 kerusi, PH+BN 34 daripada 56 selepas pilihan raya negeri paling rapat dalam sejarah — dan ia ialah medan pertempuran sebenar bagi majoriti PH. Struktur margin menceritakan ceritanya: purata margin kemenangan di seluruh 56 kerusi negeri adalah <strong>26.5 mata peratusan</strong>, dengan <strong>6 kerusi super-marginal</strong> di bawah dua mata, <strong>7 kerusi marginal</strong> antara dua dengan lima, dan <strong>37 kerusi selamat</strong> melebihi sepuluh mata — satu taburan yang menentukan sejauh mana negeri ini benar-benar boleh ditandingi dalam GE16.</p>
+<p>Kerajaan negeri, yang bersekutu dengan <strong>PH+BN</strong>, menguasai <strong>34</strong> kerusi berbanding <strong>22</strong> bagi gabungan pembangkang dan bebas — satu kusyen +5 melebihi majoriti minimum 29. Pilihan raya negeri yang paling terkini, SE-15 (12 August 2023), menghasilkan pergerakan undi seperti berikut: PN +18.1pp, BN -12.7pp, PH -6.4pp.</p>
+<p>Selangor menyumbang <strong>22 kawasan persekutuan</strong> kepada Dewan Rakyat, di mana <strong>5 merupakan medan pertempuran persekutuan</strong> (margin GE15 di bawah lima mata) — kerusi-kerusi di mana dinamik negeri ini memberi kesan langsung kepada aritmetik GE16 nasional. Laporan ini meneliti, dalam dua belas bahagian, rangka kerja pilihan raya negeri, elektoratnya, garis dasar PRNnya, demografi calonnya, delegasi persekutuannya, isyarat yang berubah sejak pilihan raya negeri lepas, metodologi di sebalik unjuran, julat senario, medan pertempuran yang perlu diperhatikan, dan implikasi strategik untuk setiap blok.</p>
+<p><strong>Apa yang perlu diperhatikan di Selangor:</strong> Perhatikan Kuala Selangor, Hulu Selangor dan Kapar — kerusi persekutuan majoriti Melayu di mana lonjakan PN 2023 paling kuat dan pegangan PH paling lemah.</p>
+<p>Ringkasnya: Selangor memasuki GE16 dengan struktur kuasa yang jelas, tetapi bahagian-bahagian yang berikut menunjukkan bahawa kejelasan struktur tidak bermakna ketiadaan ketidakpastian — setiap kerusi marginal, setiap pergerakan undi yang diukur sejak pilihan raya negeri terakhir, dan setiap isyarat peristiwa yang direkodkan dalam penjejak berita menyumbang kepada gambaran yang lebih bernuansa daripada tajuk utama sahaja. Pembaca yang ingin memahami sama ada Selangor akan kekal seperti sekarang atau berubah dalam GE16 harus memberi perhatian khusus kepada Bahagian 9–12, di mana ketidakpastian itu diukur dan bukan sekadar disebut.</p>
+<hr>
+<h2 id="1-pengenalan-konteks">1. Pengenalan & Konteks</h2>
+<p>Selangor ialah negeri terkaya dan paling ramai penduduk di Malaysia — 56 kerusi dewan, 22 kerusi persekutuan, enjin ekonomi negara — dan pilihan raya negeri 2023 ialah yang paling sengit dalam satu generasi. PH dan BN, bertanding di bawah pakatan Kerajaan Perpaduan buat pertama kali, mengekalkan negeri dengan 34 daripada 56 kerusi, tetapi gelombang hijau PN memotong dalam ke kawasan majoriti Melayu di tali pinggang utara dan pantai: pembangkang melonjak lebih 11 mata, hampir menawan negeri dan menukar Selangor kepada medan pertempuran persekutuan sebenar. 22 kerusi persekutuan negeri termasuk kerusi bandar PH paling selamat dan kerusi pinggir bandar paling terdedah — dan kerana saiznya, Selangor ialah hadiah terbesar dalam aritmetik GE16. Keadaan ini menjadikan Selangor ujian dua hala bagi kedua-dua blok: bagi PH, ia ialah negeri yang mesti dipertahankan kerana kehilangannya akan memusnahkan mana-mana laluan ke majoriti; bagi PN, ia ialah satu-satunya negeri bukan Malay Belt yang boleh membawanya melintasi ambang 112 — dan lonjakan 2023 menunjukkan sasaran itu tidak lagi di luar jangkauan.</p>
+<p>Kedudukan negeri ini dalam aritmetik nasional tidak selari dengan saiznya. Selangor menghantar 22 ahli ke Dewan Rakyat — 9.9 peratus daripada dewan 222 kerusi — dan kerajaan negerinya, yang dibentuk oleh <strong>PH+BN</strong> selepas SE-15 (12 August 2023), adalah salah satu daripada 13 pentadbiran negeri yang akan bertahan atau tumbang berdasarkan rekod mereka sendiri dari sekarang hingga GE16. Hubungan antara arena negeri dengan persekutuan berjalan dua hala: keputusan peringkat negeri sejak GE15 merupakan data keutamaan terserlah yang paling berharga bagi projek ini, kerana ia mengukur undi sebenar yang dibuang oleh elektorat yang sama yang akan mengundi di peringkat persekutuan, sementara arus persekutuan — perpecahan PAS–Bersatu, penjajaran semula WAWASAN, pelancaran Bersama — membentuk semula pertandingan peringkat negeri secara masa nyata.</p>
+<p>Kerangka analisis yang digunakan di sini adalah hierarki empat lapisan yang sama yang mendorong model persekutuan (<span class="tag">[S-10]</span>): identiti (komposisi etnik, rantau, Timur lawan Barat) menetapkan struktur asas setiap kerusi; valens (kepimpinan, jenama gabungan, kepercayaan rasuah) mengalihkan margin dalam struktur tersebut; prestasi (ekonomi, kos sara hidup, tadbir urus) menentukan pilihan dalam etnik yang sama; dan peristiwa (perpecahan, kuasa ketiga, skandal) boleh memecahkan struktur di kerusi individu. Bagi Selangor, keseimbangan antara lapisan ini adalah seimbang secara konvensional — identiti menetapkan garis dasar, tetapi prestasi dan peristiwa mengekalkan kapasiti ayunan yang cukup untuk menjadi penting di kerusi marginal — dan bahagian-bahagian yang berikut menjejak setiap lapisan melalui data negeri itu sendiri.</p>
+<hr>
+<h2 id="2-dewan-undangan-negeri-rangka-kerja-pilihan-raya">2. Dewan Undangan Negeri & Rangka Kerja Pilihan Raya</h2>
+<p>Dewan Undangan Negeri Selangor terdiri daripada <strong>56 kawasan pilihan raya ahli tunggal</strong>, setiap satunya mengembalikan seorang ADUN di bawah sistem pemenang undi terbanyak (first-past-the-post). Ini meletakkan Selangor sebagai dewan undangan negeri ke-ke-6 terbesar di Malaysia, dan bilangan kerusi ditetapkan oleh perlembagaan negeri sehingga suatu persempadanan semula — satu proses yang, seperti di peringkat persekutuan, telah dibekukan secara politik selama bertahun-tahun. Di bawah FPTP, calon yang memperoleh undi terbanyak di setiap kawasan menang tanpa mengira sama ada mereka mendapat majoriti undi yang dibuang; akibat praktikalnya ialah geografi pilihan raya Selangor — penumpuan sokongan setiap blok merentasi 56 kerusinya — lebih penting daripada bahagian undi mentahnya. Sesebuah blok boleh memenangi majoriti kerusi dengan undi minoriti jika sokongannya diagihkan dengan cekap, dan sebaliknya juga benar.</p>
+<p>Tempoh penggal dewan adalah lima tahun dari persidangan pertamanya. Dewan semasa, yang dipilih dalam SE-15 (12 August 2023), oleh itu akan tamat tempohnya sekitar <strong>10 August 2028</strong>; status negeri ini dalam kitaran GE16 adalah bahawa PRN seterusnya jatuh di luar tetingkap GE16, jadi dinamik persekutuan GE16 adalah persoalan yang hidup. Peraturan pembubaran adalah automatik — dewan terbubar pada tamat tempoh lima tahun melainkan dibubarkan lebih awal oleh Ketua Negeri atas nasihat Menteri Besar — yang memberikan kerajaan negeri satu tuas masa yang ampuh: kerajaan yang merasakan angin baik boleh membubarkan lebih awal, seperti yang dilakukan kerajaan BN Melaka pada 2021 dan seperti yang dilakukan beberapa negeri sepanjang sejarah Malaysia untuk mengasingkan pilihan raya negeri mereka daripada kitaran persekutuan yang tidak menguntungkan.</p>
+<p>Ketidakseimbangan perwakilan (malapportionment) adalah ciri struktur dewan Selangor, sebagaimana di parlimen persekutuan. Kawasan pilihan raya terbesar dari segi pengundi di negeri ini jauh mengerdilkan yang terkecil — satu ciri yang dikuantifikasikan oleh data garis dasar: purata pengundi bagi setiap kerusi, dihitung secara langsung daripada fail keputusan, adalah 66,912 pengundi, tetapi julat merentasi 56 kerusi adalah luas, dan kerusi luar bandar secara sistematik membawa berat pilihan raya yang kurang per pengundi berbanding yang ditunjukkan oleh taburan penduduk negeri. Kesan praktikalnya ialah segelintir kerusi luar bandar kecil boleh menjadi sama penentunya dengan kerusi bandar besar, yang membentuk tempat parti menumpukan jentera mereka.</p>
+<p>Sejarah PRN negeri ini sendiri adalah faktor dalam kalkulus GE16. Negeri ini telah diperintah oleh Pakatan Harapan sejak 2008, menjadikannya salah satu daripada dua pentadbiran PH paling lama bertahan bersama Selangor. Sejarah ini penting kerana para pengundi negeri Malaysia telah menunjukkan, berulang kali, bahawa mereka melayan pertandingan negeri dan persekutuan sebagai berbeza: perbezaan paling dramatik berlaku di Melaka, di mana pengundi yang sama memberikan BN 21 daripada 28 kerusi negeri pada 2021 dan sifar daripada enam kerusi persekutuan pada 2022, tetapi setiap negeri membawa versi fenomena itu. Bahagian rangka kerja laporan ini oleh itu ditutup dengan amaran yang dibawa oleh model persekutuan itu sendiri: ayunan pilihan raya negeri adalah isyarat paling kuat yang ada, tetapi ia adalah isyarat tentang pengundi negeri, dan terjemahannya ke arena persekutuan adalah langkah pemodelan, bukan identiti.</p>
+<hr>
+<h2 id="3-pengundi">3. Pengundi</h2>
+<p>Elektorat yang akan menentukan pertandingan negeri dan persekutuan Selangor yang seterusnya adalah hasil daripada perluasan Undi18 dan pendaftaran pengundi automatik — transformasi nasional yang sama yang menambah kira-kira 5.6 juta pengundi ke daftar persekutuan. Di Selangor, 56 kawasan pilihan raya negeri mendaftarkan <strong>3,747,057 pengundi</strong> pada pilihan raya negeri terbaharu (purata 66,912 bagi setiap kerusi), dan purata keluar mengundi adalah <strong>72.4 peratus</strong> merentasi negeri — kadar penyertaan yang kukuh, sedikit di atas purata nasional, tipikal bagi negeri yang pertandingannya benar-benar disertai.</p>
+<p>Struktur etnik pengundi Selangor, ditimbang daripada daftar pengundi persekutuan GE15 merentasi 22 kawasan persekutuan negeri (<span class="tag">[S-04]</span>), adalah kira-kira <strong>50.9% Melayu, 31.4% Cina, 14.0% India</strong>, dengan bumiputera-Sabah pada 0.6%, bumiputera-Sarawak pada 0.3% dan komuniti lain pada 2.5%. Komposisi ini adalah asas struktur bagi setiap unjuran yang melibatkan negeri ini: satu elektorat yang benar-benar bercampur di mana tiada satu komuniti pun menguasai majoriti kerusi negeri — profil medan pertempuran klasik Malaysia, di mana aritmetik gabungan dan peruntukan kerusi merentasi garisan etnik menentukan keputusan Struktur umur juga sama pentingnya: pengundi berumur 18–30 tahun membentuk kira-kira <strong>32.1%</strong> daripada pengundi Selangor, kumpulan 31–40 menambah 20.9%, dan pengundi melebihi 60 tahun merangkumi 15.3% — satu profil yang antara yang termuda di negara ini — satu demografi yang gelombang 2023 menunjukkan boleh dicapai oleh kedua-dua kutub spektrum politik Melayu. Keseimbangan jantina hampir sekata pada 49.6% lelaki dan 50.4% perempuan, dengan purata umur median di kawasan pilihan raya negeri adalah 39 tahun.</p>
+<p>Geografi bandar-luar bandar elektorat Selangor melengkapkan gambaran ini. 56 kerusi negeri merentasi geografi yang sangat bandar berlabuh oleh konurbasi ibu negeri, dengan gelang separa bandar yang besar dan pinggir luar bandar — satu taburan yang menentukan di mana sokongan setiap blok tertumpu dan, yang lebih kritikal, seberapa cekap sokongan itu bertukar kepada kerusi di bawah FPTP. Medan pertempuran persekutuan yang dikenal pasti dalam Bahagian 10 — Kuala Selangor, Hulu Selangor, Kuala Langat — terletak tepat di sempadan demografi di mana tiada kumpulan etnik cukup besar untuk menentukan keputusan lebih awal, dan di mana faktor L2–L4 menjadi penentu. Bagi GE16, elektorat negeri ini oleh itu difahami terbaik bukan sebagai satu blok tunggal tetapi sebagai timbunan elektorat yang berbeza — luar bandar dan bandar, majoriti Melayu dan campuran, muda dan tua — setiap satu dengan graviti politiknya sendiri.</p>
+<hr>
+<h2 id="4-garis-dasar-prn-se-15-12-august-2023">4. Garis Dasar PRN SE-15 (12 August 2023)</h2>
+<p>Garis dasar bagi setiap unjuran hadapan yang melibatkan Selangor ialah pilihan raya negeri SE-15 (12 August 2023). Keputusan itu merupakan penambat empirikal — ukuran penuh terakhir tentang bagaimana pengundi negeri ini sebenarnya mengundi — dan setiap anjakan, setiap senario dan setiap analisis medan pertempuran dalam laporan ini dinyatakan sebagai pergerakan daripadanya.</p>
+<h3>4.1 Aritmetik kerusi</h3>
+<p>Dewan Undangan yang terhasil daripada pilihan raya itu tersusun seperti berikut:</p>
+<div class="table-wrap"><table>
+<tr><th>Blok</th><th>Kerusi</th><th>Bahagian</th></tr>
+<tr><td>PH</td><td>32</td><td>57.1%</td></tr>
+<tr><td>PN</td><td>22</td><td>39.3%</td></tr>
+<tr><td>BN</td><td>2</td><td>3.6%</td></tr>
+<tr><td><strong>Jumlah</strong></td><td><strong>56</strong></td><td><strong>100%</strong></td></tr>
+</table></div>
+<p>Komposisi di peringkat parti di bawah blok-blok tersebut memperlihatkan keseimbangan kuasa dalaman negeri:</p>
+<div class="table-wrap"><table>
+<tr><th>Parti</th><th>Kerusi</th></tr>
+<tr><td>DAP</td><td>15</td></tr>
+<tr><td>BERSATU</td><td>12</td></tr>
+<tr><td>PKR</td><td>12</td></tr>
+<tr><td>PAS</td><td>10</td></tr>
+<tr><td>AMANAH</td><td>5</td></tr>
+<tr><td>UMNO</td><td>2</td></tr>
+</table></div>
+<p>Jumlah keseluruhan blok menghasilkan sebuah kerajaan <strong>PH+BN</strong> yang menguasai <strong>34</strong> daripada 56 kerusi — kurang daripada majoriti dua pertiga (38 diperlukan). Struktur margin negeri merupakan lapisan kedua garis dasar: purata margin kemenangan di kesemua 56 kerusi ialah <strong>26.5 mata peratusan</strong> daripada undi sah, namun serakan itulah angka yang paling bermakna dari segi politik. <strong>6</strong> kerusi dimenangi dengan margin kurang daripada dua mata (super-marginal), <strong>7</strong> lagi antara dua hingga lima mata (marginal), <strong>6</strong> antara lima hingga sepuluh mata (selesa), dan <strong>37</strong> dengan lebih sepuluh mata (selamat). 13 kerusi dalam dua lapisan pertama inilah — kira-kira 23 peratus daripada Dewan — yang membawa pertandingan sebenar di negeri ini.</p>
+<h3>4.2 Kerusi paling tipis dan paling selamat</h3>
+<p>Keputusan paling nipis di negeri ini menentukan geografi medan pertempurannya:</p>
+<div class="table-wrap"><table>
+<tr><th>Kerusi</th><th>Pemenang</th><th>Parti</th><th>Blok</th><th>Margin</th><th>Majoriti (undi)</th></tr>
+<tr><td>N.33 Taman Medan</td><td>Afif bin Bahardin</td><td>BERSATU</td><td>PN</td><td>0.07%</td><td>30</td></tr>
+<tr><td>N.17 Gombak Setia</td><td>Muhammad Hilman bin Idham</td><td>BERSATU</td><td>PN</td><td>0.09%</td><td>58</td></tr>
+<tr><td>N.49 Sungai Kandis</td><td>Wan Dzahanurin bin Ahmad</td><td>BERSATU</td><td>PN</td><td>0.28%</td><td>167</td></tr>
+<tr><td>N.55 Dengkil</td><td>Jamil bin Salleh</td><td>BERSATU</td><td>PN</td><td>0.55%</td><td>381</td></tr>
+<tr><td>N.15 Taman Templer</td><td>Anfaal binti Saari</td><td>AMANAH</td><td>PH</td><td>1.04%</td><td>467</td></tr>
+<tr><td>N.24 Semenyih</td><td>Nushi bin Mahfodz</td><td>PAS</td><td>PN</td><td>1.73%</td><td>1,262</td></tr>
+</table></div>
+<p>Di hujung yang satu lagi, kerusi paling selamat di negeri ini — dimenangi dengan majoriti besar yang tidak terganggu oleh sebarang anjakan dalam pemodelan — menjadi pasak aritmetik blok:</p>
+<div class="table-wrap"><table>
+<tr><th>Kerusi</th><th>Pemenang</th><th>Parti</th><th>Blok</th><th>Margin</th></tr>
+<tr><td>N.35 Kampung Tunku</td><td>Lim Yi Wei</td><td>DAP</td><td>PH</td><td>81.9%</td></tr>
+<tr><td>N.28 Seri Kembangan</td><td>Wong Siew Ki</td><td>DAP</td><td>PH</td><td>81.4%</td></tr>
+<tr><td>N.34 Bukit Gasing</td><td>Rajiv a/l Rishyakaran</td><td>DAP</td><td>PH</td><td>76.0%</td></tr>
+<tr><td>N.36 Bandar Utama</td><td>Jamaliah binti Jamaluddin</td><td>DAP</td><td>PH</td><td>75.8%</td></tr>
+</table></div>
+<h3>4.3 Keluar mengundi dan penyertaan</h3>
+<p>Keluar mengundi merentasi negeri purata <strong>72.4 peratus</strong> daripada pengundi berdaftar, dengan 3,747,057 pengundi berdaftar dan 2,679,097 undi sah dibuang. Pertandingan purata <strong>2.6 calon bagi setiap kerusi</strong> (sehingga 4 di kawasan paling sesak) — satu ukuran pemecahan sistem parti negeri. Serakan keluar mengundi sama pentingnya dengan purata: kerusi dengan keluar mengundi tertinggi merekodkan 79.6 peratus dan yang terendah 60.9 peratus — julat 18.7 mata yang mengikuti geografi bandar-luar bandar dan kekuatan jentera negeri, serta satu peringatan bahawa di kerusi super-marginal, beberapa mata perbezaan keluar mengundi boleh menjadi penentu pilihan raya. Garis dasar ditutup dengan nota tentang apa yang tidak terkandung di dalamnya: ia mengukur tingkah laku elektorat negeri pada satu masa, dan bahagian-bahagian berikut mengukur segala yang telah berubah sejak itu.</p>
+<hr>
+<h2 id="5-demografi-calon">5. Demografi Calon</h2>
+<p>Daftar calon bagi pilihan raya negeri SE-15 (12 August 2023) merupakan sumber demografi terkaya projek ini: <strong>147 calon</strong> bertanding di 56 kerusi negeri — purata <strong>2.6 calon bagi setiap kerusi</strong> — dan daftar itu merekodkan parti, gabungan, undi, keputusan, jantina, etnik dan umur setiap calon. Bahagian ini unik kepada laporan negeri; laporan persekutuan tidak membawa analisis demografi peringkat calon, dan ia disertakan di sini kerana siapa yang bertanding di sesebuah negeri, dan siapa yang menang, adalah isyarat dengan sendirinya.</p>
+<h3>5.1 Etnik calon</h3>
+<div class="table-wrap"><table>
+<tr><th>Etnik</th><th>Calon</th><th>Menang</th><th>Kadar kemenangan</th></tr>
+<tr><td>Malay</td><td>91</td><td>38</td><td>42%</td></tr>
+<tr><td>Chinese</td><td>33</td><td>14</td><td>42%</td></tr>
+<tr><td>Indian</td><td>23</td><td>4</td><td>17%</td></tr>
+</table></div>
+<p>Etnik pencalonan mengikuti elektorat negeri hanya secara longgar. Komuniti terbesar dalam kumpulan ialah Malay (91 calon). Dari segi kadar kemenangan, calon Malay memenangi 38 daripada 91 pertandingan (42 peratus); calon Chinese memenangi 14 daripada 33 pertandingan (42 peratus); calon Indian memenangi 4 daripada 23 pertandingan (17 peratus) — satu taburan yang secara amnya mencerminkan geografi kerusi negeri dan bukannya mana-mana satu komuniti memegang kelebihan luar biasa. Kadar kemenangan adalah ukuran yang lebih tajam: ia mendedahkan sama ada kerusi negeri memberi ganjaran kepada calon daripada komuniti tertentu melebihi bahagian pencalonan mereka — cap jari bagaimana struktur etnik bertukar menjadi perwakilan di bawah FPTP.</p>
+<h3>5.2 Profil umur</h3>
+<p>Taburan umur calon, dihitung secara langsung daripada daftar, berjalan daripada <strong>23</strong> (termuda) hingga <strong>72</strong> (tertua), dengan purata umur calon <strong>46.2</strong> tahun. Pemenang berpurata <strong>47.1</strong> tahun berbanding <strong>45.7</strong> bagi yang kalah — pemenang dan yang kalah tidak dapat dibezakan secara statistik dari segi umur — pertandingan negeri ini tidak diasingkan mengikut umur Calon termuda yang direkodkan ialah Melanie Ting Yi-Hlin (MUDA, N.19 Bukit Antarabangsa, berumur 23); yang tertua ialah Abdul Rashid bin Asari (BERSATU, N.44 Selat Klang, berumur 72).</p>
+<div class="table-wrap"><table>
+<tr><th>Kumpulan umur</th><th>Calon</th><th>Menang</th></tr>
+<tr><td>under-30</td><td>10</td><td>0</td></tr>
+<tr><td>30-39</td><td>32</td><td>14</td></tr>
+<tr><td>40-49</td><td>43</td><td>21</td></tr>
+<tr><td>50-59</td><td>49</td><td>14</td></tr>
+<tr><td>60plus</td><td>13</td><td>7</td></tr>
+</table></div>
+<h3>5.3 Keseimbangan jantina</h3>
+<div class="table-wrap"><table>
+<tr><th>Jantina</th><th>Calon</th><th>Menang</th><th>Kadar kemenangan</th></tr>
+<tr><td>Male</td><td>120</td><td>47</td><td>39%</td></tr>
+<tr><td>Female</td><td>27</td><td>9</td><td>33%</td></tr>
+</table></div>
+<p>Keseimbangan jantina kumpulan calon adalah didominasi lelaki: lelaki memenangi 47 daripada 56 kerusi (84 peratus), walaupun hanya 82 peratus daripada calon. Pencalonan wanita adalah di bawah ambang satu pertiga, walaupun melebihi paras minimum nasional — perwakilan sedang meningkat tetapi kekal sebagai fenomena minoriti — satu ciri struktur sistem parti negeri yang didedahkan secara langsung oleh daftar ini.</p>
+<h3>5.4 Kehilangan deposit dan kualiti pertandingan</h3>
+<p><strong>41</strong> daripada 147 calon (28 peratus) kehilangan deposit kerana gagal melepasi ambang undi 12.5 peratus — ukuran piawai berapa banyak pertandingan negeri ini benar-benar persaingan sebenar dan bukan sekadar pemasangan bendera. Purata calon setiap kerusi 2.6, berbanding corak nasional tiga hingga lima, meletakkan pertandingan Selangor di tengah julat nasional — persaingan pelbagai penjuru yang tulen dengan ekor pemasang bendera. Profil demografi pencalonan — siapa yang dipilih parti untuk bertanding, berapa umur, daripada komuniti mana, di kerusi mana — adalah penunjuk mendahului strategi parti untuk GE16, dan ia dibaca di sini dengan ketelusan penuh.</p>
+<hr>
+<h2 id="6-kerusi-persekutuan-di-negeri-ini">6. Kerusi Persekutuan di Negeri Ini</h2>
+<p>Selangor menyumbang <strong>22 kawasan persekutuan</strong> kepada Dewan Rakyat yang 222 kerusi. Kerusi-kerusi ini merupakan saluran langsung negeri ini ke dalam aritmetik nasional GE16, dan keputusan GE15 mereka — dihitung secara langsung daripada fail keputusan persekutuan (<span class="tag">[S-03]</span>) — menyediakan garis dasar persekutuan terhadap mana pergerakan pasca-GE15 negeri ini mesti dibaca.</p>
+<div class="table-wrap"><table>
+<tr><th>Kod</th><th>Kawasan</th><th>Pemenang GE15 (Blok)</th><th>Ahli</th><th>Margin GE15</th></tr>
+<tr><td>P092</td><td>Sabak Bernam</td><td>PN ()</td><td>Kalam Salan</td><td>12.34%</td></tr>
+<tr><td>P093</td><td>Sungai Besar</td><td>PN ()</td><td>Muslimin Yahaya</td><td>5.33%</td></tr>
+<tr><td>P094</td><td>Hulu Selangor</td><td>PN ()</td><td>Mohd Hasnizan Harun</td><td>1.28%</td></tr>
+<tr><td>P095</td><td>Tanjong Karang</td><td>PN ()</td><td>Zulkafperi Hanapi</td><td>4.26%</td></tr>
+<tr><td>P096</td><td>Kuala Selangor</td><td>PH ()</td><td>Dzulkefly Ahmad</td><td>1.16%</td></tr>
+<tr><td>P097</td><td>Selayang</td><td>PH ()</td><td>William Leong Jee Keen</td><td>16.30%</td></tr>
+<tr><td>P098</td><td>Gombak</td><td>PH ()</td><td>Amirudin Shari</td><td>7.69%</td></tr>
+<tr><td>P099</td><td>Ampang</td><td>PH ()</td><td>Rodziah Ismail</td><td>28.42%</td></tr>
+<tr><td>P100</td><td>Pandan</td><td>PH ()</td><td>Rafizi Ramli</td><td>41.76%</td></tr>
+<tr><td>P101</td><td>Hulu Langat</td><td>PH ()</td><td>Mohd Sany Hamzan</td><td>10.89%</td></tr>
+<tr><td>P102</td><td>Bangi</td><td>PH ()</td><td>Syahredzan Johan</td><td>28.53%</td></tr>
+<tr><td>P103</td><td>Puchong</td><td>PH ()</td><td>Yeo Bee Yin</td><td>47.92%</td></tr>
+<tr><td>P104</td><td>Subang</td><td>PH ()</td><td>Wong Chen</td><td>64.65%</td></tr>
+<tr><td>P105</td><td>Petaling Jaya</td><td>PH ()</td><td>Lee Chean Chung</td><td>34.63%</td></tr>
+<tr><td>P106</td><td>Damansara</td><td>PH ()</td><td>Gobind Singh Deo</td><td>71.24%</td></tr>
+<tr><td>P107</td><td>Sungai Buloh</td><td>PH ()</td><td>Ramanan Ramakrishnan</td><td>2.08%</td></tr>
+<tr><td>P108</td><td>Shah Alam</td><td>PH ()</td><td>Azli Yusof</td><td>13.33%</td></tr>
+<tr><td>P109</td><td>Kapar</td><td>PN ()</td><td>Halimah Ali</td><td>7.46%</td></tr>
+<tr><td>P110</td><td>Klang</td><td>PH ()</td><td>Ganabatirau Veraman</td><td>56.01%</td></tr>
+<tr><td>P111</td><td>Kota Raja</td><td>PH ()</td><td>Mohamad Sabu</td><td>37.42%</td></tr>
+<tr><td>P112</td><td>Kuala Langat</td><td>PN ()</td><td>Ahmad Yunus Hairi</td><td>1.48%</td></tr>
+<tr><td>P113</td><td>Sepang</td><td>PH ()</td><td>Raj Munni Sabu @ Aiman Athirah</td><td>6.49%</td></tr>
+</table></div>
+<p>Komposisi blok delegasi persekutuan negeri ini pada GE15 adalah:</p>
+<div class="table-wrap"><table>
+<tr><th>Blok</th><th>Kerusi Persekutuan</th></tr>
+<tr><td>PH</td><td>16</td></tr>
+<tr><td>PN</td><td>6</td></tr>
+</table></div>
+<h3>6.1 Medan pertempuran persekutuan</h3>
+<p>Medan pertempuran persekutuan dalam Selangor — kerusi dengan margin GE15 di bawah lima mata peratusan — adalah tempat dinamik negeri ini menyuap unjuran nasional:</p>
+<div class="table-wrap"><table>
+<tr><th>Kod</th><th>Kawasan</th><th>Blok GE15</th><th>Margin GE15</th><th>Pengundi</th></tr>
+<tr><td>P096</td><td>Kuala Selangor</td><td>PH</td><td>1.16%</td><td>102,951</td></tr>
+<tr><td>P094</td><td>Hulu Selangor</td><td>PN</td><td>1.28%</td><td>154,317</td></tr>
+<tr><td>P112</td><td>Kuala Langat</td><td>PN</td><td>1.48%</td><td>148,637</td></tr>
+<tr><td>P107</td><td>Sungai Buloh</td><td>PH</td><td>2.08%</td><td>158,090</td></tr>
+<tr><td>P095</td><td>Tanjong Karang</td><td>PN</td><td>4.26%</td><td>62,194</td></tr>
+</table></div>
+<p>Hubungan antara arena negeri dan kerusi persekutuan ini berjalan dua hala. Kerusi persekutuan negeri ini adalah campuran pasak selamat dan marginal yang dipertandingkan, dan ayunan pilihan raya negeri sejak GE15 adalah bukti hidup untuk cara marginal yang dipertandingkan itu bergerak. Analisis mendalam yang disediakan untuk projek ini (<span class="tag">[S-08]</span>) meneliti setiap kerusi ini secara individu — pemegangnya, pengundi mereka, komposisi demografi mereka — dan Bahagian 10 laporan ini melipat analisis itu ke dalam gambaran medan pertempuran peringkat negeri. Bagi unjuran persekutuan, kepentingan negeri ini tepat pada kerusi-kerusi ini: 5 medan pertempuran persekutuan di Selangor adalah bahagian besar daripada peta medan pertempuran nasional, dan ayunan pilihan raya negeri yang diukur sejak GE15 — digunakan dalam Bahagian 8 — menentukan arah kecenderungan mereka.</p>
+<hr>
+<h2 id="7-isyarat-sejak-prn-terakhir">7. Isyarat Sejak PRN Terakhir</h2>
+<p>Set data ayunan pilihan raya negeri ialah isyarat berwajaran tertinggi projek ini — satu-satunya pengukuran keutamaan terserlah tentang bagaimana pengundi Selangor telah bergerak sejak pungutan suara negeri terakhir mereka. Ayunan di bawah dihitung secara langsung daripada fail ayunan (<span class="tag">[S-06]</span>):</p>
+<div class="table-wrap"><table>
+<tr><th>Blok</th><th>SE Terdahulu</th><th>SE Terkini</th><th>Bahagian terdahulu</th><th>Bahagian terkini</th><th>Ayunan</th></tr>
+<tr><td>PN</td><td>SE-14</td><td>SE-15</td><td>19.7%</td><td>37.8%</td><td>+18.1pp</td></tr>
+<tr><td>BN</td><td>SE-14</td><td>SE-15</td><td>21.9%</td><td>9.2%</td><td>-12.7pp</td></tr>
+<tr><td>PH</td><td>SE-14</td><td>SE-15</td><td>57.8%</td><td>51.4%</td><td>-6.4pp</td></tr>
+<tr><td>MUDA</td><td>SE-14</td><td>SE-15</td><td>0.0%</td><td>1.0%</td><td>+1.0pp</td></tr>
+<tr><td>IND</td><td>SE-14</td><td>SE-15</td><td>0.1%</td><td>0.3%</td><td>+0.2pp</td></tr>
+<tr><td>OTHER</td><td>SE-14</td><td>SE-15</td><td>0.5%</td><td>0.4%</td><td>-0.1pp</td></tr>
+</table></div>
+<p>Pergerakan dominan ialah gelombang hijau itu sendiri: PN melonjak <strong>18.1 mata peratusan</strong> (19.7% → 37.8%) antara SE-14 dan SE-15 (2023-08-12). Pergerakan balas menyaksikan BN merudum <strong>12.7 mata peratusan</strong> (21.9% → 9.2%) antara SE-14 dan SE-15 (2023-08-12), dan pergerakan bersih menukar kerusi negeri yang sebelum ini kompetitif menjadi peta satu pihak. Ini bukan bacaan tinjauan; ia adalah rekod undi — undi sebenar yang dibuang dalam struktur etnik dan geografi yang sama yang akan mengundi dalam GE16, sebab itu model persekutuan menerapkannya pada wajaran faktor tertinggi.</p>
+<p>Penjejak berita juga telah menangkap item yang menyebut Selangor sejak binaan terakhir:</p>
+<ul>
+<li><strong>poll-tracker:</strong> <strong>Malaysia GE16</strong>: Tengku Zafrul offers himself as candidate in Selangor for GE16 - The Edge Malaysia</li>
+<li><strong>general-news:</strong> <strong>Malaysia by-election 2026</strong> Selangor reviewing need for by-election over rep’s eligibility — (2026-07-31 00:35) — https://news.g</li>
+<li><strong>general-news:</strong> <strong>vacant seat parliament Malaysia 2026</strong> Tengku Zafrul eyes Selangor seat in GE16, points to Pandan vacancy and Ampang groundwork</li>
+<li><strong>general-news:</strong> <strong>Parti Bersama GE16</strong> Tengku Zafrul keen on contesting Selangor seat in GE16 — (2026-06-18 07:00) — https://news.google.com/rss/a</li>
+<li><strong>general-news:</strong> <strong>PKR DAP GE16</strong> Tengku Zafrul eyes GE16 Selangor seat, leaves choice of constituency to PKR leadership — (2026-06-18 07:00) — htt</li>
+<li><strong>general-news:</strong> <strong>Perikatan Nasional GE16 news</strong> Selangor PAS Youth backs bid to claim Bersatu seats ahead of GE16 — (2026-05-26 07:00) — https://</li>
+</ul>
+<p>Penjajaran semula nasional 2026 mendarat secara berbeza di setiap negeri, dan bagi Selangor yang relevan ialah: <strong>perpecahan PAS–Bersatu</strong> (8 Jun 2026) dan kemasukan <strong>WAWASAN</strong> ke dalam PN — yang mengubah komposisi dalaman pembangkang di tempat ia memegang kerusi di negeri ini; pelancaran <strong>Bersama</strong> (17 Mei 2026) dan kesan perosaknya yang terbukti di Johor — relevan di mana-mana kerusi bandar negeri ini terletak pada margin PH yang tipis; dan kestabilan <strong>Kerajaan Perpaduan</strong>, yang menentukan ekor persekutuan yang boleh dijangka oleh blok bersekutu kerajaan negeri. Bagi negeri ini, penjajaran semula merentasi garisan kerajaan-pembangkang dengan cara yang hanya akan ditangkap oleh data ayunan pada pungutan suara negeri seterusnya; sehingga itu model melayannya sebagai kejutan peristiwa di kerusi tertentu. Setiap satu dimodelkan dalam Bahagian 8 sama ada sebagai ayunan terukur (di mana negeri ini mempunyai data baharu) atau kejutan peristiwa (di mana kesannya khusus kerusi), dan Bahagian 9 menterjemahkannya ke dalam julat senario.</p>
+<hr>
+<h2 id="8-metodologi">8. Metodologi</h2>
+<p>Jentera unjuran yang digunakan untuk Selangor ialah kerangka uniform-swing projek ini, didokumenkan sepenuhnya dalam dokumen teori (<span class="tag">[S-10]</span>). Logiknya berjalan dalam empat peringkat. <strong>Peringkat 1 (struktur):</strong> garis dasar persekutuan GE15 (Bahagian 6) dan garis dasar PRN negeri terkini (Bahagian 4) menyediakan penambat empirikal bagi setiap kerusi — tidak pernah ramalan dari kertas kosong. <strong>Peringkat 2 (hanyutan):</strong> ayunan pilihan raya negeri yang diukur dalam Bahagian 7, bersama faktor nasional — kelulusan kerajaan, istilah ekonomi, keutamaan kepimpinan, perbezaan keluar mengundi — menghasilkan perubahan sejak penambat, dinyatakan sebagai ayunan bagi setiap blok bagi setiap negeri. <strong>Peringkat 3 (terjemahan):</strong> margin unjuran setiap kerusi ialah margin garis dasar ditambah ayunan kepada pemenang tolak ayunan kepada naib johan, dan kerusi bertukar tangan apabila margin terlaras melepasi sifar:</p>
+<p>$$M_s = M_{s,base} + \Delta V_{winner} - \Delta V_{runner\text{-}up}$$</p>
+<p><strong>Peringkat 4 (pengagregatan):</strong> kerusi-kerusi dijumlahkan menjadi dewan unjuran, dan simulasi Monte Carlo ke atas ayunan tidak pasti menghasilkan taburan P10/P50/P90 dan kebarangkalian mana-mana blok menguasai majoriti.</p>
+<p>Empat prinsip tadbir mengawal jentera ini, dan ia terpakai kepada Selangor sebagaimana kepada persekutuan. <strong>Garis dasar dahulu:</strong> jangan sekali-kali meramal dari kertas kosong; model nol (ayunan sifar) mesti menghasilkan semula pilihan raya terakhir dengan tepat, dan ia berbuat demikian — itulah semakan kejujuran ke atas keseluruhan peranti. <strong>Keutamaan terserlah mengatasi niat yang dinyatakan:</strong> ayunan pilihan raya negeri Selangor mengatasi sebarang tinjauan, kerana ia mengukur undi yang dibuang dan bukannya niat yang dinyatakan; tinjauan menentukur, pilihan raya negeri mengukur. <strong>Seragam dalam jenis, bukan dalam negara:</strong> ayunan nasional tidak digunakan secara seragam kepada setiap kerusi di Selangor — ia diubah suai mengikut jenis kerusi, supaya ayunan majoriti Melayu tertumpu di kerusi majoriti Melayu negeri dan melemah di kerusi campuran dan bukan Melayunya. <strong>Ketidakpastian adalah sebahagian daripada ramalan:</strong> setiap unjuran ialah taburan, bukan titik, dan output yang jujur ialah julat dengan kebarangkalian, bukan kiraan kerusi tunggal.</p>
+<p>Apa yang dimodelkan dan tidak dimodelkan untuk Selangor mesti dinyatakan dengan jelas. Yang dimodelkan: ayunan negeri yang diukur (Bahagian 7), kejutan peristiwa daripada penjajaran semula 2026 (pertandingan solo rump Bersatu di mana ia terpakai kepada kerusi negeri ini; pengalihan Bersama di kerusi bandarnya), istilah ekonomi, dan delta kelulusan. Yang tidak dimodelkan: persempadanan semula (yang akan membatalkan peta kerusi sepenuhnya), persoalan penggantian dalaman parti pemerintah negeri, dan sebarang ayunan yang tiada ukuran dalam set data — model lebih suka kejujuran daripada ciptaan, dan di mana negeri ini tidak mempunyai data ayunan baharu ia mengekalkan garis dasar daripada mengada-ada hanyutan. Protokol pengesahan dokumen teori — pembinaan semula kes nol, ujian retrospektif terhadap pilihan raya negeri 2023/2025/2026, dan backcasting kepada 2022 — menjadi pintu pagar setiap keluaran, dan keputusan peringkat negeri dalam laporan ini mewarisi disiplin itu.</p>
+<hr>
+<h2 id="9-tinjauan-unjuran">9. Tinjauan Unjuran</h2>
+<p>Unjuran PRN penuh belum dimodelkan untuk Selangor — fail unjuran wujud untuk negeri yang dewan undangannya terbubar dalam tetingkap GE16, dan pungutan suara negeri seterusnya negeri ini jatuh di luar tetingkap itu. Sebagai ganti jadual senario yang dimodelkan, bahagian ini membentangkan bacaan arah yang disokong oleh data hidup, dan eksplisit tentang apa yang tidak dimodelkan.</p>
+<p>Pergerakan terukur terkini ialah PN +18.1pp, BN -12.7pp (tinjauan terkini 2023-08-12). Garis dasar negeri (Bahagian 4) ialah penambat: PH memegang 32 daripada 56 kerusi, dengan struktur margin yang diterangkan di sana menentukan berapa banyak yang boleh ditandingi. Isyarat yang akan menggerakkan negeri ini antara sekarang dengan PRN seterusnya ialah: <strong>(1)</strong> keputusan GE16 nasional itu sendiri — kerajaan yang menang di peringkat persekutuan akan membawa ekor kemenangan ke kerusi persekutuan negeri dan, akhirnya, kerusi negerinya; <strong>(2)</strong> ketahanan penjajaran semula 2026 — perpecahan PAS–Bersatu dan trajektori Bersama akan menentukan sama ada blok pembangkang negeri bertanding dalam GE16 bersatu atau berpecah, yang di bawah FPTP bernilai beberapa kerusi sama ada cara; <strong>(3)</strong> rekod kerajaan negeri sendiri — penyampaian isu yang mendominasi elektorat negeri (kos sara hidup, infrastruktur, dan agenda khusus negeri seperti MA63 bagi negeri Borneo).</p>
+<p>Bacaan arah untuk Selangor, berdasarkan bukti yang ada, ialah: gabungan pemerintah memegang majoriti bekerja yang disempitkan tetapi tidak dipecahkan oleh gelombang hijau 2023; PRN negeri seterusnya akan menguji sama ada keuntungan pembangkang 2023 ialah siling Tiada nombor dalam bahagian ini ialah unjuran; di mana model belum dijalankan, laporan ini menyatakannya dengan jelas dan bukannya mengada-ada keputusan. Analisis senario penuh negeri akan ditambah apabila unjuran dimodelkan — jentera dalam Bahagian 8 sudah sedia, dan pencetusnya ialah pendekatan dewan kepada pembubaran.</p>
+<p>Apa yang perlu difahami pembaca ialah perbezaan antara ketiadaan unjuran dan ketiadaan analisis: bahagian ini tidak memberitahu anda siapa yang akan menang, kerana itu memerlukan model penuh yang belum dijalankan, tetapi ia memberitahu anda kuasa-kuasa yang akan menentukan keputusan itu, struktur yang akan mengekangnya, dan isyarat yang perlu diperhatikan apabila tarikh PRN menghampiri. Apabila dewan menghampiri pembubaran dan jentera Bahagian 8 dijalankan, bahagian ini akan digantikan dengan jadual senario penuh, senarai pertukaran, dan taburan kebarangkalian yang setanding dengan negeri-negeri yang telah dimodelkan.</p>
+<hr>
+<h2 id="10-medan-pertempuran-kerusi-yang-perlu-diperhatikan">10. Medan Pertempuran & Kerusi yang Perlu Diperhatikan</h2>
+<p>Keupayaan bertanding Selangor tertumpu dalam sebilangan kecil kerusi. Daripada 56 kawasan negeri, <strong>6 ialah super-marginal</strong> (margin kemenangan di bawah dua mata) dan <strong>7 ialah marginal</strong> (dua hingga lima mata) — bersama 23 peratus daripada dewan — dan kerusi-kerusi inilah yang membawa potensi ayunan negeri. Setiap nombor di bawah dihitung secara langsung daripada fail keputusan (<span class="tag">[S-01]</span>).</p>
+<h3>10.1 Kerusi negeri super-marginal (margin < 2%)</h3>
+<div class="table-wrap"><table>
+<tr><th>Kerusi</th><th>Pemenang</th><th>Parti</th><th>Blok</th><th>Margin</th><th>Majoriti (undi)</th></tr>
+<tr><td>N.33 Taman Medan</td><td>Afif bin Bahardin</td><td>BERSATU</td><td>PN</td><td>0.07%</td><td>30</td></tr>
+<tr><td>N.17 Gombak Setia</td><td>Muhammad Hilman bin Idham</td><td>BERSATU</td><td>PN</td><td>0.09%</td><td>58</td></tr>
+<tr><td>N.49 Sungai Kandis</td><td>Wan Dzahanurin bin Ahmad</td><td>BERSATU</td><td>PN</td><td>0.28%</td><td>167</td></tr>
+<tr><td>N.55 Dengkil</td><td>Jamil bin Salleh</td><td>BERSATU</td><td>PN</td><td>0.55%</td><td>381</td></tr>
+<tr><td>N.15 Taman Templer</td><td>Anfaal binti Saari</td><td>AMANAH</td><td>PH</td><td>1.04%</td><td>467</td></tr>
+<tr><td>N.24 Semenyih</td><td>Nushi bin Mahfodz</td><td>PAS</td><td>PN</td><td>1.73%</td><td>1,262</td></tr>
+</table></div>
+<p>Ini ialah kerusi pisau cukur negeri — setiap satu diputuskan oleh ayunan beberapa mata, dan dalam beberapa kes oleh beberapa ratus undi. Keputusan paling nipis di negeri ialah N.33 Taman Medan, dipegang oleh BERSATU (PN) dengan 30 undi — margin 0.07 peratus. Kerusi setipis ini diputuskan oleh perbezaan keluar mengundi, kualiti calon, dan peristiwa kempen minggu terakhir; model melayannya sebagai lambungan duit syiling tulen dengan ketidakpastian yang tinggi (σ = 2.0–3.0 mata).</p>
+<h3>10.2 Kerusi negeri marginal (margin 2–5%)</h3>
+<div class="table-wrap"><table>
+<tr><th>Kerusi</th><th>Pemenang</th><th>Parti</th><th>Blok</th><th>Margin</th><th>Majoriti (undi)</th></tr>
+<tr><td>N.10 Bukit Melawati</td><td>Noorazley bin Yahya</td><td>BERSATU</td><td>PN</td><td>3.08%</td><td>877</td></tr>
+<tr><td>N.05 Hulu Bernam</td><td>Mu'Izzuddeen bin Mahyuddin (Muiz Mahyuddin)</td><td>PAS</td><td>PN</td><td>3.22%</td><td>669</td></tr>
+<tr><td>N.18 Hulu Kelang</td><td>Mohamed Azmin bin Ali</td><td>BERSATU</td><td>PN</td><td>3.26%</td><td>1,617</td></tr>
+<tr><td>N.11 Ijok</td><td>Jefri bin Mejan</td><td>PAS</td><td>PN</td><td>3.86%</td><td>912</td></tr>
+<tr><td>N.38 Paya Jaras</td><td>Ab Halim bin Tamuri</td><td>PAS</td><td>PN</td><td>3.91%</td><td>2,086</td></tr>
+<tr><td>N.56 Sungai Pelek</td><td>Lwi Kian Keong</td><td>DAP</td><td>PH</td><td>4.20%</td><td>1,458</td></tr>
+<tr><td>N.07 Batang Kali</td><td>Muhammad Muhaimin Harith bin Abdullah Sani</td><td>BERSATU</td><td>PN</td><td>4.84%</td><td>2,978</td></tr>
+</table></div>
+<p>Lapisan marginal ialah tempat timbunan ayunan memberi kesan terbesar: pergerakan dua hingga tiga mata — saiz ayunan terukur dalam Bahagian 7 — sudah cukup untuk menukar beberapa kerusi ini, dan arah penukaran itu ialah sumbangan negeri kepada cerita GE16.</p>
+<h3>10.3 Medan pertempuran persekutuan di Selangor</h3>
+<div class="table-wrap"><table>
+<tr><th>Kod</th><th>Kawasan</th><th>Blok GE15</th><th>Margin GE15</th></tr>
+<tr><td>P096</td><td>Kuala Selangor</td><td>PH</td><td>1.16%</td></tr>
+<tr><td>P094</td><td>Hulu Selangor</td><td>PN</td><td>1.28%</td></tr>
+<tr><td>P112</td><td>Kuala Langat</td><td>PN</td><td>1.48%</td></tr>
+<tr><td>P107</td><td>Sungai Buloh</td><td>PH</td><td>2.08%</td></tr>
+<tr><td>P095</td><td>Tanjong Karang</td><td>PN</td><td>4.26%</td></tr>
+</table></div>
+<p>Medan pertempuran persekutuan ialah jambatan negeri ini kepada unjuran nasional: kerusi yang margin GE15 di bawah lima mata, dan yang akan diputuskan oleh pergerakan pasca-GE15 negeri — diukur dalam Bahagian 7 dan diterapkan dalam Bahagian 8. Kerusi ini ialah barisan hadapan cerita persekutuan negeri: ayunan negeri terukur menentukan sama ada pemegang GE15 kekal, dan kejutan peristiwa daripada penjajaran semula 2026 menentukan sama ada margin bertahan daripada pertembungan dengan pembangkang yang berpecah. Analisis mendalam (<span class="tag">[S-08]</span>) membekalkan perincian kerusi demi kerusi — pemegang, elektorat, komposisi demografi — dan jadual bahagian ini ialah peta peringkat negeri tentang tempat penjajaran semula 2026 akan mendarat dahulu.</p>
+<hr>
+<h2 id="11-implikasi-strategik">11. Implikasi Strategik</h2>
+<p>Aritmetik peringkat negeri Selangor diterjemahkan kepada keharusan yang berbeza bagi setiap blok yang memasuki GE16. Analisis di sini mengikut konvensyen laporan persekutuan: cadangan diterbitkan daripada nombor di atas, bukan daripada kecenderungan terdahulu.</p>
+<p><strong>Untuk kerajaan negeri (PH+BN, 34 daripada 56 kerusi).</strong> Aset terkuat kerajaan ialah garis dasar itu sendiri: kusyen +5 kerusi melebihi ambang majoriti, dengan 37 kerusi selamat menyediakan lantai struktur. Keutamaan strategik ialah mempertahankan lapisan super-marginal — 6 kerusi di bawah dua mata adalah tempat satu ayunan buruk, kegagalan jentera, atau kemasukan kuasa ketiga boleh memulakan hakisan yang tidak dapat dihentikan oleh kerusi selamat. Keutamaan kedua ialah ekor persekutuan: 22 kerusi persekutuan Selangor ditandingi pada elektorat yang sama, dan rekod penyampaian kerajaan negeri ialah aset paling boleh dipindah milik yang dimiliki calon persekutuan bersekutu kerajaan. Bagi gabungan pemerintah, keharusan sama seperti di peringkat persekutuan: pegang marginal, sampaikan isu utama negeri, dan biarkan lantai struktur melakukan yang lain.</p>
+<p><strong>Untuk pembangkang (blok minoriti, 22 kerusi).</strong> Masalah aritmetik pembangkang di Selangor ialah penumpuan: kerusinya tersebar merentasi 22 kerusi dengan purata margin 9.4 mata — kehadiran sebenar, tetapi satu yang ditinggalkan terdedah secara struktur oleh geografi FPTP, dan di bawah FPTP geografi itu menyampaikan kerusi dengan cekap hanya di mana sokongan terkumpul, bukan tersebar. Laluan kepada kaitan melalui 13 kerusi negeri marginal dan 5 medan pertempuran persekutuan, dan ia memerlukan pembangkang bersatu padu dan bukannya berpecah — pengajaran penjajaran semula 2026, di mana perpecahan PAS–Bersatu dan kemasukan Bersama menukar pertandingan tiga dan empat penjuru kepada kemenangan kerajaan. Bagi pembangkang, keutamaan ialah penyatuan — satu calon setiap kerusi, undi anti-kerajaan tertumpu — kerana di bawah FPTP blok tunggal terbesar mengambil kerusi dan pemecahan ialah subsidi kerajaan.</p>
+<p><strong>Untuk unjuran persekutuan.</strong> Selangor menyumbang 22 kerusi persekutuan kepada aritmetik nasional, dan pergerakan peringkat negerinya — ayunan dalam Bahagian 7 — diterapkan kepada kerusi itu pada wajaran faktor tertinggi. Medan pertempuran persekutuan negeri ini (5 kerusi di bawah lima mata) ialah bahagian 2.3 peratus daripada peta medan pertempuran nasional, sebab itu negeri ini begitu menonjol dalam logik pertukaran model persekutuan: di mana negeri telah berayun keras ke satu arah sejak GE15, marginal persekutuannya condong ke arah yang sama.</p>
+<p><strong>Untuk komuniti penganalisis.</strong> Laporan negeri wujud kerana laporan nasional tidak dapat membawa kedalaman ini untuk tiga belas negeri serentak. Pengajaran Selangor untuk psefologi Malaysia ialah bahawa struktur lapisan margin sesebuah negeri, dihitung secara langsung daripada fail keputusannya, ialah ukuran keupayaan bertanding yang jujur — lebih selamat daripada sebarang pendapat tentang betapa kompetitifnya sesebuah negeri Daftar calon negeri — etnik, umur, jantina, kehilangan deposit — ialah set data yang tidak pernah dibuka oleh kebanyakan analisis nasional, dan ia adalah perkara paling dekat yang projek ini ada dengan bacaan kebenaran tanah strategi parti.</p>
+<hr>
+<h2 id="12-rujukan-provenans">12. Rujukan & Provenans</h2>
+<p>Laporan ini dijana secara langsung oleh <code>Forecast/engine/state_report_builder.py</code> pada 15 August 2026. Setiap nombor di dalamnya dihitung daripada set data di bawah pada masa binaan — tiada apa-apa yang ditaip tangan. Daftar sumber mengikut konvensyen [S-XX] laporan persekutuan.</p>
+<p><strong>Set data (semua hidup, dibaca pada masa binaan):</strong></p>
+<div class="table-wrap"><table>
+<tr><th>Tag</th><th>Sumber</th></tr>
+<tr><td><span class="tag">[S-01]</span></td><td><code>Research/states/DUN Selangor/dun-election-results-latest.csv</code> — pemenang, parti, blok, undi, margin, keluar mengundi setiap kerusi</td></tr>
+<tr><td><span class="tag">[S-02]</span></td><td><code>Research/states/DUN Selangor/dun-candidates-latest.csv</code> — parti, gabungan, undi, keputusan, jantina, etnik, umur setiap calon</td></tr>
+<tr><td><span class="tag">[S-03]</span></td><td><code>Research/data/derived/ge15-results-by-constituency-full.csv</code> — keputusan persekutuan GE15 untuk kawasan Selangor</td></tr>
+<tr><td><span class="tag">[S-04]</span></td><td><code>Research/data/derived/voter-demographics-by-constituency-ge15.csv</code> — demografi kawasan persekutuan ditimbang untuk Selangor</td></tr>
+<tr><td><span class="tag">[S-05]</span></td><td><code>Research/data/derived/master-list-222-parliamentary-seats.csv</code> — daftar kerusi persekutuan untuk Selangor</td></tr>
+<tr><td><span class="tag">[S-06]</span></td><td><code>Research/data/derived/swing_se_to_se.csv</code> — ayunan pilihan raya negeri untuk Selangor</td></tr>
+<tr><td><span class="tag">[S-07]</span></td><td><code>Report/states/DUN Selangor/dun-election-summary.md</code> — ringkasan keputusan yang boleh dibaca</td></tr>
+<tr><td><span class="tag">[S-08]</span></td><td><code>Report/states/DUN Selangor/ge16-battleground-deepdive.md</code> — analisis persekutuan GE16 kerusi demi kerusi</td></tr>
+<tr><td><span class="tag">[S-09]</span></td><td><code>Research/states/DUN Selangor/<state>-prn-projection.csv</code> — unjuran PRN (Melaka, Sarawak)</td></tr>
+<tr><td><span class="tag">[S-10]</span></td><td><code>Research/knowledge/forecast-theory.md</code> — kerangka uniform-swing, matematik, protokol pengesahan</td></tr>
+<tr><td><span class="tag">[S-11]</span></td><td><code>Research/states/national-composition-summary.md</code> — konteks komposisi DUN nasional</td></tr>
+<tr><td><span class="tag">[S-12]</span></td><td><code>Research/data/trackers/ge16-{poll,candidate,general-news}-log.md</code> — isyarat berita 2026</td></tr>
+</table></div>
+<p><strong>Dokumen projek yang dirujuk:</strong></p>
+<ul>
+<li><code>Report/states/DUN Selangor/dun-election-summary.md</code> <span class="tag">[S-07]</span> — jadual keputusan yang boleh dibaca</li>
+<li><code>Report/states/DUN Selangor/ge16-battleground-deepdive.md</code> <span class="tag">[S-08]</span> — analisis medan pertempuran persekutuan negeri</li>
+<li><code>Research/states/national-composition-summary.md</code> <span class="tag">[S-11]</span> — kedudukan Selangor dalam gambaran DUN nasional</li>
+</ul>
+<p><strong>Sumber rasmi dan institusi:</strong></p>
+<ul>
+<li>Suruhanjaya Pilihan Raya Malaysia — keputusan pilihan raya negeri 2021–2026 dan keputusan persekutuan GE15 <span class="tag">[S-01]</span><span class="tag">[S-03]</span></li>
+<li>ElectionData.MY / MECo (CC0) — keputusan kawasan, demografi pengundi, daftar calon <span class="tag">[S-02]</span><span class="tag">[S-04]</span></li>
+<li>Parlimen Malaysia — daftar kerusi, ahli, komposisi gabungan <span class="tag">[S-05]</span></li>
+<li>Merdeka Center, Ilham Centre — penjejakan kelulusan dan keutamaan yang dirujuk oleh model persekutuan <span class="tag">[S-12]</span></li>
+</ul>
+<p><em>Dijana langsung oleh <code>Forecast/engine/state_report_builder.py</code> pada 15 August 2026. Laporan ini berversi: setiap edisi terdahulu disimpan dalam <code>Report/states/DUN Selangor/archive/</code>; edisi semasa berada di <code>Report/states/DUN Selangor/latest/GE16_Selangor_Report_MS.md</code>. Setiap nombor dalam dokumen ini dihitung daripada set data projek pada masa binaan — tiada apa-apa yang ditaip tangan.</em></p>
+    <div class="tabbar">
+      <span class="lbl">HitungKerusi 222 · Laporan</span>
+      <a href="/laporan.html">Persekutuan</a>
+      <a href="/state/johor.html">Johor</a><a href="/state/kedah.html">Kedah</a><a href="/state/kelantan.html">Kelantan</a><a href="/state/melaka.html">Melaka</a><a href="/state/negeri-sembilan.html">Negeri Sembilan</a><a href="/state/pahang.html">Pahang</a><a href="/state/perak.html">Perak</a><a href="/state/perlis.html">Perlis</a><a href="/state/pulau-pinang.html">Pulau Pinang</a><a href="/state/sabah.html">Sabah</a><a href="/state/sarawak.html">Sarawak</a><a href="/state/selangor.html">Selangor</a><a href="/state/terengganu.html">Terengganu</a>
+    </div>
+  </article>
+</div>
+<footer>HitungKerusi 222 — Unjuran PRU16 · Data: SPR (GE15) · ElectionData.MY / MECo · DOSM · Parlimen Malaysia. Semua unjuran ialah analisis penulis sendiri.</footer>
+</body>
+</html>

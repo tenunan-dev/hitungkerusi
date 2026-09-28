@@ -1,0 +1,82 @@
+{
+ "generated_at": "2026-09-22T17:03:33.830135+00:00",
+ "state": "Pahang",
+ "scenarios": [
+  {
+   "scenario": "Status quo (last result)",
+   "category": "parametric",
+   "BN": 17,
+   "PH": 8,
+   "PN": 17,
+   "flips": 0,
+   "seats_total": 42,
+   "provenance": {
+    "derivation": "quantitative-scenario",
+    "evidence": [
+     {
+      "repository": "DATA",
+      "path": "research/states/DUN Pahang/dun-election-results-latest.csv",
+      "sha256": "b20e11513dacab71165a4281ae6c012fdce34ebefa733b010867d963971f0bc7"
+     }
+    ]
+   }
+  },
+  {
+   "scenario": "Southern resurgence (Johor/N9 2026)",
+   "category": "parametric",
+   "BN": 32,
+   "PH": 8,
+   "PN": 2,
+   "flips": 16,
+   "seats_total": 42,
+   "provenance": {
+    "derivation": "quantitative-scenario",
+    "evidence": [
+     {
+      "repository": "DATA",
+      "path": "research/states/DUN Pahang/dun-election-results-latest.csv",
+      "sha256": "b20e11513dacab71165a4281ae6c012fdce34ebefa733b010867d963971f0bc7"
+     }
+    ]
+   }
+  },
+  {
+   "scenario": "Green wave 2023 (Kedah/Penang/Selangor)",
+   "category": "parametric",
+   "BN": 4,
+   "PH": 7,
+   "PN": 31,
+   "flips": 15,
+   "seats_total": 42,
+   "provenance": {
+    "derivation": "quantitative-scenario",
+    "evidence": [
+     {
+      "repository": "DATA",
+      "path": "research/states/DUN Pahang/dun-election-results-latest.csv",
+      "sha256": "b20e11513dacab71165a4281ae6c012fdce34ebefa733b010867d963971f0bc7"
+     }
+    ]
+   }
+  },
+  {
+   "scenario": "Bersatu split (−6pp PN in Bersatu-held)",
+   "category": "parametric",
+   "BN": 19,
+   "PH": 8,
+   "PN": 15,
+   "flips": 2,
+   "seats_total": 42,
+   "provenance": {
+    "derivation": "quantitative-scenario",
+    "evidence": [
+     {
+      "repository": "DATA",
+      "path": "research/states/DUN Pahang/dun-election-results-latest.csv",
+      "sha256": "b20e11513dacab71165a4281ae6c012fdce34ebefa733b010867d963971f0bc7"
+     }
+    ]
+   }
+  }
+ ]
+}

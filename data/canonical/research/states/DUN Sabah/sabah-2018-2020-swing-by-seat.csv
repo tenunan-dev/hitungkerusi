@@ -1,0 +1,74 @@
+seat,seat_name,winner_2020,party_2020,bloc_2020,bloc_2018_baseline,baseline_2018_winner,baseline_2018_party,baseline_type,flipped_vs_baseline,majority,majority_perc,voters_2020,turnout_2020
+N.01 Banggi,Banggi,Mohammad bin Mohamarin,PGRS,GRS,WARISAN,Mohamad Mohamarin,WARISAN,actual,yes,1306,23.556998556998558,9484,60.18557570645298
+N.02 Bengkoka,Bengkoka,Harun bin Durabi,UMNO,BN,WARISAN,Mohammad Mohamarin (old Banggi),WARISAN,estimate-low,yes,77,0.6494601889338731,18056,66.73681878599912
+N.03 Pitas,Pitas,Ruddy bin Awah,PGRS,GRS,UMNO,Bolkiah Ismail,UMNO,actual,yes,1565,12.938161375661375,17574,70.2287470126323
+N.04 Tanjong Kapor,Tanjong Kapor,Ben Chong Chen Bin,PGRS,GRS,WARISAN,Ben Chong Chen Bin,WARISAN,actual,yes,359,1.7562741548847904,34001,61.454074880150586
+N.05 Matunggong,Matunggong,Julita Mojungki,PBS,PBS,PBS,Julita Majunki,PBS,actual,no,334,1.7351550729908047,29176,66.79805319440636
+N.06 Bandau,Bandau,Maijol Mahap,BEBAS,IND,BN,Julita Mojungki (old Matunggong),PBS,estimate-low,yes,244,1.3909474404286855,27390,65.59328221978824
+N.07 Tandek,Tandek,Hendrus Anding,PBS,PBS,PBS,Anita Baranting,PBS,actual,no,3026,17.28056650105648,29244,61.07235672274655
+N.08 Pintasan,Pintasan,Fairuz Renddan,BEBAS,IND,BN,Japlin Akim (old Usukan),UMNO,estimate-low,yes,1070,8.998402152888739,15896,75.74232511323603
+N.09 Tempasuk,Tempasuk,Mohd Arsad bin Bistari,PGRS,GRS,UMNO,Musbah Jamli,UMNO,actual,yes,1821,14.744939271255062,17116,73.11871932694555
+N.10 Usukan,Usukan,Munirah Majilis,WARISAN,WARISAN,UMNO,Japlin Akim,UMNO,actual,yes,442,2.5043911836364665,24235,73.88075097998762
+N.11 Kadamaian,Kadamaian,Ewon Benedick,UPKO,UPKO,UPKO,Ewon Benedick,UPKO,actual,no,9672,52.97113752122241,26240,70.48399390243902
+N.12 Sulaman,Sulaman,Hajiji bin Noor,PGRS,GRS,UMNO,Hajiji Mohd. Noor,UMNO,actual,yes,8919,61.72745518721019,18352,79.76787271142109
+N.13 Pantai Dalit,Pantai Dalit,Jasnih bin Daya,PGRS,GRS,BN,Hajiji Haji Noor (old Sulaman),UMNO,estimate-low,yes,3465,18.615020951971633,26346,71.7604190389433
+N.14 Tamparuli,Tamparuli,Madius bin Tangau,UPKO,UPKO,PBS,Jahid Jahim,PBS,actual,yes,2556,13.904150573899798,26767,69.64919490417304
+N.15 Kiulu,Kiulu,Joniston Bangkuai,PBS,PBS,PBS,Joniston Bangkuai,PBS,actual,no,1437,12.155303671121638,17191,69.5305683206329
+N.16 Karambunai,Karambunai,Aliakbar bin Gulasan,PAS,PN,WARISAN,Azhar Matussin,WARISAN,actual,yes,365,1.4215609908085372,39247,66.97072387698422
+N.17 Darau,Darau,Azhar bin Matussin,WARISAN,WARISAN,WARISAN,Azhar Matussin (old Karambunai),WARISAN,estimate-medium,no,63,0.300960206372713,33016,64.36879088926581
+N.18 Inanam,Inanam,Edna Jessica Majimbun,WARISAN,WARISAN,PKR,Kenny Chua Teck Ho,PKR,actual,yes,2952,10.471798510109968,45525,63.305875892366835
+N.19 Likas,Likas,Tham Yun Fook,WARISAN,WARISAN,DAP,Tan Lee Fatt,DAP,actual,yes,2425,23.674704676364346,19100,54.15706806282723
+N.20 Api-Api,Api-Api,Loi Kok Liang,WARISAN,WARISAN,PKR,Christina Liew Chin Jin,PKR,actual,yes,3065,30.26263823064771,17782,57.77190417275897
+N.21 Luyang,Luyang,Samuel Wong Tshun Chuen,WARISAN,WARISAN,DAP,Ginger Phoong Jin Zhe,DAP,actual,yes,6699,34.34856175972927,35262,55.74839770858148
+N.22 Tanjung Aru,Tanjung Aru,Junz Wong Hong Jun,WARISAN,WARISAN,WARISAN,Junz Wong Hong Jun,WARISAN,actual,no,3588,27.954811063498248,21264,62.08615500376222
+N.23 Petagas,Petagas,Awang Ahmad Sah bin Awang Sahri,BEBAS,IND,WARISAN,Uda Sulai,WARISAN,actual,yes,1255,9.370566713955052,20116,67.74706701133427
+N.24 Tanjung Keramat,Tanjung Keramat,Shah Alfie bin Yahya Ahmad Shah,PGRS,GRS,WARISAN,Wong Hong Jun (old Tanjong Aru),WARISAN,estimate-low,yes,1153,6.707778230263541,26113,67.84743231340713
+N.25 Kapayan,Kapayan,Chin Tek Ming,WARISAN,WARISAN,DAP,Janie Lasimbang,DAP,actual,yes,9256,31.98562443845463,49597,59.00558501522269
+N.26 Moyog,Moyog,Donald Peter Mojuntin,UPKO,UPKO,WARISAN,Jennifer Lasimbang,WARISAN,actual,yes,2618,12.368893508456958,31084,68.8939647407026
+N.27 Limbahau,Limbahau,Juil bin Nuatim,BEBAS,IND,WARISAN,Aidi Moktar (old Pantai Manis),WARISAN,estimate-medium,yes,3320,22.340353946571565,20225,74.29419035846723
+N.28 Kawang,Kawang,Yusof bin Khan Bahadar (Gulamhaidar),PGRS,GRS,UMNO,Ghulam Haidar Khan Bahadar,UMNO,actual,yes,8763,49.45259593679458,23823,75.58661797422658
+N.29 Pantai Manis,Pantai Manis,Pengiran Saifuddin bin Pengiran Tahir,PGRS,GRS,WARISAN,Aidi Moktar,WARISAN,actual,yes,2131,14.354034756836858,20026,75.25716568461
+N.30 Bongawan,Bongawan,Daud bin Yusof,WARISAN,WARISAN,WARISAN,Dr. Daud Yusof,WARISAN,actual,no,938,5.195524537498615,24019,76.39785170073692
+N.31 Membakut,Membakut,Mohd Arifin bin Mohd Arif,PGRS,GRS,UMNO,Mohd. Arifin Mohd. Arif,UMNO,actual,yes,2017,14.216239075274881,18563,77.19657382966115
+N.32 Klias,Klias,Isnin bin Aliasnih,PGRS,GRS,UMNO,Isnin Aliasnih,UMNO,actual,yes,1643,10.814190745738168,22277,69.56502222022714
+N.33 Kuala Penyu,Kuala Penyu,Limus bin Jury,PGRS,GRS,UPKO,Limus Jury,UPKO,actual,yes,3965,24.58152510849349,22288,73.70333811916726
+N.34 Lumadan,Lumadan,Ruslan Muharam,PBS,PBS,UMNO,Matbali Musah,UMNO,actual,yes,4254,28.151677585864604,22165,69.52402436273404
+N.35 Sindumin,Sindumin,Yusri bin Pungut,WARISAN,WARISAN,WARISAN,Dr. Yusof Yacob,WARISAN,actual,no,362,2.2849207852048226,25536,63.14223057644111
+N.36 Kundasang,Kundasang,Joachim Gunsalam,PBS,PBS,PBS,Joachim Gunsalam,PBS,actual,no,1031,6.437312687312688,24582,65.97917175168823
+N.37 Karanaan,Karanaan,Masidi bin Manjun (Masdi),PGRS,GRS,UMNO,Masidi Manjun,UMNO,actual,yes,5361,41.3625491860196,18696,69.98823277706461
+N.38 Paginatan,Paginatan,Rusdin @ Musidi bin Riman,KDM,KDM,UPKO,Abidin Madingkir,UPKO,actual,yes,736,4.009369722721578,26881,69.13433280011904
+N.39 Tambunan,Tambunan,Jeffrey Gapari Kitingan,STAR,STAR,STAR,Dr. Jeffrey Gapari @ Geoffrey Kitingan,STAR,actual,no,7311,38.18951107396573,29187,66.15273923322027
+N.40 Bingkor,Bingkor,Mohd Ishak bin Ayub,STAR,STAR,STAR,Robert Tawik @ Nordin,STAR,actual,no,5427,27.330412449010428,31305,64.12074748442741
+N.41 Liawan,Liawan,Nik Mohd Nadzri bin Nik Zawawi,UMNO,BN,WARISAN,Rasinin Kautis,WARISAN,actual,yes,643,3.0974517076930486,32661,64.566302317749
+N.42 Melalap,Melalap,Jamawi bin Jaafar,PKR,PH,WARISAN,Peter Anthony,WARISAN,actual,yes,525,3.503971167322966,21320,71.07879924953096
+N.43 Kemabong,Kemabong,Rubin bin Balang,PGRS,GRS,UMNO,Jamawi Ja’afar,UMNO,actual,yes,2129,13.383203419663062,23168,69.94993093922652
+N.44 Tulid,Tulid,Jordan Jude Ellron,BEBAS,IND,BN,Ellron Bin Angin (old Sook),PBRS,estimate-medium,yes,1195,10.283993115318417,16551,71.4700018125793
+N.45 Sook,Sook,Arthur Joseph Kurup,PBRS,BN,PBRS,Ellron Alfred Angin,PBRS,actual,yes,4727,32.947654561929326,20349,71.12388815175193
+N.46 Nabawan,Nabawan,Abd. Ghani bin Mohd. Yassin,PGRS,GRS,UPKO,Bobbey Ah Fang Suan,UPKO,actual,yes,1682,11.80433714646642,23392,61.858755129958965
+N.47 Telupid,Telupid,Jonnybone J Kurum,PBS,PBS,BN,Abdul Rahman Bin Datuk Hj Kongkawang (old Labuk),PBS,estimate-medium,yes,1011,9.830805134189031,14965,69.80955562980287
+N.48 Sugut,Sugut,James bin Ratib,PGRS,GRS,UPKO,James Ratib,UPKO,actual,yes,2783,22.15235214518825,18435,69.6826688364524
+N.49 Labuk,Labuk,Samad bin Jambri,PGRS,GRS,PBS,Abd. Rahman Kongkawang,PBS,actual,yes,979,10.75587782904856,14564,64.21312826146664
+N.50 Gum-Gum,Gum-Gum,Arunarnsin bin Taib,WARISAN,WARISAN,WARISAN,Arunarsin Taib,WARISAN,actual,no,1103,9.640765667336773,19433,60.45386713322699
+N.51 Sungai Manila,Sungai Manila,Hazem Mubarak bin Musa,PGRS,GRS,BN,Musa Haji Aman (old Sungai Sibuga),UMNO,estimate-medium,yes,1260,10.977522216414009,18217,64.5770434209804
+N.52 Sungai Sibuga,Sungai Sibuga,Nurulalsah binti Hassan Alban,WARISAN,WARISAN,UMNO,Musa Aman,UMNO,actual,yes,88,0.4020284160994107,38678,57.831325301204814
+N.53 Sekong,Sekong,Alias bin Sani,WARISAN,WARISAN,WARISAN,Arifin Asgali,WARISAN,actual,no,800,4.966476285075739,27518,59.768151755214774
+N.54 Karamunting,Karamunting,Wong Tshun Khee,WARISAN,WARISAN,WARISAN,Hiew Vun Zin,WARISAN,actual,no,676,5.925666199158485,19615,59.913331633953604
+N.55 Elopura,Elopura,Calvin Chong Ket Kiun,WARISAN,WARISAN,DAP,Calvin Chong Ket Kiun,DAP,actual,yes,3375,17.68033946251768,39004,49.851297302840734
+N.56 Tanjong Papat,Tanjong Papat,Alex Thien,WARISAN,WARISAN,DAP,Frankie Poon Ming Fung,DAP,actual,yes,727,7.851819850955827,16767,56.25931890022067
+N.57 Kuamut,Kuamut,Masiung Banah,PGRS,GRS,UPKO,Masiung Banah,UPKO,actual,yes,457,3.675997425997426,18228,69.78823787579547
+N.58 Lamag,Lamag,Bung Moktar bin Radin,UMNO,BN,BN,Masiung Banah (old Kuamut),UPKO,estimate-low,no,153,1.532451923076923,13859,73.02835702431632
+N.59 Sukau,Sukau,Jafry bin Ariffin,UMNO,BN,UMNO,Saddi Abdu Rahman,UMNO,actual,yes,1234,10.961094332918814,16541,69.51816697902183
+N.60 Tungku,Tungku,Assaffal bin P. Alian,WARISAN,WARISAN,WARISAN,Assaffal P. Alian,WARISAN,actual,no,1179,7.715463647667037,24741,62.77030031122428
+N.61 Segama,Segama,Muhammad bin Abdul Karim,WARISAN,WARISAN,WARISAN,Dumi Bin Pg Masdal (old Lahad Datu),WARISAN,estimate-low,no,4058,23.60674810936591,29840,58.498659517426276
+N.62 Silam,Silam,Mohammad Yusof bin Apdal,WARISAN,WARISAN,WARISAN,Dumi Bin Pg Masdal (old Lahad Datu),WARISAN,estimate-high,no,1257,7.663232335548376,28261,59.000035384452076
+N.63 Kunak,Kunak,Anil Jeet Singh,UMNO,BN,WARISAN,Norazlinah Arif,WARISAN,actual,yes,2118,14.678771917665811,24854,58.8879053673453
+N.64 Sulabayan,Sulabayan,Jaujan bin Sambakong,WARISAN,WARISAN,WARISAN,Jaujan Sambakong,WARISAN,actual,no,5913,60.36137198856676,20258,49.52117681903446
+N.65 Senallang,Senallang,Mohd Shafie bin Apdal,WARISAN,WARISAN,WARISAN,Mohd. Shafie Apdal,WARISAN,actual,no,6837,62.19978165938864,20763,54.36112315176034
+N.66 Bugaya,Bugaya,Jamil bin Hamzah,WARISAN,WARISAN,WARISAN,Manis Buka Mohd. Darah,WARISAN,actual,no,10046,50.64018550257082,36569,55.642757526867015
+N.67 Balung,Balung,Syed Ahmad bin Syed Abas,PGRS,GRS,UMNO,Osman Jamal,UMNO,actual,yes,1345,10.225803999087661,22252,60.21930612978609
+N.68 Apas,Apas,Nizam bin Abu Bakar Titingan,PGRS,GRS,UMNO,Nizam Abu Bakar Titingan,UMNO,actual,yes,4248,22.835026608611514,32241,58.8412270090878
+N.69 Sri Tanjong,Sri Tanjong,Justin Wong Yung Bin,WARISAN,WARISAN,DAP,Jimmy Wong Sze Phin,DAP,actual,yes,3113,16.75096857511838,37327,50.67109598949821
+N.70 Kukusan,Kukusan,Rina binti Jainal,BEBAS,IND,BN,Hamisa Binti Samat (old Tanjong Batu),UMNO,estimate-low,yes,650,5.877565783524731,19225,58.68920676202861
+N.71 Tanjung Batu,Tanjung Batu,Andi Md Shamsureezal bin Mohd Sainal,PGRS,GRS,UMNO,Hamisa Samat,UMNO,actual,yes,981,6.210433021017979,27428,58.487676826600556
+N.72 Merotai,Merotai,Sarifuddin bin Hata,WARISAN,WARISAN,WARISAN,Sarifuddin Hata,WARISAN,actual,no,4016,26.39847498849668,26179,58.867794797356666
+N.73 Sebatik,Sebatik,Manahing Tinggilani @ Tanggilani,WARISAN,WARISAN,UMNO,Abd. Muis Picho,UMNO,actual,yes,150,1.450536698578474,16893,62.481501213520396

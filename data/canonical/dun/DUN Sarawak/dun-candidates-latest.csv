@@ -1,0 +1,350 @@
+seat,name,party,coalition,votes,votes_perc,rank,result,sex,ethnicity,age
+N.01 Opar,Billy anak Sujang,SUPP,GPS,3659,46.77233797775789,1,won,M,Bumi Sarawak,53
+N.01 Opar,Ranum anak Mina,PSB,ALONE,1970,25.182155183433462,2,lost,M,Bumi Sarawak,70
+N.01 Opar,Freedy anak Misid,PBK,ALONE,1487,19.008053176530744,3,lost,M,Bumi Sarawak,43
+N.01 Opar,Meneng anak Biris,PKR,PH,327,4.179982104052153,4,lost_deposit,F,Bumi Sarawak,44
+N.01 Opar,Saini anak Kakong,PBDSB,GASAK,220,2.812220375814905,5,lost_deposit,M,Bumi Sarawak,60
+N.01 Opar,Bayang anak Teron,SEDAR,ALONE,160,2.0452511824108397,6,lost_deposit,M,Bumi Sarawak,59
+N.02 Tasik Biru,Henry @ Harry anak Jinep,PDP,GPS,6325,53.70637683620616,1,won,M,Bumi Sarawak,54
+N.02 Tasik Biru,Paul Shanon Kenbell anak Dominic Barin,PBK,ALONE,2113,17.941750870340496,2,lost,M,Bumi Sarawak,61
+N.02 Tasik Biru,Tiki anak Lafe (Tekhee) ,PSB,ALONE,1980,16.81243100959497,3,lost,M,Bumi Sarawak,68
+N.02 Tasik Biru,Granda anak Aing,DAP,PH,1359,11.539441283858368,4,lost_deposit,M,Bumi Sarawak,59
+N.03 Tanjong Datu,Azizul Annuar bin Adenan,PBB,GPS,5423,79.38808373590982,1,won,M,Malay,30
+N.03 Tanjong Datu,Jery'In bin Fauzi,PSB,ALONE,921,13.482652613087396,2,lost,M,Malay,66
+N.03 Tanjong Datu,Abdul Talip bin Ba'ee,BEBAS,ALONE,261,3.820816864295125,3,lost_deposit,M,Malay,68
+N.03 Tanjong Datu,Goem anak Pijar,PBK,ALONE,226,3.3084467867076564,4,lost_deposit,M,Bumi Sarawak,63
+N.04 Pantai Damai,Abdul Rahman bin Junaidi,PBB,GPS,10699,82.19251747714527,1,won,M,Bumi Sarawak,60
+N.04 Pantai Damai,Mahmud bin Sabli,PSB,ALONE,2318,17.807482522854727,2,lost,M,Malay,57
+N.05 Demak Laut,Hazland bin Abang Hipni,PBB,GPS,7636,78.24572189773542,1,won,M,Bumi Sarawak,56
+N.05 Demak Laut,Yatika binti Jelani,PSB,ALONE,1237,12.675479044984117,2,lost,F,Malay,41
+N.05 Demak Laut,Khairul bin Ahmat,BEBAS,ALONE,674,6.906445332513577,3,lost_deposit,M,Malay,36
+N.05 Demak Laut,Mohamad Zen bin Peli,AMANAH,PH,212,2.172353724766882,4,lost_deposit,M,Bumi Sarawak,50
+N.06 Tupong,Fazzrudin bin Abdul Rahman,PBB,GPS,12544,85.24634726469588,1,won,M,Bumi Sarawak,46
+N.06 Tupong,Ahmad Nazib bin Johari,PKR,PH,1335,9.072375127421,2,lost_deposit,M,Bumi Sarawak,45
+N.06 Tupong,Chan Haong Yen,PBK,ALONE,836,5.681277607883112,3,lost_deposit,M,Chinese,31
+N.07 Samariang,Sharifah Hasidah binti Sayeed Aman Ghazali,PBB,GPS,11354,87.60802469135803,1,won,F,Bumi Sarawak,-1
+N.07 Samariang,Abang Abdul Halil bin Abang Naili,AMANAH,PH,1071,8.26388888888889,2,lost_deposit,M,Bumi Sarawak,61
+N.07 Samariang,Othman bin Abdillah,SEDAR,ALONE,535,4.128086419753087,3,lost_deposit,M,Bumi Sarawak,65
+N.08 Satok,Ibrahim bin Baki,PBB,GPS,6991,83.5844093735055,1,won,M,Bumi Sarawak,62
+N.08 Satok,Nor Irwan bin Ahmat Nor,PKR,PH,958,11.453849832615973,2,lost_deposit,M,Bumi Sarawak,45
+N.08 Satok,Awang Badele bin Awg Ali,PBK,ALONE,415,4.961740793878526,3,lost_deposit,M,Bumi Sarawak,62
+N.09 Padungan,Chong Chieng Jen,DAP,PH,4686,50.403355921264925,1,won,M,Chinese,50
+N.09 Padungan,Wee Hong Seng,SUPP,GPS,3488,37.51747875658815,2,lost,M,Chinese,59
+N.09 Padungan,Raymond Thong Ee Yu,PBK,ALONE,930,10.00322684737012,3,lost_deposit,M,Chinese,62
+N.09 Padungan,Soo Lina,ASPIRASI,GASAK,193,2.0759384747768097,4,lost_deposit,F,Chinese,63
+N.10 Pending,Violet Yong Wui Wui,DAP,PH,5188,40.29201615408512,1,won,F,Chinese,44
+N.10 Pending,Milton Foo Tiang Wee,SUPP,GPS,4648,36.09816713264989,2,lost,M,Chinese,44
+N.10 Pending,Tan Kay Hok,PSB,ALONE,1858,14.42994718856788,3,lost,M,Chinese,50
+N.10 Pending,Teo Kuang Kim,PBK,ALONE,978,7.595526561043803,4,lost_deposit,M,Chinese,62
+N.10 Pending,Chan Chee Hiong,ASPIRASI,GASAK,204,1.5843429636533086,5,lost_deposit,M,Chinese,-1
+N.11 Batu Lintang,See Chee How,PSB,ALONE,4420,35.856250507017116,1,won,M,Chinese,57
+N.11 Batu Lintang,Sih Hua Tong,SUPP,GPS,4327,35.10180903707309,2,lost,M,Chinese,57
+N.11 Batu Lintang,Cherishe Ng Phuay Hui,PKR,PH,1823,14.78867526567697,3,lost,F,Chinese,24
+N.11 Batu Lintang,Voon Lee Shan,PBK,ALONE,1570,12.736269976474407,4,lost,M,Chinese,66
+N.11 Batu Lintang,Leong Shaow Tung,ASPIRASI,GASAK,187,1.5169952137584164,5,lost_deposit,M,Chinese,45
+N.12 Kota Sentosa,Yap Yau Sin,SUPP,GPS,5806,43.04886186698302,1,won,M,Chinese,55
+N.12 Kota Sentosa,Michael Kong Feng Nian,DAP,PH,4123,30.57017869059094,2,lost,M,Chinese,35
+N.12 Kota Sentosa,Lau Pang Heng,PSB,ALONE,2328,17.261066211907764,3,lost,M,Chinese,69
+N.12 Kota Sentosa,Lue Cheng Hing,PBK,ALONE,1015,7.52576555201305,4,lost_deposit,M,Chinese,57
+N.12 Kota Sentosa,Tan Kok Chiang,ASPIRASI,GASAK,215,1.5941276785052274,5,lost_deposit,M,Chinese,-1
+N.13 Batu Kitang,Lo Khere Chiang,SUPP,GPS,6307,57.661364051929056,1,won,M,Chinese,61
+N.13 Batu Kitang,Abdul Aziz Isa bin Marindo,DAP,PH,2144,19.601389650758822,2,lost,M,Malay,32
+N.13 Batu Kitang,Liu Thian Leong,PSB,ALONE,1812,16.566099835436095,3,lost,M,Chinese,66
+N.13 Batu Kitang,Wong Tun Teck,PBK,ALONE,675,6.171146461876028,4,lost_deposit,M,Chinese,57
+N.14 Batu Kawah,Sim Kui Hian,SUPP,GPS,7827,70.19730941704036,1,won,M,Chinese,56
+N.14 Batu Kawah,Kelvin Yii Lee Wuen,DAP,PH,2434,21.829596412556054,2,lost,M,Chinese,35
+N.14 Batu Kawah,Chai Kueh Khun,PBK,ALONE,756,6.780269058295964,3,lost_deposit,M,Chinese,59
+N.14 Batu Kawah,Fong Pau Teck,ASPIRASI,GASAK,133,1.1928251121076232,4,lost_deposit,M,Chinese,52
+N.15 Asajaya,Abdul Karim bin Rahman Hamzah,PBB,GPS,6380,70.04061916785597,1,won,M,Bumi Sarawak,61
+N.15 Asajaya,Ishak bin Buji,PSB,ALONE,1849,20.298605774508726,2,lost,M,Malay,37
+N.15 Asajaya,Mahmud bin Epah,PKR,PH,721,7.9152486551762,3,lost_deposit,M,Malay,34
+N.15 Asajaya,Mohamad Hamdeen bin Saharuddin,PBK,ALONE,159,1.7455264024591064,4,lost_deposit,M,Malay,36
+N.16 Muara Tuang,Idris bin Buang,PBB,GPS,8435,63.62676321943125,1,won,M,Malay,67
+N.16 Muara Tuang,Ismawi bin Muhammad,BEBAS,ALONE,2198,16.579920042241834,2,lost,M,Malay,46
+N.16 Muara Tuang,Yakup bin Khalid,PSB,ALONE,1838,13.864373538507957,3,lost,M,Bumi Sarawak,58
+N.16 Muara Tuang,Hipni bin Sulaiman,SEDAR,ALONE,357,2.692916949536094,4,lost_deposit,M,Bumi Sarawak,30
+N.16 Muara Tuang,Daud bin Eali,AMANAH,PH,239,1.80282115108999,5,lost_deposit,M,Malay,57
+N.16 Muara Tuang,Sigandam bin Sulaiman,PBK,ALONE,190,1.433205099192879,6,lost_deposit,M,Malay,54
+N.17 Stakan,Hamzah bin Brahim,PBB,GPS,7854,72.4538745387454,1,won,M,Malay,47
+N.17 Stakan,George Young Si Ricord Junior,PSB,ALONE,2047,18.883763837638377,2,lost,M,Bumi Sarawak,54
+N.17 Stakan,Leslie Ting Xiang Zhi,DAP,PH,524,4.833948339483395,3,lost_deposit,M,Chinese,30
+N.17 Stakan,Atet anak Dego,PBK,ALONE,415,3.8284132841328415,4,lost_deposit,M,Bumi Sarawak,63
+N.18 Serembu,Miro anak Simuh,PBB,GPS,4068,57.68576290414067,1,won,M,Bumi Sarawak,49
+N.18 Serembu,Iana anak Akam,PSB,ALONE,2418,34.288145207033466,2,lost,F,Bumi Sarawak,46
+N.18 Serembu,Jecky anak Misieng,PBK,ALONE,257,3.6443562110039704,3,lost_deposit,M,Bumi Sarawak,58
+N.18 Serembu,Michael @ Michael Nebin anak Saweng,PKR,PH,217,3.0771412365286444,4,lost_deposit,M,Bumi Sarawak,64
+N.18 Serembu,Buln anak Patrick Ribos,ASPIRASI,GASAK,92,1.3045944412932502,5,lost_deposit,M,Bumi Sarawak,52
+N.19 Mambong,Jerip anak Susil (Belek),PBB,GPS,5865,52.003901400957616,1,won,M,Bumi Sarawak,64
+N.19 Mambong,Sanjan anak Daik,PSB,ALONE,2794,24.773896080865402,2,lost,M,Bumi Sarawak,61
+N.19 Mambong,Chang Hon Hiung,DAP,PH,1517,13.450966483419046,3,lost,M,Chinese,57
+N.19 Mambong,Joshua Katok Roman,PBK,ALONE,958,8.494413903174323,4,lost_deposit,M,Bumi Sarawak,-1
+N.19 Mambong,Chong Siew Hung,ASPIRASI,GASAK,144,1.2768221315836141,5,lost_deposit,F,Chinese,45
+N.20 Tarat,Roland Sagah Wee Inn,PBB,GPS,6500,60.252131998516866,1,won,M,Bumi Sarawak,83
+N.20 Tarat,Dadi @ Tiap anak Juul,PSB,ALONE,1492,13.830181683351872,2,lost,M,Bumi Sarawak,58
+N.20 Tarat,Christo anak Michael,PKR,PH,1445,13.394512421208752,3,lost,M,Bumi Sarawak,45
+N.20 Tarat,Edison anak Jamang,PBK,ALONE,1182,10.956618464961068,4,lost_deposit,M,Bumi Sarawak,48
+N.20 Tarat,Bai anak Dungak @ Udin anak Dungak,BEBAS,ALONE,169,1.5665554319614385,5,lost_deposit,M,Bumi Sarawak,65
+N.21 Tebedu,Simon Sinang @ Sinang anak Bada,PBB,GPS,5082,61.81729716579491,1,won,M,Bumi Sarawak,55
+N.21 Tebedu,Cheyne Kambeng @ Raymond Achen,PSB,ALONE,1809,22.004622308721565,2,lost,M,Bumi Sarawak,63
+N.21 Tebedu,Jonathan Lantik anak Ok,PBK,ALONE,614,7.468677776426226,3,lost_deposit,M,Bumi Sarawak,63
+N.21 Tebedu,Senior anak William Rade,PKR,PH,610,7.420021895146575,4,lost_deposit,M,Bumi Sarawak,62
+N.21 Tebedu,Roland anak Bangu,BEBAS,ALONE,106,1.2893808539107166,5,lost_deposit,M,Bumi Sarawak,45
+N.22 Kedup,Martin Ben (Maclaine Ben),PBB,GPS,5178,63.339449541284395,1,won,M,Bumi Sarawak,59
+N.22 Kedup,Dominic Dado anak Sagin,PSB,ALONE,1612,19.718654434250766,2,lost,M,Bumi Sarawak,63
+N.22 Kedup,Stephen anak Sungan,PBK,ALONE,745,9.113149847094801,3,lost_deposit,M,Bumi Sarawak,63
+N.22 Kedup,Learry anak Jabul,DAP,PH,640,7.82874617737003,4,lost_deposit,M,Bumi Sarawak,41
+N.23 Bukit Semuja,John anak Ilus,PBB,GPS,6113,70.06303724928367,1,won,M,Bumi Sarawak,59
+N.23 Bukit Semuja,Elsiy A/k Tingang,PSB,ALONE,1408,16.13753581661891,2,lost,F,Bumi Sarawak,60
+N.23 Bukit Semuja,Brolin Nicholsion anak Benedict Achung,DAP,PH,777,8.905444126074498,3,lost_deposit,M,Bumi Sarawak,26
+N.23 Bukit Semuja,Edward anak Andrew Luwak,PBK,ALONE,427,4.893982808022923,4,lost_deposit,M,Bumi Sarawak,69
+N.24 Sadong Jaya,Aidel bin Lariwoo,PBB,GPS,4333,82.9599846831323,1,won,M,Bumi Sarawak,49
+N.24 Sadong Jaya,Nur Khairunisa binti Abdullah,PSB,ALONE,456,8.730614589316485,2,lost_deposit,F,Malay,41
+N.24 Sadong Jaya,Piee bin Ling,PKR,PH,319,6.107600995596401,3,lost_deposit,M,Bumi Sarawak,54
+N.24 Sadong Jaya,Jol @ Jolhi bin Bee,PBK,ALONE,115,2.2017997319548153,4,lost_deposit,M,Malay,53
+N.25 Simunjan,Awla bin Dris,PBB,GPS,4276,73.01912568306011,1,won,M,Bumi Sarawak,59
+N.25 Simunjan,Raily @ Reli bin Ali,PSB,ALONE,925,15.795765027322403,2,lost,M,Malay,74
+N.25 Simunjan,Hapeni bin Fadil,PKR,PH,518,8.845628415300547,3,lost_deposit,M,Malay,52
+N.25 Simunjan,Saharuddin bin Abdullah,PBK,ALONE,137,2.33948087431694,4,lost_deposit,M,Malay,68
+N.26 Gedong,Abang Abdul Rahman Zohari bin Abang Openg (Abang Johari),PBB,GPS,4310,81.87689969604864,1,won,M,Bumi Sarawak,71
+N.26 Gedong,Mohamad Sofian Fariz bin Sharbini,PSB,ALONE,703,13.3548632218845,2,lost,M,Malay,36
+N.26 Gedong,Tomson anak Ango,PBK,ALONE,157,2.9825227963525833,3,lost_deposit,M,Bumi Sarawak,56
+N.26 Gedong,Kamal bin Bujang,AMANAH,PH,94,1.7857142857142856,4,lost_deposit,M,Malay,58
+N.27 Sebuyau,Julaihi bin Narawi,PBB,GPS,4937,79.29649855444907,1,won,M,Bumi Sarawak,66
+N.27 Sebuyau,Wel @ Maxwel anak Rojis,AMANAH,PH,803,12.897526501766784,2,lost,M,Bumi Sarawak,69
+N.27 Sebuyau,Wan Chee bin Wan Mahjar,PBK,ALONE,486,7.805974943784132,3,lost_deposit,M,Malay,59
+N.28 Lingga,Dayang Noorazah Bte Awang Sohor,PBB,GPS,3700,58.10301507537689,1,won,F,Bumi Sarawak,33
+N.28 Lingga,Wan Abdillah Edruce bin Wan Abdul Rahman,PSB,ALONE,1427,22.40891959798995,2,lost,M,Bumi Sarawak,62
+N.28 Lingga,Mohd Sepian bin Abang Daud,BEBAS,ALONE,880,13.819095477386934,3,lost,M,Malay,59
+N.28 Lingga,Baha anak Imam,PBK,ALONE,139,2.182788944723618,4,lost_deposit,M,Bumi Sarawak,64
+N.28 Lingga,Abang Abdul Kassim bin Abang Bujang,PKR,PH,130,2.041457286432161,5,lost_deposit,M,Malay,62
+N.28 Lingga,Abang Ahmad b Abang Suni,SEDAR,ALONE,92,1.4447236180904524,6,lost_deposit,M,Bumi Sarawak,67
+N.29 Beting Maro,Razaili bin Gapor,PBB,GPS,3769,51.615995617639,1,won,M,Malay,65
+N.29 Beting Maro,Mohammad Arifiriazul bin Paijo,PAS,PN,2058,28.18405916187346,2,lost,M,Bumi Sarawak,37
+N.29 Beting Maro,Abang Zulkifli bin Abang Engkeh,PKR,PH,765,10.47658175842235,3,lost_deposit,M,Bumi Sarawak,61
+N.29 Beting Maro,Safiudin bin Matsah,BEBAS,ALONE,636,8.709942481511915,4,lost_deposit,M,Bumi Sarawak,60
+N.29 Beting Maro,Jacky Chiew Su Chee,PBK,ALONE,74,1.013420980553273,5,lost_deposit,M,Chinese,37
+N.30 Balai Ringin,Snowdan Lawan,PRS,GPS,4816,56.38023881994849,1,won,M,Bumi Sarawak,50
+N.30 Balai Ringin,Masir anak Kujat,PSB,ALONE,3531,41.33692343713416,2,lost,M,Bumi Sarawak,67
+N.30 Balai Ringin,Kasim anak Mana,PBK,ALONE,195,2.2828377429173496,3,lost_deposit,M,Bumi Sarawak,60
+N.31 Bukit Begunan,Mong anak Dagang,PRS,GPS,4054,58.69407847111626,1,won,M,Bumi Sarawak,66
+N.31 Bukit Begunan,Norina Umoi anak Utot,PSB,ALONE,2652,38.39583031706964,2,lost,F,Bumi Sarawak,60
+N.31 Bukit Begunan,Entusa anak Imam,PBDSB,GASAK,115,1.6649775589981177,3,lost_deposit,M,Bumi Sarawak,64
+N.31 Bukit Begunan,Vinton Langang anak Sangga,PBK,ALONE,86,1.2451136528159839,4,lost_deposit,M,Bumi Sarawak,62
+N.32 Simanggang,Francis Harden anak Hollis,SUPP,GPS,3954,48.93564356435643,1,won,M,Bumi Sarawak,65
+N.32 Simanggang,Walsin @ Wilson anak Entabang,PSB,ALONE,3779,46.769801980198025,2,lost,M,Bumi Sarawak,58
+N.32 Simanggang,Leon Jimat Donald,DAP,PH,212,2.623762376237624,3,lost_deposit,M,Bumi Sarawak,47
+N.32 Simanggang,Peli anak Aron,PBK,ALONE,135,1.670792079207921,4,lost_deposit,M,Bumi Sarawak,73
+N.33 Engkilili,Johnichal Rayong anak Ngipa,PSB,ALONE,3246,43.482920294708634,1,won,M,Bumi Sarawak,59
+N.33 Engkilili,Desmond Sateng anak Sanjan,SUPP,GPS,2055,27.5284661754856,2,lost,M,Bumi Sarawak,59
+N.33 Engkilili,Gemong anak Batu,BEBAS,ALONE,2013,26.96584058941728,3,lost,M,Bumi Sarawak,49
+N.33 Engkilili,Stel anak Datu,PBK,ALONE,151,2.0227729403884798,4,lost_deposit,M,Bumi Sarawak,62
+N.34 Batang Ai,Malcolm Mussen anak Lamoh,PRS,GPS,3208,44.58651841556637,1,won,M,Bumi Sarawak,62
+N.34 Batang Ai,John Linang anak Mereejon,BEBAS,ALONE,2470,34.329395413481585,2,lost,M,Bumi Sarawak,62
+N.34 Batang Ai,William Nyallau anak Badak,PSB,ALONE,1366,18.985406532314105,3,lost,M,Bumi Sarawak,71
+N.34 Batang Ai,Usup anak Asun,PBK,ALONE,151,2.098679638637943,4,lost_deposit,M,Bumi Sarawak,53
+N.35 Saribas,Mohammad Razi bin Sitam,PBB,GPS,5138,65.51900025503699,1,won,M,Bumi Sarawak,48
+N.35 Saribas,Patrick bin Kamis,PKR,PH,1902,24.2540168324407,2,lost,M,Bumi Sarawak,57
+N.35 Saribas,Melainie bin Bolhassan,PSB,ALONE,668,8.518235144095893,3,lost_deposit,M,Bumi Sarawak,44
+N.35 Saribas,Sim Min Leong,PBK,ALONE,74,0.9436368273399643,4,lost_deposit,M,Chinese,42
+N.35 Saribas,Kurnaen bin Boben,SEDAR,ALONE,60,0.7651109410864576,5,lost_deposit,M,Bumi Sarawak,55
+N.36 Layar,Gerald Rentap Jabu,PBB,GPS,3891,67.75204596900575,1,won,M,Bumi Sarawak,47
+N.36 Layar,Isik anak Utau,PSB,ALONE,1852,32.24795403099425,2,lost,M,Bumi Sarawak,58
+N.37 Bukit Saban,Douglas Uggah Embas,PBB,GPS,5373,77.9373368146214,1,won,M,Bumi Sarawak,65
+N.37 Bukit Saban,Andria anak Dundang @ Andria Gelayan,PSB,ALONE,1385,20.089933275311868,2,lost,M,Bumi Sarawak,64
+N.37 Bukit Saban,Mikail Mathew bin Abdullah,PKR,PH,136,1.9727299100667246,3,lost_deposit,M,Bumi Sarawak,50
+N.38 Kalaka,Mohamad bin Duri,PBB,GPS,3893,72.42790697674418,1,won,M,Bumi Sarawak,55
+N.38 Kalaka,John Antau anak Linggang,PSB,ALONE,1025,19.069767441860467,2,lost,M,Bumi Sarawak,73
+N.38 Kalaka,Linang anak Chapum,PBK,ALONE,457,8.502325581395349,3,lost_deposit,M,Bumi Sarawak,55
+N.39 Krian,Friday anak Belik,PDP,GPS,3885,43.66640440597954,1,won,M,Bumi Sarawak,62
+N.39 Krian,Musa anak Dinggat,PSB,ALONE,2953,33.19096324603799,2,lost,M,Bumi Sarawak,66
+N.39 Krian,Ali anak Biju,BEBAS,ALONE,1777,19.973024615038774,3,lost,M,Bumi Sarawak,53
+N.39 Krian,Kuan Sam Sui,PBK,ALONE,282,3.169607732943689,4,lost_deposit,M,Chinese,57
+N.40 Kabong,Mohd Chee bin Kadir,PBB,GPS,4789,67.31796457689065,1,won,M,Bumi Sarawak,68
+N.40 Kabong,Wan Mohamad Madehi bin Wan Ali,PSB,ALONE,2026,28.47905538375035,2,lost,M,Bumi Sarawak,65
+N.40 Kabong,Mohamad Asri bin Kassim,PBK,ALONE,208,2.9238122012932246,3,lost_deposit,M,Bumi Sarawak,46
+N.40 Kabong,Andri Zulkarnaen bin Hamden,AMANAH,PH,91,1.2791678380657858,4,lost_deposit,M,Bumi Sarawak,49
+N.41 Kuala Rajang,Talif @ Len bin Salleh,PBB,GPS,5268,70.3525641025641,1,won,M,Bumi Sarawak,68
+N.41 Kuala Rajang,Abang Aditajaya bin Abang Alwi,BEBAS,ALONE,1943,25.94818376068376,2,lost,M,Bumi Sarawak,43
+N.41 Kuala Rajang,Abd Mutalip bin Abdullah,BEBAS,ALONE,168,2.2435897435897436,3,lost_deposit,M,Bumi Sarawak,66
+N.41 Kuala Rajang,Wong Ling Ching,PBK,ALONE,109,1.455662393162393,4,lost_deposit,F,Chinese,-1
+N.42 Semop,Abdullah bin Saidol,PBB,GPS,4338,64.58240285841894,1,won,M,Bumi Sarawak,55
+N.42 Semop,Abdul Raafidin bin Majidi,PSB,ALONE,1180,17.567366383802295,2,lost,M,Bumi Sarawak,38
+N.42 Semop,Mohd Adenan bin Zulkeppli,BEBAS,ALONE,811,12.073842489206491,3,lost_deposit,M,Bumi Sarawak,30
+N.42 Semop,Mohamad Fadillah bin Sabali,AMANAH,PH,270,4.019651630192049,4,lost_deposit,M,Bumi Sarawak,40
+N.42 Semop,Wong Khing Ling,PBK,ALONE,118,1.7567366383802292,5,lost_deposit,F,Chinese,44
+N.43 Daro,Safiee bin Ahmad,PBB,GPS,5317,93.1826147914476,1,won,M,Bumi Sarawak,52
+N.43 Daro,Jamaludin bin Ibrahim,BEBAS,ALONE,205,3.592709428671574,2,lost_deposit,M,Bumi Sarawak,68
+N.43 Daro,Ting Ing Hua,PBK,ALONE,184,3.224675779880827,3,lost_deposit,M,Chinese,-1
+N.44 Jemoreng,Juanda bin Jaya,PBB,GPS,5623,86.80148193887001,1,won,M,Bumi Sarawak,49
+N.44 Jemoreng,Osman bin Rafaie,BEBAS,ALONE,611,9.431923433158381,2,lost_deposit,M,Bumi Sarawak,63
+N.44 Jemoreng,Zainab binti Suhaili,AMANAH,PH,244,3.7665946279715965,3,lost_deposit,F,Bumi Sarawak,52
+N.45 Repok,Huang Tiong Sii,SUPP,GPS,10038,73.15260166156537,1,won,M,Chinese,52
+N.45 Repok,Wong Pak Ming,DAP,PH,2730,19.89505902929602,2,lost,M,Chinese,62
+N.45 Repok,Joseph Wong Kung King,PBK,ALONE,738,5.378224748578924,3,lost_deposit,M,Chinese,62
+N.45 Repok,Wong Chin King,ASPIRASI,GASAK,216,1.5741145605596851,4,lost_deposit,M,Chinese,56
+N.46 Meradong,Ding Kuong Hiing,SUPP,GPS,6827,58.235946430094685,1,won,M,Chinese,66
+N.46 Meradong,Hii Ru Yee,PSB,ALONE,3465,29.557280559583727,2,lost,M,Chinese,37
+N.46 Meradong,Yong Siew Wei,DAP,PH,809,6.90096391708607,3,lost_deposit,F,Chinese,42
+N.46 Meradong,Moh Hiong King,PBK,ALONE,622,5.305809093235521,4,lost_deposit,M,Chinese,52
+N.47 Pakan,William Mawan Ikom,PBB,GPS,3268,41.13278791692888,1,won,M,Bumi Sarawak,72
+N.47 Pakan,Jamal bin Abdullah @ Tedong anak Gunda,BEBAS,ALONE,2554,32.14600377595973,2,lost,M,Malay,60
+N.47 Pakan,Hereward Gramong anak Joseph Allen,PSB,ALONE,1484,18.6784140969163,3,lost,M,Bumi Sarawak,44
+N.47 Pakan,Brawi anak Anguong,BEBAS,ALONE,506,6.3687853996224035,4,lost_deposit,M,Bumi Sarawak,54
+N.47 Pakan,Jemeli anak Kerah,PBK,ALONE,133,1.6740088105726871,5,lost_deposit,M,Bumi Sarawak,51
+N.48 Meluan,Rolland Duat anak Jubin,PDP,GPS,5269,53.211472429812154,1,won,M,Bumi Sarawak,56
+N.48 Meluan,Elly Lawai anak Ngalai,PSB,ALONE,4447,44.91011916784488,2,lost,M,Bumi Sarawak,54
+N.48 Meluan,Abdul Hamid @ Abdul Razak bin Siong,PBK,ALONE,186,1.8784084023429608,3,lost_deposit,M,Bumi Sarawak,63
+N.49 Ngemah,Anyi anak Jana,PRS,GPS,3193,46.228463877226,1,won,M,Bumi Sarawak,57
+N.49 Ngemah,Joseph Jawa anak Kendawang,PSB,ALONE,2932,42.449688721586796,2,lost,M,Bumi Sarawak,67
+N.49 Ngemah,Leo anak Bunsu,PBDSB,GASAK,354,5.12523526856812,3,lost_deposit,M,Bumi Sarawak,61
+N.49 Ngemah,Satu anak Anchom,PKR,PH,259,3.74981902417837,4,lost_deposit,M,Bumi Sarawak,48
+N.49 Ngemah,Charlie anak Genam,PBK,ALONE,169,2.4467931084407124,5,lost_deposit,M,Bumi Sarawak,45
+N.50 Machan,Allan Siden Gramong,PBB,GPS,4155,53.661371561410306,1,won,M,Bumi Sarawak,35
+N.50 Machan,Madang anak Dimbab,PSB,ALONE,2066,26.682164535709674,2,lost,M,Bumi Sarawak,56
+N.50 Machan,Mohd Fauzi Abdullah @ Joseph @ Usit A/k Nyambong,PKR,PH,1267,16.363166731241122,3,lost,M,Bumi Sarawak,60
+N.50 Machan,Mary Rita anak Mathias,PBK,ALONE,203,2.6217228464419478,4,lost_deposit,F,Bumi Sarawak,61
+N.50 Machan,Ngelayang anak Unau,ASPIRASI,GASAK,52,0.671574325196952,5,lost_deposit,M,Bumi Sarawak,67
+N.51 Bukit Assek,Chieng Jin Ek,SUPP,GPS,4684,34.94479259922411,1,won,M,Chinese,46
+N.51 Bukit Assek,Irene Mary Chang Oi Ling,DAP,PH,3810,28.424350940017906,2,lost,F,Chinese,56
+N.51 Bukit Assek,Priscilla Lau,PBK,ALONE,2598,19.382273948075202,3,lost,F,Chinese,52
+N.51 Bukit Assek,Ting Kee Nguan,PSB,ALONE,1790,13.354222620113399,4,lost,M,Chinese,45
+N.51 Bukit Assek,Hii Tiong Huat,BEBAS,ALONE,313,2.3351238436287676,5,lost_deposit,M,Chinese,70
+N.51 Bukit Assek,Lau Kiu Ming,ASPIRASI,GASAK,209,1.5592360489406147,6,lost_deposit,F,Chinese,62
+N.52 Dudong,Tiong King Sing,PDP,GPS,9390,46.985238929196896,1,won,M,Chinese,60
+N.52 Dudong,Wong Hie Ping,PSB,ALONE,3584,17.933450087565674,2,lost,F,Chinese,-1
+N.52 Dudong,Paul Ling Fong,DAP,PH,2724,13.63022266700025,3,lost,M,Chinese,39
+N.52 Dudong,Jane Lau Sing Yee,PBK,ALONE,1779,8.901676257192895,4,lost_deposit,F,Chinese,36
+N.52 Dudong,Fadhil bin Mohamad Isa,BEBAS,ALONE,1178,5.894420815611709,5,lost_deposit,M,Bumi Sarawak,37
+N.52 Dudong,Julius Enchana anak Jaspher Ancho,PBDSB,GASAK,893,4.468351263447586,6,lost_deposit,M,Bumi Sarawak,33
+N.52 Dudong,Engga anak Unchat,BEBAS,ALONE,225,1.1258443832874656,7,lost_deposit,M,Bumi Sarawak,65
+N.52 Dudong,Josephine Lau Kiew Peng,ASPIRASI,GASAK,212,1.060795596697523,8,lost_deposit,F,Chinese,51
+N.53 Bawang Assan,Wong Soon Koh,PSB,ALONE,5952,43.24638523577708,1,won,M,Chinese,79
+N.53 Bawang Assan,Robert Lau Hui Yew,SUPP,GPS,5039,36.61265712417351,2,lost,M,Chinese,56
+N.53 Bawang Assan,Amy Lau Bik Yieng,DAP,PH,1173,8.52285112257502,3,lost_deposit,F,Chinese,30
+N.53 Bawang Assan,Michelle Ling Shyan Mih,PBK,ALONE,954,6.931628278718302,4,lost_deposit,F,Chinese,25
+N.53 Bawang Assan,Ricky anak Enteri,BEBAS,ALONE,645,4.686478238756085,5,lost_deposit,M,Bumi Sarawak,30
+N.54 Pelawan,Michael Tiang Ming Tee,SUPP,GPS,4413,27.700709308894606,1,won,M,Chinese,48
+N.54 Pelawan,David Wong Kee Woan,DAP,PH,4313,27.073002322515848,2,lost,M,Chinese,59
+N.54 Pelawan,Low Chong Nguan,PSB,ALONE,3757,23.582951478249953,3,lost,M,Chinese,50
+N.54 Pelawan,Tiew Yen Houng,PBK,ALONE,3146,19.74766179147574,4,lost,F,Chinese,51
+N.54 Pelawan,Janet Loh Wui Ping,ASPIRASI,GASAK,302,1.8956750988638502,5,lost_deposit,F,Chinese,52
+N.55 Nangka,Annuar bin Rapaee,PBB,GPS,12059,84.0875810612928,1,won,M,Bumi Sarawak,58
+N.55 Nangka,Intanurazean binti Wan Sapuan Daud,PSB,ALONE,1255,8.751133114845548,2,lost_deposit,F,Bumi Sarawak,26
+N.55 Nangka,Olivia Lim Wen Sia,PBK,ALONE,1027,7.161285823861656,3,lost_deposit,F,Chinese,24
+N.56 Dalat,Fatimah binti Abdullah,PBB,GPS,7085,93.90324718356527,1,won,F,Chinese,64
+N.56 Dalat,Salleh bin Mahali,PBK,ALONE,460,6.096752816434725,2,lost_deposit,M,Bumi Sarawak,70
+N.57 Tellian,Royston bin Valentine,PBB,GPS,4282,70.10478061558612,1,won,M,Bumi Sarawak,35
+N.57 Tellian,Sait bin Junaidi,PSB,ALONE,1365,22.347740667976424,2,lost,M,Bumi Sarawak,57
+N.57 Tellian,Mohd Arwin Lim bin Abdullah,PKR,PH,287,4.698755730189915,3,lost_deposit,M,Bumi Sarawak,34
+N.57 Tellian,Zainuddin bin Budug,PBK,ALONE,174,2.848722986247544,4,lost_deposit,M,Bumi Sarawak,56
+N.58 Balingian,Abdul Yakub bin Arbi,PBB,GPS,4050,71.12750263435194,1,won,M,Bumi Sarawak,61
+N.58 Balingian,Yusuf Abdul Rahman,PSB,ALONE,1146,20.12644889357218,2,lost,M,Bumi Sarawak,65
+N.58 Balingian,Abdul Jalil bin Bujang,PKR,PH,498,8.74604847207587,3,lost_deposit,M,Bumi Sarawak,62
+N.59 Tamin,Christopher Gira @ Gira Sambang,PRS,GPS,7778,64.98997326203208,1,won,M,Bumi Sarawak,51
+N.59 Tamin,Joseph Entulu Belaun,PSB,ALONE,4190,35.01002673796791,2,lost,M,Bumi Sarawak,67
+N.60 Kakus,John Sikie anak Tayai,PRS,GPS,5307,52.35276709085528,1,won,M,Bumi Sarawak,71
+N.60 Kakus,Peter anak Tuan,PSB,ALONE,3410,33.63914373088685,2,lost,M,Bumi Sarawak,59
+N.60 Kakus,Ugik anak Selipeh,BEBAS,ALONE,546,5.386208937555489,3,lost_deposit,M,Bumi Sarawak,56
+N.60 Kakus,Joshua anak Jabing @ Joshua Jabeng,PKR,PH,375,3.6993193252441547,4,lost_deposit,M,Bumi Sarawak,71
+N.60 Kakus,Philip Kelanang anak Diung,PBK,ALONE,337,3.3244549669527474,5,lost_deposit,M,Bumi Sarawak,66
+N.60 Kakus,Tiun anak Kanun,BEBAS,ALONE,162,1.598105948505475,6,lost_deposit,M,Bumi Sarawak,57
+N.61 Pelagus,Wilson Nyabong anak Ijang,PRS,GPS,2843,56.28588398336964,1,won,M,Bumi Sarawak,62
+N.61 Pelagus,Kristoffer Nyuak Bajok,PSB,ALONE,1794,35.51771926351218,2,lost,M,Bumi Sarawak,62
+N.61 Pelagus,Solomon anak Kumbong,DAP,PH,250,4.949514947535142,3,lost_deposit,M,Bumi Sarawak,58
+N.61 Pelagus,Nyambong anak Sibat,PBK,ALONE,88,1.7422292615323698,4,lost_deposit,M,Bumi Sarawak,57
+N.61 Pelagus,Moses anak Ripai,PBDSB,GASAK,76,1.504652544050683,5,lost_deposit,M,Bumi Sarawak,61
+N.62 Katibas,Lidam anak Assan,PBB,GPS,4198,64.62438423645321,1,won,M,Bumi Sarawak,56
+N.62 Katibas,Robertson Mawa anak Luat,PSB,ALONE,1201,18.488300492610836,2,lost,M,Bumi Sarawak,67
+N.62 Katibas,Munan anak Laja,PKR,PH,763,11.745689655172415,3,lost_deposit,M,Bumi Sarawak,60
+N.62 Katibas,Yunus bin Basri,PBK,ALONE,149,2.29371921182266,4,lost_deposit,M,Bumi Sarawak,-1
+N.62 Katibas,Tengku anak Gruna,BEBAS,ALONE,123,1.893472906403941,5,lost_deposit,M,Bumi Sarawak,61
+N.62 Katibas,Sai anak Malaka,PBDSB,GASAK,62,0.9544334975369458,6,lost_deposit,M,Bumi Sarawak,56
+N.63 Bukit Goram,Jefferson Jamit anak Unyat,PBB,GPS,4253,68.45324319974247,1,won,M,Bumi Sarawak,63
+N.63 Bukit Goram,Joseph anak Jinggut,DAP,PH,715,11.50812811846129,2,lost_deposit,M,Bumi Sarawak,67
+N.63 Bukit Goram,Robert Segie,PSB,ALONE,689,11.089650732335425,3,lost_deposit,M,Bumi Sarawak,60
+N.63 Bukit Goram,Puso bin Bujang,PBK,ALONE,297,4.78029937228392,4,lost_deposit,M,Bumi Sarawak,59
+N.63 Bukit Goram,Robert Saweng,PBDSB,GASAK,259,4.1686785771768875,5,lost_deposit,M,Bumi Sarawak,51
+N.64 Baleh,Nicholas Kudi anak Jantai Masing,PRS,GPS,3541,61.851528384279476,1,won,M,Bumi Sarawak,36
+N.64 Baleh,Koh anak Kumbong,PSB,ALONE,1632,28.50655021834061,2,lost,M,Bumi Sarawak,62
+N.64 Baleh,Kenneth Usang George Lagong,DAP,PH,470,8.209606986899564,3,lost_deposit,M,Bumi Sarawak,39
+N.64 Baleh,Irwan Iskandar Sukarno bin Abdullah,PBK,ALONE,82,1.4323144104803494,4,lost_deposit,M,Bumi Sarawak,54
+N.65 Belaga,Liwan Lagang,PRS,GPS,3552,70.51816557474687,1,won,M,Bumi Sarawak,63
+N.65 Belaga,Henry Usat Bit,PSB,ALONE,1307,25.94798491165376,2,lost,M,Bumi Sarawak,58
+N.65 Belaga,John Bampa,PBK,ALONE,97,1.9257494540401032,3,lost_deposit,M,Bumi Sarawak,58
+N.65 Belaga,Siki Balarik,BEBAS,ALONE,81,1.6081000595592614,4,lost_deposit,F,Bumi Sarawak,50
+N.66 Murum,Kennedy Chukpai Ugon,PRS,GPS,4584,66.23320329432163,1,won,M,Bumi Sarawak,53
+N.66 Murum,Stanley Ajang Batok,PSB,ALONE,1665,24.057217165149545,2,lost,M,Bumi Sarawak,68
+N.66 Murum,Anie Amat,PKR,PH,513,7.412223667100131,3,lost_deposit,F,Bumi Sarawak,57
+N.66 Murum,Kenneth Adan Silek,PBDSB,GASAK,159,2.297355873428695,4,lost_deposit,M,Bumi Sarawak,61
+N.67 Jepak,Talib bin Zulpilip,PBB,GPS,6277,69.44352251355238,1,won,M,Bumi Sarawak,70
+N.67 Jepak,Raba'ah binti Tudin,PSB,ALONE,2034,22.502489213408563,2,lost,F,Bumi Sarawak,57
+N.67 Jepak,Stevenson anak Joseph Sumbang,PBK,ALONE,587,6.494081203672973,3,lost_deposit,M,Bumi Sarawak,40
+N.67 Jepak,Ani bin Kazan,BEBAS,ALONE,141,1.5599070693660804,4,lost_deposit,M,Bumi Sarawak,49
+N.68 Tanjong Batu,Johnny Pang Leong Ming,SUPP,GPS,4092,35.37650211809458,1,won,M,Chinese,61
+N.68 Tanjong Batu,Chiew Chan Yew,DAP,PH,4069,35.17766058615025,2,lost,M,Chinese,34
+N.68 Tanjong Batu,Yek Hock Siang,PBK,ALONE,2204,19.05420593066482,3,lost,M,Chinese,44
+N.68 Tanjong Batu,Robert Tang Eng Hui,PSB,ALONE,1071,9.259099161407452,4,lost_deposit,M,Chinese,54
+N.68 Tanjong Batu,Chieng Lea Phing,ASPIRASI,GASAK,93,0.8040114117748768,5,lost_deposit,M,Chinese,60
+N.68 Tanjong Batu,Wong Hau Ming,BEBAS,ALONE,38,0.3285207919080142,6,lost_deposit,M,Chinese,60
+N.69 Kemena,Stephen Rundi anak Utom,PBB,GPS,6339,62.81835298781092,1,won,M,Bumi Sarawak,61
+N.69 Kemena,Bernard Tahim anak Bael,PSB,ALONE,2728,27.033990684768604,2,lost,M,Bumi Sarawak,58
+N.69 Kemena,John Brian Anthony anak Jeremy Guang,DAP,PH,399,3.954018432266376,3,lost_deposit,M,Bumi Sarawak,66
+N.69 Kemena,Jame Stephen,BEBAS,ALONE,331,3.28015062927361,4,lost_deposit,M,Bumi Sarawak,57
+N.69 Kemena,Chelea Vanessa anak William,PBK,ALONE,294,2.9134872658804873,5,lost_deposit,F,Bumi Sarawak,25
+N.70 Samalaju,Majang anak Renggi,PRS,GPS,7547,67.05464238116393,1,won,M,Bumi Sarawak,64
+N.70 Samalaju,Ung Cheng Chak,DAP,PH,1504,13.362949800088849,2,lost,M,Chinese,43
+N.70 Samalaju,Reggie anak Suel,PSB,ALONE,1496,13.291870279875612,3,lost,M,Bumi Sarawak,52
+N.70 Samalaju,Leighton anak Manjah,PBK,ALONE,509,4.522434473567303,4,lost_deposit,M,Bumi Sarawak,56
+N.70 Samalaju,Baba anak Emperan,PBDSB,GASAK,199,1.7681030653043093,5,lost_deposit,M,Bumi Sarawak,54
+N.71 Bekenu,Rosey binti Yunus,PBB,GPS,6354,79.58416833667334,1,won,F,Bumi Sarawak,65
+N.71 Bekenu,Norhafizah binti Mohammad Joharie,PKR,PH,957,11.986472945891784,2,lost_deposit,F,Bumi Sarawak,34
+N.71 Bekenu,Abu Bakar bin Amit,PSB,ALONE,377,4.721943887775551,3,lost_deposit,M,Bumi Sarawak,64
+N.71 Bekenu,Desmond Gani anak Pengiran,PBK,ALONE,296,3.707414829659319,4,lost_deposit,M,Bumi Sarawak,61
+N.72 Lambir,Ripin bin Lamat,PBB,GPS,6860,68.01507039460638,1,won,M,Bumi Sarawak,51
+N.72 Lambir,Lila binti Mohamad,PSB,ALONE,1298,12.869323815189372,2,lost,F,Bumi Sarawak,70
+N.72 Lambir,Zolhaidah binti Suboh ,PKR,PH,1139,11.292881221495142,3,lost_deposit,F,Bumi Sarawak,48
+N.72 Lambir,Dyanne Oshield anak Nickson,PBK,ALONE,789,7.822724568709102,4,lost_deposit,F,Bumi Sarawak,28
+N.73 Piasau,Sebastian Ting Chiew Yew,SUPP,GPS,6790,66.60780851481263,1,won,M,Chinese,66
+N.73 Piasau,Peter Hee Leh Keng,DAP,PH,1802,17.67706494016088,2,lost,M,Chinese,33
+N.73 Piasau,Teo Jia Jun,PSB,ALONE,816,8.004708652148322,3,lost_deposit,M,Chinese,31
+N.73 Piasau,Chung Siew Yen,PBK,ALONE,665,6.523445163821856,4,lost_deposit,F,Chinese,33
+N.73 Piasau,Hanim binti Jaraee,ASPIRASI,GASAK,121,1.1869727290563077,5,lost_deposit,F,Bumi Sarawak,56
+N.74 Pujut,Yii Siew Sang,SUPP,GPS,5558,44.85513679283351,1,won,M,Chinese,65
+N.74 Pujut,Alan Ling Sie Kiong,DAP,PH,3992,32.21693164393511,2,lost,M,Chinese,38
+N.74 Pujut,Bruce Chai Khim Cheong,PSB,ALONE,1667,13.453312888386732,3,lost,M,Chinese,49
+N.74 Pujut,Leslie Ting Siong Ngiap,PBK,ALONE,1022,8.247921878782988,4,lost_deposit,M,Chinese,39
+N.74 Pujut,Chin Fen Siong,ASPIRASI,GASAK,152,1.2266967960616575,5,lost_deposit,M,Chinese,53
+N.75 Senadin,Lee Kim Shin,SUPP,GPS,10535,62.304098409131235,1,won,M,Chinese,71
+N.75 Senadin,Marcus Hugo Matu Lejau,DAP,PH,2944,17.410846294872552,2,lost,M,Bumi Sarawak,61
+N.75 Senadin,Lee Tze Ha,PSB,ALONE,1896,11.21296351055651,3,lost_deposit,F,Chinese,60
+N.75 Senadin,Ngieng Sheng Chung,PBK,ALONE,1023,6.050032527056597,4,lost_deposit,M,Chinese,49
+N.75 Senadin,Bobby anak William,PBDSB,GASAK,511,3.0220592583831096,5,lost_deposit,M,Bumi Sarawak,54
+N.76 Marudi,Penguang anak Manggil,PDP,GPS,8169,74.53467153284672,1,won,M,Bumi Sarawak,67
+N.76 Marudi,Sylvester Entri anak Muran,PSB,ALONE,2193,20.00912408759124,2,lost,M,Bumi Sarawak,67
+N.76 Marudi,Elias Lipi anak Mat,PKR,PH,373,3.403284671532847,3,lost_deposit,M,Bumi Sarawak,49
+N.76 Marudi,Sawing anak Kedit,PBDSB,GASAK,124,1.1313868613138687,4,lost_deposit,M,Bumi Sarawak,56
+N.76 Marudi,Pierre Gilbert Young,PBK,ALONE,101,0.9215328467153285,5,lost_deposit,M,Bumi Sarawak,47
+N.77 Telang Usan,Dennis Ngau,PBB,GPS,3861,59.758551307847085,1,won,M,Bumi Sarawak,53
+N.77 Telang Usan,Jau Jok @ Jenggo,PSB,ALONE,1439,22.27209410308002,2,lost,M,Bumi Sarawak,63
+N.77 Telang Usan,Philip Jau Ding,PKR,PH,1093,16.916885930970437,3,lost,M,Bumi Sarawak,62
+N.77 Telang Usan,Gia Bala,PBK,ALONE,68,1.052468658102461,4,lost_deposit,M,Bumi Sarawak,71
+N.78 Mulu,Gerawat Gala,PBB,GPS,3731,66.67262330235883,1,won,M,Bumi Sarawak,64
+N.78 Mulu,Son Radu,PSB,ALONE,856,15.296640457469621,2,lost,M,Bumi Sarawak,59
+N.78 Mulu,Roland Engan,PKR,PH,810,14.474624731951394,3,lost,M,Bumi Sarawak,48
+N.78 Mulu,Richard Ibuh,PBK,ALONE,199,3.556111508220157,4,lost_deposit,M,Bumi Sarawak,67
+N.79 Bukit Kota,Abdul Rahman bin Ismail,PBB,GPS,6454,78.80341880341881,1,won,M,Bumi Sarawak,58
+N.79 Bukit Kota,Rosli bin Amat,PSB,ALONE,1468,17.924297924297925,2,lost,M,Bumi Sarawak,57
+N.79 Bukit Kota,Lim Kim Khun @ Lim Lian Choon,PBK,ALONE,206,2.515262515262515,3,lost_deposit,F,Chinese,68
+N.79 Bukit Kota,Herun bin Bungsu,BEBAS,ALONE,62,0.757020757020757,4,lost_deposit,M,Bumi Sarawak,66
+N.80 Batu Danau,Palu @ Paulus Palu anak Gumbang,PBB,GPS,3030,53.13924938618029,1,won,M,Bumi Sarawak,70
+N.80 Batu Danau,Ali anak Adap,PSB,ALONE,2324,40.7576289021396,2,lost,M,Bumi Sarawak,54
+N.80 Batu Danau,Racha Balang,PKR,PH,268,4.700105226236408,3,lost_deposit,M,Bumi Sarawak,56
+N.80 Batu Danau,Petrus Bulan,PBK,ALONE,80,1.403016485443704,4,lost_deposit,M,Bumi Sarawak,68
+N.81 Ba'kelalan,Baru Bian,PSB,ALONE,2687,54.65825874694874,1,won,M,Bumi Sarawak,63
+N.81 Ba'kelalan,Sam Laya,PDP,GPS,2007,40.82587469487388,2,lost,M,Bumi Sarawak,55
+N.81 Ba'kelalan,Pita Asut @ Peter Asut,PBK,ALONE,110,2.237591537835639,3,lost_deposit,M,Bumi Sarawak,63
+N.81 Ba'kelalan,Martin Samuel Labo,PKR,PH,57,1.1594792514239218,4,lost_deposit,M,Bumi Sarawak,65
+N.81 Ba'kelalan,Agnes Padan,BEBAS,ALONE,55,1.1187957689178194,5,lost_deposit,F,Bumi Sarawak,42
+N.82 Bukit Sari,Awang Tengah bin Ali Hasan,PBB,GPS,6385,87.47773667625702,1,won,M,Bumi Sarawak,58
+N.82 Bukit Sari,Alias bin Mail,PSB,ALONE,749,10.26167968214824,2,lost_deposit,M,Bumi Sarawak,68
+N.82 Bukit Sari,Riyah bin Basrah,PBK,ALONE,165,2.2605836415947387,3,lost_deposit,M,Bumi Sarawak,59

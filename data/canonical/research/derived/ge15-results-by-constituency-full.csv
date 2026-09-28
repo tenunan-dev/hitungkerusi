@@ -1,0 +1,223 @@
+state,code,constituency,winner_name,coalition,party,winner_votes,winner_pct,majority,registered,total_valid,bloc,state_std,margin_pct_valid
+Perlis,P001,Padang Besar,Rusydan Rusmi,PN,PAS,24267,53.58,12514,60192,45288,PN,Perlis,27.63
+Perlis,P002,Kangar,Zakri Hassan,PN,BERSATU,24562,43.7,9192,74859,56200,PN,Perlis,16.36
+Perlis,P003,Arau,Shahidan Kassim,PN,PAS,31458,67.23,23216,60876,46789,PN,Perlis,49.62
+Kedah,P004,Langkawi,Suhaimi Abdullah,PN,BERSATU,25463,53.63,13518,66777,47480,PN,Kedah,28.47
+Kedah,P005,Jerlun,Abdul Ghani Ahmad,PN–PAS,,31685,60.69,20456,67601,52207,PN,Kedah,39.18
+Kedah,P006,Kubang Pasu,Ku Abdul Rahman Ku Ismail,PN–BERSATU,,47584,57.05,31584,108217,83402,PN,Kedah,37.87
+Kedah,P007,Padang Terap,Nurul Amin Hamid,PN,PAS,28217,58.03,10959,59806,48629,PN,Kedah,22.54
+Kedah,P008,Pokok Sena,Ahmad Saad Yahaya,PN,PAS,52275,59.44,31751,114838,87944,PN,Kedah,36.1
+Kedah,P009,Alor Setar,Afnan Hamimi Taib Azamuddin,PN,PAS,37486,48.69,9931,105994,76986,PN,Kedah,12.9
+Kedah,P010,Kuala Kedah,Ahmad Fakhruddin Fakhrurazi,PN,PAS,56298,56.03,28061,132500,100475,PN,Kedah,27.93
+Kedah,P011,Pendang,Awang Hashim,PN,PAS,49008,64.83,31289,94547,75594,PN,Kedah,41.39
+Kedah,P012,Jerai,Sabri Azit,PN,PAS,49461,60.1,33192,105001,82293,PN,Kedah,40.33
+Kedah,P013,Sik,Ahmad Tarmizi Sulaiman,PN,PAS,34606,67.64,21787,63126,51161,PN,Kedah,42.59
+Kedah,P014,Merbok,Nazri Abu Hassan,PN,BERSATU,52573,51.27,21019,132444,102544,PN,Kedah,20.5
+Kedah,P015,Sungai Petani,Mohammed Taufiq Johari,PH–PKR,,50580,38.91,1115,168847,130004,PH,Kedah,0.86
+Kedah,P016,Baling,Hassan Saad,PN–PAS,,64493,59.13,29137,132099,109068,PN,Kedah,26.71
+Kedah,P017,Padang Serai,Azman Nasrudin,PN,BERSATU,51637,56.49,16260,133867,81416,PN,Kedah,19.97
+Kedah,P018,Kulim-Bandar Baharu,Roslan Hashim,PN,BERSATU,34469,49.0,13061,90141,70340,PN,Kedah,18.57
+Kelantan,P019,Tumpat,Mumtaz Md. Nawi,PN–PAS,,65426,62.51,34793,149371,106131,PN,Kelantan,32.78
+Kelantan,P020,Pengkalan Chepa,Ahmad Marzuk Shaary,PN–PAS,,53933,69.36,38270,106982,78659,PN,Kelantan,48.65
+Kelantan,P021,Kota Bharu,Takiyuddin Hassan,PN–PAS,,41869,53.67,22613,115450,78019,PN,Kelantan,28.98
+Kelantan,P022,Pasir Mas,Ahmad Fadhli Shaari,PN–PAS,,44444,68.21,30717,94544,65153,PN,Kelantan,47.15
+Kelantan,P023,Rantau Panjang,Siti Zailah Mohd Yusoff,PN–PAS,,37759,62.38,20636,93248,60527,PN,Kelantan,34.09
+Kelantan,P024,Kubang Kerian,Tuan Ibrahim Tuan Man,PN–PAS,,55654,68.38,40847,113640,81384,PN,Kelantan,50.19
+Kelantan,P025,Bachok,Mohd Syahir Che Sulaiman,PN–PAS,,57496,63.89,29901,123183,89417,PN,Kelantan,33.44
+Kelantan,P026,Ketereh,Khilir Mohd Nor,PN–BERSATU,,40542,64.49,23107,85281,62862,PN,Kelantan,36.76
+Kelantan,P027,Tanah Merah,Ikmal Hisham Abdul Aziz,PN–BERSATU,,54266,77.87,44498,98782,69686,PN,Kelantan,63.86
+Kelantan,P028,Pasir Puteh,Nik Muhammad Zawawi Salleh,PN–PAS,,52937,65.37,29109,113070,80978,PN,Kelantan,35.95
+Kelantan,P029,Machang,Wan Ahmad Fayhsal Wan Ahmad Kamal,PN–BERSATU,,35603,54.68,10154,88825,65114,PN,Kelantan,15.59
+Kelantan,P030,Jeli,Zahari Kechik,PN–BERSATU,,27072,63.03,12464,59798,42953,PN,Kelantan,29.02
+Kelantan,P031,Kuala Krai,Ab Latiff Ab Rahman,PN–PAS,,42740,66.08,25188,92335,64681,PN,Kelantan,38.94
+Kelantan,P032,Gua Musang,Mohd Azizi Abu Naim,PN–BERSATU,,21826,45.12,163,70254,48377,PN,Kelantan,0.34
+Terengganu,P033,Besut,Che Mohamad Zulkifly Jusoh,PN–PAS,,49569,58.07,18666,111650,85364,PN,Terengganu,21.87
+Terengganu,P034,Setiu,Shaharizukirnain Abd. Kadir,PN–PAS,,50768,59.85,19032,107294,84832,PN,Terengganu,22.43
+Terengganu,P035,Kuala Nerus,Alias Razak,PN–PAS,,56697,64.7,29765,105952,87628,PN,Terengganu,33.97
+Terengganu,P036,Kuala Terengganu,Ahmad Amzad Mohamed @ Hashim,PN–PAS,,63016,65.27,40907,123305,96552,PN,Terengganu,42.37
+Terengganu,P037,Marang,Abdul Hadi Awang,PN–PAS,,73115,67.04,41729,131756,109068,PN,Terengganu,38.26
+Terengganu,P038,Hulu Terengganu,Rosol Wahid,PN–BERSATU,,42910,59.59,15734,87917,72008,PN,Terengganu,21.85
+Terengganu,P039,Dungun,Wan Hassan Mohd Ramli,PN–PAS,,59720,65.43,34105,115559,91269,PN,Terengganu,37.37
+Terengganu,P040,Kemaman,Che Alias Hamid,PN–PAS,,65714,58.11,27179,139423,113095,PN,Terengganu,24.03
+Pulau Pinang,P041,Kepala Batas,Siti Mastura Mohamad,PN–PAS,,28604,41.27,2867,83081,69302,PN,Penang,4.14
+Pulau Pinang,P042,Tasek Gelugor,Wan Saifulruddin Wan Jan,PN–BERSATU,,31116,46.36,12252,80868,67112,PN,Penang,18.26
+Pulau Pinang,P043,Bagan,Lim Guan Eng,PH–DAP,,55797,81.27,49648,89447,68654,PH,Penang,72.32
+Pulau Pinang,P044,Permatang Pauh,Muhammad Fawwaz Mat Jan,PN–PAS,,37638,43.04,5272,107186,87448,PN,Penang,6.03
+Pulau Pinang,P045,Bukit Mertajam,Steven Sim Chee Keong,PH–DAP,,71722,77.33,57685,120819,92745,PH,Penang,62.2
+Pulau Pinang,P046,Batu Kawan,Chow Kon Yeow,PH–DAP,,50744,73.72,40400,88812,68831,PH,Penang,58.69
+Pulau Pinang,P047,Nibong Tebal,Fadhlina Sidek,PH–PKR,,42188,53.4,16293,100062,79308,PH,Penang,20.54
+Pulau Pinang,P048,Bukit Bendera,Syerleena Abdul Rashid,PH–DAP,,49353,78.98,42610,92521,62489,PH,Penang,68.19
+Pulau Pinang,P049,Tanjong,Lim Hui Ying,PH–DAP,,31968,84.83,28754,52803,37683,PH,Penang,76.3
+Pulau Pinang,P050,Jelutong,RSN Rayer,PH–DAP,,50369,71.24,38604,93989,70707,PH,Penang,54.6
+Pulau Pinang,P051,Bukit Gelugor,Ramkarpal Singh,PH–DAP,,71204,82.73,63112,117134,86073,PH,Penang,73.32
+Pulau Pinang,P052,Bayan Baru,Sim Tze Tzin,PH–PKR,,55209,61.54,34902,119640,89708,PH,Penang,38.91
+Pulau Pinang,P053,Balik Pulau,Muhammad Bakhtiar Wan Chik,PH–PKR,,24564,38.43,1582,80264,63911,PH,Penang,2.48
+Perak,P054,Gerik,Fathul Huzir Ayob,PN–BERSATU,,15105,43.64,1377,47565,34612,PN,Perak,3.98
+Perak,P055,Lenggong,Shamsul Anuar Nasarah,BN–UMNO,,12588,45.48,879,36950,27679,BN,Perak,3.18
+Perak,P056,Larut,Hamzah Zainudin,PN–BERSATU,,28350,54.65,11598,65719,51875,PN,Perak,22.36
+Perak,P057,Parit Buntar,Mohd Misbahul Munir Masduki,PN–PAS,,23223,43.9,5395,68502,52903,PN,Perak,10.2
+Perak,P058,Bagan Serai,Idris Ahmad,PN–PAS,,33753,53.98,18551,80293,62533,PN,Perak,29.67
+Perak,P059,Bukit Gantang,Syed Abu Hussin Hafiz Syed Abdul Fasal,PN–BERSATU,,32625,45.59,12756,94253,71567,PN,Perak,17.82
+Perak,P060,Taiping,Wong Kah Woh,PH–DAP,,47098,55.56,25529,121566,84769,PH,Perak,30.12
+Perak,P061,Padang Rengas,Azahari Hasan,PN–BERSATU,,12931,43.28,3046,38686,29878,PN,Perak,10.19
+Perak,P062,Sungai Siput,Kesavan Subramaniam,PH–PKR,,21637,41.89,1846,72395,51649,PH,Perak,3.57
+Perak,P063,Tambun,Anwar Ibrahim,PH–PKR,,49625,39.77,3736,160558,124769,PH,Perak,2.99
+Perak,P064,Ipoh Timor,Howard Lee Chuan How,PH–DAP,,57549,72.13,43888,118178,79780,PH,Perak,55.01
+Perak,P065,Ipoh Barat,Kulasegaran Murugeson,PH–DAP,,63915,81.57,56667,114654,78356,PH,Perak,72.32
+Perak,P066,Batu Gajah,Sivakumar Varatharaju Naidu,PH–DAP,,60999,81.38,53836,111896,74955,PH,Perak,71.82
+Perak,P067,Kuala Kangsar,Iskandar Dzulkarnain Abdul Khalid,PN–BERSATU,,14380,40.22,3566,46985,35754,PN,Perak,9.97
+Perak,P068,Beruas,Ngeh Koo Ham,PH–DAP,,46710,64.72,33971,108249,72173,PH,Perak,47.07
+Perak,P069,Parit,Muhamamd Ismi Mat Taib,PN–PAS,,17181,45.76,2155,47915,37545,PN,Perak,5.74
+Perak,P070,Kampar,Chong Zhemin,PH–DAP,,30467,51.3,14330,89894,59386,PH,Perak,24.13
+Perak,P071,Gopeng,Tan Kar Hing,PH–PKR,,55880,53.92,27148,143657,103638,PH,Perak,26.2
+Perak,P072,Tapah,Saravanan Murugan,BN–MIC,,18398,41.36,5064,61946,44481,BN,Perak,11.38
+Perak,P073,Pasir Salak,Jamaluddin Yahya,PN–PAS,,24897,43.66,5003,74761,57023,PN,Perak,8.77
+Perak,P074,Lumut,Nordin Ahmad Ismail,PN–BERSATU,,25212,35.43,363,92972,71162,PN,Perak,0.51
+Perak,P075,Bagan Datuk,Ahmad Zahid Hamidi,BN–UMNO,,16578,39.61,348,58183,41856,BN,Perak,0.83
+Perak,P076,Teluk Intan,Nga Kor Ming,PH–DAP,,33133,51.61,15169,87222,64194,PH,Perak,23.63
+Perak,P077,Tanjong Malim,Chang Lih Kang,PH–PKR,,25140,36.08,3541,93873,69671,PH,Perak,5.08
+Pahang,P078,Cameron Highlands,Ramli Mohd Nor,BN–UMNO,,16120,48.46,4544,46020,33265,BN,Pahang,13.66
+Pahang,P079,Lipis,Abdul Rahman Mohamad,BN–UMNO,,17672,49.29,6117,47124,35855,BN,Pahang,17.06
+Pahang,P080,Raub,Chow Yu Hui,PH–DAP,,21613,38.43,4357,75064,56235,PH,Pahang,7.75
+Pahang,P081,Jerantut,Khairil Nizam Khirudin,PN–PAS,,31701,47.49,8092,87051,66754,PN,Pahang,12.12
+Pahang,P082,Indera Mahkota,Saifuddin Abdullah,PN–BERSATU,,41692,44.65,8399,120549,93379,PN,Pahang,8.99
+Pahang,P083,Kuantan,Wan Razali Wan Nor,PN–PAS,,25514,37.65,2866,87597,67762,PN,Pahang,4.23
+Pahang,P084,Paya Besar,Mohd. Shahar Abdullah,BN–UMNO,,26899,43.4,1317,79744,61983,BN,Pahang,2.12
+Pahang,P085,Pekan,Sh Mohmed Puzi Sh Ali,BN–UMNO,,47418,50.96,8949,119443,93041,BN,Pahang,9.62
+Pahang,P086,Maran,Ismail Abdul Muttalib,PN–PAS,,19600,47.7,1821,53128,41092,PN,Pahang,4.43
+Pahang,P087,Kuala Krau,Kamal Ashaari,PN–PAS,,22505,47.13,1024,60537,47753,PN,Pahang,2.14
+Pahang,P088,Temerloh,Salamiah Mohd Nor,PN–PAS,,30929,37.43,5520,106829,82637,PN,Pahang,6.68
+Pahang,P089,Bentong,Young Syefura Othman,PH–DAP,,25075,37.62,692,87058,66657,PH,Pahang,1.04
+Pahang,P090,Bera,Ismail Sabri Yaakob,BN–UMNO,,31762,53.34,16695,77669,59548,BN,Pahang,28.04
+Pahang,P091,Rompin,Abdul Khalib Abdullah,PN–BERSATU,,31589,47.2,1438,89131,66927,PN,Pahang,2.15
+Selangor,P092,Sabak Bernam,Kalam Salan,PN–BERSATU,,17973,43.86,5056,51609,40977,PN,Selangor,12.34
+Selangor,P093,Sungai Besar,Muslimin Yahaya,PN–BERSATU,,19791,38.75,2721,64382,51070,PN,Selangor,5.33
+Selangor,P094,Hulu Selangor,Mohd Hasnizan Harun,PN–PAS,,46823,38.24,1562,154317,122442,PN,Selangor,1.28
+Selangor,P095,Tanjong Karang,Zulkafperi Hanapi,PN–BERSATU,,18054,35.26,2180,62194,51205,PN,Selangor,4.26
+Selangor,P096,Kuala Selangor,Dzulkefly Ahmad,PH–AMANAH,,31033,35.88,1002,102951,86481,PH,Selangor,1.16
+Selangor,P097,Selayang,William Leong Jee Keen,PH–PKR,,72773,50.23,23619,181539,144881,PH,Selangor,16.3
+Selangor,P098,Gombak,Amirudin Shari,PH–PKR,,72267,43.69,12729,206744,165426,PH,Selangor,7.69
+Selangor,P099,Ampang,Rodziah Ismail,PH–PKR,,56754,54.35,29681,133494,104430,PH,Selangor,28.42
+Selangor,P100,Pandan,Rafizi Ramli,PH–PKR,,74002,63.98,48296,148730,115656,PH,Selangor,41.76
+Selangor,P101,Hulu Langat,Mohd Sany Hamzan,PH–AMANAH,,58382,42.68,14896,166902,136789,PH,Selangor,10.89
+Selangor,P102,Bangi,Syahredzan Johan,PH–DAP,,141568,57.95,69701,303430,244291,PH,Selangor,28.53
+Selangor,P103,Puchong,Yeo Bee Yin,PH–DAP,,79425,65.67,57957,152861,120949,PH,Selangor,47.92
+Selangor,P104,Subang,Wong Chen,PH–PKR,,138259,77.68,115074,230940,177983,PH,Selangor,64.65
+Selangor,P105,Petaling Jaya,Lee Chean Chung,PH–PKR,,83311,57.12,50515,195148,145862,PH,Selangor,34.63
+Selangor,P106,Damansara,Gobind Singh Deo,PH–DAP,,142875,81.67,124619,239103,174937,PH,Selangor,71.24
+Selangor,P107,Sungai Buloh,Ramanan Ramakrishnan,PH–PKR,,50943,39.3,2693,158090,129639,PH,Selangor,2.08
+Selangor,P108,Shah Alam,Azli Yusof,PH–AMANAH,,61409,45.23,18095,165744,135770,PH,Selangor,13.33
+Selangor,P109,Kapar,Halimah Ali,PN–PAS,,65751,41.61,11782,189369,158030,PN,Selangor,7.46
+Selangor,P110,Klang,Ganabatirau Veraman,PH–DAP,,115539,70.49,91801,208913,163905,PH,Selangor,56.01
+Selangor,P111,Kota Raja,Mohamad Sabu,PH–AMANAH,,123306,62.36,73998,244712,197740,PH,Selangor,37.42
+Selangor,P112,Kuala Langat,Ahmad Yunus Hairi,PN–PAS,,52867,42.68,1833,148637,123860,PN,Selangor,1.48
+Selangor,P113,Sepang,Raj Munni Sabu @ Aiman Athirah,PH–AMANAH,,56264,40.78,8949,168039,137955,PH,Selangor,6.49
+Federal Territory of Kuala Lumpur,P114,Kepong,Lim Lip Eng,PH–DAP,,64308,88.92,61081,94285,72319,PH,Kuala Lumpur,84.46
+Federal Territory of Kuala Lumpur,P115,Batu,Prabakaran Parameswaran,PH–PKR,,45716,52.46,22241,113863,87146,PH,Kuala Lumpur,25.52
+Federal Territory of Kuala Lumpur,P116,Wangsa Maju,Zahir Hassan,PH–PKR,,46031,49.63,20696,120323,92740,PH,Kuala Lumpur,22.32
+Federal Territory of Kuala Lumpur,P117,Segambut,Hannah Yeoh Tseow Suan,PH–DAP,,68438,80.05,59684,119652,85496,PH,Kuala Lumpur,69.81
+Federal Territory of Kuala Lumpur,P118,Setiawangsa,Nik Nazmi Nik Ahmad,PH–PKR,,34434,46.06,12164,95753,74764,PH,Kuala Lumpur,16.27
+Federal Territory of Kuala Lumpur,P119,Titiwangsa,Johari Abdul Ghani,BN–UMNO,,25042,41.15,4632,80747,60858,BN,Kuala Lumpur,7.61
+Federal Territory of Kuala Lumpur,P120,Bukit Bintang,Fong Kui Lun,PH–DAP,,43827,82.79,38977,79782,52936,PH,Kuala Lumpur,73.63
+Federal Territory of Kuala Lumpur,P121,Lembah Pantai,Ahmad Fahmi Mohamed Fadzil,PH–PKR,,35359,46.09,13912,101828,76714,PH,Kuala Lumpur,18.13
+Federal Territory of Kuala Lumpur,P122,Seputeh,Teresa Kok Suh Sim,PH–DAP,,73234,83.74,67187,124805,87454,PH,Kuala Lumpur,76.83
+Federal Territory of Kuala Lumpur,P123,Cheras,Tan Kok Wai,PH–DAP,,60294,84.04,54448,101184,71746,PH,Kuala Lumpur,75.89
+Federal Territory of Kuala Lumpur,P124,Bandar Tun Razak,Wan Azizah Wan Ismail,PH–PKR,,43476,46.74,9817,119185,93021,PH,Kuala Lumpur,10.55
+Federal Territory of Putrajaya,P125,Putrajaya,Radzi Md Jidin,PN–BERSATU,,16002,43.67,2310,42881,36643,PN,Putrajaya,6.3
+Negeri Sembilan,P126,Jelebu,Jalaluddin Alias,BN–UMNO,,21805,48.1,8125,59561,45334,BN,Negeri Sembilan,17.92
+Negeri Sembilan,P127,Jempol,Shamshulkahar Mohd. Deli,BN–UMNO,,30138,41.98,5857,95813,71795,BN,Negeri Sembilan,8.16
+Negeri Sembilan,P128,Seremban,Anthony Loke Siew Fook,PH–DAP,,63916,51.84,30841,157244,123284,PH,Negeri Sembilan,25.02
+Negeri Sembilan,P129,Kuala Pilah,Adnan Abu Hassan,BN–UMNO,,21423,44.02,6483,63247,48662,BN,Negeri Sembilan,13.32
+Negeri Sembilan,P130,Rasah,Cha Kee Chin,PH–DAP,,81434,68.04,61987,155896,119691,PH,Negeri Sembilan,51.79
+Negeri Sembilan,P131,Rembau,Mohamad Hasan,BN–UMNO,,53075,48.5,19897,133555,109436,BN,Negeri Sembilan,18.18
+Negeri Sembilan,P132,Port Dickson,Aminuddin Harun,PH–PKR,,42013,52.4,23601,104450,80185,PH,Negeri Sembilan,29.43
+Negeri Sembilan,P133,Tampin,Mohd Isam Mohd Isa,BN–UMNO,,23283,38.15,1276,81099,61033,BN,Negeri Sembilan,2.09
+Malacca,P134,Masjid Tanah,Mas Ermieyati Samsudin,PN–BERSATU,,25604,46.77,4411,69174,54749,PN,Malacca,8.06
+Malacca,P135,Alor Gajah,Adly Zahari,PH–AMANAH,,28178,38.6,890,93311,73000,PH,Malacca,1.22
+Malacca,P136,Tangga Batu,Bakri Jamaluddin,PN–PAS,,37406,40.65,8849,115998,92027,PN,Malacca,9.62
+Malacca,P137,Hang Tuah Jaya,Adam Adli Abdul Halim,PH–PKR,,39418,41.72,8638,118493,94486,PH,Malacca,9.14
+Malacca,P138,Kota Melaka,Khoo Poay Tiong,PH–DAP,,73995,60.07,46420,164140,123181,PH,Malacca,37.68
+Malacca,P139,Jasin,Zulkifli Ismail,PN–PAS,,27893,35.95,322,96208,77598,PN,Malacca,0.41
+Johor,P140,Segamat,Yuneswaran Ramaraj,PH–PKR,,23437,46.27,5669,69360,50652,PH,Johor,11.19
+Johor,P141,Sekijang,Zaliha Mustafa,PH–PKR,,18941,39.21,1734,63981,48237,PH,Johor,3.59
+Johor,P142,Labis,Pang Hok Liong,PH–DAP,,16133,46.43,2833,49846,34745,PH,Johor,8.15
+Johor,P143,Pagoh,Muhyiddin Yassin,PN–BERSATU,,24986,45.94,10007,69939,54391,PN,Johor,18.4
+Johor,P144,Ledang,Syed Ibrahim Syed Noh,PH–PKR,,33650,41.9,9769,104577,80307,PH,Johor,12.16
+Johor,P145,Bakri,Tan Hong Pin,PH–DAP,,36636,50.09,19254,97335,73140,PH,Johor,26.32
+Johor,P146,Muar,Syed Saddiq Syed Abdul Rahman,MUDA,,19961,37.55,1345,68925,53158,PH,Johor,2.53
+Johor,P147,Parit Sulong,Noraini Ahmad,BN–UMNO,,25740,40.89,2021,79484,62954,BN,Johor,3.21
+Johor,P148,Ayer Hitam,Wee Ka Siong,BN–MCA,,18911,40.5,2963,61041,46692,BN,Johor,6.35
+Johor,P149,Sri Gading,Aminolhuda Hassan,PH–AMANAH,,23242,37.94,4000,78602,61264,PH,Johor,6.53
+Johor,P150,Batu Pahat,Onn Abu Bakar,PH–PKR,,45242,45.47,15972,133910,99494,PH,Johor,16.05
+Johor,P151,Simpang Renggam,Hasni Mohammad,BN–UMNO,,18312,41.49,1821,59033,44131,BN,Johor,4.13
+Johor,P152,Kluang,Wong Shu Qi,PH–DAP,,49801,52.08,26406,132342,95621,PH,Johor,27.62
+Johor,P153,Sembrong,Hishammuddin Hussein,BN–UMNO,,22572,55.15,10880,54982,40930,BN,Johor,26.58
+Johor,P154,Mersing,Muhammad Islahuddin Abas,PN–BERSATU,,21066,44.91,2337,66275,46906,PN,Johor,4.98
+Johor,P155,Tenggara,Manndzri Nasib,BN–UMNO,,21185,41.26,2991,67294,51350,BN,Johor,5.82
+Johor,P156,Kota Tinggi,Mohamed Khaled Nordin,BN–UMNO,,25410,53.68,8390,61291,47333,BN,Johor,17.73
+Johor,P157,Pengerang,Azalina Othman Said,BN–UMNO,,21738,51.96,5010,55316,41840,BN,Johor,11.97
+Johor,P158,Tebrau,Jimmy Puah Wee Tse,PH–PKR,,83959,49.99,30720,223301,167965,PH,Johor,18.29
+Johor,P159,Pasir Gudang,Hassan Abdul Karim,PH–PKR,,71223,47.72,31558,198485,149280,PH,Johor,21.14
+Johor,P160,Johor Bahru,Akmal Nasrullah Mohd Nasir,PH–PKR,,43252,45.82,16041,136368,94393,PH,Johor,16.99
+Johor,P161,Pulai,Salahuddin Ayub,PH–AMANAH,,64900,55.33,33174,165313,117303,PH,Johor,28.28
+Johor,P162,Iskandar Puteri,Liew Chin Tong,PH–DAP,,96819,59.15,60036,222437,163680,PH,Johor,36.68
+Johor,P163,Kulai,Teo Nie Ching,PH–DAP,,65529,56.86,36023,151247,115253,PH,Johor,31.26
+Johor,P164,Pontian,Ahmad Maslan,BN–UMNO,,23201,40.81,5758,75212,56851,BN,Johor,10.13
+Johor,P165,Tanjung Piai,Wee Jeck Seng,BN–MCA,,23593,43.22,6360,70679,54588,BN,Johor,11.65
+Federal Territory of Labuan,P166,Labuan,Suhaili Abdul Rahman,PN–BERSATU,,8124,28.56,708,44484,28449,PN,Labuan,2.49
+Sabah,P167,Kudat,Verdon Bahanda,IND,,16323,36.19,1967,75724,45108,IND,Sabah,4.36
+Sabah,P168,Kota Marudu,Wetrom Bahanda,KDM,,24318,48.69,8174,80735,49946,KDM,Sabah,16.37
+Sabah,P169,Kota Belud,Isnaraissah Munirah Majilis @ Fakharudy,WARISAN,,25148,46.54,4582,79885,54037,WARISAN,Sabah,8.48
+Sabah,P170,Tuaran,Wilfred Madius Tangau,PH–UPKO,,24943,42.84,233,83419,58277,PH,Sabah,0.4
+Sabah,P171,Sepanggar,Mustapha @ Mohd Yunus Sakmud,PH–PKR,,27022,38.44,7042,108370,70304,PH,Sabah,10.02
+Sabah,P172,Kota Kinabalu,Chan Foong Hin,PH–DAP,,31359,71.08,23783,74059,44120,PH,Sabah,53.91
+Sabah,P173,Putatan,Shahelmey Yahya,BN–UMNO,,16234,39.36,124,63173,41249,BN,Sabah,0.3
+Sabah,P174,Penampang,Ewon Benedick,PH–UPKO,,29066,57.3,14410,77214,50730,PH,Sabah,28.41
+Sabah,P175,Papar,Armizan Mohd Ali,GRS–BERSATU Sabah,,22620,51.99,12224,59942,43509,GRS,Sabah,28.1
+Sabah,P176,Kimanis,Mohamad Alamin,BN–UMNO,,13004,41.86,3037,40763,31068,BN,Sabah,9.78
+Sabah,P177,Beaufort,Siti Aminah Aching,BN–UMNO,,10570,36.08,2518,43248,29298,BN,Sabah,8.59
+Sabah,P178,Sipitang,Matbali Musah,GRS–BERSATU Sabah,,14459,49.75,4691,45871,29061,GRS,Sabah,16.14
+Sabah,P179,Ranau,Jonathan Yasin,GRS–BERSATU Sabah,,22606,53.44,11092,66517,42298,GRS,Sabah,26.22
+Sabah,P180,Keningau,Jeffrey Kitingan,GRS–STAR,,23155,42.2,8056,87588,54872,GRS,Sabah,14.68
+Sabah,P181,Tenom,Riduan Rubin,IND,,10027,35.0,1108,42045,28649,IND,Sabah,3.87
+Sabah,P182,Pensiangan,Arthur Joseph Kurup,BN–PBRS,,19623,52.88,5412,55672,37100,BN,Sabah,14.59
+Sabah,P183,Beluran,Ronald Kiandee,PN–BERSATU,,11303,38.53,1594,44727,29334,PN,Sabah,5.43
+Sabah,P184,Libaran,Suhaimi Nasir,BN–UMNO,,22969,51.58,12618,72332,44531,BN,Sabah,28.34
+Sabah,P185,Batu Sapi,Khairul Firdaus Akhbar Khan,GRS–BERSATU Sabah,,12152,44.95,4821,43916,27037,GRS,Sabah,17.83
+Sabah,P186,Sandakan,Vivian Wong Shir Yee,PH–DAP,,16673,53.92,11031,55542,30919,PH,Sabah,35.68
+Sabah,P187,Kinabatangan,Bung Mokhtar Radin,BN–UMNO,,16842,57.38,4330,44773,29354,BN,Sabah,14.75
+Sabah,P188,Lahad Datu,Mohd Yusof Apdal,WARISAN,,27116,46.64,4376,100256,58145,WARISAN,Sabah,7.53
+Sabah,P189,Semporna,Mohd Shafie Apdal,WARISAN,,28702,73.77,20810,72169,38909,WARISAN,Sabah,53.48
+Sabah,P190,Tawau,Lo Su Fui,GRS–PBS,,19865,39.19,3860,87477,50687,GRS,Sabah,7.62
+Sabah,P191,Kalabakan,Andi Muhammad Suryady Bandy,BN–UMNO,,23855,47.68,9100,83970,50030,BN,Sabah,18.19
+Sarawak,P192,Mas Gading,Mordi Bimol,PH–DAP,,17274,55.05,5480,47171,31379,PH,Sarawak,17.46
+Sarawak,P193,Santubong,Nancy Shukri,GPS–PBB,,43739,84.42,38681,79540,51809,GPS,Sarawak,74.66
+Sarawak,P194,Petra Jaya,Fadillah Yusof,GPS–PBB,,54745,79.15,41363,109809,69163,GPS,Sarawak,59.81
+Sarawak,P195,Bandar Kuching,Kelvin Yii Lee Wuen,PH–DAP,,45353,71.34,28891,109710,63575,PH,Sarawak,45.44
+Sarawak,P196,Stampin,Chong Chieng Jen,PH–DAP,,39310,53.3,7158,121009,73753,PH,Sarawak,9.71
+Sarawak,P197,Kota Samarahan,Rubiah Wang,GPS–PBB,,42278,76.71,29445,82229,55111,GPS,Sarawak,53.43
+Sarawak,P198,Puncak Borneo,Willie Mongin,GPS–PBB,,29457,57.58,13338,79969,51154,GPS,Sarawak,26.07
+Sarawak,P199,Serian,Richard Riot Jaem,GPS–SUPP,,22876,57.23,16697,65273,39974,GPS,Sarawak,41.77
+Sarawak,P200,Batang Sadong,Rodiyah Sapiee,GPS–PBB,,18668,83.18,14893,32640,22443,GPS,Sarawak,66.36
+Sarawak,P201,Batang Lupar,Mohamad Shafizan Kepli,GPS–PBB,,19627,71.22,14463,43072,27559,GPS,Sarawak,52.48
+Sarawak,P202,Sri Aman,Doris Sophia Brodi,GPS–PRS,,14131,44.27,4039,50164,31917,GPS,Sarawak,12.65
+Sarawak,P203,Lubok Antu,Roy Angau Gingkoi,GPS–PRS,,6644,34.44,100,28995,19294,GPS,Sarawak,0.52
+Sarawak,P204,Betong,Richard Rapu @ Begri,GPS–PBB,,16479,61.69,11302,41743,26713,GPS,Sarawak,42.31
+Sarawak,P205,Saratok,Ali Biju,PN–BERSATU,,19233,62.33,8826,44531,30841,PN,Sarawak,28.62
+Sarawak,P206,Tanjong Manis,Yusuf Abd. Wahab,GPS–PBB,,16474,86.52,13908,32948,19040,GPS,Sarawak,73.05
+Sarawak,P207,Igan,Ahmad Johnie Zawawi,GPS–PBB,,15824,93.16,14662,28290,16986,GPS,Sarawak,86.32
+Sarawak,P208,Sarikei,Huang Tiong Sii,GPS–SUPP,,20080,55.07,3697,55018,36463,GPS,Sarawak,10.14
+Sarawak,P209,Julau,Larry Sng Wei Shien,PBM,,9159,40.64,1340,34850,22537,PBM,Sarawak,5.95
+Sarawak,P210,Kanowit,Aaron Ago Dagang,GPS–PRS,,7411,41.07,236,30988,18043,GPS,Sarawak,1.31
+Sarawak,P211,Lanang,Alice Lau Kiong Yieng,PH–DAP,,30120,56.89,11544,87356,52946,PH,Sarawak,21.8
+Sarawak,P212,Sibu,Oscar Ling Chai Yew,PH–DAP,,31827,47.45,7760,105875,65942,PH,Sarawak,11.77
+Sarawak,P213,Mukah,Hanifah Hajar Taib,GPS–PBB,,21733,78.23,15686,46964,27780,GPS,Sarawak,56.47
+Sarawak,P214,Selangau,Edwin Banta,GPS–PRS,,16078,55.83,4986,45743,28796,GPS,Sarawak,17.31
+Sarawak,P215,Kapit,Alexander Nanta Linggi,GPS–PBB,,16522,75.1,12402,45210,21999,GPS,Sarawak,56.38
+Sarawak,P216,Hulu Rajang,Wilson Ugak Kumbong,GPS–PRS,,15456,66.03,7505,43438,23407,GPS,Sarawak,32.06
+Sarawak,P217,Bintulu,Tiong King Sing,GPS–PDP,,43455,61.73,22168,113599,70392,GPS,Sarawak,31.49
+Sarawak,P218,Sibuti,Lukanisman Awang Sauni,GPS–PBB,,22150,65.31,11745,58522,33916,GPS,Sarawak,34.63
+Sarawak,P219,Miri,Chiew Choon Man,PH–PKR,,39549,50.61,6159,143229,78148,PH,Sarawak,7.88
+Sarawak,P220,Baram,Anyi Ngau,GPS–PDP,,18399,61.78,7339,59535,29783,GPS,Sarawak,24.64
+Sarawak,P221,Limbang,Hasbi Habibollah,GPS–PBB,,14897,75.25,9998,41999,19796,GPS,Sarawak,50.51
+Sarawak,P222,Lawas,Henry Sum Agong,GPS–PBB,,11361,62.4,5677,33655,18208,GPS,Sarawak,31.18

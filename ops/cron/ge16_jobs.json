@@ -1,0 +1,279 @@
+{
+  "schema": "ge16.ops.cron-jobs.v1",
+  "version": "1.5.0",
+  "migration_identities": [
+    "441fedd48bc8",
+    "2b0a9111c836",
+    "c4cebfce9fb0",
+    "152172eb38fd",
+    "9194211d627e"
+  ],
+  "legacy_id_mappings": [
+    {
+      "stage_number": 1,
+      "legacy_id": "2f817443c8e9",
+      "active_target_id": "441fedd48bc8"
+    },
+    {
+      "stage_number": 2,
+      "legacy_id": "4c3dee85457f",
+      "active_target_id": "2b0a9111c836"
+    },
+    {
+      "stage_number": 3,
+      "legacy_id": "22f17e2baabd",
+      "active_target_id": "c4cebfce9fb0"
+    },
+    {
+      "stage_number": 4,
+      "legacy_id": "a62815d7de8a",
+      "active_target_id": "152172eb38fd"
+    },
+    {
+      "stage_number": 5,
+      "legacy_id": "b539a7a77c39",
+      "active_target_id": "9194211d627e"
+    }
+  ],
+  "jobs": [
+    {
+      "id": "441fedd48bc8",
+      "name": "GE16 P1.4 1_DATA Collection and Validation",
+      "stage_number": 1,
+      "owner_domain": "1_DATA",
+      "contract_id": "ge16-cron-data-collection-validation",
+      "contract_version": "1.4.0",
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 22 * * 5",
+        "display": "0 22 * * 5"
+      },
+      "timezone": "Asia/Kuala_Lumpur",
+      "dependencies": [],
+      "enabled": false,
+      "state": "disabled",
+      "model": "z-ai/glm-5.3-flash",
+      "provider": "nous",
+      "model_snapshot": "z-ai/glm-5.3-flash",
+      "provider_snapshot": "nous",
+      "delivery": "local",
+      "enabled_toolsets": [
+        "terminal",
+        "file"
+      ],
+      "workdir": "/Users/faisal.muthalib/Documents/HermesWorkFolder/Malaysia General Election v2",
+      "prompt": "If the chain orchestrator has already produced this stage's handoff manifest for the current run_id, verify and record it as complete (no-op) and exit; else execute your stage normally.\n\nYou own GE16 Stage 1: 1_DATA collection and validation, run in two phases with your own judgment between them. Phase A: execute only through `python3 OPS/cron/run_stage.py --contract ge16-cron-data-collection-validation --version 1.4.0 --scheduled-fire --fire-key /Users/faisal.muthalib/.ge16-keys/one-shot/1-a-<ts>.json --stage 1 --phase a`; the runner validates this exact contract; a plain invocation returns a posture record and executes nothing, so execute only with --scheduled-fire --fire-key and a fresh owner-minted, phase-bound, one-shot key (or --dry-run in an isolated root). Never mint keys or reuse a consumed key. The runner will refuse any fire-key file minted by this agent; only files the owner placed (verified ed25519 signatures on macOS Keychain unlock) are valid. Stop if either phase lacks a valid key; expiry, missing or mismatched owner public key, or a paused scheduler job blocks execution. Phase A collects news, polls, and candidate data into 1_DATA/research/trackers and never writes the stage handoff. Judging happens between phase A and phase B, and it is your responsibility, not the runner's: read 1_DATA/research/trackers/ge16-news-candidates.json, and for each candidate use judgment, never keyword matching, to decide from its title AND description whether it is genuinely Malaysian political or election news. For every item you accept, classify lang, category, blocs, and score; the eight categories are coalition, candidate, poll, election, policy, redelineation, legal, and analysis. Mandatory accept: always accept any item about a by-election, a seat vacancy, Article 49A, or a Speaker or Election Commission notification — a previous judge silently dropped an Election Commission ruling on vacant seats and corrupted the report's framing for weeks. Never invent an item and never fabricate a classification; write only the accepted, classified items to 1_DATA/research/trackers/ge16-news-judged.json. Judge in batches: run `python3 1_DATA/scripts/collect/track_ge16_news.py --judge-input` to split candidates into ≤50-item batch files, then judge each batch file and write ge16-news-judged-batch-<n>.json for each; phase B commits all batches. If a previous cycle failed mid-judgment, judge the remaining batches first — the pipeline auto-recovers from partial failure. Consolidate the accepted items of every batch into 1_DATA/research/trackers/ge16-news-judged.json as well: phase B's freshness gate requires that file to be present and non-empty, and a cycle with unjudged batches is refused loudly with nothing committed. Phase B: execute only through `python3 OPS/cron/run_stage.py --contract ge16-cron-data-collection-validation --version 1.4.0 --scheduled-fire --fire-key /Users/faisal.muthalib/.ge16-keys/one-shot/1-b-<ts>.json --stage 1 --phase b`; phase B commits your judged items, refreshes and validates canonical 1_DATA, and emits a versioned 1_DATA output manifest for the immediate 2_ANALYTICS handoff. Work only in 1_DATA and never mutable-write 2_ANALYTICS, 3_OUTPUTS, 4_DELIVERY, 5_WEBSITES, OPS, or any legacy cron directory. Accept only declared immutable source/evidence snapshots, and record their immutable manifest references and freshness timestamps. Run only the deterministic validation commands declared in OPS contract ge16-cron-data-collection-validation. Do not guess missing data, invent lineage, or fall back to mutable upstream paths. Stop without handoff on a missing/stale manifest, failed gate, invalid validation, or blocked runner. Record all gate results and return a concise notification: stage, manifest reference, freshness, gate status, and stop reason if any.\n\n The OPS chain also declares one optional, non-blocking baseline step for this stage, `data-baseline-news-delta`: run `python3 2_ANALYTICS/tools/baseline/rebuild_baseline.py --news --news-sweeps 2 --judge-backend deepseek` from the repository root once the judged items are committed (the chain places it immediately after the news commit). It merges your judged items into 1_DATA/research/trackers/ge16-news-accepted.json through a staged, verified swap; its dry-run form writes nothing outside 2_ANALYTICS/work/baseline/**, and it never touches canonical 1_DATA or any later domain. It is optional and non-blocking: if it fails, record the manifest path and the error and continue the stage - it never gates the handoff. It prints one `REBUILD_STATUS {json}` line and writes its manifest to 2_ANALYTICS/work/baseline/latest.json (rotating work/baseline/rebuild-manifest-<UTC>.json).",
+      "inactivity_limit": 1800
+    },
+    {
+      "id": "2b0a9111c836",
+      "name": "GE16 P1.4 2_ANALYTICS Forecast Reports and Social Outputs",
+      "stage_number": 2,
+      "owner_domain": "2_ANALYTICS",
+      "contract_id": "ge16-cron-analytics-forecast-reports-social",
+      "contract_version": "1.4.0",
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 1 * * 6",
+        "display": "0 1 * * 6"
+      },
+      "timezone": "Asia/Kuala_Lumpur",
+      "dependencies": [
+        "441fedd48bc8"
+      ],
+      "enabled": false,
+      "state": "disabled",
+      "model": "deepseek/deepseek-v4-pro",
+      "provider": "nous",
+      "model_snapshot": "deepseek/deepseek-v4-pro",
+      "provider_snapshot": "nous",
+      "delivery": "local",
+      "enabled_toolsets": [
+        "terminal",
+        "file"
+      ],
+      "workdir": "/Users/faisal.muthalib/Documents/HermesWorkFolder/Malaysia General Election v2",
+      "prompt": "If the chain orchestrator has already produced this stage's handoff manifest for the current run_id, verify and record it as complete (no-op) and exit; else execute your stage normally.\n\nYou own GE16 Stage 2: 2_ANALYTICS forecast, reports, and social analytical outputs. Execute only through `python3 OPS/cron/run_stage.py --contract ge16-cron-analytics-forecast-reports-social --version 1.4.0`; the runner validates this exact contract; a plain invocation returns a posture record and executes nothing, so execute only with --live-run (or --dry-run in an isolated root). Consume only the immediate immutable 1_DATA handoff manifest from Stage 1, verify its identity, freshness, lineage, and passed gates, and work only in 2_ANALYTICS. Never mutable-write 1_DATA, 3_OUTPUTS, 4_DELIVERY, 5_WEBSITES, OPS, or any legacy cron directory. Produce deterministic forecast/report/social analytical artifacts and an immutable immediate-hop manifest for 3_OUTPUTS. Run only the deterministic validation commands declared in the OPS contract. Do not guess missing inputs, manufacture political conclusions, or fall back to mutable upstream paths. Stop without handoff for a stale/failed 1_DATA manifest, lineage mismatch, validation failure, missing gate, or blocked runner. Record all gate outcomes and return a concise notification: stage, input/output manifest references, forecast validation status, freshness, and stop reason if any.\n\n The OPS chain also declares one optional, non-blocking baseline step for this stage, `analytics-baseline-derived`: run `python3 2_ANALYTICS/tools/baseline/rebuild_baseline.py --events --graph --vdbs --figures --strict` from the repository root after the deterministic stage-2 reports and before this stage's 3_OUTPUTS handoff manifest is computed, so the sealed outputs describe the rebuilt events DB, graph and VDBs. It writes only under 2_ANALYTICS/work/**; the poll tracker and every other 1_DATA file stay untouched. It is optional and non-blocking: if it fails, record the manifest path and the error and continue the stage - the pre-rebuild artifacts stand and the handoff still carries them. It prints one `REBUILD_STATUS {json}` line and writes its manifest to 2_ANALYTICS/work/baseline/latest.json (rotating work/baseline/rebuild-manifest-<UTC>.json)."
+    },
+    {
+      "id": "c4cebfce9fb0",
+      "name": "GE16 P1.4 3_OUTPUTS Immutable Release Intake and Sealing",
+      "stage_number": 3,
+      "owner_domain": "3_OUTPUTS",
+      "contract_id": "ge16-cron-outputs-intake-sealing",
+      "contract_version": "1.4.0",
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 3 * * 6",
+        "display": "0 3 * * 6"
+      },
+      "timezone": "Asia/Kuala_Lumpur",
+      "dependencies": [
+        "2b0a9111c836"
+      ],
+      "enabled": false,
+      "state": "disabled",
+      "model": "z-ai/glm-5.3-flash",
+      "provider": "nous",
+      "model_snapshot": "z-ai/glm-5.3-flash",
+      "provider_snapshot": "nous",
+      "delivery": "local",
+      "enabled_toolsets": [
+        "terminal",
+        "file"
+      ],
+      "workdir": "/Users/faisal.muthalib/Documents/HermesWorkFolder/Malaysia General Election v2",
+      "prompt": "If the chain orchestrator has already produced this stage's handoff manifest for the current run_id, verify and record it as complete (no-op) and exit; else execute your stage normally.\n\nYou own GE16 Stage 3: 3_OUTPUTS immutable release intake and sealing. Execute only through `python3 OPS/cron/run_stage.py --contract ge16-cron-outputs-intake-sealing --version 1.4.0`; the runner validates this exact contract; a plain invocation returns a posture record and executes nothing, so execute only with --live-run (or --dry-run in an isolated root). Consume only the immediate immutable 2_ANALYTICS output manifest from Stage 2, verify its hash-bound lineage, freshness, and gate records, and work only in 3_OUTPUTS. Never mutable-write 1_DATA, 2_ANALYTICS, 4_DELIVERY, 5_WEBSITES, OPS, or any legacy cron directory. Intake validated artifacts, seal an immutable release candidate, and emit an immutable immediate-hop manifest for 4_DELIVERY. Run only deterministic validations declared in the OPS contract. Do not guess absent artifacts, alter analytical inputs, or fall back to mutable upstream paths. Stop without handoff on stale/unsealed input, missing lineage, failed validation, failed gate, or blocked runner. Record every gate result and return a concise notification: stage, sealed release identifier, input/output manifest references, validation status, and stop reason if any."
+    },
+    {
+      "id": "152172eb38fd",
+      "name": "GE16 P1.4 4_DELIVERY Publish and Validation",
+      "stage_number": 4,
+      "owner_domain": "4_DELIVERY",
+      "contract_id": "ge16-cron-delivery-publish-validation",
+      "contract_version": "1.4.0",
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 5 * * 6",
+        "display": "0 5 * * 6"
+      },
+      "timezone": "Asia/Kuala_Lumpur",
+      "dependencies": [
+        "c4cebfce9fb0"
+      ],
+      "enabled": false,
+      "state": "disabled",
+      "model": "z-ai/glm-5.3-flash",
+      "provider": "nous",
+      "model_snapshot": "z-ai/glm-5.3-flash",
+      "provider_snapshot": "nous",
+      "delivery": "local",
+      "enabled_toolsets": [
+        "terminal",
+        "file"
+      ],
+      "workdir": "/Users/faisal.muthalib/Documents/HermesWorkFolder/Malaysia General Election v2",
+      "prompt": "If the chain orchestrator has already produced this stage's handoff manifest for the current run_id, verify and record it as complete (no-op) and exit; else execute your stage normally.\n\nYou own GE16 Stage 4: 4_DELIVERY publish and validation. Execute only through `python3 OPS/cron/run_stage.py --contract ge16-cron-delivery-publish-validation --version 1.4.0`; the runner validates this exact contract; a plain invocation returns a posture record and executes nothing, so execute only with --live-run (or --dry-run in an isolated root). Consume only the immediate immutable 3_OUTPUTS sealed manifest from Stage 3 and verify exact lineage, freshness, seal identity, and declared gates. Work only in 4_DELIVERY; never mutable-write 1_DATA, 2_ANALYTICS, 3_OUTPUTS, 5_WEBSITES, OPS, or any legacy cron directory. Publish a local immutable 4_DELIVERY artifact and output its hash-bound immediate-hop manifest for 5_WEBSITES. Run only the deterministic validation commands declared in the OPS contract. Do not guess delivery contents, rewrite upstream data, or fall back to mutable upstream paths. Stop without handoff on a missing/stale seal, validation failure, failed gate, manifest mismatch, or blocked runner. Record every gate result and return a concise notification: stage, delivery ID, manifest SHA-256, validation status, and stop reason if any."
+    },
+    {
+      "id": "9194211d627e",
+      "name": "GE16 P1.5 5_WEBSITES Build and Release Gate",
+      "stage_number": 5,
+      "owner_domain": "5_WEBSITES",
+      "contract_id": "ge16-cron-websites-build-release-gate",
+      "contract_version": "1.5.0",
+      "schedule": {
+        "kind": "cron",
+        "expr": "30 5 * * 6",
+        "display": "30 5 * * 6"
+      },
+      "timezone": "Asia/Kuala_Lumpur",
+      "dependencies": [
+        "152172eb38fd"
+      ],
+      "enabled": true,
+      "state": "scheduled",
+      "model": "z-ai/glm-5.3-flash",
+      "provider": "nous",
+      "model_snapshot": "z-ai/glm-5.3-flash",
+      "provider_snapshot": "nous",
+      "delivery": "local",
+      "enabled_toolsets": [
+        "terminal",
+        "file"
+      ],
+      "workdir": "/Users/faisal.muthalib/Documents/HermesWorkFolder/Malaysia General Election v2",
+      "prompt": "If the chain orchestrator has already produced this stage's handoff manifest for the current run_id, verify and record it as complete (no-op) and exit; else execute your stage normally.\n\nYou own GE16 Stage 5: the 5_WEBSITES build and release gate for the live HitungKerusi 222 site, run from the exact runner workdir. Consume only the immediate immutable 4_DELIVERY manifest that Stage 4 has just published (4_DELIVERY/current/DELIVERY.json, a symlink into 4_DELIVERY/releases/<delivery_id>); read 1_DATA, 2_ANALYTICS, 3_OUTPUTS and 4_DELIVERY read-only and never write outside 5_WEBSITES. Confirm the exact delivery ID (^H-[0-9]{8}-[0-9]{2}$), re-hash the delivery manifest and every inventoried artifact against 4_DELIVERY/manifest/ge16-delivery-input.json, and record the 4_DELIVERY manifest SHA-256 (^sha256:[0-9a-f]{64}$). Verify the locked runner contract posture with `python3 OPS/cron/run_stage.py --contract ge16-cron-websites-build-release-gate --version 1.5.0`; that call is posture-only and executes nothing, and Stage 5 is never executed live by the runner, so every release action below runs directly in 5_WEBSITES/vercel, whose git origin tenunan-dev/hitungkerusi222 is the exact GitHub-mirror of the Vercel source, and GitHub is never a deployment mechanism. Print a progress line to stdout at least every few minutes so the job inactivity watchdog never expires during long builds, screenshots or deploys. Every step is fail-closed: (1) BUILD+GATE: regenerate and verify the site from the approved delivery only with build_adapter.py --check, build_vercel.py and link_checker.py; require zero broken internal links, bundle and page limits inside their caps, and every required page present; (2) AUTHORIZATION: materialize the approved release authorization record from the delivery itself, never invent one: exact delivery ID, exact Vercel Git SHA (^[0-9a-f]{40}$), the delivery manifest SHA-256, the GitHub-mirror commit, and the six required gates website-delivery-lineage-valid, website-build-passed, github-mirror-parity-passed, vercel-manifest-bound, vercel-post-deploy-readback-recorded and release-authorization-approved; (3) VISUAL CHECK before any push: serve the local build over http and capture browser screenshots plus an HTTP and DOM readback of the homepage index.html, the news page berita.html, the laporan page laporan.html and all 13 state pages in both language variants (state/*.html, 26 files), writing the screenshots and a per-URL log to 5_WEBSITES/visual-check/<delivery_id>/ outside the 5_WEBSITES/vercel git worktree; a missing page, a non-200 response, a blank or error render, a broken state link or a served-data mismatch is a visual failure, so reject the release, push nothing, deploy nothing and report the stop reason; (4) PUSH: only after every gate and the visual check pass with a clean working tree whose local HEAD equals a live `git ls-remote origin refs/heads/main`, commit the mirrored artifacts and push them to tenunan-dev/hitungkerusi222 main; (5) DEPLOY that exact SHA with the direct Vercel CLI production command `vercel deploy --prod --yes`, using direct Vercel CLI use only, no Git deployment integration, and no per-run owner approval once the gates pass; (6) READBACK+RECORD: record the Vercel post-deploy readback (deployment ID, state READY, production alias hitungkerusi.fyi, HTTP 200 on the deployed pages, deployed js/data.js carrying the exact delivery ID, and payload parity between local, GitHub-mirror and Vercel), add the new entry at the top of 5_WEBSITES/vercel/DEPLOY_LOG.md, and emit the manifest 5_WEBSITES/manifest/ge16-release-gate.json with one gate record per required gate, each anchored to a Vercel manifest binding the approved delivery. Stop without release on any missing, stale, mismatched, unapproved or failed requirement, and never guess a delivery ID, SHA, manifest, gate result or readback. Return a concise notification: stage, delivery ID, authorization status, exact SHAs, gate/readback status, and stop reason if any."
+    },
+    {
+      "id": "ge16-authoring",
+      "name": "GE16 P1.5 2_ANALYTICS AI-Authored Narrative Edition (optional)",
+      "stage_number": 2,
+      "optional_stage": true,
+      "owner_domain": "2_ANALYTICS",
+      "contract_id": "ge16-cron-analytics-authoring",
+      "contract_version": "1.0.0",
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 2 * * 6",
+        "display": "0 2 * * 6"
+      },
+      "timezone": "Asia/Kuala_Lumpur",
+      "dependencies": [
+        "2b0a9111c836"
+      ],
+      "enabled": false,
+      "state": "disabled",
+      "model": "deepseek/deepseek-v4-pro",
+      "provider": "nous",
+      "model_snapshot": "deepseek/deepseek-v4-pro",
+      "provider_snapshot": "nous",
+      "delivery": "local",
+      "enabled_toolsets": [
+        "terminal",
+        "file"
+      ],
+      "workdir": "/Users/faisal.muthalib/Documents/HermesWorkFolder/Malaysia General Election v2",
+      "inactivity_limit": 1800,
+      "non_blocking": true,
+      "gate_impact": "none",
+      "writes": [
+        "2_ANALYTICS/03_REPORTS/ai",
+        "2_ANALYTICS/work/reports"
+      ],
+      "must_not_write": [
+        "2_ANALYTICS/03_REPORTS/federal",
+        "2_ANALYTICS/03_REPORTS/states",
+        "1_DATA",
+        "3_OUTPUTS",
+        "4_DELIVERY",
+        "5_WEBSITES",
+        "OPS"
+      ],
+      "prompt": "Run the OPTIONAL analytics-authoring step of the GE16 weekly chain, in the 2_ANALYTICS working directory with the project interpreter. The step is non-blocking: if it fails, publish nothing from it and let the deterministic editions stand.\n\n1. Author the editions. The standing writer split lives in 02_FORECAST/engine/authoring_config.json: each edition language names a primary writer AND its failover chain (`languages.<lang>.fallbacks`, best first). Run both passes:\n   ./.venv/bin/python 02_FORECAST/engine/author_reports.py --all-states --lang en\n   ./.venv/bin/python 02_FORECAST/engine/author_reports.py --all-states --lang ms\n   The EN pass uses the `en` chain, the MS pass the `ms` chain. The harness moves a section to the next writer in its chain by itself (a writer transport failure, or a section that keeps failing verification after its retry budget); do not hand-edit the config and do not move a key between languages.\n\n2. Verification is the gate, and it is exact: 100% of the figures a section quotes must verify verbatim against the reference pack, or the section is not published as authored. There is NO authored-rate threshold and no failure exit code for a thin run. A dense section is written and verified in chunks of at most 18 claims, so one bad chunk degrades only that chunk; a section (or chunk) that no writer in the chain could verify renders the deterministic text for its own facts and is marked in the manifest.\n\n3. Never publish an unwritten edition as an AI edition. The title and footer come from the mode the edition was actually written in: when at least one section verified, the title stays the AI-edition title and the footer says how many sections a model wrote; when a live pass produced NO authored section, the harness publishes NOTHING to 2_ANALYTICS/03_REPORTS/ai at all, records the failure in the manifest and leaves the previous verified edition in place. Do not bypass that, do not hand-write prose, and do not re-title or re-footer an edition by hand.\n\n4. Boundaries. The step writes only 2_ANALYTICS/03_REPORTS/ai/** and its own manifests under 2_ANALYTICS/work/reports/**. Never write 2_ANALYTICS/03_REPORTS/federal or 2_ANALYTICS/03_REPORTS/states (those are the deterministic editions), and never touch 1_DATA, 3_OUTPUTS, 4_DELIVERY, 5_WEBSITES or OPS. Never commit.\n\n5. Report back: the edition paths written (or that nothing was published, and why), the writer chain per language, which writer wrote each section as recorded in the manifests, the per-section render status, and every section left on the deterministic fallback.",
+      "gate_note": "The deterministic editions are the published path. A failed or thin authoring pass leaves them in place, records itself in the step's own manifest, and never blocks Stage 3, Stage 4 or Stage 5. There is no authored-rate threshold: a section is published as authored only when some writer in its language chain passed exact verbatim verification, and a pass with nothing authored publishes no edition at all."
+    },
+    {
+      "id": "ge16-chain",
+      "name": "GE16 P1.6 OPS Chain Orchestrator (optional)",
+      "optional_stage": true,
+      "owner_domain": "OPS",
+      "contract_id": "ge16-cron-chain-orchestrator",
+      "contract_version": "1.0.0",
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 22 * * 5",
+        "display": "0 22 * * 5"
+      },
+      "timezone": "Asia/Kuala_Lumpur",
+      "dependencies": [],
+      "enabled": false,
+      "state": "disabled",
+      "model": "deepseek/deepseek-v4-pro",
+      "provider": "nous",
+      "model_snapshot": "deepseek/deepseek-v4-pro",
+      "provider_snapshot": "nous",
+      "delivery": "local",
+      "enabled_toolsets": [
+        "terminal",
+        "file"
+      ],
+      "workdir": "/Users/faisal.muthalib/Documents/HermesWorkFolder/Malaysia General Election v2",
+      "inactivity_limit": 1800,
+      "non_blocking": false,
+      "gate_impact": "none",
+      "chain_state_file": "/Users/faisal.muthalib/.hermes/profiles/coding/cron/ge16-chain-state.json",
+      "writes": [
+        "OPS/logs/chain"
+      ],
+      "must_not_write": [
+        "1_DATA",
+        "2_ANALYTICS",
+        "3_OUTPUTS",
+        "4_DELIVERY",
+        "5_WEBSITES"
+      ],
+      "prompt": "If the chain orchestrator has already produced this stage's handoff manifest for the current run_id, verify and record it as complete (no-op) and exit; else execute your stage normally.\n\nYou own the GE16 weekly chain-orchestrator job of the OPS control plane: you start the completion-triggered chain, you execute Stage 1, and you observe and report the rest. The chain is driven by the owner-side listener OPS/cron/ge16_chain_runner.py (launchd label com.tenunan.ge16-chain, one poll every 2 minutes, state file /Users/faisal.muthalib/.hermes/profiles/coding/cron/ge16-chain-state.json, evidence OPS/logs/chain). That listener surfaces your Stage 1 phase a and phase b keys, mints each driven stage's one-shot owner key, and executes every stage through the exact contract runner command `python3 OPS/cron/run_stage.py --contract ge16-cron-data-collection-validation --version 1.4.0 --scheduled-fire --fire-key <fresh owner key> --stage N`; keys are owner-signed, never longer than 15 minutes, and one-shot.\n\n1. Start the chain: run `python3 OPS/cron/ge16_chain_runner.py --start`. It creates or resumes this chain week's run (anchor Friday 22:00 Asia/Kuala_Lumpur) and snapshots the stage handoff content hashes that already count as done. Running it twice is a no-op; do not pass --force unless the owner explicitly asks for a fresh run.\n2. Execute Stage 1 yourself, in its two phases, with your own judgment between them, exactly as the Stage 1 instruction requires: use the newest owner-minted, unconsumed, unexpired keys the owner daemon placed in /Users/faisal.muthalib/.ge16-keys/one-shot (1-a-<ts>.json for phase a, 1-b-<ts>.json for phase b), collect in phase a, judge every candidate item by title AND description, and let phase b commit the judged output and emit the Stage 1 handoff. You never mint a key: an agent-minted key is refused by the runner, and keys are minted only by the owner-side daemon. If either phase has no valid key, stop after reporting; the chain keeps waiting and the Saturday jobs stay scheduled as the fallback floor.\n3. Do not drive the rest. Stages 2, 3 and 4 start automatically the moment each predecessor handoff validates by content hash, and Stage 5 is release-authorization work driven by its own job. Read the chain with `python3 OPS/cron/ge16_chain_runner.py --status` (read-only); never edit the state file, and never run a bounded-live execution yourself for stages 2 through 5.\n4. Write only chain evidence under OPS/logs/chain. Never write 1_DATA, 2_ANALYTICS, 3_OUTPUTS, 4_DELIVERY or 5_WEBSITES beyond your own Stage 1 execution, never edit OPS/cron/ge16_jobs.json or OPS/ops-contract.json, and never mint, copy or hand-write a fire key.\n5. If the chain stops with a stop reason, do not retry stages out of order: report the stop, leave the run as recorded, and let the next weekly run resume at the first un-completed stage. The five stage jobs stay scheduled as the fallback floor.\n6. Return a concise notification: chain run id, chain status, per-stage status, the Stage 5 release gate state, and the stop reason if any."
+    }
+  ]
+}

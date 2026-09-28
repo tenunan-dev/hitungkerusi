@@ -1,0 +1,499 @@
+{
+  "db_path": "/Users/faisal.muthalib/Documents/HermesWorkFolder/Malaysia General Election v2/2_ANALYTICS/work/events/ge16-events.db",
+  "built_at": "2026-09-24T13:36:07+00:00",
+  "build_seconds": 2.58,
+  "schema_version": "2",
+  "counts": {
+    "events": 512,
+    "entities": 2141,
+    "entities_linked_to_kg": 1961,
+    "event_entity_rows": 1560,
+    "event_metrics": 410,
+    "sources": 315,
+    "event_sources": 559,
+    "claim_reviews": 80,
+    "dossier_notes": 82,
+    "events_fts": 512,
+    "entities_fts": 2141,
+    "events_without_source": 121,
+    "events_without_entity": 55,
+    "events_undated": 29,
+    "events_multi_source": 60,
+    "by_type": {
+      "statement": 44,
+      "poll_release": 40,
+      "appointment": 36,
+      "resignation": 35,
+      "state_election": 34,
+      "composition_change": 32,
+      "other": 32,
+      "ge16_signal": 27,
+      "party_switch": 27,
+      "economic_indicator": 22,
+      "coalition_change": 20,
+      "state_poll": 18,
+      "approval_rating": 13,
+      "candidacy": 12,
+      "party_assembly": 12,
+      "expulsion": 11,
+      "fx_rate": 11,
+      "ros_action": 10,
+      "election_result": 9,
+      "role_change": 9,
+      "dissolution": 8,
+      "ec_action": 7,
+      "parliamentary_proceeding": 7,
+      "by_election": 6,
+      "monetary_policy": 5,
+      "leader_preference": 4,
+      "membership_milestone": 4,
+      "royal_pardon": 4,
+      "court_ruling": 3,
+      "vacancy": 3,
+      "cabinet_change": 2,
+      "mb_change": 2,
+      "death": 1,
+      "government_formation": 1,
+      "reference_note": 1
+    },
+    "by_dossier": {
+      "party-updates": 169,
+      "personnel-updates": 104,
+      "partA-federal": 82,
+      "partC-polls-macro": 71,
+      "partB-states": 55,
+      "polls-update": 31
+    },
+    "by_window": {
+      "antecedent": 46,
+      "in_window": 432,
+      "post_window": 5,
+      "undated": 29
+    },
+    "by_significance": {
+      "critical": 71,
+      "high": 151,
+      "low": 104,
+      "medium": 186
+    },
+    "by_precision": {
+      "day": 412,
+      "month": 37,
+      "quarter": 8,
+      "unknown": 29,
+      "year": 26
+    },
+    "by_confidence": {
+      "high": 349,
+      "low": 20,
+      "medium": 143
+    },
+    "entities_by_type": {
+      "person": 1236,
+      "seat": 828,
+      "party": 30,
+      "institution": 22,
+      "state": 16,
+      "bloc": 9
+    },
+    "claims_by_kind": {
+      "correction/corrected": 54,
+      "engine_finding/corrected": 3,
+      "unknown/unresolved": 23
+    },
+    "stories": 117,
+    "story_events": 512,
+    "stories_open": 70,
+    "stories_dormant": 10,
+    "stories_closed": 37,
+    "largest_story_events": 48,
+    "multi_event_stories": 45,
+    "events_without_story": 0,
+    "stories_by_theme": {
+      "(none)": 79,
+      "ge16_timing": 15,
+      "bersatu_split_merger": 14,
+      "vacancy_by_election": 7,
+      "ros_suspension": 1,
+      "court_case": 1
+    },
+    "top_entities": [
+      {
+        "entity_id": "bloc:PN",
+        "name": "PN",
+        "type": "bloc",
+        "events": 104
+      },
+      {
+        "entity_id": "bloc:BN",
+        "name": "BN",
+        "type": "bloc",
+        "events": 100
+      },
+      {
+        "entity_id": "bloc:PH",
+        "name": "PH",
+        "type": "bloc",
+        "events": 79
+      },
+      {
+        "entity_id": "party:bersatu",
+        "name": "BERSATU",
+        "type": "party",
+        "events": 77
+      },
+      {
+        "entity_id": "party:umno",
+        "name": "UMNO",
+        "type": "party",
+        "events": 55
+      },
+      {
+        "entity_id": "party:pkr",
+        "name": "PKR",
+        "type": "party",
+        "events": 51
+      },
+      {
+        "entity_id": "party:pas",
+        "name": "PAS",
+        "type": "party",
+        "events": 49
+      },
+      {
+        "entity_id": "state:Negeri Sembilan",
+        "name": "Negeri Sembilan",
+        "type": "state",
+        "events": 46
+      },
+      {
+        "entity_id": "party:dap",
+        "name": "DAP",
+        "type": "party",
+        "events": 45
+      },
+      {
+        "entity_id": "state:Melaka",
+        "name": "Melaka",
+        "type": "state",
+        "events": 42
+      },
+      {
+        "entity_id": "state:Sabah",
+        "name": "Sabah",
+        "type": "state",
+        "events": 41
+      },
+      {
+        "entity_id": "bloc:GRS",
+        "name": "GRS",
+        "type": "bloc",
+        "events": 38
+      },
+      {
+        "entity_id": "party:grs",
+        "name": "GRS",
+        "type": "party",
+        "events": 38
+      },
+      {
+        "entity_id": "state:Sarawak",
+        "name": "Sarawak",
+        "type": "state",
+        "events": 24
+      },
+      {
+        "entity_id": "institution:merdeka-center",
+        "name": "Merdeka Center",
+        "type": "institution",
+        "events": 23
+      }
+    ],
+    "top_sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/2025_Sabah_state_election",
+        "publisher": "Wikipedia",
+        "events": 7
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/2026_Johor_state_election",
+        "publisher": "Wikipedia",
+        "events": 6
+      },
+      {
+        "url": "https://straitshub.com/anwar-leads-all-pm-candidates-in-vodus-research-2026-study-on-public-acceptance-and-first-choice-support/",
+        "publisher": "straitshub.com",
+        "events": 6
+      },
+      {
+        "url": "https://elections.thestar.com.my/negrisembilan/N1.html",
+        "publisher": "The Star",
+        "events": 5
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/2026_Negeri_Sembilan_state_election",
+        "publisher": "Wikipedia",
+        "events": 5
+      },
+      {
+        "url": "https://ilhamcentre.my/report/prn-negeri-sembilan-2026-gelombang-melayu-islam-meranapkan-ph-di-negeri-sembilan/",
+        "publisher": "Ilham Centre",
+        "events": 5
+      },
+      {
+        "url": "https://merdeka.org/anwar-remains-malaysias-most-popular-leader-with-khairy-close-behind-as-economy-tops-voter-concerns-merdeka-center-survey-finds",
+        "publisher": "Merdeka Center",
+        "events": 5
+      },
+      {
+        "url": "https://www.bernama.com/en/politics/news.php?id=2523911",
+        "publisher": "Bernama",
+        "events": 5
+      },
+      {
+        "url": "https://www.malaymail.com/news/malaysia/2026/08/10/gps-ready-for-sarawak-polls-regardless-of-redelineation-outcome-says-abang-jo/230875",
+        "publisher": "Malay Mail",
+        "events": 5
+      },
+      {
+        "url": "https://www.straitstimes.com/asia/se-asia/crisis-in-perlis-state-signals-growing-power-struggle-inside-perikatan-nasional-alliance",
+        "publisher": "The Straits Times",
+        "events": 5
+      }
+    ],
+    "entity_coverage_pct": 89.3,
+    "source_coverage_pct": 76.4,
+    "dated_coverage_pct": 94.3,
+    "story_ledger": {
+      "stories": 117,
+      "story_events": 512,
+      "events_clustered": 512,
+      "by_theme": {
+        "(none)": 79,
+        "ge16_timing": 15,
+        "bersatu_split_merger": 14,
+        "vacancy_by_election": 7,
+        "ros_suspension": 1,
+        "court_case": 1
+      },
+      "by_status": {
+        "closed": 37,
+        "dormant": 10,
+        "open": 70
+      },
+      "largest": 48,
+      "inherited_ids": 117
+    },
+    "event_links": {
+      "follows": 18,
+      "precedes": 34
+    }
+  },
+  "checks": [
+    {
+      "check": "sqlite_integrity_check",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "foreign_key_check_empty",
+      "ok": true,
+      "detail": "0 violations"
+    },
+    {
+      "check": "events_present",
+      "ok": true,
+      "detail": "512"
+    },
+    {
+      "check": "events_fts_matches_events",
+      "ok": true,
+      "detail": "fts=512 events=512"
+    },
+    {
+      "check": "entities_fts_matches_entities",
+      "ok": true,
+      "detail": "fts=2141 entities=2141"
+    },
+    {
+      "check": "no_duplicate_event_ids",
+      "ok": true,
+      "detail": "0"
+    },
+    {
+      "check": "entity_coverage",
+      "ok": true,
+      "detail": "89.3% of events carry an entity"
+    },
+    {
+      "check": "dated_coverage",
+      "ok": true,
+      "detail": "94.3% of events carry a date"
+    },
+    {
+      "check": "claims_present",
+      "ok": true,
+      "detail": "80"
+    },
+    {
+      "check": "entity_graph_join",
+      "ok": true,
+      "detail": "1961 entities carry a knowledge-graph node id"
+    },
+    {
+      "check": "stories_present",
+      "ok": true,
+      "detail": "117"
+    },
+    {
+      "check": "every_event_in_one_story",
+      "ok": true,
+      "detail": "members=512 events=512"
+    },
+    {
+      "check": "story_membership_unique",
+      "ok": true,
+      "detail": "no event appears in two stories"
+    },
+    {
+      "check": "largest_story_below_half_corpus",
+      "ok": true,
+      "detail": "largest story carries 48 of 512 events"
+    },
+    {
+      "check": "story_timeline_view_queryable",
+      "ok": true,
+      "detail": "v_story_timeline returns one row per membership"
+    }
+  ],
+  "ok": true,
+  "warnings": [],
+  "inputs": {
+    "ge16-sweep-partA-federal.md": {
+      "path": "/Users/faisal.muthalib/Documents/HermesWorkFolder/Malaysia General Election v2/2_ANALYTICS/work/events/_draft/ge16-sweep-partA-federal.md",
+      "sha256": "ac30b5cb95913ff395cf8b1ed6a5cb6074e1d1b926703831fe067dc7a1f4eddc",
+      "records": 104,
+      "claims": 30,
+      "notes": 0
+    },
+    "ge16-sweep-partB-states.json": {
+      "path": "/Users/faisal.muthalib/Documents/HermesWorkFolder/Malaysia General Election v2/2_ANALYTICS/work/events/_draft/ge16-sweep-partB-states.json",
+      "sha256": "fcfdcadc3f68ea8935e4336e759b654e5fdc78efa6e24db8d4692a9a3e7c934e",
+      "records": 69,
+      "claims": 30,
+      "notes": 29
+    },
+    "ge16-sweep-partC-polls-macro.json": {
+      "path": "/Users/faisal.muthalib/Documents/HermesWorkFolder/Malaysia General Election v2/2_ANALYTICS/work/events/_draft/ge16-sweep-partC-polls-macro.json",
+      "sha256": "4ee453d38376b6c93a2ae7a83a8ca149b916acc7104f7e64f15ced0ac3965f04",
+      "records": 74,
+      "claims": 20,
+      "notes": 2
+    },
+    "party-updates-2026-08-09.json": {
+      "path": "/Users/faisal.muthalib/Documents/HermesWorkFolder/Malaysia General Election v2/2_ANALYTICS/work/figures/_draft/party-updates-2026-08-09.json",
+      "sha256": "fb4283f26a33ef6da4117cfa9c66c13586cccb8d88c11c8ff0461b7dfc0bbe88",
+      "layer": "cron-update"
+    },
+    "party-updates-2026-08-10.json": {
+      "path": "/Users/faisal.muthalib/Documents/HermesWorkFolder/Malaysia General Election v2/2_ANALYTICS/work/figures/_draft/party-updates-2026-08-10.json",
+      "sha256": "d741356915022421041f672d033c8a4f7ca4788f2b5ce5d0fe45ac8140eed386",
+      "layer": "cron-update"
+    },
+    "party-updates-2026-08-14.json": {
+      "path": "/Users/faisal.muthalib/Documents/HermesWorkFolder/Malaysia General Election v2/2_ANALYTICS/work/figures/_draft/party-updates-2026-08-14.json",
+      "sha256": "c1b47b60f6b9dfd87bbef60315815d11d3db3da05e02be6f782f9cba2a6d4dcc",
+      "layer": "cron-update"
+    },
+    "party-updates-2026-08-16.json": {
+      "path": "/Users/faisal.muthalib/Documents/HermesWorkFolder/Malaysia General Election v2/2_ANALYTICS/work/figures/_draft/party-updates-2026-08-16.json",
+      "sha256": "dfd9630ae9cd18880931b96da142bf5d61e63f9254617aeeb49ef16e37fb7998",
+      "layer": "cron-update"
+    },
+    "party-updates-2026-08-23.json": {
+      "path": "/Users/faisal.muthalib/Documents/HermesWorkFolder/Malaysia General Election v2/2_ANALYTICS/work/figures/_draft/party-updates-2026-08-23.json",
+      "sha256": "7f4d9bc138921b0143e66065b05f94f9847b1a8c4515a75b5d558a206878a7eb",
+      "layer": "cron-update"
+    },
+    "party-updates-2026-08-29.json": {
+      "path": "/Users/faisal.muthalib/Documents/HermesWorkFolder/Malaysia General Election v2/2_ANALYTICS/work/figures/_draft/party-updates-2026-08-29.json",
+      "sha256": "d807e9374eba76122c7823dd498442d02a52c6de006b7bd9166045f1e7329e97",
+      "layer": "cron-update"
+    },
+    "party-updates-2026-09-04.json": {
+      "path": "/Users/faisal.muthalib/Documents/HermesWorkFolder/Malaysia General Election v2/2_ANALYTICS/work/figures/_draft/party-updates-2026-09-04.json",
+      "sha256": "f9ae9e47c4baa30340479954568a004863a2385f9d31c95ff157639b0668acc7",
+      "layer": "cron-update"
+    },
+    "party-updates-2026-09-24.json": {
+      "path": "/Users/faisal.muthalib/Documents/HermesWorkFolder/Malaysia General Election v2/2_ANALYTICS/work/figures/_draft/party-updates-2026-09-24.json",
+      "sha256": "21fbacaa130007c3c26abb5191dc58b4f881408eb900013a43016c9809fd3fa7",
+      "layer": "cron-update"
+    },
+    "personnel-updates-2026-08-09.json": {
+      "path": "/Users/faisal.muthalib/Documents/HermesWorkFolder/Malaysia General Election v2/2_ANALYTICS/work/figures/_draft/personnel-updates-2026-08-09.json",
+      "sha256": "e8e283dfc9354fbe9ba63d63dc872fe77e1344b4a42192555b28787ac8c5dc65",
+      "layer": "cron-update"
+    },
+    "personnel-updates-2026-08-10.json": {
+      "path": "/Users/faisal.muthalib/Documents/HermesWorkFolder/Malaysia General Election v2/2_ANALYTICS/work/figures/_draft/personnel-updates-2026-08-10.json",
+      "sha256": "b2ded239b4129dd9d02e148b50db07d2b92b85c6f8b62ed72b2964435599aea8",
+      "layer": "cron-update"
+    },
+    "personnel-updates-2026-08-14.json": {
+      "path": "/Users/faisal.muthalib/Documents/HermesWorkFolder/Malaysia General Election v2/2_ANALYTICS/work/figures/_draft/personnel-updates-2026-08-14.json",
+      "sha256": "0ff87ef42936827513efc43cf7a5bcd06a33fc7b12628d14f7a264cbb8ca98cc",
+      "layer": "cron-update"
+    },
+    "personnel-updates-2026-08-16.json": {
+      "path": "/Users/faisal.muthalib/Documents/HermesWorkFolder/Malaysia General Election v2/2_ANALYTICS/work/figures/_draft/personnel-updates-2026-08-16.json",
+      "sha256": "c53b31645579c34ab308569a538a12f6f05edafdc24771b525edc87b2f64613f",
+      "layer": "cron-update"
+    },
+    "personnel-updates-2026-08-23.json": {
+      "path": "/Users/faisal.muthalib/Documents/HermesWorkFolder/Malaysia General Election v2/2_ANALYTICS/work/figures/_draft/personnel-updates-2026-08-23.json",
+      "sha256": "c08cb9fbcc6a474c7c4151d5c9eeee5fadf485a38aa92923dc04d2806f07625d",
+      "layer": "cron-update"
+    },
+    "personnel-updates-2026-08-29.json": {
+      "path": "/Users/faisal.muthalib/Documents/HermesWorkFolder/Malaysia General Election v2/2_ANALYTICS/work/figures/_draft/personnel-updates-2026-08-29.json",
+      "sha256": "88f58e7294dbe26c9bdd900f2a37e18758faa9160adea156b962e4668e2aadf3",
+      "layer": "cron-update"
+    },
+    "personnel-updates-2026-09-04.json": {
+      "path": "/Users/faisal.muthalib/Documents/HermesWorkFolder/Malaysia General Election v2/2_ANALYTICS/work/figures/_draft/personnel-updates-2026-09-04.json",
+      "sha256": "37d156ab02dc95b77b48e4286f5b0e5db1b1ffea6c09dd86751aedd7be786e0a",
+      "layer": "cron-update"
+    },
+    "personnel-updates-2026-09-24.json": {
+      "path": "/Users/faisal.muthalib/Documents/HermesWorkFolder/Malaysia General Election v2/2_ANALYTICS/work/figures/_draft/personnel-updates-2026-09-24.json",
+      "sha256": "f04614719751ec89b8cb05027e5172f582c55ca35329dcf971125f950131b765",
+      "layer": "cron-update"
+    },
+    "polls-update-2026-09-24.json": {
+      "path": "/Users/faisal.muthalib/Documents/HermesWorkFolder/Malaysia General Election v2/2_ANALYTICS/work/figures/_draft/polls-update-2026-09-24.json",
+      "sha256": "8e94dd7db9fe64a624e9f5beb1b86c2074e27c7919677476e84b2ec3903cc0de",
+      "layer": "cron-update"
+    }
+  },
+  "records_in": 587,
+  "records_merged": 75,
+  "claims_in": 80,
+  "notes_in": 82,
+  "entity_index": {
+    "entities": 2141,
+    "by_type": {
+      "party": 30,
+      "person": 1236,
+      "seat": 828,
+      "institution": 22,
+      "state": 16,
+      "bloc": 9
+    },
+    "person_needles": 2282,
+    "party_needles": 67,
+    "federal_seats_by_code": 222,
+    "federal_seats_by_name": 221,
+    "dun_seats": 604
+  }
+}

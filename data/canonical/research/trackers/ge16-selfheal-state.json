@@ -1,0 +1,30 @@
+{
+ "schema": "ge16.selfheal-state.v1",
+ "updated_at": "2026-09-26T06:10:47+00:00",
+ "steps": {
+  "collect": {
+   "step": "collect",
+   "outcome": "ok",
+   "failure_class": "",
+   "ts": "2026-09-26T06:10:01+00:00",
+   "detail": "200 candidates; dropped_beyond_cap=356; replayed_unjudged=544",
+   "cycle": "2026-09-26T06:09:16+00:00"
+  },
+  "judge": {
+   "step": "judge",
+   "outcome": "ok",
+   "failure_class": "",
+   "ts": "2026-09-26T06:10:47+00:00",
+   "detail": "judged evidence consumed by commit (ge16-news-judged.json)",
+   "cycle": "2026-09-26T06:09:16+00:00"
+  },
+  "commit": {
+   "step": "commit",
+   "outcome": "ok",
+   "failure_class": "",
+   "ts": "2026-09-26T06:10:47+00:00",
+   "detail": "121 new accepted; seen +200; pending 356; cleared 9 artefacts",
+   "cycle": "2026-09-26T06:09:16+00:00"
+  }
+ }
+}

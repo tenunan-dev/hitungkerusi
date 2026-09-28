@@ -1,0 +1,1174 @@
+{
+  "schema": "data.canonical-provenance.v2",
+  "root_set": "hermes-phase-1.1-canonical-data",
+  "format_exceptions": {
+    "byte_preservation_required": true,
+    "documentation": "Source-preserved whitespace is intentional; canonical source and destination bytes must remain byte-identical.",
+    "entries": [
+      {
+        "destination_path": "research/derived/ge16-per-seat-projection.csv",
+        "source_preserved": "CRLF"
+      },
+      {
+        "destination_path": "research/states/DUN Johor/dun-election-results-latest.csv",
+        "source_preserved": "CRLF"
+      },
+      {
+        "destination_path": "research/states/DUN Johor/federal-election-results-latest.csv",
+        "source_preserved": "CRLF"
+      },
+      {
+        "destination_path": "research/states/DUN Kedah/dun-election-results-latest.csv",
+        "source_preserved": "CRLF"
+      },
+      {
+        "destination_path": "research/states/DUN Kelantan/dun-election-results-latest.csv",
+        "source_preserved": "CRLF"
+      },
+      {
+        "destination_path": "research/states/DUN Melaka/dun-election-results-latest.csv",
+        "source_preserved": "CRLF"
+      },
+      {
+        "destination_path": "research/states/DUN Negeri Sembilan/dun-election-results-latest.csv",
+        "source_preserved": "CRLF"
+      },
+      {
+        "destination_path": "research/states/DUN Pahang/dun-election-results-latest.csv",
+        "source_preserved": "CRLF"
+      },
+      {
+        "destination_path": "research/states/DUN Perak/dun-election-results-latest.csv",
+        "source_preserved": "CRLF"
+      },
+      {
+        "destination_path": "research/states/DUN Perlis/dun-election-results-latest.csv",
+        "source_preserved": "CRLF"
+      },
+      {
+        "destination_path": "research/states/DUN Pulau Pinang/dun-election-results-latest.csv",
+        "source_preserved": "CRLF"
+      },
+      {
+        "destination_path": "research/states/DUN Sabah/dun-election-results-latest.csv",
+        "source_preserved": "CRLF"
+      },
+      {
+        "destination_path": "research/states/DUN Sabah/sabah-2018-2020-swing-by-seat.csv",
+        "source_preserved": "CRLF"
+      },
+      {
+        "destination_path": "research/states/DUN Sabah/sabah-seat-delineation-map.csv",
+        "source_preserved": "CRLF"
+      },
+      {
+        "destination_path": "research/states/DUN Sarawak/dun-election-results-latest.csv",
+        "source_preserved": "CRLF"
+      },
+      {
+        "destination_path": "research/states/DUN Selangor/dun-election-results-latest.csv",
+        "source_preserved": "CRLF"
+      },
+      {
+        "destination_path": "research/states/DUN Terengganu/dun-election-results-latest.csv",
+        "source_preserved": "CRLF"
+      },
+      {
+        "destination_path": "research/derived/ge16-per-seat-flip-narratives.md",
+        "source_preserved": "blank-at-EOF"
+      }
+    ]
+  },
+  "files": [
+    {
+      "destination_path": "research/derived/coalition-demographic-profiles.csv",
+      "bytes": 477,
+      "sha256": "f6dd832170a77191cc2669e814c724715a9566c3030e543e488ce7e5bfaf7ca7",
+      "historic_source_path": "../HERMES/01_RESEARCH/data/derived/coalition-demographic-profiles.csv"
+    },
+    {
+      "destination_path": "research/derived/dun_to_parliament_mapping.json",
+      "bytes": 70491,
+      "sha256": "a9460ac340c2df587f28f4938e3eb30ffdde4ad81763551ad9a0178d3dcd50f7",
+      "historic_source_path": "../HERMES/01_RESEARCH/data/derived/dun_to_parliament_mapping.json"
+    },
+    {
+      "destination_path": "research/derived/ge15-results-by-constituency-full.csv",
+      "bytes": 22332,
+      "sha256": "be621b78592011c505ea71bc1df52a3599cb7dc52473e3b2baad4414c0f293ca",
+      "historic_source_path": "../HERMES/01_RESEARCH/data/derived/ge15-results-by-constituency-full.csv"
+    },
+    {
+      "destination_path": "research/derived/ge15-results-by-state.csv",
+      "bytes": 528,
+      "sha256": "cb27f5f7563e4a29395650a37ff144b7a3fda9ae011da8335d8af941efbcd7ce",
+      "historic_source_path": "../HERMES/01_RESEARCH/data/derived/ge15-results-by-state.csv"
+    },
+    {
+      "destination_path": "research/derived/ge15-results-with-population.csv",
+      "bytes": 35791,
+      "sha256": "2d922c483beb45e0275049ac16f7edd9d3486796f71a098bf7a64317e1c4ff7a",
+      "historic_source_path": "../HERMES/01_RESEARCH/data/derived/ge15-results-with-population.csv"
+    },
+    {
+      "destination_path": "research/derived/ge16-per-seat-flip-narratives.md",
+      "bytes": 6939,
+      "sha256": "ee6b7931d0e89a970e7c280fb146892ec69eb69a28a752e7166341824b73ef13",
+      "historic_source_path": "../HERMES/01_RESEARCH/data/derived/ge16-per-seat-flip-narratives.md"
+    },
+    {
+      "destination_path": "research/derived/ge16-per-seat-projection.csv",
+      "bytes": 13241,
+      "sha256": "7cb81d712628da112285643038b5b8ab088c25a80da7941a277057e615a30085",
+      "historic_source_path": "../HERMES/01_RESEARCH/data/derived/ge16-per-seat-projection.csv"
+    },
+    {
+      "destination_path": "research/derived/malay-zone-party-cross-tab.csv",
+      "bytes": 303,
+      "sha256": "a55d3e685f82730fee53ab076d32ed9ae26c995fc7aef73ad41c3249fe2cfea9",
+      "historic_source_path": "../HERMES/01_RESEARCH/data/derived/malay-zone-party-cross-tab.csv"
+    },
+    {
+      "destination_path": "research/derived/marginal-seats-ge15-<5pct.csv",
+      "bytes": 2962,
+      "sha256": "e452db13535b635c7d6121764ee5fb7b8415c0f782a869e6047dec59aef00db0",
+      "historic_source_path": "../HERMES/01_RESEARCH/data/derived/marginal-seats-ge15-<5pct.csv"
+    },
+    {
+      "destination_path": "research/derived/master-list-222-parliamentary-seats.csv",
+      "bytes": 11178,
+      "sha256": "69b54d2199537fc1e04687e235ebbd248e1d15a72f99152a566765ef45de7750",
+      "historic_source_path": "../HERMES/01_RESEARCH/data/derived/master-list-222-parliamentary-seats.csv"
+    },
+    {
+      "destination_path": "research/derived/master-with-demographics.csv",
+      "bytes": 17480,
+      "sha256": "5cdc325f6d6fe8342dd217559c85441bd2364bc78a3c3d2239363a16482f8c89",
+      "historic_source_path": "../HERMES/01_RESEARCH/data/derived/master-with-demographics.csv"
+    },
+    {
+      "destination_path": "research/derived/party-demographic-profiles.csv",
+      "bytes": 1713,
+      "sha256": "5e8e6197c7c10c05ba90c017f2d3ec12fe3165b0bb669f5975deb42e55c2ab50",
+      "historic_source_path": "../HERMES/01_RESEARCH/data/derived/party-demographic-profiles.csv"
+    },
+    {
+      "destination_path": "research/derived/party-malay-zone-cross-tab.csv",
+      "bytes": 165,
+      "sha256": "e7bdf9e87192ec89aee7b3e219287a96ba46435dc45cbad036a318e6180f276e",
+      "historic_source_path": "../HERMES/01_RESEARCH/data/derived/party-malay-zone-cross-tab.csv"
+    },
+    {
+      "destination_path": "research/derived/state-coalition-cross-tab.csv",
+      "bytes": 599,
+      "sha256": "834e2b019ed2f7f04781507bed85e513b892af84e66ec25d02c74f93fb1f9367",
+      "historic_source_path": "../HERMES/01_RESEARCH/data/derived/state-coalition-cross-tab.csv"
+    },
+    {
+      "destination_path": "research/derived/state-demographic-profiles.csv",
+      "bytes": 409,
+      "sha256": "2de3db330bb699d76c51e46dc6820528bccf8798d8c168bf7cf5474db2982a7f",
+      "historic_source_path": "../HERMES/01_RESEARCH/data/derived/state-demographic-profiles.csv"
+    },
+    {
+      "destination_path": "research/derived/swing_boundary_grouped.csv",
+      "bytes": 53657,
+      "sha256": "29e569707e6319b9b80545e48687b3ccd35acf043cdfb2709c512a2d97038a73",
+      "historic_source_path": "../HERMES/01_RESEARCH/data/derived/swing_boundary_grouped.csv"
+    },
+    {
+      "destination_path": "research/derived/swing_se_to_se.csv",
+      "bytes": 2857,
+      "sha256": "0d9bd162d967494124204428283759140756da1b6530fd457fe8143e93be42ab",
+      "historic_source_path": "../HERMES/01_RESEARCH/data/derived/swing_se_to_se.csv"
+    },
+    {
+      "destination_path": "research/derived/voter-demographics-by-constituency-ge15.csv",
+      "bytes": 23504,
+      "sha256": "cbed96013d4add86e3e312971580c1dcdb3a8254dfb3728fa9941537de3f4d5a",
+      "historic_source_path": "../HERMES/01_RESEARCH/data/derived/voter-demographics-by-constituency-ge15.csv"
+    },
+    {
+      "destination_path": "research/derived/voter-demographics-by-state-ge15.csv",
+      "bytes": 743,
+      "sha256": "9afe946126314a92c74607c930ce61be870dcf2a1d9ee0bab6250412623f4ce8",
+      "historic_source_path": "../HERMES/01_RESEARCH/data/derived/voter-demographics-by-state-ge15.csv"
+    },
+    {
+      "destination_path": "research/derived/voter-ethnicity-detail-by-constituency-ge15.csv",
+      "bytes": 80023,
+      "sha256": "c7499f7509db845ad654b704f5a71fc9796b91ca00743ba798edc52a283a47a5",
+      "historic_source_path": "../HERMES/01_RESEARCH/data/derived/voter-ethnicity-detail-by-constituency-ge15.csv"
+    },
+    {
+      "destination_path": "research/raw/meco-byelections-stats-1957-2026.csv",
+      "bytes": 37265,
+      "sha256": "ea511ca84f3df6c8acd2f1ee280a53d93fe2a95f3a6784631188ec7e8f45bf34",
+      "historic_source_path": "../HERMES/01_RESEARCH/data/raw/meco-byelections-stats-1957-2026.csv"
+    },
+    {
+      "destination_path": "research/raw/meco-candidates-all-elections-1955-2026.csv",
+      "bytes": 4464463,
+      "sha256": "0511b497b8798adcd30b6a134247065e20e2273faf5cb6e912da89dbc7481d95",
+      "historic_source_path": "../HERMES/01_RESEARCH/data/raw/meco-candidates-all-elections-1955-2026.csv"
+    },
+    {
+      "destination_path": "research/raw/meco-candidates-ge15-federal.csv",
+      "bytes": 158933,
+      "sha256": "c278db19cb81d4a2604656c5a2242b2c1441a8147e2818f64d1d21df9a814f07",
+      "historic_source_path": "../HERMES/01_RESEARCH/data/raw/meco-candidates-ge15-federal.csv"
+    },
+    {
+      "destination_path": "research/raw/meco-federal-election-candidates-1955-2022.csv",
+      "bytes": 1151309,
+      "sha256": "f170d0c855c3a2446e8655b308c4b151b06dab4880735d45022de6368c1abaf0",
+      "historic_source_path": "../HERMES/01_RESEARCH/data/raw/meco-federal-election-candidates-1955-2022.csv"
+    },
+    {
+      "destination_path": "research/raw/meco-ge15-seat-stats.csv",
+      "bytes": 33497,
+      "sha256": "7fdb83b59ced3808f1f9b008baa9236edaef145e97fdca8d7e63ed541ae47d92",
+      "historic_source_path": "../HERMES/01_RESEARCH/data/raw/meco-ge15-seat-stats.csv"
+    },
+    {
+      "destination_path": "research/raw/population-by-constituency-2022.csv",
+      "bytes": 16969,
+      "sha256": "59158e1dc9d6eacd114ebc2e0b16722af3d0cb32636cad59fa3a9da6465a4952",
+      "historic_source_path": "../HERMES/01_RESEARCH/data/raw/population-by-constituency-2022.csv"
+    },
+    {
+      "destination_path": "research/trackers/ge16-candidate-tracker-log.md",
+      "bytes": 24399,
+      "sha256": "a1b4f3cf612174d0c55aa1e3b9baa66219be1ebf3b9ac950a86e74c1aaf702ae",
+      "historic_source_path": "../HERMES/01_RESEARCH/data/trackers/ge16-candidate-tracker-log.md"
+    },
+    {
+      "destination_path": "research/trackers/ge16-candidates-tracked.json",
+      "bytes": 4342,
+      "sha256": "a2d4c95a241c45bc26de3abc605c582a52ab9910d5be0fc6660af86cdf766af4",
+      "historic_source_path": "../HERMES/01_RESEARCH/data/trackers/ge16-candidates-tracked.json"
+    },
+    {
+      "destination_path": "research/trackers/ge16-general-news-log.md",
+      "bytes": 1148984,
+      "sha256": "b5bd9b05166189fd0806547efad9e589e3594a18b8bc779ed99e733b758c59b9",
+      "historic_source_path": "../HERMES/01_RESEARCH/data/trackers/ge16-general-news-log.md"
+    },
+    {
+      "destination_path": "research/trackers/ge16-general-news-tracked.json",
+      "bytes": 1476085,
+      "sha256": "33d89e7ccae99ce8a3effc3a86b003b0827ad9ee4576033146ef8236194dab18",
+      "historic_source_path": "../HERMES/01_RESEARCH/data/trackers/ge16-general-news-tracked.json"
+    },
+    {
+      "destination_path": "research/trackers/ge16-news-accepted.json",
+      "bytes": 1644243,
+      "sha256": "6b6040967da8407e0d844ff5b23946c2560b54475307e4517c538417f3d337b1",
+      "historic_source_path": "../HERMES/01_RESEARCH/data/trackers/ge16-news-accepted.json"
+    },
+    {
+      "destination_path": "research/trackers/ge16-news-candidates.json",
+      "bytes": 207268,
+      "sha256": "e2428e1152e74db5a2628a6bc62db2ff4dafbaab31239fb6639b7e656c0da2f9",
+      "historic_source_path": "../HERMES/01_RESEARCH/data/trackers/ge16-news-candidates.json"
+    },
+    {
+      "destination_path": "research/trackers/ge16-news-feed.json",
+      "bytes": 77934,
+      "sha256": "9a1a3ff8f1b732f12f813139158ef87d6811d02c03b88c274fef46247c430a74",
+      "historic_source_path": "../HERMES/01_RESEARCH/data/trackers/ge16-news-feed.json",
+      "import_bytes": 9770,
+      "import_sha256": "4cf30b24456089d56643e872aa18853d704a84602f01bfc4accee73500badd8a"
+    },
+    {
+      "destination_path": "research/trackers/ge16-news-judged.json",
+      "bytes": 161642,
+      "sha256": "cb13f06e04cf6da5256e6dd4011e790baf07d58871e36ae28d14de6bb08bfd11",
+      "historic_source_path": "../HERMES/01_RESEARCH/data/trackers/ge16-news-judged.json"
+    },
+    {
+      "destination_path": "research/trackers/ge16-poll-tracker-log.md",
+      "bytes": 28206,
+      "sha256": "28796f4b7ecad0df011236979f356e1a3b50db459959fda25ad0f7256a3c3a0a",
+      "historic_source_path": "../HERMES/01_RESEARCH/data/trackers/ge16-poll-tracker-log.md"
+    },
+    {
+      "destination_path": "research/trackers/ge16-polls-tracked.json",
+      "bytes": 25135,
+      "sha256": "c641f8494ede3238fe5ac165d745b29913ca19b3360d0122f5bae7b7a9240756",
+      "historic_source_path": "../HERMES/01_RESEARCH/data/trackers/ge16-polls-tracked.json"
+    },
+    {
+      "destination_path": "research/federal/ge16-battleground-analysis.md",
+      "bytes": 7816,
+      "sha256": "718672dda1e583b97eba52512b919e8d11a3854f6b8d56f6d173384b9356af5e",
+      "historic_source_path": "../HERMES/01_RESEARCH/federal/ge16-battleground-analysis.md"
+    },
+    {
+      "destination_path": "research/federal/ge16-battleground-seats-master.csv",
+      "bytes": 4600,
+      "sha256": "d145fa55470cb10db6dfbe333a406b1fbc7086728549fd927a054513e87f76ce",
+      "historic_source_path": "../HERMES/01_RESEARCH/federal/ge16-battleground-seats-master.csv"
+    },
+    {
+      "destination_path": "research/federal/ge16-projection-model.csv",
+      "bytes": 8521,
+      "sha256": "5c24e1e5817b8ee08e869310231e351b8bf491732410370a5590fd6b98213f6c",
+      "historic_source_path": "../HERMES/01_RESEARCH/federal/ge16-projection-model.csv"
+    },
+    {
+      "destination_path": "research/federal/ge16-projection-report.md",
+      "bytes": 4797,
+      "sha256": "b6fc9464152634402b88bb2cec20351274a70fa547528b02e4b7a09af7002f3c",
+      "historic_source_path": "../HERMES/01_RESEARCH/federal/ge16-projection-report.md"
+    },
+    {
+      "destination_path": "geo/dun/Johor.geojson",
+      "bytes": 127008,
+      "sha256": "57b278df4ca6d9fa58a3e83ba48241aefc161fef0269a494973b79d369026823",
+      "historic_source_path": "../HERMES/01_RESEARCH/geo/dun/Johor.geojson"
+    },
+    {
+      "destination_path": "geo/dun/Kedah.geojson",
+      "bytes": 121538,
+      "sha256": "aa09ba994bfbe80b271fcec9e37638203debe0f1d137545b667aa085a9b03744",
+      "historic_source_path": "../HERMES/01_RESEARCH/geo/dun/Kedah.geojson"
+    },
+    {
+      "destination_path": "geo/dun/Kelantan.geojson",
+      "bytes": 106692,
+      "sha256": "5aa568fb15d0a2a9da8dbe32f495a7f76e3b8513d752525b6fd7f9016d2e87cd",
+      "historic_source_path": "../HERMES/01_RESEARCH/geo/dun/Kelantan.geojson"
+    },
+    {
+      "destination_path": "geo/dun/LICENSE",
+      "bytes": 1735,
+      "sha256": "ae20cb08f5009f193a700e9bbdc48938271078db2983f72e36ef2837501b1b2b",
+      "historic_source_path": "../HERMES/01_RESEARCH/geo/dun/LICENSE"
+    },
+    {
+      "destination_path": "geo/dun/Melaka.geojson",
+      "bytes": 43211,
+      "sha256": "c18fb2ed045d85276b116cb25ad503d85bbcee67780b7154c0474099fc5aee55",
+      "historic_source_path": "../HERMES/01_RESEARCH/geo/dun/Melaka.geojson"
+    },
+    {
+      "destination_path": "geo/dun/Negeri Sembilan.geojson",
+      "bytes": 71771,
+      "sha256": "edd485cae5ec07b9e550b1d84fac044799938e8b923a5da4d4f9f15c7b9e79a4",
+      "historic_source_path": "../HERMES/01_RESEARCH/geo/dun/Negeri Sembilan.geojson"
+    },
+    {
+      "destination_path": "geo/dun/Pahang.geojson",
+      "bytes": 191722,
+      "sha256": "a28e0de2ef2d7be8f8fb0ee267fec1a2be8c974cc37ecb82980e59f68a106237",
+      "historic_source_path": "../HERMES/01_RESEARCH/geo/dun/Pahang.geojson"
+    },
+    {
+      "destination_path": "geo/dun/Perak.geojson",
+      "bytes": 163334,
+      "sha256": "c7db56f5c002553a8082584eaca5517813ee969cb076fc5757d653d1e9baac01",
+      "historic_source_path": "../HERMES/01_RESEARCH/geo/dun/Perak.geojson"
+    },
+    {
+      "destination_path": "geo/dun/Perlis.geojson",
+      "bytes": 19142,
+      "sha256": "3473f50e7f14013607645ff23d45792e80a126b7d413b8ae48f64903864be52f",
+      "historic_source_path": "../HERMES/01_RESEARCH/geo/dun/Perlis.geojson"
+    },
+    {
+      "destination_path": "geo/dun/Pulau Pinang.geojson",
+      "bytes": 45001,
+      "sha256": "bf7e40a4809ff2ebb5a2ac45825b4ea0dc4da477bde04aa1d9c2185de2a6dfe5",
+      "historic_source_path": "../HERMES/01_RESEARCH/geo/dun/Pulau Pinang.geojson"
+    },
+    {
+      "destination_path": "geo/dun/README.md",
+      "bytes": 2679,
+      "sha256": "39e99f72c9cc958c54c0483d7959f093e816b52c3902b254ecbd18a3ee614c24",
+      "historic_source_path": "../HERMES/01_RESEARCH/geo/dun/README.md"
+    },
+    {
+      "destination_path": "geo/dun/Sabah.geojson",
+      "bytes": 403621,
+      "sha256": "1eb92317b32ac4f2a34c13f76ba646de4518d08479fe06dd50c9503f756aa696",
+      "historic_source_path": "../HERMES/01_RESEARCH/geo/dun/Sabah.geojson"
+    },
+    {
+      "destination_path": "geo/dun/Sarawak.geojson",
+      "bytes": 509424,
+      "sha256": "3b3c0026d1283bdf7ba28bc41e77ca3120909f7f09e3ac2c15618b1e4240b257",
+      "historic_source_path": "../HERMES/01_RESEARCH/geo/dun/Sarawak.geojson"
+    },
+    {
+      "destination_path": "geo/dun/Selangor.geojson",
+      "bytes": 103271,
+      "sha256": "1f00cb280d232663cf898b04965c4c3dc03f32e51eb896d15716ca1b4e93b437",
+      "historic_source_path": "../HERMES/01_RESEARCH/geo/dun/Selangor.geojson"
+    },
+    {
+      "destination_path": "geo/dun/Terengganu.geojson",
+      "bytes": 97143,
+      "sha256": "fb3f06dddb6448b9e0a38112172066ac931e825bd0d9a1a8b849a978802d5f71",
+      "historic_source_path": "../HERMES/01_RESEARCH/geo/dun/Terengganu.geojson"
+    },
+    {
+      "destination_path": "geo/malaysia-states.geojson",
+      "bytes": 359275,
+      "sha256": "8942bb4565888b9dff433fd0f762e3e11c34ae80adc1a9e2178d19799c5ed186",
+      "historic_source_path": "../HERMES/01_RESEARCH/geo/malaysia-states.geojson"
+    },
+    {
+      "destination_path": "research/states/DUN Johor/README.md",
+      "bytes": 855,
+      "sha256": "a832f7b1f2b06be9d2b2caac4c6bdf6f2feb01c04ff0e362ccd718137a9e7e60",
+      "historic_source_path": "../HERMES/01_RESEARCH/states/DUN Johor/README.md"
+    },
+    {
+      "destination_path": "research/states/DUN Johor/dun-candidates-latest.csv",
+      "bytes": 15637,
+      "sha256": "2cf0a0e7bb3cdd7e7e17bb40d72898d65aa26593c6b227f55e0be7525363030e",
+      "historic_source_path": "../HERMES/01_RESEARCH/states/DUN Johor/dun-candidates-latest.csv"
+    },
+    {
+      "destination_path": "research/states/DUN Johor/dun-election-results-latest.csv",
+      "bytes": 20167,
+      "sha256": "4bf6925b3bd7ad7e2fe3e3d86cd3b23b361f2975848e903f0e1e9d3a5233b803",
+      "historic_source_path": "../HERMES/01_RESEARCH/states/DUN Johor/dun-election-results-latest.csv"
+    },
+    {
+      "destination_path": "research/states/DUN Johor/federal-election-results-latest.csv",
+      "bytes": 8511,
+      "sha256": "8eb0416f434c2ece00521ae3da9eda52e15e052c4306d1ed61805b1edc9edee1",
+      "historic_source_path": "../HERMES/01_RESEARCH/states/DUN Johor/federal-election-results-latest.csv"
+    },
+    {
+      "destination_path": "research/states/DUN Kedah/README.md",
+      "bytes": 752,
+      "sha256": "d8ea30445039687ed3cbd7fb1220f529c92252e471fe4f235312695664d8dc8f",
+      "historic_source_path": "../HERMES/01_RESEARCH/states/DUN Kedah/README.md"
+    },
+    {
+      "destination_path": "research/states/DUN Kedah/dun-candidates-latest.csv",
+      "bytes": 7715,
+      "sha256": "f45f9c3861289861fb3d2f9d3a074ef50d38cb927433fea84b56d5504c13deb5",
+      "historic_source_path": "../HERMES/01_RESEARCH/states/DUN Kedah/dun-candidates-latest.csv"
+    },
+    {
+      "destination_path": "research/states/DUN Kedah/dun-election-results-latest.csv",
+      "bytes": 12682,
+      "sha256": "4a511454706de75d62e45b3beae28241fa0fc364a7b05263a814ff256fb3ecff",
+      "historic_source_path": "../HERMES/01_RESEARCH/states/DUN Kedah/dun-election-results-latest.csv"
+    },
+    {
+      "destination_path": "research/states/DUN Kelantan/README.md",
+      "bytes": 776,
+      "sha256": "63af18ded15842cffa851f4da7a0b3c3575ec705cbc70c67777f7fda65d6f27a",
+      "historic_source_path": "../HERMES/01_RESEARCH/states/DUN Kelantan/README.md"
+    },
+    {
+      "destination_path": "research/states/DUN Kelantan/dun-candidates-latest.csv",
+      "bytes": 8960,
+      "sha256": "371d958ca914c87f26fba72b6e9e08a7129ab5080711805d7fa3e27dd4ce4246",
+      "historic_source_path": "../HERMES/01_RESEARCH/states/DUN Kelantan/dun-candidates-latest.csv"
+    },
+    {
+      "destination_path": "research/states/DUN Kelantan/dun-election-results-latest.csv",
+      "bytes": 17195,
+      "sha256": "dc1c18343aabffa90b0331a6281564fb40d6d4888ca543581e46f446b5cd4a7f",
+      "historic_source_path": "../HERMES/01_RESEARCH/states/DUN Kelantan/dun-election-results-latest.csv"
+    },
+    {
+      "destination_path": "research/states/DUN Melaka/README.md",
+      "bytes": 1583,
+      "sha256": "eea2e363bba7719297eb668cbb25fbbaef78e8aef746a523ad83f5babf297074",
+      "historic_source_path": "../HERMES/01_RESEARCH/states/DUN Melaka/README.md"
+    },
+    {
+      "destination_path": "research/states/DUN Melaka/dun-candidates-latest.csv",
+      "bytes": 10195,
+      "sha256": "9c24bb1f1074978c5cca412ad255e8b1e7a6992d475332c62af6c9b81fdfab1b",
+      "historic_source_path": "../HERMES/01_RESEARCH/states/DUN Melaka/dun-candidates-latest.csv"
+    },
+    {
+      "destination_path": "research/states/DUN Melaka/dun-election-results-latest.csv",
+      "bytes": 10313,
+      "sha256": "da99eecbbfdc5576aec04d60017fc26ff9edbe4d2696e21d510033b6e2aca3fb",
+      "historic_source_path": "../HERMES/01_RESEARCH/states/DUN Melaka/dun-election-results-latest.csv"
+    },
+    {
+      "destination_path": "research/states/DUN Melaka/melaka-prn-projection.csv",
+      "bytes": 1692,
+      "sha256": "7da86a4334025e1dd3f2e497567da67beef173de7e41fc4d7c65699afa3d6247",
+      "historic_source_path": "../HERMES/01_RESEARCH/states/DUN Melaka/melaka-prn-projection.csv"
+    },
+    {
+      "destination_path": "research/states/DUN Melaka/melaka-state-scenarios.json",
+      "bytes": 1903,
+      "sha256": "5363b8349c739e3dfc0533cf18d0147b400a0edd82f075731db5ad78fde3819e",
+      "historic_source_path": "../HERMES/01_RESEARCH/states/DUN Melaka/melaka-state-scenarios.json",
+      "import_bytes": 913,
+      "import_sha256": "a42cecb15d7091403f0409a610a076414865ebc3b29281b4ec0767de9c95af5a"
+    },
+    {
+      "destination_path": "research/states/DUN Negeri Sembilan/README.md",
+      "bytes": 819,
+      "sha256": "0c969931cac588bb3855446f5ddd37438f465658f8979ad90567cb678df10c6d",
+      "historic_source_path": "../HERMES/01_RESEARCH/states/DUN Negeri Sembilan/README.md"
+    },
+    {
+      "destination_path": "research/states/DUN Negeri Sembilan/dun-candidates-latest.csv",
+      "bytes": 9436,
+      "sha256": "31e8ee604f1b2cb282313d79ecd512118c8867be43fa31d3e24c14e5a9b7e02a",
+      "historic_source_path": "../HERMES/01_RESEARCH/states/DUN Negeri Sembilan/dun-candidates-latest.csv"
+    },
+    {
+      "destination_path": "research/states/DUN Negeri Sembilan/dun-election-results-latest.csv",
+      "bytes": 13760,
+      "sha256": "c51a1692b9ac77549fbe07f7cd4c27e993099049c7b45daf5916ba8e4416237f",
+      "historic_source_path": "../HERMES/01_RESEARCH/states/DUN Negeri Sembilan/dun-election-results-latest.csv"
+    },
+    {
+      "destination_path": "research/states/DUN Pahang/README.md",
+      "bytes": 765,
+      "sha256": "686c871259802735f4be9795a56e19d921f1d5e7e72f3dc73ac24bb6c2794210",
+      "historic_source_path": "../HERMES/01_RESEARCH/states/DUN Pahang/README.md"
+    },
+    {
+      "destination_path": "research/states/DUN Pahang/dun-candidates-latest.csv",
+      "bytes": 13494,
+      "sha256": "e6bad49797f331e9a71aa605ddece56abab16ec344251ed0c240cbafae3224d1",
+      "historic_source_path": "../HERMES/01_RESEARCH/states/DUN Pahang/dun-candidates-latest.csv"
+    },
+    {
+      "destination_path": "research/states/DUN Pahang/dun-election-results-latest.csv",
+      "bytes": 14313,
+      "sha256": "b20e11513dacab71165a4281ae6c012fdce34ebefa733b010867d963971f0bc7",
+      "historic_source_path": "../HERMES/01_RESEARCH/states/DUN Pahang/dun-election-results-latest.csv"
+    },
+    {
+      "destination_path": "research/states/DUN Pahang/pahang-prn-projection.csv",
+      "bytes": 2308,
+      "sha256": "f15565ede2381abbc3a85e3cd5ef0131a27ce7c9f42e318dfc814e66fa4d4258",
+      "historic_source_path": "../HERMES/01_RESEARCH/states/DUN Pahang/pahang-prn-projection.csv"
+    },
+    {
+      "destination_path": "research/states/DUN Pahang/pahang-state-scenarios.json",
+      "bytes": 1929,
+      "sha256": "6d2902cf9e856ea042c8546a45be1e306e2e48852f4a220a3108dd7bb792696b",
+      "historic_source_path": "../HERMES/01_RESEARCH/states/DUN Pahang/pahang-state-scenarios.json",
+      "import_bytes": 905,
+      "import_sha256": "75a38d49c344363adb23c50b6cd4acd2ff17b610a96e5539ae9383fe9657e09c"
+    },
+    {
+      "destination_path": "research/states/DUN Perak/README.md",
+      "bytes": 759,
+      "sha256": "cfd531645cd2aeb3d7fac44a0bbc6c99f8d081559fd3a80ac77912560412f5fc",
+      "historic_source_path": "../HERMES/01_RESEARCH/states/DUN Perak/README.md"
+    },
+    {
+      "destination_path": "research/states/DUN Perak/dun-candidates-latest.csv",
+      "bytes": 20346,
+      "sha256": "6991621dd6abc8bd06f357d15601295f161151e11d034fde29e54f172ccefd11",
+      "historic_source_path": "../HERMES/01_RESEARCH/states/DUN Perak/dun-candidates-latest.csv"
+    },
+    {
+      "destination_path": "research/states/DUN Perak/dun-election-results-latest.csv",
+      "bytes": 20985,
+      "sha256": "01ae5a0c9e35493eda45a6954aedd5e919b2caf99b7d566b8081badbab9f25f0",
+      "historic_source_path": "../HERMES/01_RESEARCH/states/DUN Perak/dun-election-results-latest.csv"
+    },
+    {
+      "destination_path": "research/states/DUN Perak/perak-prn-projection.csv",
+      "bytes": 3448,
+      "sha256": "62e1f7389e13837327ed0db0e1d47f6d06e0b6bd944bccaad43cf6ea06d0cb2a",
+      "historic_source_path": "../HERMES/01_RESEARCH/states/DUN Perak/perak-prn-projection.csv"
+    },
+    {
+      "destination_path": "research/states/DUN Perak/perak-state-scenarios.json",
+      "bytes": 1927,
+      "sha256": "094531164513ac7bba87a6e9e2d62cc98fb7e296fb872463a39be0aa4920a19a",
+      "historic_source_path": "../HERMES/01_RESEARCH/states/DUN Perak/perak-state-scenarios.json",
+      "import_bytes": 908,
+      "import_sha256": "be24dbddcd340d6a6cb8dd6ed1cef02789d6719f2ae5c67ffb1b67e4390bfb29"
+    },
+    {
+      "destination_path": "research/states/DUN Perlis/README.md",
+      "bytes": 758,
+      "sha256": "9a4ddc8d1481aef8876f5be257226a60888c6eb609dcf6f0730305db82b41311",
+      "historic_source_path": "../HERMES/01_RESEARCH/states/DUN Perlis/README.md"
+    },
+    {
+      "destination_path": "research/states/DUN Perlis/dun-candidates-latest.csv",
+      "bytes": 5806,
+      "sha256": "7c01318f19157a7e4bddfd3afd65747ea1981b873cdf34057d6af1a85e170958",
+      "historic_source_path": "../HERMES/01_RESEARCH/states/DUN Perlis/dun-candidates-latest.csv"
+    },
+    {
+      "destination_path": "research/states/DUN Perlis/dun-election-results-latest.csv",
+      "bytes": 5504,
+      "sha256": "75aa5ba2baf965a734b04633be5f874ad2697ba42c6bd3425d996b94966bd475",
+      "historic_source_path": "../HERMES/01_RESEARCH/states/DUN Perlis/dun-election-results-latest.csv"
+    },
+    {
+      "destination_path": "research/states/DUN Perlis/perlis-prn-projection.csv",
+      "bytes": 915,
+      "sha256": "831059183f1837f075f7f9312b31bd7ff5fa3c1d1c471384b1f6d68ec3dde66c",
+      "historic_source_path": "../HERMES/01_RESEARCH/states/DUN Perlis/perlis-prn-projection.csv"
+    },
+    {
+      "destination_path": "research/states/DUN Perlis/perlis-state-scenarios.json",
+      "bytes": 1876,
+      "sha256": "66732b04a304445d7458795616bfdd75f86c549efde3fae2d8575f64e2b4bb43",
+      "historic_source_path": "../HERMES/01_RESEARCH/states/DUN Perlis/perlis-state-scenarios.json",
+      "import_bytes": 749,
+      "import_sha256": "acc38446a729682028629ec5dbfb34c1757262b370091789d5e391b6fa559d29"
+    },
+    {
+      "destination_path": "research/states/DUN Pulau Pinang/README.md",
+      "bytes": 801,
+      "sha256": "a4680496f9176d987554bf2223c210362fc2927aa6e33c3edb7b83ce32671d11",
+      "historic_source_path": "../HERMES/01_RESEARCH/states/DUN Pulau Pinang/README.md"
+    },
+    {
+      "destination_path": "research/states/DUN Pulau Pinang/dun-candidates-latest.csv",
+      "bytes": 8757,
+      "sha256": "72e35bcaf603d81ba6286bf8b113c60827c57105f40027d6c44e37be102bda9b",
+      "historic_source_path": "../HERMES/01_RESEARCH/states/DUN Pulau Pinang/dun-candidates-latest.csv"
+    },
+    {
+      "destination_path": "research/states/DUN Pulau Pinang/dun-election-results-latest.csv",
+      "bytes": 14431,
+      "sha256": "618fca25f0ebc240e6d19eb85ccbce38088b37f7b4c090c6f4d66d0fa6f84314",
+      "historic_source_path": "../HERMES/01_RESEARCH/states/DUN Pulau Pinang/dun-election-results-latest.csv"
+    },
+    {
+      "destination_path": "research/states/DUN Sabah/README.md",
+      "bytes": 814,
+      "sha256": "cdf205ce3a5f0271065b93d6f9fa99e0b9b7a1a4b4fb1ed2e13fe831e1592f03",
+      "historic_source_path": "../HERMES/01_RESEARCH/states/DUN Sabah/README.md"
+    },
+    {
+      "destination_path": "research/states/DUN Sabah/dun-candidates-latest.csv",
+      "bytes": 57324,
+      "sha256": "f12df34d2cbf5a23fbaa62b936a52f1df80025e227e5b4a06b59569e28b02cf6",
+      "historic_source_path": "../HERMES/01_RESEARCH/states/DUN Sabah/dun-candidates-latest.csv"
+    },
+    {
+      "destination_path": "research/states/DUN Sabah/dun-election-results-latest.csv",
+      "bytes": 22791,
+      "sha256": "6119ab735d9dd342f24fe825ad6d95c9b1cfbe8080ae6d63e98469e0c17131fa",
+      "historic_source_path": "../HERMES/01_RESEARCH/states/DUN Sabah/dun-election-results-latest.csv"
+    },
+    {
+      "destination_path": "research/states/DUN Sabah/sabah-2018-2020-swing-analysis.md",
+      "bytes": 1818,
+      "sha256": "fe826534da9622e9663a87573393d02d9fa909e9f7864f2bab6c97c744519fa6",
+      "historic_source_path": "../HERMES/01_RESEARCH/states/DUN Sabah/sabah-2018-2020-swing-analysis.md"
+    },
+    {
+      "destination_path": "research/states/DUN Sabah/sabah-2018-2020-swing-by-seat.csv",
+      "bytes": 10855,
+      "sha256": "af275cab04aed1c34a6ac3dc375427b99d812cc041fbcb8b7411b1136d03c68e",
+      "historic_source_path": "../HERMES/01_RESEARCH/states/DUN Sabah/sabah-2018-2020-swing-by-seat.csv"
+    },
+    {
+      "destination_path": "research/states/DUN Sabah/sabah-seat-delineation-map.csv",
+      "bytes": 11221,
+      "sha256": "a14fb2d6f3e296a4f3ebb5f222209046ad165bab4d27f76f17fbc74b4006a413",
+      "historic_source_path": "../HERMES/01_RESEARCH/states/DUN Sabah/sabah-seat-delineation-map.csv"
+    },
+    {
+      "destination_path": "research/states/DUN Sabah/sabah-seat-delineation-map.md",
+      "bytes": 15868,
+      "sha256": "8afec010c54630cd15e466e978fcd6f38ebdfdf1b1203a70eb6dc51a414a39a2",
+      "historic_source_path": "../HERMES/01_RESEARCH/states/DUN Sabah/sabah-seat-delineation-map.md"
+    },
+    {
+      "destination_path": "research/states/DUN Sarawak/README.md",
+      "bytes": 772,
+      "sha256": "c4b3fc2ef9828640e5a8a8b35c315f7ecacf3bdbaffb006384a872350b5170da",
+      "historic_source_path": "../HERMES/01_RESEARCH/states/DUN Sarawak/README.md"
+    },
+    {
+      "destination_path": "research/states/DUN Sarawak/dun-candidates-latest.csv",
+      "bytes": 32729,
+      "sha256": "5b321f10bf735b0f95701564e4ecd6e3e34cc520665e43a7e8ca55ebe3ecc39f",
+      "historic_source_path": "../HERMES/01_RESEARCH/states/DUN Sarawak/dun-candidates-latest.csv"
+    },
+    {
+      "destination_path": "research/states/DUN Sarawak/dun-election-results-latest.csv",
+      "bytes": 27279,
+      "sha256": "44488c94afff7719106f7e35292ee13c1720f13923b69f02052b6e49c4e7dab0",
+      "historic_source_path": "../HERMES/01_RESEARCH/states/DUN Sarawak/dun-election-results-latest.csv"
+    },
+    {
+      "destination_path": "research/states/DUN Sarawak/sarawak-prn-projection.csv",
+      "bytes": 4796,
+      "sha256": "eb5a496295b10985269593b010bfd550e4950e107bee81ce4d769d9c09a6184f",
+      "historic_source_path": "../HERMES/01_RESEARCH/states/DUN Sarawak/sarawak-prn-projection.csv"
+    },
+    {
+      "destination_path": "research/states/DUN Sarawak/sarawak-state-scenarios.json",
+      "bytes": 1946,
+      "sha256": "09e6a967b9ebc3eb759649eda483e79597c8009716cd2cd21b30cccee9d25c19",
+      "historic_source_path": "../HERMES/01_RESEARCH/states/DUN Sarawak/sarawak-state-scenarios.json",
+      "import_bytes": 747,
+      "import_sha256": "2bf53ae42ad193ad395481977ec34b8d7248a583734d813e2cf4286773e0b756"
+    },
+    {
+      "destination_path": "research/states/DUN Selangor/README.md",
+      "bytes": 777,
+      "sha256": "4e5f03521a2a56f62e80e5d2024361c745efbf754be7c07cfce5ccab9f572132",
+      "historic_source_path": "../HERMES/01_RESEARCH/states/DUN Selangor/README.md"
+    },
+    {
+      "destination_path": "research/states/DUN Selangor/dun-candidates-latest.csv",
+      "bytes": 13912,
+      "sha256": "abd4d0a63d7018b945fbf33ea49e9857c1ba295db5a9aba087f27613f7a6c784",
+      "historic_source_path": "../HERMES/01_RESEARCH/states/DUN Selangor/dun-candidates-latest.csv"
+    },
+    {
+      "destination_path": "research/states/DUN Selangor/dun-election-results-latest.csv",
+      "bytes": 20988,
+      "sha256": "6227c477f99c114f77f43285ab6cba33938b6bb85d69434e7cb99718ca1fdaaa",
+      "historic_source_path": "../HERMES/01_RESEARCH/states/DUN Selangor/dun-election-results-latest.csv"
+    },
+    {
+      "destination_path": "research/states/DUN Terengganu/README.md",
+      "bytes": 776,
+      "sha256": "c5f3adf35daa57b20078d7ca73fc1cb86192a50e4515b18dedfb764f9fbd13b9",
+      "historic_source_path": "../HERMES/01_RESEARCH/states/DUN Terengganu/README.md"
+    },
+    {
+      "destination_path": "research/states/DUN Terengganu/dun-candidates-latest.csv",
+      "bytes": 6010,
+      "sha256": "33464e5fe84c2f9d9a7e6f287f05b6044815a85f8ed4bf8ec3fb6a03fdea0f7f",
+      "historic_source_path": "../HERMES/01_RESEARCH/states/DUN Terengganu/dun-candidates-latest.csv"
+    },
+    {
+      "destination_path": "research/states/DUN Terengganu/dun-election-results-latest.csv",
+      "bytes": 12284,
+      "sha256": "98ac039c757dbe534381fe8ce7cae22fdcce574bad2a7c30be4c7dea851dd619",
+      "historic_source_path": "../HERMES/01_RESEARCH/states/DUN Terengganu/dun-election-results-latest.csv"
+    },
+    {
+      "destination_path": "research/states/national-composition-summary.md",
+      "bytes": 1769,
+      "sha256": "e1818aca4f06feff4b04281e5a936aa68366d76486cb51c578ebe26514ed9e42",
+      "historic_source_path": "../HERMES/01_RESEARCH/states/national-composition-summary.md"
+    },
+    {
+      "destination_path": "research/trackers/ge16-news-backfill-candidates.json",
+      "bytes": 1236127,
+      "sha256": "c42f1cd6979bbb988b30e7225fe4b1af45aa9839ffb771e465984fc75065f197",
+      "historic_source_path": "observed:scripts/refresh_canonical_data.py#research/trackers/ge16-news-backfill-candidates.json"
+    },
+    {
+      "destination_path": "research/trackers/ge16-news-backfill-judge-batch-1.json",
+      "bytes": 51199,
+      "sha256": "450f04a774e321ef379d614601082decb37b309ba78193c1dd071e8fbf60a511",
+      "historic_source_path": "observed:scripts/refresh_canonical_data.py#research/trackers/ge16-news-backfill-judge-batch-1.json"
+    },
+    {
+      "destination_path": "research/trackers/ge16-news-backfill-judge-batch-2.json",
+      "bytes": 51741,
+      "sha256": "9f5e4d95d24fa25d93e9fa1c85d56eede2e934e4141438dfe33944a5258bd504",
+      "historic_source_path": "observed:scripts/refresh_canonical_data.py#research/trackers/ge16-news-backfill-judge-batch-2.json"
+    },
+    {
+      "destination_path": "research/trackers/ge16-news-backfill-judge-batch-3.json",
+      "bytes": 52443,
+      "sha256": "46ee5289d9e0630508978272df0664525606f19b42c33fd49fe6a9f5ebc88a0e",
+      "historic_source_path": "observed:scripts/refresh_canonical_data.py#research/trackers/ge16-news-backfill-judge-batch-3.json"
+    },
+    {
+      "destination_path": "research/trackers/ge16-news-backfill-judge-batch-4.json",
+      "bytes": 53678,
+      "sha256": "24c356a9b0950cf8d95126395246470601805ea5263958e0d051405441b57613",
+      "historic_source_path": "observed:scripts/refresh_canonical_data.py#research/trackers/ge16-news-backfill-judge-batch-4.json"
+    },
+    {
+      "destination_path": "research/trackers/ge16-news-backfill-judge-batch-5.json",
+      "bytes": 51100,
+      "sha256": "98ed22ac80e74564b7a77721be1b246d41825bd11353f44a2059b4d8d1dc86d4",
+      "historic_source_path": "observed:scripts/refresh_canonical_data.py#research/trackers/ge16-news-backfill-judge-batch-5.json"
+    },
+    {
+      "destination_path": "research/trackers/ge16-news-backfill-judge-batch-6.json",
+      "bytes": 50982,
+      "sha256": "e52fd5a2cc02d0447f3c8f64f35ef13c06c3fd92c31ea7b1e4d2779a9867089e",
+      "historic_source_path": "observed:scripts/refresh_canonical_data.py#research/trackers/ge16-news-backfill-judge-batch-6.json"
+    },
+    {
+      "destination_path": "research/trackers/ge16-news-backfill-judge-batch-7.json",
+      "bytes": 51870,
+      "sha256": "715decccc1f0f38941158f7c12094b265b411e25b644845a29ea73c5641f6f17",
+      "historic_source_path": "observed:scripts/refresh_canonical_data.py#research/trackers/ge16-news-backfill-judge-batch-7.json"
+    },
+    {
+      "destination_path": "research/trackers/ge16-news-backfill-judge-batch-8.json",
+      "bytes": 50939,
+      "sha256": "d237059d0d72ba48a2ea1ce0b796761bf85c9e2fa5e90fd74240311c7764e673",
+      "historic_source_path": "observed:scripts/refresh_canonical_data.py#research/trackers/ge16-news-backfill-judge-batch-8.json"
+    },
+    {
+      "destination_path": "research/trackers/ge16-news-backfill-judge-batch-9.json",
+      "bytes": 20172,
+      "sha256": "92187431964265d812de9e64a07e7cae9dd4fe698c1035dff2f9652a066404a5",
+      "historic_source_path": "observed:scripts/refresh_canonical_data.py#research/trackers/ge16-news-backfill-judge-batch-9.json"
+    },
+    {
+      "destination_path": "research/trackers/ge16-news-backfill-judge-manifest.json",
+      "bytes": 1737,
+      "sha256": "49335079b4435049640d540b00b46113a92ee84967bec86c25fad1bbe8bb8938",
+      "historic_source_path": "observed:scripts/refresh_canonical_data.py#research/trackers/ge16-news-backfill-judge-manifest.json"
+    },
+    {
+      "destination_path": "research/trackers/ge16-news-backfill-judged-batch-1.json",
+      "bytes": 44079,
+      "sha256": "4c642b853069cd251ac2db4d312e700719aa9aa3f1a2fd74c498d856a4bfa98d",
+      "historic_source_path": "observed:scripts/refresh_canonical_data.py#research/trackers/ge16-news-backfill-judged-batch-1.json"
+    },
+    {
+      "destination_path": "research/trackers/ge16-news-backfill-judged-batch-10.json",
+      "bytes": 43853,
+      "sha256": "3fb0604a1b28d454ba0e32740b3de69b52c86f582d4c7df9f4d373c2d6a3669b",
+      "historic_source_path": "observed:scripts/refresh_canonical_data.py#research/trackers/ge16-news-backfill-judged-batch-10.json"
+    },
+    {
+      "destination_path": "research/trackers/ge16-news-backfill-judged-batch-11.json",
+      "bytes": 46421,
+      "sha256": "a2bd17ce43707876dcfee447d13e9fcb6c5bcf80ffedbcc0a49b83cd04aeb3f5",
+      "historic_source_path": "observed:scripts/refresh_canonical_data.py#research/trackers/ge16-news-backfill-judged-batch-11.json"
+    },
+    {
+      "destination_path": "research/trackers/ge16-news-backfill-judged-batch-12.json",
+      "bytes": 46351,
+      "sha256": "08390503826e56cb2821d886f6865770c589812ca8cd25d5486968044d8008e6",
+      "historic_source_path": "observed:scripts/refresh_canonical_data.py#research/trackers/ge16-news-backfill-judged-batch-12.json"
+    },
+    {
+      "destination_path": "research/trackers/ge16-news-backfill-judged-batch-13.json",
+      "bytes": 55099,
+      "sha256": "97a6d64c25d53c226b33d7362321ccd6804f3ef6a98a1ec06ebb974bc3b58836",
+      "historic_source_path": "observed:scripts/refresh_canonical_data.py#research/trackers/ge16-news-backfill-judged-batch-13.json"
+    },
+    {
+      "destination_path": "research/trackers/ge16-news-backfill-judged-batch-14.json",
+      "bytes": 54076,
+      "sha256": "650b37d3346ce7afba9fc6d677cd148a3d31914f687e4fd936eecf088ea10901",
+      "historic_source_path": "observed:scripts/refresh_canonical_data.py#research/trackers/ge16-news-backfill-judged-batch-14.json"
+    },
+    {
+      "destination_path": "research/trackers/ge16-news-backfill-judged-batch-15.json",
+      "bytes": 41536,
+      "sha256": "6ed3f27d695ccdd68f585ec25184420c8e92e39962689e9f7719ee50e7d90d5c",
+      "historic_source_path": "observed:scripts/refresh_canonical_data.py#research/trackers/ge16-news-backfill-judged-batch-15.json"
+    },
+    {
+      "destination_path": "research/trackers/ge16-news-backfill-judged-batch-16.json",
+      "bytes": 57860,
+      "sha256": "e0461dad43576bccebf1b4af66abb2dae2ce303e54df7a33115bd08fcb20b383",
+      "historic_source_path": "observed:scripts/refresh_canonical_data.py#research/trackers/ge16-news-backfill-judged-batch-16.json"
+    },
+    {
+      "destination_path": "research/trackers/ge16-news-backfill-judged-batch-17.json",
+      "bytes": 57346,
+      "sha256": "1f86509a140a6cc0403f46ababe03905a61e836863d06d0a64efb015a7474293",
+      "historic_source_path": "observed:scripts/refresh_canonical_data.py#research/trackers/ge16-news-backfill-judged-batch-17.json"
+    },
+    {
+      "destination_path": "research/trackers/ge16-news-backfill-judged-batch-18.json",
+      "bytes": 59899,
+      "sha256": "942e6882a39f1c362e583909a3330ff16e38d2524f8118a1ea6183abc5bc8743",
+      "historic_source_path": "observed:scripts/refresh_canonical_data.py#research/trackers/ge16-news-backfill-judged-batch-18.json"
+    },
+    {
+      "destination_path": "research/trackers/ge16-news-backfill-judged-batch-19.json",
+      "bytes": 53570,
+      "sha256": "8fcc852f6b6509e3cef9f80dbb2a3ffa77e2deff1905484a74d64949e4681a57",
+      "historic_source_path": "observed:scripts/refresh_canonical_data.py#research/trackers/ge16-news-backfill-judged-batch-19.json"
+    },
+    {
+      "destination_path": "research/trackers/ge16-news-backfill-judged-batch-2.json",
+      "bytes": 44722,
+      "sha256": "e78fc0e940305956b38deb5a905cb9338623d7fda31027fc471aaf09303c8681",
+      "historic_source_path": "observed:scripts/refresh_canonical_data.py#research/trackers/ge16-news-backfill-judged-batch-2.json"
+    },
+    {
+      "destination_path": "research/trackers/ge16-news-backfill-judged-batch-20.json",
+      "bytes": 52507,
+      "sha256": "dc872bad5af81522bdde2579cfc5f32fcbc5920250ad4ae1d4bedbe4ca3803bf",
+      "historic_source_path": "observed:scripts/refresh_canonical_data.py#research/trackers/ge16-news-backfill-judged-batch-20.json"
+    },
+    {
+      "destination_path": "research/trackers/ge16-news-backfill-judged-batch-21.json",
+      "bytes": 59246,
+      "sha256": "9d299cb61ae38b9c82a671a479c2572db4a9aa9ffa9e8fb03c93f0389b1cc455",
+      "historic_source_path": "observed:scripts/refresh_canonical_data.py#research/trackers/ge16-news-backfill-judged-batch-21.json"
+    },
+    {
+      "destination_path": "research/trackers/ge16-news-backfill-judged-batch-22.json",
+      "bytes": 46769,
+      "sha256": "a35c0c5f59350efb1ff81742c27a1571b5088dbdee89de638d6f23a4417675d5",
+      "historic_source_path": "observed:scripts/refresh_canonical_data.py#research/trackers/ge16-news-backfill-judged-batch-22.json"
+    },
+    {
+      "destination_path": "research/trackers/ge16-news-backfill-judged-batch-23.json",
+      "bytes": 45589,
+      "sha256": "164260a79b17c63a1a8bface9306a974d349db6a721686dcc0469b8e3438aeb3",
+      "historic_source_path": "observed:scripts/refresh_canonical_data.py#research/trackers/ge16-news-backfill-judged-batch-23.json"
+    },
+    {
+      "destination_path": "research/trackers/ge16-news-backfill-judged-batch-24.json",
+      "bytes": 61496,
+      "sha256": "8e412d1195d5318f4c6122292b3b2c8795732159f89cc8e643d66948c272748e",
+      "historic_source_path": "observed:scripts/refresh_canonical_data.py#research/trackers/ge16-news-backfill-judged-batch-24.json"
+    },
+    {
+      "destination_path": "research/trackers/ge16-news-backfill-judged-batch-3.json",
+      "bytes": 50153,
+      "sha256": "020330573ba4dc9ce3e93036e0a134199b65a5bb370220887164555a13572db9",
+      "historic_source_path": "observed:scripts/refresh_canonical_data.py#research/trackers/ge16-news-backfill-judged-batch-3.json"
+    },
+    {
+      "destination_path": "research/trackers/ge16-news-backfill-judged-batch-4.json",
+      "bytes": 57528,
+      "sha256": "b74a96ecef4c56b0ae824c810aefa622044032a0e91e216afc7e464d3613aeeb",
+      "historic_source_path": "observed:scripts/refresh_canonical_data.py#research/trackers/ge16-news-backfill-judged-batch-4.json"
+    },
+    {
+      "destination_path": "research/trackers/ge16-news-backfill-judged-batch-5.json",
+      "bytes": 53245,
+      "sha256": "8c48881388f03eba27547873deba132dd850438e62d114d5835662d6febb1219",
+      "historic_source_path": "observed:scripts/refresh_canonical_data.py#research/trackers/ge16-news-backfill-judged-batch-5.json"
+    },
+    {
+      "destination_path": "research/trackers/ge16-news-backfill-judged-batch-6.json",
+      "bytes": 44883,
+      "sha256": "7b308c313326bf9a405c90ffed8c981a6f57bb20ce54191808a93c6c4199cc13",
+      "historic_source_path": "observed:scripts/refresh_canonical_data.py#research/trackers/ge16-news-backfill-judged-batch-6.json"
+    },
+    {
+      "destination_path": "research/trackers/ge16-news-backfill-judged-batch-7.json",
+      "bytes": 58729,
+      "sha256": "868497868a19a17289e747b9f70c5329f65843f86891201fade3e49a7ba7a878",
+      "historic_source_path": "observed:scripts/refresh_canonical_data.py#research/trackers/ge16-news-backfill-judged-batch-7.json"
+    },
+    {
+      "destination_path": "research/trackers/ge16-news-backfill-judged-batch-8.json",
+      "bytes": 58082,
+      "sha256": "2a82354f782d05cfb97a887476e5642042f487044c0db4a9c469679bf97e15d7",
+      "historic_source_path": "observed:scripts/refresh_canonical_data.py#research/trackers/ge16-news-backfill-judged-batch-8.json"
+    },
+    {
+      "destination_path": "research/trackers/ge16-news-backfill-judged-batch-9.json",
+      "bytes": 21638,
+      "sha256": "d227585b3efb6aceb104b3e1dcf5a1bbe79945d9e6872de361ac0bf5ef03503e",
+      "historic_source_path": "observed:scripts/refresh_canonical_data.py#research/trackers/ge16-news-backfill-judged-batch-9.json"
+    },
+    {
+      "destination_path": "research/trackers/ge16-news-backfill-verdicts.jsonl",
+      "bytes": 9986,
+      "sha256": "3dbe6e98260acff761122daf921c2848cd6ab9e634fcaaad7581fd3d7e0c4079",
+      "historic_source_path": "observed:scripts/refresh_canonical_data.py#research/trackers/ge16-news-backfill-verdicts.jsonl"
+    },
+    {
+      "destination_path": "research/trackers/ge16-news-seen-pending.json",
+      "bytes": 423041,
+      "sha256": "c363817f385bcea61a66b6b7cb9cb60a4797f20fc03d9cc5574a71c058affbeb",
+      "historic_source_path": "observed:scripts/refresh_canonical_data.py#research/trackers/ge16-news-seen-pending.json"
+    },
+    {
+      "destination_path": "research/trackers/ge16-selfheal-state.json",
+      "bytes": 815,
+      "sha256": "b4aa38f021e2a4ee8c1ce84535d17b07ce387e4166e3273b16bb2d28f284c249",
+      "historic_source_path": "observed:scripts/refresh_canonical_data.py#research/trackers/ge16-selfheal-state.json"
+    }
+  ],
+  "methodology_inputs": [
+    {
+      "canonical_path": "research/data/notes/byelections-malaysia-1957-2026.md",
+      "legacy_source_relative_path": "01_RESEARCH/data/notes/byelections-malaysia-1957-2026.md",
+      "sha256": "0e5cbba6de87149f0f27d9fc58d624cca0d2eef2258267d40202f06093ed9f29",
+      "bytes": 2612,
+      "classification": "canonical-methodology-input",
+      "consumer_roles": [
+        "historical-baseline",
+        "forecast-modeling"
+      ]
+    },
+    {
+      "canonical_path": "research/data/notes/election-study-organizations-malaysia.md",
+      "legacy_source_relative_path": "01_RESEARCH/data/notes/election-study-organizations-malaysia.md",
+      "sha256": "6b4301812fc124564f66dbd9ace5da03f50703401b2f70550bcf19760fa94ca8",
+      "bytes": 8329,
+      "classification": "canonical-methodology-input",
+      "consumer_roles": [
+        "research-methodology"
+      ]
+    },
+    {
+      "canonical_path": "research/data/notes/ge15-candidates-demographics.md",
+      "legacy_source_relative_path": "01_RESEARCH/data/notes/ge15-candidates-demographics.md",
+      "sha256": "d66431b385a6ac962758d42c8340d4d0e69b6b2d196b84339541b4915a5033ee",
+      "bytes": 503,
+      "classification": "canonical-methodology-input",
+      "consumer_roles": [
+        "demographic-analysis"
+      ]
+    },
+    {
+      "canonical_path": "research/data/notes/ge15-results-by-state.md",
+      "legacy_source_relative_path": "01_RESEARCH/data/notes/ge15-results-by-state.md",
+      "sha256": "0d87f5dcd2dc6b86279e70ac9dcb0f7ce6755f9b258e8211d4a05fb3d0e1cd87",
+      "bytes": 1105,
+      "classification": "canonical-methodology-input",
+      "consumer_roles": [
+        "results-analysis"
+      ]
+    },
+    {
+      "canonical_path": "research/data/notes/marginal-seats-ge15.md",
+      "legacy_source_relative_path": "01_RESEARCH/data/notes/marginal-seats-ge15.md",
+      "sha256": "660d1406d412711857ad47ffb7df18db7b3342a285845d469ba3a2c40875075d",
+      "bytes": 3723,
+      "classification": "canonical-methodology-input",
+      "consumer_roles": [
+        "seat-prioritization"
+      ]
+    },
+    {
+      "canonical_path": "research/data/notes/parliamentary-seats-malaysia-data.md",
+      "legacy_source_relative_path": "01_RESEARCH/data/notes/parliamentary-seats-malaysia-data.md",
+      "sha256": "f66ef5fb23ce15045d1c1ecd207af852f40aa7b146db5e06c48802fc9c2befe2",
+      "bytes": 7656,
+      "classification": "canonical-methodology-input",
+      "consumer_roles": [
+        "constituency-reference"
+      ]
+    },
+    {
+      "canonical_path": "research/data/notes/party-landscape-update-2026.md",
+      "legacy_source_relative_path": "01_RESEARCH/data/notes/party-landscape-update-2026.md",
+      "sha256": "15fe2f0359c9543ba08f518be7d68e966cd6090518e9c38ea71f091f6a13d350",
+      "bytes": 16004,
+      "classification": "canonical-methodology-input",
+      "consumer_roles": [
+        "party-analysis",
+        "forecast-modeling"
+      ]
+    },
+    {
+      "canonical_path": "research/data/notes/voter-demographics-by-constituency-ge15.md",
+      "legacy_source_relative_path": "01_RESEARCH/data/notes/voter-demographics-by-constituency-ge15.md",
+      "sha256": "65bf95d04d1d32a9d7400414f68121898aa2bae1edf907e60cc5d56fe58f7828",
+      "bytes": 3826,
+      "classification": "canonical-methodology-input",
+      "consumer_roles": [
+        "demographic-analysis"
+      ]
+    },
+    {
+      "canonical_path": "research/knowledge/anti-hopping-law-factor.md",
+      "legacy_source_relative_path": "01_RESEARCH/knowledge/anti-hopping-law-factor.md",
+      "sha256": "05598683f3ee70abef5f9bb90fd7838a7b48be1cedcf3b4869eb89ce84a1b795",
+      "bytes": 2936,
+      "classification": "canonical-methodology-input",
+      "consumer_roles": [
+        "institutional-analysis"
+      ]
+    },
+    {
+      "canonical_path": "research/knowledge/demographics-parties-analysis.md",
+      "legacy_source_relative_path": "01_RESEARCH/knowledge/demographics-parties-analysis.md",
+      "sha256": "0fbc0ed87ecdf10a638b83af9ea7776af91a3b4cabb6b89286d193bf7e406a2e",
+      "bytes": 6213,
+      "classification": "canonical-methodology-input",
+      "consumer_roles": [
+        "demographic-analysis",
+        "party-analysis"
+      ]
+    },
+    {
+      "canonical_path": "research/knowledge/forecast-factor-rankings.md",
+      "legacy_source_relative_path": "01_RESEARCH/knowledge/forecast-factor-rankings.md",
+      "sha256": "da06a5e3040204cea7e700b8f17a919129c7f7d0f7476c83514bd9f7975aba81",
+      "bytes": 10126,
+      "classification": "canonical-methodology-input",
+      "consumer_roles": [
+        "forecast-modeling"
+      ]
+    },
+    {
+      "canonical_path": "research/knowledge/forecast-theory.md",
+      "legacy_source_relative_path": "01_RESEARCH/knowledge/forecast-theory.md",
+      "sha256": "fd49fb746cf6c2a48ac31ab29b68d575364c5ae2d5019139c3bf049bc257dfd8",
+      "bytes": 13441,
+      "classification": "canonical-methodology-input",
+      "consumer_roles": [
+        "forecast-modeling"
+      ]
+    },
+    {
+      "canonical_path": "research/knowledge/political-parties.md",
+      "legacy_source_relative_path": "01_RESEARCH/knowledge/political-parties.md",
+      "sha256": "c5dcd3f4fef59160d9ed31c8f59b1166f519829b2694452a3a0d416441b345e3",
+      "bytes": 8603,
+      "classification": "canonical-methodology-input",
+      "consumer_roles": [
+        "party-analysis"
+      ]
+    },
+    {
+      "canonical_path": "research/knowledge/prn-prediction-scorecard.md",
+      "legacy_source_relative_path": "01_RESEARCH/knowledge/prn-prediction-scorecard.md",
+      "sha256": "44344bbf69a3a54cfdf21c0a5a25e228a253e33eb422e62c441e9ad3498f5ef3",
+      "bytes": 3122,
+      "classification": "canonical-methodology-input",
+      "consumer_roles": [
+        "state-forecasting"
+      ]
+    }
+  ],
+  "snapshot_commit": "6ce692d29bc3831a4cf72dba996f6ee0a3f2a98c",
+  "historic_import": {
+    "source_repository": "HERMES",
+    "source_commit": "6ce692d29bc3831a4cf72dba996f6ee0a3f2a98c",
+    "roots": [
+      {
+        "source_root": "../HERMES/01_RESEARCH/data/raw",
+        "destination_root": "research/raw"
+      },
+      {
+        "source_root": "../HERMES/01_RESEARCH/data/derived",
+        "destination_root": "research/derived"
+      },
+      {
+        "source_root": "../HERMES/01_RESEARCH/data/trackers",
+        "destination_root": "research/trackers"
+      },
+      {
+        "source_root": "../HERMES/01_RESEARCH/federal",
+        "destination_root": "research/federal"
+      },
+      {
+        "source_root": "../HERMES/01_RESEARCH/geo",
+        "destination_root": "geo"
+      },
+      {
+        "source_root": "../HERMES/01_RESEARCH/states",
+        "destination_root": "research/states"
+      }
+    ]
+  },
+  "roots": [
+    "research/raw",
+    "research/derived",
+    "research/trackers",
+    "research/federal",
+    "geo",
+    "research/states"
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "_spec": "Companion job for the GE16 weekly chain: the OPS chain orchestrator. The record is DECLARED in the canonical registry OPS/cron/ge16_jobs.json as the optional seventh job (id ge16-chain, enabled=false, state=disabled, non_blocking=false), pinned by sync_jobs.validate_canonical_config + the OPS contract's scheduler_binding, and its contract is pinned by validate_ops_contract._validate_optional_chain_cron_contract. The job is the owner-visible START of the chain, not the work itself: the owner-side listener OPS/cron/ge16_chain_runner.py (launchd label com.tenunan.ge16-chain) owns minting and stage execution. Enabling it is an owner decision: the record ships disabled and only an owner-authorized live cron change may flip that.",
+  "schema": "ge16-cron-job-spec/1",
+  "registry": {
+    "canonical": "OPS/cron/ge16_jobs.json",
+    "registered": true,
+    "state": "declared-disabled",
+    "position": 7,
+    "optional_order": "after ge16-authoring (index 5), never before it"
+  },
+  "job": {
+    "id": "ge16-chain",
+    "name": "GE16 P1.6 OPS Chain Orchestrator (optional)",
+    "optional_stage": true,
+    "owner_domain": "OPS",
+    "contract_id": "ge16-cron-chain-orchestrator",
+    "contract_version": "1.0.0",
+    "schedule": {
+      "kind": "cron",
+      "expr": "0 22 * * 5",
+      "display": "0 22 * * 5"
+    },
+    "timezone": "Asia/Kuala_Lumpur",
+    "dependencies": [],
+    "enabled": false,
+    "state": "disabled",
+    "model": "deepseek/deepseek-v4-pro",
+    "provider": "nous",
+    "model_snapshot": "deepseek/deepseek-v4-pro",
+    "provider_snapshot": "nous",
+    "delivery": "local",
+    "enabled_toolsets": [
+      "terminal",
+      "file"
+    ],
+    "workdir": "/Users/faisal.muthalib/Documents/HermesWorkFolder/Malaysia General Election v2",
+    "inactivity_limit": 1800,
+    "non_blocking": false,
+    "gate_impact": "none",
+    "chain_state_file": "/Users/faisal.muthalib/.hermes/profiles/coding/cron/ge16-chain-state.json",
+    "writes": [
+      "OPS/logs/chain"
+    ],
+    "must_not_write": [
+      "1_DATA",
+      "2_ANALYTICS",
+      "3_OUTPUTS",
+      "4_DELIVERY",
+      "5_WEBSITES"
+    ],
+    "gate_note": "The chain job writes chain evidence only (OPS/logs/chain) and owns no domain gate. It starts the run and stages 2-5 advance only when the predecessor handoff manifest validates by content hash; a stop is recorded, never retried out of order, and the five stage jobs stay scheduled as the fallback floor.",
+    "agent_scope": {
+      "executes": "Stage 1 only (phase a, judgement, phase b), with owner-minted keys the daemon placed in the one-shot directory",
+      "does_not_execute": "Stages 2-5; those are launched by the owner-side chain listener or by their own stage job",
+      "never": [
+        "mint or hand-write a fire key",
+        "edit the chain state file",
+        "edit OPS/cron/ge16_jobs.json or OPS/ops-contract.json",
+        "write a pipeline domain outside its own Stage 1 execution"
+      ]
+    }
+  },
+  "chain_mode": {
+    "listener": "OPS/cron/ge16_chain_runner.py",
+    "owner_entry": "/Users/faisal.muthalib/.hermes/profiles/coding/ge16_chain_runner.py",
+    "launchd_label": "com.tenunan.ge16-chain",
+    "launchd_template": "OPS/cron/launchd/com.tenunan.ge16-chain.plist",
+    "poll_minutes": 2,
+    "state_file": "/Users/faisal.muthalib/.hermes/profiles/coding/cron/ge16-chain-state.json",
+    "evidence_dir": "OPS/logs/chain",
+    "log": "/Users/faisal.muthalib/.hermes/logs/ge16-chain.log",
+    "on_demand_trigger": "python3 OPS/cron/ge16_chain_runner.py --start (starts or resumes this chain week's run and surfaces Stage 1's phase a and phase b keys)",
+    "read_only_status": "python3 OPS/cron/ge16_chain_runner.py --status",
+    "anchor": "Friday 22:00 Asia/Kuala_Lumpur, the chain job's own schedule",
+    "driven_stages": [
+      2,
+      3,
+      4
+    ],
+    "agent_stages": [
+      1,
+      5
+    ],
+    "stage_windows_minutes": {
+      "1": 240,
+      "2": 600,
+      "3": 30,
+      "4": 120,
+      "5": null
+    },
+    "stage_five_window_note": "Stage 5 is owner-authorized release work that runs on its own 05:30 schedule after the Stage 4 handoff, so the listener bounds its wait by the 12-hour run deadline instead of a 45-minute window a healthy week could never meet; the 45-minute figure is the Stage 5 job's own inactivity limit.",
+    "max_run_hours": 12,
+    "key_ttl_minutes": 14,
+    "completion_rule": "a stage counts as complete only when its handoff manifest is present, differs by content hash from the snapshot taken at run start, and (stage 2 onwards) cites the recorded SHA-256 of the immediate predecessor manifest",
+    "failure_rule": "any failed stage stops the chain without advancing; the run stays recorded and the next weekly run resumes at the first un-completed stage",
+    "dependency": "chain mode mints and fires through the existing scheduled-fire path, so the four stage job records must stay enabled/scheduled in the live registry and the existing remint daemon stays installed; its Stage 1 keys are the owner daemon's, never the agent's",
+    "optional_authoring_step": "not driven by the listener: it is agent-side, non-blocking and ships disabled; the chain proceeds Stage 2 -> Stage 3 regardless"
+  }
+}

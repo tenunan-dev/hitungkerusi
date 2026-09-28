@@ -1,0 +1,757 @@
+{
+ "schema": "ge16.news-backfill-judge-batch.v1",
+ "batch": 15,
+ "collection_id": "2026-09-26T05:37:57+00:00",
+ "count": 50,
+ "accepted_count": 31,
+ "rejected_count": 19,
+ "rejected_indexes": [
+  2,
+  6,
+  7,
+  11,
+  14,
+  16,
+  17,
+  18,
+  21,
+  22,
+  23,
+  25,
+  26,
+  27,
+  31,
+  36,
+  41,
+  42,
+  50
+ ],
+ "judged_at": "2026-09-26T05:41:41+00:00",
+ "judged_by": "deepseek",
+ "judge_model": "deepseek-chat",
+ "source_sha256": "b6e17418e9a77e3a695bd1b88b2d7bf041f40ce6903b93ccf1477646feb12b91",
+ "accepted": [
+  {
+   "query": "sitemap:astroawani",
+   "title": "Kemelut Dun Negeri Sembilan Biar Keadaan Tenang Dahulu Pm Anwar Rayu Semua Pihak Beri Ruang",
+   "desc": "sitemap entry",
+   "link": "https://www.astroawani.com/berita-malaysia/kemelut-dun-negeri-sembilan-biar-keadaan-tenang-dahulu-pm-anwar-rayu-semua-pihak-beri-ruang",
+   "date": "2026-05-01",
+   "source": "Astroawani",
+   "found_at": "2026-09-26T05:37:57+00:00",
+   "channel": "sitemap",
+   "collection_id": "2026-09-26T05:37:57+00:00",
+   "category": "state-election",
+   "blocs": [],
+   "parties": [],
+   "seats": [
+    "Negeri Sembilan"
+   ],
+   "lang": "ms",
+   "score": 0.8,
+   "judge_reason": "Negeri Sembilan DUN crisis, Anwar appeal",
+   "judged_by": "deepseek",
+   "judge_model": "deepseek-chat"
+  },
+  {
+   "query": "Anwar government",
+   "title": "Since when do allocations go to MPs, asks Anwar",
+   "desc": "&lt;a href=\"https://news.google.com/rss/articles/CBMiqwFBVV95cUxOQlV2a1BDT1NhRE9QVU93eldLMG1WbXg3c2FTY3lKZlplRWNPWHBVZ0hUZFlVSHlpaW5OQldQV0ZqbnJ3LXFieS02R2lyaDZJUjFsWGphYkFERzRUZHBTYU8yTnhhTk4zMmRsb19fSkdKbTY5OTBWYUhaakE1UlFsOFpLWnVtUnNQbHBLTmlOakdtemd1NjgydjBFZ3lXNE0zaEdBMmNWb1BWeGs?oc=5\" target=\"_blank\"&gt;Since when do allocations go to MPs, asks Anwar&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font colo",
+   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOQlV2a1BDT1NhRE9QVU93eldLMG1WbXg3c2FTY3lKZlplRWNPWHBVZ0hUZFlVSHlpaW5OQldQV0ZqbnJ3LXFieS02R2lyaDZJUjFsWGphYkFERzRUZHBTYU8yTnhhTk4zMmRsb19fSkdKbTY5OTBWYUhaakE1UlFsOFpLWnVtUnNQbHBLTmlOakdtemd1NjgydjBFZ3lXNE0zaEdBMmNWb1BWeGs?oc=5",
+   "date": "2026-08-07T07:00:00+00:00",
+   "source": "Free Malaysia Today",
+   "found_at": "2026-09-26T05:37:57+00:00",
+   "channel": "google-news",
+   "collection_id": "2026-09-26T05:37:57+00:00",
+   "category": "fiscal-federal",
+   "blocs": [],
+   "parties": [],
+   "seats": [],
+   "lang": "en",
+   "score": 0.7,
+   "judge_reason": "Anwar on MP allocations",
+   "judged_by": "deepseek",
+   "judge_model": "deepseek-chat"
+  },
+  {
+   "query": "GE16 Malaysia",
+   "title": "Bursa braces for volatility as GE16 speculation rises",
+   "desc": "&lt;a href=\"https://news.google.com/rss/articles/CBMipwFBVV95cUxNb19CQmNBS053VG05RWxSbFh0VHViT29Fek1BNFRqQW1sMkF5UWJ4V0dsZGptUE1qVzlCdXJ6amszemFab3hHcVJtVVhwcURkRDNVcnNaSnhyRUlIU2daQkhKdllVU1BPWXdMX2l2T0hsTG9nN1J3X2Jyd056d1FDNFpWWmE2ZVRfNUVDZG1wd0NJTjBKNnpfZzlNTXdwa19ZeXJwM0FXYw?oc=5\" target=\"_blank\"&gt;Bursa braces for volatility as GE16 speculation rises&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font col",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNb19CQmNBS053VG05RWxSbFh0VHViT29Fek1BNFRqQW1sMkF5UWJ4V0dsZGptUE1qVzlCdXJ6amszemFab3hHcVJtVVhwcURkRDNVcnNaSnhyRUlIU2daQkhKdllVU1BPWXdMX2l2T0hsTG9nN1J3X2Jyd056d1FDNFpWWmE2ZVRfNUVDZG1wd0NJTjBKNnpfZzlNTXdwa19ZeXJwM0FXYw?oc=5",
+   "date": "2026-07-15T07:00:00+00:00",
+   "source": "NST Online",
+   "found_at": "2026-09-26T05:37:57+00:00",
+   "channel": "google-news",
+   "collection_id": "2026-09-26T05:37:57+00:00",
+   "category": "election-timing",
+   "blocs": [],
+   "parties": [],
+   "seats": [],
+   "lang": "en",
+   "score": 0.7,
+   "judge_reason": "GE16 speculation affects Bursa",
+   "judged_by": "deepseek",
+   "judge_model": "deepseek-chat"
+  },
+  {
+   "query": "undi Malaysia",
+   "title": "Johor polls on July 11, Negeri Sembilan polls on Aug 1",
+   "desc": "&lt;a href=\"https://news.google.com/rss/articles/CBMitAFBVV95cUxQYWctWWlZdnlKWmlKYWpQd1BYR0ZlNVFDZzF2Q2VDOWRQUmdWcnBlTjhuQ3FJV2pwY21OOXNQbTdLR0Fzanc4QUxIcXNqaWtRdnVBeHVrYU4wTW5CSXZhWWY2b1VESnh1dHBFai1PMnJtNTAxQ1R6Z1BQMUptLW1qWktHemlMM3g3NG1OaGhGMFBxVUlsMVJGUDdLUUFKcGhVUEE4cXJKRUlIbDhYLUh3SDZCaW0?oc=5\" target=\"_blank\"&gt;Johor polls on July 11, Negeri Sembilan polls on Aug 1&lt;/a&gt;&amp;nbsp;&amp",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQYWctWWlZdnlKWmlKYWpQd1BYR0ZlNVFDZzF2Q2VDOWRQUmdWcnBlTjhuQ3FJV2pwY21OOXNQbTdLR0Fzanc4QUxIcXNqaWtRdnVBeHVrYU4wTW5CSXZhWWY2b1VESnh1dHBFai1PMnJtNTAxQ1R6Z1BQMUptLW1qWktHemlMM3g3NG1OaGhGMFBxVUlsMVJGUDdLUUFKcGhVUEE4cXJKRUlIbDhYLUh3SDZCaW0?oc=5",
+   "date": "2026-06-12T07:00:00+00:00",
+   "source": "Free Malaysia Today",
+   "found_at": "2026-09-26T05:37:57+00:00",
+   "channel": "google-news",
+   "collection_id": "2026-09-26T05:37:57+00:00",
+   "category": "election-timing",
+   "blocs": [],
+   "parties": [],
+   "seats": [
+    "Johor",
+    "Negeri Sembilan"
+   ],
+   "lang": "en",
+   "score": 0.9,
+   "judge_reason": "EC sets Johor, N9 poll dates",
+   "judged_by": "deepseek",
+   "judge_model": "deepseek-chat"
+  },
+  {
+   "query": "GE16 Malaysia",
+   "title": "PH needs a drastic makeover to avert defeat in GE16",
+   "desc": "&lt;a href=\"https://news.google.com/rss/articles/CBMiswFBVV95cUxQLVBWaVU5NUF3ajBpb2d4Nm1Ic1BzaWVLRm5KbjVzeGQ5OVNnOXoxNDJ3bTFnRkNyZGlHcEY2d29wcmtKcUItXzJJUjhGVmZzTC00SklsUE9xbExMVE5FMDFib2dVN1JnRFpNSElUSm5zaG9vdDlrYUk1cGozS05IcTlXeU5iQldvWDRwVkdRVXlWR1JKaXhsS1EyZVIxekJXWHJMQk0zUTJjVG5qOERfZGxBYw?oc=5\" target=\"_blank\"&gt;PH needs a drastic makeover to avert defeat in GE16&lt;/a&gt;&amp;nbsp;&amp;nbs",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQLVBWaVU5NUF3ajBpb2d4Nm1Ic1BzaWVLRm5KbjVzeGQ5OVNnOXoxNDJ3bTFnRkNyZGlHcEY2d29wcmtKcUItXzJJUjhGVmZzTC00SklsUE9xbExMVE5FMDFib2dVN1JnRFpNSElUSm5zaG9vdDlrYUk1cGozS05IcTlXeU5iQldvWDRwVkdRVXlWR1JKaXhsS1EyZVIxekJXWHJMQk0zUTJjVG5qOERfZGxBYw?oc=5",
+   "date": "2026-08-07T07:00:00+00:00",
+   "source": "Free Malaysia Today",
+   "found_at": "2026-09-26T05:37:57+00:00",
+   "channel": "google-news",
+   "collection_id": "2026-09-26T05:37:57+00:00",
+   "category": "analysis",
+   "blocs": [
+    "PH"
+   ],
+   "parties": [],
+   "seats": [],
+   "lang": "en",
+   "score": 0.9,
+   "judge_reason": "PH GE16 strategy analysis",
+   "judged_by": "deepseek",
+   "judge_model": "deepseek-chat"
+  },
+  {
+   "query": "Malaysia parliament",
+   "title": "Bill on PM term cap misses current Parliament sitting",
+   "desc": "&lt;a href=\"https://news.google.com/rss/articles/CBMiUEFVX3lxTE9RcE5fR1F1M1liUkp5aVpQMEFjaTBwNmM3U2l6VDNlT2NJVmpEQk9QQ0hSOXN2UG9XZTF2UlVTdHJpQ00zalpjTHRCc0FNUUJC?oc=5\" target=\"_blank\"&gt;Bill on PM term cap misses current Parliament sitting&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;The Edge Malaysia&lt;/font&gt;",
+   "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9RcE5fR1F1M1liUkp5aVpQMEFjaTBwNmM3U2l6VDNlT2NJVmpEQk9QQ0hSOXN2UG9XZTF2UlVTdHJpQ00zalpjTHRCc0FNUUJC?oc=5",
+   "date": "2026-07-15T07:00:00+00:00",
+   "source": "The Edge Malaysia",
+   "found_at": "2026-09-26T05:37:57+00:00",
+   "channel": "google-news",
+   "collection_id": "2026-09-26T05:37:57+00:00",
+   "category": "legal",
+   "blocs": [],
+   "parties": [],
+   "seats": [],
+   "lang": "en",
+   "score": 0.8,
+   "judge_reason": "PM term cap bill, Parliament",
+   "judged_by": "deepseek",
+   "judge_model": "deepseek-chat"
+  },
+  {
+   "query": "undi Malaysia",
+   "title": "Johor And Negeri Sembilan Head To The Polls As EC Sets Voting Dates - TRP | The Rakyat Post",
+   "desc": "&lt;a href=\"https://news.google.com/rss/articles/CBMitAFBVV95cUxOWDlMYUFWZ3lja011Z0MxWV85cGFCdVMzT2dNaUVBTXljbm5VcGdEalZYRDNKNEFIc3NUanBRQXl0d0s0Yld2MlN2N3RvLU9KTG04eDU4d3BzcExvRU4yaThlUGpmRkR0dlRKdTkxMjl5T3FuN2NITFhGOHZZTnpWQVdOWjNpaVI2Mm96MTR4MWJXUl9LX3V3dTNqX2ZMVGhRWlhGVmpaelRiTkN3RWdQOTFRc0g?oc=5\" target=\"_blank\"&gt;Johor And Negeri Sembilan Head To The Polls As EC Sets Voting Dates&lt;/a&gt;&",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOWDlMYUFWZ3lja011Z0MxWV85cGFCdVMzT2dNaUVBTXljbm5VcGdEalZYRDNKNEFIc3NUanBRQXl0d0s0Yld2MlN2N3RvLU9KTG04eDU4d3BzcExvRU4yaThlUGpmRkR0dlRKdTkxMjl5T3FuN2NITFhGOHZZTnpWQVdOWjNpaVI2Mm96MTR4MWJXUl9LX3V3dTNqX2ZMVGhRWlhGVmpaelRiTkN3RWdQOTFRc0g?oc=5",
+   "date": "2026-06-12T07:00:00+00:00",
+   "source": "Google News",
+   "found_at": "2026-09-26T05:37:57+00:00",
+   "channel": "google-news",
+   "collection_id": "2026-09-26T05:37:57+00:00",
+   "category": "election-timing",
+   "blocs": [],
+   "parties": [],
+   "seats": [
+    "Johor",
+    "Negeri Sembilan"
+   ],
+   "lang": "en",
+   "score": 0.9,
+   "judge_reason": "EC sets state poll dates",
+   "judged_by": "deepseek",
+   "judge_model": "deepseek-chat"
+  },
+  {
+   "query": "undi Malaysia",
+   "title": "Ridhuan Tee Says One DAP Resignation Is Not Enough, Then Called Them Enemies Of Islam - TRP | The Rakyat Post",
+   "desc": "&lt;a href=\"https://news.google.com/rss/articles/CBMi1wFBVV95cUxOU1FDS3hRV3Vtems3WWRmSWRxNk1LdFByS2MxMjBPNHlQNTZ0VElUUUNVUUZzY21qYldWczYyemZ1Uk1GUlFWYzFadEhhNWVOZ1JXU3BiM2JCTi16dzE3N0RaRmNhOC1HNGZvS3dxdF80dlpobGlyS19CRHFNaGZ4U3lHSnBuWmUwTmM0VjAzU0VxNUw3eVFCc0JnM0N1NjhZUXpsc3JaUE5LSlVSNmJpbkZ1cUZOaFU4QXdjZzN0ZGJtV3lMRHNzWk9aYUNobFlsdmJuUUNzOA?oc=5\" target=\"_blank\"&gt;Ridhuan Tee Says One DAP Resign",
+   "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOU1FDS3hRV3Vtems3WWRmSWRxNk1LdFByS2MxMjBPNHlQNTZ0VElUUUNVUUZzY21qYldWczYyemZ1Uk1GUlFWYzFadEhhNWVOZ1JXU3BiM2JCTi16dzE3N0RaRmNhOC1HNGZvS3dxdF80dlpobGlyS19CRHFNaGZ4U3lHSnBuWmUwTmM0VjAzU0VxNUw3eVFCc0JnM0N1NjhZUXpsc3JaUE5LSlVSNmJpbkZ1cUZOaFU4QXdjZzN0ZGJtV3lMRHNzWk9aYUNobFlsdmJuUUNzOA?oc=5",
+   "date": "2026-09-21T03:54:38+00:00",
+   "source": "Google News",
+   "found_at": "2026-09-26T05:37:57+00:00",
+   "channel": "google-news",
+   "collection_id": "2026-09-26T05:37:57+00:00",
+   "category": "coalition",
+   "blocs": [
+    "PH"
+   ],
+   "parties": [
+    "DAP"
+   ],
+   "seats": [],
+   "lang": "en",
+   "score": 0.6,
+   "judge_reason": "DAP resignations, political commentary",
+   "judged_by": "deepseek",
+   "judge_model": "deepseek-chat"
+  },
+  {
+   "query": "Perikatan Nasional",
+   "title": "Perikatan and BN in negotiations for Melaka, Hadi says goal remains to ‘unite and save the Malays’",
+   "desc": "&lt;a href=\"https://news.google.com/rss/articles/CBMi5AFBVV95cUxPcmw2UlZEeDV0cmVHTDdmZTNVLWs5QXFBMXBqREtqUDFHd3VMeDl5ZEtqd1cyS19ETkd6ZEFrRVlCT2dlUlgxc25mWnlFSWRJNm9PSzJjUElSZ1hhWGI2WFNqbDYzbldHQndILUZVcTZOT0JjWWttVElIUzBOXzJrZGN1N0F4NGpSWjVSRWF3X00wbEhOQXBRMXBhT2JIWGVETXIzYkZWQ1ZlZXZXRlhERDczcXdtb3UwbjBEYkFCWjNyTTJfZlBwbkE5LWJmUUdpNTcwS29vV0NJYWVMQkVYTjY3ZDbSAeoBQVVfeXFMTl9SSDcxRy1neVNwb1dMdXZFSFd",
+   "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPcmw2UlZEeDV0cmVHTDdmZTNVLWs5QXFBMXBqREtqUDFHd3VMeDl5ZEtqd1cyS19ETkd6ZEFrRVlCT2dlUlgxc25mWnlFSWRJNm9PSzJjUElSZ1hhWGI2WFNqbDYzbldHQndILUZVcTZOT0JjWWttVElIUzBOXzJrZGN1N0F4NGpSWjVSRWF3X00wbEhOQXBRMXBhT2JIWGVETXIzYkZWQ1ZlZXZXRlhERDczcXdtb3UwbjBEYkFCWjNyTTJfZlBwbkE5LWJmUUdpNTcwS29vV0NJYWVMQkVYTjY3ZDbSAeoBQVVfeXFMTl9SSDcxRy1neVNwb1dMdXZFSFdHZ0ZOa0VFa09DTVZYYWlreXU1X25HdnRTenlMNHk0WS02TFRGNFhfblExRDZqUVFIZEQxbWRxWUNvM1NxSHZmN2xzbnNrLVpmVnVXdGxkWmlGZmNGXzNPeXNhMWs3enZfSXlacHhyOXZPVEMyVUQ2Smh0eVZ2NWdiQnZaQlhMQ0E3TUdWS0NIR2lmNmlWVGFsY2lhbEJoaU50YnM4clhNcGtKaW9zYjBLSTVDMm05Ri0tZTkxbDJCZmN5V1otTy15TGQtdENtZzlBaFBsOVNB?oc=5",
+   "date": "2026-08-07T07:00:00+00:00",
+   "source": "Malay Mail",
+   "found_at": "2026-09-26T05:37:57+00:00",
+   "channel": "google-news",
+   "collection_id": "2026-09-26T05:37:57+00:00",
+   "category": "coalition",
+   "blocs": [
+    "PN",
+    "BN"
+   ],
+   "parties": [],
+   "seats": [
+    "Melaka"
+   ],
+   "lang": "en",
+   "score": 0.9,
+   "judge_reason": "PN-BN Melaka negotiations",
+   "judged_by": "deepseek",
+   "judge_model": "deepseek-chat"
+  },
+  {
+   "query": "Barisan Nasional",
+   "title": "BN unlikely to replace poster boy after Johor polls this time, says former MB",
+   "desc": "&lt;a href=\"https://news.google.com/rss/articles/CBMixAFBVV95cUxPNlRrM3pocnJ6ZEtFY1d5Q0NOY2dmczdUTlp0bHhrcHhOUUdKRTdCSjBnNU10aThpNlZjUVJzdDI5SFRGRXZlZ3ViNlpSUkJYOURoOXRPbldMcnhOdXhIRWsydEtSbHNKcnYyR3VTd21CaDNJT2dGbGE4RkEtYjNCWWFrX0F6ZmFfLWVBT2trRVJvdW9kdF9GM1B5QVJwdzZYbFppRkJrdGxlZGExakZJVTlUQTlxTlB2dmdMR2hfc1NDTXg3?oc=5\" target=\"_blank\"&gt;BN unlikely to replace poster boy after Johor polls this ",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPNlRrM3pocnJ6ZEtFY1d5Q0NOY2dmczdUTlp0bHhrcHhOUUdKRTdCSjBnNU10aThpNlZjUVJzdDI5SFRGRXZlZ3ViNlpSUkJYOURoOXRPbldMcnhOdXhIRWsydEtSbHNKcnYyR3VTd21CaDNJT2dGbGE4RkEtYjNCWWFrX0F6ZmFfLWVBT2trRVJvdW9kdF9GM1B5QVJwdzZYbFppRkJrdGxlZGExakZJVTlUQTlxTlB2dmdMR2hfc1NDTXg3?oc=5",
+   "date": "2026-06-12T07:00:00+00:00",
+   "source": "The Star",
+   "found_at": "2026-09-26T05:37:57+00:00",
+   "channel": "google-news",
+   "collection_id": "2026-09-26T05:37:57+00:00",
+   "category": "campaign",
+   "blocs": [
+    "BN"
+   ],
+   "parties": [],
+   "seats": [
+    "Johor"
+   ],
+   "lang": "en",
+   "score": 0.8,
+   "judge_reason": "BN Johor polls candidate talk",
+   "judged_by": "deepseek",
+   "judge_model": "deepseek-chat"
+  },
+  {
+   "query": "Anwar government",
+   "title": "Anwar says not briefed on DAP reps who quit Melaka state govt",
+   "desc": "&lt;a href=\"https://news.google.com/rss/articles/CBMiUEFVX3lxTE9nOVpwUXByX2tMZGxkY2lCelFKZlhpcTFNVk03R3J5aGFpcUFxMGFxS3pEUVdTam5Uc1JIenpvMk1Oenc3cmFpbU5yX2M3Y05y?oc=5\" target=\"_blank\"&gt;Anwar says not briefed on DAP reps who quit Melaka state govt&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;The Edge Malaysia&lt;/font&gt;",
+   "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9nOVpwUXByX2tMZGxkY2lCelFKZlhpcTFNVk03R3J5aGFpcUFxMGFxS3pEUVdTam5Uc1JIenpvMk1Oenc3cmFpbU5yX2M3Y05y?oc=5",
+   "date": "2026-07-15T07:00:00+00:00",
+   "source": "The Edge Malaysia",
+   "found_at": "2026-09-26T05:37:57+00:00",
+   "channel": "google-news",
+   "collection_id": "2026-09-26T05:37:57+00:00",
+   "category": "coalition",
+   "blocs": [
+    "PH"
+   ],
+   "parties": [
+    "DAP"
+   ],
+   "seats": [
+    "Melaka"
+   ],
+   "lang": "en",
+   "score": 0.8,
+   "judge_reason": "DAP reps quit Melaka govt",
+   "judged_by": "deepseek",
+   "judge_model": "deepseek-chat"
+  },
+  {
+   "query": "Perikatan Nasional",
+   "title": "We are the biggest party in Perikatan: PAS leader tells Bersatu",
+   "desc": "&lt;a href=\"https://news.google.com/rss/articles/CBMisgFBVV95cUxNbDVJRVowWjlfZlJRTmZzRTExeTk5dlBDZUN4Wi1vYlc2VTJNWFFiSlc1MVpWNDN3QWVvRHdrNm1YeVZTTkR0X0N4VGlZT0x2S1J0U0RKLWVBSm1RYVZtVzU4a0RyVklxMnB5V1lrM1FsemEyblY1NUVWUC10X0tpSm5TSkdPUF9BX3FOYXBIb2tjSDE5M1BwX054bE9hcDVSSG8wNkF4ZC1yaUs3RGdnNWV3?oc=5\" target=\"_blank\"&gt;We are the biggest party in Perikatan: PAS leader tells Bersatu&lt;/a&gt;&amp;nbs",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNbDVJRVowWjlfZlJRTmZzRTExeTk5dlBDZUN4Wi1vYlc2VTJNWFFiSlc1MVpWNDN3QWVvRHdrNm1YeVZTTkR0X0N4VGlZT0x2S1J0U0RKLWVBSm1RYVZtVzU4a0RyVklxMnB5V1lrM1FsemEyblY1NUVWUC10X0tpSm5TSkdPUF9BX3FOYXBIb2tjSDE5M1BwX054bE9hcDVSSG8wNkF4ZC1yaUs3RGdnNWV3?oc=5",
+   "date": "2026-06-11T07:00:00+00:00",
+   "source": "The Star",
+   "found_at": "2026-09-26T05:37:57+00:00",
+   "channel": "google-news",
+   "collection_id": "2026-09-26T05:37:57+00:00",
+   "category": "coalition",
+   "blocs": [
+    "PN"
+   ],
+   "parties": [
+    "PAS",
+    "Bersatu"
+   ],
+   "seats": [],
+   "lang": "en",
+   "score": 0.9,
+   "judge_reason": "PAS-Bersatu Perikatan dominance dispute",
+   "judged_by": "deepseek",
+   "judge_model": "deepseek-chat"
+  },
+  {
+   "query": "GE16 Malaysia",
+   "title": "Johor is a wake-up call for PH, not a prediction of GE16",
+   "desc": "&lt;a href=\"https://news.google.com/rss/articles/CBMiiAFBVV95cUxQQ3VhcWtSWUpDaXNJemxSNWdXaUR4V25STjhJTzJCSEVqMUI1bS0zUTB2bTVRS2RlUG4wcUY3RWhJOHdicy12cWFNWkVjckZXUW9GYy1wQ2RFTHZRMlo3b29IdE1jVTZ5QlFPemNzR08zZDJkNmpNakpPUEViTmxBUUZHRFB0THFX?oc=5\" target=\"_blank\"&gt;Johor is a wake-up call for PH, not a prediction of GE16&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;Focus Malaysia&lt;/font",
+   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQQ3VhcWtSWUpDaXNJemxSNWdXaUR4V25STjhJTzJCSEVqMUI1bS0zUTB2bTVRS2RlUG4wcUY3RWhJOHdicy12cWFNWkVjckZXUW9GYy1wQ2RFTHZRMlo3b29IdE1jVTZ5QlFPemNzR08zZDJkNmpNakpPUEViTmxBUUZHRFB0THFX?oc=5",
+   "date": "2026-07-14T10:25:52+00:00",
+   "source": "Focus Malaysia",
+   "found_at": "2026-09-26T05:37:57+00:00",
+   "channel": "google-news",
+   "collection_id": "2026-09-26T05:37:57+00:00",
+   "category": "analysis",
+   "blocs": [
+    "PH"
+   ],
+   "parties": [],
+   "seats": [
+    "Johor"
+   ],
+   "lang": "en",
+   "score": 0.9,
+   "judge_reason": "Johor polls analysis for PH, GE16",
+   "judged_by": "deepseek",
+   "judge_model": "deepseek-chat"
+  },
+  {
+   "query": "Malaysia politics",
+   "title": "In Malaysia, Nurul Izzah’s PKR exit deepens questions over Anwar’s leadership",
+   "desc": "&lt;a href=\"https://news.google.com/rss/articles/CBMixgFBVV95cUxNRmxNY0N6emxfRlQ5OXhSZVZERUpiWHdnZWhtdkdLYlFxMlJDNnB2d1pTY3l2X0NkVFV2MUlPVDQ1Z1VjNlB2V2FvTUd5WUhMekFOTS10YVdlMzFUMUQ4SnNYTTI1VGRpbU5OZ2JpeFhrRlllMTg5ZFZSR1ZrOVBPV3RUVVZ2QmZFbTA2YVVBTV9hZG5TVUdRM3RkMnBJOFZhVnFMRlRISEZfZFdTSWxMX0lyU3J6dXBsZE9HZHl4NC1DTXE1WGfSAcYBQVVfeXFMUFIyRVlFNkFXd1dhc2tzVUZhTVgzMmZOcWkwTUZYcW85eGluQzR2YUJsRDhlRllqS1M",
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNRmxNY0N6emxfRlQ5OXhSZVZERUpiWHdnZWhtdkdLYlFxMlJDNnB2d1pTY3l2X0NkVFV2MUlPVDQ1Z1VjNlB2V2FvTUd5WUhMekFOTS10YVdlMzFUMUQ4SnNYTTI1VGRpbU5OZ2JpeFhrRlllMTg5ZFZSR1ZrOVBPV3RUVVZ2QmZFbTA2YVVBTV9hZG5TVUdRM3RkMnBJOFZhVnFMRlRISEZfZFdTSWxMX0lyU3J6dXBsZE9HZHl4NC1DTXE1WGfSAcYBQVVfeXFMUFIyRVlFNkFXd1dhc2tzVUZhTVgzMmZOcWkwTUZYcW85eGluQzR2YUJsRDhlRllqS1M2dDJiOWI1SnQwMWVWOEhmX3NTTVpVSG1OXzQyUEZCSHpfeFhYQlhNMnB4NjhPOFNqcGhlem4yVjQ1NlI0TnNlWE9DN212c3Z3SHhXS2xZc3dTd2hZV3lsd1RPa0pYQmc5dHBzS3NtNzh1N2REbGZWbndJblg4aWVWZjRzZXZkNVlXRXRzeENpLTUxN1d3?oc=5",
+   "date": "2026-08-07T07:00:00+00:00",
+   "source": "South China Morning Post",
+   "found_at": "2026-09-26T05:37:57+00:00",
+   "channel": "google-news",
+   "collection_id": "2026-09-26T05:37:57+00:00",
+   "category": "candidate",
+   "blocs": [
+    "PH"
+   ],
+   "parties": [
+    "PKR"
+   ],
+   "seats": [],
+   "lang": "en",
+   "score": 0.9,
+   "judge_reason": "Nurul Izzah PKR exit, Anwar leadership",
+   "judged_by": "deepseek",
+   "judge_model": "deepseek-chat"
+  },
+  {
+   "query": "Anwar government",
+   "title": "‘Give us the time under the mandate,’ Anwar says as pressure mounts for early GE16 after Johor polls",
+   "desc": "&lt;a href=\"https://news.google.com/rss/articles/CBMi6wFBVV95cUxPdERfSWhjb0dMZi1GTTZ3RE13T3J4d0ZxZ0hvdEtvZEJzeUU2ZUZoYjRsanhMYjVQTTd1QjRVajFGOEhQSXlqZlVpS004RHprZHROMVVTRkNhbDRpNkZzX3N1akt3TE9OVmljbWJwZ3psOVRvNVNycDZPbmExeDRJZDhOQnlFNUZ6bzdzQ3oxZS1QYTBNdjlMdEVxMEE0VXpVODI1NU53Ym1PWVpuYUlSZDNscTNLSWJzUm5TNTdCamxvalV6VFBDWGxjUFNMWXB4a0F2el9IdkpYeW5nQkVUa1JpRXlVeHZWRG9B0gHwAUFVX3lxTE1iN2d1VWNGcW44c1J",
+   "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPdERfSWhjb0dMZi1GTTZ3RE13T3J4d0ZxZ0hvdEtvZEJzeUU2ZUZoYjRsanhMYjVQTTd1QjRVajFGOEhQSXlqZlVpS004RHprZHROMVVTRkNhbDRpNkZzX3N1akt3TE9OVmljbWJwZ3psOVRvNVNycDZPbmExeDRJZDhOQnlFNUZ6bzdzQ3oxZS1QYTBNdjlMdEVxMEE0VXpVODI1NU53Ym1PWVpuYUlSZDNscTNLSWJzUm5TNTdCamxvalV6VFBDWGxjUFNMWXB4a0F2el9IdkpYeW5nQkVUa1JpRXlVeHZWRG9B0gHwAUFVX3lxTE1iN2d1VWNGcW44c1JYanlrN0Q1RjAxS0hDNDNiUTZHdWRUb0hLSVU4RkdYb1lHM0hOU0tINTU1eGdfQlVPbm1jNzVvODdaNDgtbE1WT0xOamJvV1F6c0piQ21vak5pWXVkUnU0VlhPZzBpOVVmcW4tbnV2VVJPb0lZbnZqMFl2LVNJLVhXaVdmTWIxRVFTY2tPR1NvRTVmVF9xT3FCakcwSVpURFdnR0ZmNkhkejdWYmR4Y2I2RmJ1Qy1oMk9DZTU3bDFBVWJQbWFQMWtjb0hIekdGbkRyVkczaklVQ3ZuMVM5a3ZvczhZTQ?oc=5",
+   "date": "2026-07-14T07:00:00+00:00",
+   "source": "Malay Mail",
+   "found_at": "2026-09-26T05:37:57+00:00",
+   "channel": "google-news",
+   "collection_id": "2026-09-26T05:37:57+00:00",
+   "category": "election-timing",
+   "blocs": [
+    "PH"
+   ],
+   "parties": [],
+   "seats": [
+    "Johor"
+   ],
+   "lang": "en",
+   "score": 0.9,
+   "judge_reason": "Anwar on early GE16 pressure",
+   "judged_by": "deepseek",
+   "judge_model": "deepseek-chat"
+  },
+  {
+   "query": "PRU16",
+   "title": "Bersatu-PH tie-up a possibility as coalition seeks Malay support, analyst says - thevibes.com",
+   "desc": "&lt;a href=\"https://news.google.com/rss/articles/CBMiwAFBVV95cUxPaFFBOERsQ0wzX0MzZFR3VGh5RTFGdFJVdVBXX0J5NWtEdjZ4QkFLY3BZMHJtUjgwdkhKVEozZHpScXJlc183aTI1eHg4SVhCRERzOGxuZURtaDlwR2RsT0cteFQ3NEFLb0FwTExqcVFvQWwxZ3A5MXVxcTdkYl9Ga0ZiNEt5ZHd0ZXUwaXhoTnFoS0d2dkg4SnUxV1JSUWczYTU4V1JTQzFiNlBybEROcl93dGNEWEd6VGI3V0ktV2s?oc=5\" target=\"_blank\"&gt;Bersatu-PH tie-up a possibility as coalition seeks Malay suppo",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPaFFBOERsQ0wzX0MzZFR3VGh5RTFGdFJVdVBXX0J5NWtEdjZ4QkFLY3BZMHJtUjgwdkhKVEozZHpScXJlc183aTI1eHg4SVhCRERzOGxuZURtaDlwR2RsT0cteFQ3NEFLb0FwTExqcVFvQWwxZ3A5MXVxcTdkYl9Ga0ZiNEt5ZHd0ZXUwaXhoTnFoS0d2dkg4SnUxV1JSUWczYTU4V1JTQzFiNlBybEROcl93dGNEWEd6VGI3V0ktV2s?oc=5",
+   "date": "2026-06-11T07:00:00+00:00",
+   "source": "Google News",
+   "found_at": "2026-09-26T05:37:57+00:00",
+   "channel": "google-news",
+   "collection_id": "2026-09-26T05:37:57+00:00",
+   "category": "coalition",
+   "blocs": [
+    "PN",
+    "PH"
+   ],
+   "parties": [
+    "Bersatu"
+   ],
+   "seats": [],
+   "lang": "en",
+   "score": 0.8,
+   "judge_reason": "Bersatu-PH tie-up speculation",
+   "judged_by": "deepseek",
+   "judge_model": "deepseek-chat"
+  },
+  {
+   "query": "GN:malaysiakini",
+   "title": "From Brunei to Italy, Najib's RM50m fine draws donors from far and wide, says Rosmah",
+   "desc": "&lt;a href=\"https://news.google.com/rss/articles/CBMivwFBVV95cUxNMTlrdzdQQzF3M3JKMWgwLWVVSTRMYkRXVkk1NGFzT1pVT1RqWVBWY0EzTFFJdlExRkVaWExiNjl6UTdpVlRiNDFVNV9Danh6ZWJWblQ0aXdrUUlSM3FyLVA1NGl2NmRjOV9lRzFjdWVhTTBlWlJQbDh3S3MtTXdIeHN2ZngwZmk1WjZzLWJrMjVma3dNSW1OQmVFdlpmY0MtTGx3blBSXzQtcUY0NG5HczlVX0tqZUMzTE1QUHVfSQ?oc=5\" target=\"_blank\"&gt;From Brunei to Italy, Najib's RM50m fine draws donors from far ",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNMTlrdzdQQzF3M3JKMWgwLWVVSTRMYkRXVkk1NGFzT1pVT1RqWVBWY0EzTFFJdlExRkVaWExiNjl6UTdpVlRiNDFVNV9Danh6ZWJWblQ0aXdrUUlSM3FyLVA1NGl2NmRjOV9lRzFjdWVhTTBlWlJQbDh3S3MtTXdIeHN2ZngwZmk1WjZzLWJrMjVma3dNSW1OQmVFdlpmY0MtTGx3blBSXzQtcUY0NG5HczlVX0tqZUMzTE1QUHVfSQ?oc=5",
+   "date": "2026-09-21T03:04:00+00:00",
+   "source": "Malaysiakini",
+   "found_at": "2026-09-26T05:37:57+00:00",
+   "channel": "google-news",
+   "collection_id": "2026-09-26T05:37:57+00:00",
+   "category": "legal",
+   "blocs": [
+    "BN"
+   ],
+   "parties": [
+    "UMNO"
+   ],
+   "seats": [],
+   "lang": "en",
+   "score": 0.6,
+   "judge_reason": "Najib fine donors, political angle",
+   "judged_by": "deepseek",
+   "judge_model": "deepseek-chat"
+  },
+  {
+   "query": "Perikatan Nasional",
+   "title": "Hadi says Bersatu no longer part of Perikatan after plans for new coalition",
+   "desc": "&lt;a href=\"https://news.google.com/rss/articles/CBMizgFBVV95cUxOZXJmenIxdHZUM2c1M1FOelA1Rnk2R1FSdTFsOVpjTTM1ZFhxdlBFY2xIVG1IcTFtQS1SOGZYODlQRm5IelNYRjVHTy1lTjNtN2lvYzBfRWVmWUQ0V0ZtMU9CeTE3ekV4SUZQSjJaUEF1dkRrN1M2Ti1YeUJ0WTZYWXF6R2Y4U0Y3R1ZGRm11blJtTFhFY055MS02UjNMZUFPaGc2SFpLRUpqb3J0VngtbXg5amh5NklEbDBacmxTT3dFbllFbU5mOTl3ajc1Z9IB0wFBVV95cUxNb3lRTjdUZFdBU2VjUFBiLW45VGZjTVFqRmtkb1NsRllQMUtHMHRVS3Z",
+   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOZXJmenIxdHZUM2c1M1FOelA1Rnk2R1FSdTFsOVpjTTM1ZFhxdlBFY2xIVG1IcTFtQS1SOGZYODlQRm5IelNYRjVHTy1lTjNtN2lvYzBfRWVmWUQ0V0ZtMU9CeTE3ekV4SUZQSjJaUEF1dkRrN1M2Ti1YeUJ0WTZYWXF6R2Y4U0Y3R1ZGRm11blJtTFhFY055MS02UjNMZUFPaGc2SFpLRUpqb3J0VngtbXg5amh5NklEbDBacmxTT3dFbllFbU5mOTl3ajc1Z9IB0wFBVV95cUxNb3lRTjdUZFdBU2VjUFBiLW45VGZjTVFqRmtkb1NsRllQMUtHMHRVS3ZVQ0locUpaRmFYbllCbnpTUE9VTkpsZlpXa25kODR1d1Nsb3AxZlFxc1NUN29BRW11VnBLTTFwVEVIanlkYzN3OHRsZE9iVUdOQ1VabV9uRlBFZXRDejhaak5qRmJfWW0xbG9MeDNrWEU2dlBDenBsTlZUVTZvOHZ2LUdhNUNGYnhlT1RYWVNTZlVzSEFKTmotOXRYYjd1Q0hFRzM2ZEluQzAw?oc=5",
+   "date": "2026-08-07T07:00:00+00:00",
+   "source": "Malay Mail",
+   "found_at": "2026-09-26T05:37:57+00:00",
+   "channel": "google-news",
+   "collection_id": "2026-09-26T05:37:57+00:00",
+   "category": "coalition",
+   "blocs": [
+    "PN"
+   ],
+   "parties": [
+    "PAS",
+    "Bersatu"
+   ],
+   "seats": [],
+   "lang": "en",
+   "score": 0.9,
+   "judge_reason": "Hadi says Bersatu out of Perikatan",
+   "judged_by": "deepseek",
+   "judge_model": "deepseek-chat"
+  },
+  {
+   "query": "Dewan Rakyat",
+   "title": "Pas seeks Dewan Rakyat debate on Forest City Network School",
+   "desc": "&lt;a href=\"https://news.google.com/rss/articles/CBMiqwFBVV95cUxPVTZqZHlZLThPOVFIZkNNNTBJNHJkY1h6UVU0RXJITkpfdzdtN3ZVUEpLVlo3VEpOU09ETUIxSHBvaWVfWjJYMHBnWklXbVNjVFZkM1NjTDNuSDdtS0VMZllqVG1FWm5lLUdVTGRFVHdYTERpRWNXMXF3WWpQOVFUdWhaUUFGZ0lpZTBqOUxsalNyaVlGMUJ3SkJvYlFGdDNrUDh1M2c2bElBQlk?oc=5\" target=\"_blank\"&gt;Pas seeks Dewan Rakyat debate on Forest City Network School&lt;/a&gt;&amp;nbsp;&amp;nbsp;&",
+   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPVTZqZHlZLThPOVFIZkNNNTBJNHJkY1h6UVU0RXJITkpfdzdtN3ZVUEpLVlo3VEpOU09ETUIxSHBvaWVfWjJYMHBnWklXbVNjVFZkM1NjTDNuSDdtS0VMZllqVG1FWm5lLUdVTGRFVHdYTERpRWNXMXF3WWpQOVFUdWhaUUFGZ0lpZTBqOUxsalNyaVlGMUJ3SkJvYlFGdDNrUDh1M2c2bElBQlk?oc=5",
+   "date": "2026-07-14T07:00:00+00:00",
+   "source": "NST Online",
+   "found_at": "2026-09-26T05:37:57+00:00",
+   "channel": "google-news",
+   "collection_id": "2026-09-26T05:37:57+00:00",
+   "category": "policy",
+   "blocs": [
+    "PN"
+   ],
+   "parties": [
+    "PAS"
+   ],
+   "seats": [],
+   "lang": "en",
+   "score": 0.7,
+   "judge_reason": "PAS seeks Dewan Rakyat debate",
+   "judged_by": "deepseek",
+   "judge_model": "deepseek-chat"
+  },
+  {
+   "query": "Perikatan Nasional",
+   "title": "We’re staying put in Perikatan, says Muhyiddin",
+   "desc": "&lt;a href=\"https://news.google.com/rss/articles/CBMimgFBVV95cUxPODA4aHkwMG91YnR5Z25nbDBnb2I3d3BCSG9laVc0SmZWeGk5SUZDVmJmdHg5RlNKWkFDWkh1ZG1SNHlKU3dFSTB2ZWIwNl9fTFAwR2hhRXhNck52V3B4X0poUWdmX2VDYkRudW1zTEhyV2JYWklUSzV0b2xoZnhoVmhPcF9FYUlncG5QOXJtOUJqVi05dHBUOHNR?oc=5\" target=\"_blank\"&gt;We’re staying put in Perikatan, says Muhyiddin&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;The Star&",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPODA4aHkwMG91YnR5Z25nbDBnb2I3d3BCSG9laVc0SmZWeGk5SUZDVmJmdHg5RlNKWkFDWkh1ZG1SNHlKU3dFSTB2ZWIwNl9fTFAwR2hhRXhNck52V3B4X0poUWdmX2VDYkRudW1zTEhyV2JYWklUSzV0b2xoZnhoVmhPcF9FYUlncG5QOXJtOUJqVi05dHBUOHNR?oc=5",
+   "date": "2026-06-10T07:00:00+00:00",
+   "source": "The Star",
+   "found_at": "2026-09-26T05:37:57+00:00",
+   "channel": "google-news",
+   "collection_id": "2026-09-26T05:37:57+00:00",
+   "category": "coalition",
+   "blocs": [
+    "PN"
+   ],
+   "parties": [
+    "Bersatu"
+   ],
+   "seats": [],
+   "lang": "en",
+   "score": 0.9,
+   "judge_reason": "Muhyiddin staying in Perikatan",
+   "judged_by": "deepseek",
+   "judge_model": "deepseek-chat"
+  },
+  {
+   "query": "GN:malaysiakini",
+   "title": "Loke to finish up work in China before settling resignation",
+   "desc": "&lt;a href=\"https://news.google.com/rss/articles/CBMiogFBVV95cUxQNEptVDlyTHJDdzczUXZUbktuOWtfWldFZjlQUDlZUWZBQ3o2eU5FYWdYYW00MERUYVRDOThjdHlJZVExNnpEUHRkX3hBM0dZdWFyOTdFdVd6S1dCWnRJNHUtc1RiUjlqc1VfbThpd3hxUlJtZlVJSjdxX3NHWE5ROFhTRUtIT01Ib0s3MVRtN3h6SEdwRTlndW1RQldybWhOS0E?oc=5\" target=\"_blank\"&gt;Loke to finish up work in China before settling resignation&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font colo",
+   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQNEptVDlyTHJDdzczUXZUbktuOWtfWldFZjlQUDlZUWZBQ3o2eU5FYWdYYW00MERUYVRDOThjdHlJZVExNnpEUHRkX3hBM0dZdWFyOTdFdVd6S1dCWnRJNHUtc1RiUjlqc1VfbThpd3hxUlJtZlVJSjdxX3NHWE5ROFhTRUtIT01Ib0s3MVRtN3h6SEdwRTlndW1RQldybWhOS0E?oc=5",
+   "date": "2026-09-21T02:37:00+00:00",
+   "source": "Malaysiakini",
+   "found_at": "2026-09-26T05:37:57+00:00",
+   "channel": "google-news",
+   "collection_id": "2026-09-26T05:37:57+00:00",
+   "category": "candidate",
+   "blocs": [
+    "PH"
+   ],
+   "parties": [
+    "DAP"
+   ],
+   "seats": [],
+   "lang": "en",
+   "score": 0.7,
+   "judge_reason": "Loke resignation, political",
+   "judged_by": "deepseek",
+   "judge_model": "deepseek-chat"
+  },
+  {
+   "query": "PRU16",
+   "title": "Gelombang biru BN PN berpotensi sapu 122 kerusi pada PRU16, kata penganalisis",
+   "desc": "&lt;a href=\"https://news.google.com/rss/articles/CBMiYkFVX3lxTE9IV3RmQXhMbjI2SnJlRF9hT3B1c1duaVhrMUMzYi12TnQxYTFUajZCNExERkhlWW9zcUx2RHNoUi1XeF9icmd6dV9vczQ3QkJIT0l5TE1BM2FmWlhPcnJ1MS1R?oc=5\" target=\"_blank\"&gt;Gelombang biru BN PN berpotensi sapu 122 kerusi pada PRU16, kata penganalisis&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;Free Malaysia Today&lt;/font&gt;",
+   "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9IV3RmQXhMbjI2SnJlRF9hT3B1c1duaVhrMUMzYi12TnQxYTFUajZCNExERkhlWW9zcUx2RHNoUi1XeF9icmd6dV9vczQ3QkJIT0l5TE1BM2FmWlhPcnJ1MS1R?oc=5",
+   "date": "2026-08-07T07:00:00+00:00",
+   "source": "Free Malaysia Today",
+   "found_at": "2026-09-26T05:37:57+00:00",
+   "channel": "google-news",
+   "collection_id": "2026-09-26T05:37:57+00:00",
+   "category": "poll",
+   "blocs": [
+    "BN",
+    "PN"
+   ],
+   "parties": [],
+   "seats": [],
+   "lang": "ms",
+   "score": 0.9,
+   "judge_reason": "Analyst predicts BN-PN 122 seats PRU16",
+   "judged_by": "deepseek",
+   "judge_model": "deepseek-chat"
+  },
+  {
+   "query": "Malaysia politics",
+   "title": "Malaysia’s Barisan Nasional is going solo in name only",
+   "desc": "&lt;a href=\"https://news.google.com/rss/articles/CBMilgFBVV95cUxNZmxrdk9WMnE3VzBpUlVvMnFhUjNJNHoxY18wb1MyZW10el9MYllqaGNYQ3hfMkxJZ3J0akItRDMzalljVXNuUjlRTDkzVTl6OUtlcjhzenZvN3FDUUNGLU4yT0s5eFVLaGVVaG1HdGZYYmhDZjU5NGJZYlZEN2cwYlhjeUNuMGJrWmZXRE5VS2NUVUdmZ2c?oc=5\" target=\"_blank\"&gt;Malaysia’s Barisan Nasional is going solo in name only&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;East A",
+   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNZmxrdk9WMnE3VzBpUlVvMnFhUjNJNHoxY18wb1MyZW10el9MYllqaGNYQ3hfMkxJZ3J0akItRDMzalljVXNuUjlRTDkzVTl6OUtlcjhzenZvN3FDUUNGLU4yT0s5eFVLaGVVaG1HdGZYYmhDZjU5NGJZYlZEN2cwYlhjeUNuMGJrWmZXRE5VS2NUVUdmZ2c?oc=5",
+   "date": "2026-07-14T07:00:00+00:00",
+   "source": "East Asia Forum",
+   "found_at": "2026-09-26T05:37:57+00:00",
+   "channel": "google-news",
+   "collection_id": "2026-09-26T05:37:57+00:00",
+   "category": "analysis",
+   "blocs": [
+    "BN"
+   ],
+   "parties": [],
+   "seats": [],
+   "lang": "en",
+   "score": 0.8,
+   "judge_reason": "BN going solo analysis",
+   "judged_by": "deepseek",
+   "judge_model": "deepseek-chat"
+  },
+  {
+   "query": "GE16 Malaysia",
+   "title": "Umno to continue supporting unity govt until GE16",
+   "desc": "&lt;a href=\"https://news.google.com/rss/articles/CBMirwFBVV95cUxPZWRlVDVCd1dtU0RITmx1VkpldkEwbi1vY2wwQ1RYblE4SlZkRTJYV2o5VWNrQlR5ZFY5SFRyYWYtSURJN3VLR0JTMHlGYzZzUTQyQ2hyRnlkT2piUzdxRHNlTWRUajRfWjh6cE4zWG9JZE9FUGM2VjFHdjduOGVYdk95RFpNUlY0Z3NPTEhQNDFBbWpRdHdrRFU3ckcyT2tIVXRLUnEwdXNBaXc0Sm9V?oc=5\" target=\"_blank\"&gt;Umno to continue supporting unity govt until GE16&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;fo",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPZWRlVDVCd1dtU0RITmx1VkpldkEwbi1vY2wwQ1RYblE4SlZkRTJYV2o5VWNrQlR5ZFY5SFRyYWYtSURJN3VLR0JTMHlGYzZzUTQyQ2hyRnlkT2piUzdxRHNlTWRUajRfWjh6cE4zWG9JZE9FUGM2VjFHdjduOGVYdk95RFpNUlY0Z3NPTEhQNDFBbWpRdHdrRFU3ckcyT2tIVXRLUnEwdXNBaXc0Sm9V?oc=5",
+   "date": "2026-06-10T07:00:00+00:00",
+   "source": "Free Malaysia Today",
+   "found_at": "2026-09-26T05:37:57+00:00",
+   "channel": "google-news",
+   "collection_id": "2026-09-26T05:37:57+00:00",
+   "category": "coalition",
+   "blocs": [
+    "BN",
+    "PH"
+   ],
+   "parties": [
+    "UMNO"
+   ],
+   "seats": [],
+   "lang": "en",
+   "score": 0.9,
+   "judge_reason": "Umno backs unity govt until GE16",
+   "judged_by": "deepseek",
+   "judge_model": "deepseek-chat"
+  },
+  {
+   "query": "Malaysia politics",
+   "title": "Beyond the binary: Why the politics of Malay-Muslim unity can divide Malaysia — Phar Kim Beng",
+   "desc": "&lt;a href=\"https://news.google.com/rss/articles/CBMi6gFBVV95cUxPU0JiRjdzNThIQUhQdWQya19pTGVKMGhBRFZQN0pIWUItajlFa3diS3V0STNSZDlMeHg4OVdMOGVrRHpfRVE3OVp3VnIzbVJ3VjZvSUhpbkFPUy1SSURSTmotYUl2ZjZ2TVdYZHN1Qm1ZRmRMOVV0aEhFeUwwcDFMVHFmcDZyM21uMVlpUDY1TWZBWWd4OTNFWHpOa01RMDFmVW9kM3hSZnFjN3lWT2VELUdaNUhpYU1yRng1dzNDUGdpSzZHeE8tMjc5ME5rNE50Rnd0MmZZcnIyMTBKTmVBNjd2QnVvNlVMa3fSAe8BQVVfeXFMTnJ3cFJBaXB5SVlBOC1",
+   "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPU0JiRjdzNThIQUhQdWQya19pTGVKMGhBRFZQN0pIWUItajlFa3diS3V0STNSZDlMeHg4OVdMOGVrRHpfRVE3OVp3VnIzbVJ3VjZvSUhpbkFPUy1SSURSTmotYUl2ZjZ2TVdYZHN1Qm1ZRmRMOVV0aEhFeUwwcDFMVHFmcDZyM21uMVlpUDY1TWZBWWd4OTNFWHpOa01RMDFmVW9kM3hSZnFjN3lWT2VELUdaNUhpYU1yRng1dzNDUGdpSzZHeE8tMjc5ME5rNE50Rnd0MmZZcnIyMTBKTmVBNjd2QnVvNlVMa3fSAe8BQVVfeXFMTnJ3cFJBaXB5SVlBOC1qcFJSQnRhbm1PNlViazIzNmJieVJjel93UDViaXZWNmVjdG9pUlhtMnpuQkhHOWNTc3dBS3hYVThFblFmNzBfS2t1SG1ZY3M3eG5kUHdCQXc5TllKN3ZWdHBQUnlCUTBrNUJvV1NqUDFidmVpZ1NlX1IyVGJVNnpOLUcxcm5UR2hVVDZVMWRzUF8xVXF1SGNVQ21XSmZVYU1xVWNDc3U3YU1wNWUxRHlweTgxaTlPSmwtZW1LVEhMdUxyTkxVdWlidFJ4XzFPSDNGcW9pS19vaEZHNlNlUU50bzA?oc=5",
+   "date": "2026-08-07T07:00:00+00:00",
+   "source": "Malay Mail",
+   "found_at": "2026-09-26T05:37:57+00:00",
+   "channel": "google-news",
+   "collection_id": "2026-09-26T05:37:57+00:00",
+   "category": "analysis",
+   "blocs": [],
+   "parties": [],
+   "seats": [],
+   "lang": "en",
+   "score": 0.7,
+   "judge_reason": "Malay-Muslim unity politics analysis",
+   "judged_by": "deepseek",
+   "judge_model": "deepseek-chat"
+  },
+  {
+   "query": "kerajaan Malaysia",
+   "title": "KERAJAAN JOHOR MAHU SIASATAN MENYELURUH ISU NETWORK SCHOOL DI FOREST CITY - media digital johor",
+   "desc": "&lt;a href=\"https://news.google.com/rss/articles/CBMirwFBVV95cUxNQnhYSlBFOWc3TDJnV0RYRTFaMHo1SnlZWFZaWGdPU3RKczhwOXk3WlU2eDM1TXUxQ25GS2RDWGp3YVBWWVRkdmhkb0VoTlA0c2dNWnA3elFPTVlETmRGSlZld1FWS3RXZGExZjV1aGw1eU9pS1NPWS1qZGwtaHB0N1BiVlV4Q1dyNWk2YWZFTnZXQzEzZjRzbXF0d09OY05HTlhkMDlvVWNjb2syMmMw?oc=5\" target=\"_blank\"&gt;KERAJAAN JOHOR MAHU SIASATAN MENYELURUH ISU NETWORK SCHOOL DI FOREST CITY&lt;/a&gt;&a",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNQnhYSlBFOWc3TDJnV0RYRTFaMHo1SnlZWFZaWGdPU3RKczhwOXk3WlU2eDM1TXUxQ25GS2RDWGp3YVBWWVRkdmhkb0VoTlA0c2dNWnA3elFPTVlETmRGSlZld1FWS3RXZGExZjV1aGw1eU9pS1NPWS1qZGwtaHB0N1BiVlV4Q1dyNWk2YWZFTnZXQzEzZjRzbXF0d09OY05HTlhkMDlvVWNjb2syMmMw?oc=5",
+   "date": "2026-07-14T07:00:00+00:00",
+   "source": "Google News",
+   "found_at": "2026-09-26T05:37:57+00:00",
+   "channel": "google-news",
+   "collection_id": "2026-09-26T05:37:57+00:00",
+   "category": "policy",
+   "blocs": [],
+   "parties": [],
+   "seats": [
+    "Johor"
+   ],
+   "lang": "ms",
+   "score": 0.6,
+   "judge_reason": "Johor govt Forest City school probe",
+   "judged_by": "deepseek",
+   "judge_model": "deepseek-chat"
+  },
+  {
+   "query": "Perikatan Nasional",
+   "title": "PAS-Bersatu break-up paves way for new Malay-centric pact, with implications for Malaysia politics",
+   "desc": "&lt;a href=\"https://news.google.com/rss/articles/CBMimwFBVV95cUxPM1N1djVuaDZlS0E5UVpkX3VtZ2pFQ3Q4eVI0c1kzS0xQQ2RSQk5acGhyMG9na0R4LTVwSXBWU0lLX0p5WWlMbjV6T25Eb0NkR3l0bUhXdkxXaDNVODBibm0wNzlKSHlIdktXZHBaa2YxMGM0aFRBSmNoOFZPY0NDUWJyYmpoNUZkUFNoeEJTNmY4Szd6NzZVNm9paw?oc=5\" target=\"_blank\"&gt;PAS-Bersatu break-up paves way for new Malay-centric pact, with implications for Malaysia politics&lt;/a&gt;&am",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPM1N1djVuaDZlS0E5UVpkX3VtZ2pFQ3Q4eVI0c1kzS0xQQ2RSQk5acGhyMG9na0R4LTVwSXBWU0lLX0p5WWlMbjV6T25Eb0NkR3l0bUhXdkxXaDNVODBibm0wNzlKSHlIdktXZHBaa2YxMGM0aFRBSmNoOFZPY0NDUWJyYmpoNUZkUFNoeEJTNmY4Szd6NzZVNm9paw?oc=5",
+   "date": "2026-06-10T07:00:00+00:00",
+   "source": "CNA",
+   "found_at": "2026-09-26T05:37:57+00:00",
+   "channel": "google-news",
+   "collection_id": "2026-09-26T05:37:57+00:00",
+   "category": "coalition",
+   "blocs": [
+    "PN"
+   ],
+   "parties": [
+    "PAS",
+    "Bersatu"
+   ],
+   "seats": [],
+   "lang": "en",
+   "score": 0.9,
+   "judge_reason": "PAS-Bersatu split, new pact",
+   "judged_by": "deepseek",
+   "judge_model": "deepseek-chat"
+  },
+  {
+   "query": "GN:malaysiakini",
+   "title": "COMMENT | Govt must reveal reasons for Najib's pardon",
+   "desc": "&lt;a href=\"https://news.google.com/rss/articles/CBMimgFBVV95cUxNODIzVHJiOVhSX1o2WERmOHdGMzVKMG5jRVNNZF9iU1RkRHp1RUpuZ3VDN1YyaVRNOFRyY19pYkkxQy1EcVhCcnVNSGV0bWpENWVaTEZ1TVZCR3JFNFViNHhjM2Jtdm8tN01tMGZlbzlPYmtTblEyQjdVZ0toQVBkbkV4ZEJNUlFvVlJMV3N4bWJzZ1FjdEVlbXJR?oc=5\" target=\"_blank\"&gt;COMMENT | Govt must reveal reasons for Najib's pardon&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;Ma",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNODIzVHJiOVhSX1o2WERmOHdGMzVKMG5jRVNNZF9iU1RkRHp1RUpuZ3VDN1YyaVRNOFRyY19pYkkxQy1EcVhCcnVNSGV0bWpENWVaTEZ1TVZCR3JFNFViNHhjM2Jtdm8tN01tMGZlbzlPYmtTblEyQjdVZ0toQVBkbkV4ZEJNUlFvVlJMV3N4bWJzZ1FjdEVlbXJR?oc=5",
+   "date": "2026-09-21T02:10:00+00:00",
+   "source": "Malaysiakini",
+   "found_at": "2026-09-26T05:37:57+00:00",
+   "channel": "google-news",
+   "collection_id": "2026-09-26T05:37:57+00:00",
+   "category": "legal",
+   "blocs": [
+    "BN"
+   ],
+   "parties": [
+    "UMNO"
+   ],
+   "seats": [],
+   "lang": "en",
+   "score": 0.7,
+   "judge_reason": "Najib pardon, government transparency",
+   "judged_by": "deepseek",
+   "judge_model": "deepseek-chat"
+  },
+  {
+   "query": "Perikatan Nasional",
+   "title": "Bersatu sec‑gen Azmin Ali says party remains legitimate Perikatan component despite PAS claim",
+   "desc": "&lt;a href=\"https://news.google.com/rss/articles/CBMi5AFBVV95cUxOSUpzUXZpN2g3QUNwUkFGR1NCNENZNTdUckxNR2FUM2hIa3c0U1FUNjhHbXZ3MEZFVjJHbWcxY3NCWDFnYVktUzkteDJpYmlJX19RbHNvMjJVcTUxc1BZaFlaSm8zNF81cG9DNWJWOUw1SndSSWU1WDVCMS0wUHR4OFg2dmVJaFhYeE05by0xMGJXMG1qLWRucHNJV1JMeFQxOTNveVVFS18wY0hLUHZQNEVUbXNvRk0xUWM4djJGendOR3JxVzF0d3ZHZXFZV2pOZXJ3bGdOYjB4TnpKMmppYVYxNEzSAeoBQVVfeXFMTzhWWnlYZFdFX0Z1Y01mX2dVVFY",
+   "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOSUpzUXZpN2g3QUNwUkFGR1NCNENZNTdUckxNR2FUM2hIa3c0U1FUNjhHbXZ3MEZFVjJHbWcxY3NCWDFnYVktUzkteDJpYmlJX19RbHNvMjJVcTUxc1BZaFlaSm8zNF81cG9DNWJWOUw1SndSSWU1WDVCMS0wUHR4OFg2dmVJaFhYeE05by0xMGJXMG1qLWRucHNJV1JMeFQxOTNveVVFS18wY0hLUHZQNEVUbXNvRk0xUWM4djJGendOR3JxVzF0d3ZHZXFZV2pOZXJ3bGdOYjB4TnpKMmppYVYxNEzSAeoBQVVfeXFMTzhWWnlYZFdFX0Z1Y01mX2dVVFYzOTNNT2c5bXB0Z21FLWZ4cXFrYVNic25IQmJFRkNkNG5UVENrU0ljaTR3c2ZPclgtZHVDUTB2aVJlS1RyOVRsWEVrNDVWRHRySm1TOTZjaVF4bFVvN1FPakZEVUpkWHBjNFpOOGlYVXNCbE43RnZMTmhTVjBxNXRuaWpDVnRRSjZERlZEaTdhSkN3cVJRTDV4dFZRYTl0VXNkakh4TWZWZEtPSlpJN0RHVkdyVzRZN1hLblJ6djkwMUJnTzZjY2xOQmJ5R1dEYlJLQ09INU9n?oc=5",
+   "date": "2026-08-07T07:00:00+00:00",
+   "source": "Malay Mail",
+   "found_at": "2026-09-26T05:37:57+00:00",
+   "channel": "google-news",
+   "collection_id": "2026-09-26T05:37:57+00:00",
+   "category": "coalition",
+   "blocs": [
+    "PN"
+   ],
+   "parties": [
+    "Bersatu",
+    "PAS"
+   ],
+   "seats": [],
+   "lang": "en",
+   "score": 0.9,
+   "judge_reason": "Azmin says Bersatu still in Perikatan",
+   "judged_by": "deepseek",
+   "judge_model": "deepseek-chat"
+  },
+  {
+   "query": "Malaysia candidate GE16",
+   "title": "Johor is a warning for PH, not a prediction of GE16",
+   "desc": "&lt;a href=\"https://news.google.com/rss/articles/CBMilAFBVV95cUxPd0IxWm5pakpOZm5DdjZWMGRhRHlqaGRpVVA3UklTRnA0ZGVRWVhSSHgtam5URkxwTEM4OF8wZENvdmVNclpzMHF0akQyOVBtdldMdDR4T09ib3BzdzF4Y0FDUEdOS09zVU9xS05rVy1Pcmd3WllzZE9xLW82RVpmcTloWl9seFhGSF8wY2tHS1BNM2hv?oc=5\" target=\"_blank\"&gt;Johor is a warning for PH, not a prediction of GE16&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;MalaysiaGaze",
+   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPd0IxWm5pakpOZm5DdjZWMGRhRHlqaGRpVVA3UklTRnA0ZGVRWVhSSHgtam5URkxwTEM4OF8wZENvdmVNclpzMHF0akQyOVBtdldMdDR4T09ib3BzdzF4Y0FDUEdOS09zVU9xS05rVy1Pcmd3WllzZE9xLW82RVpmcTloWl9seFhGSF8wY2tHS1BNM2hv?oc=5",
+   "date": "2026-07-14T07:00:00+00:00",
+   "source": "MalaysiaGazette",
+   "found_at": "2026-09-26T05:37:57+00:00",
+   "channel": "google-news",
+   "collection_id": "2026-09-26T05:37:57+00:00",
+   "category": "analysis",
+   "blocs": [
+    "PH"
+   ],
+   "parties": [],
+   "seats": [
+    "Johor"
+   ],
+   "lang": "en",
+   "score": 0.9,
+   "judge_reason": "Johor warning for PH, GE16",
+   "judged_by": "deepseek",
+   "judge_model": "deepseek-chat"
+  },
+  {
+   "query": "Malaysia parliament",
+   "title": "MP Slams Health Spending Cuts, Wants Parliament Tabling",
+   "desc": "&lt;a href=\"https://news.google.com/rss/articles/CBMinAFBVV95cUxPWnNIOW9yWjhTbGtYam9SdGxxX2lLQWdiZDNlNm1DRThtbHlELWhMZ0JaYjdLWUduaVRNbmlBcnJDVG83M0lWRkNDd05SdEFscFhSSUxrdnhyWXhOdlRMakZzSS1fTjZ2R2t5ckNzSVY0c1hFY1JuWExZdmlKT1ZJTTJfWUNFLVVGRlEzRUNwdjBmeWRWUm9zcmZvVFM?oc=5\" target=\"_blank\"&gt;MP Slams Health Spending Cuts, Wants Parliament Tabling&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPWnNIOW9yWjhTbGtYam9SdGxxX2lLQWdiZDNlNm1DRThtbHlELWhMZ0JaYjdLWUduaVRNbmlBcnJDVG83M0lWRkNDd05SdEFscFhSSUxrdnhyWXhOdlRMakZzSS1fTjZ2R2t5ckNzSVY0c1hFY1JuWExZdmlKT1ZJTTJfWUNFLVVGRlEzRUNwdjBmeWRWUm9zcmZvVFM?oc=5",
+   "date": "2026-06-10T07:00:00+00:00",
+   "source": "CodeBlue",
+   "found_at": "2026-09-26T05:37:57+00:00",
+   "channel": "google-news",
+   "collection_id": "2026-09-26T05:37:57+00:00",
+   "category": "policy",
+   "blocs": [],
+   "parties": [],
+   "seats": [],
+   "lang": "en",
+   "score": 0.6,
+   "judge_reason": "MP on health cuts, Parliament",
+   "judged_by": "deepseek",
+   "judge_model": "deepseek-chat"
+  }
+ ]
+}

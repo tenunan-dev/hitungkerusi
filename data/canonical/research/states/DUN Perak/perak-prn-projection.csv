@@ -1,0 +1,60 @@
+seat,constituency,w_2021,r_2021,margin_2021,w_party,proj_winner,proj_margin,flip
+N.01 Pengkalan Hulu,Pengkalan Hulu,PN,BN,10.26,PAS,BN,22.74,True
+N.02 Temengor,Temengor,BN,PN,6.6,UMNO,BN,39.6,False
+N.03 Kenering,Kenering,PN,BN,5.24,PAS,BN,27.76,True
+N.04 Kota Tampan,Kota Tampan,BN,PN,12.75,UMNO,BN,45.75,False
+N.05 Selama,Selama,PN,BN,34.89,PAS,PN,1.89,False
+N.06 Kubu Gajah,Kubu Gajah,PN,BN,28.04,PAS,BN,4.96,True
+N.07 Batu Kurau,Batu Kurau,PN,BN,22.36,BERSATU,BN,10.64,True
+N.08 Titi Serong,Titi Serong,PN,PH,24.13,PAS,PN,2.83,False
+N.09 Kuala Kurau,Kuala Kurau,PN,PH,6.99,BERSATU,PH,14.31,True
+N.10 Alor Pongsu,Alor Pongsu,PN,BN,23.3,BERSATU,BN,9.7,True
+N.11 Gunong Semanggol,Gunong Semanggol,PN,BN,41.06,PAS,PN,8.06,False
+N.12 Selinsing,Selinsing,PN,BN,23.24,BERSATU,BN,9.76,True
+N.13 Kuala Sepetang,Kuala Sepetang,PN,PH,16.59,BERSATU,PH,4.71,True
+N.14 Changkat Jering,Changkat Jering,PN,BN,15.42,PAS,BN,17.58,True
+N.15 Trong,Trong,PN,BN,5.74,PAS,BN,27.26,True
+N.16 Kamunting,Kamunting,PN,PH,13.48,PAS,PH,7.82,True
+N.17 Pokok Assam,Pokok Assam,PH,PN,57.26,DAP,PH,78.56,False
+N.18 Aulong,Aulong,PH,PN,57.69,DAP,PH,78.99,False
+N.19 Chenderoh,Chenderoh,PN,BN,0.71,BERSATU,BN,32.29,True
+N.20 Lubok Merbau,Lubok Merbau,PN,BN,23.66,PAS,BN,9.34,True
+N.21 Lintang,Lintang,BN,PN,28.13,UMNO,BN,61.13,False
+N.22 Jalong,Jalong,PH,BN,37.56,DAP,PH,25.86,False
+N.23 Manjoi,Manjoi,PN,PH,12.79,PAS,PH,8.51,True
+N.24 Hulu Kinta,Hulu Kinta,PH,PN,10.34,PKR,PH,31.64,False
+N.25 Canning,Canning,PH,BN,85.25,DAP,PH,73.55,False
+N.26 Tebing Tinggi,Tebing Tinggi,PH,PN,3.01,DAP,PH,24.31,False
+N.27 Pasir Pinji,Pasir Pinji,PH,BN,87.92,DAP,PH,76.22,False
+N.28 Bercham,Bercham,PH,BN,78.95,DAP,PH,67.25,False
+N.29 Kepayang,Kepayang,PH,PN,65.62,DAP,PH,86.92,False
+N.30 Buntong,Buntong,PH,BN,80.93,DAP,PH,69.23,False
+N.31 Jelapang,Jelapang,PH,BN,87.45,DAP,PH,75.75,False
+N.32 Menglembu,Menglembu,PH,BN,86.29,DAP,PH,74.59,False
+N.33 Tronoh,Tronoh,PH,PN,57.34,DAP,PH,78.64,False
+N.34 Bukit Chandan,Bukit Chandan,PN,BN,9.75,BERSATU,BN,23.25,True
+N.35 Manong,Manong,PN,BN,21.53,PAS,BN,11.47,True
+N.36 Pengkalan Baharu,Pengkalan Baharu,BN,PN,8.78,UMNO,BN,41.78,False
+N.37 Pantai Remis,Pantai Remis,PH,BN,65.08,DAP,PH,53.38,False
+N.38 Astaka,Astaka,PH,BN,73.03,DAP,PH,61.33,False
+N.39 Belanja,Belanja,BN,PN,10.61,UMNO,BN,43.61,False
+N.40 Bota,Bota,PN,BN,9.54,PAS,BN,23.46,True
+N.41 Malim Nawar,Malim Nawar,PH,BN,49.89,DAP,PH,38.19,False
+N.42 Keranji,Keranji,PH,BN,55.89,DAP,PH,44.19,False
+N.43 Tualang Sekah,Tualang Sekah,PH,PN,1.6,PKR,PH,22.9,False
+N.44 Sungai Rapat,Sungai Rapat,PH,PN,13.12,AMANAH,PH,34.42,False
+N.45 Simpang Pulai,Simpang Pulai,PH,PN,61.12,PKR,PH,82.42,False
+N.46 Teja,Teja,PH,BN,26.68,PKR,PH,14.98,False
+N.47 Chenderiang,Chenderiang,BN,PH,15.46,MCA,BN,27.16,False
+N.48 Ayer Kuning,Ayer Kuning,BN,PH,13.86,UMNO,BN,25.56,False
+N.49 Sungai Manik,Sungai Manik,PN,PH,20.5,BERSATU,PH,0.8,True
+N.50 Kampong Gajah,Kampong Gajah,PN,BN,13.66,PAS,BN,19.34,True
+N.51 Pasir Panjang,Pasir Panjang,PN,PH,14.52,PAS,PH,6.78,True
+N.52 Pangkor,Pangkor,PN,BN,6.32,BERSATU,BN,26.68,True
+N.53 Rungkup,Rungkup,BN,PH,32.05,UMNO,BN,43.75,False
+N.54 Hutan Melintang,Hutan Melintang,PH,BN,4.97,PKR,BN,6.73,True
+N.55 Pasir Bedamar,Pasir Bedamar,PH,BN,70.7,DAP,PH,59.0,False
+N.56 Changkat Jong,Changkat Jong,PN,PH,4.28,BERSATU,PH,17.02,True
+N.57 Sungkai,Sungkai,PH,BN,37.79,DAP,PH,26.09,False
+N.58 Slim,Slim,PN,BN,2.33,PAS,BN,30.67,True
+N.59 Behrang,Behrang,BN,PH,0.99,UMNO,BN,12.69,False

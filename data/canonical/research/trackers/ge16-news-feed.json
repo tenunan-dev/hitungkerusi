@@ -1,0 +1,1988 @@
+{
+ "generated_at": "2026-09-26T06:10:31+00:00",
+ "schema": "ge16-news-feed v1",
+ "count": 120,
+ "items": [
+  {
+   "query": "feed:Utusan Malaysia",
+   "title": "‘Jangan terburu-buru label derhaka’",
+   "date": "2026-09-26T06:01:40+00:00",
+   "source": "Utusan Malaysia",
+   "link": "https://www.utusan.com.my/nasional/2026/09/jangan-terburu-buru-label-derhaka/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=jangan-terburu-buru-label-derhaka",
+   "lang": "ms",
+   "category": "legal",
+   "blocs": [],
+   "parties": [
+    "UMNO"
+   ],
+   "seats": [],
+   "score": 0.5,
+   "judged_at": "2026-09-26T06:10:31+00:00"
+  },
+  {
+   "query": "feed:Dayak Daily",
+   "title": "No contradiction between EC denial and Federal Cabinet decision on Sarawak parliamentary seats, says Abang Johari",
+   "date": "2026-09-26T05:54:53+00:00",
+   "source": "Dayak Daily",
+   "link": "https://dayakdaily.com/no-contradiction-between-ec-denial-and-federal-cabinet-decision-on-sarawak-parliamentary-seats-says-abang-johari/",
+   "lang": "en",
+   "category": "redelineation",
+   "blocs": [
+    "GPS"
+   ],
+   "parties": [],
+   "seats": [],
+   "score": 0.9,
+   "judged_at": "2026-09-26T06:02:58+00:00"
+  },
+  {
+   "query": "feed:The Vibes",
+   "title": "Melaka PRN: PN considering using PAS logo",
+   "date": "2026-09-26T05:53:00+00:00",
+   "source": "The Vibes",
+   "link": "https://www.thevibes.com/articles/news/127706/melaka-prn-pn-considering-using-pas-logo",
+   "lang": "en",
+   "category": "state-election",
+   "blocs": [
+    "PN"
+   ],
+   "parties": [
+    "PAS"
+   ],
+   "seats": [],
+   "score": 0.9,
+   "judged_at": "2026-09-26T06:02:58+00:00"
+  },
+  {
+   "query": "feed:Free Malaysia Today",
+   "title": "Ong ramal Zahid akan jadi PM jika ‘gelombang biru’ menang PRU16",
+   "date": "2026-09-26T05:47:56+00:00",
+   "source": "Free Malaysia Today",
+   "link": "https://www.freemalaysiatoday.com/category/bahasa/tempatan/2026/09/26/ong-ramal-zahid-akan-jadi-pm-jika-gelombang-biru-menang-pru16",
+   "lang": "ms",
+   "category": "analysis",
+   "blocs": [
+    "BN",
+    "GPS",
+    "GRS",
+    "PN"
+   ],
+   "parties": [
+    "DAP"
+   ],
+   "seats": [],
+   "score": 0.9,
+   "judged_at": "2026-09-26T06:02:58+00:00"
+  },
+  {
+   "query": "feed:The Star [GN]",
+   "title": "Zahid: Political differences must not undermine national harmony - The Star",
+   "date": "2026-09-26T05:41:00+00:00",
+   "source": "The Star [GN]",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQWU9PUjNRNmM5TG1KTVAtV3dSY3dSZkE4WGhEWGtWb19jY0RlaG5IRmRSRWJnMko0ZGF0c0xQVmU1bkk5eEttY1JjZUJuN2l6dmdNUUtQZ2JobXRCSDVpcUJzVmxRdWdXSEM3UlZtZmRvMGJSS0pfNTBzX21TM0JJellKXzZWcXF5cDdYdzBTLTNIOWM3XzdSNWJWdDRrb1RoaGNoZnRYSUdsWUI0Zk1XdHZCaw?oc=5",
+   "lang": "en",
+   "category": "policy",
+   "blocs": [
+    "BN"
+   ],
+   "parties": [
+    "UMNO"
+   ],
+   "seats": [],
+   "score": 0.6,
+   "judged_at": "2026-09-26T06:02:58+00:00"
+  },
+  {
+   "query": "Perikatan Nasional",
+   "title": "PN to submit official explanation to RoS within two weeks - scoop.my",
+   "date": "2026-09-26T05:35:55+00:00",
+   "source": "Google News",
+   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNYWFkbkVOVzFEc0gyUlo3YU1jTU9wd2UwTGFYd0lHYVp2c2RfcFJPbHEwQnk0RzAyRHc0NlV2YVozUFFwSTV0ZENIUWM2a0NRZ2NKaV9hZV9SU3kzeVJEc296bTlLaDNlb2pjeEtvQXBWdGdjM0lBOW54dUlzMS1UcmgxMnVaY2hCYlBFdzZ0SHo1Q2pkb3c?oc=5",
+   "lang": "en",
+   "category": "coalition",
+   "blocs": [
+    "PN"
+   ],
+   "parties": [
+    "BERSATU",
+    "PAS"
+   ],
+   "seats": [],
+   "score": 0.8,
+   "judged_at": "2026-09-26T05:57:58+00:00"
+  },
+  {
+   "query": "feed:Free Malaysia Today",
+   "title": "Sacking of Negeri Sembilan exco members valid, says AG",
+   "date": "2026-09-26T05:34:00+00:00",
+   "source": "Free Malaysia Today",
+   "link": "https://www.freemalaysiatoday.com/category/nation/2026/09/26/sacking-of-negeri-sembilan-exco-members-valid-says-ag",
+   "lang": "en",
+   "category": "legal",
+   "blocs": [],
+   "parties": [],
+   "seats": [],
+   "score": 0.7,
+   "judged_at": "2026-09-26T06:02:58+00:00"
+  },
+  {
+   "query": "feed:Kosmo",
+   "title": "PN yakin isu penggantungan aktiviti selesai dalam dua minggu",
+   "date": "2026-09-26T05:14:37+00:00",
+   "source": "Kosmo",
+   "link": "https://www.kosmo.com.my/2026/09/26/pn-yakin-isu-penggantungan-aktiviti-selesai-dalam-dua-minggu/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=pn-yakin-isu-penggantungan-aktiviti-selesai-dalam-dua-minggu",
+   "lang": "ms",
+   "category": "coalition",
+   "blocs": [
+    "PN"
+   ],
+   "parties": [],
+   "seats": [],
+   "score": 0.9,
+   "judged_at": "2026-09-26T05:27:26+00:00"
+  },
+  {
+   "query": "feed:Utusan Malaysia",
+   "title": "Pastikan UMNO, Pas tidak bertembung &#8211; Noh Omar",
+   "date": "2026-09-26T05:08:20+00:00",
+   "source": "Utusan Malaysia",
+   "link": "https://www.utusan.com.my/terkini/2026/09/pastikan-umno-pas-tidak-bertembung-noh-omar/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=pastikan-umno-pas-tidak-bertembung-noh-omar",
+   "lang": "ms",
+   "category": "seat-allocation",
+   "blocs": [
+    "BN",
+    "PN"
+   ],
+   "parties": [
+    "UMNO",
+    "PAS"
+   ],
+   "seats": [],
+   "score": 0.9,
+   "judged_at": "2026-09-26T05:27:26+00:00"
+  },
+  {
+   "query": "Perikatan Nasional",
+   "title": "Perikatan-BN Melaka state election talks ‘more than 50pc’ complete despite RoS suspension, says Takiyuddin - malaymail.com",
+   "date": "2026-09-26T05:06:27+00:00",
+   "source": "Google News",
+   "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOeGtrM0Q4Q0d3QkF4akpqS09mTzdHWVlpNzh1ZXRjMXBoMzhfbmFYQ0ctY25qQW1zV3RuZUdLa19MeVdBWlBHNHpKbjctaEUzWFlNOEtHQWZ6ZnZ5TUNYTzBpaC1rRUpHYkltekd3am1TcFNrY09uZUZpVUJySm5mbUNhMlpRb0syc2V5aC1xcWJFODYtd1ZtWDM2U3ZncHFLcVlid1F1SW5JYkpvS0dyaGd4ZnpYeWcwQ2NOU2R0a25fbXhMNzQ1cGFOUU14ay1DSWZMMzNkdlRmajh6bE1pN3lDR3dpcnRDWnVpN0ZRRVZFaFXSAfgBQVVfeXFMUEs4T01sTy1maU41ME1NaWxyMGVwWWdpRWJWbUFFQkFGdk1vOEVwTEVKSnFObEhNS1Y5QzlMcFVCOGNlVzhGMmZla0M5elJzdEZzN2V5cnZkWnBPRXlxQTBJcmtHQnZ3YXJNWnE2YVFLdXNhN3dXMFNLWl9Hams3VU5oQTl2Yl85MDF5bTRtam5FbkpOd0p1cTlmR2V0YnI1eHhzVHZWcF9EaTFvekNmT0NXS2RaWGdhMWNWQ3pxbnV4aEpFcDhLQm5CYU5sbFIxY3JUOEp3cjdwVFpyN2ZXT2d3VTVnRzJ3dVI5UHJjN0hkSEhRUTNZMEE?oc=5",
+   "lang": "en",
+   "category": "state-election",
+   "blocs": [
+    "PN",
+    "BN"
+   ],
+   "parties": [
+    "PAS"
+   ],
+   "seats": [],
+   "score": 0.9,
+   "judged_at": "2026-09-26T06:02:58+00:00"
+  },
+  {
+   "query": "feed:Utusan Malaysia",
+   "title": "Ismail sudah mengaku tidak berkuasa lagi &#8211; Puad",
+   "date": "2026-09-26T04:43:10+00:00",
+   "source": "Utusan Malaysia",
+   "link": "https://www.utusan.com.my/nasional/2026/09/ismail-sudah-mengaku-tidak-berkuasa-lagi-puad/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=ismail-sudah-mengaku-tidak-berkuasa-lagi-puad",
+   "lang": "ms",
+   "category": "state-election",
+   "blocs": [
+    "BN"
+   ],
+   "parties": [
+    "UMNO"
+   ],
+   "seats": [],
+   "score": 0.7,
+   "judged_at": "2026-09-26T05:17:28+00:00"
+  },
+  {
+   "query": "feed:Borneo Post",
+   "title": "Even unfrozen assets won’t immediately cover Najib’s RM50 mln house-arrest fine, says son",
+   "date": "2026-09-26T04:39:48+00:00",
+   "source": "Borneo Post",
+   "link": "https://www.theborneopost.com/2026/09/26/even-unfrozen-assets-wont-immediately-cover-najibs-rm50-mln-house-arrest-fine-says-son/",
+   "lang": "en",
+   "category": "legal",
+   "blocs": [
+    "BN"
+   ],
+   "parties": [
+    "UMNO"
+   ],
+   "seats": [],
+   "score": 0.6,
+   "judged_at": "2026-09-26T05:17:28+00:00"
+  },
+  {
+   "query": "Barisan Nasional",
+   "title": "Don’t use ‘treasonous’ label freely without understanding constitutional position, says Zahid",
+   "date": "2026-09-26T04:38:00+00:00",
+   "source": "The Star",
+   "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPVC1LWUJXX1NKV0p0SjNVcWFZQmdBbV9ta1J4OGw3X0hkX2owRlRKQmFsNWtMZHpIQjNUbVRBd2hjTnVqZEhONUFlTmZZLW5lUmJReTZyQXRNZ2g3U1BaSDN5Mkw3bi1fS0VJYzRvWTVQUk5rajVPNnVXU2pmZnJ6QVZ2cWJqS2h4b2dGVVVQbDJtSGlUOEpfTDFic0ZzMUVoRF9Ycnh1S3VEMms3aXBJcENTZWJUbUY2NkRyRXpSVTJKLTVPX1BWSnBQR0gzd1ZIWkhrd1pn?oc=5",
+   "lang": "en",
+   "category": "legal",
+   "blocs": [
+    "BN"
+   ],
+   "parties": [
+    "UMNO"
+   ],
+   "seats": [],
+   "score": 0.7,
+   "judged_at": "2026-09-26T05:17:28+00:00"
+  },
+  {
+   "query": "feed:Utusan Malaysia",
+   "title": "Agenda ‘Malaysia Biru’ bermula di Melaka",
+   "date": "2026-09-26T04:37:16+00:00",
+   "source": "Utusan Malaysia",
+   "link": "https://www.utusan.com.my/nasional/2026/09/agenda-malaysia-biru-bermula-di-melaka/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=agenda-malaysia-biru-bermula-di-melaka",
+   "lang": "ms",
+   "category": "coalition",
+   "blocs": [
+    "BN"
+   ],
+   "parties": [
+    "UMNO"
+   ],
+   "seats": [],
+   "score": 0.8,
+   "judged_at": "2026-09-26T05:17:28+00:00"
+  },
+  {
+   "query": "feed:Astro Awani",
+   "title": "Musyawarah Nasional 3.0 cadang tiga perkara pupuk kefahaman perlembagaan - Ahmad Zahid",
+   "date": "2026-09-26T04:34:39+00:00",
+   "source": "Astro Awani",
+   "link": "https://www.astroawani.com/berita-politik/musyawarah-nasional-30-cadang-tiga-perkara-pupuk-kefahaman-perlembagaan-ahmad-zahid",
+   "lang": "ms",
+   "category": "policy",
+   "blocs": [
+    "BN"
+   ],
+   "parties": [
+    "UMNO"
+   ],
+   "seats": [],
+   "score": 0.6,
+   "judged_at": "2026-09-26T05:57:58+00:00"
+  },
+  {
+   "query": "kerajaan Malaysia",
+   "title": "Selangor agency’s dismissal of staff for info leak to Chegubard upheld",
+   "date": "2026-09-26T04:28:17+00:00",
+   "source": "Free Malaysia Today",
+   "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5RX3E5TzJrTWh1ZDY5NUNTZ3JKREFHaDR2RE1IaFEwNzJnNW1MYklPTXlQNXRGWGxSSF8ydDhfWHU5eC1YUXVSQkNicXZuNUU0S25vNjJrSEVtM3ZVUDQyMm93?oc=5",
+   "lang": "en",
+   "category": "legal",
+   "blocs": [],
+   "parties": [],
+   "seats": [],
+   "score": 0.5,
+   "judged_at": "2026-09-26T05:17:28+00:00"
+  },
+  {
+   "query": "feed:Kosmo",
+   "title": "Setinggi mana kedudukan, tetap perlu merendah diri di hadapan ilmu &#8211; Anwar",
+   "date": "2026-09-26T04:17:09+00:00",
+   "source": "Kosmo",
+   "link": "https://www.kosmo.com.my/2026/09/26/setinggi-mana-kedudukan-tetap-perlu-merendah-diri-di-hadapan-ilmu-anwar/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=setinggi-mana-kedudukan-tetap-perlu-merendah-diri-di-hadapan-ilmu-anwar",
+   "lang": "ms",
+   "category": "policy",
+   "blocs": [
+    "PH"
+   ],
+   "parties": [
+    "PKR"
+   ],
+   "seats": [],
+   "score": 0.5,
+   "judged_at": "2026-09-26T05:17:28+00:00"
+  },
+  {
+   "query": "feed:Free Malaysia Today",
+   "title": "Pimpinan tertinggi PN mahu jumpa JPPM susulan penggantungan",
+   "date": "2026-09-26T04:15:00+00:00",
+   "source": "Free Malaysia Today",
+   "link": "https://www.freemalaysiatoday.com/category/bahasa/tempatan/2026/09/26/pimpinan-tertinggi-pn-mahu-jumpa-jppm-susulan-penggantungan",
+   "lang": "ms",
+   "category": "coalition",
+   "blocs": [
+    "PN"
+   ],
+   "parties": [
+    "PAS"
+   ],
+   "seats": [],
+   "score": 0.8,
+   "judged_at": "2026-09-26T05:17:28+00:00"
+  },
+  {
+   "query": "feed:Borneo Post",
+   "title": "Abdul Karim: Chinese schools played key role in rural education, community devt",
+   "date": "2026-09-26T04:12:47+00:00",
+   "source": "Borneo Post",
+   "link": "https://www.theborneopost.com/2026/09/26/abdul-karim-chinese-schools-played-key-role-in-rural-education-community-devt/",
+   "lang": "en",
+   "category": "policy",
+   "blocs": [
+    "GPS"
+   ],
+   "parties": [
+    "PBB"
+   ],
+   "seats": [],
+   "score": 0.5,
+   "judged_at": "2026-09-26T05:17:28+00:00"
+  },
+  {
+   "query": "feed:Free Malaysia Today",
+   "title": "Kalau nyah beku aset pun tak cukup tampung denda RM50 juta, kata anak Najib",
+   "date": "2026-09-26T03:53:00+00:00",
+   "source": "Free Malaysia Today",
+   "link": "https://www.freemalaysiatoday.com/category/bahasa/tempatan/2026/09/26/kalau-nyah-beku-aset-pun-tak-cukup-tampung-denda-rm50-juta-kata-anak-najib",
+   "lang": "ms",
+   "category": "legal",
+   "blocs": [],
+   "parties": [
+    "UMNO"
+   ],
+   "seats": [],
+   "score": 0.6,
+   "judged_at": "2026-09-26T05:17:28+00:00"
+  },
+  {
+   "query": "feed:Utusan Malaysia",
+   "title": "Anwar seru hormati ulama, dengar nasihat guru",
+   "date": "2026-09-26T03:49:34+00:00",
+   "source": "Utusan Malaysia",
+   "link": "https://www.utusan.com.my/nasional/2026/09/anwar-seru-hormati-ulama-dengar-nasihat-guru/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=anwar-seru-hormati-ulama-dengar-nasihat-guru",
+   "lang": "ms",
+   "category": "policy",
+   "blocs": [
+    "PH"
+   ],
+   "parties": [
+    "PKR"
+   ],
+   "seats": [],
+   "score": 0.5,
+   "judged_at": "2026-09-26T05:17:28+00:00"
+  },
+  {
+   "query": "Barisan Nasional",
+   "title": "Zahid: Understand Constitution before branding actions ‘treasonous’ or ‘disrespectful’",
+   "date": "2026-09-26T03:40:00+00:00",
+   "source": "Yahoo",
+   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNbEtJNXlqWDlHODBCbG0wTDlPX0poV1FHSWFOVnJoMkJQTWxwNTVqdFY4OXBRYTJwZmVtWW5MeXpGWVJlRUV2ejFib3dteF9idmNFRjFFSlZkU0x0dlVnTExGMU1uZXNESXR4QjJaX1BrdG9meVhHTUJsdU92QS1IYUJ6V1ZLMWxlU1FDTzB0cmlNdEJCOHhVUA?oc=5",
+   "lang": "en",
+   "category": "legal",
+   "blocs": [
+    "BN"
+   ],
+   "parties": [
+    "UMNO"
+   ],
+   "seats": [],
+   "score": 0.7,
+   "judged_at": "2026-09-26T05:17:28+00:00"
+  },
+  {
+   "query": "feed:Astro Awani",
+   "title": "Pelajar meninggal dunia di asrama: Pemimpin politik desak siasatan segera dakwaan buli",
+   "date": "2026-09-26T03:38:30+00:00",
+   "source": "Astro Awani",
+   "link": "https://www.astroawani.com/berita-malaysia/pelajar-meninggal-dunia-di-asrama-pemimpin-politik-desak-siasatan-segera-dakwaan-buli",
+   "lang": "ms",
+   "category": "policy",
+   "blocs": [],
+   "parties": [],
+   "seats": [],
+   "score": 0.5,
+   "judged_at": "2026-09-26T05:17:28+00:00"
+  },
+  {
+   "query": "feed:The Vibes",
+   "title": "Masidi urges calm over reports of US military base near Sabah",
+   "date": "2026-09-26T03:38:00+00:00",
+   "source": "The Vibes",
+   "link": "https://www.thevibes.com/articles/news/127700/masidi-urges-calm-over-reports-of-us-military-base-near-sabah",
+   "lang": "en",
+   "category": "policy",
+   "blocs": [
+    "GRS"
+   ],
+   "parties": [],
+   "seats": [],
+   "score": 0.5,
+   "judged_at": "2026-09-26T05:17:28+00:00"
+  },
+  {
+   "query": "feed:The Malaysian Reserve",
+   "title": "Anwar firm on not interfering in Negeri Sembilan ruler&#8217;s position",
+   "date": "2026-09-26T03:26:55+00:00",
+   "source": "The Malaysian Reserve",
+   "link": "https://themalaysianreserve.com/2026/09/26/anwar-firm-on-not-interfering-in-negeri-sembilan-rulers-position/",
+   "lang": "en",
+   "category": "legal",
+   "blocs": [
+    "PH"
+   ],
+   "parties": [
+    "PKR"
+   ],
+   "seats": [],
+   "score": 0.6,
+   "judged_at": "2026-09-26T05:17:28+00:00"
+  },
+  {
+   "query": "feed:Malay Mail [GN]",
+   "title": "Malaysia, Kazakhstan should deepen higher education cooperation through five‑pillar knowledge partnership, Zambry says - Malay Mail",
+   "date": "2026-09-26T03:22:30+00:00",
+   "source": "Malay Mail [GN]",
+   "link": "https://news.google.com/rss/articles/CBMigwJBVV95cUxONzVoQ2JtUVhGUUdOdk5uem5sTXlkQW5wZnBGb1FVWjFlWmVvcWMwOFRwd2REMUxSb3dXUFBrcU50RlZxOHF6VWNaMnpjaFRMWU5oUkFxenNIUEJzTjNaV1JFYmxGRTducEczRU9sblkzc2dJTlVNUE40UUVjaE5TcVRaTlZCMlFoVWs5X1cybi1sUlc5Y0laNEEzdTBWRF9qb2wwUWljakkwT0wydGFiOWJqMUNNVmRib0xlbDBZMUZSZk9JYm1Tc052amJtSVNiSFl0ZVIwSHg3ZFNHUHgtVC1EcnpzbjljNnVKdE81MGFyazJTSDg4aFNpUU9BOTlOeS1n0gGIAkFVX3lxTE9XR1J1bzlXZTEtM01LNG5VME9sMzItdUM0VjJwQTJWSDV6ZEMzVFJCU3hab2dYbmZ6dFZNUmN2cFdOUkdhX2JVYTBueml5UDhJYXg1aXFLbE9XbEUySHFsV1ZiSHRsX09zY2ttZFZkdjFnbXByLWpCU0QxSW4yY2I3bThDbWJPVGM0N0MyalpkVUlhNS1OdTctbWVxTzlaTGpWMWlCYXBtd1FVYVFKSmtwME9fMFBJc1JoOHNMSjZaWks5bzhaLXdNc1l2TlJ4bW80Zkg3VFE2N0JUVDdIMS1fR0x4UElCU3l5YjR1WVdKNVFWdERZRGh1c2RCenpCdU9DcE5jRDEtWA?oc=5",
+   "lang": "en",
+   "category": "policy",
+   "blocs": [
+    "BN"
+   ],
+   "parties": [
+    "UMNO"
+   ],
+   "seats": [],
+   "score": 0.4,
+   "judged_at": "2026-09-26T05:17:28+00:00"
+  },
+  {
+   "query": "feed:Dayak Daily",
+   "title": "Premier: Knowledge drives Sarawak’s progress beyond buildings, highways",
+   "date": "2026-09-26T03:21:03+00:00",
+   "source": "Dayak Daily",
+   "link": "https://dayakdaily.com/premier-knowledge-drives-sarawaks-progress-beyond-buildings-highways/",
+   "lang": "en",
+   "category": "policy",
+   "blocs": [
+    "GPS"
+   ],
+   "parties": [
+    "PBB"
+   ],
+   "seats": [],
+   "score": 0.4,
+   "judged_at": "2026-09-26T05:17:28+00:00"
+  },
+  {
+   "query": "feed:The Vibes",
+   "title": "Cross-party calls for immediate probe into suspected bullying in student’s death",
+   "date": "2026-09-26T03:21:00+00:00",
+   "source": "The Vibes",
+   "link": "https://www.thevibes.com/articles/news/127699/cross-party-calls-for-immediate-probe-into-bullying-suspected-in-students-death",
+   "lang": "en",
+   "category": "policy",
+   "blocs": [],
+   "parties": [],
+   "seats": [],
+   "score": 0.5,
+   "judged_at": "2026-09-26T06:02:58+00:00"
+  },
+  {
+   "query": "GE16 Malaysia",
+   "title": "Ong Kian Ming predicts doom scenario for PH with the fall of Selangor",
+   "date": "2026-09-26T03:19:57+00:00",
+   "source": "Focus Malaysia",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQWEVnbVRhbk1EV2Q4Qmh0SVVPVXZVd0hTRktfbWJ3ZXpWaTdKSzFWejJlbXdWUXZVLUxFNFFVeU5vRjRLazhlWExIZ2R2TEI3ODRMMTh4VUk2SVF1WkFWMlBHQmZiTmJrQzlqVFlJUnNzSWtEQ09JaTJodHhDTVUwaTEwYnZIaWdaOWh3T0NzLTY2Y1Y2elZwdF9BOA?oc=5",
+   "lang": "en",
+   "category": "analysis",
+   "blocs": [
+    "PH"
+   ],
+   "parties": [
+    "DAP"
+   ],
+   "seats": [
+    "Selangor"
+   ],
+   "score": 0.9,
+   "judged_at": "2026-09-26T05:17:28+00:00"
+  },
+  {
+   "query": "feed:The Vibes",
+   "title": "Malaysia warns against selective adherence to International Law",
+   "date": "2026-09-26T03:19:00+00:00",
+   "source": "The Vibes",
+   "link": "https://www.thevibes.com/articles/news/127698/malaysia-warns-against-selective-adherence-to-international-law",
+   "lang": "en",
+   "category": "policy",
+   "blocs": [],
+   "parties": [],
+   "seats": [],
+   "score": 0.4,
+   "judged_at": "2026-09-26T05:17:28+00:00"
+  },
+  {
+   "query": "feed:Astro Awani",
+   "title": "Selatan Global: Malaysia gesa multilateralisme inklusif, adil - Mohamad Hasan",
+   "date": "2026-09-26T03:17:21+00:00",
+   "source": "Astro Awani",
+   "link": "https://www.astroawani.com/berita-malaysia/selatan-global-malaysia-gesa-multilateralisme-inklusif-adil-mohamad-hasan",
+   "lang": "ms",
+   "category": "policy",
+   "blocs": [
+    "BN"
+   ],
+   "parties": [
+    "UMNO"
+   ],
+   "seats": [],
+   "score": 0.4,
+   "judged_at": "2026-09-26T05:17:28+00:00"
+  },
+  {
+   "query": "Barisan Nasional",
+   "title": "How Umno and PAS undermined their own political advantage in Negeri Sembilan",
+   "date": "2026-09-26T03:07:40+00:00",
+   "source": "MySinchew",
+   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1zMjdxTG5tSWxNUkVnaTg5QnpTd0JTUkxHY3FkeTRKRm5ZUm9LeFR5TWtZTXRlVXl0ZXN0TmM2TGRWMzdTMmJIS0FGUVdrcmQzLWN1dDZqbnZqTjVTUVM2M25qekExNlJJdHFOZm9sVFlEQQ?oc=5",
+   "lang": "en",
+   "category": "analysis",
+   "blocs": [
+    "BN",
+    "PN"
+   ],
+   "parties": [
+    "UMNO",
+    "PAS"
+   ],
+   "seats": [
+    "Negeri Sembilan"
+   ],
+   "score": 0.9,
+   "judged_at": "2026-09-26T05:17:28+00:00"
+  },
+  {
+   "query": "Anwar government",
+   "title": "Ahead of Budget 2027, Anwar invites small entrepreneurs to identify those needing support - malaymail.com",
+   "date": "2026-09-26T01:29:56+00:00",
+   "source": "Google News",
+   "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxONGlZak5zVUdyUEx3djFvRkotWDlyUTEtNzNIZWF3SWhCbXQ2eHNIaVM2MjRNRDNvYWU5dGJBN3NwWVBta3VvWllONEVYMzVObVZ4UTBmdG5Kd2NhME9sLVlUTnQ3akhoT1dtZm13S0pac1ZDWU41MG1ORHFjUkNkMVJoNXlFNjZRaHFhYUZfNUhISjFKTlZITjRWR1lXQXdCeEZZajhpZDNQYUZ4cVlXanBkY1pTdGhick1kVVJGR1U0REMwVTVfQ3hFT3A3QU9GWUFGX0VVeS1KREJXampJ0gHkAUFVX3lxTE53NXRmcF9EWUVWWjZwOWVRVW5tYTFJMmNjS0QzMmplZFlrYm1hZFpQaWJEaGxjX0JEczRsblBYbWdKWXF2cjJFOGMzbExEd0NQQVMtZUtZRzN6UmNKdkxXTXVMblJKNVNQX3VMQzhMaEtOUTRmX21KWDhRNGN6X1RhZDBKUTdZS1FUa0ZrUnFaazFjRmF3QVQtaUtBVEU5Uml1SVZoMno0aTl0N1Iwa1ZuRWhxTml1ZFFEbUZBSzZsdWtYS0liR3RJSnRBNUJzbHhyMzAwZkNFczZrZEJpUjJfRDc3RA?oc=5",
+   "lang": "en",
+   "category": "fiscal-federal",
+   "blocs": [
+    "PH"
+   ],
+   "parties": [
+    "PKR"
+   ],
+   "seats": [],
+   "score": 0.6,
+   "judged_at": "2026-09-26T06:02:58+00:00"
+  },
+  {
+   "query": "Anwar government",
+   "title": "Double cover: Budget 2027’s narrowing fiscal space + Credit under watch",
+   "date": "2026-09-26T00:34:01+00:00",
+   "source": "The Edge Malaysia",
+   "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1KOFBfUnF2ZlNBbzJlUS0tX2c5RVpxSmRDbGprakNxN0pXMGNpZmIxaHZiTlVoVlQya1ZsYzhOcVF6cVh2VUgxMEVHM0ppdVY2?oc=5",
+   "lang": "en",
+   "category": "fiscal-federal",
+   "blocs": [],
+   "parties": [],
+   "seats": [],
+   "score": 0.5,
+   "judged_at": "2026-09-26T05:17:28+00:00"
+  },
+  {
+   "query": "GE16 Malaysia",
+   "title": "PN’s suspension will have little bearing on PAS, say analysts - freemalaysiatoday.com",
+   "date": "2026-09-26T00:30:00+00:00",
+   "source": "Google News",
+   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQV01jQWs0RXM1TVI1MEN5NkxGdTlVbFlyZm5WWk9Ic3gxckhvWGl1VXhuNG9jRXh0cUlhTFFaNk1mUDJpdW55QjZKYU5rT2ZKZFRhb0lyeTlSVk1lSjc2TU1FbFJLc19ZaE0zSDdWYmhaeUdVczlfVGhmRE1fMUFKd24xSXdPQTZUZDNNRjczVkNsVGVLZU9HUzZuOTYzcUwxYzZzZUdJVzk3bEN1Y1o0STFvZkdEMWlBRlMzZUt3?oc=5",
+   "lang": "en",
+   "category": "coalition",
+   "blocs": [
+    "PN"
+   ],
+   "parties": [
+    "PAS",
+    "BERSATU"
+   ],
+   "seats": [],
+   "score": 0.8,
+   "judged_at": "2026-09-26T05:17:28+00:00"
+  },
+  {
+   "query": "feed:The Vibes",
+   "title": "Time to abolish fuel subsidies and tolls?",
+   "date": "2026-09-26T00:02:00+00:00",
+   "source": "The Vibes",
+   "link": "https://www.thevibes.com/articles/opinion/127690/time-to-abolish-fuel-subsidies-and-tolls",
+   "lang": "en",
+   "category": "fiscal-federal",
+   "blocs": [],
+   "parties": [],
+   "seats": [],
+   "score": 0.5,
+   "judged_at": "2026-09-26T05:17:28+00:00"
+  },
+  {
+   "query": "feed:Scoop",
+   "title": "Umno-PAS cooperation faces trust deficit, seat allocation ‘ticking time bomb’",
+   "date": "2026-09-26T00:00:00+00:00",
+   "source": "Scoop",
+   "link": "https://www.scoop.my/news/299283/umno-pas-cooperation-faces-trust-deficit-seat-allocation-ticking-time-bomb/",
+   "lang": "en",
+   "category": "seat-allocation",
+   "blocs": [
+    "BN",
+    "PN"
+   ],
+   "parties": [
+    "UMNO",
+    "PAS"
+   ],
+   "seats": [],
+   "score": 0.9,
+   "judged_at": "2026-09-26T05:17:28+00:00"
+  },
+  {
+   "query": "Malaysia politics",
+   "title": "Did NS govt interfere with monarchy in proclamation stance, asks analyst - freemalaysiatoday.com",
+   "date": "2026-09-25T23:32:20+00:00",
+   "source": "Google News",
+   "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE42R2NfZTZpLV8xcW1IY2tpdkRjajA5Ul9qZkNqQ3k3REIxU3g1TjFhelREd3dIQmdaOE9qNFIzSno3S05kaWJyS21VZVB5M0d6ZGViUVRHSUpqd2FiNDlXNmpB?oc=5",
+   "lang": "en",
+   "category": "state-election",
+   "blocs": [
+    "BN"
+   ],
+   "parties": [],
+   "seats": [],
+   "score": 0.7,
+   "judged_at": "2026-09-26T05:17:28+00:00"
+  },
+  {
+   "query": "Perikatan Nasional",
+   "title": "Perikatan Nasional breached its constitution, says Azmin",
+   "date": "2026-09-25T23:10:20+00:00",
+   "source": "The Star",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOYU92X2ZPMm4xWWtYcVR5TERhZHFTRkRNSFpqUDZKbEtuZk9TbjRwa0Foc1ltaDZ1c0FlZ0I4dXljYV96cjBBVzBIdVFUQXh2R28yNlZib2FXQVpVNTlDb0Zvb2VGTkVpcFE0S1NJRXk4Z2hrUklHeERqNlVnY3pTM3JOS0FzRzB5RUpNLVRadE1xWjA1a3piQU54X1hKSW0xaDI0TllwYmU?oc=5",
+   "lang": "en",
+   "category": "coalition",
+   "blocs": [
+    "PN"
+   ],
+   "parties": [],
+   "seats": [],
+   "score": 0.85,
+   "judged_at": "2026-09-26T05:27:26+00:00"
+  },
+  {
+   "query": "Barisan Nasional",
+   "title": "BN yet to finalise list of Melaka candidates",
+   "date": "2026-09-25T23:10:20+00:00",
+   "source": "The Star",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQQldfOUdjdks5WkFZNUZCdWtBVzBmR09UTkMwblJfSURLS2ptLWdOVnBNUmwwQmYxazhTck12QUxDT3c4aXNQWDhybU1mcmxENkM1dThyamhDN2ZKUmRIV25vSF9hR2xJM0dOLXdxZFR3OUtaejUySUZfMzVjU1dtR1lQOHBtY1ppZHVLbXZxZVFuS1cwQmFTeEh3?oc=5",
+   "lang": "en",
+   "category": "candidate",
+   "blocs": [
+    "BN"
+   ],
+   "parties": [],
+   "seats": [],
+   "score": 0.9,
+   "judged_at": "2026-09-26T05:27:26+00:00"
+  },
+  {
+   "query": "Perikatan Nasional",
+   "title": "Perikatan mulls logo options",
+   "date": "2026-09-25T23:06:12+00:00",
+   "source": "The Star",
+   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNZGxNc2Y3VXIxMGYzREpaZTY5WjBFVnBnUzdZZjRPd0JGaGVEZ21pSkt4MnBVZW83dDd6aGJnQ1FSU3VfdHJ1c3NULUk5d2NBZUI0QjR1U1lXWkk2NEdxWjFDZE82SVktVTJPSHh3bERmSDhfUEJ2aEhSdUhoTU0tUGI4a0Y?oc=5",
+   "lang": "en",
+   "category": "coalition",
+   "blocs": [
+    "PN"
+   ],
+   "parties": [],
+   "seats": [],
+   "score": 0.8,
+   "judged_at": "2026-09-26T05:27:26+00:00"
+  },
+  {
+   "query": "Malaysia coalition politics",
+   "title": "Malaysia transport minister plans resignation over Najib pardon",
+   "date": "2026-09-25T22:29:05+00:00",
+   "source": "UA.NEWS",
+   "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOVE1Ra1pPSVJvT0h4TkZCcV9sSmpBZVFBQ25hV1ZMUjEzeGtSRzY3enVHRE13Mm9HaHNsR0ItY1BINkVtYXgzdVdVc2U4b3BQWXU2Z1JGOFdrbk9QbWJseUwzcVBUeHAteFpjaTRuOGxYNjNWWWFFN0tzWmZncWtRWko1eWR0bkppQmdLX2wzbEJMUE0zaDd5VHFrNVVXUG5uNHF6cXZxUjJ6REdIWGd4QXVuczgwb0xocGxIc3RKZUNKcW9MTGFxYVFQbG5qb00?oc=5",
+   "lang": "en",
+   "category": "candidate",
+   "blocs": [
+    "PH"
+   ],
+   "parties": [
+    "DAP"
+   ],
+   "seats": [],
+   "score": 0.85,
+   "judged_at": "2026-09-26T05:27:26+00:00"
+  },
+  {
+   "query": "feed:CNA Malaysia",
+   "title": "Commentary: Anthony Loke resignation offer matters little to DAP’s fate",
+   "date": "2026-09-25T22:00:00+00:00",
+   "source": "CNA Malaysia",
+   "link": "https://www.channelnewsasia.com/commentary/malaysia-najib-conditional-pardon-anthony-loke-resignation-offer-dap-6410446",
+   "lang": "en",
+   "category": "analysis",
+   "blocs": [
+    "PH"
+   ],
+   "parties": [
+    "DAP"
+   ],
+   "seats": [],
+   "score": 0.85,
+   "judged_at": "2026-09-26T05:27:26+00:00"
+  },
+  {
+   "query": "Anwar government",
+   "title": "PM approves RM2.8mil allocation to repair Islamic institutions in Kedah",
+   "date": "2026-09-25T15:28:00+00:00",
+   "source": "The Star",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNWmNLRmNyZ3hJb0ZueFZCZmJnOGdKQkpvdHc0OVY3TDRPS3g1UTZmWUh2NjNvLUcxTWYxSkZPSHFOamZTWVNjR1JiMTBTMUV4Q0RxYWpVMmREcmxnVy1YdlVONWMtaGJjX0xqRFdRRkZHWHZxWHpDcVF6QlU1a3E5N0d2VkxTel9SOG9FWUttWnNqOXdHUjFpaGFuUURiUUpGUFdGUHItaHFQMlJ2YlMwT2VrNlNsWEFfY0wwMg?oc=5",
+   "lang": "en",
+   "category": "fiscal-federal",
+   "blocs": [],
+   "parties": [],
+   "seats": [],
+   "score": 0.6,
+   "judged_at": "2026-09-26T05:27:26+00:00"
+  },
+  {
+   "query": "feed:New Straits Times [GN]",
+   "title": "Tuan Ibrahim: PN parties must stay calm, strategic amid RoS suspension - NST Online",
+   "date": "2026-09-25T14:24:45+00:00",
+   "source": "New Straits Times [GN]",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPc1F2LUhtU1dtdUJjWUI4WHFHeHFSN1Jua1dNdjBRcHdPaWI0aWh3ZXMxQVdHRG1mcXJsWmJOVDhMNXY2dUtrRXVRVGt2R2ZZd2dNd1J3X2hsOGJEOG5Ub0pCLUtNY2luYk1DNWtTMzN3cVk3eWNxX1JjYWZJaVBLM3cwckd4Y21jVV9IamhQZW1TWE1UNFM1ZVE4dnZWNkNOa0JxcDNkYjhBNDhSM2dxOUhxTVJaTm13V3U0?oc=5",
+   "lang": "en",
+   "category": "coalition",
+   "blocs": [
+    "PN"
+   ],
+   "parties": [
+    "PAS",
+    "BERSATU"
+   ],
+   "seats": [],
+   "score": 0.9,
+   "judged_at": "2026-09-26T05:27:26+00:00"
+  },
+  {
+   "query": "Pakatan Harapan",
+   "title": "The illusion of the principled",
+   "date": "2026-09-25T14:22:43+00:00",
+   "source": "The Malaysian Reserve",
+   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQQ3NMTVAwSkpQUXd6NEh1WlRLbmJfVWVDQi1NTVBNWFRUSnNZRDZhZTN6MWVDVzVsVTVUbzlJSHlPUkdwYWJMSUZhaTMxcUwtTWZnRU4wUGxqWElqVjhKMEZyWklmVnM5OFBvdmV1UDBjb3hsN2dYclU1cHY3eWdZaUNSNDk?oc=5",
+   "lang": "en",
+   "category": "analysis",
+   "blocs": [
+    "PH"
+   ],
+   "parties": [],
+   "seats": [],
+   "score": 0.6,
+   "judged_at": "2026-09-26T05:27:26+00:00"
+  },
+  {
+   "query": "feed:New Straits Times [GN]",
+   "title": "Pas prepares to contest Bersatu-held Kuala Sentul, Lepar - NST Online",
+   "date": "2026-09-25T13:40:46+00:00",
+   "source": "New Straits Times [GN]",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPLTMwUjlXaEFpTWcwRkJicWN3OTBFVlF0Y1FSX29TREtHck5HSXdCMld4UkpSdjRQM21ocHlDOEhPZ2ZGMjBYampMaXlTa0wxb3MzZm5ONFY0cDJOZW50T3dnV2VsNElEaUFQTU5RSk1ON0hRWkxQc3Jzc01vbmVhbkJmY2lZUEN3YzBYVk5VRlI0bS1ERDhmMlVlajB2czB6VGF1bjhPazY?oc=5",
+   "lang": "en",
+   "category": "seat-allocation",
+   "blocs": [
+    "PN"
+   ],
+   "parties": [
+    "PAS",
+    "BERSATU"
+   ],
+   "seats": [
+    "Kuala Sentul",
+    "Lepar"
+   ],
+   "score": 0.9,
+   "judged_at": "2026-09-26T05:27:26+00:00"
+  },
+  {
+   "query": "Dewan Rakyat",
+   "title": "Strengthen Integrity Units as strategic partners to combat corruption – Johari",
+   "date": "2026-09-25T13:32:13+00:00",
+   "source": "Newswav",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPSnBRc0tUSk1VZWdzUWlTMTVsekd0UERFTjZVakN5OEM0aUJoUlh0X09OTFJ5UHZ3UEVxOE41anpHeUVkVkQ1bEFjVFlBTmtnWkk0UXJaZEd0ZEtndFJuWGMwZG9vUTBHaFg3dkpkQjlRR0pUQ3lqU0k2aHZBeXBaTV8yWTMyYjUyZUNhVFo3MHNFZTFHc3RQUWJYU0M4STlhMnVVWUphbjExa1ZqNTdlcTdaN0ZqSHc?oc=5",
+   "lang": "en",
+   "category": "policy",
+   "blocs": [],
+   "parties": [],
+   "seats": [],
+   "score": 0.5,
+   "judged_at": "2026-09-26T05:27:26+00:00"
+  },
+  {
+   "query": "feed:Malaysiakini [GN]",
+   "title": "SNAPSHOT | MACC to serve asset declaration notices on Saravanan, family; DAP Youth to join 'corporate mafia' RCI protest - Malaysiakini",
+   "date": "2026-09-25T13:11:00+00:00",
+   "source": "Malaysiakini [GN]",
+   "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNcVN6MjZEYXJMUHkyOE0xZk1nMWtJLUFLU0hjRlQ3czc5eVg4a3pZY2xERGU2SXhpUHdMMElrSVBLNFgzWnd5Z0VQSS1uWGpDdk1Jdlp3bV85UWRpVDRrdFFkdmVkMGNRV3JjTWN1VlRDa0ZRaU1wdHZRajg0ODl4OFJtWHNrU0syZGNaWUZJX0I1eFdTcHhLNUkzVU9RYUpkcHFPT085OGJGbnR4Nm0zSEl2cm8tb3dkUTRmLWRPal9zREZ2MlRQdlN3NEVkdEdSTjIyYWU4Nk1ZeTJBZmNmamtyTlp1b3ZVN0hB?oc=5",
+   "lang": "en",
+   "category": "election-integrity",
+   "blocs": [
+    "PH"
+   ],
+   "parties": [
+    "DAP"
+   ],
+   "seats": [],
+   "score": 0.7,
+   "judged_at": "2026-09-26T05:27:26+00:00"
+  },
+  {
+   "query": "feed:Scoop",
+   "title": "Federal Court should step in swiftly to resolve Negeri Sembilan crisis: Hamid Sultan",
+   "date": "2026-09-25T13:00:00+00:00",
+   "source": "Scoop",
+   "link": "https://www.scoop.my/news/299255/federal-court-should-step-in-swiftly-to-resolve-negeri-sembilan-crisis-hamid-sultan/",
+   "lang": "en",
+   "category": "legal",
+   "blocs": [],
+   "parties": [],
+   "seats": [],
+   "score": 0.7,
+   "judged_at": "2026-09-26T05:27:26+00:00"
+  },
+  {
+   "query": "Malaysia politics",
+   "title": "Malaysia politics: Ex-PM Najib Razak asks court for stay of 15-year jail term",
+   "date": "2026-09-25T12:55:45+00:00",
+   "source": "CNA",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQV0tOMkdjZVNvUFdVN05KMFFPem1ZMTl3NDQydUtTMEJGazN6djFQb1VqYzFBY3Vwc2o0Z2psQktfWk02UWY5RUdfRDZkQVZNWmIxWHFnZmRLSWhrbXotT2gtM0otcmxPM0JhM0VfZjk0Z2JqV3MxaFZ0a0xsajZZVENOZ21XQWpwb3QtcmtUam81cDV5VURLelJHVXJZYVF6UVFfTGxFWnF2elVCbHlLaEl6bFBOZw?oc=5",
+   "lang": "en",
+   "category": "legal",
+   "blocs": [],
+   "parties": [
+    "UMNO"
+   ],
+   "seats": [],
+   "score": 0.8,
+   "judged_at": "2026-09-26T05:27:26+00:00"
+  },
+  {
+   "query": "Malaysia by-election 2026",
+   "title": "EC: 43,309 new voters added in August — check the electoral roll by October 24",
+   "date": "2026-09-25T12:22:43+00:00",
+   "source": "Malay Mail",
+   "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOTHRHLWFTcnU1dUt2WG9kRlBSQnRlTnU1bkhBajZ2MHZvNERVRDJYZzY2dEgzVjE1dGtZNGcyV3A2a25keEFFMThGeFFnX2RBeFlsVVBXR1hoUlA1VFZ5bGtvRlc0UDB3N29ZaTN2WUllRWFWeDZvTUNYaGpZX2hCV1RTU0xWTHZEcDMtd0tqZURGUWZrc3BNUnZxUkZHSTBIUmpXNzBHWEtmZ1NPSFNGcGtRMVBzY2huTU9GNDhJdWk0OXpmVndrOU8xSUUyaXU2WHfSAdIBQVVfeXFMTkx0Ry1hU3J1NXVLdlhvZEZQUkJ0ZU51NW5IQWo2djB2bzREVUQyWGc2NnRIM1YxNXRrWTRnMldwNmtuZHhBRTE4RnhRZ19kQXhZbFVQV0dYaFJQNVRWeWxrb0ZXNFAwdzdvWWkzdllJZUVhVng2b01DWGhqWV9oQldUU1NMVkx2RHAzLXdLamVERlFma3NwTVJ2cVJGR0kwSFJqVzcwR1hLZmdTT0hTRnBrUTFQc2Nobk1PRjQ4SXVpNDl6ZlZ3azlPMUlFMml1Nlh3?oc=5",
+   "lang": "en",
+   "category": "election",
+   "blocs": [],
+   "parties": [],
+   "seats": [],
+   "score": 0.9,
+   "judged_at": "2026-09-26T05:27:26+00:00"
+  },
+  {
+   "query": "Dewan Rakyat",
+   "title": "Johari: Corruption risks must be spotted early, not addressed later",
+   "date": "2026-09-25T11:05:43+00:00",
+   "source": "NST Online",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQTi1CVHNWX3lzS1AwU0E2cWVkVE9uRDdfbUNEbmNxQ2FfT3ZKNEJFR2ZLNTlFMDA2cGhhbzE2Q3YxVjZnYmNaTWJVaUJkYmluS19uWXhhU0luZXFDSUVSQ3o2YXV3VEhLYlFWb2RkTnRmakF1dE1QYjgxX0NBMl9FZ05mSlc3dllqVG5pOGQyYkcwUHdpQXNEQ2lBMTQwSnpEWWlLTl9JYjNuRDZ3WWRYTWp4NEtlbTQ?oc=5",
+   "lang": "en",
+   "category": "election-integrity",
+   "blocs": [],
+   "parties": [],
+   "seats": [],
+   "score": 0.6,
+   "judged_at": "2026-09-26T05:27:26+00:00"
+  },
+  {
+   "query": "feed:The Edge Malaysia [GN]",
+   "title": "Fertiliser supply issue: Two to face charges soon, says MACC - The Edge Malaysia",
+   "date": "2026-09-25T10:58:38+00:00",
+   "source": "The Edge Malaysia [GN]",
+   "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5YTVp3bVVoZk4wRklvN2w1TlhDQ3NHVUNabXc3azlZSkNodTg4SFNFcndsZ0Zxd2cwQnExTkRsZXl4NnAtRl9Pc1ZiU2ZEU29f?oc=5",
+   "lang": "en",
+   "category": "election-integrity",
+   "blocs": [],
+   "parties": [],
+   "seats": [],
+   "score": 0.6,
+   "judged_at": "2026-09-26T05:27:26+00:00"
+  },
+  {
+   "query": "feed:Twentytwo13",
+   "title": "A slice of mooncake: A 14th-century rebellion and what it teaches us about Malaysia&#8217;s messy road to reform",
+   "date": "2026-09-25T10:22:57+00:00",
+   "source": "Twentytwo13",
+   "link": "https://twentytwo13.my/a-slice-of-mooncake-a-14th-century-rebellion-and-what-it-teaches-us-about-malaysias-messy-road-to-reform/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=a-slice-of-mooncake-a-14th-century-rebellion-and-what-it-teaches-us-about-malaysias-messy-road-to-reform",
+   "lang": "en",
+   "category": "analysis",
+   "blocs": [],
+   "parties": [],
+   "seats": [],
+   "score": 0.6,
+   "judged_at": "2026-09-26T05:27:26+00:00"
+  },
+  {
+   "query": "feed:The Star [GN]",
+   "title": "PN violated constitution by barring Bersatu from supreme council meetings, says Azmin - The Star",
+   "date": "2026-09-25T10:04:00+00:00",
+   "source": "The Star [GN]",
+   "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPNHQyeU5vNXZZcF9NMllQajA3M1g5NzBfN0V0Wl9yYURhWW8wV3RjMkVYUFJHQ244QVYtdHE2d1l2aFE2R29jTmVTSDVvc3lnN2VXejRCRjZTZWtMMWlRUXBxYmNzQnE1M0FsaVR4b1RiQ3UwS3ppMTROUm5RWUJNQjluUDZ3aEtvQzV2X1pwU3Z6RmEtLVU1aE1jMmJ2cVZSOW84OElDRmUtNGNUb3g0MDNBZ2ZnYUNCWjh5Z0lscnczSWdhek4xQXI3RWswU3c?oc=5",
+   "lang": "en",
+   "category": "coalition",
+   "blocs": [
+    "PN"
+   ],
+   "parties": [
+    "BERSATU"
+   ],
+   "seats": [],
+   "score": 0.8,
+   "judged_at": "2026-09-26T05:27:26+00:00"
+  },
+  {
+   "query": "feed:Malaysiakini [GN]",
+   "title": "SNAPSHOT | N Sembilan Harapan urges MB to have audience with ruler; Nga 'adopts' 11 Teluk Intan B40 pupils - Malaysiakini",
+   "date": "2026-09-25T10:00:00+00:00",
+   "source": "Malaysiakini [GN]",
+   "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPWkxyWmlyZTY0TGk1c1VXZTlVUU0zV2RHY0VPOTRuUE8zTmRJTGZTN1lTRVpFZ0lGNFdjaGZHT3FIMXpCREw0WHdvUXVrUmNFeXdQb2lGZFc5eVFKb3pCTjBIdC1ZMmh6RjV6b1d4Rl9KLVJ3VVJRSU1Ua0wzYUtFejdCYlJVNnVTTWNNNkFRd3Bodk5lR1NkaEJMMTdVbVZUMDV6WnRwZmpZd2E0aWx1V004dWtXV2FGNFBjaEZwUXNQSXREVjB5MGZ1RGlWWlBKY1l3Z2JOd0pOdw?oc=5",
+   "lang": "en",
+   "category": "state-election",
+   "blocs": [
+    "PH"
+   ],
+   "parties": [
+    "PKR",
+    "DAP"
+   ],
+   "seats": [
+    "Teluk Intan"
+   ],
+   "score": 0.7,
+   "judged_at": "2026-09-26T05:27:26+00:00"
+  },
+  {
+   "query": "feed:Twentytwo13",
+   "title": "When a politician &#8216;plays&#8217; doctor",
+   "date": "2026-09-25T09:23:04+00:00",
+   "source": "Twentytwo13",
+   "link": "https://twentytwo13.my/when-a-politician-plays-doctor/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=when-a-politician-plays-doctor",
+   "lang": "en",
+   "category": "candidate",
+   "blocs": [],
+   "parties": [],
+   "seats": [
+    "Sungai Manik"
+   ],
+   "score": 0.5,
+   "judged_at": "2026-09-26T05:27:26+00:00"
+  },
+  {
+   "query": "feed:Malaysiakini [GN]",
+   "title": "Azmin: PN should look in the mirror before blaming ROS over deregistration threat - Malaysiakini",
+   "date": "2026-09-25T09:08:00+00:00",
+   "source": "Malaysiakini [GN]",
+   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOZHQ3bWFBbnBCVHJ6a0NjZnNBUG11MVZsVFotaDY2OC16M2NJX0tjbDFnOTRxZG8tcUtQdjRyNEdaa1U4V2JjaGJOUXFtcFZFRXpjTlBzSUZ5WHAxR192OU5hdDRoLVJ2WWxMNmoybW5SbWtkZzhneEFEbHRSZS15T2pRLWJlR0NhTGVublJpZnhwa2FkSXpYNHJha0hQbXJOckxYQ1JhS2lQdmFzU2JPcFFyOVpGTjNURzFBbFRUUGRpWFU?oc=5",
+   "lang": "en",
+   "category": "coalition",
+   "blocs": [
+    "PN"
+   ],
+   "parties": [
+    "BERSATU"
+   ],
+   "seats": [],
+   "score": 0.8,
+   "judged_at": "2026-09-26T05:27:26+00:00"
+  },
+  {
+   "query": "Pakatan Harapan",
+   "title": "Viral AI Poster Not Issued By PKR, PH",
+   "date": "2026-09-25T09:01:00+00:00",
+   "source": "Melaka PKR - bernama",
+   "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1uVnRBbGd0RTRPbHd3XzExZjhRenBoallHTG5HeThKemtfYjZqd3V3aHRhWEl6VGpqZFVMaWxEOGUwZlZuV0wzOUtoQ19LakVwQWNsaUVCSzN6czNGbDB4Wg?oc=5",
+   "lang": "en",
+   "category": "election-integrity",
+   "blocs": [
+    "PH"
+   ],
+   "parties": [
+    "PKR"
+   ],
+   "seats": [],
+   "score": 0.75,
+   "judged_at": "2026-09-26T05:27:26+00:00"
+  },
+  {
+   "query": "Pakatan Harapan",
+   "title": "Akmal leaves political future to fate after Melaka assembly dissolution",
+   "date": "2026-09-25T08:19:00+00:00",
+   "source": "Sinar Daily",
+   "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1Zb21lN3pzbnlTX0Q0TnppeGFGa2F0NXdsTUE0SVdrOHRUZEZ4Z3cyTFBUb0xONHQzMUdqblBIMHFhby1wVXp0dU0zV3BLQzRMUzVPMk9B?oc=5",
+   "lang": "en",
+   "category": "candidate",
+   "blocs": [],
+   "parties": [],
+   "seats": [],
+   "score": 0.75,
+   "judged_at": "2026-09-26T05:27:26+00:00"
+  },
+  {
+   "query": "Malaysia election news",
+   "title": "EC to hold special meeting on Oct 7 to set Melaka election date",
+   "date": "2026-09-25T07:31:59+00:00",
+   "source": "NST Online",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNX2dRcFJCcmpsdDVzcndTU1A0ZlE4ZDZFV2x4WllZb0taSE9xMXFtTWE1cTZ3TDRtZmUxNms4a0lRQi1NUFd3S2tlZVU3OHpvOGdNTFB4OTN5dk5VcjBndlZXa1BIZGY4a2RYQ2NGbFFNT3laaHdnQzVfb2YwVGE5VFpYLVlRelUwNG8tX2EzUVNqRnFmbloyTFA0Vi1rZDBnZjJIMkk3dTR5ZjVYVHc?oc=5",
+   "lang": "en",
+   "category": "election-timing",
+   "blocs": [],
+   "parties": [],
+   "seats": [],
+   "score": 0.95,
+   "judged_at": "2026-09-26T05:27:26+00:00"
+  },
+  {
+   "query": "feed:Malay Mail [GN]",
+   "title": "Negeri Sembilan undangs tell PM, AGC to stay out of state affairs - Malay Mail",
+   "date": "2026-09-25T07:14:00+00:00",
+   "source": "Malay Mail [GN]",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPVnJiazdjU091empLU3FVUTIwdFVBd1hUWGxNZ1RwMTh3M0V1X04teUwtNGVuZ3FDXzRncTRYM010OElXY0VGQWtzV2xPMEYyaXY4RTdoNFlmLUF2Z2FhNjNkQmhvTjFYcUhDbFlrYnNYRjgwOUpzU2ZrUzlsNEJJVHJCOUxWTWtKTDZsSXVYemlwcmxTUmFZejBPTDV3VTFuMnNLQ3lISE91YXp5anlkMkJPdC1FVmZybGt2QUhCb9IBxAFBVV95cUxQaGNaaHFDdWdQYVJRTm0tb28xNnNNTzhVRXlRSVJySzBhWndFd2JCQV9vRTlkcGZzWXhpNlpsLXNvZF9aSmY1YkVuRWxScldEckU4YUNxdldDTUF2amFMOWpMc0lxcWpiSlVIRzl2X0FjYVhzUlBaSzZja3NyYlA4WnR2Vk1DaUtlZjIyZVZfZC11b1VVRF9KenFyYk1IWTZJWTk0c21pQjZ2SDRydGNPUm1pRzBpcTJPYVBuRnRrRW1XVlI3?oc=5",
+   "lang": "en",
+   "category": "state-election",
+   "blocs": [],
+   "parties": [],
+   "seats": [],
+   "score": 0.7,
+   "judged_at": "2026-09-26T05:27:26+00:00"
+  },
+  {
+   "query": "feed:Rakyat Post",
+   "title": "GE15 Independent Candidate Arrested For Allegedly Pushing 79-Year-Old Former State Hockey Player Into Drain In KL",
+   "date": "2026-09-25T06:49:28+00:00",
+   "source": "Rakyat Post",
+   "link": "https://www.therakyatpost.com/news/2026/09/25/ge15-independent-candidate-arrested-for-allegedly-pushing-79-year-old-former-state-hockey-player-into-drain-in-kl/",
+   "lang": "en",
+   "category": "candidate",
+   "blocs": [],
+   "parties": [],
+   "seats": [],
+   "score": 0.5,
+   "judged_at": "2026-09-26T05:44:11+00:00"
+  },
+  {
+   "query": "Malaysia parliament",
+   "title": "Increase Sabah’s power subsidy, Putrajaya urged",
+   "date": "2026-09-25T06:11:05+00:00",
+   "source": "Daily Express Malaysia",
+   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQSzRRcW1hZGlmUzYyM3lNa3dRWWNxLVk0QUxSZVpfMGFZdWZtX2hMQW5MMGh2MkxmclVSUzAzS05FLTQ0WGhoZUFMcGFuQ2k0QjhUZFVCS1RUTVJwWm5VT3V6NkU5NWI4aklFRXIwUF90Q3N2OXF6emQ4VUNPdTV5VHAyR0ZKczNjZWNLcUUycFFlUTNTbWc?oc=5",
+   "lang": "en",
+   "category": "fiscal-federal",
+   "blocs": [],
+   "parties": [],
+   "seats": [],
+   "score": 0.5,
+   "judged_at": "2026-09-26T05:44:11+00:00"
+  },
+  {
+   "query": "feed:Malaysiakini [GN]",
+   "title": "Disputed N Sembilan chieftains criticise Tuanku Muhriz over exco removal - Malaysiakini",
+   "date": "2026-09-25T05:25:00+00:00",
+   "source": "Malaysiakini [GN]",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPVEUtaHFPVHVRYlFIRnYzekxXYWNTR0VBVGhoX1B2WU8zZ21GV2c4SlVRTjZ3OFVWOUtTa01PQlFya0NVS0ZwVEFmT2ZXRlhkRm5LbGg1cDRXUm5LSEQwdk8tQVB0UnUtWmZwc1paRVBLc2RTbUt3SEktdlh3dUh4MlF0LWlqVmNyZnlMZ1hQVV83U28tY3EzMHNKa0dCS2Jha1Y1RGlkd3hyaWYydE1Ba2Q4cw?oc=5",
+   "lang": "en",
+   "category": "legal",
+   "blocs": [],
+   "parties": [],
+   "seats": [],
+   "score": 0.6,
+   "judged_at": "2026-09-26T05:44:11+00:00"
+  },
+  {
+   "query": "feed:Malaysiakini [GN]",
+   "title": "Lawyer says Najib in RM50m bind - not enough personal funds, torn over raising public money - Malaysiakini",
+   "date": "2026-09-25T04:46:00+00:00",
+   "source": "Malaysiakini [GN]",
+   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQLVo0ZzFZQU5IcUFvbXNTTVMtS2tveVJIaWNhQWpZWjRXSlg0MFFkWXhhMUtlUkVQRUx6Z3B6X0tOV1FEQ1Fob01ESWxMc3MyUnh5ak9OTXVQaU5qMTRUZkduay1zMG9icEYyUUttUVpISjZRR29EYU9DcHkyUUxBb0xmSWM0Nm9BMUVsWFZ2MkxTOUZnWFVRZ3REem1aYzcyNUpDVTUxRzhSYlAwRkNYZFVQNE95cUI4VjRiVWNWVDVMWWxSb3VCVw?oc=5",
+   "lang": "en",
+   "category": "legal",
+   "blocs": [],
+   "parties": [
+    "UMNO"
+   ],
+   "seats": [],
+   "score": 0.6,
+   "judged_at": "2026-09-26T05:44:11+00:00"
+  },
+  {
+   "query": "feed:The Merdeka Times",
+   "title": "Krisis Diraja Negeri Sembilan: Rais Yatim bakal didakwa",
+   "date": "2026-09-25T04:45:14+00:00",
+   "source": "The Merdeka Times",
+   "link": "https://themerdekatimes.com/news/2026/09/krisis-diraja-negeri-sembilan-rais-yatim-bakal-didakwa/",
+   "lang": "ms",
+   "category": "legal",
+   "blocs": [],
+   "parties": [],
+   "seats": [],
+   "score": 0.7,
+   "judged_at": "2026-09-26T05:44:11+00:00"
+  },
+  {
+   "query": "Perikatan Nasional",
+   "title": "PN parties may use own or other logos in Melaka election",
+   "date": "2026-09-25T04:40:37+00:00",
+   "source": "NST Online",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPWEhSbU1RNnl3TDZJTE9VUnkyMFJOTjRKWGUyN2xNRzE3NTJUb1hsUG5jM2FJc1BRR0p6NlJmWld5X0VzN1VnNVc5MWxJWDJpUm8tR3Bvd2tuSm9WeGNwUm5mUHFkR2RyMW1Ma2Qtdi1Wa2o4NzBTZjk3OHNDRHpPLWZFdmYySmRQRUZxRVZBdWZmUTlYVHhCU2NhS3JveHFTRDBkRGFySlNXVkdPQkVUOVdGMnpucWg1eVdFbQ?oc=5",
+   "lang": "en",
+   "category": "coalition",
+   "blocs": [
+    "PN"
+   ],
+   "parties": [],
+   "seats": [],
+   "score": 0.9,
+   "judged_at": "2026-09-26T05:44:11+00:00"
+  },
+  {
+   "query": "feed:Malay Mail [GN]",
+   "title": "PAS unfazed by Perikatan suspension, says voters already know its moon symbol - Malay Mail",
+   "date": "2026-09-25T04:37:35+00:00",
+   "source": "Malay Mail [GN]",
+   "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQb2trYkwxQkRLUkoxdlBPQXRwaUd5UnVyLVMzb1RTd2UzM05DeHhIdVQ0cE5vYkU5TXZEWGdyOHJXMjRTWFRueldyNEc2TGoxaHlXS1F5UDMwT2gwVnMtSktIX1BrYjZQdERxakpKeGlINGtFY0VKaVdSMDVhR29hNlotcEZ5bG0tbVJiWjh0R1RJZ0N5aEQyQUlaRkJHZ2ZxQnlISWhnUVlTTm5QUDJ1cG5KMEZ2N1NNQnBfY1Fxd29CNXNnQlZBVV9mdEZCMVnSAdQBQVVfeXFMT1dVOWlJdGlfb2xDOEpwalNyaFI3ZXFQSnFkYnBPM3FaT2JqWDhvYUtJSVpVMllYN053NzZFUmFueEd3Wk9FTG1RRVVFdDVIWlRPVGNlVmwwWHM5bzNobXVpaDIyUThqX00yOVBCQkc2TEh3T3NuRFVRWWdsaHpLN1VLWEhUczVvVXlrWkpoX19QSzhFVTNReldMZlBwUWctYTZXRkJFNWJZYVNYRnJMRFNnQjBYT2tsQ2ppS2M5WC1qbzlIT1dnUjZxeTRIdXpNa2NJbGY?oc=5",
+   "lang": "en",
+   "category": "coalition",
+   "blocs": [
+    "PN"
+   ],
+   "parties": [
+    "PAS"
+   ],
+   "seats": [],
+   "score": 0.9,
+   "judged_at": "2026-09-26T05:44:11+00:00"
+  },
+  {
+   "query": "GE16 Malaysia",
+   "title": "Perikatan partners not breaking up over Tasek Gelugor seat issue, says analyst",
+   "date": "2026-09-25T04:05:20+00:00",
+   "source": "NST Online",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNNHJPUTZJOHc5NUwyNU5MVlVDNkNYaS1VYnBRUXdtLVptTjl3TjNWRVlUWGdkSThKWDNObUQ0bEppWWlnQU00anZ6aEM1T0FLcDVaNGlFNjE0VjE4Y2ZQWlZ5R01zTk81TzRtc1RaR0dpbFRqOFpsa1piQ1lmbW1uck85NVdkaFJFS21TdlprZnBndUptdFRwQnhycW9lLXROT3ltUnFyY3FLOFkxbHhaYTdOS1JDN0R2Y1JfVXBiYWU?oc=5",
+   "lang": "en",
+   "category": "seat-allocation",
+   "blocs": [
+    "PN"
+   ],
+   "parties": [],
+   "seats": [
+    "Tasek Gelugor"
+   ],
+   "score": 0.9,
+   "judged_at": "2026-09-26T05:44:11+00:00"
+  },
+  {
+   "query": "feed:The Star [GN]",
+   "title": "Negri royal row: Stop blaming others and own up to your missteps, Tok Min tells MB - The Star",
+   "date": "2026-09-25T03:47:00+00:00",
+   "source": "The Star [GN]",
+   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPdFRvQmpuLVRPWU1TMjVvQmk3SmE1T0s5WEhjRkRiTExZVnhoZTdRRnhlMnI4TUVzNTdSUTJnRDA0TWwwUHZoMkswdEpzejFxemQ1WnFKV0NEWU1CcTl5cDZROHdHWlNyajNENEc5MUdHdDFYWHU4X1FORUxnamZfWUNkR0xMUG55OUVoOU1uQXpzanVmeC05Y0gtdnA3b0U5R2FMMjZfTzRfbVZfUzNNNjNqMm02OWhvTXNiY2FwRzlPSk0wLXVQcTRR?oc=5",
+   "lang": "en",
+   "category": "legal",
+   "blocs": [],
+   "parties": [],
+   "seats": [],
+   "score": 0.6,
+   "judged_at": "2026-09-26T05:44:11+00:00"
+  },
+  {
+   "query": "feed:Rakyat Post",
+   "title": "Malay Chamber Demands Answers After Government Drops 30% Bumiputera Equity Rule For Private Tuition Centres",
+   "date": "2026-09-25T03:06:16+00:00",
+   "source": "Rakyat Post",
+   "link": "https://www.therakyatpost.com/news/malaysia/2026/09/25/malay-chamber-demands-answers-after-government-drops-30-bumiputera-equity-rule-for-private-tuition-centres/",
+   "lang": "en",
+   "category": "policy",
+   "blocs": [],
+   "parties": [],
+   "seats": [],
+   "score": 0.5,
+   "judged_at": "2026-09-26T05:44:11+00:00"
+  },
+  {
+   "query": "feed:The Merdeka Times",
+   "title": "Malaysia perlu jadi pembentuk pasaran halal global &#8211; Zulkifli",
+   "date": "2026-09-25T02:46:39+00:00",
+   "source": "The Merdeka Times",
+   "link": "https://themerdekatimes.com/news/2026/09/malaysia-perlu-jadi-pembentuk-pasaran-halal-global-zulkifli/",
+   "lang": "ms",
+   "category": "policy",
+   "blocs": [],
+   "parties": [],
+   "seats": [],
+   "score": 0.5,
+   "judged_at": "2026-09-26T05:44:11+00:00"
+  },
+  {
+   "query": "Barisan Nasional",
+   "title": "BN to Negotiate With Other Parties For Melaka Polls Soon – Ab Rauf",
+   "date": "2026-09-25T02:31:03+00:00",
+   "source": "Malaysia-China Insight",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQaHRhYjlvYk5FMnB3dlBqM2ZqV1FHYTU0ZVVsM0xpSS1YYlVNQW8ya2tVQm9teDBCbC1vaG5XQy00VkZqZ0Y4YXVsX2tvRlhkMVZsQ1FzTk1SY0VDeUN1OXU0MVc2LS1VSEYwNkZ5amtUMmZ2OWY4MWhqSGRnQVFhamU2SmZFRTNvSmNzX25zZVVMNUczNGtYdVFn?oc=5",
+   "lang": "en",
+   "category": "state-election",
+   "blocs": [
+    "BN"
+   ],
+   "parties": [
+    "UMNO"
+   ],
+   "seats": [],
+   "score": 0.9,
+   "judged_at": "2026-09-26T05:44:11+00:00"
+  },
+  {
+   "query": "Malaysia election news",
+   "title": "BTH: Who matters in Melaka's polls &amp; RoS restricts PN activities [WATCH]",
+   "date": "2026-09-25T02:00:21+00:00",
+   "source": "NST Online",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQNnJtcUF3UFFZTzQwNGN2TWh6V085OWREYlBZLS0wSGRxS3F3MWFsaW9ZWmlLSnhGS0VESUs3MWZfTVpibmVJenVZQTI2YnVvdEkwV20yN3U3SGRnM0ZEMFdRWnNJZ2kzNGhMdGwxNmgxZFVtNHdrVU5sUGxXVzFHZXFLUTZlQ0ZCUmx0MkN2M2U0S2FDUVdlZnNIRHhkTElLZTdld1Q1UC16MDQ3c0tkMWFkdHQ?oc=5",
+   "lang": "en",
+   "category": "state-election",
+   "blocs": [
+    "PN"
+   ],
+   "parties": [
+    "PAS",
+    "BERSATU"
+   ],
+   "seats": [],
+   "score": 0.9,
+   "judged_at": "2026-09-26T05:44:11+00:00"
+  },
+  {
+   "query": "Perikatan Nasional",
+   "title": "The strategic effects of a deregistered Perikatan Nasional — Phar Kim Beng",
+   "date": "2026-09-25T01:23:45+00:00",
+   "source": "Malay Mail",
+   "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPdXBOeF9UQzViYjlwelNxWDRvVVdGX1FwY3VHeDV6bDlNMENXeDBTR0lrMm1RZmpGZTVobF9ZbEJDeHB4OWxTbkdtNjJYOC1ad2J1b09FZlk1LWo5TTVpTVY3V2kzNWNiXzFsMk5PRllCeWJLNnFzUDNHZkphU3lKV0RBaG8tTVNhQ3ppQndzUTBPWEI3OTdRYXVmdVBVTDFkWk1MNDlpWG5rQlNMbU1YQ1R0c1NWWWFUVzBhWlY4ZlpYZGNKWTVubms1a0N6cDhJU3fSAdcBQVVfeXFMTTZqV3pVQWpjOFhZQkJDNm53QWRrV2pqNTdwV3RlaTBhUDQ3M0xVaDFUVmEyVldLU3l5RE1DVE5zVGhNb2xzRUVnX3hzMEdXZnBJVjhZLU82djRVT3JHanlJeW1zc216NXRHdFVDSTNfZXlmLWVmck85Yk5SbXJHY1pZSDJfMTlUc2lKelF4UXdHd1VHeHp3VUdjcG1TckE1eENhaUxRZGlTckJPdkt4SHBPSXR0WUJWWjJuMVRXYjZ4ajhsNVpRYXFUbWxlVGJBdzNPNlF5Ykk?oc=5",
+   "lang": "en",
+   "category": "coalition",
+   "blocs": [
+    "PN"
+   ],
+   "parties": [],
+   "seats": [],
+   "score": 0.85,
+   "judged_at": "2026-09-26T05:44:11+00:00"
+  },
+  {
+   "query": "feed:The Star [GN]",
+   "title": "MB: Resolve crisis via state institutions - The Star",
+   "date": "2026-09-24T23:47:13+00:00",
+   "source": "The Star [GN]",
+   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNRkJSeW9tMkg2bHZrSFVOY2RIVk82TWJJRHR3WDBVRzZkcE9hZEZyRmpsX1oxMzk0cUNwWDN5dFAxZmh5LTR1Yk94Z3FPV0tFX1lLc3JNUGtWdlZLd0g2RjJiem9uUERpbkVxNUxVLTI4WnJTbEhXRDR2eV81MVZkLXFuV2xlX0xUdWNqdk5PNDNCUFk?oc=5",
+   "lang": "en",
+   "category": "state-election",
+   "blocs": [],
+   "parties": [],
+   "seats": [],
+   "score": 0.7,
+   "judged_at": "2026-09-26T05:44:11+00:00"
+  },
+  {
+   "query": "feed:The Star [GN]",
+   "title": "ROS freeze could rattle PN prep - The Star",
+   "date": "2026-09-24T23:32:19+00:00",
+   "source": "The Star [GN]",
+   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNd0RncDlla1dibWNESDU1b0ZGR1NWc0FCTFk0ajFMVDVsS3ZHRWVVUUZQbXZvWmtsV0JqQmFuem44MWN1THotUFhHUVNfYWtnRXFtS3lXeHc0TjI3WTd1Zmd2LTRqTk50b0FuX1RRV3NRbjlzYTNRUEZzU0V2V0hTUEt1LUFXdFdw?oc=5",
+   "lang": "en",
+   "category": "election-integrity",
+   "blocs": [
+    "PN"
+   ],
+   "parties": [],
+   "seats": [],
+   "score": 0.85,
+   "judged_at": "2026-09-26T05:44:11+00:00"
+  },
+  {
+   "query": "Malaysia coalition politics",
+   "title": "OPINION | DAP has now completed its transformation to become MCA 2.0",
+   "date": "2026-09-24T23:30:47+00:00",
+   "source": "Newswav",
+   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNYjREY0tVdER1UXpqUTRWcTN3d0JibFlPbUlCajZQY2hZQUxCWGRvWjJXRy1lVjVHY1Q3TW1EeFpfTU9vbks1QkZOZjRhbVQxUUtBalo0aDdLTXFhN2hmOTh0Q0g4eVpOdXlfWVVucmVFQWJDM29naUhSNnY5LWU3RGhRTU1Ta3BfbS1adS03WkxGbG1ZLU1tYW5KWG1RMkVENHFsMWtrWHNBYms?oc=5",
+   "lang": "en",
+   "category": "analysis",
+   "blocs": [
+    "PH"
+   ],
+   "parties": [
+    "DAP",
+    "MCA"
+   ],
+   "seats": [],
+   "score": 0.75,
+   "judged_at": "2026-09-26T05:44:11+00:00"
+  },
+  {
+   "query": "Malaysia coalition politics",
+   "title": "Warisan–STAR–KDM: Could a Three-Party Coalition Reshape Sabah's Political Landscape?",
+   "date": "2026-09-24T23:22:51+00:00",
+   "source": "Jesselton Times",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNempOYVZJZUFySndtUklVcHlfRVFPdGE1eUpRZ2RCRi1ZbzByMExqMjh6R1NVUFBRc2kzSVlRN0FMMExqemh1YkFaQktyZTh3QmZrbUZsRktZanRMNnA2WDdDRlpEZFBFeDREUW5VU2p2elFMMUN1YmpscUVVa2FGNFY1Q1JMX0tWaTBKb0JBbkEtZ0liaE9XdGNkSUlXVnlUYUNlRldSSFBHeThmbUk5X0hRc3llcnNQRkJIUNIBwgFBVV95cUxOeWxReU5OV0pmUFRENXRvbGVBVGgwb0ZJSkwxcEtfUGxSNVFQMnNORTRHWTJ0QjdDakY2Z0UxZWh4UFFXalNHNjJRdXQ5ZGZDbV96dnkxY1Y3MFc4LUJvVUgzSUd0RTRjdDRwd1VKeHlRcUp1LTE2UVdzMTBtc09wdG9GdFo1QS1XX0ktNDdJOFBmQk5Ld1ZVckRVRWdkdU5NeVU1RWJMczItcDBZYktSbnBlZDZVaS1PTTZ6ZC02Z0IxZw?oc=5",
+   "lang": "en",
+   "category": "coalition",
+   "blocs": [
+    "WARISAN"
+   ],
+   "parties": [
+    "STAR",
+    "KDM"
+   ],
+   "seats": [],
+   "score": 0.8,
+   "judged_at": "2026-09-26T05:44:11+00:00"
+  },
+  {
+   "query": "Pakatan Harapan",
+   "title": "BN-PH partners in Putrajaya, rivals in Melaka",
+   "date": "2026-09-24T23:21:29+00:00",
+   "source": "The Sun Malaysia",
+   "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9ucUFON2hOV01aX0hZWVVaOHg0bWIzVEFnS3lCS1JLRnVvUzcxQzYxb1VkZDhuTDI5dU81N2ktWkJnQnJ2Q3lpbXlVT05JSWpNc2d4REx6MWRRUG44ZHdiRlE5WjJRUHBIVUo4NHNCUXpDb2I0R3RR?oc=5",
+   "lang": "en",
+   "category": "coalition",
+   "blocs": [
+    "BN",
+    "PH"
+   ],
+   "parties": [],
+   "seats": [],
+   "score": 0.85,
+   "judged_at": "2026-09-26T05:44:11+00:00"
+  },
+  {
+   "query": "feed:Bernama [GN]",
+   "title": "Fahmi: Cabinet Committed To Political Stability, Governing Until Term Ends - bernama.com",
+   "date": "2026-09-24T23:17:43+00:00",
+   "source": "Bernama [GN]",
+   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFA3S1pBOURiTGF1eXduajdMc1ZGMm1iWmtiN1VZMklVYlM4ZnoxRG5JUm9DNk1tbnFnTWw3V0hwU3ZxcTltU2lXRGdpQ1V5V3diaU1rSnViYjBONzk0UmlvYm9vNWw?oc=5",
+   "lang": "en",
+   "category": "analysis",
+   "blocs": [
+    "PH"
+   ],
+   "parties": [
+    "PKR"
+   ],
+   "seats": [],
+   "score": 0.75,
+   "judged_at": "2026-09-26T05:57:58+00:00"
+  },
+  {
+   "query": "Anwar government",
+   "title": "MADANI Govt To Address MSME Concerns Over foreign e-Commerce Competition -- PM Anwar",
+   "date": "2026-09-24T18:08:54+00:00",
+   "source": "BernamaBiz",
+   "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5rdWNacGZnTWE3emVkcVBINDIzRDFCelZrZ2MteFhqcDVkVFFERERiRE1xRVA1RXd4ajhURlVFazJxV0YxU2FHZWN2aWpCWTU5b3VNRXJKWHA4QQ?oc=5",
+   "lang": "en",
+   "category": "policy",
+   "blocs": [],
+   "parties": [],
+   "seats": [],
+   "score": 0.6,
+   "judged_at": "2026-09-26T05:44:11+00:00"
+  },
+  {
+   "query": "feed:New Straits Times [GN]",
+   "title": "MCMC protects online users, not political tool, says Fahmi - NST Online",
+   "date": "2026-09-24T13:48:11+00:00",
+   "source": "New Straits Times [GN]",
+   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOckJlT0pybFprREkyalpkUlJTcXl4ejU1QjJ6dWJ0bnltazFDRHR1emV6VUI3b3B3c1RzVUdfTUxHMTN6d08yRVJrRUhZbDFTZ1RxZ0J2TEhwQU9QWTVYRUxKLTRHdjkzYktxUzMzbklpLW9Na3BWUzBZXzNtRmx3M09sc3dFdTdxQXlzWjk1Q2Z4UGIxV2hna0F6VnNud1lJZjFNTmdSM3dzcDQ?oc=5",
+   "lang": "en",
+   "category": "policy",
+   "blocs": [],
+   "parties": [],
+   "seats": [],
+   "score": 0.6,
+   "judged_at": "2026-09-26T05:44:11+00:00"
+  },
+  {
+   "query": "feed:MalaysiaNow",
+   "title": "Global rights groups condemn duo's arrest as lawyers warn money laundering law being weaponised against govt critics",
+   "date": "2026-09-24T13:17:00+00:00",
+   "source": "MalaysiaNow",
+   "link": "https://www.malaysianow.com/news/2026/09/24/global-rights-groups-condemn-duos-arrest-as-lawyers-warn-money-laundering-law-being-weaponised-against-govt-critics",
+   "lang": "en",
+   "category": "election-integrity",
+   "blocs": [],
+   "parties": [],
+   "seats": [],
+   "score": 0.6,
+   "judged_at": "2026-09-26T05:44:11+00:00"
+  },
+  {
+   "query": "feed:Rakyat Post",
+   "title": "Wawasan Negara Questions &#8216;Hidden Hands&#8217; Behind RoS Action Against PN",
+   "date": "2026-09-24T09:43:21+00:00",
+   "source": "Rakyat Post",
+   "link": "https://www.therakyatpost.com/news/2026/09/24/wawasan-negara-questions-hidden-hands-behind-ros-action-against-pn/",
+   "lang": "en",
+   "category": "election-integrity",
+   "blocs": [
+    "PN"
+   ],
+   "parties": [],
+   "seats": [],
+   "score": 0.8,
+   "judged_at": "2026-09-26T05:57:58+00:00"
+  },
+  {
+   "query": "feed:Twentytwo13",
+   "title": "Ahmad Faizal’s ‘betrayal’ post highlights deepening crisis within PN",
+   "date": "2026-09-24T08:52:11+00:00",
+   "source": "Twentytwo13",
+   "link": "https://twentytwo13.my/ahmad-faizals-betrayal-post-highlights-deepening-crisis-within-pn/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=ahmad-faizals-betrayal-post-highlights-deepening-crisis-within-pn",
+   "lang": "en",
+   "category": "coalition",
+   "blocs": [
+    "PN"
+   ],
+   "parties": [
+    "BERSATU"
+   ],
+   "seats": [],
+   "score": 0.85,
+   "judged_at": "2026-09-26T05:57:58+00:00"
+  },
+  {
+   "query": "feed:Malay Mail [GN]",
+   "title": "‘Income first’: Economy Minister Akmal says Budget 2027 must deliver better wages for Malaysians - Malay Mail",
+   "date": "2026-09-24T08:06:13+00:00",
+   "source": "Malay Mail [GN]",
+   "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNYUh3cFhhTlV3Z2xvaVlzdDdrNnRaaXVHcDRMMkVQcHR6aEJ2ZFFYbTBFbGN0OU5KSkhCYW52ZnYyRVctUU0yTGxNaHdreFEyTUFFbXpLV040Z2VMZFB4cmxtNkhicGF6Y0pnMXFiME9BZzhQME9CaGRmY1o0SGtKQVBwR0U2R3Q1OG81eHlIaGY1ckZLTDZBVnB2cGtTSENKY1BfVVh5aEFDUHN2YUlhdGNyNHhLNVlPM00yaWw0Tjk2Ni04NExNRDFDSEZwbzExNzdMRXZKc1dtLVhwSnBQR0dDV1VrUQ?oc=5",
+   "lang": "en",
+   "category": "fiscal-federal",
+   "blocs": [],
+   "parties": [],
+   "seats": [],
+   "score": 0.6,
+   "judged_at": "2026-09-26T05:57:58+00:00"
+  },
+  {
+   "query": "feed:The Edge Malaysia [GN]",
+   "title": "Malaysian govt finances under rising pressure even as growth holds up, ANZ flags - The Edge Malaysia",
+   "date": "2026-09-24T08:04:54+00:00",
+   "source": "The Edge Malaysia [GN]",
+   "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1icXhWaG9MSjB0SmVPUTBrVElnc0hWeHY0N0Nmd1ZwQlU1R2l1TU80c25Oc0V5NHpUSlBVdHFTdy1lLS1YbFJ5RV9EODJUTnNy?oc=5",
+   "lang": "en",
+   "category": "fiscal-federal",
+   "blocs": [],
+   "parties": [],
+   "seats": [],
+   "score": 0.5,
+   "judged_at": "2026-09-26T05:57:58+00:00"
+  },
+  {
+   "query": "kerajaan Malaysia",
+   "title": "Malaysia-China ties built on trust, mutual confidence: Anwar",
+   "date": "2026-09-24T07:57:50+00:00",
+   "source": "The Sun Malaysia",
+   "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQUjRMdU9Lb24zY1YtdENReEVLckxoU1NoQ3cwU0FQVjYxNU1nSXllTmQxVHpndzRZNnhJclpPUnBJX0JTakFCa2V4eS14RzZTVE52U2dvM3lpcno3MG1WcDhvWXdlOU5seDJwX0lTanNqXzlncmVQWW9OZjk0TGR5V081Yl82eGZOM3c?oc=5",
+   "lang": "en",
+   "category": "policy",
+   "blocs": [
+    "PH"
+   ],
+   "parties": [
+    "PKR"
+   ],
+   "seats": [],
+   "score": 0.5,
+   "judged_at": "2026-09-26T05:57:58+00:00"
+  },
+  {
+   "query": "feed:Malay Mail [GN]",
+   "title": "Only RM6.7m recovered from RM2.97b scams, Lim Guan Eng demands urgent action - malaymail.com",
+   "date": "2026-09-24T07:35:53+00:00",
+   "source": "Malay Mail [GN]",
+   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOdHItdDdpRUFfY2dEVlVhM2JrbENHMDdoaG1QaDVld050eVN1U1BkclMzbGtnYUJzZVU5elJ4eDhPNUNxeXBFTk1ZNG5aMU9maDVYcUJQbl80S3F0V1BTTTNTUEt1RHJ5OVNlZUpHUzBValB0dlJOaUJuaVI1SENtdTJJVWRWU0hBdEZONldST1g5SXhmZTZ6OGp6RmRIOEd3djgyZDFxdTU0NXU0LWZVb3hNWm1HajVLQ3V2LVhZYk8zcHpQLUpranNEY9IB0AFBVV95cUxON1B5M2dzNXByU0tTMzY5alVvQkU5RGYyUUs1aFlZUnBKQjNhMzdMOGtpQkZadmtfRmNveWQ3OGx5UjdTWWlBR3lvVnZ0RWV5bmJqYUhzOXpsaGR3WUtES0tDSmpUdlNjU1duVEg5Xy1UdVJxcERWTVhvQjZ1NXVVckVvVE5fZm5ZRVc4b1VQNGRfaEUtRlZrU3o3SUZFRXRWTXFqQmJWUFFHZWRMR0huVVA0SFNTQWZJUzlVZzBvQjlha0N4emMyWFNReTZGbm1J?oc=5",
+   "lang": "en",
+   "category": "policy",
+   "blocs": [
+    "PH"
+   ],
+   "parties": [
+    "DAP"
+   ],
+   "seats": [],
+   "score": 0.6,
+   "judged_at": "2026-09-26T06:02:58+00:00"
+  },
+  {
+   "query": "Perikatan Nasional",
+   "title": "RoS suspends Perikatan activities, issues show-cause notice over Bersatu complaint",
+   "date": "2026-09-24T07:21:38+00:00",
+   "source": "Malay Mail",
+   "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPSHFtdG1hZnZGSHpTcDlURlMzMUNqMi16b2lUSkU0ai1FY0FpX285bGQybEY5QVZjWjFyQ3ZsRjlzdnE1UXRlY1p0ZVpPZFFnTUF1X2lvS0s0WjBPTUtkZ2d4NXVEZzM1RDVwQnduY2FBOHN6UW1HQUhNdGhaMkZjaHNFeXRqWUFRVzFVNWliVGNaUGwyZGNGdzRFRjVtNGFRMFpabkxpU1AydGdBZ19UZlRsV2xOX3NJQXJnUjlXVHdBb1V3b05PQ2pOZkVPR3Utd3JiT2NB0gHbAUFVX3lxTE5xaGZVLUw4eWlOYldGa2RVTi15T2o1U1gwSWFsM05CUkJ0SjZxb0NpeERjSHVpNVVRRVdIMi1KaDJxdmhLWk9HVGxpc2RrUVNQNzdhOUVfN253R1lUcVB2YkxQYUdsWV9jNE80dk5OV2pKaHBrbWl0T0x3UGxtbXVXeS1nYlY1cy1PcGhuTlljaUFtcDUyZGNpMm10cVowVWtTenJvd3h4U0JWVzdwZW9GbE5sUXJfNU9OdFMyVWJGSWFOQXVHLWUzNG41YmVsalZsZlBHaTdOdDNKcw?oc=5",
+   "lang": "en",
+   "category": "election-integrity",
+   "blocs": [
+    "PN"
+   ],
+   "parties": [
+    "BERSATU"
+   ],
+   "seats": [],
+   "score": 0.9,
+   "judged_at": "2026-09-26T05:57:58+00:00"
+  },
+  {
+   "query": "feed:New Straits Times [GN]",
+   "title": "Current Negri Sembilan crisis inherited from previous state administration — Ismail Lasim [WATCH] - NST Online",
+   "date": "2026-09-24T06:15:49+00:00",
+   "source": "New Straits Times [GN]",
+   "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPM1E0QXdFbFdMOXJOdzhhUnA2cDlvN0xJUkpVc25HZEdsdFhvTjg0RGRBNTJRYk1Ra2R2ZDlJUTc5NFY3RENHR0ZpOU9fc0txbzFnM0V6ZE85dzRnYjR1MGQxbmFZVDVicFF2eGZmdktxbXFGelpKV0lVNktiVndORm1zNGhhNHp0ZzRCUGlVRDI4aUY5a1kwQlAzdHhGaGh2UjcwZHVVaHl1bGZvX2l3Zzd0cnBvQmJnZFFUUkNIdzFZcGtHSkc4dU0zODl5NGdkVkN4dVJ2bWpNZlB2?oc=5",
+   "lang": "en",
+   "category": "state-election",
+   "blocs": [],
+   "parties": [],
+   "seats": [
+    "NEGERI SEMBILAN"
+   ],
+   "score": 0.8,
+   "judged_at": "2026-09-26T05:57:58+00:00"
+  },
+  {
+   "query": "feed:Rakyat Post",
+   "title": "Loke Insists He Will Resign After Returning From China",
+   "date": "2026-09-24T04:38:23+00:00",
+   "source": "Rakyat Post",
+   "link": "https://www.therakyatpost.com/news/2026/09/24/loke-insists-he-will-resign-after-returning-from-china/",
+   "lang": "en",
+   "category": "candidate",
+   "blocs": [
+    "PH"
+   ],
+   "parties": [
+    "DAP"
+   ],
+   "seats": [],
+   "score": 0.8,
+   "judged_at": "2026-09-26T05:57:58+00:00"
+  },
+  {
+   "query": "GN:malaysiakini",
+   "title": "Straw poll: N Sembilan residents urge outsiders to stay out of royal crisis, hope for swift end",
+   "date": "2026-09-24T04:10:00+00:00",
+   "source": "Malaysiakini",
+   "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNS1FERkNuZ3FEUW9BSTNFSmc2cXA4MTVmUjU2a2lXZVViRkoxcU5zNWFKV08zNmxPVzRTTDZhZTRHSGZBR3paRTE1cHFpYmYyaXpld2F5dDQ5NnVOMnp5b0Z5aVF6eEk3QlEyejNzMjlUdGczeVVYdDZKMGhGQTRvSmZJWlkyTnI2ZkoyVGdlcVlpTktvVHk5QVFnd0VUcUV0c004cktlM0gwbWU5alVnQ1JMRUp6RlNXcm13bFdhWFo5OUFjSTFvYWFlLXRIZzA?oc=5",
+   "lang": "en",
+   "category": "poll",
+   "blocs": [],
+   "parties": [],
+   "seats": [],
+   "score": 0.6,
+   "judged_at": "2026-09-26T05:37:57+00:00",
+   "backfill": true
+  },
+  {
+   "query": "Malaysia coalition politics",
+   "title": "Has Najib's pardon fractured M'sia's governing coalition?",
+   "date": "2026-09-24T03:43:27+00:00",
+   "source": "Mothership",
+   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5BNFRJVk05czZOOUNPTF9HOF9DT05uQkRscTdrblZwQ3BhNkVaeGhCT29zRS1OYzdHUHVRMDV6Q2w4WXg4N1ozM0Y5aWVyYjdRMm5PLV90V1Bhck1JTlJCRm5iS0ZoZw?oc=5",
+   "lang": "en",
+   "category": "analysis",
+   "blocs": [
+    "PH",
+    "BN"
+   ],
+   "parties": [
+    "UMNO"
+   ],
+   "seats": [],
+   "score": 0.8,
+   "judged_at": "2026-09-26T05:57:58+00:00"
+  },
+  {
+   "query": "Perikatan Nasional",
+   "title": "PN confirms receiving RoS notices",
+   "date": "2026-09-24T03:21:21+00:00",
+   "source": "The Malaysian Reserve",
+   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPcHJvSW1OeVY1RHd1MlU1OTI5cTJESkpPWlBYcjUxM0hLVVVaTG1OdUl1RTBhSkxLMkJBNV9KYWRpbjI5NW1UcTE0RG1VbmNrUjE5dU44ckQzYnAzSGZMUnlDUmltTE9fOGVJNlF5bjAtd1lCQ0g3YzN4R3hrd1BzbjRlOWphdC1S?oc=5",
+   "lang": "en",
+   "category": "coalition",
+   "blocs": [
+    "PN"
+   ],
+   "parties": [],
+   "seats": [],
+   "score": 0.85,
+   "judged_at": "2026-09-26T06:02:58+00:00"
+  },
+  {
+   "query": "Malaysia election news",
+   "title": "Perikatan Nasional faces suspension as internal tensions escalate at Malaysia’s main opposition coalition",
+   "date": "2026-09-24T03:03:53+00:00",
+   "source": "KLSE Screener",
+   "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQM3FkcFhZMnUzRzBtVWFrSFR2WW53WUV3NmRsUmJNZ09UOTV2SVpQcXQwWlJVU3RPYWRyNmYzVy1SNkxNMURLbHFSaGJPTjJRNFhhYV9vZEdIeTFIZGIxbzdmdWtncW5GX2ZrWi1pbkg4cV9PVE8xcnZPeFFBX0REbHdCZnh3RXItSHVzTUpMN2F4bTAtRTdQMUVJZEpkUmRfS3BjVWRZcU5HcW9RdUdiTDNwNVBYRVQxeFFheEFuNjBVaWVKTGUyOE1hcndFYUUtdDZ0b2Nwb0dHMVNjemstZE9mV1psa2MzRUhJ?oc=5",
+   "lang": "en",
+   "category": "coalition",
+   "blocs": [
+    "PN"
+   ],
+   "parties": [],
+   "seats": [],
+   "score": 0.9,
+   "judged_at": "2026-09-26T06:02:58+00:00"
+  },
+  {
+   "query": "Malaysia politics",
+   "title": "Malaysia's PN suspended after Bersatu complaint, Malaysia News",
+   "date": "2026-09-24T02:42:22+00:00",
+   "source": "AsiaOne",
+   "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNNDhJVGFyS0M3d3NhLXM4UTEyRmpXT2M4S1VuMlBnTmh1WFpzVzAxOVJVYXhrbEdUdXBrMDlxX1lqUVdjcFdvTmVDTDNQMEFvb0xxOXY1bF9OeWMwOVNOVUJqX0YyWUx2cjJBR1ZwcHlGTVNvRWtXcnpVRWd5WnFwWEJiQmJFZw?oc=5",
+   "lang": "en",
+   "category": "coalition",
+   "blocs": [
+    "PN"
+   ],
+   "parties": [
+    "BERSATU"
+   ],
+   "seats": [],
+   "score": 0.9,
+   "judged_at": "2026-09-26T06:02:58+00:00"
+  },
+  {
+   "query": "feed:The Edge Malaysia [GN]",
+   "title": "Opposition leader Hamzah pushes parties for bloc against Anwar - The Edge Malaysia",
+   "date": "2026-09-24T02:13:15+00:00",
+   "source": "The Edge Malaysia [GN]",
+   "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5UQWFVci1FbWF6d0VTblJhSjFHLUlNOTJXa3phNWdDWWZIeUlQamVpWi1UZGJPSHBvMEtya2NfTVlnTXBhbzZ6SjRaYVFxMF9Z?oc=5",
+   "lang": "en",
+   "category": "coalition",
+   "blocs": [
+    "PN"
+   ],
+   "parties": [
+    "BERSATU"
+   ],
+   "seats": [],
+   "score": 0.85,
+   "judged_at": "2026-09-26T06:02:58+00:00"
+  },
+  {
+   "query": "feed:Rakyat Post",
+   "title": "PN To Challenge RoS Decision, Says Takiyuddin",
+   "date": "2026-09-24T02:04:17+00:00",
+   "source": "Rakyat Post",
+   "link": "https://www.therakyatpost.com/news/2026/09/24/pn-to-challenge-ros-decision-says-takiyuddin/",
+   "lang": "en",
+   "category": "coalition",
+   "blocs": [
+    "PN"
+   ],
+   "parties": [
+    "BERSATU"
+   ],
+   "seats": [],
+   "score": 0.85,
+   "judged_at": "2026-09-26T06:02:58+00:00"
+  },
+  {
+   "query": "Perikatan Nasional",
+   "title": "Notice against PN not deregistration order, just a request to explain",
+   "date": "2026-09-24T01:37:00+00:00",
+   "source": "RoS - Sinar Daily",
+   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOT2FKaHNQcDJsdFctQjc0SmV6S3VhRHNBSWRHUDc1dzFVZmFjT0c3dnlLdWdJZVgxbzFQd2h3MXBNcXpOV2ltdjdLb09yd3hETUd1eHNMdzRXWVBaNGpsZ0ZSTFJqeDNLRW5jYWpkNGRSZzdRandGVDRSMDhXQzg3MVJyY0dQWjd6UGt1Zi1TQzNUNTJLc2ttQ01NVXNVa0pHZHRCdmNodjZVNWdmT1Q3SGdCQVY4ZGcwd3FSOFpmMVBIczU2QTJqeU5R?oc=5",
+   "lang": "en",
+   "category": "coalition",
+   "blocs": [
+    "PN"
+   ],
+   "parties": [],
+   "seats": [],
+   "score": 0.85,
+   "judged_at": "2026-09-26T06:02:58+00:00"
+  },
+  {
+   "query": "Malaysia parliament",
+   "title": "Melaka polls, Budget 2027 set to test Unity government stability",
+   "date": "2026-09-24T01:36:04+00:00",
+   "source": "Newswav",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPLV9mMHVnckl3ckpKTEtjTTlZMDVrV1NCMmVGZHhobkN3UloyZDljTG5NcW9zbUExd3hRVU50UXhTeUd3Q1BlLUhlNHRmcmRqZ3hmY000U0duVmlsR2hNZlNHYlJYOWQ3bFpJa2FMNVFPZ1U1aG9sbk9Dbkl4SjB4OFpEcmNUTnBheHVMUktUeEEtY3I5RnIwRmFQUEg1UlF4S04tOVBYUQ?oc=5",
+   "lang": "en",
+   "category": "state-election",
+   "blocs": [],
+   "parties": [],
+   "seats": [],
+   "score": 0.85,
+   "judged_at": "2026-09-26T06:02:58+00:00"
+  },
+  {
+   "query": "Malaysia election news",
+   "title": "Melaka PRN: It’s the negotiations, silly!",
+   "date": "2026-09-24T00:57:00+00:00",
+   "source": "Yahoo",
+   "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNTnpKTzZlSWdMNlI1UmYzMkFTMHpHSkdkeXp1UXZ1VmdzcFFsb2lXWWR3RlQtSmFqZmgzLWhQVUlaZmcyYVNCV2w4STljNkhTMXQ2YXA4emx3eEVuaTlFcHNZOFhXSG9pRWxFNGdOLXpMalFtX25nS2xMZlEtMWhqOWdB?oc=5",
+   "lang": "en",
+   "category": "state-election",
+   "blocs": [
+    "BN",
+    "PN"
+   ],
+   "parties": [],
+   "seats": [],
+   "score": 0.9,
+   "judged_at": "2026-09-26T06:02:58+00:00"
+  },
+  {
+   "query": "GN:malaysiakini",
+   "title": "YOURSAY | Govt communications team must roll with the punches",
+   "date": "2026-09-24T00:30:00+00:00",
+   "source": "Malaysiakini",
+   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxObHBUT2hMV1diTU9RV0tmbE1CSW9fWFU2RmxpeHR0d0k5NGN3TGthRUFPMGZHb3I5dHd4VUEtSDc0eFJRcmk3RmNBT3M3UUNuX18tSUM5aWs0b3BLckVMdkN0ZE1IeXZsbDJCc2hNQ2xZZTZqRDNpZnJCYUw5a0xhbGMyUngxalJXUXNOdlNjcS1nLTZJdlE?oc=5",
+   "lang": "en",
+   "category": "analysis",
+   "blocs": [],
+   "parties": [],
+   "seats": [],
+   "score": 0.5,
+   "judged_at": "2026-09-26T05:37:57+00:00",
+   "backfill": true
+  },
+  {
+   "query": "Perikatan Nasional",
+   "title": "[UPDATED] PN activities suspended, not deregistered",
+   "date": "2026-09-24T00:22:18+00:00",
+   "source": "RoS - NST Online",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQcjVGXzJFYWJlNjJLM3NhWF9uSUpoWEdMckFjS21LaXFURHlkSmMwdENKaVlNM0dRTnFReDNvYnpxa0liSDNUVzYzRV9KQThmQjdsNkVIaHBKMHlCblZQNXZEbzRiQW8zUERGLXhyMDhNUW1KcXAzUUYtOE5LMDBxYnMwLWVGM2lPd251ZzNwVkJfXzBXallTYlVQeGxRZV8xWGlyYlZR?oc=5",
+   "lang": "en",
+   "category": "legal",
+   "blocs": [
+    "PN"
+   ],
+   "parties": [],
+   "seats": [],
+   "score": 0.85,
+   "judged_at": "2026-09-26T06:02:58+00:00"
+  },
+  {
+   "query": "GE16 Malaysia",
+   "title": "OPINION | DAP must stay the Madani course, not quit midstream",
+   "date": "2026-09-23T23:00:05+00:00",
+   "source": "Newswav",
+   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNVEZmSDZKY0JyVC1tbHRrcWNuSXBUelgzZ3RqSUpEbmNBeTkwSldxRm5HLTVHc1lHN1E4elFxOUdVY1E1ZmRHcFp3TzlLSFA0U2ptRlU3NFNFQll0c3RKbG50Z3BVbTk3Z0toWk1hU2lPUC1BeWdROGpwdmk4dlVNTVF5Z29feG9TU3pmWEYyeFpzblFaczA2eFAxOVhSWHoy?oc=5",
+   "lang": "en",
+   "category": "coalition",
+   "blocs": [
+    "PH"
+   ],
+   "parties": [
+    "DAP"
+   ],
+   "seats": [],
+   "score": 0.7,
+   "judged_at": "2026-09-26T06:02:58+00:00"
+  },
+  {
+   "query": "GE16 Malaysia",
+   "title": "AUKU replacement Bill expected to be tabled in December, says Zambry",
+   "date": "2026-09-23T15:13:08+00:00",
+   "source": "Newswav",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPc3pnQUN5Ym5GSzNtbmViTEo3d1hpQmNLcW1nX1otWDhaRE1Pdnp2aHB3Rk5nNWpWRzlPRi16X3JUNkNRbnN2aXJXMFZfdXBORlhCQnhram9nLVZBQWhpRVkxYm1ua2lwRThGaE8yTmJoRDhCcm5WVm5PMmRjVFJ5Q2M0eTR6TFNZVFp0TEs3MHhKUGFMNHcwMmZ4N0o4WnNEWFU2a2hRVUdROHZT?oc=5",
+   "lang": "en",
+   "category": "policy",
+   "blocs": [],
+   "parties": [],
+   "seats": [],
+   "score": 0.6,
+   "judged_at": "2026-09-26T06:02:58+00:00"
+  },
+  {
+   "query": "Malaysia politics",
+   "title": "Melaka poll: PH to announce candidates one to two weeks before nomination, says Azman",
+   "date": "2026-09-23T14:38:07+00:00",
+   "source": "The Sun Malaysia",
+   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxORlYtUVhxMnR3aTVZTHBRdnBIRTJFeEpKR2NVcnpLN3dEYkpvbFNVZEtoU1hCNERXZmVxbVVXUEh1THlpSjVLV3ljSHVwYVpWdV9tbUlsZFRianpIN242YV9mc0N5SmFDSzJnOWxFS3FUNWdiSS1naEJBdFk3UVp5U1plWk9FMGY5cThha3BaZzdkY3Y0NmZ4NW56cmZGOXU4UUQ0dV9vSWFRcmVrNXdMemxUNDkyM0tsMGd5VkRvellPV3c4Yk5nSE9R?oc=5",
+   "lang": "en",
+   "category": "state-election",
+   "blocs": [
+    "PH"
+   ],
+   "parties": [],
+   "seats": [],
+   "score": 0.9,
+   "judged_at": "2026-09-26T06:02:58+00:00"
+  },
+  {
+   "query": "Malaysia politics",
+   "title": "Melaka polls: PH yet to decide on political cooperation, says Anwar",
+   "date": "2026-09-23T13:44:46+00:00",
+   "source": "The Malaysian Reserve",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxONnYzdWFmWTJ6LXlCSzFTNmZ5LWpTSEx3U3RyaTEwV0N1TlhwMHB2dHpvbWR6ZTZIY1dlZVJEUGlVRDdPUU84M3J1TjdYcktrUGF1OFBKeHJpeHJtRm5mSklQdVNDTmM1VHVWSnBBOU9tVGdVRmw5S3VMTUhCOENSc3VjVmh0djNFOHIzbWRDUVhxcEhlSUpuYmJaWU9XTEVtdFlZUkxhcl9UalB5a1E?oc=5",
+   "lang": "en",
+   "category": "state-election",
+   "blocs": [
+    "PH"
+   ],
+   "parties": [],
+   "seats": [],
+   "score": 0.9,
+   "judged_at": "2026-09-26T06:02:58+00:00"
+  },
+  {
+   "query": "GN:malaysiakini",
+   "title": "SNAPSHOT | Loke firm on resignation; RM1.18m paid to whistleblowers, says MACC chief",
+   "date": "2026-09-23T13:06:00+00:00",
+   "source": "Malaysiakini",
+   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPclY1Yy1MTVFiWmhrYXhycmxRczZGOERnMnNkU2lBMTNrOWNBRjYtdVdDQ2g1NU5SOEZIdXlndlExdi1KejZWa25VaU1IQ2tIRFVmbl9DeVJGblRJYktaRXVvbmdKdVBVVWs0OGtaZ2NNdjU0N0YzejJUbTJqRlR5U0tKMldtcW1ibGdabkNObURUZ0swLTNWY2sxd2lBU0s3WmlORF9VMVZQMG1kM0laSXFTQnJGT0d0X2hpRHY4Z0wzQQ?oc=5",
+   "lang": "en",
+   "category": "legal",
+   "blocs": [],
+   "parties": [
+    "DAP"
+   ],
+   "seats": [],
+   "score": 0.6,
+   "judged_at": "2026-09-26T05:37:57+00:00",
+   "backfill": true
+  },
+  {
+   "query": "Dewan Rakyat",
+   "title": "Cybercrimes Bill 2026 Exposes Individuals And Businesses To Intrusive Investigations, Law Experts",
+   "date": "2026-09-23T12:09:11+00:00",
+   "source": "BusinessToday Malaysia",
+   "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNZjQ5UGlEeXNJaGJiU21HMnprcTlBZkpyTjFnRVExYUltY0VCRGthR2UzUDZtZ2h3V3JULWY4VHlmVkhHLUpWQkFrU3hWTlk5M01zelh1TTN0cWhGeGVxZXlubFU5dkZialRjREhoSVY5dWhfOU5YbW54Q2xhRTM5UTFsRGJpMzdWOFFIQlJDSnZQNmJqZmFDcm5kTWQyQmNQaDRtZVdpQ21lQ25BdEZiRWkxTEpMS0NzTDI3NHJLQm9Nbl9EWlAyT1o5bGZqMU1NbGQ3VE9DYVo?oc=5",
+   "lang": "en",
+   "category": "legal",
+   "blocs": [],
+   "parties": [],
+   "seats": [],
+   "score": 0.6,
+   "judged_at": "2026-09-26T06:10:31+00:00"
+  },
+  {
+   "query": "feed:New Straits Times [GN]",
+   "title": "Loke maintains decision to quit Cabinet - NST Online",
+   "date": "2026-09-23T10:55:08+00:00",
+   "source": "New Straits Times [GN]",
+   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOb2tzQVJYQ2VZa19qV28xZXpCN3RjQU1hX3JtQXJYbnd1MDFmb2FwaHRwV3cyYXZ3eF81VFIxLU1lMmpOSWZlN0tUYUh3Z0FiLUpoejZDUFhLTTdWVTZ3dE1PdFZTaE55alZ1MXltalpiYTgwX2lIaVF4SlhwMTZoVUlKTUxWbG1tODlGX1FWQmU?oc=5",
+   "lang": "en",
+   "category": "candidate",
+   "blocs": [
+    "PH"
+   ],
+   "parties": [
+    "DAP"
+   ],
+   "seats": [],
+   "score": 0.8,
+   "judged_at": "2026-09-26T06:10:31+00:00"
+  },
+  {
+   "query": "GN:malaysiakini",
+   "title": "SNAPSHOT | Anwar: Loke, DAP shouldn't bow to pressure; M'sia bags third gold in Asian Games",
+   "date": "2026-09-23T09:59:00+00:00",
+   "source": "Malaysiakini",
+   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPVERLRGVLYl9jMmJPWlZsSmllTU5ja05Od25oUUk4Q0lMX09lcHBVSjdLZWptbG93dkxpTExUclFFcWtReEtJSjZaa3RrdXZkaENpMEc5S0NLLTdBNGdUM3NwNHZ0WTd3SkRtYWFFek9pMmtQd0VJdFZmeFJtLVdMNzRkWm1qQW9pOEZOZk9PSWhWMndvTFYwbnJnSDl0WlZ1MXpwcW5mSHlNV2hwRlBoMjlmc3F5Zmp6ZElJamJIRXY3MlU?oc=5",
+   "lang": "en",
+   "category": "coalition",
+   "blocs": [
+    "PH"
+   ],
+   "parties": [
+    "DAP"
+   ],
+   "seats": [],
+   "score": 0.6,
+   "judged_at": "2026-09-26T05:37:57+00:00",
+   "backfill": true
+  },
+  {
+   "query": "Malaysia politics",
+   "title": "Malaysia’s Top Crook Gets Leniency",
+   "date": "2026-09-23T08:51:34+00:00",
+   "source": "Foreign Policy",
+   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQU1hScEtfQl9NU1B2aEhkLTNNNkVEbzVIa2E3WVY0WUN6OHBERVNKMDZUSmJwY0xzZW5VYjMzZ2RWYVhwNkhtZFA1TGtGSGVKNzFxVDY1YmNoSVo3cWtIajUzeDlXZENCdHZUMS1sa2ttSGZnbDRLNmJhTFZRSkdwWjBkMnE?oc=5",
+   "lang": "en",
+   "category": "legal",
+   "blocs": [],
+   "parties": [],
+   "seats": [],
+   "score": 0.6,
+   "judged_at": "2026-09-26T06:10:31+00:00"
+  },
+  {
+   "query": "Malaysia coalition politics",
+   "title": "Malaysia’s coalition strains grow, but investors hold their nerve",
+   "date": "2026-09-23T08:42:00+00:00",
+   "source": "The Business Times",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOUEVibnNyT29KTkdhSFVEWGgwRVlQTElYRG1MdXpjX1lybWFMTlpsMWJ0MUhMX1RyTVNXb0tIQXRBWHJTUkFKX2dvQmEtV1ZjUVJtN2MxMHd0aXlMRnRDcWJyaWhoVkJ5Y0hkYjdIMlRfOVlpQmg3LUxmTTVHRlZGcjQ0MmFCZnBFdXFpbkE3eTlJekw0UGpoVU9nbkJOYjZSQXQzUXBwV1cxZ1hMUVZKbTJ3?oc=5",
+   "lang": "en",
+   "category": "analysis",
+   "blocs": [],
+   "parties": [],
+   "seats": [],
+   "score": 0.6,
+   "judged_at": "2026-09-24T13:24:32+00:00",
+   "backfill": true
+  },
+  {
+   "query": "feed:The Edge Malaysia [GN]",
+   "title": "Opinion: Constitutional legitimacy cannot be displaced without due process - The Edge Malaysia",
+   "date": "2026-09-23T06:53:26+00:00",
+   "source": "The Edge Malaysia [GN]",
+   "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBhT3ZOaEgxajhORnU0V09EbEhRLVZsMGF2QkRFM0d5MVJONm41QkVMY1FCRk5aTFhTWmtkeVRXOG5ZWTZlUDg1SUpESVJ2YWZt?oc=5",
+   "lang": "en",
+   "category": "legal",
+   "blocs": [],
+   "parties": [],
+   "seats": [],
+   "score": 0.6,
+   "judged_at": "2026-09-26T06:10:31+00:00"
+  },
+  {
+   "query": "Barisan Nasional",
+   "title": "Nothing On Vote Of No Confidence Over Current Govt, House Speaker",
+   "date": "2026-09-23T06:33:44+00:00",
+   "source": "BusinessToday Malaysia",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOQzlONVRNdG16WVpEZGpka0JkeWxIbUUtQmF1Y2tRYjZDVFI2eVRlNmVhQmkzWGpDUUJyb2ducGZzWmlQa3lXT2VRYzBWWHNkclpPdjZpY0toVEVELS1EVmZZN2dxV0kyOFZLZVJIdEVBRk5iSFVVUW03dVpLUjNRYXBzRW4xU1FOQlZqUHJkNGdyazdJODhjZVM5SzFTTFVTNmxsWE5aaDgzcUZmYXc?oc=5",
+   "lang": "en",
+   "category": "election",
+   "blocs": [],
+   "parties": [],
+   "seats": [],
+   "score": 0.7,
+   "judged_at": "2026-09-26T06:10:31+00:00"
+  },
+  {
+   "query": "Dewan Rakyat",
+   "title": "Johari Abdul yet to receive no-confidence motion for upcoming sitting",
+   "date": "2026-09-23T06:00:44+00:00",
+   "source": "The Edge Malaysia",
+   "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBwLWpEbHZoVEt6T05UcUNsT1BFcU1ILXo1WUFteXdHdXpNNFZ0T1NqVVM3dDFpUXRfOUcyZjh6TVF5SUY2TE10V3EyNzBGY3plYXc4?oc=5",
+   "lang": "en",
+   "category": "election",
+   "blocs": [],
+   "parties": [],
+   "seats": [],
+   "score": 0.7,
+   "judged_at": "2026-09-26T06:10:31+00:00"
+  }
+ ]
+}

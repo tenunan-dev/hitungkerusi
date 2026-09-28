@@ -1,0 +1,29 @@
+seat,constituency,w_2021,r_2021,margin_2021,w_party,proj_winner,proj_margin,flip
+N.01 Kuala Linggi,Kuala Linggi,BN,PH,34.83,UMNO,BN,46.53,False
+N.02 Tanjung Bidara,Tanjung Bidara,BN,PN,5.39,UMNO,BN,38.39,False
+N.03 Ayer Limau,Ayer Limau,BN,PN,16.46,UMNO,BN,49.46,False
+N.04 Lendu,Lendu,BN,PN,52.9,UMNO,BN,85.9,False
+N.05 Taboh Naning,Taboh Naning,BN,PN,40.42,UMNO,BN,73.42,False
+N.06 Rembia,Rembia,BN,PH,11.33,UMNO,BN,23.03,False
+N.07 Gadek,Gadek,BN,PH,10.19,MIC,BN,21.89,False
+N.08 Machap Jaya,Machap Jaya,BN,PH,14.37,MCA,BN,26.07,False
+N.09 Durian Tunggal,Durian Tunggal,BN,PH,8.26,UMNO,BN,19.96,False
+N.10 Asahan,Asahan,BN,PH,35.95,UMNO,BN,47.65,False
+N.11 Sungai Udang,Sungai Udang,PN,BN,4.06,BERSATU,BN,28.94,True
+N.12 Pantai Kundor,Pantai Kundor,BN,PN,11.66,UMNO,BN,44.66,False
+N.13 Paya Rumput,Paya Rumput,BN,PH,4.83,UMNO,BN,16.53,False
+N.14 Kelebang,Kelebang,BN,PH,9.54,MCA,BN,21.24,False
+N.15 Pengkalan Batu,Pengkalan Batu,BN,PH,1.37,UMNO,BN,13.07,False
+N.16 Ayer Keroh,Ayer Keroh,PH,BN,42.3,DAP,PH,30.6,False
+N.17 Bukit Katil,Bukit Katil,PH,BN,8.42,AMANAH,BN,3.28,True
+N.18 Ayer Molek,Ayer Molek,BN,PN,28.32,UMNO,BN,61.32,False
+N.19 Kesidang,Kesidang,PH,BN,53.04,DAP,PH,41.34,False
+N.20 Kota Laksamana,Kota Laksamana,PH,BN,74.05,DAP,PH,62.35,False
+N.21 Duyong,Duyong,BN,PH,2.18,UMNO,BN,13.88,False
+N.22 Bandar Hilir,Bandar Hilir,PH,BN,74.76,DAP,PH,63.06,False
+N.23 Telok Mas,Telok Mas,BN,PN,20.7,UMNO,BN,53.7,False
+N.24 Bemban,Bemban,PN,BN,4.05,BERSATU,BN,28.95,True
+N.25 Rim,Rim,BN,PN,19.67,UMNO,BN,52.67,False
+N.26 Serkam,Serkam,BN,PN,0.79,UMNO,BN,33.79,False
+N.27 Merlimau,Merlimau,BN,PH,40.51,UMNO,BN,52.21,False
+N.28 Sungai Rambai,Sungai Rambai,BN,PN,17.59,UMNO,BN,50.59,False

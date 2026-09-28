@@ -1,0 +1,35 @@
+MIT License
+
+Applies to the DUN boundary GeoJSON files in this directory
+(<State>.geojson x13), derived from:
+
+  https://github.com/atifmustaffa/malaysia-geojson
+  malaysia.dun.geojson (master branch, downloaded 2026-08-29)
+
+Copyright (c) 2026 Atif Mustaffa — MIT Licence (verified via the repo's
+LICENSE file and the GitHub licence API on 2026-08-29).
+
+Modifications made by the HitungKerusi 222 project (29 Aug 2026):
+- Split the national file into 13 per-state files.
+- Normalised seat-name spellings to match the project's election results
+  CSVs (Sabah N.22 'Tanjong Aru' -> 'Tanjung Aru'; Sarawak N.81
+  'Ba`Kelalan' -> "Ba'kelalan").
+- Excluded 13 federal-territory placeholder features (no DUN code).
+
+Permission is hereby granted, free of charge, to any person obtaining a
+copy of this software and associated documentation files (the "Software"),
+to deal in the Software without restriction, including without limitation
+the rights to use, copy, modify, merge, publish, distribute, sublicense,
+and/or sell copies of the Software, and to permit persons to whom the
+Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

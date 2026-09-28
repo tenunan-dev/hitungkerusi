@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GE16 Vector Map — cosine similarity visualised</title>
+<style>
+  :root { color-scheme: light dark; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, "Segoe UI", Roboto, sans-serif; background: #f8fafc; color: #0f172a; }
+  @media (prefers-color-scheme: dark) { body { background: #0f172a; color: #e2e8f0; } }
+  header { padding: 14px 20px; border-bottom: 1px solid #e2e8f0; display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+  @media (prefers-color-scheme: dark) { header { border-color: #1e293b; } }
+  h1 { font-size: 16px; }
+  .sub { font-size: 12px; color: #64748b; max-width: 640px; }
+  .controls { display: flex; gap: 8px; align-items: center; margin-left: auto; flex-wrap: wrap; }
+  select, button { font-size: 13px; padding: 6px 10px; border-radius: 8px; border: 1px solid #cbd5e1; background: #fff; color: #0f172a; cursor: pointer; }
+  @media (prefers-color-scheme: dark) { select, button { background: #1e293b; color: #e2e8f0; border-color: #334155; } }
+  main { display: flex; gap: 12px; padding: 12px 20px; }
+  .chart-wrap { flex: 1; background: #fff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 10px; position: relative; overflow: hidden; }
+  @media (prefers-color-scheme: dark) { .chart-wrap { background: #0b1220; border-color: #1e293b; } }
+  svg { width: 100%; height: 70vh; display: block; }
+  .tip { position: absolute; pointer-events: none; background: rgba(15,23,42,.92); color: #f8fafc; font-size: 11px;
+         padding: 6px 9px; border-radius: 8px; max-width: 260px; display: none; z-index: 5; line-height: 1.45; }
+  .legend { font-size: 11px; color: #64748b; padding: 6px 2px 0; display: flex; gap: 10px; flex-wrap: wrap; }
+  .legend i { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 4px; vertical-align: -1px; }
+  .note { font-size: 11px; color: #64748b; padding: 0 20px 10px; }
+  .note code { background: #e2e8f0; padding: 1px 5px; border-radius: 4px; font-size: 10px; }
+  @media (prefers-color-scheme: dark) { .note code { background: #1e293b; } }
+</style>
+</head>
+<body>
+<header>
+  <div>
+    <h1>🕸️ GE16 Vector Map</h1>
+    <div class="sub">Real 384-dim MiniLM embeddings, projected to 2D via PCA (numpy SVD). <b>Closeness = high cosine similarity = similar meaning.</b> Each layer is projected independently.</div>
+  </div>
+  <div class="controls">
+    <select id="layer"></select>
+    <select id="colorby"><option value="bloc">Colour: bloc</option><option value="party">party</option></select>
+  </div>
+</header>
+
+<main>
+  <div class="chart-wrap">
+    <svg id="svg" viewBox="0 0 1000 700"></svg>
+    <div class="tip" id="tip"></div>
+  </div>
+</main>
+<div class="legend" id="legend"></div>
+<div class="note">
+  <b>How to read this:</b> a point is one record's embedding (its <i>meaning</i> as a 384-d vector).
+  Two points that are <b>close together</b> have high cosine similarity — the model considers them
+  semantically related. Hover any point to see who/what it is. The projection is lossy (384-d → 2-d),
+  so it shows broad clusters, not exact distances.
+</div>
+
+<script src="vec_map_data.js"></script>
+<script>
+'use strict';
+var LAYER = window.VEC_MAP.layers;
+var COLOR = {
+  BN:'#2563eb', PH:'#dc2626', PN:'#16a34a', GPS:'#0ea5e9', GRS:'#7c3aed',
+  WARISAN:'#ea580c', IND:'#64748b', PSM:'#dc2626', MUDA:'#f59e0b', KDM:'#0891b2',
+  PBM:'#ca8a04', BERSAMA:'#c026d3', 'Kuala Lumpur (FT)':'#0ea5e9',
+  'Sabah':'#ea580c','Sarawak':'#0ea5e9','Selangor':'#dc2626','Perak':'#16a34a',
+  'Penang':'#f59e0b','Johor':'#7c3aed','Kedah':'#0891b2','Kelantan':'#2563eb',
+  'Terengganu':'#c026d3','Pahang':'#ca8a04','Perlis':'#64748b','Negeri Sembilan':'#a3e635',
+  'Melaka':'#22d3ee','federal':'#dc2626','dun':'#16a34a','EXIT':'#dc2626',
+  'ABSORB':'#7c3aed','PACT':'#2563eb','SPLIT':'#16a34a','parametric':'#f59e0b',
+  'news-narrative':'#0ea5e9','quantitative':'#16a34a'
+};
+var FALLBACK=['#3b82f6','#10b981','#8b5cf6','#f59e0b','#ef4444','#14b8a6','#f97316','#e11d48','#84cc16','#06b6d4'];
+var svg=document.getElementById('svg'), tip=document.getElementById('tip');
+var ns='http://www.w3.org/2000/svg';
+var currentLayer='figures', colorBy='bloc';
+
+function fillLayerSel(){
+  var sel=document.getElementById('layer');
+  Object.keys(LAYER).forEach(function(k){ var o=document.createElement('option'); o.value=k; o.textContent=k+' ('+LAYER[k].count+')'; sel.appendChild(o); });
+  sel.value=currentLayer;
+}
+
+function colorFor(v){
+  if(COLOR[v]) return COLOR[v];
+  if(!v) return '#94a3b8';
+  var h=0; for(var i=0;i<v.length;i++) h=(h*31+v.charCodeAt(i))>>>0;
+  return FALLBACK[h%FALLBACK.length];
+}
+
+function esc(s){ return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
+function render(){
+  svg.innerHTML='';
+  var pts=LAYER[currentLayer].points;
+  var r=currentLayer==='figures'||currentLayer==='personnel'?3:(currentLayer==='news'?2.2:4);
+  var g=document.createElementNS(ns,'g');
+  pts.forEach(function(p,i){
+    var c=document.createElementNS(ns,'circle');
+    c.setAttribute('cx',(p.x+1)/2*980+10);
+    c.setAttribute('cy',(1-(p.y+1)/2)*680+10);
+    c.setAttribute('r',r);
+    var kv=colorBy==='bloc'?(p.bloc||''):(p.party||'');
+    c.setAttribute('fill',colorFor(kv));
+    c.setAttribute('opacity',0.62);
+    c.setAttribute('data-i',i);
+    c.addEventListener('mouseenter',function(ev){ showTip(p,ev); });
+    c.addEventListener('mousemove',function(ev){ moveTip(ev); });
+    c.addEventListener('mouseleave',hideTip);
+    g.appendChild(c);
+  });
+  svg.appendChild(g);
+  buildLegend();
+}
+
+function buildLegend(){
+  var leg=document.getElementById('legend'); leg.innerHTML='';
+  var seen={};
+  LAYER[currentLayer].points.forEach(function(p){
+    var kv=colorBy==='bloc'?(p.bloc||'—'):(p.party||'—');
+    if(seen[kv]) return; seen[kv]=true;
+    var s=document.createElement('span');
+    s.innerHTML='<i style="background:'+colorFor(kv==='—'?'':kv)+'"></i>'+esc(kv);
+    leg.appendChild(s);
+  });
+}
+
+function showTip(p,ev){
+  var lines=[];
+  if(p.name) lines.push('<b>'+esc(p.name)+'</b>');
+  if(p.bloc) lines.push('bloc: '+esc(p.bloc));
+  if(p.party) lines.push('party: '+esc(p.party));
+  if(p.role) lines.push('<span style="color:#94a3b8">'+esc(p.role)+'</span>');
+  tip.innerHTML=lines.join('<br>');
+  tip.style.display='block';
+  moveTip(ev);
+}
+function moveTip(ev){ tip.style.left=(ev.clientX-tip.offsetWidth/2)+'px'; tip.style.top=(ev.clientY-24)+'px'; }
+function hideTip(){ tip.style.display='none'; }
+
+document.getElementById('layer').addEventListener('change',function(){ currentLayer=this.value; render(); });
+document.getElementById('colorby').addEventListener('change',function(){ colorBy=this.value; render(); });
+
+fillLayerSel();
+render();
+</script>
+</body>
+</html>

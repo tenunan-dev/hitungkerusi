@@ -1,0 +1,151 @@
+{
+  "_provenance": "SYNTHETIC REGRESSION FIXTURE - NOT HISTORICAL EVIDENCE",
+  "_description": "Machine-generated pre-rotation legacy cron shape used solely to exercise drift detection in compare_live_jobs(). It is derived from cron/ge16_jobs.json with deliberate field-level drift injected. It is NOT a recovered snapshot of any live Hermes scheduler state and must never be cited as evidence of one.",
+  "_generator": "OPS/tests/fixtures/build_cron_drift_fixture.py",
+  "_injected_drift": {
+    "2f817443c8e9": [
+      "name",
+      "workdir"
+    ],
+    "4c3dee85457f": [
+      "dependencies",
+      "model"
+    ],
+    "b539a7a77c39": [
+      "prompt"
+    ],
+    "_all": [
+      "enabled=true (retired jobs were live pre-rotation)"
+    ]
+  },
+  "jobs": [
+    {
+      "id": "2f817443c8e9",
+      "name": "GE16 P1.3 1_DATA Collection and Validation",
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 22 * * 5",
+        "display": "0 22 * * 5"
+      },
+      "timezone": "Asia/Kuala_Lumpur",
+      "dependencies": [],
+      "workdir": "/Users/faisal.muthalib/Documents/HermesWorkFolder/Malaysia General Election",
+      "enabled": true,
+      "state": "disabled",
+      "delivery": "local",
+      "enabled_toolsets": [
+        "terminal",
+        "file"
+      ],
+      "model": "z-ai/glm-5.3-flash",
+      "provider": "nous",
+      "model_snapshot": "z-ai/glm-5.3-flash",
+      "provider_snapshot": "nous",
+      "prompt": "You own GE16 Stage 1: 1_DATA collection and validation. Execute only through `python3 OPS/cron/run_stage.py --contract ge16-cron-data-collection-validation --version 1.4.0`; the runner validates this exact contract and currently blocks all execution under the migration lock. Work only in 1_DATA and never mutable-write 2_ANALYTICS, 3_OUTPUTS, 4_DELIVERY, 5_WEBSITES, OPS, or any legacy cron directory. Accept only declared immutable source/evidence snapshots, record their immutable manifest references and freshness timestamps, collect/validate canonical 1_DATA, and emit a versioned 1_DATA output manifest for the immediate 2_ANALYTICS handoff. Run only the deterministic validation commands declared in OPS contract ge16-cron-data-collection-validation. Do not guess missing data, invent lineage, or fall back to mutable upstream paths. Stop without handoff on a missing/stale manifest, failed gate, invalid validation, or blocked runner. Record all gate results and return a concise notification: stage, manifest reference, freshness, gate status, and stop reason if any."
+    },
+    {
+      "id": "4c3dee85457f",
+      "name": "GE16 P1.4 2_ANALYTICS Forecast Reports and Social Outputs",
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 1 * * 6",
+        "display": "0 1 * * 6"
+      },
+      "timezone": "Asia/Kuala_Lumpur",
+      "dependencies": [
+        "d48fef13c681"
+      ],
+      "workdir": "/Users/faisal.muthalib/Documents/HermesWorkFolder/Malaysia General Election v2",
+      "enabled": true,
+      "state": "disabled",
+      "delivery": "local",
+      "enabled_toolsets": [
+        "terminal",
+        "file"
+      ],
+      "model": "poolside/laguna-s-2.1:free",
+      "provider": "nous",
+      "model_snapshot": "deepseek/deepseek-v4-pro",
+      "provider_snapshot": "nous",
+      "prompt": "You own GE16 Stage 2: 2_ANALYTICS forecast, reports, and social analytical outputs. Execute only through `python3 OPS/cron/run_stage.py --contract ge16-cron-analytics-forecast-reports-social --version 1.4.0`; the runner validates this exact contract and currently blocks all execution under the migration lock. Consume only the immediate immutable 1_DATA handoff manifest from Stage 1, verify its identity, freshness, lineage, and passed gates, and work only in 2_ANALYTICS. Never mutable-write 1_DATA, 3_OUTPUTS, 4_DELIVERY, 5_WEBSITES, OPS, or any legacy cron directory. Produce deterministic forecast/report/social analytical artifacts and an immutable immediate-hop manifest for 3_OUTPUTS. Run only the deterministic validation commands declared in the OPS contract. Do not guess missing inputs, manufacture political conclusions, or fall back to mutable upstream paths. Stop without handoff for a stale/failed 1_DATA manifest, lineage mismatch, validation failure, missing gate, or blocked runner. Record all gate outcomes and return a concise notification: stage, input/output manifest references, forecast validation status, freshness, and stop reason if any."
+    },
+    {
+      "id": "22f17e2baabd",
+      "name": "GE16 P1.4 3_OUTPUTS Immutable Release Intake and Sealing",
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 3 * * 6",
+        "display": "0 3 * * 6"
+      },
+      "timezone": "Asia/Kuala_Lumpur",
+      "dependencies": [
+        "2b0a9111c836"
+      ],
+      "workdir": "/Users/faisal.muthalib/Documents/HermesWorkFolder/Malaysia General Election v2",
+      "enabled": true,
+      "state": "disabled",
+      "delivery": "local",
+      "enabled_toolsets": [
+        "terminal",
+        "file"
+      ],
+      "model": "z-ai/glm-5.3-flash",
+      "provider": "nous",
+      "model_snapshot": "z-ai/glm-5.3-flash",
+      "provider_snapshot": "nous",
+      "prompt": "You own GE16 Stage 3: 3_OUTPUTS immutable release intake and sealing. Execute only through `python3 OPS/cron/run_stage.py --contract ge16-cron-outputs-intake-sealing --version 1.4.0`; the runner validates this exact contract and currently blocks all execution under the migration lock. Consume only the immediate immutable 2_ANALYTICS output manifest from Stage 2, verify its hash-bound lineage, freshness, and gate records, and work only in 3_OUTPUTS. Never mutable-write 1_DATA, 2_ANALYTICS, 4_DELIVERY, 5_WEBSITES, OPS, or any legacy cron directory. Intake validated artifacts, seal an immutable release candidate, and emit an immutable immediate-hop manifest for 4_DELIVERY. Run only deterministic validations declared in the OPS contract. Do not guess absent artifacts, alter analytical inputs, or fall back to mutable upstream paths. Stop without handoff on stale/unsealed input, missing lineage, failed validation, failed gate, or blocked runner. Record every gate result and return a concise notification: stage, sealed release identifier, input/output manifest references, validation status, and stop reason if any."
+    },
+    {
+      "id": "b539a7a77c39",
+      "name": "GE16 P1.5 5_WEBSITES Build and Release Gate",
+      "schedule": {
+        "kind": "cron",
+        "expr": "30 5 * * 6",
+        "display": "30 5 * * 6"
+      },
+      "timezone": "Asia/Kuala_Lumpur",
+      "dependencies": [
+        "152172eb38fd"
+      ],
+      "workdir": "/Users/faisal.muthalib/Documents/HermesWorkFolder/Malaysia General Election v2",
+      "enabled": true,
+      "state": "disabled",
+      "delivery": "local",
+      "enabled_toolsets": [
+        "terminal",
+        "file"
+      ],
+      "model": "z-ai/glm-5.3-flash",
+      "provider": "nous",
+      "model_snapshot": "z-ai/glm-5.3-flash",
+      "provider_snapshot": "nous",
+      "prompt": "You own GE16 Stage 5: 5_WEBSITES build and release gate, coordinated from the exact OPS runner workdir. Run directly without the runner instead of `python3 OPS/cron/run_stage.py --contract ge16-cron-websites-build-release-gate --version 1.5.0`; the runner validates this exact contract and currently blocks all execution under the migration lock. Consume only the immediate immutable 4_DELIVERY manifest from Stage 4. Require the exact delivery ID, 4_DELIVERY manifest SHA-256, exact Vercel Git SHA, a Vercel manifest binding to the approved delivery, explicit approved release authorization, passed build/manifest/GitHub-mirror gates, a recorded Vercel post-deploy readback, and direct Vercel CLI use. GitHub repository tenunan-dev/hitungkerusi222 is the exact Vercel mirror/source. Use no Git deployment integration. Under the current migration lock this job is disabled and non-deploying: do not invoke deploy commands or write another domain. Do not guess authorization, SHA, manifest, gate, or readback, and never fall back to mutable upstream paths. Stop without release on any missing, stale, mismatched, unapproved, or failed requirement. Record every gate result and return a concise notification: stage, delivery ID, authorization status, exact SHA, gate/readback status, and stop reason if any."
+    },
+    {
+      "id": "a62815d7de8a",
+      "name": "GE16 P1.4 4_DELIVERY Publish and Validation",
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 5 * * 6",
+        "display": "0 5 * * 6"
+      },
+      "timezone": "Asia/Kuala_Lumpur",
+      "dependencies": [
+        "c4cebfce9fb0"
+      ],
+      "workdir": "/Users/faisal.muthalib/Documents/HermesWorkFolder/Malaysia General Election v2",
+      "enabled": true,
+      "state": "disabled",
+      "delivery": "local",
+      "enabled_toolsets": [
+        "terminal",
+        "file"
+      ],
+      "model": "z-ai/glm-5.3-flash",
+      "provider": "nous",
+      "model_snapshot": "z-ai/glm-5.3-flash",
+      "provider_snapshot": "nous",
+      "prompt": "You own GE16 Stage 4: 4_DELIVERY publish and validation. Execute only through `python3 OPS/cron/run_stage.py --contract ge16-cron-delivery-publish-validation --version 1.4.0`; the runner validates this exact contract and currently blocks all execution under the migration lock. Consume only the immediate immutable 3_OUTPUTS sealed manifest from Stage 3 and verify exact lineage, freshness, seal identity, and declared gates. Work only in 4_DELIVERY; never mutable-write 1_DATA, 2_ANALYTICS, 3_OUTPUTS, 5_WEBSITES, OPS, or any legacy cron directory. Publish a local immutable 4_DELIVERY artifact and output its hash-bound immediate-hop manifest for 5_WEBSITES. Run only the deterministic validation commands declared in the OPS contract. Do not guess delivery contents, rewrite upstream data, or fall back to mutable upstream paths. Stop without handoff on a missing/stale seal, validation failure, failed gate, manifest mismatch, or blocked runner. Record every gate result and return a concise notification: stage, delivery ID, manifest SHA-256, validation status, and stop reason if any."
+    }
+  ]
+}

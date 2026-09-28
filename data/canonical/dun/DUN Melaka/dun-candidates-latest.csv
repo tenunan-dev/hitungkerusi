@@ -1,0 +1,113 @@
+seat,name,party,coalition,votes,votes_perc,rank,result,sex,ethnicity,age
+N.01 Kuala Linggi,Rosli bin Abdullah,UMNO,BN,3554,51.00459242250287,1,won,M,Malay,53
+N.01 Kuala Linggi,Julasapiyah bin Kassim,AMANAH,PH,1718,24.655568312284732,2,lost,M,Malay,52
+N.01 Kuala Linggi,Aziah binti Mohd Sa'ad,PAS,PN,1645,23.60792192881745,3,lost,F,Malay,60
+N.01 Kuala Linggi,Kamisan bin Palil,BEBAS,ALONE,51,0.7319173363949484,4,lost_deposit,M,Malay,36
+N.02 Tanjung Bidara,Ab Rauf bin Yusoh,UMNO,BN,3559,49.137097887615624,1,won,M,Malay,60
+N.02 Tanjung Bidara,Mas Ermieyati binti Samsudin,BERSATU,PN,3195,44.111555985089055,2,lost,F,Malay,45
+N.02 Tanjung Bidara,Zainal bin Hassan,PKR,PH,489,6.75134612729532,3,lost_deposit,M,Malay,59
+N.03 Ayer Limau,Hameed bin Mytheen Kunju Basheer,UMNO,BN,3838,51.94207605900664,1,won,M,Malay,48
+N.03 Ayer Limau,Nordina binti Abd Latif,BERSATU,PN,2753,37.25808634456625,2,lost,F,Malay,40
+N.03 Ayer Limau,Mazenah binti Baharuddin,AMANAH,PH,798,10.799837596427121,3,lost_deposit,F,Malay,56
+N.04 Lendu,Sulaiman bin Md Ali,UMNO,BN,4486,63.87583653709241,1,won,M,Malay,56
+N.04 Lendu,Abdullah bin Mahadi,BERSATU,PN,1382,19.678200199345007,2,lost,M,Malay,51
+N.04 Lendu,Muhammad Asri bin Ibrahim,PKR,PH,1155,16.44596326356258,3,lost,M,Malay,35
+N.05 Taboh Naning,Zulkiflee bin Mohd Zin,UMNO,BN,3170,57.23054703014985,1,won,M,Malay,53
+N.05 Taboh Naning,Hashim bin Mohamad,PAS,PN,1345,24.282361437082507,2,lost,M,Malay,59
+N.05 Taboh Naning,Zairi bin Suboh,AMANAH,PH,1024,18.487091532767646,3,lost,M,Malay,41
+N.06 Rembia,Muhammad Jailani bin Khamis,UMNO,BN,4224,41.60756501182033,1,won,M,Malay,49
+N.06 Rembia,Zamri bin Pakiri,PKR,PH,3364,33.13632781717888,2,lost,M,Malay,46
+N.06 Rembia,Zamzuri bin Arifin,BERSATU,PN,2433,23.965721040189123,3,lost,M,Malay,51
+N.06 Rembia,Sabarudin bin Kudus,BEBAS,ALONE,67,0.6599684791174153,4,lost_deposit,M,Malay,54
+N.06 Rembia,Murali a/l Krishnan,BEBAS,ALONE,64,0.6304176516942475,5,lost_deposit,M,Indian,53
+N.07 Gadek,Shanmugam a/l V.Pitchay (VP Shan),MIC,BN,3022,39.36433502670314,1,won,M,Indian,52
+N.07 Gadek,Saminathan a/l Ganesan (G. Saminathan),DAP,PH,2463,32.082844861273934,2,lost,M,Indian,36
+N.07 Gadek,Mohd Amir Fitri bin Muharam,BERSATU,PN,2041,26.58590595284616,3,lost,M,Malay,34
+N.07 Gadek,Laila Norinda binti Maon,PUTRA,ALONE,68,0.8857626677087403,4,lost_deposit,F,Malay,44
+N.07 Gadek,Azafen bin Amin,BEBAS,ALONE,60,0.7815552950371238,5,lost_deposit,M,Malay,53
+N.07 Gadek,Mohan Singh a/l Booda Singh,BEBAS,ALONE,23,0.29959619643089747,6,lost_deposit,M,Indian,61
+N.08 Machap Jaya,Ngwe Hee Sem,MCA,BN,3732,46.673336668334166,1,won,M,Chinese,53
+N.08 Machap Jaya,Law Bing Haw,PKR,PH,2794,34.94247123561781,2,lost,M,Chinese,40
+N.08 Machap Jaya,Tai Siong Jiul,BERSATU,PN,1202,15.032516258129064,3,lost,M,Chinese,54
+N.08 Machap Jaya,Abdul Aziz bin Abdul Kadir,IMAN,ALONE,167,2.088544272136068,4,lost_deposit,M,Malay,58
+N.08 Machap Jaya,Azlan bin Daud,BEBAS,ALONE,101,1.2631315657828914,5,lost_deposit,M,Malay,49
+N.09 Durian Tunggal,Zahari bin Abd Kalil,UMNO,BN,3663,40.55131185652607,1,won,M,Malay,48
+N.09 Durian Tunggal,Mohd Sofi bin Abdul Wahab (Sofi Wahab),AMANAH,PH,3104,34.36289161961696,2,lost,M,Malay,53
+N.09 Durian Tunggal,Ja'afar bin Othman,PAS,PN,2208,24.44370640983062,3,lost,M,Malay,45
+N.09 Durian Tunggal,Mohd Erfan bin Mahrilar,BEBAS,ALONE,58,0.6420901140263479,4,lost_deposit,M,Malay,29
+N.10 Asahan,Fairul Nizam bin Roslan,UMNO,BN,5659,56.77166934189406,1,won,M,Malay,43
+N.10 Asahan,Idris bin Haron,PKR,PH,2666,26.74558587479936,2,lost,M,Malay,55
+N.10 Asahan,Dhanesh a/l Basil,GERAKAN,PN,1364,13.68378812199037,3,lost,M,Indian,29
+N.10 Asahan,Mohd Akhir bin Ayob,BEBAS,ALONE,136,1.3643659711075442,4,lost_deposit,M,Malay,49
+N.10 Asahan,Azmar bin Abdul Hamid,BEBAS,ALONE,99,0.9931781701444623,5,lost_deposit,M,Malay,36
+N.10 Asahan,Mohd Noor bin Salleh,BEBAS,ALONE,44,0.44141252006420545,6,lost_deposit,M,Malay,42
+N.11 Sungai Udang,Mohd Aleef bin Yusof,BERSATU,PN,6789,43.64793622219365,1,won,M,Malay,35
+N.11 Sungai Udang,Mohamad Ali bin Mohamad,UMNO,BN,6259,40.24045261669024,2,lost,M,Malay,57
+N.11 Sungai Udang,Hasmorni binti Tamby,PKR,PH,2035,13.083451202263083,3,lost,F,Malay,46
+N.11 Sungai Udang,Mohd Zahar bin Hashim,BEBAS,ALONE,471,3.028159958853028,4,lost_deposit,M,Malay,63
+N.12 Pantai Kundor,Tuminah binti Kadi,UMNO,BN,3960,40.03234937323089,1,won,F,Malay,54
+N.12 Pantai Kundor,Mohamad Ridzwan bin Mustafa,BERSATU,PN,3133,31.672058228871812,2,lost,M,Malay,41
+N.12 Pantai Kundor,Nor Azman bin Hassan,AMANAH,PH,2799,28.29559239789729,3,lost,M,Malay,57
+N.13 Paya Rumput,Rais bin Yasin,UMNO,BN,6830,39.683923072453666,1,won,M,Malay,37
+N.13 Paya Rumput,Shamsul Iskandar bin Mohd Akin,PKR,PH,6201,36.02928359769915,2,lost,M,Malay,47
+N.13 Paya Rumput,Muhammad Faris Izwan bin Mazlan,BERSATU,PN,3972,23.07826390099355,3,lost,M,Malay,28
+N.13 Paya Rumput,Mohd Jaini bin Dimon,BEBAS,ALONE,127,0.7379001801173668,4,lost_deposit,M,Malay,54
+N.13 Paya Rumput,Mohamad Hashidi bin Mohd Zin,PUTRA,ALONE,81,0.4706292487362733,5,lost_deposit,M,Malay,32
+N.14 Kelebang,Lim Ban Hong,MCA,BN,5028,38.48744641763625,1,won,M,Chinese,44
+N.14 Kelebang,Gue Teck,PKR,PH,4152,31.78199632578077,2,lost,M,Chinese,62
+N.14 Kelebang,Bakri bin Jamaluddin,PAS,PN,3884,29.730557256582973,3,lost,M,Malay,57
+N.15 Pengkalan Batu,Kalsom binti Noordin,UMNO,BN,4839,35.7702542874039,1,won,F,Malay,68
+N.15 Pengkalan Batu,Muhamad Danish bin Zainudin,DAP,PH,4708,34.80189237137788,2,lost,M,Malay,25
+N.15 Pengkalan Batu,Mohd Azrudin bin Md Idris,BERSATU,PN,2681,19.818154937906566,3,lost,M,Malay,40
+N.15 Pengkalan Batu,Norhizam bin Hassan Baktee,BEBAS,ALONE,1218,9.00354819633353,4,lost_deposit,M,Malay,55
+N.15 Pengkalan Batu,Mohd Aluwi bin Sari,PUTRA,ALONE,82,0.6061502069781195,5,lost_deposit,M,Malay,55
+N.16 Ayer Keroh,Kerk Chee Yee,DAP,PH,9459,59.96956824954035,1,won,M,Chinese,29
+N.16 Ayer Keroh,Yong Fun Juan,MCA,BN,3835,24.313700627654853,2,lost,M,Chinese,52
+N.16 Ayer Keroh,Michael Gan Peng Lam,GERAKAN,PN,2479,15.716731122804791,3,lost,M,Chinese,61
+N.17 Bukit Katil,Adly bin Zahari,AMANAH,PH,6805,41.552176833363866,1,won,M,Malay,50
+N.17 Bukit Katil,Hasnoor bin Sdg Husin,UMNO,BN,5748,35.0980032973072,2,lost,M,Malay,63
+N.17 Bukit Katil,Muhammad Al Afiz bin Yahya,PAS,PN,3715,22.684252305061978,3,lost,M,Malay,33
+N.17 Bukit Katil,Abdul Hamid bin MUstapah,BEBAS,ALONE,109,0.6655675642669598,4,lost_deposit,M,Malay,61
+N.18 Ayer Molek,Rahmad bin Mariman,UMNO,BN,6348,51.0699919549477,1,won,M,Malay,57
+N.18 Ayer Molek,Mohd Fadly bin Samin,BERSATU,PN,3546,28.527755430410295,2,lost,M,Malay,38
+N.18 Ayer Molek,Mohd Rafee bin Ibrahim,PKR,PH,2446,19.678197908286403,3,lost,M,Malay,55
+N.18 Ayer Molek,Ahmad Muaz bin Idris,BEBAS,ALONE,90,0.7240547063555913,4,lost_deposit,M,Malay,34
+N.19 Kesidang,Seah Shoo Chin (Allex Seah),DAP,PH,14769,65.85953177257525,1,won,M,Chinese,38
+N.19 Kesidang,Leong Hui Ying,MCA,BN,4532,20.20958751393534,2,lost,F,Chinese,29
+N.19 Kesidang,Patrick Ng Chin Kae,GERAKAN,PN,3124,13.93088071348941,3,lost,M,Chinese,32
+N.20 Kota Laksamana,Low Chee Leong,DAP,PH,13508,80.82814743896601,1,won,M,Chinese,51
+N.20 Kota Laksamana,Benjamin Low Chin Hong,MCA,BN,2014,12.051220679751077,2,lost_deposit,M,Chinese,41
+N.20 Kota Laksamana,Fong Khai Ling,GERAKAN,PN,1190,7.12063188128291,3,lost_deposit,F,Chinese,27
+N.21 Duyong,Mohd Noor Helmy bin Abdul Halem,UMNO,BN,4684,38.358856768487435,1,won,M,Malay,40
+N.21 Duyong,Damian Yeo Shen Li,DAP,PH,4484,36.720989271967895,2,lost,M,Chinese,46
+N.21 Duyong,Kamarudin bin Sedik,PAS,PN,2874,23.536155924985668,3,lost,M,Malay,52
+N.21 Duyong,Gan Tian Soh,BEBAS,ALONE,60,0.49136024895585945,4,lost_deposit,M,Chinese,47
+N.21 Duyong,Muhamad Hafiz bin Ishak,BEBAS,ALONE,57,0.4667922365080665,5,lost_deposit,M,Malay,42
+N.21 Duyong,Mohd Faizal bin Amzah,PUTRA,ALONE,52,0.4258455490950782,6,lost_deposit,M,Malay,45
+N.22 Bandar Hilir,Leng Chau Yen,DAP,PH,9091,81.19139055104046,1,won,F,Chinese,37
+N.22 Bandar Hilir,Lee Kah Sean,MCA,BN,1313,11.726355273734036,2,lost_deposit,M,Chinese,49
+N.22 Bandar Hilir,Clarice Chan Ming Wang,GERAKAN,PN,634,5.662230954720014,3,lost_deposit,F,Chinese,42
+N.22 Bandar Hilir,Mak Chee Kin,BEBAS,ALONE,159,1.4200232205054926,4,lost_deposit,M,Chinese,59
+N.23 Telok Mas,Abdul Razak bin Abdul Rahman,UMNO,BN,6052,43.007390562819786,1,won,M,Malay,48
+N.23 Telok Mas,Mohd Rafiq bin Naizamohideen,BERSATU,PN,3976,28.254690164866403,2,lost,M,Malay,35
+N.23 Telok Mas,Ashraf Mukhlis bin Minghat,AMANAH,PH,3891,27.650653780557132,3,lost,M,Malay,50
+N.23 Telok Mas,Muhammad Ariff Adly bin Mohammad,BEBAS,ALONE,153,1.08726549175668,4,lost_deposit,M,Malay,32
+N.24 Bemban,Mohd Yadzil bin Yaakub,BERSATU,PN,4211,34.60432245870655,1,won,M,Malay,43
+N.24 Bemban,Koh Chin Han,MCA,BN,3883,31.908948968690936,2,lost,M,Chinese,51
+N.24 Bemban,Tey Kok Kiew,DAP,PH,3095,25.4334785109705,3,lost,M,Chinese,49
+N.24 Bemban,Ng Choon Koon,BEBAS,ALONE,850,6.984961788150218,4,lost_deposit,M,Chinese,46
+N.24 Bemban,Azmi bin Kamis,BEBAS,ALONE,130,1.068288273481798,5,lost_deposit,M,Malay,57
+N.25 Rim,Khaidhirah binti Abu Zahar,UMNO,BN,4037,45.308641975308646,1,won,F,Malay,37
+N.25 Rim,Azalina binti Abdul Rahman,BERSATU,PN,2710,30.41526374859708,2,lost,F,Malay,44
+N.25 Rim,Prasanth Kumar a/l Brakasam,PKR,PH,2163,24.276094276094277,3,lost,M,Indian,27
+N.26 Serkam,Zaidi bin Attan,UMNO,BN,5038,43.31527813601582,1,won,M,Malay,52
+N.26 Serkam,Ahmad Bilal bin Rahudin,PAS,PN,4959,42.63605880835698,2,lost,M,Malay,38
+N.26 Serkam,Muhammad Kohmeni Kamal,AMANAH,PH,1535,13.197489467801566,3,lost,M,Malay,30
+N.26 Serkam,Norazlanshah bin Hazali,BEBAS,ALONE,99,0.8511735878256383,4,lost_deposit,M,Malay,41
+N.27 Merlimau,Muhamad Akmal bin Saleh,UMNO,BN,5633,58.433609958506224,1,won,M,Malay,33
+N.27 Merlimau,Azrin bin Ab Majid,AMANAH,PH,2385,24.740663900414937,2,lost,M,Malay,55
+N.27 Merlimau,Abd Alim bin Shapie,PAS,PN,1622,16.82572614107884,3,lost,M,Malay,63
+N.28 Sungai Rambai,Siti Faizah binti Abdul Azis,UMNO,BN,3801,48.08349146110057,1,won,F,Malay,46
+N.28 Sungai Rambai,Muhammad Jefri bin Safry,BERSATU,PN,2664,33.70018975332068,2,lost,M,Malay,30
+N.28 Sungai Rambai,Farzana Hayani binti Nasir,PKR,PH,1356,17.15370018975332,3,lost,F,Malay,21
+N.28 Sungai Rambai,Nazatul Asyraf bin Md Dom,PUTRA,ALONE,84,1.0626185958254268,4,lost_deposit,M,Malay,38

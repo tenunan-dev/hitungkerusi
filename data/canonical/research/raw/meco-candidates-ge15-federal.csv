@@ -1,0 +1,946 @@
+date,election,state,seat,ballot_order,candidate_uid,name_on_ballot,name,sex,ethnicity,age,party_on_ballot,party_uid,party,coalition_uid,coalition,votes,votes_perc,rank,result
+2022-11-19,GE-15,Perlis,P.001 Padang Besar,1,QC1ZR,Rushdan Bin Rusmi,Rushdan bin Rusmi,M,Bumi Sarawak,44,PN,004-PAS,PAS,011-PN,PN,24267,53.583730789613135,1,won
+2022-11-19,GE-15,Perlis,P.001 Padang Besar,2,16NGV,Ko Chu Liang,Ko Chu Liang,M,Chinese,72,WARISAN,104-WARISAN,WARISAN,000-ALONE,ALONE,244,0.5387740681858328,5,lost_deposit
+2022-11-19,GE-15,Perlis,P.001 Padang Besar,3,CMH35,Zahidi Bin Zainul Abidin,Zahidi bin Zainul Abidin,M,Malay,61,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,1939,4.281487369722664,4,lost_deposit
+2022-11-19,GE-15,Perlis,P.001 Padang Besar,4,TSR21,Zahida Binti Zarik Khan,Zahida binti Zarik Khan,F,Malay,43,BN,001-UMNO,UMNO,001-BN,BN,11753,25.95168698109875,2,lost
+2022-11-19,GE-15,Perlis,P.001 Padang Besar,5,Y7E4A,Kapt (B) Hj Mohamad Yahaya,Mohamad bin Saad @ Yahaya,M,Malay,58,PH,046-AMANAH,AMANAH,007-PH,PH,7085,15.644320791379615,3,lost
+2022-11-19,GE-15,Perlis,P.002 Kangar,1,1N46K,Cikgu Zakri,Zakri Hassan,M,Malay,58,PN,107-BERSATU,BERSATU,011-PN,PN,24562,43.704626334519574,1,won
+2022-11-19,GE-15,Perlis,P.002 Kangar,2,FB661,Dr Fathul Bari,Fathul Bari bin Mat Jahya,M,Malay,42,BN,001-UMNO,UMNO,001-BN,BN,15370,27.348754448398576,2,lost
+2022-11-19,GE-15,Perlis,P.002 Kangar,3,52T8W,Prof. Dr. Rohimi Shapiee,Rohimi bin Shapiee,M,Malay,60,WARISAN,104-WARISAN,WARISAN,000-ALONE,ALONE,417,0.7419928825622776,5,lost_deposit
+2022-11-19,GE-15,Perlis,P.002 Kangar,4,TS1RB,Amin Ahmad,Noor Amin bin Ahmad,M,Malay,40,PH,078-PKR,PKR,007-PH,PH,15143,26.94483985765125,3,lost
+2022-11-19,GE-15,Perlis,P.002 Kangar,5,8GGB5,Ustaz Nur Sulaiman,Nur Sulaiman,M,Malay,34,PEJUANG,119-PEJUANG,PEJUANG,015-GTA,GTA,708,1.2597864768683273,4,lost_deposit
+2022-11-19,GE-15,Perlis,P.003 Arau,1,BY6DE,Fathin Amelina,Fathin Amelina binti Fazlie,F,Malay,28,PH,078-PKR,PKR,007-PH,PH,7089,15.150997029216267,3,lost
+2022-11-19,GE-15,Perlis,P.003 Arau,2,EJDED,Shahidan Bin Kassim,Shahidan bin Kassim,M,Malay,71,PN,004-PAS,PAS,011-PN,PN,31458,67.23375152279381,1,won
+2022-11-19,GE-15,Perlis,P.003 Arau,3,FBWFQ,Rozabil @ Tok Ben,Rozabil bin Abdul Rahman,M,Malay,50,BN,001-UMNO,UMNO,001-BN,BN,8242,17.615251447989912,2,lost
+2022-11-19,GE-15,Kedah,P.004 Langkawi,1,MMPWR,Dato Paduka Abd Kadir,Abdul Kadir bin Sainudin,M,Malay,43,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,89,0.18744734625105308,5,lost_deposit
+2022-11-19,GE-15,Kedah,P.004 Langkawi,2,AYHMJ,Mohd Suhaimi Bin Abdullah,Mohd Suhaimi bin Abdullah,M,Malay,67,PN,107-BERSATU,BERSATU,011-PN,PN,25463,53.62889637742207,1,won
+2022-11-19,GE-15,Kedah,P.004 Langkawi,3,ZAT99,Mahathir Bin Mohamad,Mahathir bin Mohamad,M,Malay,97,PEJUANG,119-PEJUANG,PEJUANG,015-GTA,GTA,4566,9.616680707666386,4,lost_deposit
+2022-11-19,GE-15,Kedah,P.004 Langkawi,4,JSJJ0,Dato' Armishah Siraj (Das),Armishah bin Siraj (Das),M,Malay,58,BN,001-UMNO,UMNO,001-BN,BN,11945,25.157961246840777,2,lost
+2022-11-19,GE-15,Kedah,P.004 Langkawi,5,P78M9,Zabidi Yahya,Zabidi bin Yahya,M,Malay,54,PH,046-AMANAH,AMANAH,007-PH,PH,5417,11.409014321819713,3,lost_deposit
+2022-11-19,GE-15,Kedah,P.005 Jerlun,1,3XMVW,Dr. Abd Ghani Ahmad,Abdul Ghani bin Ahmad,M,Malay,-1,PN,004-PAS,PAS,011-PN,PN,31685,60.69109506388032,1,won
+2022-11-19,GE-15,Kedah,P.005 Jerlun,2,Z1HZG,Dato' Seri Utama Mukhriz Mahathir,Mukhriz bin Mahathir,M,Malay,58,PEJUANG,119-PEJUANG,PEJUANG,015-GTA,GTA,3144,6.02218093359128,4,lost_deposit
+2022-11-19,GE-15,Kedah,P.005 Jerlun,3,SMYPJ,Dr. Mohamed Fadzil Mohd Ali,Mohamed Fadzil bin Mohd Ali,M,Malay,49,PH,078-PKR,PKR,007-PH,PH,6149,11.778114046009156,3,lost_deposit
+2022-11-19,GE-15,Kedah,P.005 Jerlun,4,YCJPX,Othman Bin Aziz,Othman bin Aziz,M,Malay,63,BN,001-UMNO,UMNO,001-BN,BN,11229,21.50860995651924,2,lost
+2022-11-19,GE-15,Kedah,P.006 Kubang Pasu,1,TA8GW,Dato' Wira Dr Ku Abd Rahman Bin Ku Ismail,Ku Abd Rahman bin Ku Ismail,M,Malay,70,PN,107-BERSATU,BERSATU,011-PN,PN,47584,57.05378767895254,1,won
+2022-11-19,GE-15,Kedah,P.006 Kubang Pasu,2,X2MRV,Aizuddin Ariffin,Aizuddin bin Ariffin,M,Malay,35,PH,078-PKR,PKR,007-PH,PH,16000,19.1841922256061,2,lost
+2022-11-19,GE-15,Kedah,P.006 Kubang Pasu,3,3MC8H,Amiruddin Hamzah (Tok Met),Amiruddin bin Hamzah,M,Malay,60,PEJUANG,119-PEJUANG,PEJUANG,015-GTA,GTA,5329,6.389535023140931,4,lost_deposit
+2022-11-19,GE-15,Kedah,P.006 Kubang Pasu,4,0GAV4,Hasmuni Bin Hassan (Tok Muni),Hasmuni bin Hassan (Tok Muni),M,Malay,43,BN,001-UMNO,UMNO,001-BN,BN,14489,17.372485072300424,3,lost
+2022-11-19,GE-15,Kedah,P.007 Padang Terap,1,3Y0XD,Razali Bin Lebai Salleh,Razali bin Lebai Salleh,M,Malay,65,PEJUANG,119-PEJUANG,PEJUANG,015-GTA,GTA,452,0.9294865203890683,4,lost_deposit
+2022-11-19,GE-15,Kedah,P.007 Padang Terap,2,8NMXR,Mahdzir Bin Khalid,Mahdzir bin Khalid,M,Malay,62,BN,001-UMNO,UMNO,001-BN,BN,17258,35.48911143556314,2,lost
+2022-11-19,GE-15,Kedah,P.007 Padang Terap,3,7BPZP,Muaz Abdullah,Muaz bin Abdullah,M,Malay,25,PH,046-AMANAH,AMANAH,007-PH,PH,2702,5.556355261263855,3,lost_deposit
+2022-11-19,GE-15,Kedah,P.007 Padang Terap,4,ASD1Z,Ustaz Nurul Amin,Nurul Amin bin Ahmad,M,Malay,39,PN,004-PAS,PAS,011-PN,PN,28217,58.02504678278394,1,won
+2022-11-19,GE-15,Kedah,P.008 Pokok Sena,1,E7348,Noraini Binti Md Salleh,Noraini binti Md Salleh,F,Malay,60,WARISAN,104-WARISAN,WARISAN,000-ALONE,ALONE,622,0.7072682616210315,4,lost_deposit
+2022-11-19,GE-15,Kedah,P.008 Pokok Sena,2,9KXCT,Dato' Ahmad Yahaya,Ahmad bin Yahaya,M,Malay,47,PN,004-PAS,PAS,011-PN,PN,52275,59.44123533157464,1,won
+2022-11-19,GE-15,Kedah,P.008 Pokok Sena,3,HMS6H,Noran Zamini Bin Jamaluddin,Noran Zamini bin Jamaluddin,M,Malay,48,BN,001-UMNO,UMNO,001-BN,BN,14523,16.513917947784954,3,lost
+2022-11-19,GE-15,Kedah,P.008 Pokok Sena,4,D621J,Dato' Wira Hj Mahfuz Omar,Mahfuz bin Omar,M,Malay,65,PH,046-AMANAH,AMANAH,007-PH,PH,20524,23.337578459019376,2,lost
+2022-11-19,GE-15,Kedah,P.009 Alor Setar,1,N2F8T,Nuhairi Rahmat,Mohamad Nuhairi bin Rahmat,M,Malay,45,PEJUANG,119-PEJUANG,PEJUANG,015-GTA,GTA,2383,3.0953679889850103,4,lost_deposit
+2022-11-19,GE-15,Kedah,P.009 Alor Setar,2,D7SG7,Afnan Hamimi Bin Dato' Haji Taib Azamudden,Afnan Hamimi bin Taib Azamudden,M,Malay,41,PN,004-PAS,PAS,011-PN,PN,37486,48.691969968565715,1,won
+2022-11-19,GE-15,Kedah,P.009 Alor Setar,3,ZH0XH,Fadzil Bin Hanafi,Fadzil bin Hanafi,M,Malay,65,WARISAN,104-WARISAN,WARISAN,000-ALONE,ALONE,366,0.47541111370898603,5,lost_deposit
+2022-11-19,GE-15,Kedah,P.009 Alor Setar,4,2QV84,Simon Ooi Tze Min,Simon Ooi Tze Min,M,Chinese,38,PH,078-PKR,PKR,007-PH,PH,27555,35.79222196243473,2,lost
+2022-11-19,GE-15,Kedah,P.009 Alor Setar,5,RG5B3,Dato' Dr Nordin Yunus,Nordin bin Yunus,M,Malay,69,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,115,0.14937780895227704,7,lost_deposit
+2022-11-19,GE-15,Kedah,P.009 Alor Setar,6,VXVDC,Sofan Feroza,Sofan Feroza bin Md Yusup,M,Malay,43,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,151,0.19613955784168552,6,lost_deposit
+2022-11-19,GE-15,Kedah,P.009 Alor Setar,7,ZBHFN,Tan Chee Hiong,Tan Chee Hiong,M,Chinese,43,BN,003-MCA,MCA,001-BN,BN,8930,11.5995115995116,3,lost_deposit
+2022-11-19,GE-15,Kedah,P.010 Kuala Kedah,1,N8N0C,Dr Azman Ismail,Azman bin Ismail,M,Malay,61,PH,078-PKR,PKR,007-PH,PH,28237,28.10350833540682,2,lost
+2022-11-19,GE-15,Kedah,P.010 Kuala Kedah,2,2S7HY,Pak Tuan Al Idrus,Syed Araniri bin Syed Ahmad,M,Malay,48,WARISAN,104-WARISAN,WARISAN,000-ALONE,ALONE,256,0.2547897486937049,5,lost_deposit
+2022-11-19,GE-15,Kedah,P.010 Kuala Kedah,3,66XM7,Ulya Husamudin,Ulya Aqamah bin Husamudin,M,Malay,31,PEJUANG,119-PEJUANG,PEJUANG,015-GTA,GTA,1805,1.7964667827817866,4,lost_deposit
+2022-11-19,GE-15,Kedah,P.010 Kuala Kedah,4,N12Z0,Dr. Ahmad Fakhruddin,Ahmad Fakhruddin bin Fakhrurazi,M,Malay,51,PN,004-PAS,PAS,011-PN,PN,56298,56.03184871858671,1,won
+2022-11-19,GE-15,Kedah,P.010 Kuala Kedah,5,7NNK5,Dato Dr Mashitah Binti Ibrahim,Mashitah binti Ibrahim,F,Malay,58,BN,001-UMNO,UMNO,001-BN,BN,13879,13.813386414530978,3,lost
+2022-11-19,GE-15,Kedah,P.011 Pendang,1,T31MB,Datuk Haji Awang Solahudin,Awang Solahuddin bin Hashim,M,Malay,58,PN,004-PAS,PAS,011-PN,PN,49008,64.83054210651639,1,won
+2022-11-19,GE-15,Kedah,P.011 Pendang,2,9MKPG,Dato Zul,Zulkifly bin Mohamad,M,Malay,52,PH,078-PKR,PKR,007-PH,PH,8058,10.659576156837844,3,lost_deposit
+2022-11-19,GE-15,Kedah,P.011 Pendang,3,D29RS,Rashid Yob,Abdul Rashid bin Yob,M,Malay,43,PEJUANG,122-GB,GB,015-GTA,GTA,809,1.0701907558800963,4,lost_deposit
+2022-11-19,GE-15,Kedah,P.011 Pendang,4,7GVJ9,Suraya Binti Yaacob,Suraya binti Yaacob,F,Malay,53,BN,001-UMNO,UMNO,001-BN,BN,17719,23.439690980765672,2,lost
+2022-11-19,GE-15,Kedah,P.012 Jerai,1,GFZV2,Zulhazmi Bin Shariff,Zulhazmi bin Shariff,M,Malay,47,PH,021-DAP,DAP,007-PH,PH,15590,18.944503177670033,3,lost
+2022-11-19,GE-15,Kedah,P.012 Jerai,2,W414Y,Dato Seri Dr. Jamil Khir Baharom,Jamil Khir bin Baharom,M,Malay,61,BN,001-UMNO,UMNO,001-BN,BN,16269,19.769603733002807,2,lost
+2022-11-19,GE-15,Kedah,P.012 Jerai,3,4C3V6,Ustaz Sabri Bin Azit,Sabri bin Azit,M,Malay,56,PN,004-PAS,PAS,011-PN,PN,49461,60.10353249972658,1,won
+2022-11-19,GE-15,Kedah,P.012 Jerai,4,KXNXB,Datuk Nizam Mahshar,Mohd Nizam bin Mahshar,M,Malay,45,PEJUANG,122-GB,GB,015-GTA,GTA,973,1.1823605896005736,4,lost_deposit
+2022-11-19,GE-15,Kedah,P.013 Sik,1,QBBZM,Maiza,Maizatul Akmam binti Othman @Ibrahim,F,Malay,51,BN,001-UMNO,UMNO,001-BN,BN,12819,25.056195148648385,2,lost
+2022-11-19,GE-15,Kedah,P.013 Sik,2,TS21X,Dato' Latifah,Latifah binti Mohammad Yatim,F,Malay,65,PH,046-AMANAH,AMANAH,007-PH,PH,3736,7.30243740349094,3,lost_deposit
+2022-11-19,GE-15,Kedah,P.013 Sik,3,X18F1,Ahmad Tarmizi Sulaiman,Ahmad Tarmizi bin Sulaiman,M,Malay,46,PN,004-PAS,PAS,011-PN,PN,34606,67.64136744786067,1,won
+2022-11-19,GE-15,Kedah,P.014 Merbok,1,KJACY,Khairul Anuar,Khairul Anuar bin Ahmad Zainudin,M,Malay,50,WARISAN,104-WARISAN,WARISAN,000-ALONE,ALONE,525,0.5119753471680449,5,lost_deposit
+2022-11-19,GE-15,Kedah,P.014 Merbok,2,Y6R46,Dato' Shaiful Hazizy,Shaiful Hazizy bin Zainol Abidin (Tok Pon),M,Malay,46,BN,001-UMNO,UMNO,001-BN,BN,16691,16.27691527539398,3,lost
+2022-11-19,GE-15,Kedah,P.014 Merbok,3,6D3BS,Nurin Aina,Nur Azrina binti Surip (Nurin Aina),F,Malay,47,PH,078-PKR,PKR,007-PH,PH,31554,30.771181151505694,2,lost
+2022-11-19,GE-15,Kedah,P.014 Merbok,4,6CRGG,Mohd Nazri,Mohd Nazri bin Abu Hassan,M,Malay,52,PN,107-BERSATU,BERSATU,011-PN,PN,52573,51.26872366983929,1,won
+2022-11-19,GE-15,Kedah,P.014 Merbok,5,1ME6F,Datuk Mosin Razak,Mohd Mosin bin Abdul Razak,M,Malay,59,PEJUANG,117-IMAN,IMAN,015-GTA,GTA,1201,1.1712045560929942,4,lost_deposit
+2022-11-19,GE-15,Kedah,P.015 Sungai Petani,1,5248R,Dr. Taufiq Bin Dato' Johari,Taufiq bin Johari,M,Malay,26,PH,078-PKR,PKR,007-PH,PH,50580,38.90649518476354,1,won
+2022-11-19,GE-15,Kedah,P.015 Sungai Petani,2,00V9Z,Tan Joon Long @ Tan Chow Kang,Tan Chow Kang,M,Chinese,80,PRM,009-PRM,PRM,000-ALONE,ALONE,226,0.17384080489831083,5,lost_deposit
+2022-11-19,GE-15,Kedah,P.015 Sungai Petani,3,GXCRQ,Hj. Marzuki Yahya,Marzuki bin Yahya,M,Malay,52,PEJUANG,119-PEJUANG,PEJUANG,015-GTA,GTA,2342,1.8014830312913448,4,lost_deposit
+2022-11-19,GE-15,Kedah,P.015 Sungai Petani,4,Q9ZNT,Dr. Robert Ling,Robert Ling Kui Ee,M,Chinese,50,PN,107-BERSATU,BERSATU,011-PN,PN,49465,38.04882926679179,2,lost
+2022-11-19,GE-15,Kedah,P.015 Sungai Petani,5,NGJ6K,Dato' Shahanim Binti Mohamad Yusoff,Shahanim binti Mohamad Yusoff,F,Malay,49,BN,001-UMNO,UMNO,001-BN,BN,27391,21.069351712255006,3,lost
+2022-11-19,GE-15,Kedah,P.016 Baling,1,A9XGT,Cikgu Johari Abdullah,Johari bin Abdullah,M,Malay,56,PH,046-AMANAH,AMANAH,007-PH,PH,8636,7.918286510672632,3,lost_deposit
+2022-11-19,GE-15,Kedah,P.016 Baling,2,8FTB1,Lt Kol (B) Basir,Basir bin Abdul Rahman,M,Malay,59,PEJUANG,112-PUTRA,PUTRA,015-GTA,GTA,579,0.5308809506344898,4,lost_deposit
+2022-11-19,GE-15,Kedah,P.016 Baling,3,XWRM1,Datuk Azeez Rahim,Abdul Azeez bin Abdul Rahim,M,Malay,56,BN,001-UMNO,UMNO,001-BN,BN,35356,32.417663023545806,2,lost
+2022-11-19,GE-15,Kedah,P.016 Baling,4,WBYB5,Ustaz Hassan,Hassan bin Saad,M,Malay,65,PN,004-PAS,PAS,011-PN,PN,64493,59.13316951514707,1,won
+2022-12-07,GE-15,Kedah,P.017 Padang Serai,1,8EE17,Dato' Cikgu Azman,Azman bin Nasrudin,M,Malay,50,PN,107-BERSATU,BERSATU,011-PN,PN,51637,56.48573553863656,1,won
+2022-12-07,GE-15,Kedah,P.017 Padang Serai,2,R9Z0D,Dato Sivaraj Chandran,Sivarraajh Chandran,M,Indian,46,BN,002-MIC,MIC,001-BN,BN,2983,3.263104926927453,3,lost_deposit
+2022-12-07,GE-15,Kedah,P.017 Padang Serai,3,WGRNK,Hamzah Abd Rahman,Hamzah bin Abdul Rahman,M,Malay,59,PEJUANG,112-PUTRA,PUTRA,015-GTA,GTA,424,0.46381377439397914,5,lost_deposit
+2022-12-07,GE-15,Kedah,P.017 Padang Serai,4,0NFQ9,Dr. Sofee Razak,Mohamad Sofee bin Razak,M,Malay,47,PH,078-PKR,PKR,007-PH,PH,35377,38.69891485079198,2,lost
+2022-12-07,GE-15,Kedah,P.017 Padang Serai,5,ZYEQW,Ananda Ak,Sreanandha Rao,M,Indian,38,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,846,0.9254397479653451,4,lost_deposit
+2022-12-07,GE-15,Kedah,P.017 Padang Serai,6,3C4T5,Mohd Bakhri Bin Haji Hashim,Mohd Bakhri bin Hashim,M,Malay,61,WARISAN,104-WARISAN,WARISAN,000-ALONE,ALONE,149,0.16299116128467664,6,lost_deposit
+2022-11-19,GE-15,Kedah,P.018 Kulim-Bandar Baharu,1,G6B66,Datuk Seri Saifuddin Nasution Ismail,Saifuddin Nasution bin Ismail,M,Malay,59,PH,078-PKR,PKR,007-PH,PH,21408,30.43502985499005,2,lost
+2022-11-19,GE-15,Kedah,P.018 Kulim-Bandar Baharu,2,BXGDA,Cikgu Roslan Hashim,Roslan bin Hashim,M,Malay,55,PN,107-BERSATU,BERSATU,011-PN,PN,34469,49.00341199886267,1,won
+2022-11-19,GE-15,Kedah,P.018 Kulim-Bandar Baharu,3,FB6FK,Rizal,Mohamad Yusrizal bin Yusoff,M,Malay,40,PEJUANG,122-GB,GB,015-GTA,GTA,591,0.8402047199317599,4,lost_deposit
+2022-11-19,GE-15,Kedah,P.018 Kulim-Bandar Baharu,4,JRWHW,Datuk Muhar Bin Hussain,Muhar bin Hussain,M,Malay,56,BN,001-UMNO,UMNO,001-BN,BN,13872,19.721353426215522,3,lost
+2022-11-19,GE-15,Kelantan,P.019 Tumpat,1,P6JM5,Khairul Azuan,Khairul Azuan bin Kamaruddin,M,Malay,35,WARISAN,104-WARISAN,WARISAN,000-ALONE,ALONE,245,0.23409358010300116,5,lost_deposit
+2022-11-19,GE-15,Kelantan,P.019 Tumpat,2,KVKKD,Dato' Kak Taz,Mumtaz bin Md Nawi,F,Malay,49,PAS,004-PAS,PAS,011-PN,PN,65426,62.51349621150594,1,won
+2022-11-19,GE-15,Kelantan,P.019 Tumpat,3,SM8PE,Asri Ali,Che Mohd Asemari bin Che Ali (Che Asri),M,Malay,59,PUTRA,112-PUTRA,PUTRA,015-GTA,GTA,593,0.5666020122493048,4,lost_deposit
+2022-11-19,GE-15,Kelantan,P.019 Tumpat,4,D7EMY,Haji Wan Jo,Wan Mohd Johari bin Wan Omar,M,Malay,57,PH,046-AMANAH,AMANAH,007-PH,PH,7762,7.416466811263245,3,lost_deposit
+2022-11-19,GE-15,Kelantan,P.019 Tumpat,5,9545B,Dato' Che Lah (Dcl),Che Abdullah bin Mat Nawi,M,Malay,62,BN,001-UMNO,UMNO,001-BN,BN,30633,29.269341384878512,2,lost
+2022-11-19,GE-15,Kelantan,P.020 Pengkalan Chepa,1,0FMV0,Abe Wae - Redzuan,Mohamad Redzuan bin Razali,M,Malay,48,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,451,0.5799822533146436,4,lost_deposit
+2022-11-19,GE-15,Kelantan,P.020 Pengkalan Chepa,2,2YCE3,Kak Jah,Nik Faizah binti Nik Othman,F,Malay,48,PH,046-AMANAH,AMANAH,007-PH,PH,7356,9.459754889983412,3,lost_deposit
+2022-11-19,GE-15,Kelantan,P.020 Pengkalan Chepa,3,3XAX9,Wan Ahmad Nasri,Wan Ahmad Nasri bin Wan Ismail,M,Malay,54,PEJUANG,119-PEJUANG,PEJUANG,015-GTA,GTA,358,0.4603850259127326,5,lost_deposit
+2022-11-19,GE-15,Kelantan,P.020 Pengkalan Chepa,4,PCRBQ,Datuk Marzuk,Ahmad Marzuk bin Shaary,M,Malay,47,PAS,004-PAS,PAS,011-PN,PN,53933,69.35738995126091,1,won
+2022-11-19,GE-15,Kelantan,P.020 Pengkalan Chepa,5,7B0ZJ,Dr. Hafiz,Mohd Hafiezulniezam bin Mohd Hasdin,M,Malay,38,BN,001-UMNO,UMNO,001-BN,BN,15663,20.142487879528296,2,lost
+2022-11-19,GE-15,Kelantan,P.021 Kota Bharu,1,PW79R,Datuk Seri Takiyuddin,Takiyuddin bin Hassan,M,Malay,61,PAS,004-PAS,PAS,011-PN,PN,41869,53.66513285225394,1,won
+2022-11-19,GE-15,Kelantan,P.021 Kota Bharu,2,JY1E1,Dr Hafidzah,Hafidzah binti Mustakim,F,Malay,58,PH,046-AMANAH,AMANAH,007-PH,PH,19256,24.681167407939093,2,lost
+2022-11-19,GE-15,Kelantan,P.021 Kota Bharu,3,T9JGR,Hj. Rosmadi Ismail,Rosmadi bin Ismail,M,Malay,50,BN,001-UMNO,UMNO,001-BN,BN,16168,20.723157179661364,3,lost
+2022-11-19,GE-15,Kelantan,P.021 Kota Bharu,4,ARQ1V,Andy Tan @ Awang,Tan Boon Kian (Andy Tan @ Awang),M,Chinese,54,PRM,009-PRM,PRM,000-ALONE,ALONE,107,0.1371460798010741,5,lost_deposit
+2022-11-19,GE-15,Kelantan,P.021 Kota Bharu,5,711FD,Prof. Dato Dr Che Musa Che Omar,Che Musa bin Che Omar,M,Malay,72,PUTRA,112-PUTRA,PUTRA,015-GTA,GTA,528,0.6767582255604404,4,lost_deposit
+2022-11-19,GE-15,Kelantan,P.021 Kota Bharu,6,3VYKF,Izat Bukhary,Izat Bukhary bin Ismail Bukhary,M,Malay,55,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,91,0.11663825478409105,6,lost_deposit
+2022-11-19,GE-15,Kelantan,P.022 Pasir Mas,1,865P5,Datuk Husam,Husam bin Musa,M,Malay,63,PH,078-PKR,PKR,007-PH,PH,6439,9.8828910410879,3,lost_deposit
+2022-11-19,GE-15,Kelantan,P.022 Pasir Mas,2,V74ZP,Ustaz Fadhli Shaari,Ahmad Fadhli bin Shaari,M,Malay,42,PAS,004-PAS,PAS,011-PN,PN,44444,68.2148174297423,1,won
+2022-11-19,GE-15,Kelantan,P.022 Pasir Mas,3,E6D44,Dato Ghani,Abdul Ghani bin Harun,M,Malay,-1,BN,001-UMNO,UMNO,001-BN,BN,13727,21.06886866299326,2,lost
+2022-11-19,GE-15,Kelantan,P.022 Pasir Mas,4,HM36D,Nasrul Ali Hasan,Nasrul Ali Hasan bin Abdul Latif,M,Malay,31,PUTRA,112-PUTRA,PUTRA,015-GTA,GTA,543,0.8334228661765383,4,lost_deposit
+2022-11-19,GE-15,Kelantan,P.023 Rantau Panjang,1,K46W1,Dato' Dr. Ibrahim Ali,Ibrahim Ali,M,Malay,71,PUTRA,112-PUTRA,PUTRA,015-GTA,GTA,1216,2.009020767591323,4,lost_deposit
+2022-11-19,GE-15,Kelantan,P.023 Rantau Panjang,2,F16ZE,Kak Lah,Siti Zailah binti Mohd Yusoff (Kak Lah),F,Malay,59,PAS,004-PAS,PAS,011-PN,PN,37759,62.38372957523089,1,won
+2022-11-19,GE-15,Kelantan,P.023 Rantau Panjang,3,96FW1,Datuk Zain,Mohd Zain bin Ismail,M,Malay,68,PRM,009-PRM,PRM,000-ALONE,ALONE,173,0.2858228559155418,5,lost_deposit
+2022-11-19,GE-15,Kelantan,P.023 Rantau Panjang,4,N1S8P,Prof Ust Zul,Zulkarnain Yusoff,M,Malay,-1,BN,001-UMNO,UMNO,001-BN,BN,17123,28.289854114692613,2,lost
+2022-11-19,GE-15,Kelantan,P.023 Rantau Panjang,5,YMV1Z,Dr Shah,Wan Shah Jihan bin Wan Din,M,Malay,51,PH,046-AMANAH,AMANAH,007-PH,PH,4256,7.03157268656963,3,lost_deposit
+2022-11-19,GE-15,Kelantan,P.024 Kubang Kerian,1,8M972,Dr.Wan Ahmad Kamil,Wan Ahmad Kamil bin Wan Abdullah,M,Malay,64,PH,046-AMANAH,AMANAH,007-PH,PH,10236,12.57741079327632,3,lost
+2022-11-19,GE-15,Kelantan,P.024 Kubang Kerian,2,RFFAZ,Rizal,Mohamad Rizal bin Razali,M,Malay,45,PEJUANG,119-PEJUANG,PEJUANG,015-GTA,GTA,687,0.8441462695370097,4,lost_deposit
+2022-11-19,GE-15,Kelantan,P.024 Kubang Kerian,3,56K4S,Kak Long,Nurul Amal binti Mohd Fauzi,F,Malay,37,BN,001-UMNO,UMNO,001-BN,BN,14807,18.193993905435956,2,lost
+2022-11-19,GE-15,Kelantan,P.024 Kubang Kerian,4,EQXRZ,Ustaz Dato' Tuan Ibrahim,Tuan Ibrahim bin Tuan Man,M,Malay,62,PAS,004-PAS,PAS,011-PN,PN,55654,68.38444903175072,1,won
+2022-11-19,GE-15,Kelantan,P.025 Bachok,1,ZAVFH,Syahir Sulaiman,Syahir Sulaiman,M,Malay,39,PAS,004-PAS,PAS,011-PN,PN,57496,63.946259161634025,1,won
+2022-11-19,GE-15,Kelantan,P.025 Bachok,2,2RHHT,Nor Azmiza Mamat,Nur Azmiza binti Mamat,F,Malay,-1,PH,078-PKR,PKR,007-PH,PH,4385,4.876936594263343,3,lost_deposit
+2022-11-19,GE-15,Kelantan,P.025 Bachok,3,9S28Z,Haji Zu,Mohd Zulkifli bin Zakaria,M,Malay,48,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,423,0.4704547729471823,4,lost_deposit
+2022-11-19,GE-15,Kelantan,P.025 Bachok,4,667M3,Cikgu Zam,Kamarul Azam bin Abdel Osman (Cikgu Zam),M,Malay,-1,PUTRA,112-PUTRA,PUTRA,015-GTA,GTA,276,0.30696339795135297,5,lost_deposit
+2022-11-19,GE-15,Kelantan,P.025 Bachok,5,NQDY9,Datuk Haji Zain,Mohd Zain bin Yasin,M,Malay,57,BN,001-UMNO,UMNO,001-BN,BN,27333,30.3993860732041,2,lost
+2022-11-19,GE-15,Kelantan,P.026 Ketereh,1,9KXPC,Haji Rahimi,Rahimi bin Muhamud,M,Malay,-1,PH,078-PKR,PKR,007-PH,PH,4662,7.416245108332538,3,lost_deposit
+2022-11-19,GE-15,Kelantan,P.026 Ketereh,2,D1KRN,Marzuani Ardila Ariffin (Gee),Marzuani Ardila binti Ariffin,F,Malay,-1,BN,001-UMNO,UMNO,001-BN,BN,17435,27.73535681333715,2,lost
+2022-11-19,GE-15,Kelantan,P.026 Ketereh,3,GF9TY,Mej Jen Dato Hj Khlir (B),Khlir bin Mohd Nor,M,Malay,64,PAS,107-BERSATU,BERSATU,011-PN,PN,40542,64.49365276319557,1,won
+2022-11-19,GE-15,Kelantan,P.026 Ketereh,4,KWZX7,Haneef Ibrahim (Abe Haneef),Haneef bin Ibrahim,M,Malay,-1,PUTRA,112-PUTRA,PUTRA,015-GTA,GTA,223,0.3547453151347396,4,lost_deposit
+2022-11-19,GE-15,Kelantan,P.027 Tanah Merah,1,JPT7Y,Cikgu Bakri,Mohd Bakri bin Mustapha,M,Malay,58,BN,001-UMNO,UMNO,001-BN,BN,9781,14.035817811325089,2,lost
+2022-11-19,GE-15,Kelantan,P.027 Tanah Merah,2,QANZG,Dato' D,Mohamad Suparadi bin Md Noor,M,Malay,64,PH,078-PKR,PKR,007-PH,PH,5357,7.687340355308097,3,lost_deposit
+2022-11-19,GE-15,Kelantan,P.027 Tanah Merah,3,TRC1S,Lawyer Nasir Abdullah,Nasir bin Abdullah,M,Malay,-1,PUTRA,112-PUTRA,PUTRA,015-GTA,GTA,168,0.24108142238039204,4,lost_deposit
+2022-11-19,GE-15,Kelantan,P.027 Tanah Merah,4,7VG5W,Datuk Nik Sapeia,Nik Sapeia bin Nik Yusof,M,Malay,69,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,101,0.14493585512154522,5,lost_deposit
+2022-11-19,GE-15,Kelantan,P.027 Tanah Merah,5,0NTJJ,Dato' Sri Ikmal Hisham,Ikmal Hisham bin Abdul Aziz,M,Malay,57,PAS,107-BERSATU,BERSATU,011-PN,PN,54279,77.89082455586488,1,won
+2022-11-19,GE-15,Kelantan,P.028 Pasir Puteh,1,ZFABJ,Kapten Wan Marzudi,Wan Marzudi bin Wan Omar,M,Malay,62,PEJUANG,119-PEJUANG,PEJUANG,015-GTA,GTA,350,0.43040371868812943,4,lost_deposit
+2022-11-19,GE-15,Kelantan,P.028 Pasir Puteh,2,78YNM,Datuk Cikgu Awi,Zawawi bin Othman,M,Malay,57,BN,001-UMNO,UMNO,001-BN,BN,23988,29.498641153973853,2,lost
+2022-11-19,GE-15,Kelantan,P.028 Pasir Puteh,3,3F72T,Ustaz Muhammad Husain,Muhammad bin Husain,M,Malay,71,PH,046-AMANAH,AMANAH,007-PH,PH,3873,4.762724578511787,3,lost_deposit
+2022-11-19,GE-15,Kelantan,P.028 Pasir Puteh,4,BDNQA,Ustaz Nik Zawawi,Nik Muhammad Zawawi bin Salleh,M,Malay,55,PAS,004-PAS,PAS,011-PN,PN,53108,65.30823054882623,1,won
+2022-11-19,GE-15,Kelantan,P.029 Machang,1,A97GP,Datuk Jazlan,Ahmad Jazlan bin Yaakub,M,Malay,58,BN,001-UMNO,UMNO,001-BN,BN,25449,39.08376078877047,2,lost
+2022-11-19,GE-15,Kelantan,P.029 Machang,2,Y6242,Mejar (B) Mat,Muhamad bin Seman,M,Malay,-1,PUTRA,112-PUTRA,PUTRA,015-GTA,GTA,128,0.196578308812237,4,lost_deposit
+2022-11-19,GE-15,Kelantan,P.029 Machang,3,1KR6B,Wan Ahmad Fayhsal,Wan Ahmad Fayhsal bin Wan Ahmad Kamal,M,Malay,35,PAS,107-BERSATU,BERSATU,011-PN,PN,35603,54.67794944251621,1,won
+2022-11-19,GE-15,Kelantan,P.029 Machang,4,51E8M,Dr Rosli,Rosli Allani bin Abdul Kadir,M,Malay,-1,PH,078-PKR,PKR,007-PH,PH,3934,6.041711459901097,3,lost_deposit
+2022-11-19,GE-15,Kelantan,P.030 Jeli,1,8F4AX,Professor Dr Ir Hj Mat,Muhammad bin Daud,M,Malay,-1,PUTRA,112-PUTRA,PUTRA,015-GTA,GTA,133,0.309640770144111,4,lost_deposit
+2022-11-19,GE-15,Kelantan,P.030 Jeli,2,BWTD6,Pok Zahari,Zahari bin Kechik,M,Malay,62,PAS,107-BERSATU,BERSATU,011-PN,PN,27072,63.0270295439201,1,won
+2022-11-19,GE-15,Kelantan,P.030 Jeli,3,FAGFF,Norwahida Patuan,Norwahida binti Patuan,F,Malay,-1,BN,001-UMNO,UMNO,001-BN,BN,14608,34.00926594184341,2,lost
+2022-11-19,GE-15,Kelantan,P.030 Jeli,4,JR6HR,Md Radzi,Md Radzi bin Wahab,M,Malay,-1,PH,046-AMANAH,AMANAH,007-PH,PH,1140,2.65406374409238,3,lost_deposit
+2022-11-19,GE-15,Kelantan,P.031 Kuala Krai,1,41SFR,Ustaz Latiff,Abdul Latiff bin Abdul Rahman,M,Malay,51,PAS,004-PAS,PAS,011-PN,PN,42740,66.07813732007854,1,won
+2022-11-19,GE-15,Kelantan,P.031 Kuala Krai,2,HRHRW,Zuki,Mohd Zulkepli bin Omar,M,Malay,57,BN,001-UMNO,UMNO,001-BN,BN,17552,27.13625330467989,2,lost
+2022-11-19,GE-15,Kelantan,P.031 Kuala Krai,3,P5WM1,Norashikin,Norashikin binti Che Umar,F,Malay,-1,PEJUANG,119-PEJUANG,PEJUANG,015-GTA,GTA,241,0.3725978262550053,4,lost_deposit
+2022-11-19,GE-15,Kelantan,P.031 Kuala Krai,4,QFTVN,Syam Ghaz,Mohamad Hisyamuddin bin Ghazali,M,Malay,40,PH,046-AMANAH,AMANAH,007-PH,PH,4148,6.413011548986565,3,lost_deposit
+2022-11-19,GE-15,Kelantan,P.032 Gua Musang,1,PJJMW,Tengku Razaleigh Hamzah,Tengku Razaleigh bin Mohd. Hamzah (Ku Li),M,Malay,85,BN,001-UMNO,UMNO,001-BN,BN,21663,44.779543998180955,2,lost
+2022-11-19,GE-15,Kelantan,P.032 Gua Musang,2,SKJPA,Mohd Azizi Abu Naim,Mohd Azizi bin Abu Naim,M,Malay,50,PAS,107-BERSATU,BERSATU,011-PN,PN,21826,45.1164809723629,1,won
+2022-11-19,GE-15,Kelantan,P.032 Gua Musang,3,YHD1B,Dato' Dr. Adabi,Samsu Adabi bin Mamat,M,Malay,53,PEJUANG,119-PEJUANG,PEJUANG,015-GTA,GTA,371,0.7668933584141224,4,lost_deposit
+2022-11-19,GE-15,Kelantan,P.032 Gua Musang,4,X18RK,Abe Yo,Asharun bin Uji,M,Malay,-1,PH,078-PKR,PKR,007-PH,PH,4517,9.337081671042025,3,lost_deposit
+2022-11-19,GE-15,Terengganu,P.033 Besut,1,ECJVP,Datuk Abe Zul,Che Mohamad Zulkifly bin Jusoh,M,Malay,63,PAS,004-PAS,PAS,011-PN,PN,49569,58.06780375802446,1,won
+2022-11-19,GE-15,Terengganu,P.033 Besut,2,B6SZM,Dato' Ir. Wan Nazari,Wan Nazari bin Wan Jusoh,M,Malay,62,PEJUANG,119-PEJUANG,PEJUANG,015-GTA,GTA,553,0.6478140668197366,4,lost_deposit
+2022-11-19,GE-15,Terengganu,P.033 Besut,3,EVBSK,Ustaz Aziz,Abd Rahman (Abd Aziz Abas),M,Malay,63,PH,046-AMANAH,AMANAH,007-PH,PH,4339,5.082938943817066,3,lost_deposit
+2022-11-19,GE-15,Terengganu,P.033 Besut,4,NPQY5,Datuk Haji Nawi Mohamad,Nawi bin Mohamad,M,Malay,59,BN,001-UMNO,UMNO,001-BN,BN,30903,36.201443231338736,2,lost
+2022-11-19,GE-15,Terengganu,P.034 Setiu,1,3WMX5,Abdul Rahman Bin Mat Yasin,Abdul Rahman bin Mat Yasin,M,Malay,-1,BN,001-UMNO,UMNO,001-BN,BN,31736,37.41041116559789,2,lost
+2022-11-19,GE-15,Terengganu,P.034 Setiu,2,WJ42Q,Ustaz Zukirnain Abd Kadir,Shaharizukirnain bin Abdul Kadir,M,Malay,53,PAS,004-PAS,PAS,011-PN,PN,50768,59.845341380611096,1,won
+2022-11-19,GE-15,Terengganu,P.034 Setiu,3,7AAZE,Mohamad Bin Ngah,Mohamad bin Ngah,M,Malay,-1,PH,078-PKR,PKR,007-PH,PH,2125,2.5049509619011694,3,lost_deposit
+2022-11-19,GE-15,Terengganu,P.034 Setiu,4,AR11Q,Wan Adnan,Wan Adnan bin Wan Ali,M,Malay,62,PEJUANG,119-PEJUANG,PEJUANG,015-GTA,GTA,203,0.23929649188985289,4,lost_deposit
+2022-11-19,GE-15,Terengganu,P.035 Kuala Nerus,1,MHYJP,Dato' Dr. Haji Alias Razak,Alias bin Razak,M,Malay,63,PAS,004-PAS,PAS,011-PN,PN,56697,64.70192176016798,1,won
+2022-11-19,GE-15,Terengganu,P.035 Kuala Nerus,2,N7Z08,Ust. Dato' Dr. Khairuddin Takiri,Mohd Khairuddin bin Aman Razali,M,Malay,59,BN,001-UMNO,UMNO,001-BN,BN,26932,30.734468434746887,2,lost
+2022-11-19,GE-15,Terengganu,P.035 Kuala Nerus,3,E5Q40,Azaha,Azahar bin Wahid,M,Malay,-1,PEJUANG,112-PUTRA,PUTRA,015-GTA,GTA,291,0.3320856347286255,4,lost_deposit
+2022-11-19,GE-15,Terengganu,P.035 Kuala Nerus,4,HKD69,Dato' Seri Suhaimi Hashim,Suhaimi bin Hashim,M,Malay,-1,PH,046-AMANAH,AMANAH,007-PH,PH,3708,4.231524170356507,3,lost_deposit
+2022-11-19,GE-15,Terengganu,P.036 Kuala Terengganu,1,N138J,Mohamad Abu Bakar Bin Muda,Mohamad Abu Bakar bin Muda,M,Malay,-1,PEJUANG,112-PUTRA,PUTRA,015-GTA,GTA,481,0.4981771480652913,4,lost_deposit
+2022-11-19,GE-15,Terengganu,P.036 Kuala Terengganu,2,RNN2H,Dato' Cikgu Zubir,Mohd Zubir bin Embong,M,Malay,50,BN,001-UMNO,UMNO,001-BN,BN,22109,22.898541718452233,2,lost
+2022-11-19,GE-15,Terengganu,P.036 Kuala Terengganu,3,W3B4T,Dato' Raja Bahrin,Raja Kamarul Bahrin Shah bin Raja Ahmad Baharuddin Ismail Shah,M,Malay,67,PH,046-AMANAH,AMANAH,007-PH,PH,10946,11.336896180296629,3,lost_deposit
+2022-11-19,GE-15,Terengganu,P.036 Kuala Terengganu,4,NFW6F,Datuk Haji Amzad Hashim,Ahmad Amzad bin Mohamed @ Hashim,M,Malay,52,PAS,004-PAS,PAS,011-PN,PN,63016,65.26638495318585,1,won
+2022-11-19,GE-15,Terengganu,P.037 Marang,1,NBCDR,Tuan Guru Haji Abdul Hadi Awang,Abdul Hadi bin Awang,M,Malay,75,PAS,004-PAS,PAS,011-PN,PN,73115,67.03616092712804,1,won
+2022-11-19,GE-15,Terengganu,P.037 Marang,2,RESAV,Jasmira Othman,Jasmira bin Othman,M,Malay,-1,BN,001-UMNO,UMNO,001-BN,BN,31386,28.776543074045552,2,lost
+2022-11-19,GE-15,Terengganu,P.037 Marang,3,WB8B1,Dr.Zarawi Bin Sulong,Zarawi bin Sulong,M,Malay,-1,PEJUANG,112-PUTRA,PUTRA,015-GTA,GTA,427,0.39149888143176736,4,lost_deposit
+2022-11-19,GE-15,Terengganu,P.037 Marang,4,6NPJ4,Ustaz Azhar,Azhar bin Abdul Shukur,M,Malay,57,PH,046-AMANAH,AMANAH,007-PH,PH,4140,3.795797117394653,3,lost_deposit
+2022-11-19,GE-15,Terengganu,P.038 Hulu Terengganu,1,JWN47,Cikgu Rozi,Rozi bin Mamat,M,Malay,51,BN,001-UMNO,UMNO,001-BN,BN,27176,37.740251083212975,2,lost
+2022-11-19,GE-15,Terengganu,P.038 Hulu Terengganu,2,VWFD4,Khadri,Mohd Khadri bin Abdullah,M,Malay,-1,PEJUANG,112-PUTRA,PUTRA,015-GTA,GTA,182,0.2527496944783913,4,lost_deposit
+2022-11-19,GE-15,Terengganu,P.038 Hulu Terengganu,3,13XGB,Dato Rosol Wahid,Rosol bin Wahid,M,Malay,58,PAS,107-BERSATU,BERSATU,011-PN,PN,42910,59.59060104432841,1,won
+2022-11-19,GE-15,Terengganu,P.038 Hulu Terengganu,4,ZA5FD,Cikgu Alias Ismail,Alias bin Ismail,M,Malay,-1,PH,078-PKR,PKR,007-PH,PH,1740,2.4163981779802244,3,lost_deposit
+2022-11-19,GE-15,Terengganu,P.039 Dungun,1,2QVHP,Peguam Ghazali,Ghazali bin Ismail,M,Malay,-1,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,305,0.3341769932835903,5,lost_deposit
+2022-11-19,GE-15,Terengganu,P.039 Dungun,2,65HKZ,Noraisah Binti Hasan,Noraisah binti Hasan,F,Malay,-1,PEJUANG,119-PEJUANG,PEJUANG,015-GTA,GTA,322,0.35280325192562645,4,lost_deposit
+2022-11-19,GE-15,Terengganu,P.039 Dungun,3,9K7P8,Dato' Dr Mohd Johari,Mohd. Johari bin Mohamad,M,Malay,-1,PH,078-PKR,PKR,007-PH,PH,5307,5.814679683134471,3,lost_deposit
+2022-11-19,GE-15,Terengganu,P.039 Dungun,4,D0XRH,Ustaz Sham,Nurhisam bin Johari,M,Malay,-1,BN,001-UMNO,UMNO,001-BN,BN,25615,28.06538912445628,2,lost
+2022-11-19,GE-15,Terengganu,P.039 Dungun,5,BCZQ6,Ustaz Haji Wan Hassan,Wan Hassan bin Mohd Ramli,M,Malay,65,PAS,004-PAS,PAS,011-PN,PN,59720,65.43295094720003,1,won
+2022-11-19,GE-15,Terengganu,P.040 Kemaman,1,GEKTT,Rosli,Rosli bin Abd Ghani,M,Malay,-1,PEJUANG,119-PEJUANG,PEJUANG,015-GTA,GTA,506,0.44741146823466993,4,lost_deposit
+2022-11-19,GE-15,Terengganu,P.040 Kemaman,2,S3R0A,Ustaz Che Alias Hamid,Che Alias bin Hamid,M,Malay,56,PAS,004-PAS,PAS,011-PN,PN,65714,58.10513285291127,1,won
+2022-11-19,GE-15,Terengganu,P.040 Kemaman,3,PVW4X,Dato' Seri Hj Ahmad Bin Said,Ahmad bin Said,M,Malay,65,BN,001-UMNO,UMNO,001-BN,BN,38535,34.07312436447235,2,lost
+2022-11-19,GE-15,Terengganu,P.040 Kemaman,4,KW9X3,Hasuni Bin Sudin,Hasuni bin Sudin,M,Malay,-1,PH,078-PKR,PKR,007-PH,PH,8340,7.374331314381714,3,lost_deposit
+2022-11-19,GE-15,Pulau Pinang,P.041 Kepala Batas,1,Q9ZZC,Ustaz Hamidi Abu Hassan,Hamidi bin Abu Hassan,M,Malay,51,PEJUANG,036-BERJASA,BERJASA,015-GTA,GTA,747,1.077890969957577,4,lost_deposit
+2022-11-19,GE-15,Pulau Pinang,P.041 Kepala Batas,2,DFPPE,Dr Ustazah Mastura,Siti Mastura binti Muhammad,F,Malay,33,PN,004-PAS,PAS,011-PN,PN,28604,41.274422094600446,1,won
+2022-11-19,GE-15,Pulau Pinang,P.041 Kepala Batas,3,TQP1N,Danial Abdul Majeed,Muhammad Danial bin Abdul Majeed,M,Malay,26,MUDA,120-MUDA,MUDA,007-PH,PH,14214,20.510230584975904,3,lost
+2022-11-19,GE-15,Pulau Pinang,P.041 Kepala Batas,4,9T3DY,Dato' Sri Reezal Merican Bin Naina Merican,Reezal Merican bin Naina Merican,M,Malay,50,BN,001-UMNO,UMNO,001-BN,BN,25737,37.137456350466074,2,lost
+2022-11-19,GE-15,Pulau Pinang,P.042 Tasek Gelugor,1,Y5C3Y,Akmal Azhar,Mohamad Akmal bin Azhar,M,Malay,35,WARISAN,104-WARISAN,WARISAN,000-ALONE,ALONE,179,0.2667183216116343,5,lost_deposit
+2022-11-19,GE-15,Pulau Pinang,P.042 Tasek Gelugor,2,1K267,Razak Ridzuan,Razak bin Ridzuan,M,Malay,35,PH,046-AMANAH,AMANAH,007-PH,PH,16547,24.65579926093694,3,lost
+2022-11-19,GE-15,Pulau Pinang,P.042 Tasek Gelugor,3,50R8G,Dr. Abdul Halim,Abdul Halim bin Sirjung,M,Malay,51,PEJUANG,122-GB,GB,015-GTA,GTA,406,0.6049588747168911,4,lost_deposit
+2022-11-19,GE-15,Pulau Pinang,P.042 Tasek Gelugor,4,8EEAS,Muhamad Yusoff Bin Mohd Noor (Yb Chop),Muhamad Yusoff bin Mohd Noor (Yb Chop),M,Malay,59,BN,001-UMNO,UMNO,001-BN,BN,18864,28.108236976993684,2,lost
+2022-11-19,GE-15,Pulau Pinang,P.042 Tasek Gelugor,5,XGQPM,Datuk Wan Saiful Wan Jan,Wan Saifulruddin bin Wan Jan,M,Malay,46,PN,107-BERSATU,BERSATU,011-PN,PN,31116,46.364286565740855,1,won
+2022-11-19,GE-15,Pulau Pinang,P.043 Bagan,1,MYAYG,Tan Chuan Hong,Tan Chuan Hong,M,Chinese,55,BN,003-MCA,MCA,001-BN,BN,5385,7.843679902117866,3,lost_deposit
+2022-11-19,GE-15,Pulau Pinang,P.043 Bagan,2,31SVK,Lim Guan Eng,Lim Guan Eng,M,Chinese,62,PH,021-DAP,DAP,007-PH,PH,55797,81.27275905264078,1,won
+2022-11-19,GE-15,Pulau Pinang,P.043 Bagan,3,BW4D2,Alan Oh,Alan Oh Teik Choon,M,Chinese,46,PN,107-BERSATU,BERSATU,011-PN,PN,6149,8.956506540041367,2,lost_deposit
+2022-11-19,GE-15,Pulau Pinang,P.043 Bagan,4,F9TFB,Hafiz,Mohammed Hafiz bin Mohamed Abu Bakar,M,Malay,35,PEJUANG,117-IMAN,IMAN,015-GTA,GTA,1323,1.9270545051999883,4,lost_deposit
+2022-11-19,GE-15,Pulau Pinang,P.044 Permatang Pauh,1,YM51V,Datuk Zaidi,Mohd Zaidi bin Mohd Said,M,Malay,53,BN,001-UMNO,UMNO,001-BN,BN,16971,19.406961851614675,3,lost
+2022-11-19,GE-15,Pulau Pinang,P.044 Permatang Pauh,2,RH66G,Ust Fawwaz Md Jan,Muhammad Fawwaz bin Mohamad Jan,M,Malay,39,PN,004-PAS,PAS,011-PN,PN,37638,43.04043545878694,1,won
+2022-11-19,GE-15,Pulau Pinang,P.044 Permatang Pauh,3,JQGHM,Cikgu Nasir,Mohamad Nasir bin Osman,M,Malay,64,PEJUANG,112-PUTRA,PUTRA,015-GTA,GTA,473,0.5408928734790961,4,lost_deposit
+2022-11-19,GE-15,Pulau Pinang,P.044 Permatang Pauh,4,5TW3P,Nurul Izzah Anwar,Nurul Izzah binti Anwar,F,Malay,42,PH,078-PKR,PKR,007-PH,PH,32366,37.01170981611929,2,lost
+2022-11-19,GE-15,Pulau Pinang,P.045 Bukit Mertajam,1,57M06,Steven Sim Chee Keong,Sim Chee Keong,M,Chinese,40,PH,021-DAP,DAP,007-PH,PH,71722,77.33247075314033,1,won
+2022-11-19,GE-15,Pulau Pinang,P.045 Bukit Mertajam,2,P56KX,Ah Pang,Tan Yang Pang,M,Chinese,39,BN,003-MCA,MCA,001-BN,BN,6986,7.532481535392743,3,lost_deposit
+2022-11-19,GE-15,Pulau Pinang,P.045 Bukit Mertajam,3,SJWP6,Steven Koh,Koh Tien Yew (Steven Koh),M,Chinese,41,PN,004-PAS,PAS,011-PN,PN,14037,15.135047711466926,2,lost
+2022-11-19,GE-15,Pulau Pinang,P.046 Batu Kawan,1,N7M4Z,Lee Ah Leong,Lee Ah Leong,M,Chinese,77,PRM,009-PRM,PRM,000-ALONE,ALONE,148,0.21501939533059233,5,lost_deposit
+2022-11-19,GE-15,Pulau Pinang,P.046 Batu Kawan,2,VDNJH,Chow Kon Yeow,Chow Kon Yeow,M,Chinese,64,PH,021-DAP,DAP,007-PH,PH,50744,73.72259592334849,1,won
+2022-11-19,GE-15,Pulau Pinang,P.046 Batu Kawan,3,X0JRF,Tan Lee Huat,Tan Lee Huat,M,Chinese,55,BN,003-MCA,MCA,001-BN,BN,7145,10.380497159710014,3,lost_deposit
+2022-11-19,GE-15,Pulau Pinang,P.046 Batu Kawan,4,0E8TR,Wong Chia Zhen,Wong Chia Zhen,M,Chinese,37,PN,026-GERAKAN,GERAKAN,011-PN,PN,10344,15.028112333105723,2,lost
+2022-11-19,GE-15,Pulau Pinang,P.046 Batu Kawan,5,ZYS9K,Ong Chin Wen,Ong Chin Wen,M,Chinese,45,WARISAN,104-WARISAN,WARISAN,000-ALONE,ALONE,450,0.6537751885051793,4,lost_deposit
+2022-11-19,GE-15,Pulau Pinang,P.047 Nibong Tebal,1,3VYX1,Fadhlina Binti Sidek,Fadhlina binti Sidek,F,Malay,45,PH,078-PKR,PKR,007-PH,PH,42188,53.195137943208756,1,won
+2022-11-19,GE-15,Pulau Pinang,P.047 Nibong Tebal,2,G5N62,Dato' Mansor Bin Othman,Mansor bin Othman,M,Malay,72,PN,107-BERSATU,BERSATU,011-PN,PN,25895,32.65118273061986,2,lost
+2022-11-19,GE-15,Pulau Pinang,P.047 Nibong Tebal,3,79MZA,Datuk Seri Thanenthiran,Thanenthiran a/l Ramankutty,M,Indian,59,BN,081-MMSP,MMSP,001-BN,BN,10660,13.441266959197055,3,lost
+2022-11-19,GE-15,Pulau Pinang,P.047 Nibong Tebal,4,41362,Goh Kheng Huat,Goh Kheng Huat,M,Chinese,59,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,565,0.712412366974328,4,lost_deposit
+2022-11-19,GE-15,Pulau Pinang,P.048 Bukit Bendera,1,N243Z,Syerleena Abdul Rashid,Syerleena binti Abdul Rashid,F,Malay,42,PH,021-DAP,DAP,007-PH,PH,49353,78.97870025124422,1,won
+2022-11-19,GE-15,Pulau Pinang,P.048 Bukit Bendera,2,JVZ43,Teh Yee Cheu,Teh Yee Cheu,M,Chinese,64,PRM,009-PRM,PRM,000-ALONE,ALONE,677,1.0833906767591095,4,lost_deposit
+2022-11-19,GE-15,Pulau Pinang,P.048 Bukit Bendera,3,0BGGP,Hng Chee Wey,Hng Chee Wey,M,Chinese,45,PN,026-GERAKAN,GERAKAN,011-PN,PN,6743,10.790699163052697,2,lost_deposit
+2022-11-19,GE-15,Pulau Pinang,P.048 Bukit Bendera,4,AQB1K,Richie Huan Xin Yun,Richie Huan Xin Yun,M,Chinese,33,BN,082-PCM,PCM,001-BN,BN,5417,8.668725695722447,3,lost_deposit
+2022-11-19,GE-15,Pulau Pinang,P.048 Bukit Bendera,5,E513W,Razalif Zain,Razalif bin Mohamad Zain,M,Malay,32,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,299,0.478484213221527,5,lost_deposit
+2022-11-19,GE-15,Pulau Pinang,P.049 Tanjong,1,HJQ65,Lim Hui Ying,Lim Hui Ying,F,Chinese,59,PH,021-DAP,DAP,007-PH,PH,31968,84.83401003104848,1,won
+2022-11-19,GE-15,Pulau Pinang,P.049 Tanjong,2,N0D8E,Tan Kim Nee,Tan Kim Nee,F,Chinese,38,BN,003-MCA,MCA,001-BN,BN,3214,8.529044927420854,2,lost_deposit
+2022-11-19,GE-15,Pulau Pinang,P.049 Tanjong,3,TSCX6,Ah Leng,H'ng Khoon Leng,M,Chinese,58,PN,026-GERAKAN,GERAKAN,011-PN,PN,2501,6.636945041530663,3,lost_deposit
+2022-11-19,GE-15,Pulau Pinang,P.050 Jelutong,1,QYKSJ,Sanisvara Nethaji Rayer (Rsn Rayer),Sanisvara Nethaji Rayer a/l Rajaji (RSN Rayer),M,Indian,51,PH,021-DAP,DAP,007-PH,PH,50369,71.23622837908552,1,won
+2022-11-19,GE-15,Pulau Pinang,P.050 Jelutong,2,PKZHT,Baljit Singh,Baljit Singh a/l Jigiri Singh,M,Other,56,PN,026-GERAKAN,GERAKAN,011-PN,PN,11765,16.639088067659497,2,lost
+2022-11-19,GE-15,Pulau Pinang,P.050 Jelutong,3,HXBSR,Koh Swe Yong,Koh Swe Yong,M,Chinese,71,PRM,009-PRM,PRM,000-ALONE,ALONE,264,0.3733718019432305,6,lost_deposit
+2022-11-19,GE-15,Pulau Pinang,P.050 Jelutong,4,2MD7G,Yacoob Bin Noor,Mohamed Yacoob bin Mohamed Noor,M,Malay,33,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,480,0.6788578217149646,4,lost_deposit
+2022-11-19,GE-15,Pulau Pinang,P.050 Jelutong,5,VVSD0,Datuk Loganathan A/L Thoraisamy,Loganathan a/l Thoraisamy ,M,Indian,59,BN,064-IPF,IPF,001-BN,BN,7387,10.44733901876759,3,lost_deposit
+2022-11-19,GE-15,Pulau Pinang,P.050 Jelutong,6,Z9FF9,Lim Huat Poh (Martin),Lim Huat Poh (Martin),M,Chinese,54,WARISAN,104-WARISAN,WARISAN,000-ALONE,ALONE,442,0.6251149108291966,5,lost_deposit
+2022-11-19,GE-15,Pulau Pinang,P.051 Bukit Gelugor,1,2Q5HJ,P. Thinagaranabhan,Thinagaranabhan a/l Padmanabhan,M,Indian,41,PN,107-BERSATU,BERSATU,011-PN,PN,8092,9.40132213353781,2,lost_deposit
+2022-11-19,GE-15,Pulau Pinang,P.051 Bukit Gelugor,2,S2C9M,Ramkarpal Singh,Ramkarpal Singh a/l Karpal Singh,M,Other,46,PH,021-DAP,DAP,007-PH,PH,71204,82.72512866985001,1,won
+2022-11-19,GE-15,Pulau Pinang,P.051 Bukit Gelugor,3,2RWD3,Wong Chin Chong,Wong Chin Chong,M,Chinese,48,BN,003-MCA,MCA,001-BN,BN,6777,7.873549196612179,3,lost_deposit
+2022-11-19,GE-15,Pulau Pinang,P.052 Bayan Baru,1,64VKV,Saw Yee Fung,Saw Yee Fung,F,Chinese,33,BN,003-MCA,MCA,001-BN,BN,13377,14.911713559548758,3,lost
+2022-11-19,GE-15,Pulau Pinang,P.052 Bayan Baru,2,XW2KX,Jeff Ooi,Ooi Chuan Aun,M,Chinese,67,WARISAN,104-WARISAN,WARISAN,000-ALONE,ALONE,440,0.4904802247291212,4,lost_deposit
+2022-11-19,GE-15,Pulau Pinang,P.052 Bayan Baru,3,9JHP4,Ravinder Singh,Ravinder Singh a/l Mall Singh,M,Other,80,PRM,009-PRM,PRM,000-ALONE,ALONE,251,0.2797966736522941,5,lost_deposit
+2022-11-19,GE-15,Pulau Pinang,P.052 Bayan Baru,4,ZZFK9,Kan Chee Yuen,Kan Chee Yuen,M,Chinese,49,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,124,0.13822624515093415,6,lost_deposit
+2022-11-19,GE-15,Pulau Pinang,P.052 Bayan Baru,5,9324Z,Sim Tze Tzin,Sim Tze Tzin,M,Chinese,46,PH,078-PKR,PKR,007-PH,PH,55209,61.54300619788648,1,won
+2022-11-19,GE-15,Pulau Pinang,P.052 Bayan Baru,6,HFYW3,Oh Tong Keong,Oh Tong Keong,M,Chinese,54,PN,026-GERAKAN,GERAKAN,011-PN,PN,20307,22.636777099032415,2,lost
+2022-11-19,GE-15,Pulau Pinang,P.053 Balik Pulau,1,BRP2W,Datuk Shah Headan Bin Ayoob Shah,Shah Headan bin Ayoob Hussain Shah,M,Malay,58,BN,001-UMNO,UMNO,001-BN,BN,15478,24.218053230273348,3,lost
+2022-11-19,GE-15,Pulau Pinang,P.053 Balik Pulau,2,7GGQ0,Muhammad Bakhtiar Bin Wan Chik,Muhammad Bakhtiar bin Wan Chik,M,Malay,57,PH,078-PKR,PKR,007-PH,PH,24564,38.43469825225704,1,won
+2022-11-19,GE-15,Pulau Pinang,P.053 Balik Pulau,3,D07RD,Dato' Sri Johnny (Dsj),Johnny Ch'ng Ewe Gee,M,Chinese,50,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,180,0.2816416579305597,6,lost_deposit
+2022-11-19,GE-15,Pulau Pinang,P.053 Balik Pulau,4,GDXTP,Harris Idaham Rashid,Muhammad Harris Idaham bin Abdul Rashid,M,Malay,30,PN,107-BERSATU,BERSATU,011-PN,PN,22982,35.9593810142229,2,lost
+2022-11-19,GE-15,Pulau Pinang,P.053 Balik Pulau,5,KVKWZ,Dato Sri Sabaruddin Bin Ahmad,Sabaruddin bin Ahmad,M,Malay,49,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,366,0.5726713711254714,4,lost_deposit
+2022-11-19,GE-15,Pulau Pinang,P.053 Balik Pulau,6,Q99Z8,Fazli Mohammad,Fazli bin Mohammad,M,Malay,48,PEJUANG,119-PEJUANG,PEJUANG,015-GTA,GTA,341,0.5335544741906715,5,lost_deposit
+2022-11-19,GE-15,Perak,P.054 Gerik,1,4R4RK,Dr Asyraf Wajdi Dusuki,Asyraf Wajdi Dusuki,M,Malay,46,BN,001-UMNO,UMNO,001-BN,BN,13728,39.66254478215648,2,lost
+2022-11-19,GE-15,Perak,P.054 Gerik,2,TQ01H,Fathul Huzir Ayob,Fathul Huzir bin Ayob,M,Malay,39,PN,107-BERSATU,BERSATU,011-PN,PN,15105,43.640933780191844,1,won
+2022-11-19,GE-15,Perak,P.054 Gerik,3,HNEKH,Tarmizi Mohd Jam,Ahmad Tarmizi bin Mohd Jam,M,Malay,53,PH,021-DAP,DAP,007-PH,PH,5779,16.696521437651683,3,lost
+2022-11-19,GE-15,Perak,P.055 Lenggong,1,NVX3W,Dr Shamsul Anuar Nasarah,Shamsul Anuar bin Nasarah,M,Malay,55,BN,001-UMNO,UMNO,001-BN,BN,12588,45.478521622891,1,won
+2022-11-19,GE-15,Perak,P.055 Lenggong,2,Y4P3T,Jurey Latiff Rosli,Jurey Latiff bin Mohd Rosli,M,Malay,56,PH,078-PKR,PKR,007-PH,PH,3382,12.218649517684888,3,lost_deposit
+2022-11-19,GE-15,Perak,P.055 Lenggong,3,ARBX0,Ustaz Rif'Aat Razman,Muhammad Rif'aat bin Razman,M,Malay,35,PN,004-PAS,PAS,011-PN,PN,11709,42.30282885942411,2,lost
+2022-11-19,GE-15,Perak,P.056 Larut,1,1JC63,Ustaz Auzaie,Ahmad Auzaie bin Mohd Arshad,M,Malay,42,PEJUANG,036-BERJASA,BERJASA,015-GTA,GTA,566,1.0910843373493975,4,lost_deposit
+2022-11-19,GE-15,Perak,P.056 Larut,2,PXKA0,Ustaz Zolkharnain Bin Abidin,Zolkharnain bin Abidin,M,Malay,55,PH,046-AMANAH,AMANAH,007-PH,PH,6207,11.965301204819276,3,lost_deposit
+2022-11-19,GE-15,Perak,P.056 Larut,3,5028C,Shafiq Fhadly Mahmud,Mohd Shafiq Fhadly bin Mahmud,M,Malay,37,BN,001-UMNO,UMNO,001-BN,BN,16752,32.29301204819277,2,lost
+2022-11-19,GE-15,Perak,P.056 Larut,4,S9K65,Dato Seri Hamzah Zainudin,Hamzah bin Zainudin,M,Malay,65,PN,107-BERSATU,BERSATU,011-PN,PN,28350,54.65060240963855,1,won
+2022-11-19,GE-15,Perak,P.057 Parit Buntar,1,YZ4T9,Datuk Seri Dr Mujahid Yusof Rawa,Mujahid bin Yusof,M,Malay,58,PH,046-AMANAH,AMANAH,007-PH,PH,17828,33.699412131637146,2,lost
+2022-11-19,GE-15,Perak,P.057 Parit Buntar,2,8DRAN,Cikgu Imran,Imran bin Mohd Yusof,M,Malay,47,BN,001-UMNO,UMNO,001-BN,BN,11593,21.913691095022966,3,lost
+2022-11-19,GE-15,Perak,P.057 Parit Buntar,3,BVECY,Hj Rohijas,Rohijas bin Md Sharif,M,Malay,57,PEJUANG,119-PEJUANG,PEJUANG,015-GTA,GTA,259,0.48957526038220894,4,lost_deposit
+2022-11-19,GE-15,Perak,P.057 Parit Buntar,4,FXD4J,Ustaz Misbah,Mohd Misbahul Munir bin Masduki (Ustaz Misbah),M,Malay,59,PN,004-PAS,PAS,011-PN,PN,23223,43.897321512957674,1,won
+2022-11-19,GE-15,Perak,P.058 Bagan Serai,1,27AVJ,Datuk Ustaz Idris,Idris bin Ahmad,M,Malay,59,PN,004-PAS,PAS,011-PN,PN,33753,53.976300513328965,1,won
+2022-11-19,GE-15,Perak,P.058 Bagan Serai,2,F94F7,Haji Ahmad Luqman,Ahmad Luqman bin Ahmad Yahaya,M,Malay,47,PEJUANG,119-PEJUANG,PEJUANG,015-GTA,GTA,383,0.6124766123486799,4,lost_deposit
+2022-11-19,GE-15,Perak,P.058 Bagan Serai,3,JPTHG,Haji Zul Helmi Ghazali,Zul Helmi bin Ghazali,M,Malay,43,BN,001-UMNO,UMNO,001-BN,BN,15202,24.310364127740552,2,lost
+2022-11-19,GE-15,Perak,P.058 Bagan Serai,4,9SDDT,Siti Aishah Binti Shaik Ismail,Siti Aishah binti Shaik Ismail,F,Malay,37,PH,078-PKR,PKR,007-PH,PH,13195,21.100858746581803,3,lost
+2022-11-19,GE-15,Perak,P.059 Bukit Gantang,1,6KMHR,Dato' Syed Abu Hussin,Syed Abu Hussin bin Hafiz Syed Abdul Fasal,M,Malay,62,PN,107-BERSATU,BERSATU,011-PN,PN,32625,45.5866530663574,1,won
+2022-11-19,GE-15,Perak,P.059 Bukit Gantang,2,4EGPV,Mohd Shukri,Mohd Shukri bin Mohd Ramli,M,Malay,51,PEJUANG,119-PEJUANG,PEJUANG,015-GTA,GTA,508,0.709824360389565,4,lost_deposit
+2022-11-19,GE-15,Perak,P.059 Bukit Gantang,3,P4GKS,Dr Fakhruldin Mohd Hashim,Fakhruldin bin Mohd Hashim,M,Malay,58,PH,046-AMANAH,AMANAH,007-PH,PH,18565,25.940726871323378,3,lost
+2022-11-19,GE-15,Perak,P.059 Bukit Gantang,4,SJ6P2,Mohammad Sollehin,Mohammad Sollehin bin Mohamad Tajie,M,Malay,35,BN,001-UMNO,UMNO,001-BN,BN,19869,27.76279570192966,2,lost
+2022-11-19,GE-15,Perak,P.060 Taiping,1,WZWRB,Neow Choo Seong,Neow Choo Seong,M,Chinese,37,BN,003-MCA,MCA,001-BN,BN,14599,17.222097700810437,3,lost
+2022-11-19,GE-15,Perak,P.060 Taiping,2,3JND0,Mohganan A/L P Manikam,Mohganan a/l P Manikam,M,Indian,59,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,236,0.2784036617159575,5,lost_deposit
+2022-11-19,GE-15,Perak,P.060 Taiping,3,H2HMW,Wong Kah Woh,Wong Kah Woh,M,Chinese,42,PH,021-DAP,DAP,007-PH,PH,47098,55.56040533685663,1,won
+2022-11-19,GE-15,Perak,P.060 Taiping,4,ZD81M,Cikgu See Tean Seng,See Tean Seng,M,Chinese,66,PN,026-GERAKAN,GERAKAN,011-PN,PN,21569,25.44444313369274,2,lost
+2022-11-19,GE-15,Perak,P.060 Taiping,5,0DJTM,Ts.Dr.Rama,Rama Moorthy a/l Appanah (Steven Ram),M,Indian,58,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,113,0.13330344819450507,6,lost_deposit
+2022-11-19,GE-15,Perak,P.060 Taiping,6,Y17SM,Leow Thye Yih,Leow Thye Yih,M,Chinese,55,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,1154,1.3613467187297243,4,lost_deposit
+2022-11-19,GE-15,Perak,P.061 Padang Rengas,1,3V8WX,Kapten Azahari,Azahari bin Hasan,M,Malay,48,PN,107-BERSATU,BERSATU,011-PN,PN,12931,43.2793359662628,1,won
+2022-11-19,GE-15,Perak,P.061 Padang Rengas,2,78YZ6,Mohd Arrif Bin Abdul Majid,Mohd Arrif bin Abdul Majid,M,Malay,41,BN,001-UMNO,UMNO,001-BN,BN,9885,33.0845438115001,2,lost
+2022-11-19,GE-15,Perak,P.061 Padang Rengas,3,APN1F,Kamil Munim,Muhammad Kamil bin Abdul Munim,M,Malay,32,PH,078-PKR,PKR,007-PH,PH,7062,23.636120222237096,3,lost
+2022-11-19,GE-15,Perak,P.062 Sungai Siput,1,E4B3R,Indrani,Indrani a/p Ramasamy,F,Indian,50,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,614,1.1887935874847528,5,lost_deposit
+2022-11-19,GE-15,Perak,P.062 Sungai Siput,2,HJ161,Haji Baha,Baharudin bin Kamarudin,M,Malay,63,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,598,1.1578152529574628,6,lost_deposit
+2022-11-19,GE-15,Perak,P.062 Sungai Siput,3,5APVZ,Tan Sri Sa. Vigneswaran (Tsv),Vigneswaran a/l Sanasee,M,Indian,57,BN,002-MIC,MIC,001-BN,BN,19791,38.31826366434974,2,lost
+2022-11-19,GE-15,Perak,P.062 Sungai Siput,4,H1VMR,S. Kesavan,Kesavan a/l Subramaniam,M,Indian,47,PH,078-PKR,PKR,007-PH,PH,21637,41.89238901043583,1,won
+2022-11-19,GE-15,Perak,P.062 Sungai Siput,5,MZQ8A,Ahmad Fauzi Bin Mohd Jaafar,Ahmad Fauzi bin Mohd Jaafar,M,Malay,49,PEJUANG,119-PEJUANG,PEJUANG,015-GTA,GTA,784,1.5179383918372087,4,lost_deposit
+2022-11-19,GE-15,Perak,P.062 Sungai Siput,6,RDDAK,Rajah A/L Narasaim,Rajah a/l Narasaim,M,Indian,57,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,35,0.06776510677844683,7,lost_deposit
+2022-11-19,GE-15,Perak,P.062 Sungai Siput,7,VV3CW,Dato Sri Irudianathan,Irudianathan a/l Gabriel,M,Indian,-1,PN,107-BERSATU,BERSATU,011-PN,PN,8190,15.857034986156556,3,lost
+2022-11-19,GE-15,Perak,P.063 Tambun,1,4XZBA,Anwar Ibrahim,Anwar bin Ibrahim,M,Malay,75,PH,078-PKR,PKR,007-PH,PH,49655,39.781603762247734,1,won
+2022-11-19,GE-15,Perak,P.063 Tambun,2,WWEE5,Aminuddin Hanafiah,Aminuddin bin Md Hanafiah,M,Malay,59,BN,001-UMNO,UMNO,001-BN,BN,28111,22.521411003132535,3,lost
+2022-11-19,GE-15,Perak,P.063 Tambun,3,Z8SF5,Abdul Rahim Tahir,Abdul Rahim Tahir,M,Malay,34,PEJUANG,119-PEJUANG,PEJUANG,015-GTA,GTA,1114,0.892492328892236,4,lost_deposit
+2022-11-19,GE-15,Perak,P.063 Tambun,4,QR2X5,Ahmad Faizal Azumu @ Peja,Ahmad Faizal bin Azumu (Peja),M,Malay,52,PN,107-BERSATU,BERSATU,011-PN,PN,45939,36.80449290572749,2,lost
+2022-11-19,GE-15,Perak,P.064 Ipoh Timor,1,2PFHE,Nor Afzainizam Bin Salleh,Nor Afzainizam bin Salleh,M,Malay,47,PN,107-BERSATU,BERSATU,011-PN,PN,13661,17.12333918275257,2,lost
+2022-11-19,GE-15,Perak,P.064 Ipoh Timor,2,Q9MTH,Ng Kai Cheong,Ng Kai Cheong,M,Chinese,38,BN,003-MCA,MCA,001-BN,BN,8570,10.742040611682127,3,lost_deposit
+2022-11-19,GE-15,Perak,P.064 Ipoh Timor,3,AK6Q9,Howard Lee Chuan How,Howard Lee Chuan How,M,Chinese,39,PH,021-DAP,DAP,007-PH,PH,57549,72.1346202055653,1,won
+2022-11-19,GE-15,Perak,P.065 Ipoh Barat,1,TQAWT,Ah Nan,Low Guo Nan,M,Chinese,39,BN,003-MCA,MCA,001-BN,BN,7248,9.250089335851754,2,lost_deposit
+2022-11-19,GE-15,Perak,P.065 Ipoh Barat,2,8H5R5,M. Kula,M. Kulasegaran a/l V. Murugeson ,M,Indian,65,PH,021-DAP,DAP,007-PH,PH,63915,81.5700137832457,1,won
+2022-11-19,GE-15,Perak,P.065 Ipoh Barat,3,645KQ,Chek Kwong Weng,Chek Kwong Weng,M,Chinese,46,PN,026-GERAKAN,GERAKAN,011-PN,PN,6815,8.697483281433458,3,lost_deposit
+2022-11-19,GE-15,Perak,P.065 Ipoh Barat,4,HY1SW,Tan Sri M Kayveas,M. Kayveas,M,Indian,68,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,378,0.48241359946908974,4,lost_deposit
+2022-11-19,GE-15,Perak,P.066 Batu Gajah,1,9HVP0,Teoh Chin Chong,Teoh Chin Chong,M,Chinese,63,BN,003-MCA,MCA,001-BN,BN,6793,9.062770995930892,3,lost_deposit
+2022-11-19,GE-15,Perak,P.066 Batu Gajah,2,BBKPY,V. Sivakumar,Sivakumar a/l Varatharaju Naidu,M,Indian,52,PH,021-DAP,DAP,007-PH,PH,60999,81.38082849709825,1,won
+2022-11-19,GE-15,Perak,P.066 Batu Gajah,3,CZHR9,Woo Cheong Yuen,Woo Cheong Yuen,M,Chinese,-1,PN,026-GERAKAN,GERAKAN,011-PN,PN,7163,9.55640050697085,2,lost_deposit
+2022-11-19,GE-15,Perak,P.067 Kuala Kangsar,1,GD7TJ,Iskandar Dzulkarnain,Iskandar Dzulkarnain bin Abdul Khalid,M,Malay,46,PN,107-BERSATU,BERSATU,011-PN,PN,14380,40.21927616490463,1,won
+2022-11-19,GE-15,Perak,P.067 Kuala Kangsar,2,Q55MY,Maslin Sham Bin Razman,Maslin Sham bin Razman,M,Malay,53,BN,001-UMNO,UMNO,001-BN,BN,10814,30.245566929574313,2,lost
+2022-11-19,GE-15,Perak,P.067 Kuala Kangsar,3,KTXWV,Dr Yusmalia Bt Mohamad Yusof,Yusmalia binti Mohamad Yusof,F,Malay,43,PEJUANG,119-PEJUANG,PEJUANG,015-GTA,GTA,204,0.5705655311293841,4,lost_deposit
+2022-11-19,GE-15,Perak,P.067 Kuala Kangsar,4,380FV,Dr. Ahmad Termizi Ramli,Ahmad Termizi bin Ramli,M,Malay,68,PH,046-AMANAH,AMANAH,007-PH,PH,10356,28.964591374391674,3,lost
+2022-11-19,GE-15,Perak,P.068 Beruas,1,AFD88,Dato' Ngeh Koo Ham,Ngeh Koo Ham,M,Chinese,61,PH,021-DAP,DAP,007-PH,PH,46710,64.71949343937483,1,won
+2022-11-19,GE-15,Perak,P.068 Beruas,2,Q8KZ4,Ir. Ong Kean Sing,Ong Kean Sing,M,Chinese,43,PN,026-GERAKAN,GERAKAN,011-PN,PN,12739,17.65064497803888,2,lost
+2022-11-19,GE-15,Perak,P.068 Beruas,3,6RSDX,Ding Siew Chee,Ding Siew Chee,M,Chinese,55,BN,003-MCA,MCA,001-BN,BN,12724,17.629861582586287,3,lost
+2022-11-19,GE-15,Perak,P.069 Parit,1,6G67J,Ustaz Ismi,Muhammad Ismi bin Mat Taib,M,Malay,48,PN,004-PAS,PAS,011-PN,PN,17181,45.76108669596484,1,won
+2022-11-19,GE-15,Perak,P.069 Parit,2,TPA1D,Nurthaqaffah Nordin,Nurthaqaffah binti Nordin,F,Malay,31,PH,046-AMANAH,AMANAH,007-PH,PH,5063,13.48515115195099,3,lost
+2022-11-19,GE-15,Perak,P.069 Parit,3,R4STP,Dato' Nizar,Mohd Nizar bin Zakaria,M,Malay,53,BN,001-UMNO,UMNO,001-BN,BN,15026,40.02130776401651,2,lost
+2022-11-19,GE-15,Perak,P.069 Parit,4,ZXR4M,Dr. Faizol Fadzli,Faizol Fadzli bin Mohamed,M,Malay,-1,PEJUANG,119-PEJUANG,PEJUANG,015-GTA,GTA,275,0.7324543880676522,4,lost_deposit
+2022-11-19,GE-15,Perak,P.070 Kampar,1,ETAMM,Lee Chee Leong,Lee Chee Leong,M,Chinese,65,BN,003-MCA,MCA,001-BN,BN,16137,27.173071094197287,2,lost
+2022-11-19,GE-15,Perak,P.070 Kampar,2,S98AW,Janice Wong,Wong Oi Foon,F,Chinese,47,PN,026-GERAKAN,GERAKAN,011-PN,PN,12127,20.42063786077527,3,lost
+2022-11-19,GE-15,Perak,P.070 Kampar,3,CZWKJ,Chong Zhemin,Chong Zhenmin,M,Chinese,37,PH,021-DAP,DAP,007-PH,PH,30467,51.303337486949786,1,won
+2022-11-19,GE-15,Perak,P.070 Kampar,4,Y403P,Leong Cheok Lung,Leong Cheok Lung,M,Chinese,44,WARISAN,104-WARISAN,WARISAN,000-ALONE,ALONE,655,1.1029535580776615,4,lost_deposit
+2022-11-19,GE-15,Perak,P.071 Gopeng,1,1HP5Z,Muhammad Farhan Bin Abdul Rahim,Muhammad Farhan bin Abdul Rahim,M,Malay,25,PN,107-BERSATU,BERSATU,011-PN,PN,28732,27.723421910882106,2,lost
+2022-11-19,GE-15,Perak,P.071 Gopeng,2,4ZC88,Cally Ting,Cally Ting Cheau Yann,F,Chinese,29,BN,003-MCA,MCA,001-BN,BN,18393,17.747351357610146,3,lost
+2022-11-19,GE-15,Perak,P.071 Gopeng,3,3Q4JK,Tan Kar Hing,Tan Kar Hing,M,Chinese,40,PH,078-PKR,PKR,007-PH,PH,55880,53.91844690171559,1,won
+2022-11-19,GE-15,Perak,P.071 Gopeng,4,8D2AH,Balachandran A/L Gopal,Balachandran a/l Gopal,M,Indian,45,WARISAN,104-WARISAN,WARISAN,000-ALONE,ALONE,633,0.6107798297921612,4,lost_deposit
+2022-11-19,GE-15,Perak,P.072 Tapah,1,BTRCT,Saraswathy Kandasami,Saraswathy a/p Kandasami,F,Indian,54,PH,078-PKR,PKR,007-PH,PH,13334,29.97684404577235,2,lost
+2022-11-19,GE-15,Perak,P.072 Tapah,2,F8EF3,Datuk Haji Muhammad Yadzan Bin Haji Mohammad,Muhammad Yadzan bin Mohammad,M,Malay,56,PN,107-BERSATU,BERSATU,011-PN,PN,12115,27.236348103684723,3,lost
+2022-11-19,GE-15,Perak,P.072 Tapah,3,JP4HC,Mohamed Akbar B. Yasin,Mohamaed Akbar Sherrif Ali bin Yasin,M,Malay,60,WARISAN,104-WARISAN,WARISAN,000-ALONE,ALONE,200,0.4496301791776264,5,lost_deposit
+2022-11-19,GE-15,Perak,P.072 Tapah,4,Z05Z8,Datuk Seri M. Saravanan,Saravanan a/l Murugan,M,Indian,54,BN,002-MIC,MIC,001-BN,BN,18398,41.361480182549855,1,won
+2022-11-19,GE-15,Perak,P.072 Tapah,5,AJGQ5,M. Kathiravan,Kathiravan a/l Murugan,M,Indian,46,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,99,0.22256693869292507,6,lost_deposit
+2022-11-19,GE-15,Perak,P.072 Tapah,6,P3TKN,Mior Haidir,Mior Nor Haidir bin Suhaimi,M,Malay,43,PEJUANG,119-PEJUANG,PEJUANG,015-GTA,GTA,335,0.7531305501225242,4,lost_deposit
+2022-11-19,GE-15,Perak,P.073 Pasir Salak,1,SHGNY,Zairol Hizam Bin Zakaria,Zairol Hizam bin Zakaria,M,Malay,49,PEJUANG,112-PUTRA,PUTRA,015-GTA,GTA,539,0.9452326254318433,4,lost_deposit
+2022-11-19,GE-15,Perak,P.073 Pasir Salak,2,5794X,Ustaz Nik Omar,Nik Omar bin Nik Ab Aziz,M,Malay,57,PH,078-PKR,PKR,007-PH,PH,11693,20.505760833347946,3,lost
+2022-11-19,GE-15,Perak,P.073 Pasir Salak,3,WZ6R7,Ustaz Jamaludin Bin Yahya,Jamaludin bin Yahya,M,Malay,51,PN,004-PAS,PAS,011-PN,PN,24897,43.66132963891763,1,won
+2022-11-19,GE-15,Perak,P.073 Pasir Salak,4,0CWTG,Khairul Azwan Harun,Khairul Azwan bin Harun,M,Malay,46,BN,001-UMNO,UMNO,001-BN,BN,19894,34.88767690230258,2,lost
+2022-11-19,GE-15,Perak,P.074 Lumut,1,JSX3Q,Dr Zambry Abd Kadir,Zambry bin Abdul Kadir,M,Malay,60,BN,001-UMNO,UMNO,001-BN,BN,24849,34.91891739973582,2,lost
+2022-11-19,GE-15,Perak,P.074 Lumut,2,WPY3K,Dr Hatta Ramli,Mohd Hatta bin Md. Ramli,M,Malay,66,PH,046-AMANAH,AMANAH,007-PH,PH,20358,28.607964925100475,3,lost
+2022-11-19,GE-15,Perak,P.074 Lumut,3,AP9WM,Komander (B) Nordin,Nordin bin Ahmad Ismail,M,Malay,57,PN,107-BERSATU,BERSATU,011-PN,PN,25212,35.42902110677047,1,won
+2022-11-19,GE-15,Perak,P.074 Lumut,4,3TJWS,Komander Isnin,Mohd Isnin bin Ismail,M,Malay,-1,WARISAN,104-WARISAN,WARISAN,000-ALONE,ALONE,358,0.5030774851746719,5,lost_deposit
+2022-11-19,GE-15,Perak,P.074 Lumut,5,788Z2,Mazlan Abd Ghani,Mazlan bin Abdul Ghani,M,Malay,47,PEJUANG,119-PEJUANG,PEJUANG,015-GTA,GTA,385,0.5410190832185717,4,lost_deposit
+2022-11-19,GE-15,Perak,P.075 Bagan Datuk,1,FKRS8,Tawfik Tun Dr Ismail,Mohamed Tawfik bin Ismail,M,Malay,71,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,226,0.5399464831804281,4,lost_deposit
+2022-11-19,GE-15,Perak,P.075 Bagan Datuk,2,ANZ1B,Dr. Faiz Na'Aman,Muhammad Faiz bin Na’aman,M,Malay,41,PN,107-BERSATU,BERSATU,011-PN,PN,8822,21.07702599388379,3,lost
+2022-11-19,GE-15,Perak,P.075 Bagan Datuk,3,6ET7A,Datuk Seri Haji Shamsul Iskandar,Shamsul Iskandar bin Mohd Akin,M,Malay,48,PH,078-PKR,PKR,007-PH,PH,16230,38.77580275229357,2,lost
+2022-11-19,GE-15,Perak,P.075 Bagan Datuk,4,YGBJT,Zahid Hamidi,Ahmad Zahid bin Hamidi,M,Malay,69,BN,001-UMNO,UMNO,001-BN,BN,16578,39.607224770642205,1,won
+2022-11-19,GE-15,Perak,P.076 Teluk Intan,1,WG22B,Nga Kor Ming,Nga Kor Ming,M,Chinese,50,PH,021-DAP,DAP,007-PH,PH,33133,51.61385799295884,1,won
+2022-11-19,GE-15,Perak,P.076 Teluk Intan,2,E3N3M,Dato T. Murugiah,Murugiah a/l Thopasamy,M,Indian,59,BN,002-MIC,MIC,001-BN,BN,12304,19.166900333364488,3,lost
+2022-11-19,GE-15,Perak,P.076 Teluk Intan,3,4H90X,Amir Khusyairi,Amir Khusyairi bin Mohamad Tanusi,M,Malay,40,PEJUANG,119-PEJUANG,PEJUANG,015-GTA,GTA,793,1.2353179424868368,4,lost_deposit
+2022-11-19,GE-15,Perak,P.076 Teluk Intan,4,ZXD9B,Zainol Fadzi Paharudin,Zainol Fadzi bin Paharudin,M,Malay,56,PN,107-BERSATU,BERSATU,011-PN,PN,17964,27.98392373118983,2,lost
+2022-11-19,GE-15,Perak,P.077 Tanjong Malim,1,7C1HD,Datuk Jamaluddin Bin Mohd. Radzi,Jamaluddin Mohd Radzi,M,Malay,66,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,1032,1.481247577901853,4,lost_deposit
+2022-11-19,GE-15,Perak,P.077 Tanjong Malim,2,HHB5X,Cikgu Izzat Johari,Izzat Johari,M,Malay,35,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,328,0.4707841139067905,6,lost_deposit
+2022-11-19,GE-15,Perak,P.077 Tanjong Malim,3,NMB2G,Chang Lih Kang,Chang Lih Kang,M,Chinese,42,PH,078-PKR,PKR,007-PH,PH,25140,36.08387995005095,1,won
+2022-11-19,GE-15,Perak,P.077 Tanjong Malim,4,HNSRC,Dr Mah Hang Soon,Mah Hang Soon,M,Chinese,57,BN,003-MCA,MCA,001-BN,BN,20963,30.088559084841616,3,lost
+2022-11-19,GE-15,Perak,P.077 Tanjong Malim,5,4FWQ3,Nolee Radzi,Nolee Ashilin Mohammed Radzi,F,Malay,47,PN,107-BERSATU,BERSATU,011-PN,PN,21599,31.001420964246247,2,lost
+2022-11-19,GE-15,Perak,P.077 Tanjong Malim,6,MZ186,Dr Amir Hamzah,Amir Hamzah bin Abdul Rajak,M,Malay,50,PEJUANG,117-IMAN,IMAN,015-GTA,GTA,609,0.8741083090525469,5,lost_deposit
+2022-11-19,GE-15,Pahang,P.078 Cameron Highlands,1,A8HT4,Dato' Ramli Bin Mohd Nor,Ramli bin Mohd Nor,M,Orang Asli,64,BN,001-UMNO,UMNO,001-BN,BN,16120,48.45934165038329,1,won
+2022-11-19,GE-15,Pahang,P.078 Cameron Highlands,2,1HB14,Dr.Abdul Rasid,Abdul Rasid Mohamed Ali,M,Malay,57,PN,107-BERSATU,BERSATU,011-PN,PN,5569,16.741319705396062,3,lost
+2022-11-19,GE-15,Pahang,P.078 Cameron Highlands,3,Q88T9,Chiong Yoke Kong,Chiong Yoke Kong,M,Chinese,39,PH,021-DAP,DAP,007-PH,PH,11576,34.799338644220654,2,lost
+2022-11-19,GE-15,Pahang,P.079 Lipis,1,5BCW3,Dato' Shahrum,Mohamad Shahrum bin Osman,M,Malay,69,PN,107-BERSATU,BERSATU,011-PN,PN,11554,32.22423650815786,2,lost
+2022-11-19,GE-15,Pahang,P.079 Lipis,2,SS2DR,Aishaton Binti Abu Bakar,Aishaton binti Abu Bakar,F,Malay,46,PEJUANG,119-PEJUANG,PEJUANG,015-GTA,GTA,263,0.7335099707153814,4,lost_deposit
+2022-11-19,GE-15,Pahang,P.079 Lipis,3,WTCDS,Tengku Zulpuri Shah Bin Raja Puji,Tengku Zulpuri Shah bin Raja Puji,M,Malay,58,PH,021-DAP,DAP,007-PH,PH,6366,17.754845907125922,3,lost
+2022-11-19,GE-15,Pahang,P.079 Lipis,4,ZBW1C,Dato Sri Abdul Rahman Bin Mohamad,Abdul Rahman bin Mohamad,M,Malay,58,BN,001-UMNO,UMNO,001-BN,BN,17672,49.28740761400084,1,won
+2022-11-19,GE-15,Pahang,P.080 Raub,1,73EMM,Chow Yu Hui,Chow Yu Hui,M,Chinese,39,PH,021-DAP,DAP,007-PH,PH,21613,38.43336000711301,1,won
+2022-11-19,GE-15,Pahang,P.080 Raub,2,RCQAF,Norkhairul Anuar Bin Mohamed Nor,Norkhairul Anuar bin Mohamed Nor,M,Malay,34,PEJUANG,119-PEJUANG,PEJUANG,015-GTA,GTA,427,0.7593135947363742,4,lost_deposit
+2022-11-19,GE-15,Pahang,P.080 Raub,3,C85AF,Chong Sin Woon,Chong Sin Woon,M,Chinese,34,BN,003-MCA,MCA,001-BN,BN,16939,30.121810260513914,3,lost
+2022-11-19,GE-15,Pahang,P.080 Raub,4,VTDCR,Dato Fakrunizam Ibrahim,Mohd Fakrunizam bin Ibrahim,M,Malay,41,PN,107-BERSATU,BERSATU,011-PN,PN,17256,30.685516137636704,2,lost
+2022-11-19,GE-15,Pahang,P.081 Jerantut,1,Z83F1,Dato' Dr Hassan Basri Bin Awang Mat Dahan,Hassan Basri bin Awang Mat Dahan,M,Malay,60,PH,078-PKR,PKR,007-PH,PH,11444,17.14354196003236,3,lost
+2022-11-19,GE-15,Pahang,P.081 Jerantut,2,2NSHA,Dato' Mohd Zukarmi,Mohd Zukarmi bin Abu Bakar,M,Malay,60,BN,001-UMNO,UMNO,001-BN,BN,23609,35.36716900859874,2,lost
+2022-11-19,GE-15,Pahang,P.081 Jerantut,3,0VNRD,Ir. Haji Khairil,Khairil Nizam bin Khirudin,M,Malay,43,PN,004-PAS,PAS,011-PN,PN,31701,47.48928903136891,1,won
+2022-11-19,GE-15,Pahang,P.082 Indera Mahkota,1,63FKK,Dr. Mohamad Nor Bin Sundari,Mohamad Nor bin Sundari,M,Malay,58,PEJUANG,036-BERJASA,BERJASA,015-GTA,GTA,1865,1.9983498880281163,4,lost_deposit
+2022-11-19,GE-15,Pahang,P.082 Indera Mahkota,2,Q00F7,Dato' Sri Saifuddin Abdullah,Saifuddin bin Abdullah,M,Malay,61,PN,107-BERSATU,BERSATU,011-PN,PN,41684,44.66445937402895,1,won
+2022-11-19,GE-15,Pahang,P.082 Indera Mahkota,3,9H5NW,Haji Zuraidi Ismail,Zuraidi bin Ismail,M,Malay,56,PH,078-PKR,PKR,007-PH,PH,33234,35.6102735542769,2,lost
+2022-11-19,GE-15,Pahang,P.082 Indera Mahkota,4,GC6NK,Dato' Quek Tai Seong,Quek Tai Seong,M,Chinese,43,BN,003-MCA,MCA,001-BN,BN,16544,17.726917183666036,3,lost
+2022-11-19,GE-15,Pahang,P.083 Kuantan,1,CYVR5,Dato' Sri Ab Hamid Bin Mohd Nazahar,Abdul Hamid bin Mohd Nazahar,M,Malay,57,BN,001-UMNO,UMNO,001-BN,BN,19114,28.207549954251643,3,lost
+2022-11-19,GE-15,Pahang,P.083 Kuantan,2,CQ93N,Fuziah Salleh,Fuziah binti Salleh,F,Malay,63,PH,078-PKR,PKR,007-PH,PH,22648,33.42286237124052,2,lost
+2022-11-19,GE-15,Pahang,P.083 Kuantan,3,GCHTE,Wan Razali Wan Nor,Wan Razali Wan Nor,M,Malay,41,PN,004-PAS,PAS,011-PN,PN,25514,37.65237153566896,1,won
+2022-11-19,GE-15,Pahang,P.083 Kuantan,4,KT7WQ,Mejar Anuar Tajuddin (B),Anuar bin Mohd Tajuddin,M,Malay,50,PEJUANG,119-PEJUANG,PEJUANG,015-GTA,GTA,486,0.7172161388388772,4,lost_deposit
+2022-11-19,GE-15,Pahang,P.084 Paya Besar,1,VSC7S,Ustaz Aire Roslan,Aireroshairi bin Roslan,M,Malay,40,PN,004-PAS,PAS,011-PN,PN,25582,41.272607005146575,2,lost
+2022-11-19,GE-15,Pahang,P.084 Paya Besar,2,Q7XZ0,Ir. Rosminahar,Rosminahar bin Mohd Amin,M,Malay,62,PEJUANG,119-PEJUANG,PEJUANG,015-GTA,GTA,310,0.5001371343755546,4,lost_deposit
+2022-11-19,GE-15,Pahang,P.084 Paya Besar,3,TNM19,Ahmad Azam,Ahmad Azam bin Mohd Salleh,M,Malay,62,PH,046-AMANAH,AMANAH,007-PH,PH,9192,14.829872707032573,3,lost
+2022-11-19,GE-15,Pahang,P.084 Paya Besar,4,6JYHM,Dato' Indera Mohd Shahar Bin Abdullah,Mohd Shahar bin Abdullah,M,Malay,43,BN,001-UMNO,UMNO,001-BN,BN,26899,43.397383153445304,1,won
+2022-11-19,GE-15,Pahang,P.085 Pekan,1,THFPZ,Sh Mohmed Puzi Bin Sh Ali,Sh Mohmed Puzi bin Sh Ali,M,Malay,65,BN,001-UMNO,UMNO,001-BN,BN,47418,50.96462849711417,1,won
+2022-11-19,GE-15,Pahang,P.085 Pekan,2,Y3A3J,Mohd Naim Zainal Abidin,Mohd Naim bin Zainal Abidin,M,Malay,56,PH,078-PKR,PKR,007-PH,PH,6316,6.7884051117249395,3,lost_deposit
+2022-11-19,GE-15,Pahang,P.085 Pekan,3,XNWWB,Tengku Dato' Hisham,Tengku Zainul Hisham Tengku Hussin,M,Malay,66,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,366,0.3933749637256693,5,lost_deposit
+2022-11-19,GE-15,Pahang,P.085 Pekan,4,1H05V,Dato' Radhi Abdul Razak,Mohammad Radhi bin Abdul Razak,M,Malay,60,PEJUANG,119-PEJUANG,PEJUANG,015-GTA,GTA,472,0.5073032319085135,4,lost_deposit
+2022-11-19,GE-15,Pahang,P.085 Pekan,5,DKFJB,Ustaz Mohd Fadhil Noor,Mohd Fadhil Noor bin Abdul Karim,M,Malay,43,PN,004-PAS,PAS,011-PN,PN,38469,41.346288195526704,2,lost
+2022-11-19,GE-15,Pahang,P.086 Maran,1,GT9WY,Muhamad Hafiz Al-Hafiz,Muhamad Hafiz bin Ishak,M,Malay,43,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,166,0.40397157597585903,4,lost_deposit
+2022-11-19,GE-15,Pahang,P.086 Maran,2,MEVPX,Shahaniza Shamsuddin,Shahaniza binti Shamsuddin,F,Malay,52,BN,001-UMNO,UMNO,001-BN,BN,17779,43.26632921249878,2,lost
+2022-11-19,GE-15,Pahang,P.086 Maran,3,K2557,Dato Sri Dr Hj Ismail B Hj Abd Muttalib,Ismail bin Abdul Muttalib,M,Malay,68,PN,004-PAS,PAS,011-PN,PN,19600,47.69784872967974,1,won
+2022-11-19,GE-15,Pahang,P.086 Maran,4,4YP84,Ahmad Shuhor,Ahmad Shuhor bin Awang,M,Malay,58,PH,046-AMANAH,AMANAH,007-PH,PH,3547,8.631850481845614,3,lost_deposit
+2022-11-19,GE-15,Pahang,P.087 Kuala Krau,1,SXH9S,Dato' Sri Dr Haji Ismail Bin Mohamed Said,Ismail bin Mohamed Said,M,Malay,57,BN,001-UMNO,UMNO,001-BN,BN,21481,44.99298326456234,2,lost
+2022-11-19,GE-15,Pahang,P.087 Kuala Krau,2,P675R,Ustaz Haji Kamal Bin Ashaari,Kamal bin Ashaari,M,Malay,52,PN,004-PAS,PAS,011-PN,PN,22505,47.13780030580399,1,won
+2022-11-19,GE-15,Pahang,P.087 Kuala Krau,3,Z1J92,Juhari Osman,Juhari bin Osman,M,Malay,47,PH,046-AMANAH,AMANAH,007-PH,PH,3593,7.525710575372306,3,lost_deposit
+2022-11-19,GE-15,Pahang,P.087 Kuala Krau,4,5FW1P,Shahruddin Mohamed Salleh,Shahruddin bin Mohamed Salleh,M,Malay,66,PEJUANG,119-PEJUANG,PEJUANG,015-GTA,GTA,164,0.3435058542613577,4,lost_deposit
+2022-11-19,GE-15,Pahang,P.088 Temerloh,1,NK9XH,Dato' Sri Hj Mohd Sharkar Bin Hj Shamsudin,Mohd Sharkar bin Shamsudin,M,Malay,60,BN,001-UMNO,UMNO,001-BN,BN,25191,30.483923666154382,3,lost
+2022-11-19,GE-15,Pahang,P.088 Temerloh,2,8CCAD,Hjh Salamiah Mohd Nor,Salamiah binti Mohd Nor,F,Malay,58,PN,004-PAS,PAS,011-PN,PN,30929,37.42754456236311,1,won
+2022-11-19,GE-15,Pahang,P.088 Temerloh,3,7DDV7,Hasbie Muda,Mohd Hasbie bin Muda,M,Malay,35,PH,046-AMANAH,AMANAH,007-PH,PH,25409,30.74772801529581,2,lost
+2022-11-19,GE-15,Pahang,P.088 Temerloh,4,BT2CP,Aminuddin Bin Yahaya,Aminuddin bin Yahaya,M,Malay,59,PEJUANG,122-GB,GB,015-GTA,GTA,1108,1.3408037561866961,4,lost_deposit
+2022-11-19,GE-15,Pahang,P.089 Bentong,1,F7REZ,Achik Khalil,Mohd Khalil bin Abdul Hamid,M,Malay,-1,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,168,0.2520365452990684,5,lost_deposit
+2022-11-19,GE-15,Pahang,P.089 Bentong,2,TMJWA,Young Syefura Binti Othman,Young Syefura binti Othman,F,Malay,33,PH,021-DAP,DAP,007-PH,PH,25075,37.617954603417495,1,won
+2022-11-19,GE-15,Pahang,P.089 Bentong,3,XVQF2,Tan Sri Liow Tiong Lai,Liow Tiong Lai,M,Chinese,61,BN,003-MCA,MCA,001-BN,BN,24383,36.57980407159038,2,lost
+2022-11-19,GE-15,Pahang,P.089 Bentong,4,JNEH8,Datuk Roslan Hassan,Roslan bin Hassan,M,Malay,56,PN,107-BERSATU,BERSATU,011-PN,PN,16233,24.353031189522483,3,lost
+2022-11-19,GE-15,Pahang,P.089 Bentong,5,HRWXQ,Wong Tack,Wong Tack,M,Chinese,63,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,798,1.1971735901705747,4,lost_deposit
+2022-11-19,GE-15,Pahang,P.090 Bera,1,P34KH,Dato Asmawi,Asmawi bin Harun,M,Malay,45,PN,107-BERSATU,BERSATU,011-PN,PN,12719,21.35923960502452,3,lost
+2022-11-19,GE-15,Pahang,P.090 Bera,2,XB7C2,Ismail Sabri Bin Yaakob,Ismail Sabri bin Yaakob,M,Malay,62,BN,001-UMNO,UMNO,001-BN,BN,31762,53.338483240411094,1,won
+2022-11-19,GE-15,Pahang,P.090 Bera,3,08RG6,Haji Abas Bin Awang,Abas bin Awang,M,Malay,71,PH,078-PKR,PKR,007-PH,PH,15067,25.302277154564383,2,lost
+2022-11-19,GE-15,Pahang,P.091 Rompin,1,SGTNT,Hamizi Bin Hussain,Hamizi bin Hussain,M,Malay,56,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,408,0.6096194361020216,4,lost_deposit
+2022-11-19,GE-15,Pahang,P.091 Rompin,2,82QBZ,Dato' Sri Haji Hasan Bin Arifin,Hasan bin Arifin,M,Malay,69,BN,001-UMNO,UMNO,001-BN,BN,30151,45.05057749488248,2,lost
+2022-11-19,GE-15,Pahang,P.091 Rompin,3,WYGR3,Dato' Khalib,Abdul Khalib bin Abdullah,M,Malay,63,PN,107-BERSATU,BERSATU,011-PN,PN,31589,47.199187174085196,1,won
+2022-11-19,GE-15,Pahang,P.091 Rompin,4,0C6TC,Erman Shah,Erman Shah bin Jaios,M,Malay,43,PH,078-PKR,PKR,007-PH,PH,4779,7.1406158949302965,3,lost_deposit
+2022-11-19,GE-15,Selangor,P.092 Sabak Bernam,1,3SWWN,Dato' Sri Eizlan Yusof,Idris bin Md. Yusof,M,Malay,51,PEJUANG,122-GB,GB,015-GTA,GTA,460,1.1225809600507601,4,lost_deposit
+2022-11-19,GE-15,Selangor,P.092 Sabak Bernam,2,QB0H7,Abd Rahman Bin Bakri,Abdul Rahman bin Bakri,M,Malay,57,BN,001-UMNO,UMNO,001-BN,BN,12917,31.52256143690363,2,lost
+2022-11-19,GE-15,Selangor,P.092 Sabak Bernam,3,77JYY,Cikgu Kalam Bin Salan,Kalam bin Salan,M,Malay,57,PN,107-BERSATU,BERSATU,011-PN,PN,17973,43.86119042389633,1,won
+2022-11-19,GE-15,Selangor,P.092 Sabak Bernam,4,AN917,Hj. Shamsul Ma'Arif Ismail,Shamsul Ma'arif bin Ismail,M,Malay,58,PH,046-AMANAH,AMANAH,007-PH,PH,9627,23.49366717914928,3,lost
+2022-11-19,GE-15,Selangor,P.093 Sungai Besar,1,E2Z3G,Dato' Sri Jamal Yunos,Jamal bin Md Yunos,M,Malay,52,BN,001-UMNO,UMNO,001-BN,BN,13984,27.382024672018794,3,lost
+2022-11-19,GE-15,Selangor,P.093 Sungai Besar,2,HGN5S,Dato' Asmawar Bin Samat,Asmawar bin Samat @ Samad,M,Malay,67,PEJUANG,112-PUTRA,PUTRA,015-GTA,GTA,225,0.4405717642451537,4,lost_deposit
+2022-11-19,GE-15,Selangor,P.093 Sungai Besar,3,5E565,Cikgu Muslimin Yahaya,Muslimin bin Yahaya,M,Malay,55,PN,107-BERSATU,BERSATU,011-PN,PN,19791,38.752692383003726,1,won
+2022-11-19,GE-15,Selangor,P.093 Sungai Besar,4,MYB82,Hj Saipolyazan M Yusop,Saipolyazan bin Mat Yusop,M,Malay,52,PH,078-PKR,PKR,007-PH,PH,17070,33.42471118073233,2,lost
+2022-11-19,GE-15,Selangor,P.094 Hulu Selangor,1,RC1AB,Azlinda Binti Baroni,Azlinda binti Baroni,F,Malay,58,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,446,0.36425409581679485,6,lost_deposit
+2022-11-19,GE-15,Selangor,P.094 Hulu Selangor,2,K9CBA,Datuk T.Mohan,Mohan a/l Thangarasu,M,Indian,49,BN,002-MIC,MIC,001-BN,BN,27050,22.092092582610544,3,lost
+2022-11-19,GE-15,Selangor,P.094 Hulu Selangor,3,TKWW6,Harumaini Bin Haji Omar,Harumaini bin Omar,M,Malay,64,PEJUANG,119-PEJUANG,PEJUANG,015-GTA,GTA,1849,1.5101027425229905,4,lost_deposit
+2022-11-19,GE-15,Selangor,P.094 Hulu Selangor,4,VSQCM,Dr. Sathia Prakash Nadarajan,Sathia Prakash a/l Nadarajan,M,Indian,45,PH,078-PKR,PKR,007-PH,PH,45261,36.965257019650124,2,lost
+2022-11-19,GE-15,Selangor,P.094 Hulu Selangor,5,6PQDH,Haniza Talha,Haniza binti Mohamed Talha,F,Malay,60,PBM,065-PBM,PBM,000-ALONE,ALONE,1013,0.8273304911713301,5,lost_deposit
+2022-11-19,GE-15,Selangor,P.094 Hulu Selangor,6,Y1JYF,Hasnizan Harun,Mohd Hasnizan bin Harun,M,Malay,52,PN,004-PAS,PAS,011-PN,PN,46823,38.240963068228226,1,won
+2022-11-19,GE-15,Selangor,P.095 Tanjong Karang,1,Z7DEX,Lando Brotherhood,Azlan Sani bin Zawawi @ Mohd Zawawi,M,Malay,47,PEJUANG,122-GB,GB,015-GTA,GTA,3557,6.946587247339127,4,lost_deposit
+2022-11-19,GE-15,Selangor,P.095 Tanjong Karang,2,2N3H6,Mohd Rosni,Mohd Rosni bin Mastol,M,Malay,59,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,1406,2.74582560296846,5,lost_deposit
+2022-11-19,GE-15,Selangor,P.095 Tanjong Karang,3,K4XF9,Kapt (B) Dato Dr Zulkafperi,Zulkafperi bin Hanapi,M,Malay,63,PN,107-BERSATU,BERSATU,011-PN,PN,18054,35.25827555902744,1,won
+2022-11-19,GE-15,Selangor,P.095 Tanjong Karang,4,62SKF,Cikgu Rahayu,Siti Rahayu binti Baharin,F,Malay,41,MUDA,120-MUDA,MUDA,007-PH,PH,12314,24.048432770237284,3,lost
+2022-11-19,GE-15,Selangor,P.095 Tanjong Karang,5,9GFNR,Dato' Hjh. Habibah,Habibah binti Mohd Yusof,F,Malay,36,BN,001-UMNO,UMNO,001-BN,BN,15874,31.00087882042769,2,lost
+2022-11-19,GE-15,Selangor,P.096 Kuala Selangor,1,CY5R1,Tengku Zafrul Aziz,Tengku Zafrul bin Tengku Abdul Aziz,M,Malay,49,BN,001-UMNO,UMNO,001-BN,BN,30031,34.72554665186573,2,lost
+2022-11-19,GE-15,Selangor,P.096 Kuala Selangor,2,SF3GQ,Yb Shaid Rosli,Mohd Shaid bin Rosli,M,Malay,40,PEJUANG,119-PEJUANG,PEJUANG,015-GTA,GTA,1778,2.0559429238792335,4,lost_deposit
+2022-11-19,GE-15,Selangor,P.096 Kuala Selangor,3,YZTTD,Ds Dr Dzulkefly Bin Ahmad,Dzulkefly bin Ahmad,M,Malay,66,PH,046-AMANAH,AMANAH,007-PH,PH,31033,35.88418265283704,1,won
+2022-11-19,GE-15,Selangor,P.096 Kuala Selangor,4,WWSK0,Ustaz Mohd Noor Shahar,Mohd Noor bin Mohd Shahar,M,Malay,46,PN,004-PAS,PAS,011-PN,PN,23639,27.334327771418,3,lost
+2022-11-19,GE-15,Selangor,P.097 Selayang,1,KPEQ8,Datuk Abdul Rashid Asari,Abdul Rashid bin Asari,M,Malay,71,PN,107-BERSATU,BERSATU,011-PN,PN,49154,33.92715400915234,2,lost
+2022-11-19,GE-15,Selangor,P.097 Selayang,2,RAA58,Chan Wun Hoong,Chan Wun Hoong,M,Chinese,43,BN,003-MCA,MCA,001-BN,BN,19425,13.407555165963792,3,lost
+2022-11-19,GE-15,Selangor,P.097 Selayang,3,75VSV,Salleh Amiruddin,Sallehudin bin Amiruddin (Salleh Amiruddin),M,Malay,59,PEJUANG,119-PEJUANG,PEJUANG,015-GTA,GTA,2584,1.7835326923475128,4,lost_deposit
+2022-11-19,GE-15,Selangor,P.097 Selayang,4,KSHWK,Muhammad Zaki Bin Omar,Muhammad Zaki bin Omar,M,Malay,37,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,945,0.6522594405063465,5,lost_deposit
+2022-11-19,GE-15,Selangor,P.097 Selayang,5,84ETM,William Leong Jee Keen,William Leong Jee Keen,M,Chinese,65,PH,078-PKR,PKR,007-PH,PH,72773,50.229498692030006,1,won
+2022-11-19,GE-15,Selangor,P.098 Gombak,1,39C6H,Dato' Seri Azmin Ali,Mohamed Azmin bin Ali,M,Malay,58,PN,107-BERSATU,BERSATU,011-PN,PN,59538,35.99071488157847,2,lost
+2022-11-19,GE-15,Selangor,P.098 Gombak,2,FVP91,Amirudin Shari,Amirudin bin Shari,M,Malay,42,PH,078-PKR,PKR,007-PH,PH,72267,43.68539407348301,1,won
+2022-11-19,GE-15,Selangor,P.098 Gombak,3,YZFZ4,Datuk Dr. Aziz Jamaludin,Aziz Jamaludin bin Mhd Tahir,M,Malay,68,PEJUANG,112-PUTRA,PUTRA,015-GTA,GTA,2223,1.3438032715534438,4,lost_deposit
+2022-11-19,GE-15,Selangor,P.098 Gombak,4,Q77YW,Ir Hj Zulkifli,Zulkifli bin Ahmad,M,Malay,-1,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,675,0.4080374306336368,5,lost_deposit
+2022-11-19,GE-15,Selangor,P.098 Gombak,5,9ERGN,Megat Zulkarnain Bin Omardin,Megat Zulkarnain bin Omardin,M,Malay,53,BN,001-UMNO,UMNO,001-BN,BN,30723,18.572050342751442,3,lost
+2022-11-19,GE-15,Selangor,P.099 Ampang,1,5HY22,Rodziah Ismail,Rodziah binti Ismail,F,Malay,58,PH,078-PKR,PKR,007-PH,PH,56754,54.34645216891698,1,won
+2022-11-19,GE-15,Selangor,P.099 Ampang,2,TMY15,Ivone Low Yi Wen,Ivone Low Yi Wen,F,Chinese,29,BN,003-MCA,MCA,001-BN,BN,11509,11.020779469501102,3,lost_deposit
+2022-11-19,GE-15,Selangor,P.099 Ampang,3,Y2M3E,M.Raveen,M.Raveen,M,Indian,38,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,148,0.1417217274729484,8,lost_deposit
+2022-11-19,GE-15,Selangor,P.099 Ampang,4,EZTZ6,Zuraida Binti Kamaruddin,Zuraida binti Kamaruddin,F,Malay,64,PBM,065-PBM,PBM,000-ALONE,ALONE,4589,4.394331130901082,4,lost_deposit
+2022-11-19,GE-15,Selangor,P.099 Ampang,5,1GA5Q,Dr. Nurul Ashikin,Nurul Ashikin binti Mabahwi,F,Malay,33,PEJUANG,119-PEJUANG,PEJUANG,015-GTA,GTA,2653,2.540457722876568,5,lost_deposit
+2022-11-19,GE-15,Selangor,P.099 Ampang,6,P0QEA,Bryan Lai,Lai Wai Chong (Bryan Lai),M,Chinese,48,WARISAN,104-WARISAN,WARISAN,000-ALONE,ALONE,1423,1.362635258067605,6,lost_deposit
+2022-11-19,GE-15,Selangor,P.099 Ampang,7,4Y080,Sasha Lyna,Sasha Lyna binti Abdul Latif,F,Malay,39,PN,107-BERSATU,BERSATU,011-PN,PN,27073,25.92454275591305,2,lost
+2022-11-19,GE-15,Selangor,P.099 Ampang,8,8BPA9,Muhammad Shafiq Izwan Bin Mohd Yunos,Muhammad Shafiq Izwan bin Mohd Yunos,M,Malay,33,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,188,0.18002489706023175,7,lost_deposit
+2022-11-19,GE-15,Selangor,P.099 Ampang,9,49BTP,Tan Hua Meng,Tan Hua Meng,M,Chinese,64,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,93,0.08905486929043378,9,lost_deposit
+2022-11-19,GE-15,Selangor,P.100 Pandan,1,YAVVC,Rafizi Ramli,Mohd Rafizi bin Ramli,M,Malay,45,PH,078-PKR,PKR,007-PH,PH,74002,63.98457494639275,1,won
+2022-11-19,GE-15,Selangor,P.100 Pandan,2,85THA,Ong Tee Keat,Ong Tee Keat,M,Chinese,66,WARISAN,104-WARISAN,WARISAN,000-ALONE,ALONE,3323,2.8731756242650617,4,lost_deposit
+2022-11-19,GE-15,Selangor,P.100 Pandan,3,BSCCJ,Farique Zubir,Muhammad Farique bin Zubir Albakri,M,Malay,35,PN,004-PAS,PAS,011-PN,PN,25706,22.22625717645431,2,lost
+2022-11-19,GE-15,Selangor,P.100 Pandan,4,F72EV,Nadia Hanafiah,Nadia binti Hanafiah,F,Malay,53,PEJUANG,122-GB,GB,015-GTA,GTA,961,0.8309123607940789,5,lost_deposit
+2022-11-19,GE-15,Selangor,P.100 Pandan,5,EJE1H,Leong Kok Wee,Leong Kok Wee,M,Chinese,54,BN,003-MCA,MCA,001-BN,BN,11664,10.085079892093795,3,lost_deposit
+2022-11-19,GE-15,Selangor,P.101 Hulu Langat,1,7VGS0,Yb Mohd Sany Hamzan,Mohd Sany bin Hamzan,M,Malay,46,PH,046-AMANAH,AMANAH,007-PH,PH,58380,42.67949439639732,1,won
+2022-11-19,GE-15,Selangor,P.101 Hulu Langat,2,ZM42W,Dato Haji Markiman Kobiran,Markiman bin Kobiran,M,Malay,65,PEJUANG,119-PEJUANG,PEJUANG,015-GTA,GTA,1655,1.209910298493278,4,lost_deposit
+2022-11-19,GE-15,Selangor,P.101 Hulu Langat,3,733SB,Dato' Abdul Rahman Bin Jaafar,Abdul Rahman bin Jaafar,M,Malay,57,WARISAN,104-WARISAN,WARISAN,000-ALONE,ALONE,370,0.2704935410528778,5,lost_deposit
+2022-11-19,GE-15,Selangor,P.101 Hulu Langat,4,EPWXJ,Datuk Wira Haji Johan Bin Abd Aziz,Johan bin Abd Aziz,M,Malay,56,BN,001-UMNO,UMNO,001-BN,BN,32564,23.80635586715112,3,lost
+2022-11-19,GE-15,Selangor,P.101 Hulu Langat,5,JMRH4,Dr Mohamed Mustafa,Mohamed Noortheen bin Ahamed Mustafa,M,Malay,60,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,326,0.2383267415763194,6,lost_deposit
+2022-11-19,GE-15,Selangor,P.101 Hulu Langat,6,P2EKD,Dato' Dr. Mohd Radzi Abd Latif,Mohd Radzi bin Abd Latif,M,Malay,68,PN,107-BERSATU,BERSATU,011-PN,PN,43492,31.795419155329093,2,lost
+2022-11-19,GE-15,Selangor,P.102 Bangi,1,SG4NP,Nazrul Nazir,Muhammad Nazrul Hakim bin Md Nazir,M,Malay,27,PN,004-PAS,PAS,011-PN,PN,71867,29.418603223205114,2,lost
+2022-11-19,GE-15,Selangor,P.102 Bangi,2,WXTQZ,Dr. Jamal,Jamal Hisham bin Hashim,M,Malay,65,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,676,0.27671915870826186,6,lost_deposit
+2022-11-19,GE-15,Selangor,P.102 Bangi,3,2QTYJ,Hoh Hee Lee,Hoh Hee Lee,M,Chinese,62,BN,003-MCA,MCA,001-BN,BN,25685,10.514099987310216,3,lost_deposit
+2022-11-19,GE-15,Selangor,P.102 Bangi,4,0BGT8,Fauzi Hasim,Muhammad Fauzi bin Hasim,M,Malay,36,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,401,0.16414849503256362,7,lost_deposit
+2022-11-19,GE-15,Selangor,P.102 Bangi,5,3S6WH,Associate Prof. Suthan M,Suthan a/l Mookaiah,M,Indian,36,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,194,0.07941348637485622,8,lost_deposit
+2022-11-19,GE-15,Selangor,P.102 Bangi,6,76WYT,Chee Chee Meng,Chee Chee Meng,M,Chinese,58,PRM,009-PRM,PRM,000-ALONE,ALONE,752,0.30782959666954574,5,lost_deposit
+2022-11-19,GE-15,Selangor,P.102 Bangi,7,AMK13,Syahredzan Bin Johan,Syahredzan bin Johan,M,Malay,39,PH,021-DAP,DAP,007-PH,PH,141568,57.95055896451363,1,won
+2022-11-19,GE-15,Selangor,P.102 Bangi,8,E293C,Ustaz Annuar Bin Salleh,Annuar bin Salleh,M,Malay,56,PEJUANG,036-BERJASA,BERJASA,015-GTA,GTA,3148,1.2886270881858113,4,lost_deposit
+2022-11-19,GE-15,Selangor,P.103 Puchong,1,XX3RW,Yeo Bee Yin,Yeo Bee Yin,F,Chinese,39,PH,021-DAP,DAP,007-PH,PH,79425,65.66817418912103,1,won
+2022-11-19,GE-15,Selangor,P.103 Puchong,2,MHM0Z,Uncle Kentang,Kuan Chee Heng,M,Chinese,59,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,1793,1.4824430131708406,4,lost_deposit
+2022-11-19,GE-15,Selangor,P.103 Puchong,3,HFZ5N,Datuk Seri Haji Syed Ibrahim,Syed Ibrahim bin Kader,M,Malay,68,BN,035-KIMMA,KIMMA,001-BN,BN,21468,17.74963000934278,2,lost
+2022-11-19,GE-15,Selangor,P.103 Puchong,4,MXN7Y,Jimmy Chew Jyh Gang,Chew Jyh Gang (Jimmy Chew),M,Chinese,53,PN,026-GERAKAN,GERAKAN,011-PN,PN,18263,15.099752788365345,3,lost
+2022-11-19,GE-15,Selangor,P.104 Subang,1,RBBA7,Alex Ang H N,Alex Ang Hiang Ni,M,Chinese,46,PN,026-GERAKAN,GERAKAN,011-PN,PN,23185,13.026525005197126,2,lost
+2022-11-19,GE-15,Selangor,P.104 Subang,2,1KCQY,Dr Kow,Kow Cheong Wei,M,Chinese,56,BN,003-MCA,MCA,001-BN,BN,16539,9.292460515891968,3,lost_deposit
+2022-11-19,GE-15,Selangor,P.104 Subang,3,PAPBB,Wong Chen,Wong Chen,M,Chinese,54,PH,078-PKR,PKR,007-PH,PH,138259,77.68101447891091,1,won
+2022-11-19,GE-15,Selangor,P.105 Petaling Jaya,1,VJ4R4,Datuk Ezam Mohd Nor,Mohamad Ezam bin Mohd Nor,M,Malay,55,PRM,009-PRM,PRM,000-ALONE,ALONE,2049,1.404752437235195,5,lost_deposit
+2022-11-19,GE-15,Selangor,P.105 Petaling Jaya,2,VS1CG,Dr. K. J. John,KJ John,M,Indian,72,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,461,0.3160521588899097,6,lost_deposit
+2022-11-19,GE-15,Selangor,P.105 Petaling Jaya,3,DDMP2,Chew Hian Tat,Chew Hian Tat,M,Chinese,48,BN,003-MCA,MCA,001-BN,BN,23253,15.941780587130303,3,lost
+2022-11-19,GE-15,Selangor,P.105 Petaling Jaya,4,Z6QES,Mazween Mokhtar,Mazween binti Mokhtar,F,Malay,44,PEJUANG,122-GB,GB,015-GTA,GTA,4052,2.7779682165334356,4,lost_deposit
+2022-11-19,GE-15,Selangor,P.105 Petaling Jaya,5,2MDH2,Dato Theng Book,Theng Book,M,Chinese,62,PN,107-BERSATU,BERSATU,011-PN,PN,32736,22.44313117878543,2,lost
+2022-11-19,GE-15,Selangor,P.105 Petaling Jaya,6,2HN70,Lee Chean Chung,Lee Chean Chung,M,Chinese,41,PH,078-PKR,PKR,007-PH,PH,83311,57.11631542142573,1,won
+2022-11-19,GE-15,Selangor,P.106 Damansara,1,NV73R,Gobind Singh Deo,Gobind Singh Deo,M,Other,49,PH,021-DAP,DAP,007-PH,PH,142875,81.67225915615336,1,won
+2022-11-19,GE-15,Selangor,P.106 Damansara,2,623KB,Lim Si Ching,Lim Si Ching,M,Chinese,37,PN,026-GERAKAN,GERAKAN,011-PN,PN,18256,10.43575687247409,2,lost_deposit
+2022-11-19,GE-15,Selangor,P.106 Damansara,3,JJBBX,Tan Gim Tuan Gt,Tan Gim Tuan,M,Chinese,53,BN,003-MCA,MCA,001-BN,BN,13806,7.891983971372552,3,lost_deposit
+2022-11-19,GE-15,Selangor,P.107 Sungai Buloh,1,9FSNM,Ahmad Jufliz,Ahmad Jufliz bin Faiza,M,Malay,55,PRM,009-PRM,PRM,000-ALONE,ALONE,279,0.21521301460208733,5,lost_deposit
+2022-11-19,GE-15,Selangor,P.107 Sungai Buloh,2,CXFQX,Akmal Yusoff,Mohd Akmal bin Mohd Yusoff,M,Malay,39,PEJUANG,119-PEJUANG,PEJUANG,015-GTA,GTA,829,0.6394680613087111,4,lost_deposit
+2022-11-19,GE-15,Selangor,P.107 Sungai Buloh,3,GB5T6,Sifu Linda,Nurhaslinda binti Basri (Sifu Linda),F,Malay,33,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,113,0.08716512777790635,7,lost_deposit
+2022-11-19,GE-15,Selangor,P.107 Sungai Buloh,4,KHMCT,Khairy Jamaluddin,Khairy Jamaluddin bin Abu Bakar,M,Malay,46,BN,001-UMNO,UMNO,001-BN,BN,48250,37.21873818835381,2,lost
+2022-11-19,GE-15,Selangor,P.107 Sungai Buloh,5,093N1,Syed Razak Alsagoff,Syed Abdul Razak bin Syed Long Alsagoff,M,Malay,62,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,165,0.12727651401198714,6,lost_deposit
+2022-11-19,GE-15,Selangor,P.107 Sungai Buloh,6,KRVWF,Ramanan Ramakrishnan,Ramanan a/l Ramakrishnan,M,Indian,41,PH,078-PKR,PKR,007-PH,PH,50943,39.29604517159188,1,won
+2022-11-19,GE-15,Selangor,P.107 Sungai Buloh,7,Q6HYR,Hj Mohd Ghazali Bin Md Hamin,Mohd Ghazali bin Md Hamin,M,Malay,60,PN,004-PAS,PAS,011-PN,PN,29060,22.416093922353614,3,lost
+2022-11-19,GE-15,Selangor,P.108 Shah Alam,1,TM811,Azli Yusof,Azli bin Yusof,M,Malay,55,PH,046-AMANAH,AMANAH,007-PH,PH,61409,45.23016866759962,1,won
+2022-11-19,GE-15,Selangor,P.108 Shah Alam,2,Y1Y3A,Rafique Rashid,Muhammad Rafique bin Rashid Ali,M,Malay,45,PEJUANG,119-PEJUANG,PEJUANG,015-GTA,GTA,2781,2.048317006702512,4,lost_deposit
+2022-11-19,GE-15,Selangor,P.108 Shah Alam,3,1FM5K,Isham Jalil,Hizatul Isham bin Abdul Jalil,M,Malay,46,BN,001-UMNO,UMNO,001-BN,BN,28266,20.819032186786476,3,lost
+2022-11-19,GE-15,Selangor,P.108 Shah Alam,4,2N37M,Dr. Afif Bahardin,Afif bin Bahardin,M,Malay,37,PN,107-BERSATU,BERSATU,011-PN,PN,43314,31.90248213891139,2,lost
+2022-11-19,GE-15,Selangor,P.109 Kapar,1,4XA7W,Muhammad Bin Noor Azman,Muhammad bin Noor Azman,M,Malay,30,BN,001-UMNO,UMNO,001-BN,BN,35079,22.197683984053658,3,lost
+2022-11-19,GE-15,Selangor,P.109 Kapar,2,060FP,Dr Daroyah Binti Alwi,Daroyah binti Alwi,F,Malay,60,PBM,065-PBM,PBM,000-ALONE,ALONE,1474,0.9327342909574132,4,lost_deposit
+2022-11-19,GE-15,Selangor,P.109 Kapar,3,RKK25,Ust. Hj. Mohd Pathan Bin Hussin,Mohd Pathan bin Hussin,M,Malay,54,PEJUANG,036-BERJASA,BERJASA,015-GTA,GTA,1015,0.6422831108017465,5,lost_deposit
+2022-11-19,GE-15,Selangor,P.109 Kapar,4,2QG39,Dr Halimah Ali,Halimah binti Ali,F,Malay,62,PN,004-PAS,PAS,011-PN,PN,65751,41.60665696386762,1,won
+2022-11-19,GE-15,Selangor,P.109 Kapar,5,8B0A5,Dato' Seri Rahim,Rahim bin Awang,M,Malay,58,WARISAN,104-WARISAN,WARISAN,000-ALONE,ALONE,265,0.16768967917484023,7,lost_deposit
+2022-11-19,GE-15,Selangor,P.109 Kapar,6,BRPCE,Dato' Sri Sivalingam,Sevelinggam a/l V.Ponniah,M,Indian,47,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,477,0.3018414225147124,6,lost_deposit
+2022-11-19,GE-15,Selangor,P.109 Kapar,7,6Q28T,Abdullah Sani,Abdullah Sani Abdul Hamid,M,Malay,60,PH,078-PKR,PKR,007-PH,PH,53969,34.15111054863001,2,lost
+2022-11-19,GE-15,Selangor,P.110 Klang,1,F6CEQ,Dr Jaya,Jaya Chandran a/l Perumal,M,Indian,47,PN,107-BERSATU,BERSATU,011-PN,PN,23738,14.48277965894878,2,lost
+2022-11-19,GE-15,Selangor,P.110 Klang,2,JM2H0,Hedrhin Ramli @ Awin,Mohd Hedrhin bin Ramli,M,Malay,43,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,3016,1.8400902962081693,4,lost_deposit
+2022-11-19,GE-15,Selangor,P.110 Klang,3,SD1GB,Tee Hooi Ling,Tee Hooi Ling,F,Chinese,47,BN,003-MCA,MCA,001-BN,BN,19762,12.056984228669046,3,lost_deposit
+2022-11-19,GE-15,Selangor,P.110 Klang,4,P1RK9,Dr. Loo Cheng Wee,Loo Cheng Wee,M,Chinese,59,WARISAN,104-WARISAN,WARISAN,000-ALONE,ALONE,1140,0.6955248467099845,5,lost_deposit
+2022-11-19,GE-15,Selangor,P.110 Klang,5,SFENJ,Chandrasegar,Chandrasegar,M,Indian,-1,PRM,009-PRM,PRM,000-ALONE,ALONE,271,0.16533967847228578,7,lost_deposit
+2022-11-19,GE-15,Selangor,P.110 Klang,6,9A9B2,Ganabatirau A/L Veraman,Ganabatirau a/l Veraman,M,Indian,49,PH,021-DAP,DAP,007-PH,PH,115539,70.49144321405693,1,won
+2022-11-19,GE-15,Selangor,P.110 Klang,7,WX4QV,Deepak Jaikishan,Deepak Jaikishan a/l Jaikishan Rewachand,M,Indian,50,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,439,0.2678380769348098,6,lost_deposit
+2022-11-19,GE-15,Selangor,P.111 Kota Raja,1,0ATT4,Fahmi Bazlan Muda,Fahmi Bazlan bin Muda,M,Malay,35,PEJUANG,036-BERJASA,BERJASA,015-GTA,GTA,2063,1.04328916759381,4,lost_deposit
+2022-11-19,GE-15,Selangor,P.111 Kota Raja,2,C8VAK,Haji Mohamed Diah Baharun,Mohamed Diah bin Baharun,M,Malay,57,PN,004-PAS,PAS,011-PN,PN,49308,24.935774249013857,2,lost
+2022-11-19,GE-15,Selangor,P.111 Kota Raja,3,3RGWD,Kumar Karananedi,Kumar a/l Karananedi,M,Indian,35,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,163,0.08243147567512896,7,lost_deposit
+2022-11-19,GE-15,Selangor,P.111 Kota Raja,4,766YP,Kajendran,Kajendran a/l Doraisamy,M,Indian,40,BN,002-MIC,MIC,001-BN,BN,22225,11.239506422575099,3,lost_deposit
+2022-11-19,GE-15,Selangor,P.111 Kota Raja,5,Q7726,Mohd Sabu,Mohamad bin Sabu,M,Malay,68,PH,046-AMANAH,AMANAH,007-PH,PH,123306,62.35764134722363,1,won
+2022-11-19,GE-15,Selangor,P.111 Kota Raja,6,AKX0Z,P.Raveentharan A/L A.Periasamy,P.Raveentharan a/l A.Periasamy,M,Indian,59,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,209,0.10569434611105491,6,lost_deposit
+2022-11-19,GE-15,Selangor,P.111 Kota Raja,7,E1K38,Sarah Afiqah,Sarah Afiqah binti Zainol Arif,F,Malay,26,PRM,009-PRM,PRM,000-ALONE,ALONE,360,0.18205724688985536,5,lost_deposit
+2022-11-19,GE-15,Selangor,P.111 Kota Raja,8,HF95H,Surendhar Selvaraju,Surendhar a/l Selvaraju,M,Indian,39,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,106,0.05360574491756852,8,lost_deposit
+2022-11-19,GE-15,Selangor,P.112 Kuala Langat,1,MWZ7T,Hajah Zanariah Jumhuri,Zanariah binti Jumhuri,F,Malay,54,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,512,0.41336993379622156,5,lost_deposit
+2022-11-19,GE-15,Selangor,P.112 Kuala Langat,2,5DF61,Mohana Muniandy,Mohana a/p Muniandy Raman,F,Indian,46,BN,002-MIC,MIC,001-BN,BN,18685,15.08558049410625,3,lost
+2022-11-19,GE-15,Selangor,P.112 Kuala Langat,3,RANA3,Mohd Ridzuan Abdullah,Mohd Ridzuan bin Abdullah,M,Malay,55,PEJUANG,122-GB,GB,015-GTA,GTA,591,0.4771516227999354,4,lost_deposit
+2022-11-19,GE-15,Selangor,P.112 Kuala Langat,4,1JPQT,Dr Ahmad Yunus Hairi,Ahmad Yunus bin Hairi,M,Malay,57,PN,004-PAS,PAS,011-PN,PN,52867,42.68286775391571,1,won
+2022-11-19,GE-15,Selangor,P.112 Kuala Langat,5,VRBCC,Ganeskumar,Ganeskumar a/l Murugesu,M,Indian,40,PRM,009-PRM,PRM,000-ALONE,ALONE,171,0.13805909898272242,6,lost_deposit
+2022-11-19,GE-15,Selangor,P.112 Kuala Langat,6,W194E,Manivanan Gowin,G. Manivannan a/l Gowindasamy,M,Indian,47,PH,078-PKR,PKR,007-PH,PH,51034,41.20297109639916,2,lost
+2022-11-19,GE-15,Selangor,P.113 Sepang,1,Z61EN,Shahrul Amri Mat Sari,Mohd Syahrul Amri bin Mat Sari,M,Malay,36,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,319,0.23123482294951253,5,lost_deposit
+2022-11-19,GE-15,Selangor,P.113 Sepang,2,2KQGY,Che Asmah Ibrahim,Che Asmah binti Ibrahim,F,Malay,59,PEJUANG,119-PEJUANG,PEJUANG,015-GTA,GTA,2337,1.6940306621724477,4,lost_deposit
+2022-11-19,GE-15,Selangor,P.113 Sepang,3,61DK7,Daud Leong,Mohd Daud Leong bin Abdullah,M,Chinese,57,PUR,116-PUR,PUR,000-ALONE,ALONE,264,0.19136675002718279,6,lost_deposit
+2022-11-19,GE-15,Selangor,P.113 Sepang,4,HV9SC,Aiman Athirah,Raj Munni binti Sabu (Aiman Athirah Al Jundi),M,Bumi Sabah,50,PH,046-AMANAH,AMANAH,007-PH,PH,56264,40.78431372549019,1,won
+2022-11-19,GE-15,Selangor,P.113 Sepang,5,9F3NG,M. Muneswaran,Muneswaran a/l Muthiah,M,Indian,47,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,194,0.140625566307854,7,lost_deposit
+2022-11-19,GE-15,Selangor,P.113 Sepang,6,RTT88,Datuk Seri Rina Harun,Rina binti Mohd Harun,F,Malay,49,PN,107-BERSATU,BERSATU,011-PN,PN,47315,34.29741582400058,2,lost
+2022-11-19,GE-15,Selangor,P.113 Sepang,7,CWSQS,Anuar Bin Basiran,Anuar bin Basiran,M,Malay,45,BN,001-UMNO,UMNO,001-BN,BN,31097,22.541408430285237,3,lost
+2022-11-19,GE-15,Selangor,P.113 Sepang,8,GAFT2,Nageswaran Ravi,Nageswaran a/l Ravi,M,Indian,33,PRM,009-PRM,PRM,000-ALONE,ALONE,165,0.11960421876698925,8,lost_deposit
+2022-11-19,GE-15,W.P. Kuala Lumpur,P.114 Kepong,1,KR5WB,Phaang Jing Fatt,Phaang Jing Fatt,M,Chinese,44,PN,026-GERAKAN,GERAKAN,011-PN,PN,2795,3.8648211396728382,3,lost_deposit
+2022-11-19,GE-15,W.P. Kuala Lumpur,P.114 Kepong,2,Q5VYM,Shaun Young,Shaun Young Shang Yi,M,Chinese,36,WARISAN,104-WARISAN,WARISAN,000-ALONE,ALONE,528,0.7300985909650299,5,lost_deposit
+2022-11-19,GE-15,W.P. Kuala Lumpur,P.114 Kepong,3,TKJ0X,Yap Zheng Hoe,Yap Zheng Hoe,M,Chinese,30,BN,003-MCA,MCA,001-BN,BN,3227,4.46217453228059,2,lost_deposit
+2022-11-19,GE-15,W.P. Kuala Lumpur,P.114 Kepong,4,R43TJ,Lim Lip Eng,Lim Lip Eng,M,Chinese,50,PH,021-DAP,DAP,007-PH,PH,64308,88.92268974958172,1,won
+2022-11-19,GE-15,W.P. Kuala Lumpur,P.114 Kepong,5,QESPP,Yee Poh Ping,Yee Poh Ping,M,Chinese,62,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,1461,2.020215987499827,4,lost_deposit
+2022-11-19,GE-15,W.P. Kuala Lumpur,P.115 Batu,1,Y1836,Siti Kasim,Siti Zabedah Kasim,F,Malay,59,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,653,0.7493172377389669,6,lost_deposit
+2022-11-19,GE-15,W.P. Kuala Lumpur,P.115 Batu,2,MP2KE,Tian Chua,Chua Tian Chang (Tian Chua),M,Chinese,59,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,4603,5.281940651320772,4,lost_deposit
+2022-11-19,GE-15,W.P. Kuala Lumpur,P.115 Batu,3,48NTJ,Prabakaran Parameswaran,Prabakaran a/l Parameswaran,M,Indian,26,PH,078-PKR,PKR,007-PH,PH,45716,52.459091639317926,1,won
+2022-11-19,GE-15,W.P. Kuala Lumpur,P.115 Batu,4,1EY5F,Zulkifli Fattah,Mohd Zulkifli bin Abdul Fattah,M,Malay,37,PRM,009-PRM,PRM,000-ALONE,ALONE,137,0.15720744497739425,9,lost_deposit
+2022-11-19,GE-15,W.P. Kuala Lumpur,P.115 Batu,5,4WM7R,Too Gao Lan,Stanley Too Cheng Huat (Too Gao Lan),M,Chinese,49,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,112,0.12851995501801575,10,lost_deposit
+2022-11-19,GE-15,W.P. Kuala Lumpur,P.115 Batu,6,8AAA1,Wan Azliana,Wan Azliana binti Wan Adnan,F,Malay,46,PEJUANG,119-PEJUANG,PEJUANG,015-GTA,GTA,849,0.9742271590204944,5,lost_deposit
+2022-11-19,GE-15,W.P. Kuala Lumpur,P.115 Batu,7,7PBWV,Ustaz Azhar Yahya,Azhar bin Yahya,M,Malay,47,PN,004-PAS,PAS,011-PN,PN,23475,26.937553071856424,2,lost
+2022-11-19,GE-15,W.P. Kuala Lumpur,P.115 Batu,8,BR0CA,Nathan Batu,Naganathan Pillai,M,Indian,54,WARISAN,104-WARISAN,WARISAN,000-ALONE,ALONE,575,0.6598122690657058,8,lost_deposit
+2022-11-19,GE-15,W.P. Kuala Lumpur,P.115 Batu,9,FFA6S,A. Kohilan Pillay,A. Kohilan Pillay a/l G. Appu,M,Indian,55,BN,002-MIC,MIC,001-BN,BN,10398,11.931700823904713,3,lost_deposit
+2022-11-19,GE-15,W.P. Kuala Lumpur,P.115 Batu,10,F5PEK,Nur Fathiah Syazwana @ Cleo,Nur Fathiah Syazwana binti Shaharuddin,F,Malay,28,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,628,0.7206297477795883,7,lost_deposit
+2022-11-19,GE-15,W.P. Kuala Lumpur,P.116 Wangsa Maju,1,N1DT9,Zahir Hassan,Zahir bin Hassan,M,Malay,63,PH,078-PKR,PKR,007-PH,PH,46031,49.634461936596935,1,won
+2022-11-19,GE-15,W.P. Kuala Lumpur,P.116 Wangsa Maju,2,9XW09,Wee Choo Keong,Wee Choo Keong,M,Chinese,69,WARISAN,104-WARISAN,WARISAN,000-ALONE,ALONE,576,0.6210912227733448,5,lost_deposit
+2022-11-19,GE-15,W.P. Kuala Lumpur,P.116 Wangsa Maju,3,C0Y4C,Shafei Abdullah,Mohd Shafei bin Abdullah,M,Malay,64,BN,001-UMNO,UMNO,001-BN,BN,19595,21.128962691395298,3,lost
+2022-11-19,GE-15,W.P. Kuala Lumpur,P.116 Wangsa Maju,4,JKCGW,Ravee Suntheralingam,Raveentheran a/l Suntheralingam,M,Indian,60,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,216,0.2329092085400043,6,lost_deposit
+2022-11-19,GE-15,W.P. Kuala Lumpur,P.116 Wangsa Maju,5,XKTJD,Ustazah Nuridah,Nuridah binti Mohd Salleh,F,Malay,61,PN,004-PAS,PAS,011-PN,PN,25335,27.31830925167134,2,lost
+2022-11-19,GE-15,W.P. Kuala Lumpur,P.116 Wangsa Maju,6,P12K5,Norzaila,Norzaila binti Arifin,F,Malay,48,PEJUANG,112-PUTRA,PUTRA,015-GTA,GTA,987,1.0642656890230753,4,lost_deposit
+2022-11-19,GE-15,W.P. Kuala Lumpur,P.117 Segambut,1,SERNE,Prabagaran,Prabagaran a/l Vythilingam,M,Indian,51,PN,026-GERAKAN,GERAKAN,011-PN,PN,8754,10.23907551230467,2,lost_deposit
+2022-11-19,GE-15,W.P. Kuala Lumpur,P.117 Segambut,2,WWEQQ,Daniel Ling Sia Chin,Daniel Ling Sia Chin,M,Chinese,58,BN,003-MCA,MCA,001-BN,BN,8304,9.712735098718069,3,lost_deposit
+2022-11-19,GE-15,W.P. Kuala Lumpur,P.117 Segambut,3,ZVB8Z,Hannah Yeoh,Hannah Yeoh Tseow Suan,F,Chinese,43,PH,021-DAP,DAP,007-PH,PH,68438,80.04818938897726,1,won
+2022-11-19,GE-15,W.P. Kuala Lumpur,P.118 Setiawangsa,1,391B8,Nik Nazmi Nik Ahmad,Nik Nazmi bin Nik Ahmad,M,Malay,40,PH,078-PKR,PKR,007-PH,PH,34434,46.056925793162485,1,won
+2022-11-19,GE-15,W.P. Kuala Lumpur,P.118 Setiawangsa,2,0A4T0,Bibi Sunita,Bibi Sunita binti Sakandar Khan,F,Malay,52,PEJUANG,119-PEJUANG,PEJUANG,015-GTA,GTA,953,1.274677652346049,4,lost_deposit
+2022-11-19,GE-15,W.P. Kuala Lumpur,P.118 Setiawangsa,3,3QTW9,Izudin Bin Ishak,Izudin bin Ishak,M,Malay,57,BN,001-UMNO,UMNO,001-BN,BN,16333,21.846075651383018,3,lost
+2022-11-19,GE-15,W.P. Kuala Lumpur,P.118 Setiawangsa,4,75GYJ,Stanley Lim Yen Tiong,Stanley Lim Yen Tiong,M,Chinese,56,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,282,0.37718688138676365,6,lost_deposit
+2022-11-19,GE-15,W.P. Kuala Lumpur,P.118 Setiawangsa,5,AK70V,Mejar Mior Rosli Tudm (B),Mior Rosli bin Mior Mohd Jaafar,M,Malay,66,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,492,0.6580707292279706,5,lost_deposit
+2022-11-19,GE-15,W.P. Kuala Lumpur,P.118 Setiawangsa,6,E0X34,Nurul Fadzilah Binti Kamaluddin,Nurul Fadzilah binti Kamaluddin,F,Malay,33,PN,107-BERSATU,BERSATU,011-PN,PN,22270,29.787063292493716,2,lost
+2022-11-19,GE-15,W.P. Kuala Lumpur,P.119 Titiwangsa,1,QP0WS,Dr. Rosni Adam,Rosni binti Adam,F,Malay,52,PN,004-PAS,PAS,011-PN,PN,14518,23.855532551184723,3,lost
+2022-11-19,GE-15,W.P. Kuala Lumpur,P.119 Titiwangsa,2,0TZ55,Khalid Abd Samad,Khalid bin Abdul Samad,M,Malay,65,PH,046-AMANAH,AMANAH,007-PH,PH,20410,33.53708633211739,2,lost
+2022-11-19,GE-15,W.P. Kuala Lumpur,P.119 Titiwangsa,3,DC8NT,Dato' Sri Khairuddin Bin Abu Hassan,Khairuddin bin Abu Hassan,M,Malay,55,PEJUANG,119-PEJUANG,PEJUANG,015-GTA,GTA,888,1.4591343783890367,4,lost_deposit
+2022-11-19,GE-15,W.P. Kuala Lumpur,P.119 Titiwangsa,4,PA0B7,Datuk Seri Johari Ghani,Johari bin Abdul Ghani,M,Malay,58,BN,001-UMNO,UMNO,001-BN,BN,25042,41.14824673830885,1,won
+2022-11-19,GE-15,W.P. Kuala Lumpur,P.120 Bukit Bintang,1,HEK5D,Edwin Chen,Edwin Chen Win Keong,M,Chinese,45,PN,107-BERSATU,BERSATU,011-PN,PN,4259,8.045564455191174,3,lost_deposit
+2022-11-19,GE-15,W.P. Kuala Lumpur,P.120 Bukit Bintang,2,G1GVR,Fong Kui Lun,Fong Kui Lun,M,Chinese,76,PH,021-DAP,DAP,007-PH,PH,43827,82.79242859301799,1,won
+2022-11-19,GE-15,W.P. Kuala Lumpur,P.120 Bukit Bintang,3,MW97P,Tan Teik Peng,Tan Teik Peng,M,Chinese,42,BN,003-MCA,MCA,001-BN,BN,4850,9.162006951790842,2,lost_deposit
+2022-11-19,GE-15,W.P. Kuala Lumpur,P.121 Lembah Pantai,1,R9Z9Z,Dr. Asmah,Noor Asmah binti Mohd Razalli,F,Malay,38,PEJUANG,112-PUTRA,PUTRA,015-GTA,GTA,810,1.0558698542638891,4,lost_deposit
+2022-11-19,GE-15,W.P. Kuala Lumpur,P.121 Lembah Pantai,2,33WF3,Haji Fauzi Abu Bakar,Fauzi bin Abu Bakar,M,Malay,62,PN,004-PAS,PAS,011-PN,PN,19098,24.89506478608859,3,lost
+2022-11-19,GE-15,W.P. Kuala Lumpur,P.121 Lembah Pantai,3,6HJHC,Fahmi Fadzil,Ahmad Fahmi bin Mohamed Fadzil,M,Malay,41,PH,078-PKR,PKR,007-PH,PH,35359,46.091977996193656,1,won
+2022-11-19,GE-15,W.P. Kuala Lumpur,P.121 Lembah Pantai,4,VQNC8,Ramlan Askolani,Ramlan bin Askolani,M,Malay,61,BN,001-UMNO,UMNO,001-BN,BN,21447,27.95708736345387,2,lost
+2022-11-19,GE-15,W.P. Kuala Lumpur,P.122 Seputeh,1,Z5BEH,Lee Kah Hing,Lee Kah Hing,M,Chinese,54,BN,003-MCA,MCA,001-BN,BN,6032,6.897340316051867,3,lost_deposit
+2022-11-19,GE-15,W.P. Kuala Lumpur,P.122 Seputeh,2,2K1GT,Wong Yee Yeng,Alan Wong Yee Yeng,M,Chinese,53,PN,026-GERAKAN,GERAKAN,011-PN,PN,6047,6.91449219017998,2,lost_deposit
+2022-11-19,GE-15,W.P. Kuala Lumpur,P.122 Seputeh,3,60QK3,Choy San Yeh,Lian Choy Ling (Choy San Yeh),F,Chinese,55,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,865,0.9890914080545201,5,lost_deposit
+2022-11-19,GE-15,W.P. Kuala Lumpur,P.122 Seputeh,4,HYCN5,Teresa Kok,Teresa Kok Suh Sim,F,Chinese,58,PH,021-DAP,DAP,007-PH,PH,73234,83.74002332654882,1,won
+2022-11-19,GE-15,W.P. Kuala Lumpur,P.122 Seputeh,5,9EDNC,Lee Wai Hong,Lee Wai Hong,M,Chinese,42,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,1276,1.4590527591648181,4,lost_deposit
+2022-11-19,GE-15,W.P. Kuala Lumpur,P.123 Cheras,1,015VP,Tan Kok Wai,Tan Kok Wai,M,Chinese,65,PH,021-DAP,DAP,007-PH,PH,60294,84.03813453014803,1,won
+2022-11-19,GE-15,W.P. Kuala Lumpur,P.123 Cheras,2,CW3QN,Chong Yew Chuan,Chong Yew Chuan,M,Chinese,39,BN,003-MCA,MCA,001-BN,BN,5606,7.813676023750453,3,lost_deposit
+2022-11-19,GE-15,W.P. Kuala Lumpur,P.123 Cheras,3,G9SSY,Ruby Chin,Chin Yoke Kheng (Ruby Chin),F,Chinese,41,PN,107-BERSATU,BERSATU,011-PN,PN,5846,8.148189446101526,2,lost_deposit
+2022-11-19,GE-15,W.P. Kuala Lumpur,P.124 Bandar Tun Razak,1,2EWWY,Dato' Seri Dr Wan Azizah Binti Wan Ismail,Wan Azizah binti Wan Ismail,F,Malay,70,PH,078-PKR,PKR,007-PH,PH,43476,46.73783339245976,1,won
+2022-11-19,GE-15,W.P. Kuala Lumpur,P.124 Bandar Tun Razak,2,KQFW7,Datuk Chew Yin Keen,Chew Yin Keen,M,Chinese,58,BN,003-MCA,MCA,001-BN,BN,15886,17.07786413820535,3,lost
+2022-11-19,GE-15,W.P. Kuala Lumpur,P.124 Bandar Tun Razak,3,XCY7K,Dato Kamarudin Jaffar,Kamarudin bin Jaffar,M,Malay,70,PN,107-BERSATU,BERSATU,011-PN,PN,33659,36.18430246933488,2,lost
+2022-11-19,GE-15,W.P. Putrajaya,P.125 Putrajaya,1,7KKJS,Tengku Adnan Bin Tengku Mansor,Tengku Adnan bin Tengku Mansor,M,Malay,72,BN,001-UMNO,UMNO,001-BN,BN,13692,37.365936195180524,2,lost
+2022-11-19,GE-15,W.P. Putrajaya,P.125 Putrajaya,2,Q55YG,Noraishah Mydin Binti Haji Abdul Aziz,Noraishah Mydin binti Abdul Aziz,F,Malay,47,PH,078-PKR,PKR,007-PH,PH,5988,16.341456758453184,3,lost
+2022-11-19,GE-15,W.P. Putrajaya,P.125 Putrajaya,3,TJW0S,Dato' Mohd Rosli Bin Ramli,Mohd Rosli bin Ramli,M,Malay,64,PEJUANG,036-BERJASA,BERJASA,015-GTA,GTA,878,2.3960920230330487,4,lost_deposit
+2022-11-19,GE-15,W.P. Putrajaya,P.125 Putrajaya,4,Y0J32,Samsudin Pkpkl,Samsudin bin Mohamad Fauzi,M,Malay,46,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,63,0.17192915427230304,5,lost_deposit
+2022-11-19,GE-15,W.P. Putrajaya,P.125 Putrajaya,5,CBKB3,Dr. Radzi Jidin (Drj),Mohd Radzi bin Md Jidin,M,Malay,45,PN,107-BERSATU,BERSATU,011-PN,PN,16002,43.670005185164975,1,won
+2022-11-19,GE-15,W.P. Putrajaya,P.125 Putrajaya,6,1E85B,Lim Fice Bee,Lim Fice Bee,F,Chinese,44,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,20,0.05458068389596922,6,lost_deposit
+2022-11-19,GE-15,Negeri Sembilan,P.126 Jelebu,1,4VY7M,Ahmad Fakhri,Ahmad Fakhri bin Abu Samah,M,Malay,41,PEJUANG,112-PUTRA,PUTRA,015-GTA,GTA,253,0.5580800282348789,4,lost_deposit
+2022-11-19,GE-15,Negeri Sembilan,P.126 Jelebu,2,APZK6,Jalaluddin Bin Alias,Jalaluddin bin Alias,M,Malay,59,BN,001-UMNO,UMNO,001-BN,BN,21805,48.098557374156265,1,won
+2022-11-19,GE-15,Negeri Sembilan,P.126 Jelebu,3,ZTA40,Dato' Zulkefly Omar,Zulkefly Mohamad bin Omar,M,Malay,58,PH,046-AMANAH,AMANAH,007-PH,PH,13680,30.176026823134954,2,lost
+2022-11-19,GE-15,Negeri Sembilan,P.126 Jelebu,4,89M9X,Zaharuddin Baba Samion,Zaharuddin bin Baba Samion,M,Malay,56,PN,107-BERSATU,BERSATU,011-PN,PN,9596,21.167335774473905,3,lost
+2022-11-19,GE-15,Negeri Sembilan,P.127 Jempol,1,BQAC6,Affendy Salleh,Muhammad Noraffendy bin Mohd Salleh,M,Malay,34,PN,107-BERSATU,BERSATU,011-PN,PN,16722,23.29131555122223,3,lost
+2022-11-19,GE-15,Negeri Sembilan,P.127 Jempol,2,YWCG7,Tan Sri Khalid Yunus,Mohd Khalid bin Mohd Yunus,M,Malay,79,PEJUANG,112-PUTRA,PUTRA,015-GTA,GTA,654,0.9109269447733129,4,lost_deposit
+2022-11-19,GE-15,Negeri Sembilan,P.127 Jempol,3,38BB4,Dato' Haji Shamshulkahar Bin Haji Mohd Deli,Shamshulkahar bin Mohd Deli,M,Malay,61,BN,001-UMNO,UMNO,001-BN,BN,30138,41.97785361097569,1,won
+2022-11-19,GE-15,Negeri Sembilan,P.127 Jempol,4,F50EF,Norwani Ahmat,Norwani binti Ahmat,F,Malay,46,PH,046-AMANAH,AMANAH,007-PH,PH,24281,33.819903893028766,2,lost
+2022-11-19,GE-15,Negeri Sembilan,P.128 Seremban,1,VVDYK,Loke Siew Fook,Anthony Loke Siew Fook,M,Chinese,45,PH,021-DAP,DAP,007-PH,PH,63920,51.84566344118291,1,won
+2022-11-19,GE-15,Negeri Sembilan,P.128 Seremban,2,JJPGR,Izzat Lesly,Mohd Izzat bin Lesly,M,Malay,33,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,373,0.30254118372279765,5,lost_deposit
+2022-11-19,GE-15,Negeri Sembilan,P.128 Seremban,3,P0CK1,Felicia Wong,Felicia Wong Yin Tin,F,Chinese,43,BN,003-MCA,MCA,001-BN,BN,24584,19.940140645150827,3,lost
+2022-11-19,GE-15,Negeri Sembilan,P.128 Seremban,4,SE2NA,Sjn (B) Mohamad Jani,Mohamad Jani bin Ismail,M,Malay,60,PEJUANG,119-PEJUANG,PEJUANG,015-GTA,GTA,1336,1.0836327652913074,4,lost_deposit
+2022-11-19,GE-15,Negeri Sembilan,P.128 Seremban,5,WVRQK,Haji Fadli Che Me,Mohd Fadli bin Che Me,M,Malay,50,PN,004-PAS,PAS,011-PN,PN,33076,26.82802196465216,2,lost
+2022-11-19,GE-15,Negeri Sembilan,P.129 Kuala Pilah,1,1Z33M,Kamarulzaman Kamdias,Kamarulzaman bin Kamdias,M,Malay,56,PEJUANG,112-PUTRA,PUTRA,015-GTA,GTA,406,0.834326579261025,4,lost_deposit
+2022-11-19,GE-15,Negeri Sembilan,P.129 Kuala Pilah,2,PH7HA,Eddin Syazlee,Eddin Syazlee bin Shith,M,Malay,48,PN,107-BERSATU,BERSATU,011-PN,PN,11560,23.755702601619333,3,lost
+2022-11-19,GE-15,Negeri Sembilan,P.129 Kuala Pilah,3,09ESW,Azman Bin Idris,Azman bin Idris,M,Malay,54,WARISAN,104-WARISAN,WARISAN,000-ALONE,ALONE,333,0.6843121943200032,5,lost_deposit
+2022-11-19,GE-15,Negeri Sembilan,P.129 Kuala Pilah,4,F0641,Nor Azman Mohamad,Nor Azman bin Mohamad,M,Malay,43,PH,078-PKR,PKR,007-PH,PH,14940,30.701574123546095,2,lost
+2022-11-19,GE-15,Negeri Sembilan,P.129 Kuala Pilah,5,FTA8S,Dato' Hj Adnan Hj Abu Hassan,Adnan bin Abu Hassan,M,Malay,52,BN,001-UMNO,UMNO,001-BN,BN,21423,44.02408450125355,1,won
+2022-11-19,GE-15,Negeri Sembilan,P.130 Rasah,1,SYXKK,Ng Kian Nam,Ng Kian Nam,M,Chinese,43,BN,003-MCA,MCA,001-BN,BN,19447,16.247671086380763,2,lost
+2022-11-19,GE-15,Negeri Sembilan,P.130 Rasah,2,700M0,David Choong,Choong Vee Hing (David Choong),M,Chinese,50,PN,026-GERAKAN,GERAKAN,011-PN,PN,18810,15.715467328370556,3,lost
+2022-11-19,GE-15,Negeri Sembilan,P.130 Rasah,3,4ZPSZ,Cha Kee Chin,Cha Kee Chin,M,Chinese,48,PH,021-DAP,DAP,007-PH,PH,81434,68.03686158524869,1,won
+2022-11-19,GE-15,Negeri Sembilan,P.131 Rembau,1,69NB5,Hj. Nazree Yunus,Mohd Nazree bin Mohd Yunus,M,Malay,38,PN,107-BERSATU,BERSATU,011-PN,PN,21875,19.98885193172265,3,lost
+2022-11-19,GE-15,Negeri Sembilan,P.131 Rembau,2,P455C,Tok Mat,Mohamad bin Hasan (Tok Mat),M,Malay,66,BN,001-UMNO,UMNO,001-BN,BN,53075,48.49866588691107,1,won
+2022-11-19,GE-15,Negeri Sembilan,P.131 Rembau,3,74TYE,Jufitri Joha,Jufitri bin Joha,M,Malay,43,PH,078-PKR,PKR,007-PH,PH,33178,30.3172630578603,2,lost
+2022-11-19,GE-15,Negeri Sembilan,P.131 Rembau,4,AJH0Q,Cikgu Tina,Tinagaran a/l Subramaniam,M,Indian,45,PSM,074-PSM,PSM,000-ALONE,ALONE,779,0.7118315727914032,4,lost_deposit
+2022-11-19,GE-15,Negeri Sembilan,P.131 Rembau,5,E0730,Ramly Bin Awalludin,Ramly bin Awalludin,M,Malay,67,PEJUANG,119-PEJUANG,PEJUANG,015-GTA,GTA,529,0.48338755071457284,5,lost_deposit
+2022-11-19,GE-15,Negeri Sembilan,P.132 Port Dickson,1,K3HF1,Cikgu Haji Rafiei Mustapha,Rafiei bin Mustapha,M,Malay,69,PN,004-PAS,PAS,011-PN,PN,18235,22.7411610650371,3,lost
+2022-11-19,GE-15,Negeri Sembilan,P.132 Port Dickson,2,V2NT3,Datuk P.Kamalanathan,Kamalanathan a/l Panchanathan,M,Indian,57,BN,002-MIC,MIC,001-BN,BN,18412,22.96190060485128,2,lost
+2022-11-19,GE-15,Negeri Sembilan,P.132 Port Dickson,3,HDX59,Rani Kulup,Abdul Rani bin Kulup Abdullah,M,Malay,67,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,441,0.5499781754692274,5,lost_deposit
+2022-11-19,GE-15,Negeri Sembilan,P.132 Port Dickson,4,MVK7J,Dr. Ahmad Idham Bin Ahmad Nadzri,Ahmad Idham bin Ahmad Nadzri,M,Malay,51,PEJUANG,122-GB,GB,015-GTA,GTA,748,0.9328428010226351,4,lost_deposit
+2022-11-19,GE-15,Negeri Sembilan,P.132 Port Dickson,5,YNVXC,Dato' Seri Aminuddin Bin Harun,Aminuddin bin Harun,M,Malay,55,PH,078-PKR,PKR,007-PH,PH,42349,52.81411735361975,1,won
+2022-11-19,GE-15,Negeri Sembilan,P.133 Tampin,1,PZNKY,Mohd Isam Bin Mohd Isa,Mohd Isam bin Mohd Isa,M,Malay,53,BN,001-UMNO,UMNO,001-BN,BN,23283,38.14821490013599,1,won
+2022-11-19,GE-15,Negeri Sembilan,P.133 Tampin,2,R999V,Ustaz Zamani Ibrahim,Zamani bin Ibrahim,M,Malay,58,PEJUANG,036-BERJASA,BERJASA,015-GTA,GTA,781,1.279635606966723,4,lost_deposit
+2022-11-19,GE-15,Negeri Sembilan,P.133 Tampin,3,HYR3J,Mejar (B) Abdul Halim,Abdul Halim bin Abu Bakar,M,Malay,56,PN,004-PAS,PAS,011-PN,PN,14962,24.51460685203087,3,lost
+2022-11-19,GE-15,Negeri Sembilan,P.133 Tampin,4,HNT1Y,Faiz Fadzil,Muhammad Faiz bin Fadzil,M,Malay,45,PH,046-AMANAH,AMANAH,007-PH,PH,22007,36.057542640866416,2,lost
+2022-11-19,GE-15,Melaka,P.134 Masjid Tanah,1,VPZC4,Abdul Hakim Bin Abdul Wahid,Abdul Hakim bin Abdul Wahid,M,Malay,37,BN,001-UMNO,UMNO,001-BN,BN,21193,38.70938281977753,2,lost
+2022-11-19,GE-15,Melaka,P.134 Masjid Tanah,2,QE3PJ,Mas Ermieyati,Mas Ermieyati binti Samsudin,F,Malay,46,PN,107-BERSATU,BERSATU,011-PN,PN,25604,46.76615097992657,1,won
+2022-11-19,GE-15,Melaka,P.134 Masjid Tanah,3,Z4NED,Mutalib Uthman,Mutalib bin Uthman,M,Malay,59,MUDA,120-MUDA,MUDA,007-PH,PH,7445,13.598421888984275,3,lost
+2022-11-19,GE-15,Melaka,P.134 Masjid Tanah,4,2JBGP,Handrawirawan Bin Abu Bakar,Handrawirawan bin Abu Bakar,M,Malay,44,PEJUANG,119-PEJUANG,PEJUANG,015-GTA,GTA,507,0.9260443113116221,4,lost_deposit
+2022-11-19,GE-15,Melaka,P.135 Alor Gajah,1,K47F5,Shahril Hamdan,Shahril Sufian bin Hamdan,M,Malay,37,BN,001-UMNO,UMNO,001-BN,BN,27288,37.38082191780822,2,lost
+2022-11-19,GE-15,Melaka,P.135 Alor Gajah,2,03YFA,Adly Zahari,Adly bin Zahari,M,Malay,51,PH,046-AMANAH,AMANAH,007-PH,PH,28178,38.6,1,won
+2022-11-19,GE-15,Melaka,P.135 Alor Gajah,3,ZNGCP,Pak Wan (Datuk Seri Mohd Redzuan Bin Md Yusof),Mohd Redzuan bin Md Yusof,M,Malay,65,PN,107-BERSATU,BERSATU,011-PN,PN,17211,23.576712328767123,3,lost
+2022-11-19,GE-15,Melaka,P.135 Alor Gajah,4,601JZ,Muhammad Nazriq Abdul Rahman,Muhammad Nazriq bin Abdul Rahman,M,Malay,36,PEJUANG,036-BERJASA,BERJASA,015-GTA,GTA,323,0.4424657534246575,4,lost_deposit
+2022-11-19,GE-15,Melaka,P.136 Tangga Batu,1,9DQN8,Ghazali Bin Abu,Ghazali bin Abu,M,Malay,62,PEJUANG,112-PUTRA,PUTRA,015-GTA,GTA,702,0.7628196072891651,4,lost_deposit
+2022-11-19,GE-15,Melaka,P.136 Tangga Batu,2,CVDQH,Shahril Mahmood,Mohammad Shahril Mahmood,M,Malay,40,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,267,0.2901322437980158,5,lost_deposit
+2022-11-19,GE-15,Melaka,P.136 Tangga Batu,3,FP6HK,Bakri Jamaluddin,Bakri bin Jamaluddin,M,Malay,58,PN,004-PAS,PAS,011-PN,PN,37406,40.64676670976996,1,won
+2022-11-19,GE-15,Melaka,P.136 Tangga Batu,4,EZG3X,Prof. Madya Rusnah Aluai,Rusnah binti Aluai,F,Malay,60,PH,078-PKR,PKR,007-PH,PH,28557,31.03111043498104,2,lost
+2022-11-19,GE-15,Melaka,P.136 Tangga Batu,5,H8CTQ,Datuk Lim Ban Hong,Lim Ban Hong,M,Chinese,45,BN,003-MCA,MCA,001-BN,BN,25095,27.269171004161823,3,lost
+2022-11-19,GE-15,Melaka,P.137 Hang Tuah Jaya,1,G93ST,Adam Adli,Adam Adli bin Abd Halim,M,Malay,33,PH,078-PKR,PKR,007-PH,PH,39418,41.718349808437225,1,won
+2022-11-19,GE-15,Melaka,P.137 Hang Tuah Jaya,2,KPSW3,Sheikh Ikhzan,Sheikh Ikhzan bin Sheikh Salleh,M,Malay,40,PEJUANG,119-PEJUANG,PEJUANG,015-GTA,GTA,739,0.7821264525961519,4,lost_deposit
+2022-11-19,GE-15,Melaka,P.137 Hang Tuah Jaya,3,Q4FYC,Mohd Ridhwan Bin Mohd Ali,Mohd Ridhwan bin Mohd Ali,M,Malay,36,BN,001-UMNO,UMNO,001-BN,BN,30780,32.57625468323349,2,lost
+2022-11-19,GE-15,Melaka,P.137 Hang Tuah Jaya,4,PHJP5,Mohd Azrudin Bin Md Idris,Mohd Azrudin bin Md Idris,M,Malay,41,PN,107-BERSATU,BERSATU,011-PN,PN,23549,24.923269055733126,3,lost
+2022-11-19,GE-15,Melaka,P.138 Kota Melaka,1,B74TX,Khoo Poay Tiong,Khoo Poay Tiong,M,Chinese,52,PH,021-DAP,DAP,007-PH,PH,73995,60.07014068728132,1,won
+2022-11-19,GE-15,Melaka,P.138 Kota Melaka,2,TJ60N,Kon Qi Yao,Kon Qi Yao,M,Chinese,41,BN,003-MCA,MCA,001-BN,BN,20686,16.793174272006233,3,lost
+2022-11-19,GE-15,Melaka,P.138 Kota Melaka,3,K36KR,Dato' Dr. Norazlan,Norazlanshah bin Hazali,M,Malay,42,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,925,0.7509274969354041,4,lost_deposit
+2022-11-19,GE-15,Melaka,P.138 Kota Melaka,4,XZW2Y,Suhaime Borhan,Suhaime bin Borhan,M,Malay,42,PN,026-GERAKAN,GERAKAN,011-PN,PN,27575,22.385757543777043,2,lost
+2022-11-19,GE-15,Melaka,P.139 Jasin,1,G3KF8,Datuk Harun,Harun bin Mohamed,M,Malay,52,PH,046-AMANAH,AMANAH,007-PH,PH,21674,27.931132245676437,3,lost
+2022-11-19,GE-15,Melaka,P.139 Jasin,2,K2GA2,Roslan Bin Ahmad,Roslan bin Ahmad,M,Malay,55,BN,001-UMNO,UMNO,001-BN,BN,27571,35.53055491120905,2,lost
+2022-11-19,GE-15,Melaka,P.139 Jasin,3,1DJ57,Mohd Daud Nasir,Daud bin Md. Nasir,M,Malay,62,PEJUANG,119-PEJUANG,PEJUANG,015-GTA,GTA,460,0.5927987834738009,4,lost_deposit
+2022-11-19,GE-15,Melaka,P.139 Jasin,4,6GWH8,Tuan Guru Zulkifli Ismail,Zulkifli bin Ismail,M,Malay,56,PN,004-PAS,PAS,011-PN,PN,27893,35.94551405964071,1,won
+2022-11-19,GE-15,Johor,P.140 Segamat,1,4V87G,Syed Hairoul,Syed Hairoul Faizey bin Syed Ali,M,Malay,49,PEJUANG,112-PUTRA,PUTRA,015-GTA,GTA,1062,2.0966595593461266,4,lost_deposit
+2022-11-19,GE-15,Johor,P.140 Segamat,2,26A05,Tan Sri M Ramasamy,Ramasamy a/l Muthusamy,M,Indian,58,BN,002-MIC,MIC,001-BN,BN,17768,35.078575377082835,2,lost
+2022-11-19,GE-15,Johor,P.140 Segamat,3,88Y9S,R. Yuneswaran,Yuneswaran a/l Ramaraj,M,Indian,35,PH,078-PKR,PKR,007-PH,PH,23437,46.27063097212351,1,won
+2022-11-19,GE-15,Johor,P.140 Segamat,4,BPMC2,Poobalan Ponnusamy,Poobalan a/l Ponnusamy,M,Indian,49,PN,107-BERSATU,BERSATU,011-PN,PN,8385,16.554134091447526,3,lost
+2022-11-19,GE-15,Johor,P.141 Sekijang,1,F4AEB,Md Salleheen Bin Mohamad,Md Salleheen bin Mohamad,M,Malay,42,BN,001-UMNO,UMNO,001-BN,BN,17207,35.67178721728134,2,lost
+2022-11-19,GE-15,Johor,P.141 Sekijang,2,SS2QA,Uzzair Bin Ismail,Uzzair bin Ismail,M,Malay,39,PN,107-BERSATU,BERSATU,011-PN,PN,11612,24.072807181209445,3,lost
+2022-11-19,GE-15,Johor,P.141 Sekijang,3,JJ0GM,Dr. Mohd Zohar,Mohd Zohar bin Ahmad,M,Malay,50,WARISAN,104-WARISAN,WARISAN,000-ALONE,ALONE,339,0.7027800236333106,4,lost_deposit
+2022-11-19,GE-15,Johor,P.141 Sekijang,4,MX9SH,Dr. Zaliha Mustafa,Zaliha binti Mustafa,F,Malay,58,PH,078-PKR,PKR,007-PH,PH,18941,39.26653813462694,1,won
+2022-11-19,GE-15,Johor,P.141 Sekijang,5,NZPJX,Saiful Faizal,Mohd Saiful Faizal bin Abdul Halim,M,Malay,44,PEJUANG,112-PUTRA,PUTRA,015-GTA,GTA,138,0.28608744324895824,5,lost_deposit
+2022-11-19,GE-15,Johor,P.142 Labis,1,SDCN6,Alvin Chang,Alvin Chang Teck Kiam,M,Chinese,48,PN,107-BERSATU,BERSATU,011-PN,PN,5312,15.288530723845156,3,lost
+2022-11-19,GE-15,Johor,P.142 Labis,2,GZSAT,Pang Hok Liong,Pang Hok Liong,M,Chinese,65,PH,021-DAP,DAP,007-PH,PH,16133,46.43258022737085,1,won
+2022-11-19,GE-15,Johor,P.142 Labis,3,18CNY,Chua Tee Yong,Chua Tee Yong,M,Chinese,45,BN,003-MCA,MCA,001-BN,BN,13300,38.278889048783995,2,lost
+2022-11-19,GE-15,Johor,P.143 Pagoh,1,C5D0D,Datuk Seri Razali Ibrahim,Razali bin Ibrahim,M,Malay,52,BN,001-UMNO,UMNO,001-BN,BN,14426,26.522770311264733,3,lost
+2022-11-19,GE-15,Johor,P.143 Pagoh,2,20SC1,Tan Sri Muhyiddin Bin Md Yasin,Muhyiddin bin Md Yasin,M,Malay,75,PN,107-BERSATU,BERSATU,011-PN,PN,24986,45.93774705374051,1,won
+2022-11-19,GE-15,Johor,P.143 Pagoh,3,WV2QF,Iskandar Shah,Iskandar Shah bin Abdul Rahman,M,Malay,41,PH,078-PKR,PKR,007-PH,PH,14979,27.539482634994762,2,lost
+2022-11-19,GE-15,Johor,P.144 Ledang,1,V30YY,Syed Ibrahim Syed Noh,Syed Ibrahim bin Syed Noh,M,Malay,58,PH,078-PKR,PKR,007-PH,PH,33650,41.90170221773942,1,won
+2022-11-19,GE-15,Johor,P.144 Ledang,2,5689G,Zainal Bahrom,Zainal Bahrom bin Abdul Kadir,M,Malay,65,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,75,0.09339160969778476,6,lost_deposit
+2022-11-19,GE-15,Johor,P.144 Ledang,3,038F6,Cikgu Yunus,Yunus bin Mustakim,M,Malay,64,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,140,0.1743310047691982,5,lost_deposit
+2022-11-19,GE-15,Johor,P.144 Ledang,4,3PEW1,Rafidah Ridwan,Rafidah binti Ridwan,F,Malay,44,PEJUANG,119-PEJUANG,PEJUANG,015-GTA,GTA,269,0.33496457344938796,4,lost_deposit
+2022-11-19,GE-15,Johor,P.144 Ledang,5,1WASJ,Hamim Samuri,Hamim bin Samuri,M,Malay,64,BN,001-UMNO,UMNO,001-BN,BN,23881,29.737133749237305,2,lost
+2022-11-19,GE-15,Johor,P.144 Ledang,6,744YA,Zaidi Hj Majid,Zaidi bin Abdul Majid,M,Malay,52,PN,107-BERSATU,BERSATU,011-PN,PN,22292,27.758476845106898,3,lost
+2022-11-19,GE-15,Johor,P.145 Bakri,1,AHV0K,R. S. Chelva,Chelvarajan a/l Suppiah,M,Indian,67,PN,107-BERSATU,BERSATU,011-PN,PN,17222,23.546622914957617,3,lost
+2022-11-19,GE-15,Johor,P.145 Bakri,2,K6MAT,Chris Lee Ching Yong,Chris Lee Ching Yong,M,Chinese,46,BN,003-MCA,MCA,001-BN,BN,17382,23.765381460213288,2,lost
+2022-11-19,GE-15,Johor,P.145 Bakri,3,NSG87,Tan Hong Pin,Tan Hong Pin,M,Chinese,41,PH,021-DAP,DAP,007-PH,PH,36636,50.090237899917966,1,won
+2022-11-19,GE-15,Johor,P.145 Bakri,4,DZH2W,Haron Jaffar,Haron bin Jaffar,M,Malay,60,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,1900,2.5977577249111294,4,lost_deposit
+2022-11-19,GE-15,Johor,P.146 Muar,1,HD755,Mohd Helmy Abd.Latif,Mohd Helmy bin Abdul Latif,M,Malay,41,BN,001-UMNO,UMNO,001-BN,BN,14581,27.42954964445615,3,lost
+2022-11-19,GE-15,Johor,P.146 Muar,2,MYNG7,Ustaz Abdullah Husin,Abdullah bin Husin,M,Malay,61,PN,004-PAS,PAS,011-PN,PN,18616,35.02012867301253,2,lost
+2022-11-19,GE-15,Johor,P.146 Muar,3,8SS82,Syed Saddiq,Syed Saddiq bin Syed Abdul Rahman,M,Malay,30,MUDA,120-MUDA,MUDA,007-PH,PH,19961,37.550321682531326,1,won
+2022-11-19,GE-15,Johor,P.147 Parit Sulong,1,NTH3M,Noraini Ahmad,Noraini binti Ahmad,F,Malay,55,BN,001-UMNO,UMNO,001-BN,BN,25740,40.886996854846394,1,won
+2022-11-19,GE-15,Johor,P.147 Parit Sulong,2,TCATT,Dr Karim,Karim bin Deraman,M,Malay,64,PN,004-PAS,PAS,011-PN,PN,23719,37.67671633256028,2,lost
+2022-11-19,GE-15,Johor,P.147 Parit Sulong,3,MTX7E,Mohd Faizal Dolah,Mohd Faizal bin Dolah,M,Malay,36,PH,046-AMANAH,AMANAH,007-PH,PH,13495,21.436286812593323,3,lost
+2022-11-19,GE-15,Johor,P.148 Ayer Hitam,1,PEF78,Wee Ka Siong,Wee Ka Siong,M,Chinese,54,BN,003-MCA,MCA,001-BN,BN,18911,40.501584853936436,1,won
+2022-11-19,GE-15,Johor,P.148 Ayer Hitam,2,6ZNRQ,Sheikh Omar,Sheikh Omar bin Bagharib Ali,M,Malay,37,PH,021-DAP,DAP,007-PH,PH,15948,34.155744024672316,2,lost
+2022-11-19,GE-15,Johor,P.148 Ayer Hitam,3,R8K9Q,Syafiq Aziz,Muhammad Syafiq bin A. Aziz,M,Malay,34,PN,107-BERSATU,BERSATU,011-PN,PN,11833,25.34267112139125,3,lost
+2022-11-19,GE-15,Johor,P.149 Sri Gading,1,G2XF4,Cikgu Huda,Aminolhuda bin Hassan,M,Malay,63,PH,046-AMANAH,AMANAH,007-PH,PH,23242,37.937451031600936,1,won
+2022-11-19,GE-15,Johor,P.149 Sri Gading,2,VP9C0,Zanariyah,Zanariyah binti Abdul Hamid,F,Malay,52,PN,004-PAS,PAS,011-PN,PN,18475,30.156372420997652,3,lost
+2022-11-19,GE-15,Johor,P.149 Sri Gading,3,Z3ZE9,Datuk Lassim Burhan,Mohd Lassim bin Burhan,M,Malay,42,BN,001-UMNO,UMNO,001-BN,BN,19242,31.40833115696004,2,lost
+2022-11-19,GE-15,Johor,P.149 Sri Gading,4,GJ1HW,Mahdzir Bin Ibrahim,Mahdzir bin Ibrahim,M,Malay,46,PEJUANG,119-PEJUANG,PEJUANG,015-GTA,GTA,305,0.49784539044136855,4,lost_deposit
+2022-11-19,GE-15,Johor,P.150 Batu Pahat,1,402M7,Onn Bin Abu Bakar,Onn bin Abu Bakar,M,Malay,59,PH,078-PKR,PKR,007-PH,PH,45242,45.47208876917201,1,won
+2022-11-19,GE-15,Johor,P.150 Batu Pahat,2,PA0MS,Zahari Bin Osman,Zahari bin Osman,M,Malay,59,PRM,009-PRM,PRM,000-ALONE,ALONE,263,0.2643375479928438,5,lost_deposit
+2022-11-19,GE-15,Johor,P.150 Batu Pahat,3,2HNGJ,Ishak Siraj,Ishak bin Siraj (Mohd Farid bin Siraj),M,Malay,64,BN,001-UMNO,UMNO,001-BN,BN,24309,24.432629103262506,3,lost
+2022-11-19,GE-15,Johor,P.150 Batu Pahat,4,E9V4R,Nizam Bashir,Nizam Bashir bin Abdul Kariem Bashir,M,Malay,49,PEJUANG,119-PEJUANG,PEJUANG,015-GTA,GTA,410,0.41208515086336867,4,lost_deposit
+2022-11-19,GE-15,Johor,P.150 Batu Pahat,5,TM7QF,Dato' Rashid Hasnon,Mohd Rashid bin Hasnon,M,Malay,62,PN,107-BERSATU,BERSATU,011-PN,PN,29270,29.418859428709272,2,lost
+2022-11-19,GE-15,Johor,P.151 Simpang Renggam,1,SY7KF,Dr Maszlee Malik,Maszlee bin Malik,M,Malay,48,PH,078-PKR,PKR,007-PH,PH,16491,37.36828986426775,2,lost
+2022-11-19,GE-15,Johor,P.151 Simpang Renggam,2,5ZBJV,Kamal,Kamal bin Kusmin,M,Malay,40,PEJUANG,112-PUTRA,PUTRA,015-GTA,GTA,251,0.5687611882803472,4,lost_deposit
+2022-11-19,GE-15,Johor,P.151 Simpang Renggam,3,9D1N4,Fazrul Kamat,Mohd Fazrul bin Kamat,M,Malay,36,PN,107-BERSATU,BERSATU,011-PN,PN,9077,20.568307992114388,3,lost
+2022-11-19,GE-15,Johor,P.151 Simpang Renggam,4,6E476,Hasni Bin Mohammad,Hasni bin Mohammad,M,Malay,63,BN,001-UMNO,UMNO,001-BN,BN,18312,41.494640955337516,1,won
+2022-11-19,GE-15,Johor,P.152 Kluang,1,62E52,Gan Ping Sieu,Gan Ping Sieu,M,Chinese,56,BN,003-MCA,MCA,001-BN,BN,23395,24.466382907520316,2,lost
+2022-11-19,GE-15,Johor,P.152 Kluang,2,EXE3H,Wong Shu Qi,Wong Shu Qi,F,Chinese,39,PH,021-DAP,DAP,007-PH,PH,49801,52.0816557032451,1,won
+2022-11-19,GE-15,Johor,P.152 Kluang,3,CTQQD,Ir. U. Ramendran,Ramendran a/l Ulaganathan,M,Indian,52,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,404,0.42250133338910906,4,lost_deposit
+2022-11-19,GE-15,Johor,P.152 Kluang,4,G8DSP,Dzulkarnain Bin Alias,Dzulkarnain bin Alias,M,Malay,53,PN,107-BERSATU,BERSATU,011-PN,PN,22021,23.029460055845476,3,lost
+2022-11-19,GE-15,Johor,P.153 Sembrong,1,HWAMS,Hishammuddin Hussein,Hishammuddin bin Hussein,M,Malay,61,BN,001-UMNO,UMNO,001-BN,BN,22572,55.14781333984852,1,won
+2022-11-19,GE-15,Johor,P.153 Sembrong,2,KP3VZ,Hasni Abas,Hasni bin Abas,M,Malay,60,PH,078-PKR,PKR,007-PH,PH,11692,28.565844124114342,2,lost
+2022-11-19,GE-15,Johor,P.153 Sembrong,3,Q3SY8,Joe Aziz,Aziz bin Ismail (Joe Aziz),M,Malay,38,PN,107-BERSATU,BERSATU,011-PN,PN,6666,16.28634253603714,3,lost
+2022-11-19,GE-15,Johor,P.154 Mersing,1,THG0H,Zulaikha Zaidi,Fatin Zulaikha binti Zaidi,F,Malay,29,PH,021-DAP,DAP,007-PH,PH,6813,14.524794269389844,3,lost
+2022-11-19,GE-15,Johor,P.154 Mersing,2,Y9G4P,Ismail Bin Don,Ismail bin Don,M,Malay,54,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,89,0.18974118449665286,5,lost_deposit
+2022-11-19,GE-15,Johor,P.154 Mersing,3,XZ62T,Islahuddin Abas,Muhammad Islahuddin bin Abas,M,Malay,34,PN,107-BERSATU,BERSATU,011-PN,PN,21066,44.91109879333134,1,won
+2022-11-19,GE-15,Johor,P.154 Mersing,4,1CW53,Nurfatimah Ibrahim,Nurfatimah binti Ibrahim,F,Malay,33,PEJUANG,119-PEJUANG,PEJUANG,015-GTA,GTA,209,0.4455719950539377,4,lost_deposit
+2022-11-19,GE-15,Johor,P.154 Mersing,5,3G8HB,Abd Latif Bandi,Abd Latif bin Bandi,M,Malay,56,BN,001-UMNO,UMNO,001-BN,BN,18729,39.92879375772822,2,lost
+2022-11-19,GE-15,Johor,P.155 Tenggara,1,4TJ7C,Manndzri Bin Nasib,Manndzri bin Nasib,M,Malay,42,BN,001-UMNO,UMNO,001-BN,BN,21185,41.25608568646543,1,won
+2022-11-19,GE-15,Johor,P.155 Tenggara,2,8889N,Azhar Palal,Md Azhar bin Palal,M,Malay,57,PEJUANG,112-PUTRA,PUTRA,015-GTA,GTA,353,0.6874391431353457,4,lost_deposit
+2022-11-19,GE-15,Johor,P.155 Tenggara,3,H70TF,Kolonel Nazari,Mohd Nazari bin Mokhtar,M,Malay,61,PN,004-PAS,PAS,011-PN,PN,18194,35.43135345666991,2,lost
+2022-11-19,GE-15,Johor,P.155 Tenggara,4,BNYBY,Zuraidah Chedah,Zuraidah Zainab binti Mohd Zain,F,Malay,53,PH,078-PKR,PKR,007-PH,PH,11618,22.62512171372931,3,lost
+2022-11-19,GE-15,Johor,P.156 Kota Tinggi,1,5VHT8,Khaled Nordin,Mohamed Khaled bin Nordin,M,Malay,64,BN,001-UMNO,UMNO,001-BN,BN,25410,53.68347664420172,1,won
+2022-11-19,GE-15,Johor,P.156 Kota Tinggi,2,F3ME7,Ridhwan Rasman,Mohamad Ridhwan bin Rasman,M,Malay,28,PN,107-BERSATU,BERSATU,011-PN,PN,17020,35.95799970422327,2,lost
+2022-11-19,GE-15,Johor,P.156 Kota Tinggi,3,7JXJN,Onn Jaafar,Onn bin Jaafar,M,Malay,59,PH,046-AMANAH,AMANAH,007-PH,PH,4903,10.35852365157501,3,lost_deposit
+2022-11-19,GE-15,Johor,P.157 Pengerang,1,JHAGG,Cikgu Imam Nizar,Fairulnizar bin Rahmat,M,Malay,43,PN,107-BERSATU,BERSATU,011-PN,PN,16728,39.98087954110899,2,lost
+2022-11-19,GE-15,Johor,P.157 Pengerang,2,EE9Q7,Azalina Othman Said,Azalina binti Othman Said,F,Malay,59,BN,001-UMNO,UMNO,001-BN,BN,21738,51.95506692160612,1,won
+2022-11-19,GE-15,Johor,P.157 Pengerang,3,NTHD6,Che Zakaria Bin Mohd Salleh,Che Zakaria bin Mohd Salleh,M,Malay,61,PH,046-AMANAH,AMANAH,007-PH,PH,3374,8.064053537284895,3,lost_deposit
+2022-11-19,GE-15,Johor,P.158 Tebrau,1,BFR18,Jimmy Puah Wee Tse,Jimmy Puah Wee Tse,M,Chinese,46,PH,078-PKR,PKR,007-PH,PH,83959,49.98600898996815,1,won
+2022-11-19,GE-15,Johor,P.158 Tebrau,2,NZ0JS,Mohamad Isa Bin Mohamad Basir,Mohamad Isa bin Mohamad Basir,M,Malay,44,PN,107-BERSATU,BERSATU,011-PN,PN,53239,31.696484386628164,2,lost
+2022-11-19,GE-15,Johor,P.158 Tebrau,3,7EEPM,Nicole Wong,Nicole Wong Siaw Ting,F,Chinese,42,BN,003-MCA,MCA,001-BN,BN,30767,18.317506623403684,3,lost
+2022-11-19,GE-15,Johor,P.159 Pasir Gudang,1,SCPN2,Noor Azleen Ambros,Noor Azleen bin Ambros,M,Malay,37,BN,001-UMNO,UMNO,001-BN,BN,37369,25.03282422293676,3,lost
+2022-11-19,GE-15,Johor,P.159 Pasir Gudang,2,H3J6Q,Hassan Abdul Karim,Hassan bin Abdul Karim,M,Malay,71,PH,078-PKR,PKR,007-PH,PH,71233,47.71771168274383,1,won
+2022-11-19,GE-15,Johor,P.159 Pasir Gudang,3,WTCQB,Mohamad Farid Bin Abdul Razak,Mohamad Farid bin Abdul Razak,M,Malay,38,PN,107-BERSATU,BERSATU,011-PN,PN,39675,26.57757234726688,2,lost
+2022-11-19,GE-15,Johor,P.159 Pasir Gudang,4,082SM,Mohammad Raffi Beran,Mohammad Raffi bin Beran,M,Malay,50,PEJUANG,117-IMAN,IMAN,015-GTA,GTA,1003,0.6718917470525188,4,lost_deposit
+2022-11-19,GE-15,Johor,P.160 Johor Bahru,1,3NRVX,Johan Ropi,Johan Arifin bin Mohd Ropi,M,Malay,42,BN,001-UMNO,UMNO,001-BN,BN,27211,28.827349485661014,2,lost
+2022-11-19,GE-15,Johor,P.160 Johor Bahru,2,73EY6,Mohtaj,Mohd Mohtaj bin Yacob,M,Malay,56,PN,107-BERSATU,BERSATU,011-PN,PN,22075,23.386268049537573,3,lost
+2022-11-19,GE-15,Johor,P.160 Johor Bahru,3,AH50F,Hairy Mahmood,Mohd Akhiri bin Mahmood (Hairy Mahmood),M,Malay,50,PEJUANG,119-PEJUANG,PEJUANG,015-GTA,GTA,1855,1.9651880965749577,4,lost_deposit
+2022-11-19,GE-15,Johor,P.160 Johor Bahru,4,RSE80,Akmal Nasir,Akmal Nasrullah bin Mohd Nasir,M,Malay,36,PH,078-PKR,PKR,007-PH,PH,43252,45.82119436822646,1,won
+2022-11-19,GE-15,Johor,P.161 Pulai,1,W520B,Nur Jazlan,Nur Jazlan bin Mohamad,M,Malay,56,BN,001-UMNO,UMNO,001-BN,BN,31726,27.046196601962443,2,lost
+2022-11-19,GE-15,Johor,P.161 Pulai,2,JTYJ8,Loh Kah Yong,Loh Kah Yong,M,Chinese,49,PN,026-GERAKAN,GERAKAN,011-PN,PN,20677,17.62700016197369,3,lost
+2022-11-19,GE-15,Johor,P.161 Pulai,3,PKZ88,Datuk Seri Salahuddin Ayub,Salahuddin bin Ayub,M,Malay,61,PH,046-AMANAH,AMANAH,007-PH,PH,64900,55.32680323606387,1,won
+2022-11-19,GE-15,Johor,P.162 Iskandar Puteri,1,DYV2R,Jashen Tan,Jashen Tan Nam Cha,M,Chinese,37,PN,107-BERSATU,BERSATU,011-PN,PN,30078,18.376099706744867,3,lost
+2022-11-19,GE-15,Johor,P.162 Iskandar Puteri,2,32GEV,Datuk Jason Teoh,Jason Teoh Sew Hock,M,Chinese,53,BN,003-MCA,MCA,001-BN,BN,36783,22.4725073313783,2,lost
+2022-11-19,GE-15,Johor,P.162 Iskandar Puteri,3,G5AAS,Liew Chin Tong,Liew Chin Tong,M,Chinese,45,PH,021-DAP,DAP,007-PH,PH,96819,59.15139296187684,1,won
+2022-11-19,GE-15,Johor,P.163 Kulai,1,HCH51,Chua Jian Boon,Chua Jian Boon,M,Chinese,29,BN,003-MCA,MCA,001-BN,BN,29506,25.60106895265199,2,lost
+2022-11-19,GE-15,Johor,P.163 Kulai,2,JDH1F,Teo Nie Ching,Teo Nie Ching,F,Chinese,41,PH,021-DAP,DAP,007-PH,PH,65529,56.856654490555556,1,won
+2022-11-19,GE-15,Johor,P.163 Kulai,3,67KMB,Dato' Tan,Tan Chin Hock,M,Chinese,61,PN,026-GERAKAN,GERAKAN,011-PN,PN,20218,17.542276556792448,3,lost
+2022-11-19,GE-15,Johor,P.164 Pontian,1,RGVB7,Cikgu Isa Bin Ab Hamid,Isa bin Ab Hamid,M,Malay,56,PN,107-BERSATU,BERSATU,011-PN,PN,17443,30.681958101000863,2,lost
+2022-11-19,GE-15,Johor,P.164 Pontian,2,R3DTE,Datuk Seri Ahmad Maslan,Ahmad bin Maslan,M,Malay,56,BN,001-UMNO,UMNO,001-BN,BN,23201,40.81018803539076,1,won
+2022-11-19,GE-15,Johor,P.164 Pontian,3,MT77A,Shazwan Zdainal,Shazwan bin Zdainal Abidin,M,Malay,38,PH,021-DAP,DAP,007-PH,PH,15901,27.969604756292764,3,lost
+2022-11-19,GE-15,Johor,P.164 Pontian,4,R7X9K,Jamaluddin Mohamad,Jamaluddin bin Mohamad,M,Malay,53,PEJUANG,122-GB,GB,015-GTA,GTA,306,0.5382491073156145,4,lost_deposit
+2022-11-19,GE-15,Johor,P.165 Tanjung Piai,1,VNKBW,Najwah Halimah,Najwah Halimah binti Ab Alim,F,Malay,44,PN,107-BERSATU,BERSATU,011-PN,PN,13762,25.21066901150436,3,lost
+2022-11-19,GE-15,Johor,P.165 Tanjung Piai,2,1F8Q6,Wee Jeck Seng,Wee Jeck Seng,M,Chinese,58,BN,003-MCA,MCA,001-BN,BN,23593,43.22012163845534,1,won
+2022-11-19,GE-15,Johor,P.165 Tanjung Piai,3,N6K9J,Lim Wei Jiet,Lim Wei Jiet,M,Chinese,31,MUDA,120-MUDA,MUDA,007-PH,PH,17233,31.5692093500403,2,lost
+2022-11-19,GE-15,W.P. Labuan,P.166 Labuan,1,Z39E5,Ramle,Ramle,M,Bumi Sabah,44,PEJUANG,112-PUTRA,PUTRA,015-GTA,GTA,90,0.3163555836760519,6,lost_deposit
+2022-11-19,GE-15,W.P. Labuan,P.166 Labuan,2,NT5YS,Dato' Dr. Suhaili Abdul Rahman,Suhaili Abdul Rahman,M,Bumi Sabah,61,PN,107-BERSATU,BERSATU,011-PN,PN,8124,28.556364019824947,1,won
+2022-11-19,GE-15,W.P. Labuan,P.166 Labuan,3,2GZGE,Bashir Bin Alias,Bashir bin Alias,M,Bumi Sabah,57,BN,001-UMNO,UMNO,001-BN,BN,7416,26.067700094906677,2,lost
+2022-11-19,GE-15,W.P. Labuan,P.166 Labuan,4,5YNJQ,Datuk Wira Dr Ramli,Datuk Wira Dr Ramli,M,Bumi Sabah,53,PH,046-AMANAH,AMANAH,007-PH,PH,5307,18.654434250764528,4,lost
+2022-11-19,GE-15,W.P. Labuan,P.166 Labuan,5,QDDPE,Datuk Rozman Isli,Rozman bin Isli,M,Bumi Sabah,59,WARISAN,104-WARISAN,WARISAN,000-ALONE,ALONE,7310,25.6951035185771,3,lost
+2022-11-19,GE-15,W.P. Labuan,P.166 Labuan,6,9CBN0,Dayang Rusimah @ Raynie Binti Datuk Hj. Mohd. Din,Dayang Rusimah binti Mohd. Din,F,Bumi Sabah,42,PBM,065-PBM,PBM,000-ALONE,ALONE,202,0.7100425322506942,5,lost_deposit
+2022-11-19,GE-15,Sabah,P.167 Kudat,1,MGY0V,Ruddy Bin Awah,Ruddy bin Awah,M,Bumi Sabah,53,GRS,000-BEBAS,BEBAS,012-GRS,GRS,14356,31.825840205728472,2,lost
+2022-11-19,GE-15,Sabah,P.167 Kudat,2,CT1Q9,Petronella Usun,Nur Alya Humaira binti Usun,M,Bumi Sabah,34,PEJUANG,119-PEJUANG,PEJUANG,015-GTA,GTA,282,0.6251662676243681,5,lost_deposit
+2022-11-19,GE-15,Sabah,P.167 Kudat,3,G7QSJ,Rashid Bin Abdul Harun,Rashid bin Abdul Harun,M,Bumi Sabah,56,WARISAN,104-WARISAN,WARISAN,000-ALONE,ALONE,9421,20.88543052230203,3,lost
+2022-11-19,GE-15,Sabah,P.167 Kudat,4,KNDVV,Verdon Bin Bahanda,Verdon bin Bahanda,M,Bumi Sabah,49,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,16323,36.186485767491355,1,won
+2022-11-19,GE-15,Sabah,P.167 Kudat,5,Q33Y4,Thonny Chee,Thonny Chee,M,Chinese,42,PH,078-PKR,PKR,007-PH,PH,4726,10.477077236853773,4,lost_deposit
+2022-11-19,GE-15,Sabah,P.168 Kota Marudu,1,TGT0D,Mohd Azmi Bin Hj Zulkiflee,Mohd Azmi bin Zulkiflee,M,Bumi Sabah,47,PEJUANG,119-PEJUANG,PEJUANG,015-GTA,GTA,279,0.5586032915548792,6,lost_deposit
+2022-11-19,GE-15,Sabah,P.168 Kota Marudu,2,XYG2P,Shahrizal Denci,Shahrizal Denci,M,Bumi Sabah,40,MUDA,120-MUDA,MUDA,007-PH,PH,3225,6.456973531413928,4,lost_deposit
+2022-11-19,GE-15,Sabah,P.168 Kota Marudu,3,1C64Z,Norman Bin Tulang (Tas),Norman bin Tulang (Tas),M,Bumi Sabah,58,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,660,1.3214271413126177,5,lost_deposit
+2022-11-19,GE-15,Sabah,P.168 Kota Marudu,4,4SW78,Jilid @ Zainuddin Bin Kuminding,Jilid bin Kuminding (Zainuddin),M,Bumi Sabah,60,WARISAN,104-WARISAN,WARISAN,000-ALONE,ALONE,5320,10.651503623913827,3,lost_deposit
+2022-11-19,GE-15,Sabah,P.168 Kota Marudu,5,ZQWYS,Dr.Maximus@Johnity Ongkili,Maximus bin Ongkili (Johnity),M,Bumi Sabah,69,GRS,054-PBS,PBS,012-GRS,GRS,16144,32.322908741440756,2,lost
+2022-11-19,GE-15,Sabah,P.168 Kota Marudu,6,4GK0S,Datuk Wetrom Bahanda,Wetrom Bahanda,M,Bumi Sabah,51,KDM,123-KDM,KDM,000-ALONE,ALONE,24318,48.688583670364,1,won
+2022-11-19,GE-15,Sabah,P.169 Kota Belud,1,87J9H,Madeli @ Modily Bin Bangali,Madeli bin Bangali,M,Bumi Sabah,54,PH,078-PKR,PKR,007-PH,PH,8323,15.402409460184687,3,lost
+2022-11-19,GE-15,Sabah,P.169 Kota Belud,2,97W5V,Datuk Seri Panglima Abd Rahman Bin Dahlan.,Abdul Rahman bin Dahlan,M,Bumi Sabah,57,BN,001-UMNO,UMNO,001-BN,BN,20566,38.05910764846309,2,lost
+2022-11-19,GE-15,Sabah,P.169 Kota Belud,3,FD86D,Munirah Majilis,Munirah Majilis,F,Bumi Sabah,40,WARISAN,104-WARISAN,WARISAN,000-ALONE,ALONE,25148,46.538482891352224,1,won
+2022-11-19,GE-15,Sabah,P.170 Tuaran,1,ACACF,Madius Tangau,Wilfred Madius Tangau,M,Bumi Sabah,64,PH,066-UPKO-2,UPKO,007-PH,PH,24943,42.83751524206983,1,won
+2022-11-19,GE-15,Sabah,P.170 Tuaran,2,BN8BT,Boby Bin Lewat,Boby bin Lewat,M,Bumi Sabah,42,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,393,0.6749446133237158,6,lost_deposit
+2022-11-19,GE-15,Sabah,P.170 Tuaran,3,F2YE3,Noortaip Bin Suhaili @ Sualee,Noortaip bin Suhaili,M,Bumi Sabah,70,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,2008,3.448571968330843,4,lost_deposit
+2022-11-19,GE-15,Sabah,P.170 Tuaran,4,G2JKV,Jo-Anna Sue Henley Rampas,Jo-Anna Sue Henley Rampas,F,Bumi Sabah,33,WARISAN,104-WARISAN,WARISAN,000-ALONE,ALONE,5728,9.837360674601129,3,lost_deposit
+2022-11-19,GE-15,Sabah,P.170 Tuaran,5,JGMGC,Muminin B. Norbinsha,Muminin bin Norbinsha,M,Bumi Sabah,63,PEJUANG,119-PEJUANG,PEJUANG,015-GTA,GTA,445,0.7642502619059887,5,lost_deposit
+2022-11-19,GE-15,Sabah,P.170 Tuaran,6,016ET,Joniston Bangkuai,Joniston Bangkuai,M,Bumi Sabah,60,GRS,054-PBS,PBS,012-GRS,GRS,24710,42.43735723976849,2,lost
+2022-11-19,GE-15,Sabah,P.171 Sepanggar,1,XB7NM,Mohd Azis Jamman,Mohd Azis bin Jamman,M,Bumi Sabah,48,WARISAN,104-WARISAN,WARISAN,000-ALONE,ALONE,18594,26.44799726900319,3,lost
+2022-11-19,GE-15,Sabah,P.171 Sepanggar,2,WFQGM,Yakub Khan,Yakub Khan,M,Bumi Sabah,60,BN,001-UMNO,UMNO,001-BN,BN,19980,28.41943559399181,2,lost
+2022-11-19,GE-15,Sabah,P.171 Sepanggar,3,NYAJN,Yusof Bin Kunchang,Yusof bin Kunchang,M,Bumi Sabah,65,PEJUANG,119-PEJUANG,PEJUANG,015-GTA,GTA,731,1.0397701411015021,5,lost_deposit
+2022-11-19,GE-15,Sabah,P.171 Sepanggar,4,TAKNQ,Mustapha Sakmud,Mustapha Sakmud,M,Bumi Sabah,53,PH,078-PKR,PKR,007-PH,PH,27022,38.43593536640874,1,won
+2022-11-19,GE-15,Sabah,P.171 Sepanggar,5,SC0MY,Jumardie Lukman,Jumardie Lukman,M,Bumi Sabah,40,KDM,123-KDM,KDM,000-ALONE,ALONE,3977,5.656861629494766,4,lost_deposit
+2022-11-19,GE-15,Sabah,P.172 Kota Kinabalu,1,WSPQ7,Yeo Yan Yin @ Amanda,Amanda Yeo Yan Yin,F,Chinese,29,WARISAN,104-WARISAN,WARISAN,000-ALONE,ALONE,7576,17.171350861287397,2,lost
+2022-11-19,GE-15,Sabah,P.172 Kota Kinabalu,2,YWD3B,Marcel Jude,Marcel Jude a/l M. S. Joseph,M,Indian,61,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,137,0.31051677243880327,5,lost_deposit
+2022-11-19,GE-15,Sabah,P.172 Kota Kinabalu,3,07CSG,Winston Liaw Kit Siong,Winston Liaw Kit Siong,M,Chinese,64,KDM,123-KDM,KDM,000-ALONE,ALONE,456,1.0335448776065277,4,lost_deposit
+2022-11-19,GE-15,Sabah,P.172 Kota Kinabalu,4,G2JA9,Chan Foong Hin,Chan Foong Hin,M,Chinese,44,PH,021-DAP,DAP,007-PH,PH,31359,71.0766092475068,1,won
+2022-11-19,GE-15,Sabah,P.172 Kota Kinabalu,5,3N2VS,Yee Tsai Yiew,Yee Tsai Yiew,F,Chinese,32,GRS,054-PBS,PBS,012-GRS,GRS,4592,10.407978241160471,3,lost_deposit
+2022-11-19,GE-15,Sabah,P.173 Putatan,1,46KT6,Awang Husaini Bin Sahari,Awang Husaini bin Sahari,M,Bumi Sabah,55,PH,078-PKR,PKR,007-PH,PH,16110,39.05549225435768,2,lost
+2022-11-19,GE-15,Sabah,P.173 Putatan,2,VA851,Shahelmey Bin Yahya,Shahelmey bin Yahya,M,Bumi Sabah,49,BN,001-UMNO,UMNO,001-BN,BN,16234,39.356105602560056,1,won
+2022-11-19,GE-15,Sabah,P.173 Putatan,3,72RY2,Poyne B. Tudus @ Patrick Payne,Poyne bin Tudus (Patrick Payne),M,Bumi Sabah,68,PEJUANG,117-IMAN,IMAN,015-GTA,GTA,394,0.9551746709011127,4,lost_deposit
+2022-11-19,GE-15,Sabah,P.173 Putatan,4,AGF0B,Ahmad Bin Mohd Said,Ahmad bin Mohd Said,M,Bumi Sabah,61,WARISAN,104-WARISAN,WARISAN,000-ALONE,ALONE,8511,20.633227472181144,3,lost
+2022-11-19,GE-15,Sabah,P.174 Penampang,1,VGE65,Ewon Benedick,Ewon Benedick,M,Bumi Sabah,39,PH,066-UPKO-2,UPKO,007-PH,PH,29066,57.29548590577568,1,won
+2022-11-19,GE-15,Sabah,P.174 Penampang,2,6Y9EX,Richard Jimmy,Richard Joe Jimmy,M,Bumi Sabah,54,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,289,0.5696826335501676,4,lost_deposit
+2022-11-19,GE-15,Sabah,P.174 Penampang,3,4MQ1H,Kenny Chua Teck Ho,Kenny Chua Teck Ho,M,Chinese,52,GRS,108-STAR-SBH,STAR,012-GRS,GRS,6719,13.244628424995073,3,lost
+2022-11-19,GE-15,Sabah,P.174 Penampang,4,N3TZG,Darell Leiking,Ignatius Dorell Leiking (Darell Leiking),M,Bumi Sabah,51,WARISAN,104-WARISAN,WARISAN,000-ALONE,ALONE,14656,28.890203035679086,2,lost
+2022-11-19,GE-15,Sabah,P.175 Papar,1,DY52M,Nicholas Sylvester @ Berry,Nicholas Sylvester (Berry),M,Bumi Sabah,56,PEJUANG,119-PEJUANG,PEJUANG,015-GTA,GTA,783,1.7996276632420878,4,lost_deposit
+2022-11-19,GE-15,Sabah,P.175 Papar,2,DDZ7S,Norbert Chin,Norbert Chin Chuan Siong,M,Chinese,71,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,231,0.5309246362821486,6,lost_deposit
+2022-11-19,GE-15,Sabah,P.175 Papar,3,HBV4X,Henry Shim,Henry Shim Chee On,M,Chinese,38,PH,021-DAP,DAP,007-PH,PH,9144,21.016341446597256,3,lost
+2022-11-19,GE-15,Sabah,P.175 Papar,4,MSH76,Johnny Sitamin,Johnny Sitamin,M,Bumi Sabah,55,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,277,0.6366498885288101,5,lost_deposit
+2022-11-19,GE-15,Sabah,P.175 Papar,5,HXC3A,Hj. Ahmad Hassan,Ahmad bin Hassan,M,Bumi Sabah,62,WARISAN,104-WARISAN,WARISAN,000-ALONE,ALONE,10126,23.273345744558597,2,lost
+2022-11-19,GE-15,Sabah,P.175 Papar,6,R779F,Datuk Armizan Bin Mohd Ali,Armizan bin Mohd Ali,M,Bumi Sabah,46,GRS,000-BEBAS,BEBAS,012-GRS,GRS,22948,52.7431106207911,1,won
+2022-11-19,GE-15,Sabah,P.176 Kimanis,1,S54A4,Mohamad Bin Alamin,Mohamad bin Alamin,M,Bumi Sabah,50,BN,001-UMNO,UMNO,001-BN,BN,13004,41.85657267928415,1,won
+2022-11-19,GE-15,Sabah,P.176 Kimanis,2,CM6HE,Daud Bin Yusof,Daud bin Yusof,M,Bumi Sabah,61,WARISAN,104-WARISAN,WARISAN,000-ALONE,ALONE,9967,32.08124114844856,2,lost
+2022-11-19,GE-15,Sabah,P.176 Kimanis,3,VMXBR,Yusop Bin Osman,Yusop bin Osman,M,Bumi Sabah,63,PEJUANG,119-PEJUANG,PEJUANG,015-GTA,GTA,153,0.49246813441483195,5,lost_deposit
+2022-11-19,GE-15,Sabah,P.176 Kimanis,4,Z2KE1,Rowindy Lawrence Odong,Rowindy Lawrence Odong,F,Bumi Sabah,40,PH,066-UPKO-2,UPKO,007-PH,PH,3931,12.652890433886958,4,lost
+2022-11-19,GE-15,Sabah,P.176 Kimanis,5,2G9GA,Amat Bin Md Yusof,Amat bin Md Yusof,M,Bumi Sabah,62,KDM,123-KDM,KDM,000-ALONE,ALONE,4013,12.916827603965494,3,lost
+2022-11-19,GE-15,Sabah,P.177 Beaufort,1,4M11D,Dikin Bin Musah,Dikin bin Musah,M,Bumi Sabah,66,PH,078-PKR,PKR,007-PH,PH,7835,26.742439756979998,3,lost
+2022-11-19,GE-15,Sabah,P.177 Beaufort,2,DDZHB,Matlani Bin Sabli,Matlani bin Sabli,M,Bumi Sabah,50,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,143,0.48808792409038165,6,lost_deposit
+2022-11-19,GE-15,Sabah,P.177 Beaufort,3,E4A72,Johan @ Christopher Bin O T Ghani,Johan bin Ghani (Christopher),M,Bumi Sabah,69,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,546,1.8636084374360027,5,lost_deposit
+2022-11-19,GE-15,Sabah,P.177 Beaufort,4,5XZJK,Masri Bin Adul,Masri bin Adul,M,Bumi Sabah,60,WARISAN,104-WARISAN,WARISAN,000-ALONE,ALONE,2152,7.345211277220288,4,lost_deposit
+2022-11-19,GE-15,Sabah,P.177 Beaufort,5,9BNMW,Datuk Siti Aminah Binti Aching,Siti Aminah binti Aching,F,Bumi Sabah,60,BN,001-UMNO,UMNO,001-BN,BN,10570,36.07754795549184,1,won
+2022-11-19,GE-15,Sabah,P.177 Beaufort,6,XRMWV,Datuk Hjh.Johair Mat Lani,Johair binti Mat Lani,F,Bumi Sabah,57,KDM,123-KDM,KDM,000-ALONE,ALONE,8052,27.483104648781488,2,lost
+2022-11-19,GE-15,Sabah,P.178 Sipitang,1,BFD5Z,Datuk Matbali Bin Musah,Matbali bin Musah,M,Bumi Sabah,53,GRS,000-BEBAS,BEBAS,012-GRS,GRS,14459,49.753965796084096,1,won
+2022-11-19,GE-15,Sabah,P.178 Sipitang,2,CSBQ5,Lahirul,Lahirul bin Latigu,M,Bumi Sabah,46,PH,046-AMANAH,AMANAH,007-PH,PH,4834,16.633976807405112,3,lost
+2022-11-19,GE-15,Sabah,P.178 Sipitang,3,G71SE,Adnan Bin Okk Puteh,Adnan bin Puteh,M,Bumi Sabah,64,WARISAN,104-WARISAN,WARISAN,000-ALONE,ALONE,9768,33.612057396510785,2,lost
+2022-11-19,GE-15,Sabah,P.179 Ranau,1,KMQVQ,Taufik Dahlan,Taufik Dahlan,M,Bumi Sabah,-1,PH,078-PKR,PKR,007-PH,PH,11514,27.221145207811244,2,lost
+2022-11-19,GE-15,Sabah,P.179 Ranau,2,02XAB,Jonathan Yasin,Jonathan bin Yasin,M,Bumi Sabah,55,GRS,000-BEBAS,BEBAS,012-GRS,GRS,22606,53.44460731003829,1,won
+2022-11-19,GE-15,Sabah,P.179 Ranau,3,Q2DY0,Azizul Julirin,Azizul Julirin,M,Bumi Sabah,34,PEJUANG,119-PEJUANG,PEJUANG,015-GTA,GTA,1267,2.995413494727883,5,lost_deposit
+2022-11-19,GE-15,Sabah,P.179 Ranau,4,TG409,Markos Siton,Markos Siton,M,Bumi Sabah,67,WARISAN,104-WARISAN,WARISAN,000-ALONE,ALONE,2657,6.281620880419878,4,lost_deposit
+2022-11-19,GE-15,Sabah,P.179 Ranau,5,A4R1H,Ewon Bin Ebin,Ewon Ebin,M,Bumi Sabah,68,PBRS,067-PBRS-SBH,PBRS,001-BN,BN,4254,10.057213107002696,3,lost_deposit
+2022-11-19,GE-15,Sabah,P.180 Keningau,1,XXT2J,Grelydia Gillod,Grelydia Gillod,F,Bumi Sabah,32,PH,021-DAP,DAP,007-PH,PH,15099,27.516766292462457,2,lost
+2022-11-19,GE-15,Sabah,P.180 Keningau,2,2AEAF,Rasinin Bin Koutis @ Kautis,Rasinin bin Kautis,M,Bumi Sabah,60,WARISAN,104-WARISAN,WARISAN,000-ALONE,ALONE,7020,12.793410118093016,4,lost
+2022-11-19,GE-15,Sabah,P.180 Keningau,3,49PCD,Datuk Seri Panglima Dr.Jeffrey G.Kitingan,Jeffrey Gapari Kitingan,M,Bumi Sabah,75,GRS,108-STAR-SBH,STAR,012-GRS,GRS,23155,42.198206735675754,1,won
+2022-11-19,GE-15,Sabah,P.180 Keningau,4,DAWNJ,Datuk Jake Nointin,Jake Jikulin Nointin,M,Bumi Sabah,61,KDM,123-KDM,KDM,000-ALONE,ALONE,9598,17.49161685376877,3,lost
+2022-11-19,GE-15,Sabah,P.181 Tenom,1,DPJQP,Noorita Sual,Noorita binti Sual,F,Bumi Sabah,42,PH,021-DAP,DAP,007-PH,PH,8919,31.131976683304828,2,lost
+2022-11-19,GE-15,Sabah,P.181 Tenom,2,KEWNW,Jamawi Bin Ja'Afar,Jamawi bin Jaafar,M,Bumi Sabah,48,BN,001-UMNO,UMNO,001-BN,BN,8625,30.105762853851793,3,lost
+2022-11-19,GE-15,Sabah,P.181 Tenom,3,1BG4V,Riduan Bin Rubin,Riduan bin Rubin,M,Bumi Sabah,35,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,10027,34.99947642151559,1,won
+2022-11-19,GE-15,Sabah,P.181 Tenom,4,4S674,Ukim Buandi,Ukim Buandi,M,Bumi Sabah,65,WARISAN,104-WARISAN,WARISAN,000-ALONE,ALONE,992,3.4625990435966347,4,lost_deposit
+2022-11-19,GE-15,Sabah,P.181 Tenom,5,86W9D,Peggy Chaw Zhi Ting,Peggy Chaw Zhi Ting,F,Chinese,23,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,86,0.30018499773115986,5,lost_deposit
+2022-11-19,GE-15,Sabah,P.182 Pensiangan,1,BMJBP,Jamani Bin Derimin,Jamani bin Derimin,M,Bumi Sabah,58,PEJUANG,119-PEJUANG,PEJUANG,015-GTA,GTA,124,0.33414174077068176,5,lost_deposit
+2022-11-19,GE-15,Sabah,P.182 Pensiangan,2,F28DZ,Siti Noorhasmahwatty Osman,Siti Noorhasmahwatty binti Osman,F,Bumi Sabah,38,WARISAN,104-WARISAN,WARISAN,000-ALONE,ALONE,1512,4.074373484236055,4,lost_deposit
+2022-11-19,GE-15,Sabah,P.182 Pensiangan,3,JFYG8,Jekerison Kilan,Jekerison Kilan,M,Bumi Sabah,52,KDM,123-KDM,KDM,000-ALONE,ALONE,1640,4.419293990838049,3,lost_deposit
+2022-11-19,GE-15,Sabah,P.182 Pensiangan,4,NXMJH,Sangkar Bin Rasam,Sangkar bin Rasam,M,Bumi Sabah,60,PH,078-PKR,PKR,007-PH,PH,14211,38.294260307194826,2,lost
+2022-11-19,GE-15,Sabah,P.182 Pensiangan,5,QKYWD,Datuk Arthur Joseph Kurup,Arthur Joseph Kurup,M,Bumi Sabah,40,BN,067-PBRS-SBH,PBRS,001-BN,BN,19623,52.87793047696039,1,won
+2022-11-19,GE-15,Sabah,P.183 Beluran,1,SBAMT,Benedict Asmat,Benedict Asmat,M,Bumi Sabah,54,BN,001-UMNO,UMNO,001-BN,BN,9709,33.09811140655894,2,lost
+2022-11-19,GE-15,Sabah,P.183 Beluran,2,WS0Q3,Rowiena Rasid,Rowiena binti Rasid,F,Bumi Sabah,35,WARISAN,104-WARISAN,WARISAN,000-ALONE,ALONE,3707,12.637212790618396,4,lost
+2022-11-19,GE-15,Sabah,P.183 Beluran,3,06PSC,Hausing Bin Samsudin @ Sudin,Hausing bin Samsudin @ Sudin,M,Bumi Sabah,60,PEJUANG,119-PEJUANG,PEJUANG,015-GTA,GTA,155,0.5283970818845026,5,lost_deposit
+2022-11-19,GE-15,Sabah,P.183 Beluran,4,Y0WB7,Ronald Kiandee,Ronald Kiandee,M,Bumi Sabah,61,PN,107-BERSATU,BERSATU,011-PN,PN,11303,38.53207881639054,1,won
+2022-11-19,GE-15,Sabah,P.183 Beluran,5,K80MM,Felix Joseph Saang,Felix Joseph Sitin,M,Bumi Sabah,48,PH,066-UPKO-2,UPKO,007-PH,PH,4460,15.204199904547625,3,lost
+2022-11-19,GE-15,Sabah,P.184 Libaran,1,84EH2,Nordin Bin Khani,Nordin bin Kaning (Nordin Khaini),M,Bumi Sabah,61,PPRS,110-PPRS,PPRS,000-ALONE,ALONE,541,1.214884013383935,6,lost_deposit
+2022-11-19,GE-15,Sabah,P.184 Libaran,2,3MCVN,Dr Peter Jr Naintin,Peter Jr Naintin,M,Bumi Sabah,44,PH,066-UPKO-2,UPKO,007-PH,PH,10351,23.244481372527005,2,lost
+2022-11-19,GE-15,Sabah,P.184 Libaran,3,722XY,Hj. Amdan Bin Tumpong,Amdan bin Tumpong,M,Bumi Sabah,61,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,659,1.4798679571534437,5,lost_deposit
+2022-11-19,GE-15,Sabah,P.184 Libaran,4,AFS07,Jeffri @ Amat Pudang,Jeffri bin Pudang (Amat),M,Bumi Sabah,53,PEJUANG,112-PUTRA,PUTRA,015-GTA,GTA,826,1.854887606386562,4,lost_deposit
+2022-11-19,GE-15,Sabah,P.184 Libaran,5,DXF2G,Sharif Bokrata,Sharif Bokrata bin Hassan,M,Bumi Sabah,53,WARISAN,104-WARISAN,WARISAN,000-ALONE,ALONE,9185,20.62608070782152,3,lost
+2022-11-19,GE-15,Sabah,P.184 Libaran,6,6NBPV,Suhaimi Bin Nasir,Suhaimi bin Nasir,M,Bumi Sabah,53,BN,001-UMNO,UMNO,001-BN,BN,22969,51.579798342727535,1,won
+2022-11-19,GE-15,Sabah,P.185 Batu Sapi,1,HB54S,Liau Fui Fui,Liau Fui Fui,F,Chinese,39,PH,021-DAP,DAP,007-PH,PH,7331,27.11469467766394,2,lost
+2022-11-19,GE-15,Sabah,P.185 Batu Sapi,2,MRV72,Ir. Hj. Othman Hj. Ahmad,Othman bin Ahmad,M,Bumi Sabah,64,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,160,0.5917816325775789,5,lost_deposit
+2022-11-19,GE-15,Sabah,P.185 Batu Sapi,3,R6H9B,Boni Yusuf Juanico Abdullah,Narseso P Juanico (Boni Yusuf),M,Bumi Sabah,60,PEJUANG,112-PUTRA,PUTRA,015-GTA,GTA,176,0.6509597958353368,4,lost_deposit
+2022-11-19,GE-15,Sabah,P.185 Batu Sapi,4,K7AMG,Alias Bin Sani,Alias bin Sani,M,Bumi Sabah,54,WARISAN,104-WARISAN,WARISAN,000-ALONE,ALONE,7218,26.696748899656026,3,lost
+2022-11-19,GE-15,Sabah,P.185 Batu Sapi,5,VM7BM,Khairul Firdaus Akbar Khan,Khairul Firdaus Akbar Khan,M,Bumi Sabah,39,GRS,000-BEBAS,BEBAS,012-GRS,GRS,12152,44.94581499426712,1,won
+2022-11-19,GE-15,Sabah,P.186 Sandakan,1,Z1XDX,Peter Hii,Peter Hii Chang Lik,M,Chinese,70,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,2342,7.574630486108864,4,lost_deposit
+2022-11-19,GE-15,Sabah,P.186 Sandakan,2,2FKG6,Syeikh Lokeman,Lokeman Hazli bin Azali (Syeikh Lokeman),M,Bumi Sabah,54,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,962,3.1113554772146577,5,lost_deposit
+2022-11-19,GE-15,Sabah,P.186 Sandakan,3,5X9JF,Lau Chi Keong @ Thomas Lau,Thomas Lau Chi Keong,M,Chinese,73,GRS,068-SAPP,SAPP,012-GRS,GRS,5054,16.345936155761827,3,lost
+2022-11-19,GE-15,Sabah,P.186 Sandakan,4,93REN,Vivian Wong Shir Yee,Vivian Wong Shir Yee,F,Chinese,33,PH,021-DAP,DAP,007-PH,PH,16673,53.92477117629936,1,won
+2022-11-19,GE-15,Sabah,P.186 Sandakan,5,9AZMR,Alex Thien,Alex Thien,M,Chinese,31,WARISAN,104-WARISAN,WARISAN,000-ALONE,ALONE,5642,18.2476794204211,2,lost
+2022-11-19,GE-15,Sabah,P.186 Sandakan,6,CRNQ1,Hajjah Lita Tan Binti Abdullah,Lita Tan binti Abdullah,F,Malay,60,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,246,0.7956272841941848,6,lost_deposit
+2022-11-19,GE-15,Sabah,P.187 Kinabatangan,1,G6BSA,Mazliwati Binti Abdul Malek,Mazliwati binti Abdul Malek,F,Bumi Sabah,49,WARISAN,104-WARISAN,WARISAN,000-ALONE,ALONE,12512,42.624514546569465,2,lost
+2022-11-19,GE-15,Sabah,P.187 Kinabatangan,2,XEA7V,Bung Moktar Bin Radin,Bung Moktar bin Radin,M,Bumi Sabah,63,BN,001-UMNO,UMNO,001-BN,BN,16842,57.37548545343054,1,won
+2022-11-19,GE-15,Sabah,P.188 Lahad Datu,1,KM1VK,Sia Yu Hock,Sia Yu Hock,M,Chinese,34,PH,021-DAP,DAP,007-PH,PH,8289,14.25573996044372,3,lost
+2022-11-19,GE-15,Sabah,P.188 Lahad Datu,2,CH3C3,Dato' Hj Mohammad Yusof Bin Apdal,Mohammad Yusof bin Apdal,M,Bumi Sabah,62,WARISAN,104-WARISAN,WARISAN,000-ALONE,ALONE,27116,46.63513629718806,1,won
+2022-11-19,GE-15,Sabah,P.188 Lahad Datu,3,Q1QXW,Maizatul Akmam Bt Hj Alawi,Maizatul Akmam binti Alawi,F,Bumi Sabah,51,BN,001-UMNO,UMNO,001-BN,BN,22740,39.10912374236822,2,lost
+2022-11-19,GE-15,Sabah,P.189 Semporna,1,TFE05,Arastam Bin Pandorog,Arastam bin Pandorog,M,Bumi Sabah,60,PH,078-PKR,PKR,007-PH,PH,1848,4.749543807345344,3,lost_deposit
+2022-11-19,GE-15,Sabah,P.189 Semporna,2,ZJCXS,Mohd Shafie Apdal,Mohd Shafie bin Apdal,M,Bumi Sabah,65,WARISAN,104-WARISAN,WARISAN,000-ALONE,ALONE,28702,73.76699478269809,1,won
+2022-11-19,GE-15,Sabah,P.189 Semporna,3,XX42E,Nixon Bin Abdul Habi,Nixon bin Abdul Habi,M,Bumi Sabah,53,GRS,000-BEBAS,BEBAS,012-GRS,GRS,7892,20.283224960805985,2,lost
+2022-11-19,GE-15,Sabah,P.189 Semporna,4,1AT4Q,Ab Rajik Ab Hamid,Abdul Rajik bin Abdul Hamid,M,Bumi Sabah,60,PEJUANG,119-PEJUANG,PEJUANG,015-GTA,GTA,467,1.2002364491505821,4,lost_deposit
+2022-11-19,GE-15,Sabah,P.190 Tawau,1,4RG70,Kc Chen Ket Chuin,Kc Chen Ket Chuin,M,Chinese,28,WARISAN,104-WARISAN,WARISAN,000-ALONE,ALONE,11263,22.22068775031073,3,lost
+2022-11-19,GE-15,Sabah,P.190 Tawau,2,KBSGH,Dato' Chin Chee Syn,Chin Chee Syn,M,Chinese,51,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,651,1.2843529899185195,6,lost_deposit
+2022-11-19,GE-15,Sabah,P.190 Tawau,3,86699,Mohd Salleh Bacho,Mohd Salleh Bacho,M,Bumi Sabah,39,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,1776,3.503857004754671,4,lost_deposit
+2022-11-19,GE-15,Sabah,P.190 Tawau,4,K0RVD,Christina Liew,Christina Liew Chin Jin,F,Chinese,70,PH,078-PKR,PKR,007-PH,PH,16065,31.69451733186024,2,lost
+2022-11-19,GE-15,Sabah,P.190 Tawau,5,BKWBJ,Herman Bin Amdas,Herman bin Amdas,M,Bumi Sabah,36,PEJUANG,119-PEJUANG,PEJUANG,015-GTA,GTA,1067,2.1050762522934874,5,lost_deposit
+2022-11-19,GE-15,Sabah,P.190 Tawau,6,YVC7Y,Lo Su Fui,Lo Su Fui,M,Chinese,41,GRS,054-PBS,PBS,012-GRS,GRS,19865,39.191508670862355,1,won
+2022-11-19,GE-15,Sabah,P.191 Kalabakan,1,QRE20,Dr Nur Aini Abd Rahman (Md),Nur Aini binti Abdul Rahman,F,Bumi Sabah,48,PEJUANG,119-PEJUANG,PEJUANG,015-GTA,GTA,1681,3.3599840095942435,4,lost_deposit
+2022-11-19,GE-15,Sabah,P.191 Kalabakan,2,K58M4,Andi Muhammad Suryady Bin Bandy,Andi Muhammad Suryady bin Bandy,M,Bumi Sabah,41,BN,001-UMNO,UMNO,001-BN,BN,23855,47.681391165300816,1,won
+2022-11-19,GE-15,Sabah,P.191 Kalabakan,3,45XT2,Ma'Mun Bin Sulaiman,Ma'Mun bin Sulaiman,M,Bumi Sabah,55,WARISAN,104-WARISAN,WARISAN,000-ALONE,ALONE,14755,29.492304617229664,2,lost
+2022-11-19,GE-15,Sabah,P.191 Kalabakan,4,F1JDV,Dato Muhamad,Muhamad Dhiauddin Hassan,M,Bumi Sabah,42,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,341,0.6815910453727764,5,lost_deposit
+2022-11-19,GE-15,Sabah,P.191 Kalabakan,5,JF8G4,Noraini Abd Ghapur,Noraini Abd Ghapur,F,Bumi Sabah,45,PH,078-PKR,PKR,007-PH,PH,9398,18.784729162502497,3,lost
+2022-11-19,GE-15,Sarawak,P.192 Mas Gading,1,RQQCF,Ryan Sim Min Leong,Sim Min Leong,M,Chinese,43,PBK,097-PBK,PBK,000-ALONE,ALONE,2311,7.364798113387934,3,lost_deposit
+2022-11-19,GE-15,Sarawak,P.192 Mas Gading,2,NWYJD,Lidang Disen,Lidang anak Disen,M,Bumi Sarawak,47,GPS,077-PDP,PDP,009-GPS,GPS,11794,37.585646451448426,2,lost
+2022-11-19,GE-15,Sarawak,P.192 Mas Gading,3,RGV1N,Mordi Anak Bimol,Mordi anak Bimol,M,Bumi Sarawak,37,DAP,021-DAP,DAP,007-PH,PH,17274,55.04955543516365,1,won
+2022-11-19,GE-15,Sarawak,P.193 Santubong,1,NS53C,Nancy Shukri,Nancy Shukri,F,Bumi Sarawak,61,GPS,029-PBB,PBB,009-GPS,GPS,43739,84.42355575286146,1,won
+2022-11-19,GE-15,Sarawak,P.193 Santubong,2,VYH3Y,Affendi Bin Jeman,Affendi bin Jeman,M,Bumi Sarawak,59,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,3012,5.81366171900635,3,lost_deposit
+2022-11-19,GE-15,Sarawak,P.193 Santubong,3,QN01C,Mohamad Zen Peli,Mohamad Zen bin Peli,M,Bumi Sarawak,51,PH,046-AMANAH,AMANAH,007-PH,PH,5058,9.762782528132178,2,lost_deposit
+2022-11-19,GE-15,Sarawak,P.194 Petra Jaya,1,9V49B,Fadillah Bin Yusof,Fadillah bin Yusof,M,Bumi Sarawak,60,GPS,029-PBB,PBB,009-GPS,GPS,54745,79.15359368448448,1,won
+2022-11-19,GE-15,Sarawak,P.194 Petra Jaya,2,CEBBK,Sopian Julaihi,Sopian bin Julaihi,M,Bumi Sarawak,54,PH,078-PKR,PKR,007-PH,PH,13382,19.34849558289837,2,lost
+2022-11-19,GE-15,Sarawak,P.194 Petra Jaya,3,5BRAG,Othman Bin Abdillah,Othman bin Abdillah,M,Bumi Sarawak,66,SEDAR,111-SEDAR,SEDAR,000-ALONE,ALONE,1036,1.4979107326171508,3,lost_deposit
+2022-11-19,GE-15,Sarawak,P.195 Bandar Kuching,1,SAMMP,Tay Tze Kok,Tay Tze Kok,M,Chinese,44,GPS,013-SUPP,SUPP,009-GPS,GPS,16462,25.893826189539915,2,lost
+2022-11-19,GE-15,Sarawak,P.195 Bandar Kuching,2,17BGZ,Voon Lee Shan,Voon Lee Shan,M,Chinese,67,PSB,099-PSB,PSB,000-ALONE,ALONE,1760,2.7683837986629967,3,lost_deposit
+2022-11-19,GE-15,Sarawak,P.195 Bandar Kuching,3,NAC5F,Kelvin Yii Lee Wuen,Kelvin Yii Lee Wuen,M,Chinese,36,DAP,021-DAP,DAP,007-PH,PH,45353,71.33779001179708,1,won
+2022-11-19,GE-15,Sarawak,P.196 Stampin,1,XSNEP,Chong Chieng Jen,Chong Chieng Jen,M,Chinese,51,DAP,021-DAP,DAP,007-PH,PH,39310,53.29952679890988,1,won
+2022-11-19,GE-15,Sarawak,P.196 Stampin,2,ZX2E2,Lo Khere Chiang,Lo Khere Chiang,M,Chinese,62,GPS,013-SUPP,SUPP,009-GPS,GPS,32152,43.59415888167261,2,lost
+2022-11-19,GE-15,Sarawak,P.196 Stampin,3,HXQ85,Lue Cheng Hing,Lue Cheng Hing,M,Chinese,58,PSB,099-PSB,PSB,000-ALONE,ALONE,2291,3.1063143194175153,3,lost_deposit
+2022-11-19,GE-15,Sarawak,P.197 Kota Samarahan,1,9N9D2,Datuk Hjh Rubiah Binti Wang,Rubiah binti Wang,F,Bumi Sarawak,54,GPS,029-PBB,PBB,009-GPS,GPS,42278,76.71426756908785,1,won
+2022-11-19,GE-15,Sarawak,P.197 Kota Samarahan,2,V4CNM,Abang Halil,Abang Abdul Halil bin Abang Naili,M,Bumi Sarawak,62,PH,046-AMANAH,AMANAH,007-PH,PH,12833,23.28573243091216,2,lost
+2022-11-19,GE-15,Sarawak,P.198 Puncak Borneo,1,QM9QP,Willie Anak Mongin,Willie anak Mongin,M,Bumi Sarawak,47,GPS,029-PBB,PBB,009-GPS,GPS,29457,57.58493959416663,1,won
+2022-11-19,GE-15,Sarawak,P.198 Puncak Borneo,2,WRAPZ,Diog Anak Dios,Diog anak Dios,M,Bumi Sarawak,55,PH,078-PKR,PKR,007-PH,PH,16119,31.510732298549478,2,lost
+2022-11-19,GE-15,Sarawak,P.198 Puncak Borneo,3,5B2AC,Iana Anak Akam,Iana anak Akam,F,Bumi Sarawak,47,PSB,099-PSB,PSB,000-ALONE,ALONE,5578,10.904328107283888,3,lost_deposit
+2022-11-19,GE-15,Sarawak,P.199 Serian,1,060S8,Dr Alim Impira,Alim Impira,M,Bumi Sarawak,62,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,6179,15.457547405813779,2,lost
+2022-11-19,GE-15,Sarawak,P.199 Serian,2,4YAG5,Dato' Sri Richard Riot Anak Jaem,Richard Riot anak Jaem,M,Bumi Sarawak,71,GPS,013-SUPP,SUPP,009-GPS,GPS,22876,57.22719767849102,1,won
+2022-11-19,GE-15,Sarawak,P.199 Serian,3,W63EW,Elsiy A/K Tingang,Elsiy A/k Tingang,F,Bumi Sarawak,61,PSB,099-PSB,PSB,000-ALONE,ALONE,5630,14.08415470055536,3,lost
+2022-11-19,GE-15,Sarawak,P.199 Serian,4,NAQAA,Learry Anak Jabul,Learry anak Jabul,M,Bumi Sarawak,42,DAP,021-DAP,DAP,007-PH,PH,5289,13.23110021513984,4,lost
+2022-11-19,GE-15,Sarawak,P.200 Batang Sadong,1,3KPVH,Rodiyah Binti Sapiee,Rodiyah binti Sapiee,F,Bumi Sarawak,44,GPS,029-PBB,PBB,009-GPS,GPS,18668,83.17961056899702,1,won
+2022-11-19,GE-15,Sarawak,P.200 Batang Sadong,2,71CXT,Cikgu Lahaji,Lahaji bin Lahiya,M,Bumi Sarawak,71,PH,046-AMANAH,AMANAH,007-PH,PH,3775,16.820389431002987,2,lost
+2022-11-19,GE-15,Sarawak,P.201 Batang Lupar,1,AF303,Mohamad Shafizan,Mohamad Shafizan bin Kepli,M,Bumi Sarawak,37,GPS,029-PBB,PBB,009-GPS,GPS,19627,71.21811386479916,1,won
+2022-11-19,GE-15,Sarawak,P.201 Batang Lupar,2,FSKZ3,Wel @ Maxwel Rojis,Wel @ Maxwel anak Rojis,M,Bumi Sarawak,70,PH,046-AMANAH,AMANAH,007-PH,PH,2768,10.043905802097317,3,lost_deposit
+2022-11-19,GE-15,Sarawak,P.201 Batang Lupar,3,EF00X,Hamdan Sani,Hamdan Sani,M,Bumi Sarawak,35,PN,004-PAS,PAS,011-PN,PN,5164,18.737980333103526,2,lost
+2022-11-19,GE-15,Sarawak,P.202 Sri Aman,1,DWS2C,Doris Sophia Anak Brodi,Doris Sophia anak Brodi,F,Bumi Sarawak,62,GPS,080-PRS-SWK,PRS,009-GPS,GPS,14131,44.274211235391796,1,won
+2022-11-19,GE-15,Sarawak,P.202 Sri Aman,2,XA6T7,Wilson Anak Entabang,Walsin @ Wilson anak Entabang,M,Bumi Sarawak,59,PSB,099-PSB,PSB,000-ALONE,ALONE,10092,31.6195131121346,2,lost
+2022-11-19,GE-15,Sarawak,P.202 Sri Aman,3,027A7,Masir Anak Kujat,Masir anak Kujat,M,Bumi Sarawak,68,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,5673,17.77422690102453,3,lost
+2022-11-19,GE-15,Sarawak,P.202 Sri Aman,4,HAF4N,Naga Libau @ Tay,Tay Wei Wei,M,Chinese,44,PH,078-PKR,PKR,007-PH,PH,2021,6.33204875144907,4,lost_deposit
+2022-11-19,GE-15,Sarawak,P.203 Lubok Antu,1,314EK,Jugah Muyang,Tambat @ Jugah anak Muyang,M,Bumi Sarawak,58,PN,107-BERSATU,BERSATU,011-PN,PN,5360,27.780657199129262,3,lost
+2022-11-19,GE-15,Sarawak,P.203 Lubok Antu,2,V52NR,Johnichal Rayong Ngipa,Johnichal Rayong anak Ngipa,M,Bumi Sarawak,60,PSB,099-PSB,PSB,000-ALONE,ALONE,6544,33.91727998341453,2,lost
+2022-11-19,GE-15,Sarawak,P.203 Lubok Antu,3,MR56Y,Roy Angau Anak Gingkoi,Roy Angau anak Gingkoi,M,Bumi Sarawak,43,GPS,080-PRS-SWK,PRS,009-GPS,GPS,6644,34.43557582668187,1,won
+2022-11-19,GE-15,Sarawak,P.203 Lubok Antu,4,R5V97,Langga Lias,Langga anak Lias,M,Bumi Sarawak,62,PH,078-PKR,PKR,007-PH,PH,746,3.866486990774334,4,lost_deposit
+2022-11-19,GE-15,Sarawak,P.204 Betong,1,NA1A6,Patrick Kamis @ Hj Kameng,Patrick bin Kamis,M,Bumi Sarawak,58,PH,078-PKR,PKR,007-PH,PH,5177,19.38007711601093,2,lost
+2022-11-19,GE-15,Sarawak,P.204 Betong,2,VKHBG,Hasbie Bin Satar,Hasbie bin Satar,M,Bumi Sarawak,49,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,5057,18.930857634859432,3,lost
+2022-11-19,GE-15,Sarawak,P.204 Betong,3,Z17DS,Dr. Richard Rapu,Richard Rapu @ Aman anak Begri,M,Bumi Sarawak,59,GPS,029-PBB,PBB,009-GPS,GPS,16479,61.68906524912964,1,won
+2022-11-19,GE-15,Sarawak,P.205 Saratok,1,2EXG2,Giendam Jonathan Tait,Giendam anak Jonathan Tait,M,Bumi Sarawak,49,GPS,077-PDP,PDP,009-GPS,GPS,10397,33.71161765182711,2,lost
+2022-11-19,GE-15,Sarawak,P.205 Saratok,2,5AC0P,Datuk Ali Biju,Ali anak Biju,M,Bumi Sarawak,54,PN,107-BERSATU,BERSATU,011-PN,PN,19223,62.32936675205084,1,won
+2022-11-19,GE-15,Sarawak,P.205 Saratok,3,5WKJB,Ibil Jaya,Ibil Jaya,M,Bumi Sarawak,61,PH,078-PKR,PKR,007-PH,PH,1221,3.959015596122045,3,lost_deposit
+2022-11-19,GE-15,Sarawak,P.206 Tanjong Manis,1,GQWQQ,Ir. Yusuf Abd Wahab,Yusuf bin Abd Wahab,M,Bumi Sarawak,59,GPS,029-PBB,PBB,009-GPS,GPS,16474,86.52310924369748,1,won
+2022-11-19,GE-15,Sarawak,P.206 Tanjong Manis,2,PE4NH,Ustazah Zainab,Zainab binti Suhaili,F,Bumi Sarawak,53,PH,046-AMANAH,AMANAH,007-PH,PH,2566,13.47689075630252,2,lost
+2022-11-19,GE-15,Sarawak,P.207 Igan,1,M5JT0,Ahmad Johnie Bin Zawawi,Ahmad Johnie bin Zawawi,M,Bumi Sarawak,60,GPS,029-PBB,PBB,009-GPS,GPS,15824,93.15907217708701,1,won
+2022-11-19,GE-15,Sarawak,P.207 Igan,2,WEPBN,Hud Andri,Andri Zulkarnaen bin Hamden,M,Bumi Sarawak,50,PH,046-AMANAH,AMANAH,007-PH,PH,1162,6.840927822912987,2,lost_deposit
+2022-11-19,GE-15,Sarawak,P.208 Sarikei,1,10FS9,Huang Tiong Sii,Huang Tiong Sii,M,Chinese,53,GPS,013-SUPP,SUPP,009-GPS,GPS,20080,55.06952252968763,1,won
+2022-11-19,GE-15,Sarawak,P.208 Sarikei,2,9A9MM,Roderick Wong Siew Lead,Roderick Wong Siew Lead,M,Chinese,32,DAP,021-DAP,DAP,007-PH,PH,16383,44.93047747031237,2,lost
+2022-11-19,GE-15,Sarawak,P.209 Julau,1,CQZPX,Susan Anak George,Suhana Abdullah,F,Bumi Sarawak,37,PBDS,049-PBDS,PBDS,000-ALONE,ALONE,335,1.4864445134667437,4,lost_deposit
+2022-11-19,GE-15,Sarawak,P.209 Julau,2,MFW8R,Joseph Salang,Joseph Salang anak Gandum,M,Bumi Sarawak,71,GPS,080-PRS-SWK,PRS,009-GPS,GPS,7819,34.69405865909393,2,lost
+2022-11-19,GE-15,Sarawak,P.209 Julau,3,48NH0,Larry Soon @ Larry Sng Wei Shien,Larry Soon @ Larry Sng Wei Shien,M,Chinese,43,PBM,065-PBM,PBM,000-ALONE,ALONE,9159,40.63983671296091,1,won
+2022-11-19,GE-15,Sarawak,P.209 Julau,4,WE0BH,Elly Lawai Ngalai,Elly Lawai anak Ngalai,M,Bumi Sarawak,55,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,5224,23.179660114478413,3,lost
+2022-11-19,GE-15,Sarawak,P.210 Kanowit,1,6DSNF,Joseph Nyambong,Mohd Fauzi Abdullah @ Joseph @ Usit A/k Nyambong,M,Bumi Sarawak,61,PH,078-PKR,PKR,007-PH,PH,7175,39.76611428254725,2,lost
+2022-11-19,GE-15,Sarawak,P.210 Kanowit,2,G5NS6,Dr. Elli Luhat,Elli Luhat,M,Bumi Sarawak,64,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,427,2.366568752424763,5,lost_deposit
+2022-11-19,GE-15,Sarawak,P.210 Kanowit,3,PD370,Aaron Ago Anak Dagang,Aaron Ago Dagang,M,Bumi Sarawak,64,GPS,080-PRS-SWK,PRS,009-GPS,GPS,7411,41.07410075929723,1,won
+2022-11-19,GE-15,Sarawak,P.210 Kanowit,4,RQQ2X,George Chen,Chen Nguk Fa,M,Chinese,60,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,741,4.106855844371778,4,lost_deposit
+2022-11-19,GE-15,Sarawak,P.210 Kanowit,5,ZPW3C,Michael Anak Lias,Michael anak Lias,M,Bumi Sarawak,61,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,2289,12.686360361358975,3,lost
+2022-11-19,GE-15,Sarawak,P.211 Lanang,1,KKBVF,Dato Wong Tiing Kiong,Wong Tiing Kiong,M,Chinese,60,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,587,1.1086767650058549,4,lost_deposit
+2022-11-19,GE-15,Sarawak,P.211 Lanang,2,CDNBF,Priscilla Lau,Priscilla Lau,F,Chinese,53,PSB,099-PSB,PSB,000-ALONE,ALONE,3663,6.918369659653231,3,lost_deposit
+2022-11-19,GE-15,Sarawak,P.211 Lanang,3,D9VGK,Alice Lau Kiong Yieng,Alice Lau Kiong Yieng,F,Chinese,41,DAP,021-DAP,DAP,007-PH,PH,30120,56.8881501907604,1,won
+2022-11-19,GE-15,Sarawak,P.211 Lanang,4,Q11XR,Wong Ching Yong,Wong Ching Yong,M,Chinese,64,GPS,013-SUPP,SUPP,009-GPS,GPS,18576,35.08480338458052,2,lost
+2022-11-19,GE-15,Sarawak,P.212 Sibu,1,P78AQ,Oscar Ling Chai Yew,Oscar Ling Chai Yew,M,Chinese,45,DAP,021-DAP,DAP,007-PH,PH,31287,47.44624063571017,1,won
+2022-11-19,GE-15,Sarawak,P.212 Sibu,2,TER01,Clarence Ting Ing Horh,Clarence Ting Ing Horh @ Ting Ing Ho,M,Chinese,63,GPS,013-SUPP,SUPP,009-GPS,GPS,23527,35.678323375087196,2,lost
+2022-11-19,GE-15,Sarawak,P.212 Sibu,3,9G3XS,Wong Soon Koh,Wong Soon Koh,M,Chinese,80,PSB,099-PSB,PSB,000-ALONE,ALONE,11128,16.875435989202632,3,lost
+2022-11-19,GE-15,Sarawak,P.213 Mukah,1,5A15D,Hanifah Hajar Taib,Hanifah Hajar Taib,F,Bumi Sarawak,50,GPS,029-PBB,PBB,009-GPS,GPS,21733,78.23254139668826,1,won
+2022-11-19,GE-15,Sarawak,P.213 Mukah,2,7JJQC,Abdul Jalil,Abdul Jalil bin Bujang,M,Bumi Sarawak,63,PH,078-PKR,PKR,007-PH,PH,6047,21.767458603311734,2,lost
+2022-11-19,GE-15,Sarawak,P.214 Selangau,1,XWE2A,Umpang Anak Sabang,Umpang anak Sabang,M,Bumi Sarawak,57,PH,078-PKR,PKR,007-PH,PH,11092,38.519238783164326,2,lost
+2022-11-19,GE-15,Sarawak,P.214 Selangau,2,1A44K,Edwin Anak Banta,Edwin anak Banta,M,Bumi Sarawak,57,GPS,080-PRS-SWK,PRS,009-GPS,GPS,16078,55.834143631059874,1,won
+2022-11-19,GE-15,Sarawak,P.214 Selangau,3,4QT6W,Henry Joseph Usau,Henry anak Joseph,M,Bumi Sarawak,63,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,1626,5.646617585775802,3,lost_deposit
+2022-11-19,GE-15,Sarawak,P.215 Kapit,1,36916,Alexander Nanta Linggi,Alexander Nanta Linggi,M,Bumi Sarawak,64,GPS,029-PBB,PBB,009-GPS,GPS,16522,75.10341379153598,1,won
+2022-11-19,GE-15,Sarawak,P.215 Kapit,2,85G95,Pangkas Ak. Unggang,Khusyairy Pangkas Abdullah,M,Bumi Sarawak,61,PH,078-PKR,PKR,007-PH,PH,4120,18.72812400563662,2,lost
+2022-11-19,GE-15,Sarawak,P.215 Kapit,3,58A9W,Robert Saweng,Robert Saweng,M,Bumi Sarawak,52,PBDS,049-PBDS,PBDS,000-ALONE,ALONE,1357,6.168462202827401,3,lost_deposit
+2022-11-19,GE-15,Sarawak,P.216 Hulu Rajang,1,SMYD0,Abun Sui Anyit,Abun Sui Anyit,M,Bumi Sarawak,49,PH,078-PKR,PKR,007-PH,PH,7951,33.96847097022258,2,lost
+2022-11-19,GE-15,Sarawak,P.216 Hulu Rajang,2,YDYDK,Ugak Anak Kumbong,Wilson Ugak anak Kumbong,M,Bumi Sarawak,60,GPS,080-PRS-SWK,PRS,009-GPS,GPS,15456,66.03152902977742,1,won
+2022-11-19,GE-15,Sarawak,P.217 Bintulu,1,BK6BE,Duke Anak Janteng,Duke anak Janteng,M,Bumi Sarawak,51,PN,107-BERSATU,BERSATU,011-PN,PN,5650,8.02648028185021,3,lost_deposit
+2022-11-19,GE-15,Sarawak,P.217 Bintulu,2,MMPK6,Dato Sri Tiong King Sing,Tiong King Sing,M,Chinese,61,GPS,077-PDP,PDP,009-GPS,GPS,43455,61.73286737129219,1,won
+2022-11-19,GE-15,Sarawak,P.217 Bintulu,3,C5D9Z,Chiew Chan Yew,Chiew Chan Yew,M,Chinese,35,DAP,021-DAP,DAP,007-PH,PH,21287,30.2406523468576,2,lost
+2022-11-19,GE-15,Sarawak,P.218 Sibuti,1,FK3C8,Lukanisman Bin Awang Sauni,Lukanisman bin Awang Sauni,M,Bumi Sarawak,40,GPS,029-PBB,PBB,009-GPS,GPS,22150,65.30840901049652,1,won
+2022-11-19,GE-15,Sarawak,P.218 Sibuti,2,9VFE6,Zulhaidah Suboh,Zolhaidah binti Suboh ,F,Bumi Sarawak,49,PH,078-PKR,PKR,007-PH,PH,10405,30.67873569996462,2,lost
+2022-11-19,GE-15,Sarawak,P.218 Sibuti,3,SSRQE,Bobby Anak William,Bobby anak William,M,Bumi Sarawak,55,PBDS,049-PBDS,PBDS,000-ALONE,ALONE,1361,4.0128552895388605,3,lost_deposit
+2022-11-19,GE-15,Sarawak,P.219 Miri,1,F0WDQ,Jeffery Phang,Jeffery Phang Siaw Foong,M,Chinese,48,GPS,013-SUPP,SUPP,009-GPS,GPS,33390,42.726621282694374,2,lost
+2022-11-19,GE-15,Sarawak,P.219 Miri,2,JEJG0,Lawrence Lai,Lawrence Lai Yew Son,M,Chinese,62,PSB,099-PSB,PSB,000-ALONE,ALONE,5209,6.665557659824947,3,lost_deposit
+2022-11-19,GE-15,Sarawak,P.219 Miri,3,NW8J9,Chiew Choon Man,Chiew Choon Man,M,Chinese,31,PH,078-PKR,PKR,007-PH,PH,39549,50.60782105748067,1,won
+2022-11-19,GE-15,Sarawak,P.220 Baram,1,3Y0KV,Anyi Ngau,Anyi Ngau,M,Bumi Sarawak,64,GPS,077-PDP,PDP,009-GPS,GPS,18399,61.77685256690059,1,won
+2022-11-19,GE-15,Sarawak,P.220 Baram,2,7BPP4,Roland Engan,Roland Engan,M,Bumi Sarawak,49,PH,078-PKR,PKR,007-PH,PH,11060,37.13527851458886,2,lost
+2022-11-19,GE-15,Sarawak,P.220 Baram,3,S9YMJ,Wilfredentika,Wilfred Entika anak Rebai,M,Bumi Sarawak,64,BEBAS,000-BEBAS,BEBAS,000-ALONE,ALONE,324,1.08786891851056,3,lost_deposit
+2022-11-19,GE-15,Sarawak,P.221 Limbang,1,D73SN,Racha Balang,Racha Balang,M,Bumi Sarawak,57,PH,078-PKR,PKR,007-PH,PH,4899,24.747423721964033,2,lost
+2022-11-19,GE-15,Sarawak,P.221 Limbang,2,5RT3A,Hasbi Bin Habibollah,Hasbi bin Habibollah,M,Bumi Sarawak,59,GPS,029-PBB,PBB,009-GPS,GPS,14897,75.25257627803596,1,won
+2022-11-19,GE-15,Sarawak,P.222 Lawas,1,V3PNG,Hj Japar Bin Hj Suyut,Japar bin Suyut,M,Bumi Sarawak,61,PH,078-PKR,PKR,007-PH,PH,1163,6.387302284710017,3,lost_deposit
+2022-11-19,GE-15,Sarawak,P.222 Lawas,2,K5Y14,Baru Bian,Baru Bian,M,Bumi Sarawak,64,PSB,099-PSB,PSB,000-ALONE,ALONE,5684,31.217047451669593,2,lost
+2022-11-19,GE-15,Sarawak,P.222 Lawas,3,2BEWA,Henry Sum Agong,Henry Sum Agong,M,Bumi Sarawak,76,GPS,029-PBB,PBB,009-GPS,GPS,11361,62.39565026362038,1,won

@@ -1,0 +1,65 @@
+{
+ "schema": "ge16.news-backfill-manifest.v1",
+ "generated_at": "2026-09-26T06:06:07+00:00",
+ "collection_id": "2026-09-26T06:06:07+00:00",
+ "batch_size": 50,
+ "total": 420,
+ "batch_count": 9,
+ "judge_contract": "ge16.news judge: accept when the item is dated in-window and politically relevant to GE16 (party/coalition, seat, EC, campaign); reject otherwise",
+ "batches": [
+  {
+   "batch": 1,
+   "file": "ge16-news-backfill-judge-batch-1.json",
+   "count": 50,
+   "judged_file": "ge16-news-backfill-judged-batch-1.json"
+  },
+  {
+   "batch": 2,
+   "file": "ge16-news-backfill-judge-batch-2.json",
+   "count": 50,
+   "judged_file": "ge16-news-backfill-judged-batch-2.json"
+  },
+  {
+   "batch": 3,
+   "file": "ge16-news-backfill-judge-batch-3.json",
+   "count": 50,
+   "judged_file": "ge16-news-backfill-judged-batch-3.json"
+  },
+  {
+   "batch": 4,
+   "file": "ge16-news-backfill-judge-batch-4.json",
+   "count": 50,
+   "judged_file": "ge16-news-backfill-judged-batch-4.json"
+  },
+  {
+   "batch": 5,
+   "file": "ge16-news-backfill-judge-batch-5.json",
+   "count": 50,
+   "judged_file": "ge16-news-backfill-judged-batch-5.json"
+  },
+  {
+   "batch": 6,
+   "file": "ge16-news-backfill-judge-batch-6.json",
+   "count": 50,
+   "judged_file": "ge16-news-backfill-judged-batch-6.json"
+  },
+  {
+   "batch": 7,
+   "file": "ge16-news-backfill-judge-batch-7.json",
+   "count": 50,
+   "judged_file": "ge16-news-backfill-judged-batch-7.json"
+  },
+  {
+   "batch": 8,
+   "file": "ge16-news-backfill-judge-batch-8.json",
+   "count": 50,
+   "judged_file": "ge16-news-backfill-judged-batch-8.json"
+  },
+  {
+   "batch": 9,
+   "file": "ge16-news-backfill-judge-batch-9.json",
+   "count": 20,
+   "judged_file": "ge16-news-backfill-judged-batch-9.json"
+  }
+ ]
+}

@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Perlis State Election (PRN) — Complete Report (EN)</title>
+<style>
+:root{
+  --bg:#0b1220; --panel:#111a2c; --panel2:#16213a; --line:#243350;
+  --text:#e6edf7; --body:#c9d6ea; --muted:#aab8cc; --accent:#38bdf8;
+  --gold:#a16207; --ph:#e6423e; --pn:#16a34a; --bn:#1d4ed8; --gps:#a16207;
+  --grs:#0d9488; --ind:#94a3b8; --bloc:#64748b;
+  --shadow:0 2px 14px rgba(0,0,0,.25);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--body);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;line-height:1.65;font-size:16px}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:1180px;margin:0 auto;padding:0 18px}
+
+/* header */
+header{background:linear-gradient(135deg,#0e1728 0%,#13233c 60%,#16305a 100%);border-bottom:1px solid var(--line);padding:26px 0 22px}
+header h1{margin:0;font-size:1.5rem;color:var(--text);letter-spacing:.01em}
+header .sub{color:var(--muted);font-size:.85rem;margin-top:6px}
+header .meta{color:var(--muted);font-size:.72rem;margin-top:10px;line-height:1.5}
+
+/* layout: left TOC + content */
+.layout{display:flex;gap:26px;padding:26px 18px 60px;align-items:flex-start}
+.toc{position:sticky;top:18px;flex:0 0 240px;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 12px;max-height:calc(100vh - 40px);overflow-y:auto;box-shadow:var(--shadow)}
+.toc .toc-h{color:var(--accent);font-weight:700;font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px;padding:0 6px}
+.toc a{display:block;color:var(--muted);padding:5px 8px;border-radius:7px;border-left:2px solid transparent;font-size:.8rem;line-height:1.4;margin-bottom:2px}
+.toc a:hover{color:var(--text);background:var(--panel2)}
+.toc a.active{color:var(--accent);font-weight:700;border-left-color:var(--accent);background:var(--panel2)}
+.toc .toc-lang{margin-top:14px;padding-top:12px;border-top:1px solid var(--line)}
+.toc .toc-lang a{display:inline-block;font-size:.75rem;padding:4px 10px;border:1px solid var(--line);border-radius:7px;margin:2px 4px 2px 0}
+.toc .toc-lang a.on{background:var(--accent);color:#06121f;border-color:var(--accent);font-weight:700}
+
+/* content */
+.content{flex:1 1 auto;min-width:0;max-width:820px}
+.content h2{color:var(--accent);font-size:1.45rem;margin:2.2em 0 .9em;border-bottom:1px solid var(--line);padding-bottom:10px;scroll-margin-top:20px}
+.content h2:first-child{margin-top:.2em}
+.content p{margin:0 0 1.15em;text-align:justify}
+.content p.lead{font-size:1.08rem;color:var(--text);font-weight:500}
+.content strong{color:var(--text)}
+.content .tag{color:var(--accent);font-size:.78em;background:rgba(56,189,248,.1);border:1px solid rgba(56,189,248,.25);border-radius:5px;padding:1px 6px;white-space:nowrap}
+.table-wrap{overflow-x:auto;margin:0 0 1.4em;border:1px solid var(--line);border-radius:10px;box-shadow:var(--shadow)}
+table{border-collapse:collapse;width:100%;font-size:.85rem}
+th{background:var(--panel2);color:var(--text);text-align:left;padding:9px 12px;border-bottom:1px solid var(--line);font-weight:700;white-space:nowrap}
+td{padding:8px 12px;border-bottom:1px solid var(--line);color:var(--body);vertical-align:top}
+tr:nth-child(even) td{background:rgba(255,255,255,.015)}
+tr:last-child td{border-bottom:0}
+ul,ol{margin:0 0 1.2em;padding-left:1.5em}
+li{margin-bottom:.45em}
+hr{border:0;border-top:1px solid var(--line);margin:2em 0}
+
+/* bottom tab strip — aligned RIGHT (user directive) */
+.tabbar{display:flex;justify-content:flex-end;align-items:center;gap:10px;flex-wrap:wrap;margin:34px 0 0;padding-top:18px;border-top:1px solid var(--line)}
+.tabbar .lbl{color:var(--muted);font-size:.78rem;margin-right:auto}
+.tabbar a{display:inline-block;padding:7px 14px;border:1px solid var(--line);border-radius:8px;background:var(--panel);color:var(--accent);font-size:.82rem;font-weight:600}
+.tabbar a:hover{background:var(--panel2);text-decoration:none}
+
+/* footer */
+footer{background:#0a0f1c;border-top:1px solid var(--line);padding:22px 0;color:var(--muted);font-size:.72rem;text-align:center}
+
+@media (max-width:900px){
+  .layout{flex-direction:column}
+  .toc{position:static;flex:none;width:100%;max-height:280px}
+}
+@media print{
+  .toc,.tabbar,header{display:none}
+  body{background:#fff;color:#111}
+  .content p{text-align:left}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1>Perlis State Election (PRN) — Complete Report (EN)</h1>
+    <div class="sub">Laporan DUN Perlis — analisis penuh negeri dalam konteks PRU16 · Perlis State Assembly report in the GE16 context</div>
+  </div>
+</header>
+<div class="wrap layout">
+  <nav class="toc" aria-label="Table of contents">
+    <div class="toc-h">Senarai Kandungan · Contents</div>
+    <a href="#0-executive-summary">0. Executive Summary</a>
+<a href="#1-introduction-context">1. Introduction & Context</a>
+<a href="#2-the-state-assembly-electoral-framework">2. The State Assembly & Electoral Framework</a>
+<a href="#3-the-electorate">3. The Electorate</a>
+<a href="#4-the-se-15-19-november-2022-prn-baseline">4. The SE-15 (19 November 2022) PRN Baseline</a>
+<a href="#5-candidate-demographics">5. Candidate Demographics</a>
+<a href="#6-federal-seats-in-this-state">6. Federal Seats in This State</a>
+<a href="#7-signals-since-the-last-prn">7. Signals Since the Last PRN</a>
+<a href="#8-methodology">8. Methodology</a>
+<a href="#9-data-the-inputs">9. Data — The Inputs</a>
+<a href="#10-scenario-analysis">10. Scenario Analysis</a>
+<a href="#11-the-projection-seat-by-seat">11. The Projection — Seat by Seat</a>
+<a href="#12-battlegrounds-seats-to-watch">12. Battlegrounds & Seats to Watch</a>
+<a href="#13-strategic-implications">13. Strategic Implications</a>
+<a href="#14-party-landscape">14. Party Landscape</a>
+<a href="#15-prn-prediction-scorecard-who-got-it-right">15. PRN Prediction Scorecard — Who Got It Right?</a>
+<a href="#16-references-provenance">16. References & Provenance</a>
+    <div class="toc-lang">
+      <a class="on">en</a>
+      <a href="perlis.html">BM</a>
+    </div>
+  </nav>
+  <article class="content">
+    <h1>Perlis State Election (PRN) — Complete Report & Projection</h1>
+<p class="lead"><strong>Compiled:</strong> 15 August 2026 · <strong>DUN seats:</strong> 15 (register: 15) · <strong>Last election:</strong> SE-15 (19 November 2022) · <strong>Result:</strong> PN 14, PH 1 · <strong>Next dissolution:</strong> ~18 November 2027 · <strong>Status:</strong> PRN due in GE16 window · <strong>Model:</strong> uniform-swing v1.0</p>
+<p><strong>Archive:</strong> every prior report preserved in <code>Report/states/DUN Perlis/archive/</code></p>
+<hr>
+<h2 id="0-executive-summary">0. Executive Summary</h2>
+<p>This report presents a complete, self-contained analysis of the Perlis state assembly (Dewan Undangan Negeri, DUN) as it stands entering the sixteenth general election cycle, built from the ground up: every seat count, every margin, every turnout figure, and every candidate-demographic statistic is computed live from the project's datasets at build time. Nothing is hand-typed. The report follows the same thesis discipline as the federal report — Perlis is treated not as a collection of tables but as a political system with its own logic, its own balance of forces, and its own trajectory into GE16.</p>
+<p>The central finding for Perlis is <strong>PN dominance at 14 of 15 seats</strong> (93.3 per cent of the assembly), a two-thirds-plus supermajority. Perlis is the smallest and most lopsided state — PN 14 of 15 seats — a pure green-wave laboratory whose three federal seats are locked for the opposition. The margin structure tells the story: the average winning margin across the state's 15 seats is <strong>27.9 percentage points</strong>, with <strong>1 super-marginal</strong> seats under two points, <strong>0 marginal</strong> seats between two and five, and <strong>14 safe</strong> seats beyond ten — a distribution that defines how much of this state is genuinely contestable in GE16.</p>
+<p>The state government, aligned with <strong>PN</strong>, commands <strong>14</strong> seats against <strong>1</strong> for the opposition and independents combined — a cushion of +6 over the bare majority of 8. The most recent state election, SE-15 (19 November 2022), produced these headline movements in vote share: no fresh state-level swing data. The projection prepared for this report carries the base scenario to <strong>PN 7 of 15</strong> seats, with 7 seats flipping on the modelled swings.</p>
+<p>Perlis contributes <strong>3 federal constituencies</strong> to the Dewan Rakyat, of which <strong>0 are federal battlegrounds</strong> (GE15 margins under five points) — the seats where this state's dynamics feed directly into the national GE16 arithmetic. This report examines, in twelve sections, the state's electoral framework, its electorate, its PRN baseline, the demographics of its candidates, its federal delegation, the signals that have moved since the last state poll, the methodology behind the projection, the scenario range, the battlegrounds to watch, and the strategic implications for every bloc.</p>
+<p><strong>What to watch in Perlis:</strong> Watch whether the Bersatu rump's weakness disturbs Perlis — Bersatu holds a share of the state's seats — and whether a unified PN slate holds all three federal seats.</p>
+<hr>
+<h2 id="1-introduction-context">1. Introduction & Context</h2>
+<p>Perlis is Malaysia's smallest state — 15 assembly seats, 3 federal seats — and its 2022 result was the most lopsided of the entire cycle: PN took 14 of 15 seats, a near-total erasure of the BN dynasty that had governed the state for decades. The tiny northern state functions as a political laboratory: with electorates of barely 20,000 voters per seat, its results are decided by a few thousand ballots, and its swings are the most volatile in the country. Perlis matters for GE16 almost entirely through its three federal seats — Padang Besar, Kangar and Arau — which are among the safest PN seats in the Malay Belt. The state's significance is symbolic as much as arithmetic: it was the first state to fall fully to the green wave, and it remains the cleanest demonstration of the Malay north's conversion.</p>
+<p>The state's place in the national arithmetic is not symmetrical with its size. Perlis returns 3 members to the Dewan Rakyat — 1.4 per cent of the 222-seat chamber — and its state government, formed by <strong>PN</strong> after SE-15 (19 November 2022), is one of 13 state administrations that will stand or fall on their own records between now and GE16. The relationship between the state and federal arenas runs in both directions: state-level results since GE15 are the project's most valuable revealed-preference data, because they measure actual votes cast by the same electorates that will vote federally, while federal currents — the PAS–Bersatu rupture, the WAWASAN realignment, the Bersama launch — reshape the state-level contest in real time.</p>
+<p>The analytical frame applied here is the same four-layer hierarchy that drives the federal model (<span class="tag">[S-10]</span>): identity (ethnic composition, region, East versus West) sets the baseline structure of every seat; valence (leadership, coalition brand, corruption trust) shifts margins within that structure; performance (economy, cost of living, governance) decides the within-ethnic choice; and events (ruptures, third forces, scandals) can break the structure in individual seats. For Perlis, the balance among these layers is weighted toward identity and valence — the Malay-majority structure of the state's seats is the dominant fact, and leadership perception moves the within-ethnic choice — and the sections that follow trace each layer through the state's own data.</p>
+<hr>
+<h2 id="2-the-state-assembly-electoral-framework">2. The State Assembly & Electoral Framework</h2>
+<p>The Perlis State Legislative Assembly comprises <strong>15 single-member constituencies</strong>, each returning one assemblyman under the first-past-the-post system. This places Perlis as the 13th largest state assembly in Malaysia, and the number of seats is fixed by the state constitution until a redelineation — a process that, like the federal one, has been politically frozen for years. Under FPTP, the candidate with the most votes in each constituency wins regardless of whether they command a majority of votes cast; the practical consequence is that Perlis's electoral geography — the concentration of each bloc's support across its 15 seats — matters more than its raw vote share. A bloc can win a majority of seats on a minority of votes if its support is efficiently distributed, and the reverse is equally true.</p>
+<p>The term of the assembly runs five years from its first sitting. The current assembly, elected in SE-15 (19 November 2022), will therefore see its term conclude around <strong>18 November 2027</strong>; the status of this state in the GE16 cycle is that the state assembly dissolves within the GE16 window and the next PRN is imminent. The dissolution rules are automatic — the assembly dissolves at the expiry of the five-year term unless dissolved earlier by the Head of State on the advice of the Menteri Besar — which gives the state government a powerful timing lever: a government that senses a favourable wind can dissolve early, as Melaka's BN government did in 2021 and as several states have done across Malaysian history to detach their state elections from unfavourable federal cycles.</p>
+<p>Malapportionment is a structural feature of the Perlis assembly, as it is of the federal parliament. The largest constituency by electorate in the state dwarfs the smallest — a feature that the baseline data quantifies: the average electorate per seat, computed live from the results file, is 13,062 voters, but the range across the 15 seats is wide, and rural seats systematically carry less electoral weight per voter than the state's population distribution would imply. The practical effect is that a handful of small rural seats can be as decisive as a large urban seat, which shapes where parties concentrate their machinery.</p>
+<p>The state's PRN history is itself a factor in the GE16 calculus. The state's conversion to PN in the 2023 cycle was the culmination of a decade-long shift in the Malay north — from BN dominance through the 2018 fracture to the present one-party ascendancy. This history matters because Malaysian state electorates have demonstrated, repeatedly, that they treat state and federal contests as distinct: the divergence is most dramatic in Melaka, where the same electorate gave BN 21 of 28 state seats in 2021 and zero of six federal seats in 2022, but every state carries some version of the phenomenon. The framework section of this report therefore closes with a warning that the federal model itself carries: state-election swings are the strongest signal available, but they are signals about the state electorate, and their translation to the federal arena is a modelling step, not an identity.</p>
+<hr>
+<h2 id="3-the-electorate">3. The Electorate</h2>
+<p>The electorate that will decide Perlis's next state and federal contests is the product of the Undi18 expansion and automatic voter registration — the same national transformation that added roughly 5.6 million voters to the federal roll. In Perlis, the 15 state constituencies registered <strong>195,927 voters</strong> at the latest state election (an average of 13,062 per seat), and turnout averaged <strong>77.1 per cent</strong> across the state — a high-participation polity in which the rural machinery parties' ground game pays a measurable dividend.</p>
+<p>The ethnic structure of the Perlis electorate, weighted from the GE15 federal voter roll across the state's 3 federal constituencies (<span class="tag">[S-04]</span>), is approximately <strong>84.8% Malay, 10.5% Chinese, 1.3% Indian</strong>, with bumiputera-Sabah at 0.2%, bumiputera-Sarawak at 0.3% and other communities at 2.9%. This composition is the structural foundation of every projection involving the state: a heavily Malay-majority electorate in which the battle is fought within the Malay community — between the PN and BN/PH Malay parties — and the non-Malay share, while not decisive in most seats, is the margin in the state's urban pockets The age structure is equally consequential: voters aged 18–30 constitute approximately <strong>28.9%</strong> of the Perlis electorate, the 31–40 bracket adds 23.0%, and voters over 60 account for 18.6% — a profile that is younger than the national average, with the youth share large enough to be a swing factor in the state's marginal seats. The gender balance is near-even at 49.5% male and 50.5% female, and the average median age across the state's constituencies is 40 years.</p>
+<p>The urban-rural geography of the Perlis electorate completes the picture. The state's 15 state seats span a predominantly rural and small-town geography, with a few urban pockets that vote on a completely different axis — a spread that determines where each bloc's support is concentrated and, critically, how efficiently that support converts into seats under FPTP. The federal battlegrounds identified in Section 15 — none currently — sit precisely at the demographic boundaries where no ethnic group is large enough to pre-determine the outcome, and where the L2–L4 factors become decisive. For GE16, the state's electorate is therefore best understood not as a single bloc but as a stack of distinct electorates — rural and urban, Malay-majority and mixed, young and old — each with its own political gravity.</p>
+<hr>
+<h2 id="4-the-se-15-19-november-2022-prn-baseline">4. The SE-15 (19 November 2022) PRN Baseline</h2>
+<p>The baseline for every forward projection involving Perlis is the state election of SE-15 (19 November 2022). The result is the empirical anchor — the last full measurement of how this state's electorates actually voted — and every swing, every scenario and every battleground analysis in this report is expressed as a movement from it.</p>
+<h3>4.1 The seat arithmetic</h3>
+<p>The assembly returned by that election is composed as follows:</p>
+<div class="table-wrap"><table>
+<tr><th>Bloc</th><th>Seats</th><th>Share</th></tr>
+<tr><td>PN</td><td>14</td><td>93.3%</td></tr>
+<tr><td>PH</td><td>1</td><td>6.7%</td></tr>
+<tr><td><strong>Total</strong></td><td><strong>15</strong></td><td><strong>100%</strong></td></tr>
+</table></div>
+<p>The party-level composition beneath the blocs is where the state's internal balance of power is visible:</p>
+<div class="table-wrap"><table>
+<tr><th>Party</th><th>Seats</th></tr>
+<tr><td>PAS</td><td>9</td></tr>
+<tr><td>BERSATU</td><td>5</td></tr>
+<tr><td>PKR</td><td>1</td></tr>
+</table></div>
+<p>The bloc totals translate into a government of <strong>PN</strong> commanding <strong>14</strong> of 15 seats — a two-thirds-plus supermajority (threshold 11). The margin structure of the state is the second layer of the baseline: the average winning margin across all 15 seats was <strong>27.9 percentage points</strong> of valid votes, but the dispersion is the politically meaningful number. <strong>1</strong> seats were won by fewer than two points (super-marginal), <strong>0</strong> by between two and five (marginal), <strong>0</strong> by between five and ten (comfortable), and <strong>14</strong> by more than ten points (safe). It is the 1 seats in the first two tiers — roughly 7 per cent of the assembly — that carry the state's genuine contestability.</p>
+<h3>4.2 The closest and safest seats</h3>
+<p>The thinnest results in the state define its battleground geography:</p>
+<div class="table-wrap"><table>
+<tr><th>Seat</th><th>Winner</th><th>Party</th><th>Bloc</th><th>Margin</th><th>Majority (votes)</th></tr>
+<tr><td>N.09 Kuala Perlis</td><td>Abu Bakar bin Hamzah</td><td>BERSATU</td><td>PN</td><td>1.44%</td><td>154</td></tr>
+<tr><td>N.02 Beseri</td><td>Haziq Asyraf bin Dun</td><td>PAS</td><td>PN</td><td>11.88%</td><td>1,047</td></tr>
+<tr><td>N.08 Indera Kayangan</td><td>Gan Ay Ling</td><td>PKR</td><td>PH</td><td>18.00%</td><td>1,873</td></tr>
+<tr><td>N.07 Sena</td><td>Marzita binti Mansor</td><td>BERSATU</td><td>PN</td><td>18.72%</td><td>2,200</td></tr>
+<tr><td>N.11 Pauh</td><td>Megat Hashirat bin Hassan</td><td>BERSATU</td><td>PN</td><td>20.00%</td><td>2,229</td></tr>
+<tr><td>N.03 Chuping</td><td>Saad bin Seman</td><td>PAS</td><td>PN</td><td>22.14%</td><td>2,420</td></tr>
+</table></div>
+<p>At the other end, the state's safest seats — won by landslides that no modelled swing disturbs — anchor the bloc arithmetic:</p>
+<div class="table-wrap"><table>
+<tr><th>Seat</th><th>Winner</th><th>Party</th><th>Bloc</th><th>Margin</th></tr>
+<tr><td>N.13 Guar Sanji</td><td>Mohd Ridzuan bin Hashim</td><td>PAS</td><td>PN</td><td>56.3%</td></tr>
+<tr><td>N.14 Simpang Empat</td><td>Razali bin Saad</td><td>PAS</td><td>PN</td><td>49.4%</td></tr>
+<tr><td>N.15 Sanglang</td><td>Mohd Shukri bin Ramli</td><td>PAS</td><td>PN</td><td>40.5%</td></tr>
+<tr><td>N.01 Titi Tinggi</td><td>Izizam bin Ibrahim</td><td>BERSATU</td><td>PN</td><td>39.5%</td></tr>
+</table></div>
+<h3>4.3 Turnout and participation</h3>
+<p>Turnout across the state averaged <strong>77.1 per cent</strong> of registered voters, with 195,927 registered voters and 148,212 valid votes cast. The contests averaged <strong>4.3 candidates per seat</strong> (up to 6 in the most crowded constituency) — a measure of the fragmentation of the state's party system. Turnout dispersion matters as much as the average: the highest-turnout seats recorded 80.4 per cent and the lowest 72.7 per cent — a spread of 7.7 points that tracks the state's urban-rural and machinery-strength geography, and a reminder that in the super-marginal seats, a few points of turnout differential can be the election. The baseline closes with a note on what it does not contain: it measures the state electorate's behaviour at one moment in time, and the sections that follow measure everything that has moved since.</p>
+<hr>
+<h2 id="5-candidate-demographics">5. Candidate Demographics</h2>
+<p>The candidate register for the SE-15 (19 November 2022) state election is the project's richest demographic resource: <strong>64 candidates</strong> contested the state's 15 seats — an average of <strong>4.3 candidates per seat</strong> — and the register records each candidate's party, coalition, votes, result, sex, ethnicity and age. This section is unique to the state reports; the federal report does not carry a candidate-level demographic analysis, and it is included here because who contests a state, and who wins, is itself a signal.</p>
+<h3>5.1 Ethnicity of candidates</h3>
+<div class="table-wrap"><table>
+<tr><th>Ethnicity</th><th>Candidates</th><th>Won</th><th>Win rate</th></tr>
+<tr><td>Malay</td><td>57</td><td>14</td><td>25%</td></tr>
+<tr><td>Chinese</td><td>5</td><td>1</td><td>20%</td></tr>
+<tr><td>Other</td><td>2</td><td>0</td><td>0%</td></tr>
+</table></div>
+<p>The ethnicity of candidacy tracks the state's electorate only loosely. The largest community in the pool is Malay (57 candidates). On win rates, Malay candidates won 14 of 57 contests (25 per cent); Chinese candidates won 1 of 5 contests (20 per cent); Other candidates won 0 of 2 contests (0 per cent) — a distribution that broadly mirrors the state's seat geography rather than any single community holding an outsized edge. The win rates are the sharper measure: they reveal whether the state's seats reward candidates of a particular community beyond their share of candidacy — the fingerprint of how ethnic structure converts into representation under FPTP.</p>
+<h3>5.2 Age profile</h3>
+<p>The age distribution of candidates, computed live from the register, runs from <strong>23</strong> (youngest) to <strong>68</strong> (oldest), with a mean candidate age of <strong>50.9</strong> years. Winners average <strong>47.8</strong> years against <strong>52.0</strong> for losers — winners are measurably younger than losers, consistent with the youth-preference signal visible in recent Malaysian state elections The youngest candidate recorded is Muhammad Syahmi bin Suhaimi (PKR, N.12 Tambun Tulang, aged 23); the oldest is Mohd Khalid bin Ahmad (WARISAN, N.11 Pauh, aged 68).</p>
+<div class="table-wrap"><table>
+<tr><th>Age bracket</th><th>Candidates</th><th>Won</th></tr>
+<tr><td>under-30</td><td>2</td><td>0</td></tr>
+<tr><td>30-39</td><td>9</td><td>4</td></tr>
+<tr><td>40-49</td><td>10</td><td>3</td></tr>
+<tr><td>50-59</td><td>18</td><td>4</td></tr>
+<tr><td>60plus</td><td>14</td><td>3</td></tr>
+</table></div>
+<h3>5.3 Sex balance</h3>
+<div class="table-wrap"><table>
+<tr><th>Sex</th><th>Candidates</th><th>Won</th><th>Win rate</th></tr>
+<tr><td>Male</td><td>57</td><td>12</td><td>21%</td></tr>
+<tr><td>Female</td><td>7</td><td>3</td><td>43%</td></tr>
+</table></div>
+<p>The sex balance of the candidate pool is overwhelmingly male: men won 12 of 15 seats (80 per cent), despite comprising 89 per cent of candidates. Women's candidacy is far below the one-third threshold that gender-quota advocates target — a signal that the state's parties have yet to internalise the national conversation on female representation — a structural feature of the state's party system that the register exposes directly.</p>
+<h3>5.4 Deposit losses and contest quality</h3>
+<p><strong>22</strong> of the 64 candidates (34 per cent) forfeited their deposits by failing to clear the 12.5 per cent vote threshold — the standard measure of how much of the state's contest was real competition rather than flag-planting. The candidates-per-seat average of 4.3, against a national pattern of three-to-five, places Perlis's contest in the middle of the national range — genuine multi-cornered competition with a tail of flag-planters. The demographic profile of candidacy — who the parties choose to stand, how old, of which community, in which seats — is a leading indicator of party strategy for GE16, and it is read here in full transparency.</p>
+<hr>
+<h2 id="6-federal-seats-in-this-state">6. Federal Seats in This State</h2>
+<p>Perlis contributes <strong>3 federal constituencies</strong> to the 222-seat Dewan Rakyat. These seats are the state's direct channel into the GE16 national arithmetic, and their GE15 results — computed live from the federal results file (<span class="tag">[S-03]</span>) — provide the federal baseline against which the state's post-GE15 movements must be read.</p>
+<div class="table-wrap"><table>
+<tr><th>Code</th><th>Constituency</th><th>GE15 Winner (Bloc)</th><th>Member</th><th>GE15 Margin</th></tr>
+<tr><td>P001</td><td>Padang Besar</td><td>PN (PAS)</td><td>Rusydan Rusmi</td><td>27.63%</td></tr>
+<tr><td>P002</td><td>Kangar</td><td>PN (BERSATU)</td><td>Zakri Hassan</td><td>16.36%</td></tr>
+<tr><td>P003</td><td>Arau</td><td>PN (PAS)</td><td>Shahidan Kassim</td><td>49.62%</td></tr>
+</table></div>
+<p>The bloc composition of the state's federal delegation at GE15 was:</p>
+<div class="table-wrap"><table>
+<tr><th>Bloc</th><th>Federal Seats</th></tr>
+<tr><td>PN</td><td>3</td></tr>
+</table></div>
+<p><strong>Federal forecast verdict on Perlis's seats:</strong></p>
+<p>The federal GE16 projection engine (<span class="tag">[S-07]</span>) has modelled every one of Perlis's 3 parliamentary seats individually. The P50 Monte Carlo outcome projects the federal government at <strong>140 seats</strong>, PN at <strong>81</strong>, PH at <strong>69</strong>, BN at <strong>34</strong>, with <strong>21.0 total flips</strong> nationwide.</p>
+<p>Within Perlis, all 3 parliamentary seats are projected to hold at their GE15 result — no flips in the P50 scenario.</p>
+<p>The remaining 3 seats are projected to hold at their GE15 winners: Padang Besar (PN), Kangar (PN), Arau (PN).</p>
+<h3>6.1 Federal battlegrounds</h3>
+<p>The federal battlegrounds within Perlis — seats with GE15 margins under five percentage points — are where the state's dynamics feed the national projection:</p>
+<div class="table-wrap"><table>
+<tr><th>Code</th><th>Constituency</th><th>GE15 Bloc</th><th>GE15 Margin</th><th>Electorate</th></tr>
+<tr><td>—</td><td>no federal battlegrounds in this state</td><td>—</td><td>—</td><td>—</td></tr>
+</table></div>
+<p>The relationship between the state arena and these federal seats runs in both directions. The state's federal seats are a mix of safe anchors and contested marginals, and the state-election swings since GE15 are the live evidence for how the contested ones move. The deep-dive analysis prepared for this project (<span class="tag">[S-08]</span>) examines each of these seats individually — their holders, their electorates, their demographic composition — and Section 15 of this report folds that analysis into the state-level battleground picture. For the federal projection, the state's significance is precisely these seats: the 0 federal battlegrounds in Perlis are a substantial share of the national battleground map, and the state-election swings measured since GE15 — applied in Section 8 — determine which way they lean.</p>
+<hr>
+<h2 id="7-signals-since-the-last-prn">7. Signals Since the Last PRN</h2>
+<p>The state-election swing dataset is the project's highest-weighted signal — the only revealed-preference measurement of how Perlis's electorates have moved since their last state poll. The swings below are computed live from the swing file (<span class="tag">[S-06]</span>):</p>
+<div class="table-wrap"><table>
+<tr><th>Bloc</th><th>Previous SE</th><th>Latest SE</th><th>Prev share</th><th>Latest share</th><th>Swing</th></tr>
+<tr><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>no fresh swing data</td></tr>
+</table></div>
+<p>The state has no fresh post-GE15 state-election swing measurement in the derived dataset — its last recorded state poll predates the swing-collection window, or the swing file has not been populated for it. <strong>NOTE:</strong> This state's last recorded state poll predates the GE15 realignment. The model holds the baseline at zero swing and treats the 2026 party realignments (PAS–Bersatu rupture, Bersama entry) as seat-specific event shocks rather than uniform state-level movements.</p>
+<p>The news trackers have also captured items mentioning Perlis since the last build:</p>
+<ul>
+<li><strong>general-news:</strong> <strong>PAS Bersatu GE16</strong> PN voter trust may erode before GE16 over Perlis MB crisis, say experts — (2025-12-29 08:00) — https://news.g</li>
+<li><strong>general-news:</strong> <strong>MP expelled party seat Malaysia</strong> Malaysia election: PN trounces BN to win Perlis as it claims state majority, wrests Parliament</li>
+<li><strong>general-news:</strong> <strong>PAS Bersatu GE16</strong> PN voter trust may erode before GE16 over Perlis MB crisis, say experts - nst.com.my — (2025-12-29 08:00) — h</li>
+<li><strong>general-news:</strong> <strong>feed:Free Malaysia Today</strong> Perlis Umno wants to go solo at next polls, says PN incompetent — (2026-08-09 02:50) — https://www.fr</li>
+<li><strong>general-news:</strong> <strong>feed:Malay Mail </strong> Perlis Umno gears up to contest all seats solo at next election - Malay Mail — (2026-08-09 02:35) ] — https:/</li>
+</ul>
+<p>The national realignments of 2026 land differently in each state, and for Perlis the relevant ones are: the <strong>PAS–Bersatu rupture</strong> (8 June 2026) and the admission of <strong>WAWASAN</strong> to PN — which change the internal composition of the opposition where it holds seats in this state; the <strong>Bersama</strong> launch (17 May 2026) and its demonstrated spoiler effect in Johor — relevant wherever the state's urban seats sit on thin PH margins; and the <strong>Unity Government's</strong> stability, which conditions the federal coattails the state's government-aligned blocs can expect. For a green-wave state, the rupture is the key risk: where the opposition's state seats are split between PAS and Bersatu-held constituencies, the Bersatu rump's weakness could cost the bloc seats it currently takes for granted. Each of these is modelled in Section 8 as either a measured swing (where the state has fresh data) or an event shock (where the effect is seat-specific), and Section 10 translates them into the scenario range.</p>
+<hr>
+<h2 id="8-methodology">8. Methodology</h2>
+<h3>8.1 Factor Weightages Applied to Perlis</h3>
+<p>The federal model's factor hierarchy (<span class="tag">[S-11]</span>) assigns the following weights to the drivers of electoral movement. For Perlis, the archetype (green_wave) determines which factors carry more or less weight than the national average:</p>
+<div class="table-wrap"><table>
+<tr><th>Rank</th><th>Factor</th><th>Description</th></tr>
+<tr><td>1</td><td>1. Ethnic composition of the seat</td><td>🎓 ISEAS Perspective 2023/20 — Marzuki Mohamad & Ibrahim Suffian (Merdeka Center), "Malaysia's 15th GE: Ethnicity Remains...</td></tr>
+<tr><td>2</td><td>2. Region / seat geography (Malay Belt vs mixed vs East Malaysia)</td><td>🎓 Pepinsky et al. 2023 (SMU) Malay Belt (Kedah, Perlis, Kelantan, Terengganu + parts of Pahang) swung wholesale to PN; M...</td></tr>
+<tr><td>3</td><td>3. GE15 baseline margin</td><td>📊 Election Commission (official) via Wikipedia — "Results of the 2022 general election by parliamentary constituency" Th...</td></tr>
+<tr><td>4</td><td>4. Coalition structure & seat allocation</td><td>📰 The Star (2026) — "Zahid assures no overlapping seats between BN and PH in GE16"; "Umno eyes contesting more than 30 s...</td></tr>
+<tr><td>5</td><td>5. Leader approval ratings (by ethnicity)</td><td>📊 Merdeka Center daily tracking (final GE15 campaign poll, 18 Nov 2022), quoted in 🎓 ISEAS 2023/20 End-of-campaign Malay...</td></tr>
+<tr><td>6</td><td>6. Coalition brand / corruption trust</td><td>🎓 ISEAS 2023/20 "UMNO leaders charged with corruption… serious trust deficit among Malay voters" → Malay voters moved BN...</td></tr>
+<tr><td>7</td><td>7. Incumbent MP strength / candidate quality</td><td>📊 Merdeka Center pre-GE15 poll (Jul 2022), cited in 🎓 Pepinsky et al. "25% party, 25% candidate, 29% PM candidate, 17% i...</td></tr>
+<tr><td>8</td><td>8. Cost of living / inflation (CPI)</td><td>📊 Merdeka Center (Oct–Nov 2022), cited in 🎓 ISEAS 2023/20 Inflation (31%), political instability (13%), corruption (12%)...</td></tr>
+<tr><td>9</td><td>9. GDP growth</td><td>🎓 Wilkin, Hallerberg & Carey (1997), in Lewis-Beck & Stegmaier (2000), <em>Annual Review of Political Science</em> "For every p...</td></tr>
+<tr><td>10</td><td>10. Government approval (overall)</td><td>📊 Merdeka Center surveys 2021–2022, cited in 🎓 ISEAS 2023/20 BN-led govt approval fell 50% (Sep 2021) → 31% (Oct 2022) —...</td></tr>
+<tr><td>11</td><td>11. Ringgit / fuel & food prices</td><td>📊 BTI 2026 MYR 4.49/USD (Jan 2025); sector inflation detail (medical 12%, food 2.6%, ICT −3.9%)...</td></tr>
+<tr><td>12</td><td>12. Governance & stability</td><td>📊 Merdeka (2022), cited in 🎓 ISEAS 2023/20 Political instability = voters' #2 issue (13%) 🎓 Pepinsky et al. 2023 "Three ...</td></tr>
+<tr><td>13</td><td>13. Coalition ruptures (PAS–Bersatu split, WAWASAN)</td><td>📰 Malaysiakini (8 Jun 2026) — "PAS hentikan kerjasama politik dengan Bersatu"; Malay Mail (10 Jun) PAS ended cooperation...</td></tr>
+<tr><td>14</td><td>14. Third-force entries (Bersama)</td><td>🎓 RSIS Commentary (15 Jul 2026) — "Assessment and Early Analysis of the 2026 Johor State Election" Bersama "acted as a d...</td></tr>
+<tr><td>15</td><td>15. By-elections</td><td>📊 ElectionData.MY / MECo — <code>meco-byelections-stats-1957-2026.csv</code> 276 by-elections; latest Kinabatangan & Lamag (24 Jan ...</td></tr>
+<tr><td>16</td><td>16. Redelineation</td><td>📰 FMT (Nov 2025) — "More Parliament seats for Sabah, S'wak before GE16, says Anwar"; East Asia Forum (8 Feb 2026); Wikip...</td></tr>
+<tr><td>17</td><td>17. Electoral timing</td><td>📰 East Asia Forum (8 Feb 2026) — "Malaysia enters election mode in 2026" Aligning Melaka (Dec 2026) with GE16 could save...</td></tr>
+<tr><td>18</td><td>18. Youth turnout differentials (Undi18)</td><td>🎓 Pandian (2025), <em>Social Sciences & Humanities Open</em> (ScienceDirect) — "Undi18 and the Malaysian youth vote" Youth turn...</td></tr>
+<tr><td>19</td><td>19. Scandals / MACC probes</td><td>📰 Straits Times (May 2026) — Rafizi expected to be charged (Arm Holdings RM1.1bn probe); FMT Concentrated trust damage; ...</td></tr>
+</table></div>
+<p>These weightages are applied uniformly across all of Perlis's seats modulated by seat type (Malay-majority, mixed, Chinese-majority), so that a factor like "economic term" has greater effect in rural Malay seats and "leadership preference" matters more in urban mixed seats.</p>
+<p>The projection machinery applied to Perlis is the project's uniform-swing framework, documented in full in the theory document (<span class="tag">[S-10]</span>). The logic runs in four stages. <strong>Stage 1 (structure):</strong> the GE15 federal baseline (Section 6) and the latest state PRN baseline (Section 4) provide the empirical anchor for every seat — never a blank-slate forecast. <strong>Stage 2 (drift):</strong> the state-election swings measured in Section 7, together with the national factors — government approval, the economic term, leadership preference, turnout differentials — produce the change since the anchor, expressed as a swing per bloc per state. <strong>Stage 3 (translation):</strong> each seat's projected margin is the baseline margin plus the swing to the winner minus the swing to the runner-up, and the seat flips when the adjusted margin crosses zero:</p>
+<p>$$M_s = M_{s,base} + \Delta V_{winner} - \Delta V_{runner\text{-}up}$$</p>
+<p><strong>Stage 4 (aggregation):</strong> the seats are summed into a projected assembly, and a Monte Carlo simulation over the uncertain swings produces the P10/P50/P90 distribution and the probability of any given bloc commanding a majority.</p>
+<p>Four governing principles constrain the machinery, and they apply to Perlis as to the federation. <strong>Baseline-first:</strong> never forecast from a blank slate; the null model (zero swings) must reproduce the last election exactly, and it does — which is the honesty check on the whole apparatus. <strong>Revealed preference over stated intention:</strong> Perlis's state-election swings outrank any poll, because they measure votes cast rather than intentions stated; polls calibrate, state elections measure. <strong>Uniform within type, not within country:</strong> a national swing is not applied uniformly to every seat in Perlis — it is modulated by seat type, so a Malay-majority swing concentrates in the state's Malay-majority seats and attenuates in its mixed and non-Malay seats. <strong>Uncertainty is part of the forecast:</strong> every projection is a distribution, not a point, and the honest output is a range with probabilities, not a single seat count.</p>
+<p>What is and is not modelled for Perlis must be stated plainly. What is modelled: the measured state swings (Section 7), the event shocks from the 2026 realignments (Bersatu rump solo contests where they apply to this state's seats; Bersama siphons in its urban seats), the economic term, and the approval delta. What is not modelled: redelineation (which would invalidate the seat map entirely), the internal succession questions of the state's governing parties, and any swing for which the dataset has no measurement — the model prefers honesty over invention, and where the state has no fresh swing data it holds the baseline rather than fabricating drift. The theory document's validation protocol — null-case reconstruction, retrospective testing against the 2023/2025/2026 state elections, and backcasting to 2022 — gates every release, and the state-level results in this report inherit that discipline.</p>
+<hr>
+<h3>8.2 Scenario Table (Federal Context)</h3>
+<p>The table below shows the federal GE16 seat distribution under each of the ten modelled scenarios (<span class="tag">[S-05]</span>). These are national totals — the state's contribution is a subset of these numbers, determined by how many of the state's federal seats fall into each bloc's projected allocation.</p>
+<div class="table-wrap"><table>
+<tr><th>Scenario</th><th>Govt Seats</th><th>PN Seats</th><th>PH Seats</th><th>BN Seats</th><th>Other</th><th>Character</th></tr>
+<tr><td>Status quo</td><td>124</td><td>74</td><td>81</td><td>39</td><td>28</td><td></td></tr>
+<tr><td>Base (swings)</td><td>117</td><td>81</td><td>69</td><td>45</td><td>27</td><td></td></tr>
+<tr><td>PN surge +5pp</td><td>114</td><td>84</td><td>68</td><td>43</td><td>27</td><td></td></tr>
+<tr><td>Govt surge</td><td>122</td><td>77</td><td>71</td><td>48</td><td>26</td><td></td></tr>
+<tr><td>Bersatu split (−6pp PN in Bersatu seats)</td><td>118</td><td>80</td><td>69</td><td>46</td><td>27</td><td></td></tr>
+<tr><td>Bersatu civil war (−10pp PN)</td><td>121</td><td>77</td><td>69</td><td>49</td><td>27</td><td></td></tr>
+<tr><td>Full fragmentation (Bersatu −6 + Bersama −3 PH urban)</td><td>118</td><td>80</td><td>67</td><td>48</td><td>27</td><td></td></tr>
+<tr><td>BN-PN federal pact (N9 template to GE16)</td><td>117</td><td>81</td><td>69</td><td>45</td><td>27</td><td></td></tr>
+</table></div>
+<p>For Perlis, the most relevant scenarios are those that move the state's own federal seats. The state contributes <strong>3 federal seats</strong> to the 222-seat chamber, and its allocation across these scenarios depends on whether the state swings toward or away from the government coalition.</p>
+<h3>8.3 Factor Weightage (Perlis)</h3>
+<p>The federal model's factor hierarchy assigns the following weights to electoral drivers. For Perlis, the archetype (green_wave) determines which factors carry more or less weight than the national average:</p>
+<div class="table-wrap"><table>
+<tr><th>Rank</th><th>Factor</th><th>Description</th></tr>
+<tr><td>1</td><td>1. Ethnic composition of the seat</td><td>🎓 ISEAS Perspective 2023/20 — Marzuki Mohamad & Ibrahim Suffian (Merdeka Center), "Malaysia's 15th GE: Ethnicity Remains the Key Factor" "More than 80% of non-M...</td></tr>
+<tr><td>2</td><td>2. Region / seat geography (Malay Belt vs mixed vs East Malaysia)</td><td>🎓 Pepinsky et al. 2023 (SMU) Malay Belt (Kedah, Perlis, Kelantan, Terengganu + parts of Pahang) swung wholesale to PN; Malay Belt vs rest more predictive than E...</td></tr>
+<tr><td>3</td><td>3. GE15 baseline margin</td><td>📊 Election Commission (official) via Wikipedia — "Results of the 2022 general election by parliamentary constituency" The 222 verified per-seat margins; basis o...</td></tr>
+<tr><td>4</td><td>4. Coalition structure & seat allocation</td><td>📰 The Star (2026) — "Zahid assures no overlapping seats between BN and PH in GE16"; "Umno eyes contesting more than 30 seats" Seat-negotiation news is itself th...</td></tr>
+<tr><td>5</td><td>5. Leader approval ratings (by ethnicity)</td><td>📊 Merdeka Center daily tracking (final GE15 campaign poll, 18 Nov 2022), quoted in 🎓 ISEAS 2023/20 End-of-campaign Malay approval: Muhyiddin 71%, Ismail Sabri 5...</td></tr>
+<tr><td>6</td><td>6. Coalition brand / corruption trust</td><td>🎓 ISEAS 2023/20 "UMNO leaders charged with corruption… serious trust deficit among Malay voters" → Malay voters moved BN→PN 🎓 Pepinsky et al. 2023 PN's "c...</td></tr>
+<tr><td>7</td><td>7. Incumbent MP strength / candidate quality</td><td>📊 Merdeka Center pre-GE15 poll (Jul 2022), cited in 🎓 Pepinsky et al. "25% party, 25% candidate, 29% PM candidate, 17% issue" as top vote factors 🔬 `meco-ca...</td></tr>
+<tr><td>8</td><td>8. Cost of living / inflation (CPI)</td><td>📊 Merdeka Center (Oct–Nov 2022), cited in 🎓 ISEAS 2023/20 Inflation (31%), political instability (13%), corruption (12%) = top three voter concerns 📊 BTI 20...</td></tr>
+<tr><td>9</td><td>9. GDP growth</td><td>🎓 Wilkin, Hallerberg & Carey (1997), in Lewis-Beck & Stegmaier (2000), <em>Annual Review of Political Science</em> "For every percentage point of GDP growth in the ele...</td></tr>
+<tr><td>10</td><td>10. Government approval (overall)</td><td>📊 Merdeka Center surveys 2021–2022, cited in 🎓 ISEAS 2023/20 BN-led govt approval fell 50% (Sep 2021) → 31% (Oct 2022) — tracked the vote collapse 🔬 Poll tr...</td></tr>
+<tr><td>11</td><td>11. Ringgit / fuel & food prices</td><td>📊 BTI 2026 MYR 4.49/USD (Jan 2025); sector inflation detail (medical 12%, food 2.6%, ICT −3.9%)...</td></tr>
+<tr><td>12</td><td>12. Governance & stability</td><td>📊 Merdeka (2022), cited in 🎓 ISEAS 2023/20 Political instability = voters' #2 issue (13%) 🎓 Pepinsky et al. 2023 "Three successive governments headed by t...</td></tr>
+<tr><td>13</td><td>13. Coalition ruptures (PAS–Bersatu split, WAWASAN)</td><td>📰 Malaysiakini (8 Jun 2026) — "PAS hentikan kerjasama politik dengan Bersatu"; Malay Mail (10 Jun) PAS ended cooperation with Bersatu 8 Jun 2026 🎓 Fulcrum/I...</td></tr>
+<tr><td>14</td><td>14. Third-force entries (Bersama)</td><td>🎓 RSIS Commentary (15 Jul 2026) — "Assessment and Early Analysis of the 2026 Johor State Election" Bersama "acted as a direct spoiler for PH, siphoning progress...</td></tr>
+<tr><td>15</td><td>15. By-elections</td><td>📊 ElectionData.MY / MECo — <code>meco-byelections-stats-1957-2026.csv</code> 276 by-elections; latest Kinabatangan & Lamag (24 Jan 2026)...</td></tr>
+<tr><td>16</td><td>16. Redelineation</td><td>📰 FMT (Nov 2025) — "More Parliament seats for Sabah, S'wak before GE16, says Anwar"; East Asia Forum (8 Feb 2026); Wikipedia "Next Malaysian general election" 2...</td></tr>
+<tr><td>17</td><td>17. Electoral timing</td><td>📰 East Asia Forum (8 Feb 2026) — "Malaysia enters election mode in 2026" Aligning Melaka (Dec 2026) with GE16 could save RM200M — timing is a strategic variable...</td></tr>
+<tr><td>18</td><td>18. Youth turnout differentials (Undi18)</td><td>🎓 Pandian (2025), <em>Social Sciences & Humanities Open</em> (ScienceDirect) — "Undi18 and the Malaysian youth vote" Youth turnout below national average in GE15 and s...</td></tr>
+<tr><td>19</td><td>19. Scandals / MACC probes</td><td>📰 Straits Times (May 2026) — Rafizi expected to be charged (Arm Holdings RM1.1bn probe); FMT Concentrated trust damage; also drove Bersama's founding narrative...</td></tr>
+</table></div>
+<p><strong>Weight adjustments for this green-wave state:</strong> Identity and grievance politics carry above-average weight — the Malay electorate's structural alignment with PN means that only a major event shock can move the margin. Performance factors matter within the Malay vote but the direction is already set.</p>
+<h3>8.4 PRN → Federal Cascade (Perlis)</h3>
+<p>The state's PRN timing and outcome cascade into the federal GE16 campaign in three ways:</p>
+<p>The state assembly dissolves around 18 November 2027, placing the PRN inside the GE16 window. If concurrent, the state's result will shape the federal campaign; if separate, the state runs on its own political cycle.</p>
+<h3>Cascade effects</h3>
+<ul>
+<li><strong>Federal coattails:</strong> Perlis's 3 federal seats will be contested on the same electorate as the state poll. A government victory creates positive coattails for government-aligned federal candidates.</li>
+<li><strong>Campaign resource allocation:</strong> The federal campaigns will allocate resources to Perlis proportional to the number of contestable seats.</li>
+<li><strong>Timing signal:</strong> Perlis's PRN timing sends a signal to other states about the federal government's confidence in its prospects.</li>
+</ul>
+<h3>Implications for the federal arithmetic</h3>
+<p>The state's federal seats contribute 3 members to the Dewan Rakyat. On the P50 projection, the federal engine allocates these seats as follows:</p>
+<div class="table-wrap"><table>
+<tr><th>Bloc</th><th>Projected Federal Seats in Perlis</th></tr>
+<tr><td>PN</td><td>3</td></tr>
+</table></div>
+<p>This allocation is a subset of the national scenario table (Section 8.2) and inherits its uncertainties. The state's PRN result, when delivered, will either confirm or contradict the federal model's per-seat projections.</p>
+<h2 id="9-data-the-inputs">9. Data — The Inputs</h2>
+<p>The forecast engine draws on six categories of data, each serving a distinct role in the projection chain. Every dataset is live — read from disk at build time — and every number in this report is computed from these sources, never hand-typed.</p>
+<p><strong>Core datasets (15 state seats, PRN baseline):</strong></p>
+<div class="table-wrap"><table>
+<tr><th>Dataset</th><th>Source</th><th>Role</th></tr>
+<tr><td>DUN results by constituency</td><td>Election Commission</td><td>Baseline margins, winner, bloc</td></tr>
+<tr><td>DUN candidate register</td><td>EC / parties</td><td>Candidate demographics (ethnicity, age, sex)</td></tr>
+<tr><td>Federal voter demographics</td><td>ElectionData.MY anonymised roll</td><td>Ethnic/age shares → seat typing</td></tr>
+<tr><td>State-election swings</td><td>MECo headline ballots</td><td>Revealed-preference drift</td></tr>
+<tr><td>Federal battlegrounds</td><td>Project analysis</td><td>Marginal seat identification</td></tr>
+<tr><td>Projection scenarios</td><td>Engine computation</td><td>Sensitivity analysis</td></tr>
+</table></div>
+<p><strong>Current macro readings (live from config):</strong></p>
+<div class="table-wrap"><table>
+<tr><th>Indicator</th><th>Value</th></tr>
+<tr><td>GDP YoY</td><td>5.8</td></tr>
+<tr><td>CPI YoY</td><td>1.9</td></tr>
+<tr><td>Ringgit (MYR/USD)</td><td>4.1</td></tr>
+<tr><td>Approval Delta</td><td>3.0</td></tr>
+<tr><td>PM Preference (Malay)</td><td>0.0</td></tr>
+<tr><td>PM Preference (Non-Malay)</td><td>0.0</td></tr>
+</table></div>
+<p><strong>Event shocks (seat-specific, live from config) (national):</strong></p>
+<div class="table-wrap"><table>
+<tr><th>Seat Code</th><th>Shock Applied</th></tr>
+<tr><td>P074</td><td>PN -6pp</td></tr>
+<tr><td>P091</td><td>PN -6pp</td></tr>
+<tr><td>P143</td><td>PN -6pp</td></tr>
+<tr><td>P154</td><td>PN -6pp</td></tr>
+<tr><td>P183</td><td>PN -6pp</td></tr>
+<tr><td>P146</td><td>PH -3pp</td></tr>
+<tr><td>P100</td><td>PH -3pp</td></tr>
+<tr><td>P118</td><td>PH -3pp</td></tr>
+</table></div>
+<p>Event shocks capture the discrete, seat-level effects of coalition ruptures and third-force entries — the PAS–Bersatu rupture, the Bersama entry, and the Bersatu rump's potential solo contests. Where a shock touches this state's federal seats it is listed above and applied in Section 8 at the stated weight.</p>
+<hr>
+<h2 id="10-scenario-analysis">10. Scenario Analysis</h2>
+<p>A full projection has been modelled for Perlis, and its base case — computed live from the projection file (<span class="tag">[S-09]</span>) — is:</p>
+<div class="table-wrap"><table>
+<tr><th>Bloc</th><th>Projected Seats</th><th>Share</th></tr>
+<tr><td>PN</td><td>7</td><td>46.7%</td></tr>
+<tr><td>BN</td><td>6</td><td>40.0%</td></tr>
+<tr><td>PH</td><td>2</td><td>13.3%</td></tr>
+</table></div>
+<p>The base scenario holds all seats at their baseline (no fresh swing measurement); movements are driven by the national factor weightages and event shocks described in Sections 8 and 13: PN consolidates to <strong>7 of 15 seats</strong> (46.7 per cent), with the average projected margin across the state at <strong>13.8 points</strong>. The seats projected to change hands in the base case are:</p>
+<div class="table-wrap"><table>
+<tr><th>Seat</th><th>Constituency</th><th>2021 → Projected</th><th>2021 margin</th><th>Projected margin</th></tr>
+<tr><td>N.02 Beseri</td><td>Beseri</td><td>PN → BN</td><td>14.89%</td><td>18.11%</td></tr>
+<tr><td>N.03 Chuping</td><td>Chuping</td><td>PN → BN</td><td>25.95%</td><td>7.05%</td></tr>
+<tr><td>N.04 Mata Ayer</td><td>Mata Ayer</td><td>PN → BN</td><td>29.65%</td><td>3.35%</td></tr>
+<tr><td>N.05 Santan</td><td>Santan</td><td>PN → BN</td><td>28.50%</td><td>4.50%</td></tr>
+<tr><td>N.09 Kuala Perlis</td><td>Kuala Perlis</td><td>PN → PH</td><td>2.46%</td><td>18.84%</td></tr>
+<tr><td>N.11 Pauh</td><td>Pauh</td><td>PN → BN</td><td>29.26%</td><td>3.74%</td></tr>
+<tr><td>N.12 Tambun Tulang</td><td>Tambun Tulang</td><td>PN → BN</td><td>29.49%</td><td>3.51%</td></tr>
+</table></div>
+<p>The full scenario table from the projection report (<span class="tag">[S-09]</span>):</p>
+<div class="table-wrap"><table>
+<tr><th>Scenario</th><th>Type</th><th>BN</th><th>PH</th><th>PN</th><th>Seats flipping</th><th>Character</th></tr>
+<tr><td>Status quo (last result)</td><td>parametric</td><td>0</td><td>1</td><td>14</td><td>0</td><td>0 seats change hands; sum 15</td></tr>
+<tr><td>Southern resurgence (Johor/N9 2026)</td><td>parametric</td><td>6</td><td>2</td><td>7</td><td>7</td><td>7 seats change hands; sum 15</td></tr>
+<tr><td>Green wave 2023 (Kedah/Penang/Selangor)</td><td>parametric</td><td>0</td><td>0</td><td>15</td><td>1</td><td>1 seats change hands; sum 15</td></tr>
+<tr><td>Bersatu split (−6pp PN in Bersatu-held)</td><td>parametric</td><td>0</td><td>2</td><td>13</td><td>1</td><td>1 seats change hands; sum 15</td></tr>
+</table></div>
+<p><strong>Scenario details — each scenario explained:</strong></p>
+<p><strong>Status quo (last result)</strong> — parametric</p>
+<ul>
+<li><strong>Outcome:</strong> 0 government-aligned seats of 15 (below the 15-seat simple majority).</li>
+<li><strong>Blok:</strong> BN 0 · PH 1 · PN 14</li>
+<li><strong>Flips:</strong> 0 seats</li>
+</ul>
+<p><strong>Southern resurgence (Johor/N9 2026)</strong> — parametric</p>
+<ul>
+<li><strong>Outcome:</strong> 6 government-aligned seats of 15 (below the 15-seat simple majority).</li>
+<li><strong>Blok:</strong> BN 6 · PH 2 · PN 7</li>
+<li><strong>Flips:</strong> 7 seats</li>
+</ul>
+<p><strong>Green wave 2023 (Kedah/Penang/Selangor)</strong> — parametric</p>
+<ul>
+<li><strong>Outcome:</strong> 0 government-aligned seats of 15 (below the 15-seat simple majority).</li>
+<li><strong>Blok:</strong> BN 0 · PH 0 · PN 15</li>
+<li><strong>Flips:</strong> 1 seats</li>
+</ul>
+<p><strong>Bersatu split (−6pp PN in Bersatu-held)</strong> — parametric</p>
+<ul>
+<li><strong>Outcome:</strong> 0 government-aligned seats of 15 (below the 15-seat simple majority).</li>
+<li><strong>Blok:</strong> BN 0 · PH 2 · PN 13</li>
+<li><strong>Flips:</strong> 1 seats</li>
+</ul>
+<p>The range is narrow because the state's structural floor is high — the PN column runs from <strong>7</strong> in the worst case to <strong>15</strong> in the best — and the alternative scenarios move only the margins around that settled core.</p>
+<hr>
+<h2 id="11-the-projection-seat-by-seat">11. The Projection — Seat by Seat</h2>
+<p>The full projection for Perlis is modelled seat by seat from the projection file (<span class="tag">[S-09]</span>). The base scenario carries <strong>PN 7 of 15 seats</strong>, with 7 seats changing hands:</p>
+<div class="table-wrap"><table>
+<tr><th>Seat</th><th>Constituency</th><th>2021 Winner (Bloc)</th><th>2021 Margin</th><th>Projected</th><th>Projected Margin</th><th>Status</th></tr>
+<tr><td>N.01 Titi Tinggi</td><td>Titi Tinggi</td><td>PN (BN)</td><td>51.03%</td><td>PN</td><td>18.03%</td><td>hold</td></tr>
+<tr><td>N.02 Beseri</td><td>Beseri</td><td>PN (BN)</td><td>14.89%</td><td>BN</td><td>18.11%</td><td>🔁 flip</td></tr>
+<tr><td>N.03 Chuping</td><td>Chuping</td><td>PN (BN)</td><td>25.95%</td><td>BN</td><td>7.05%</td><td>🔁 flip</td></tr>
+<tr><td>N.04 Mata Ayer</td><td>Mata Ayer</td><td>PN (BN)</td><td>29.65%</td><td>BN</td><td>3.35%</td><td>🔁 flip</td></tr>
+<tr><td>N.05 Santan</td><td>Santan</td><td>PN (BN)</td><td>28.50%</td><td>BN</td><td>4.50%</td><td>🔁 flip</td></tr>
+<tr><td>N.06 Bintong</td><td>Bintong</td><td>PN (BN)</td><td>41.94%</td><td>PN</td><td>8.94%</td><td>hold</td></tr>
+<tr><td>N.07 Sena</td><td>Sena</td><td>PN (PH)</td><td>24.69%</td><td>PN</td><td>3.39%</td><td>hold</td></tr>
+<tr><td>N.08 Indera Kayangan</td><td>Indera Kayangan</td><td>PH (PN)</td><td>24.05%</td><td>PH</td><td>45.35%</td><td>hold</td></tr>
+<tr><td>N.09 Kuala Perlis</td><td>Kuala Perlis</td><td>PN (PH)</td><td>2.46%</td><td>PH</td><td>18.84%</td><td>🔁 flip</td></tr>
+<tr><td>N.10 Kayang</td><td>Kayang</td><td>PN (BN)</td><td>35.85%</td><td>PN</td><td>2.85%</td><td>hold</td></tr>
+<tr><td>N.11 Pauh</td><td>Pauh</td><td>PN (BN)</td><td>29.26%</td><td>BN</td><td>3.74%</td><td>🔁 flip</td></tr>
+<tr><td>N.12 Tambun Tulang</td><td>Tambun Tulang</td><td>PN (BN)</td><td>29.49%</td><td>BN</td><td>3.51%</td><td>🔁 flip</td></tr>
+<tr><td>N.13 Guar Sanji</td><td>Guar Sanji</td><td>PN (BN)</td><td>61.21%</td><td>PN</td><td>28.21%</td><td>hold</td></tr>
+<tr><td>N.14 Simpang Empat</td><td>Simpang Empat</td><td>PN (BN)</td><td>59.22%</td><td>PN</td><td>26.22%</td><td>hold</td></tr>
+<tr><td>N.15 Sanglang</td><td>Sanglang</td><td>PN (BN)</td><td>48.42%</td><td>PN</td><td>15.42%</td><td>hold</td></tr>
+</table></div>
+<p><strong>Seats changing hands in the base scenario:</strong></p>
+<ul>
+<li><strong>Beseri</strong> (N.02 Beseri): PN → BN, baseline margin 14.89% → projected 18.11%</li>
+<li><strong>Chuping</strong> (N.03 Chuping): PN → BN, baseline margin 25.95% → projected 7.05%</li>
+<li><strong>Mata Ayer</strong> (N.04 Mata Ayer): PN → BN, baseline margin 29.65% → projected 3.35%</li>
+<li><strong>Santan</strong> (N.05 Santan): PN → BN, baseline margin 28.50% → projected 4.50%</li>
+<li><strong>Kuala Perlis</strong> (N.09 Kuala Perlis): PN → PH, baseline margin 2.46% → projected 18.84%</li>
+<li><strong>Pauh</strong> (N.11 Pauh): PN → BN, baseline margin 29.26% → projected 3.74%</li>
+<li><strong>Tambun Tulang</strong> (N.12 Tambun Tulang): PN → BN, baseline margin 29.49% → projected 3.51%</li>
+</ul>
+<p>Every margin above is computed from the swings modelled in Sections 7–8; none is hand-typed. The full scenario range and its distribution are published in Section 12, and the prediction scorecard in Section 15 records this projection as the project's official forecast.</p>
+<hr>
+<h2 id="12-battlegrounds-seats-to-watch">12. Battlegrounds & Seats to Watch</h2>
+<p>The contestability of Perlis is concentrated in a small number of seats. Of the 15 state constituencies, <strong>1 are super-marginal</strong> (winning margin under two points) and <strong>0 are marginal</strong> (two to five points) — together 7 per cent of the assembly — and it is these seats that carry the state's swing potential. Every number below is computed live from the results file (<span class="tag">[S-01]</span>).</p>
+<h3>12.1 Super-marginal state seats (margin < 2%)</h3>
+<div class="table-wrap"><table>
+<tr><th>Seat</th><th>Winner</th><th>Party</th><th>Bloc</th><th>Margin</th><th>Majority (votes)</th></tr>
+<tr><td>N.09 Kuala Perlis</td><td>Abu Bakar bin Hamzah</td><td>BERSATU</td><td>PN</td><td>1.44%</td><td>154</td></tr>
+</table></div>
+<p>These are the state's knife-edge seats — each decided by a swing of a few points, and in several cases by a few hundred votes. The thinnest result in the state is N.09 Kuala Perlis, held by BERSATU (PN) by 154 votes — a margin of 1.44 per cent. Seats at this thickness are decided by turnout differentials, candidate quality, and last-week campaign events; the model treats them as genuine coin-flips with elevated uncertainty (σ = 2.0–3.0 points).</p>
+<h3>12.2 Marginal state seats (margin 2–5%)</h3>
+<div class="table-wrap"><table>
+<tr><th>Seat</th><th>Winner</th><th>Party</th><th>Bloc</th><th>Margin</th><th>Majority (votes)</th></tr>
+<tr><td>—</td><td>none</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+</table></div>
+<p>The marginal tier is where the swing stack has its greatest effect: a two-to-three-point movement — the size of the measured swings in Section 7 — is sufficient to convert several of these seats, and the direction of that conversion is the state's contribution to the GE16 story.</p>
+<h3>12.3 Federal battlegrounds in Perlis</h3>
+<div class="table-wrap"><table>
+<tr><th>Code</th><th>Constituency</th><th>GE15 Bloc</th><th>GE15 Margin</th></tr>
+<tr><td>—</td><td>none</td><td>—</td><td>—</td></tr>
+</table></div>
+<p>The federal battlegrounds are the state's bridge to the national projection: seats whose GE15 margins sit under five points, and which the state's post-GE15 movements — measured in Section 7 and applied in Section 8 — will decide. The state's federal seats are all held by margins above five points, meaning the state contributes no federal battlegrounds to the GE16 map — its national significance runs through its safe seats and its state-level signals rather than through marginal federal contests. The deep-dive analysis (<span class="tag">[S-08]</span>) supplies the seat-by-seat detail — holders, electorates, demographic composition — and this section's tables are the state-level map of where the 2026 realignments will land first.</p>
+<hr>
+<h2 id="13-strategic-implications">13. Strategic Implications</h2>
+<p>The state-level arithmetic of Perlis translates into distinct imperatives for each bloc entering GE16. The analysis here follows the federal report's convention: recommendations are derived from the numbers above, not from prior dispositions.</p>
+<p><strong>For the state government (PN, 14 of 15 seats).</strong> The government's strongest asset is the baseline itself: a cushion of +6 seats over the majority threshold, with 14 safe seats providing a structural floor. The strategic priority is to defend the super-marginal tier — the 1 seats under two points are where a single adverse swing, a machinery failure, or a third-force entry could begin an erosion that the safe seats cannot arrest. The second priority is the federal coattail: Perlis's 3 federal seats are contested on the same electorate, and the state government's delivery record is the single most transferable asset the government-aligned federal candidates possess. For the PN state government, the imperative is delivery-without-scandal: the green wave was won on grievance, and the 2026 realignments mean the opposition's federal brand is now contested internally even where its state seats are safe.</p>
+<p><strong>For the opposition (the minority blocs, 1 seats).</strong> The opposition's arithmetic problem in Perlis is concentration: its seats are confined to 1 isolated urban pockets, held on average margins of 18.0 points — a toehold rather than a base, and under FPTP that geography delivers seats efficiently only where support is packed, not spread. The path to relevance runs through the 1 marginal state seats and the 0 federal battlegrounds, and it requires the opposition to consolidate rather than fragment — the lesson of the 2026 realignments, where the PAS–Bersatu rupture and Bersama's entry converted three- and four-cornered contests into government wins. For the minority blocs in a green-wave state, the realistic ambition is not government but presence — holding the urban seats and denying the supermajority, which is a nationally legible result even when it does not change the government.</p>
+<p><strong>For the federal projection.</strong> Perlis contributes 3 federal seats to the national arithmetic, and its state-level movements — the swings in Section 7 — are applied to those seats at the highest factor weight. The state's federal battlegrounds (0 seats under five points) are a 0.0 per cent share of the national battleground map, which is why this state appears so prominently in the federal model's flip logic: where the state has swung hard in one direction since GE15, its federal marginals lean the same way.</p>
+<p><strong>For the analyst community.</strong> The state reports exist because the national report cannot carry this depth for thirteen states at once. Perlis's lesson for Malaysian psephology is that a single-cycle surge can restructure a state's seat map permanently — the 2023 wave converted competitive states into fortresses, and the margin tiers in this report show how much of that conversion is now locked in The state's candidate register — ethnicity, age, sex, deposit losses — is a dataset most national analyses never open, and it is the closest thing the project has to a ground-truth read of party strategy.</p>
+<hr>
+<h2 id="14-party-landscape">14. Party Landscape</h2>
+<p>The project's current party-landscape read — the PAS–Bersatu rupture, the WAWASAN realignment, the Bersama launch, and the positioning of the major parties — is set out below, applied to Perlis's contest:</p>
+<p>#### 1. Executive summary of the changes</p>
+<p>Between the project's composition snapshot (22 June 2026) and this update, the Malaysian opposition has undergone its most consequential realignment since 2020:</p>
+<ol>
+<li><strong>PAS broke with Bersatu on 8 June 2026</strong> — formally ending the coalition that had defined Perikatan Nasional since its founding.</li>
+<li><strong>WAWASAN (Parti Wawasan Negara)</strong> was formed on 13 June 2026 by Hamzah Zainudin's ejected Bersatu faction (19 MPs) and was <strong>admitted into PN the same day</strong>; Ham</li>
+</ol>
+<hr>
+<h2 id="15-prn-prediction-scorecard-who-got-it-right">15. PRN Prediction Scorecard — Who Got It Right?</h2>
+<p>The PRN prediction scorecard is the project's calibration evidence: a record of how well Malaysia's major research centres and individual analysts predicted the three most recent state elections — Sabah (November 2025), Johor (July 2026) and Negeri Sembilan (August 2026). For Perlis, the next PRN falls due around <strong>18 November 2027</strong>, so the scorecard here records the project's own PRN projection as the prediction on record, together with the calibration lessons from the federal scorecard.</p>
+<p><strong>The project's own PRN projection for Perlis (prediction on record):</strong></p>
+<p><strong>PN 7</strong> of 15 seats (base scenario), 7 flips modelled. The full projection and its scenarios are published in Section 12. When the PRN is held, the actual result will confirm or falsify this projection — and the outcome will be recorded here.</p>
+<p><strong>Calibration lessons from the federal scorecard (Sabah/Johor/N9):</strong></p>
+<ol>
+<li><strong>Direction beats magnitude:</strong> the best predictions headline the probability of government formation and present seat counts as P10/P50/P90 ranges, not point estimates — exactly as the Monte Carlo does.</li>
+<li><strong>Sabah and East Malaysia are a known blind spot:</strong> every centre that applied Peninsular swing logic to Sabah was wrong; the model separates <code>east_malaysia</code> seat type with reduced swing weights.</li>
+<li><strong>Swing-based beats poll-based:</strong> the southern-resurgence scenario (BN +17.0pp swing) predicted the Johor BN supermajority that materialised as 48/56, while poll-based centres under-shot. Revealed preference — actual votes — beats stated intention.</li>
+</ol>
+<p>Full scorecard: <code>Research/knowledge/prn-prediction-scorecard.md</code>.</p>
+<hr>
+<h2 id="16-references-provenance">16. References & Provenance</h2>
+<p>This report was generated live by <code>Forecast/engine/state_report_builder.py</code> on 15 August 2026. Every number in it is computed from the datasets below at build time — nothing is hand-typed. The source registry follows the federal report's [S-XX] convention.</p>
+<p><strong>Datasets (all live, read at build time):</strong></p>
+<div class="table-wrap"><table>
+<tr><th>Tag</th><th>Source</th></tr>
+<tr><td><span class="tag">[S-01]</span></td><td><code>Research/states/DUN Perlis/dun-election-results-latest.csv</code> — per-seat winners, parties, blocs, votes, margins, turnout</td></tr>
+<tr><td><span class="tag">[S-02]</span></td><td><code>Research/states/DUN Perlis/dun-candidates-latest.csv</code> — per-candidate party, coalition, votes, result, sex, ethnicity, age</td></tr>
+<tr><td><span class="tag">[S-03]</span></td><td><code>Research/data/derived/ge15-results-by-constituency-full.csv</code> — federal GE15 results for Perlis's constituencies</td></tr>
+<tr><td><span class="tag">[S-04]</span></td><td><code>Research/data/derived/voter-demographics-by-constituency-ge15.csv</code> — federal constituency demographics weighted for Perlis</td></tr>
+<tr><td><span class="tag">[S-05]</span></td><td><code>Research/data/derived/master-list-222-parliamentary-seats.csv</code> — federal seat register for Perlis</td></tr>
+<tr><td><span class="tag">[S-06]</span></td><td><code>Research/data/derived/swing_se_to_se.csv</code> — state-election swings for Perlis</td></tr>
+<tr><td><span class="tag">[S-07]</span></td><td><code>Report/states/DUN Perlis/dun-election-summary.md</code> — readable results summary</td></tr>
+<tr><td><span class="tag">[S-08]</span></td><td><code>Report/states/DUN Perlis/ge16-battleground-deepdive.md</code> — seat-by-seat GE16 federal analysis</td></tr>
+<tr><td><span class="tag">[S-09]</span></td><td><code>Research/states/DUN Perlis/<state>-prn-projection.csv</code> — PRN projection (Melaka, Sarawak)</td></tr>
+<tr><td><span class="tag">[S-10]</span></td><td><code>Research/knowledge/forecast-theory.md</code> — the uniform-swing framework, mathematics, validation protocol</td></tr>
+<tr><td><span class="tag">[S-11]</span></td><td><code>Research/states/national-composition-summary.md</code> — national DUN composition context</td></tr>
+<tr><td><span class="tag">[S-12]</span></td><td><code>Research/data/trackers/ge16-{poll,candidate,general-news}-log.md</code> — 2026 news signals</td></tr>
+</table></div>
+<p><strong>Project documents referenced:</strong></p>
+<ul>
+<li><code>Report/states/DUN Perlis/dun-election-summary.md</code> <span class="tag">[S-07]</span> — the state's readable results table</li>
+<li><code>Report/states/DUN Perlis/ge16-battleground-deepdive.md</code> <span class="tag">[S-08]</span> — the state's federal battleground analysis</li>
+<li><code>Research/states/national-composition-summary.md</code> <span class="tag">[S-11]</span> — where Perlis sits in the national DUN picture</li>
+</ul>
+<p><strong>Official and institutional sources:</strong></p>
+<ul>
+<li>Election Commission of Malaysia — state election results 2021–2026 and GE15 federal results <span class="tag">[S-01]</span><span class="tag">[S-03]</span></li>
+<li>ElectionData.MY / MECo (CC0) — constituency results, voter demographics, candidate registers <span class="tag">[S-02]</span><span class="tag">[S-04]</span></li>
+<li>Parliament of Malaysia — seat register, members, coalition composition <span class="tag">[S-05]</span></li>
+<li>Merdeka Center, Ilham Centre — approval and preference tracking referenced by the federal model <span class="tag">[S-12]</span></li>
+</ul>
+<p><em>Generated live by <code>Forecast/engine/state_report_builder.py</code> on 15 August 2026. This report is versioned: every prior edition is preserved in <code>Report/states/DUN Perlis/archive/</code>; the current one lives at <code>Report/states/DUN Perlis/latest/GE16_Perlis_Report.md</code>. Every number in this document is computed from the project's datasets at build time — nothing is hand-typed.</em></p>
+    <div class="tabbar">
+      <span class="lbl">HitungKerusi 222 · Laporan</span>
+      <a href="/laporan.html">Persekutuan</a>
+      <a href="/state/johor-en.html">Johor</a><a href="/state/kedah-en.html">Kedah</a><a href="/state/kelantan-en.html">Kelantan</a><a href="/state/melaka-en.html">Melaka</a><a href="/state/negeri-sembilan-en.html">Negeri Sembilan</a><a href="/state/pahang-en.html">Pahang</a><a href="/state/perak-en.html">Perak</a><a href="/state/perlis-en.html">Perlis</a><a href="/state/pulau-pinang-en.html">Pulau Pinang</a><a href="/state/sabah-en.html">Sabah</a><a href="/state/sarawak-en.html">Sarawak</a><a href="/state/selangor-en.html">Selangor</a><a href="/state/terengganu-en.html">Terengganu</a>
+    </div>
+  </article>
+</div>
+<footer>HitungKerusi 222 — Unjuran PRU16 · Data: SPR (GE15) · ElectionData.MY / MECo · DOSM · Parlimen Malaysia. Semua unjuran ialah analisis penulis sendiri.</footer>
+</body>
+</html>

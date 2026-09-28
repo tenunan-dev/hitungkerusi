@@ -1,0 +1,201 @@
+{
+  "schema": "outputs.output-contract.v1",
+  "repository": "3_OUTPUTS",
+  "allowed_inputs": [
+    {
+      "producer": "2_ANALYTICS",
+      "content": "validated-results-only"
+    }
+  ],
+  "release_layout": {
+    "root": "releases",
+    "path_template": "releases/{release_id}/",
+    "artifacts_directory": "releases/{release_id}/artifacts/",
+    "artifact_manifest": "manifest.json",
+    "hash_manifest": "SHA256SUMS"
+  },
+  "provenance": {
+    "required_fields": [
+      "analytics_commit_sha",
+      "data_commit_sha",
+      "run_id",
+      "artifact_manifest_sha256"
+    ]
+  },
+  "release_intake": {
+    "manifest_schema": "outputs.release-manifest.v1",
+    "manifest_path": "releases/{release_id}/manifest.json",
+    "hash_manifest_path": "releases/{release_id}/SHA256SUMS",
+    "allowed_root_entries": [
+      "manifest.json",
+      "SHA256SUMS",
+      "receipt.json",
+      "artifacts"
+    ],
+    "receipt_schema": "outputs.release-receipt.v1",
+    "receipt_path": "releases/{release_id}/receipt.json",
+    "receipt": {
+      "required_fields": [
+        "schema",
+        "release_id",
+        "manifest_sha256",
+        "sha256sums_sha256",
+        "artifacts"
+      ],
+      "artifact_required_fields": [
+        "path",
+        "sha256",
+        "bytes"
+      ]
+    },
+    "provenance": {
+      "required_fields": [
+        "analytics_commit_sha",
+        "data_commit_sha",
+        "run_id",
+        "artifact_manifest_sha256"
+      ],
+      "artifact_manifest_sha256_target": "SHA256SUMS"
+    },
+    "artifacts": {
+      "directory": "releases/{release_id}/artifacts/",
+      "required_fields": [
+        "path",
+        "category",
+        "sha256",
+        "bytes"
+      ],
+      "required_categories": [
+        "forecast",
+        "report",
+        "social",
+        "tracking",
+        "state-composition"
+      ],
+      "additional_properties": false
+    },
+    "delivery_semantics": {
+      "manifest_section": "delivery_semantics",
+      "schema": "outputs.delivery-semantics.v1",
+      "entry_required_fields": [
+        "role",
+        "source_path",
+        "category",
+        "destination_path",
+        "content_type",
+        "content_schema",
+        "content_version"
+      ],
+      "source_path": {
+        "prefix": "artifacts/",
+        "must_match_exactly_one_declared_artifact": true
+      },
+      "destination_path": {
+        "kind": "safe-relative-delivery-path",
+        "must_be_unique": true,
+        "forbid_reserved_domains": true
+      },
+      "coverage": {
+        "data_payloads": [
+          "app-data",
+          "forecast",
+          "forecast-engine",
+          "scenarios"
+        ],
+        "federal_report_languages": [
+          "en",
+          "ms"
+        ],
+        "state_identifiers": [
+          "johor",
+          "kedah",
+          "kelantan",
+          "melaka",
+          "negeri-sembilan",
+          "pahang",
+          "perak",
+          "perlis",
+          "pulau-pinang",
+          "sabah",
+          "sarawak",
+          "selangor",
+          "terengganu"
+        ],
+        "state_report_languages": [
+          "en",
+          "ms"
+        ],
+        "state_composition_identifiers": [
+          "melaka",
+          "pahang",
+          "perak",
+          "perlis",
+          "sarawak"
+        ],
+        "required_payload_roles": [
+          "social.payload",
+          "tracking.payload"
+        ]
+      },
+      "json_metadata": {
+        "content_type": "application/json",
+        "require_content_schema": true,
+        "require_content_version": true
+      },
+      "artifact_coverage": "every-declared-artifact-exactly-once"
+    }
+  },
+  "release_validation": {
+    "staging": {
+      "required": true,
+      "checks": [
+        "structure",
+        "provenance",
+        "hashes",
+        "categories",
+        "semantics",
+        "symlinks",
+        "root-files",
+        "paths"
+      ]
+    },
+    "sealed": {
+      "required": true,
+      "commit": {
+        "type": "local-git-commit-object",
+        "sha_format": "lowercase-40-hex"
+      },
+      "release_tree": {
+        "scope": "entire-release-directory",
+        "comparison": "exact-path-and-byte"
+      },
+      "uncommitted_release": {
+        "may_pass_staging": true,
+        "immutable": false,
+        "delivery_consumable": false
+      },
+      "delivery": {
+        "requires_sealed_validation": true
+      }
+    }
+  },
+  "immutability": {
+    "sealed_releases_append_only": true,
+    "unsealed_staging_releases_immutable": false,
+    "overwrite_sealed_release": false,
+    "mutable_aliases_forbidden": [
+      "current",
+      "latest"
+    ]
+  },
+  "access": {
+    "website_access": {
+      "read": false,
+      "write": false
+    },
+    "direct_deployment": false,
+    "allowed_downstream_readers": [
+      "4_DELIVERY"
+    ]
+  }
+}

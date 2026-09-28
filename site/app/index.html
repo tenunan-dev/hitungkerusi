@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Panel Kawalan Hitung Kerusi 222 — projeksi telus PRU16.">
+  <title>Panel Kawalan — Hitung Kerusi 222</title>
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="icon" type="image/png" href="/assets/favicon-hk222.png">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="dashboard federal">
+  <!-- THESIS: One forecast, legible at a glance and inspectable in depth. OWN-WORLD: Civic wayfinding in ink and paper. STORY: understand the majority, then explore the evidence. FIRST VIEWPORT: Forecast headline and its threshold share the opening workspace. FORM: Civic wayfinding board, seed fe6a62ce. FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md -->
+  <div id="topbar-root"></div>
+
+  <main>
+    <section class="section hero-kpi">
+      <div class="container">
+        <div class="overview-question">
+          <h1>Siapa boleh bentuk kerajaan?</h1>
+          <p>Unjuran ini menunjukkan kedudukan semasa daripada 222 kerusi Parlimen. Majoriti memerlukan sekurang-kurangnya <strong>112 kerusi</strong>.</p>
+        </div>
+        <div class="kpi-hero">
+          <div class="kpi-hero__num">140 / 222</div>
+          <div class="kpi-hero__label">Unjuran kerusi kerajaan</div>
+          <p class="headline-answer" id="forecast-answer">Kerajaan diunjurkan melepasi ambang majoriti 112 kerusi.</p>
+          <div class="kpi-hero__sub analysis-only" id="forecast-range">Julat P10–P90: 139–141 kerusi</div>
+        </div>
+        <div class="kpi-grid">
+          <div class="kpi-card"><div class="kpi-card__num">100%</div><div class="kpi-card__label">Melepasi 112?</div></div>
+          <div class="kpi-card"><div class="kpi-card__num">+20</div><div class="kpi-card__label">Kerusi bertukar dalam unjuran asas</div></div>
+          <div class="kpi-card analysis-only"><div class="kpi-card__num">+4.59%</div><div class="kpi-card__label">Pecahan ekonomi</div></div>
+        </div>
+        <div class="coalition-bar">
+          <span class="coalition-text">PH 69 · BN 34 · PN 81 · GPS 23 · GRS 8 · WARISAN 3</span>
+        </div>
+        <div class="analysis-only analysis-note">
+          <strong>Lapisan analisis</strong> memaparkan julat P10–P90, andaian senario, dan data kerusi yang menyokong unjuran ini. Semua nombor datang daripada model yang sama.
+        </div>
+      </div>
+    </section>
+
+    <section class="section analysis-only" id="dashboard-scenario-compare">
+      <div class="container">
+        <h2>Bandingkan senario</h2>
+        <p class="muted">Pilih satu andaian untuk melihat bagaimana komposisi kerusi boleh berubah.</p>
+        <div class="scenario-chips" id="scenario-chips">
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Komposisi 222 kerusi</h2>
+        <p class="muted">Setiap titik mewakili satu kerusi. Titik ke-112 menandakan ambang majoriti.</p>
+        <div class="chart-wrap">
+          <div id="house-bar" class="house-seat-graphic" aria-label="Komposisi 222 kerusi Parlimen"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section analysis-only">
+      <div class="container">
+        <h2>Kerusi yang bertukar tangan</h2>
+        <p class="muted">Kerusi ini berbeza daripada keputusan PRU15 dalam unjuran asas.</p>
+        <div class="table-wrap">
+          <table class="flip-table" id="flip-table">
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section analysis-only">
+      <div class="container">
+        <div class="tight-grid">
+          <div class="tight-card">
+            <h2>Kerusi paling rapat</h2>
+            <p class="muted">Margin paling kecil dalam unjuran semasa.</p>
+          </div>
+          <div class="history-card">
+            <h2>Perubahan mingguan</h2>
+            <p class="muted">Jejak perkembangan apabila data dikemas kini.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>Hitung Kerusi 222 · Unjuran telus PRU16 · Sumber: EC · ElectionData.MY / MECo · DOSM · Parlimen</p>
+    </div>
+  </footer>
+
+  <script src="/js/data.js"></script>
+  <script src="/js/dun-data.js"></script>
+  <script src="/js/report.js"></script>
+  <script src="/js/components.js"></script>
+  <script src="/js/app-dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+{
+  "_spec": "Companion job for the GE16 weekly chain: the AI-authored narrative edition. The record is now DECLARED in the canonical registry OPS/cron/ge16_jobs.json as the optional sixth job (id ge16-authoring, enabled=false, state=disabled, non_blocking=true), pinned by sync_jobs.validate_canonical_config + the OPS contract's scheduler_binding, and its chain position is declared in cron/run_stage.py (COMMAND_ALLOWLIST + OPTIONAL_CHAIN_STEPS[2]). Enabling it is an owner decision: the registry record ships disabled and only an owner-authorized live cron change may flip that. The helper step is run by the weekly agent, never by the sandboxed runner.",
+  "schema": "ge16-cron-job-spec/1",
+  "registry": {
+    "canonical": "OPS/cron/ge16_jobs.json",
+    "registered": true,
+    "state": "declared-disabled"
+  },
+  "job": {
+    "id": "ge16-authoring",
+    "name": "GE16 P1.5 2_ANALYTICS AI-Authored Narrative Edition (optional)",
+    "stage_number": 2,
+    "optional_stage": true,
+    "chain_position": {
+      "after": "analytics-state-report-ms",
+      "before": "Stage 3 (outputs-intake-seal)",
+      "declared_in": "OPS/cron/run_stage.py:OPTIONAL_CHAIN_STEPS"
+    },
+    "owner_domain": "2_ANALYTICS",
+    "contract_id": "ge16-cron-analytics-authoring",
+    "contract_version": "1.0.0",
+    "schedule": {
+      "kind": "cron",
+      "expr": "0 2 * * 6",
+      "display": "0 2 * * 6"
+    },
+    "timezone": "Asia/Kuala_Lumpur",
+    "dependencies": [
+      "2b0a9111c836"
+    ],
+    "enabled": false,
+    "state": "disabled",
+    "model": "deepseek/deepseek-v4-pro",
+    "provider": "nous",
+    "model_snapshot": "deepseek/deepseek-v4-pro",
+    "provider_snapshot": "nous",
+    "delivery": "local",
+    "enabled_toolsets": [
+      "terminal",
+      "file"
+    ],
+    "workdir": "/Users/faisal.muthalib/Documents/HermesWorkFolder/Malaysia General Election v2",
+    "inactivity_limit": 1800,
+    "non_blocking": true,
+    "gate_impact": "none",
+    "gate_note": "The deterministic editions are the published path. A failed or thin authoring pass leaves them in place, records itself in the step's own manifest, and never blocks Stage 3, Stage 4 or Stage 5. There is no authored-rate threshold: a section is published as authored only when some writer in its language chain passed exact verbatim verification, and a pass with nothing authored publishes no edition at all.",
+    "writes": [
+      "2_ANALYTICS/03_REPORTS/ai",
+      "2_ANALYTICS/work/reports"
+    ],
+    "must_not_write": [
+      "2_ANALYTICS/03_REPORTS/federal",
+      "2_ANALYTICS/03_REPORTS/states",
+      "1_DATA",
+      "3_OUTPUTS",
+      "4_DELIVERY",
+      "5_WEBSITES",
+      "OPS"
+    ],
+    "no_commit": true,
+    "prompt": "Run the OPTIONAL analytics-authoring step of the GE16 weekly chain, in the 2_ANALYTICS working directory with the project interpreter. The step is non-blocking: if it fails, publish nothing from it and let the deterministic editions stand.\n\n1. Author the editions. The standing writer split lives in 02_FORECAST/engine/authoring_config.json: each edition language names a primary writer AND its failover chain (`languages.<lang>.fallbacks`, best first). Run both passes:\n   ./.venv/bin/python 02_FORECAST/engine/author_reports.py --all-states --lang en\n   ./.venv/bin/python 02_FORECAST/engine/author_reports.py --all-states --lang ms\n   The EN pass uses the `en` chain, the MS pass the `ms` chain. The harness moves a section to the next writer in its chain by itself (a writer transport failure, or a section that keeps failing verification after its retry budget); do not hand-edit the config and do not move a key between languages.\n\n2. Verification is the gate, and it is exact: 100% of the figures a section quotes must verify verbatim against the reference pack, or the section is not published as authored. There is NO authored-rate threshold and no failure exit code for a thin run. A dense section is written and verified in chunks of at most 18 claims, so one bad chunk degrades only that chunk; a section (or chunk) that no writer in the chain could verify renders the deterministic text for its own facts and is marked in the manifest.\n\n3. Never publish an unwritten edition as an AI edition. The title and footer come from the mode the edition was actually written in: when at least one section verified, the title stays the AI-edition title and the footer says how many sections a model wrote; when a live pass produced NO authored section, the harness publishes NOTHING to 2_ANALYTICS/03_REPORTS/ai at all, records the failure in the manifest and leaves the previous verified edition in place. Do not bypass that, do not hand-write prose, and do not re-title or re-footer an edition by hand.\n\n4. Boundaries. The step writes only 2_ANALYTICS/03_REPORTS/ai/** and its own manifests under 2_ANALYTICS/work/reports/**. Never write 2_ANALYTICS/03_REPORTS/federal or 2_ANALYTICS/03_REPORTS/states (those are the deterministic editions), and never touch 1_DATA, 3_OUTPUTS, 4_DELIVERY, 5_WEBSITES or OPS. Never commit.\n\n5. Report back: the edition paths written (or that nothing was published, and why), the writer chain per language, which writer wrote each section as recorded in the manifests, the per-section render status, and every section left on the deterministic fallback."
+  }
+}

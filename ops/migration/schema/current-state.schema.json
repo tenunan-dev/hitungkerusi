@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ge16.example/ops/migration/schema/current-state.schema.json",
+  "type": "object", "additionalProperties": false,
+  "required": ["format", "source_root", "generated_outputs", "file_count", "active_code_candidate_count", "unresolved_semantics", "historical_comparison", "schema_validation"],
+  "properties": {
+    "format": {"const": "ge16-current-state/v1"}, "source_root": {"type": "string", "minLength": 1},
+    "generated_outputs": {"const": ["ge16-runtime-dependency-inventory.json", "ge16-rename-disposition-manifest.json", "ge16-current-state.json"]},
+    "file_count": {"type": "integer", "minimum": 0}, "active_code_candidate_count": {"type": "integer", "minimum": 0},
+    "code_file_count": {"type": "integer", "minimum": 0},
+    "previous_generation_sha256": {"type": "object", "additionalProperties": false, "required": ["ge16-runtime-dependency-inventory.json", "ge16-rename-disposition-manifest.json", "ge16-current-state.json"], "properties": {"ge16-runtime-dependency-inventory.json": {"type": "string", "pattern": "^[0-9a-f]{64}$"}, "ge16-rename-disposition-manifest.json": {"type": "string", "pattern": "^[0-9a-f]{64}$"}, "ge16-current-state.json": {"type": "string", "pattern": "^[0-9a-f]{64}$"}}},
+    "scan_scope": {"type": "object", "additionalProperties": false, "required": ["runtime_prefixes_scanned", "sibling_named_directories_unscanned", "note"], "properties": {"runtime_prefixes_scanned": {"type": "array", "items": {"type": "string"}}, "sibling_named_directories_unscanned": {"type": "array", "items": {"type": "string"}}, "note": {"type": "string", "minLength": 1}}},
+    "unresolved_semantics": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+    "historical_comparison": {"type": "object"},
+    "schema_validation": {"type": "object", "additionalProperties": false, "required": ["status", "validator", "schemas"], "properties": {"status": {"const": "passed"}, "validator": {"const": "jsonschema Draft202012Validator"}, "schemas": {"const": ["runtime-dependency-inventory.schema.json", "rename-disposition.schema.json", "current-state.schema.json"]}}}
+  }
+}

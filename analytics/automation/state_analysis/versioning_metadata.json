@@ -1,0 +1,96 @@
+{
+  "schema": "ge16.analytics.state-analysis-versioning.v1",
+  "versioned_at": "2026-09-11",
+  "classification_source": "OPS/migration/evidence/ge16-w03-automation-classification.json",
+  "records": [
+    {
+      "source_path": "05_AUTOMATION/build_state_prn.py",
+      "source_sha256": "aec6c5438c0e61442551c612786986a09648f6c53b90bfb86ed9abe2bc1d897c",
+      "target_path": "automation/state_analysis/build_state_prn.py",
+      "classification": "active",
+      "confidence": "high",
+      "family": "scenario-builders"
+    },
+    {
+      "source_path": "05_AUTOMATION/build_boundary_swings.py",
+      "source_sha256": "e6700f0e5b58021adeb3d4cd3138b16f5458cbf997196d4d1b3376b943faa012",
+      "target_path": "automation/state_analysis/build_boundary_swings.py",
+      "classification": "active",
+      "confidence": "high",
+      "family": "boundary-state",
+      "scope_note": "Included in the state-analysis priority batch by explicit owner directive."
+    },
+    {
+      "source_path": "05_AUTOMATION/build_narrative_scenarios.py",
+      "source_sha256": "1229f5e97add0c56342b6c2d9f2d9d28ad106547cc9f9717c1e8d27c01b5f6f2",
+      "target_path": "automation/state_analysis/build_narrative_scenarios.py",
+      "classification": "active",
+      "confidence": "high",
+      "family": "scenario-builders"
+    },
+    {
+      "source_path": "05_AUTOMATION/build_state_narrative_scenarios.py",
+      "source_sha256": "8f4d778db632cb549a9f4a2d7335ec139672bf58c60fb31fd0313f03a98b01fd",
+      "target_path": "automation/state_analysis/build_state_narrative_scenarios.py",
+      "classification": "active",
+      "confidence": "high",
+      "family": "scenario-builders"
+    },
+    {
+      "source_path": "05_AUTOMATION/build_state_prn_trend.py",
+      "source_sha256": "9189969d69dfffb1b72a51a56850dd23a5870632d00b0400615a71df8975c74e",
+      "target_path": "automation/state_analysis/build_state_prn_trend.py",
+      "classification": "needs-decision",
+      "confidence": "low",
+      "family": "scenario-builders",
+      "owner_override": {
+        "date": "2026-09-11",
+        "directive_quote": "Make state data and analysis as comprehensive as federal.",
+        "decision": "active-by-owner-decision"
+      }
+    }
+  ],
+  "runtime_inputs": {
+    "required_canonical_data": [
+      "research/derived/dun_to_parliament_mapping.json",
+      "research/derived/swing_se_to_se.csv",
+      "research/derived/master-list-222-parliamentary-seats.csv",
+      "research/states"
+    ],
+    "optional_inputs": [
+      {
+        "path": "work/tracking/ge16-news-feed.json",
+        "consumers": ["build_narrative_scenarios.py", "build_state_narrative_scenarios.py"],
+        "absence_handling": "RuntimeWarning with an empty signal set."
+      },
+      {
+        "path": "research/states/*/dun-election-results-latest.csv",
+        "consumer": "build_boundary_swings.py",
+        "absence_handling": "RuntimeWarning and skip that state."
+      }
+    ],
+    "generated_work_roots": ["work/forecast/latest", "work/reports/latest", "work/tracking"],
+    "deferred_conflict_reason": "W02 archive-versus-runtime destination conflict for figure and graph artifacts."
+  },
+  "deferred": [
+    {
+      "paths": [
+        "05_AUTOMATION/update_personnel_from_cron.py",
+        "05_AUTOMATION/build_personnel_vdb.py"
+      ],
+      "reason": "Both are classified active in the figure-vector family and therefore belong to the batch-2 figure family."
+    }
+  ],
+  "ge16_task48b_scenario_work_migration": {
+    "recorded_at": "2026-09-12",
+    "families": ["analyst narratives", "state narratives", "PRN history"],
+    "writers_and_readers": [
+      "automation/state_analysis/build_narrative_scenarios.py",
+      "automation/state_analysis/build_state_narrative_scenarios.py",
+      "automation/state_analysis/build_state_prn.py",
+      "automation/state_analysis/build_state_prn_trend.py"
+    ],
+    "to": ["work/scenarios/narrative_scenarios.json", "work/scenarios/state-narrative-scenarios.json", "work/reports/prn-history"],
+    "legacy_disposition": "retained unchanged pending Phase 5 removal"
+  }
+}

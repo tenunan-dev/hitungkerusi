@@ -1,0 +1,2 @@
+# Python 3.9-compatible Draft 2020-12 JSON Schema implementation.
+jsonschema==4.25.1

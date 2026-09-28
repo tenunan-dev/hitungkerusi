@@ -1,0 +1,215 @@
+{
+ "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+ "dim": 384,
+ "count": 14,
+ "items": [
+  {
+   "name": "BN exits the government (contests separately)",
+   "template": "EXIT",
+   "signal_strength": 12.5,
+   "n_signals": 7,
+   "trigger": [
+    "[legal] Najib pardon postponement gives ‘breathing space’ amid heated debate: analysts",
+    "[coalition] Past is past, but Umno delegates want PAS to prove it can be different",
+    "[coalition] Umno Perak delegate warns that BN-PN cooperation could shrink its footprint in northern, East Coast states - The Edge Malaysia",
+    "[legal] Umno to pursue every avenue to seek justice for Najib - The Star"
+   ],
+   "logic": "BN holds 30 seats; if it leaves the government these seats cease to count for the govt column (they remain won, but not govt-aligned).",
+   "govt_impact": "govt 144 -> 114",
+   "recommendation": "PROMOTE",
+   "seat_map": null
+  },
+  {
+   "name": "BERSAMA absorbs defectors and wins 3 seats",
+   "template": "ABSORB",
+   "signal_strength": 2.4,
+   "n_signals": 3,
+   "trigger": [
+    "[cand] - **[Rafizi GE16 candidate]** Bersama targets 50pct women, 70pct under-50 candidates, Rafi",
+    "[cand] - **[Bersama calon PRU16]** Rafizi minta calon Bersama lebih berdisiplin ketika berucap - ",
+    "[cand] - **[Rafizi GE16 candidate]** Bersama targets 50pct women, 70pct under-50 candidates, Rafi"
+   ],
+   "logic": "0 recorded switch(es) + 0 feed signal(s) + 3 candidate-tracker signal(s); modelled as BERSAMA winning 3 seats (new party: seat_bonus 3; established: base 0 + defectors 0).",
+   "govt_impact": "siphons from origin bloc; govt arithmetic unchanged unless origin is govt",
+   "recommendation": "PROMOTE",
+   "seat_map": null
+  },
+  {
+   "name": "BN-PAS electoral pact (73 combined seats)",
+   "template": "PACT",
+   "signal_strength": 4.8,
+   "n_signals": 4,
+   "trigger": [
+    "[title mention (graph)] Past is past, but Umno delegates want PAS to prove it can be different",
+    "[title mention (graph)] Mahdzir jumpa Sanusi selepas PAU bincang kemungkinan kerjasama 2 parti",
+    "[title mention (graph)] Pas information chief: Zahid's speech signals Umno's new political alignment - NST Online",
+    "[title mention (graph)] Jika ikut takrifan PAS, Ummo hanya tanding 9 kerusi di Perak"
+   ],
+   "logic": "if BN (30) and PAS (43) contest together, their combined 73 seats act as one column (no three-cornered fight between them). Matched via title mention (graph).",
+   "govt_impact": "combined column = 73 seats",
+   "recommendation": "PROMOTE",
+   "seat_map": null
+  },
+  {
+   "name": "BN-PH electoral pact (108 combined seats)",
+   "template": "PACT",
+   "signal_strength": 4.8,
+   "n_signals": 4,
+   "trigger": [
+    "[title mention (graph)] MCMC looks into report on bid to manipulate election",
+    "[title mention (graph)] PM Anwar: Government agrees to increase Sabah, Sarawak MP ratio",
+    "[title mention (graph)] Claude AI creator Anthropic reveals it disrupted election-manipulation platform targeting ",
+    "[title mention (graph)] Anthropic says it disrupted an AI-powered election manipulation platform targeting Malaysi"
+   ],
+   "logic": "if BN (30) and PH (78) contest together, their combined 108 seats act as one column (no three-cornered fight between them). Matched via title mention (graph).",
+   "govt_impact": "combined column = 108 seats",
+   "recommendation": "PROMOTE",
+   "seat_map": null
+  },
+  {
+   "name": "BN-PN electoral pact (98 combined seats)",
+   "template": "PACT",
+   "signal_strength": 8.0,
+   "n_signals": 4,
+   "trigger": [
+    "[tagged together] Past is past, but Umno delegates want PAS to prove it can be different",
+    "[tagged together] Umno Perak delegate warns that BN-PN cooperation could shrink its footprint in northern, E",
+    "[tagged together] Mahdzir jumpa Sanusi selepas PAU bincang kemungkinan kerjasama 2 parti",
+    "[tagged together] Pas information chief: Zahid's speech signals Umno's new political alignment - NST Online"
+   ],
+   "logic": "if BN (30) and PN (68) contest together, their combined 98 seats act as one column (no three-cornered fight between them). Matched via tagged together.",
+   "govt_impact": "combined column = 98 seats",
+   "recommendation": "PROMOTE",
+   "seat_map": null
+  },
+  {
+   "name": "PAS-WAWASAN electoral pact (49 combined seats)",
+   "template": "PACT",
+   "signal_strength": 4.8,
+   "n_signals": 4,
+   "trigger": [
+    "[title mention (graph)] BN, PAS supporters may be unhappy about Wawasan contesting Sikamat, says Tun Faisal - Free",
+    "[title mention (graph)] PN confident ‘blue wave’ strategy with Wawasan can eventually return coalition to Putrajay",
+    "[title mention (graph)] Negri Sembilan election: Bersatu to face Pas, Wawasan in eight seats - NST Online",
+    "[title mention (graph)] Zahid downplays claims of BN-PAS-Wawasan cooperation in Johor polls - Free Malaysia Today"
+   ],
+   "logic": "if PAS (43) and WAWASAN (6) contest together, their combined 49 seats act as one column (no three-cornered fight between them). Matched via title mention (graph).",
+   "govt_impact": "combined column = 49 seats",
+   "recommendation": "PROMOTE",
+   "seat_map": null
+  },
+  {
+   "name": "PH-BERSAMA electoral pact (78 combined seats)",
+   "template": "PACT",
+   "signal_strength": 1.5,
+   "n_signals": 1,
+   "trigger": [
+    "[tagged together] Bersama accuses government of targeting activists through AMLA measures"
+   ],
+   "logic": "if PH (78) and BERSAMA (0) contest together, their combined 78 seats act as one column (no three-cornered fight between them). Matched via tagged together.",
+   "govt_impact": "combined column = 78 seats",
+   "recommendation": "WATCH",
+   "seat_map": null
+  },
+  {
+   "name": "GPS-PH electoral pact (101 combined seats)",
+   "template": "PACT",
+   "signal_strength": 4.8,
+   "n_signals": 4,
+   "trigger": [
+    "[title mention (graph)] MCMC looks into report on bid to manipulate election",
+    "[title mention (graph)] PM Anwar: Government agrees to increase Sabah, Sarawak MP ratio",
+    "[title mention (graph)] Claude AI creator Anthropic reveals it disrupted election-manipulation platform targeting ",
+    "[title mention (graph)] Anthropic says it disrupted an AI-powered election manipulation platform targeting Malaysi"
+   ],
+   "logic": "if GPS (23) and PH (78) contest together, their combined 101 seats act as one column (no three-cornered fight between them). Matched via title mention (graph).",
+   "govt_impact": "combined column = 101 seats",
+   "recommendation": "PROMOTE",
+   "seat_map": null
+  },
+  {
+   "name": "GRS-PH electoral pact (81 combined seats)",
+   "template": "PACT",
+   "signal_strength": 4.8,
+   "n_signals": 4,
+   "trigger": [
+    "[title mention (graph)] PM Anwar: Government agrees to increase Sabah, Sarawak MP ratio",
+    "[title mention (graph)] Claude AI creator Anthropic reveals it disrupted election-manipulation platform targeting ",
+    "[title mention (graph)] Anthropic says it disrupted an AI-powered election manipulation platform targeting Malaysi",
+    "[title mention (graph)] Follow through on increased Sabah, Sarawak parliamentary seats, Abd Karim tells Putrajaya"
+   ],
+   "logic": "if GRS (3) and PH (78) contest together, their combined 81 seats act as one column (no three-cornered fight between them). Matched via title mention (graph).",
+   "govt_impact": "combined column = 81 seats",
+   "recommendation": "PROMOTE",
+   "seat_map": null
+  },
+  {
+   "name": "GPS exits the government (contests separately)",
+   "template": "EXIT",
+   "signal_strength": 1.0,
+   "n_signals": 1,
+   "trigger": [
+    "[election] Thousands evacuate after Indonesia quake kills 51, cuts roads"
+   ],
+   "logic": "GPS holds 23 seats; if it leaves the government these seats cease to count for the govt column (they remain won, but not govt-aligned).",
+   "govt_impact": "govt 144 -> 121",
+   "recommendation": "WATCH",
+   "seat_map": null
+  },
+  {
+   "name": "GRS exits the government (contests separately)",
+   "template": "EXIT",
+   "signal_strength": 3.0,
+   "n_signals": 2,
+   "trigger": [
+    "[election] Thousands evacuate after Indonesia quake kills 51, cuts roads",
+    "[coalition] UPKO entry strengthens Sabah’s political stability, development agenda"
+   ],
+   "logic": "GRS holds 3 seats; if it leaves the government these seats cease to count for the govt column (they remain won, but not govt-aligned).",
+   "govt_impact": "govt 144 -> 141",
+   "recommendation": "PROMOTE",
+   "seat_map": null
+  },
+  {
+   "name": "DAP exits the government (contests separately)",
+   "template": "EXIT",
+   "signal_strength": 2.0,
+   "n_signals": 1,
+   "trigger": [
+    "[coalition] Malaysia’s DAP to Hold Vote on Whether to Remain in Anwar’s ‘Unity’ Government - The Diplomat – Asia-Pacific"
+   ],
+   "logic": "DAP holds 40 seats; if it leaves the government these seats cease to count for the govt column (they remain won, but not govt-aligned).",
+   "govt_impact": "govt 144 -> 104",
+   "recommendation": "WATCH",
+   "seat_map": null
+  },
+  {
+   "name": "UMNO exits the government (contests separately)",
+   "template": "EXIT",
+   "signal_strength": 2.0,
+   "n_signals": 1,
+   "trigger": [
+    "[coalition] Umno fears ending ties with Harapan at federal level, not ready to lose minister posts"
+   ],
+   "logic": "UMNO holds 26 seats; if it leaves the government these seats cease to count for the govt column (they remain won, but not govt-aligned).",
+   "govt_impact": "govt 144 -> 118",
+   "recommendation": "WATCH",
+   "seat_map": null
+  },
+  {
+   "name": "BN-PN federal pact extends to GE16 (N9 template goes national)",
+   "template": "PACT",
+   "signal_strength": 4.0,
+   "n_signals": 3,
+   "trigger": [
+    "[state] N9 SE-16 (1 Aug 2026): BN 18 + PN 7 = 25/36 government, MB Ismail bin Lasim (UMNO) — first state-level BN-PN pact of the cycle",
+    "[coalition] PBM says GPS, GRS may lose kingmaker role following BN-PN pact (tagged only PBM/GPS/GRS — graph title-mention now catches this)",
+    "[coalition] Hadi: Melaka pact may look different; Umno/PAS youth wings want pact extended to GE16 (4 Aug weekly log)"
+   ],
+   "logic": "N9 proved BN can govern with PN (25/36, MB Ismail bin Lasim UMNO — zahid cluster). If the same pact applies federally, BN 30 + PN 68 = 98 current holdings; under the projection BN 34 + PN 81 = 115 combined — crosses the 112 majority. The single narrative that breaks the parametric 137-146 safety band.",
+   "govt_impact": "govt 140 -> ~107 (BN leaves govt column, joins PN column; 115 combined pact seats)",
+   "recommendation": "PROMOTE",
+   "seat_map": null
+  }
+ ]
+}

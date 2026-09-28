@@ -1,0 +1,535 @@
+{
+ "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+ "dim": 384,
+ "count": 30,
+ "items": [
+  {
+   "name": "AMANAH",
+   "bloc": "PH",
+   "founded": 2015,
+   "ideology": "Progressive Islam, reformist",
+   "mp_seats": 8,
+   "dun_seats": 10,
+   "leaders": [
+    "Dzulkefly Ahmad",
+    "Mohamad Sabu",
+    "Mujahid Yusof Rawa",
+    "Aminolhuda Hassan",
+    "Mahfuz Omar",
+    "Hasan Bahrom"
+   ],
+   "aliases": [
+    "Parti Amanah Negara",
+    "National Trust Party"
+   ],
+   "profile": "PH's progressive-Islamist wing; 8 seats; small urban Malay niche"
+  },
+  {
+   "name": "Bersama",
+   "bloc": "PH-adjacent",
+   "founded": 2026,
+   "ideology": "Urban reform, anti-corruption, youth, gender equality",
+   "mp_seats": 0,
+   "dun_seats": 0,
+   "leaders": [
+    "Rafizi Ramli",
+    "Nik Nazmi Nik Ahmad",
+    "Ahmad Syukri Che Abdul Razab",
+    "Matthew Lai Jun-Loong"
+   ],
+   "aliases": [
+    "Parti Bersama Malaysia"
+   ],
+   "profile": "Rafizi/Nik Nazmi's splinter; targets PKR's urban Malay base; 0 seats"
+  },
+  {
+   "name": "BERSATU",
+   "bloc": "PN",
+   "founded": 2016,
+   "ideology": "Malay nationalism, originally UMNO offshoot",
+   "mp_seats": 19,
+   "dun_seats": 57,
+   "leaders": [
+    "Hamzah Zainudin",
+    "Saifuddin Abdullah",
+    "Mohd Radzi Md Jidin",
+    "Muhyiddin Yassin",
+    "Syed Saddiq Syed Abdul Rahman",
+    "Ronald Kiandee",
+    "Maszlee bin Malik",
+    "Mohamed Azmin bin Ali"
+   ],
+   "aliases": [
+    "Parti Pribumi Bersatu Malaysia",
+    "Malaysian United Indigenous Party"
+   ],
+   "profile": "Reduced to a rump (~6 loyal MPs) after the 2026 purge; funds frozen"
+  },
+  {
+   "name": "BN",
+   "bloc": "BN",
+   "founded": 1973,
+   "ideology": "Malay-establishment multiracial (UMNO-MCA-MIC)",
+   "mp_seats": 30,
+   "dun_seats": 124,
+   "leaders": [],
+   "aliases": [
+    "Barisan Nasional",
+    "National Front"
+   ],
+   "profile": "UMNO 26, MCA 2, MIC 1, PBRS 1 seats; resurgent in the south"
+  },
+  {
+   "name": "DAP",
+   "bloc": "PH",
+   "founded": 1966,
+   "ideology": "Social democracy, multiculturalism, secular",
+   "mp_seats": 40,
+   "dun_seats": 80,
+   "leaders": [
+    "Lim Guan Eng",
+    "Steven Sim Chee Keong",
+    "Nga Kor Ming",
+    "Yeo Bee Yin",
+    "Gobind Singh Deo",
+    "Teresa Kok Suh Sim",
+    "Anthony Loke Siew Fook",
+    "Chow Kon Yeow"
+   ],
+   "aliases": [
+    "Democratic Action Party"
+   ],
+   "profile": "PH's largest component (40 seats); urban Chinese/mixed base; disciplined machinery"
+  },
+  {
+   "name": "GAGASAN",
+   "bloc": "GRS",
+   "founded": 2023,
+   "ideology": "Sabah-first",
+   "mp_seats": 0,
+   "dun_seats": 0,
+   "leaders": [
+    "Hajiji bin Noor"
+   ],
+   "aliases": [
+    "Parti Gagasan Rakyat Sabah"
+   ],
+   "profile": "GRS anchor — Hajiji; Sabah state seats"
+  },
+  {
+   "name": "GERAKAN",
+   "bloc": "PN",
+   "founded": 1968,
+   "ideology": "Multiracial liberalism",
+   "mp_seats": 0,
+   "dun_seats": 1,
+   "leaders": [
+    "Dominic Lau Hoe Chai",
+    "Oh Tong Keong"
+   ],
+   "aliases": [
+    "Parti Gerakan Rakyat Malaysia"
+   ],
+   "profile": "PN's multiracial window-dressing; 0 seats"
+  },
+  {
+   "name": "GPS",
+   "bloc": "GPS",
+   "founded": 2018,
+   "ideology": "Sarawak-first, developmentalist, bumiputera dominance",
+   "mp_seats": 23,
+   "dun_seats": 76,
+   "leaders": [
+    "Fadillah Yusof",
+    "Abang Abdul Rahman Zohari bin Abang Openg (Abang Johari)",
+    "Stephen Rundi Utom",
+    "James Jemut Masing",
+    "Joseph Salang Gandum"
+   ],
+   "aliases": [
+    "Gabungan Parti Sarawak"
+   ],
+   "profile": "Sarawak ruling coalition (PBB 14, PRS 5, SUPP 2, PDP 2); 23 federal seats; kingmaker"
+  },
+  {
+   "name": "GRS",
+   "bloc": "GRS",
+   "founded": 2020,
+   "ideology": "Sabah-first, pragmatic federalism",
+   "mp_seats": 3,
+   "dun_seats": 33,
+   "leaders": [
+    "Hajiji bin Noor",
+    "Maximus Ongkili"
+   ],
+   "aliases": [
+    "Gabungan Rakyat Sabah"
+   ],
+   "profile": "Sabah ruling coalition (GAGASAN, PBS, STAR, etc.); 7 federal seats; more fragmented than GPS"
+  },
+  {
+   "name": "KDM",
+   "bloc": "KDM",
+   "founded": 2021,
+   "ideology": "Kadazan-Dusun Murut interests",
+   "mp_seats": 0,
+   "dun_seats": 1,
+   "leaders": [
+    "Peter Anthony"
+   ],
+   "aliases": [
+    "Parti Kesejahteraan Demokratik Masyarakat"
+   ],
+   "profile": "Peter Anthony's party; 1-2 seats; Kadazan-Dusun welfare politics"
+  },
+  {
+   "name": "MCA",
+   "bloc": "BN",
+   "founded": 1949,
+   "ideology": "Chinese-Malaysian representation, centrist",
+   "mp_seats": 2,
+   "dun_seats": 13,
+   "leaders": [
+    "Wee Ka Siong",
+    "Wee Jeck Seng",
+    "Lim Ban Hong",
+    "Liow Tiong Lai",
+    "Chong Sin Woon",
+    "Ti Lian Ker",
+    "Yew Teong Look",
+    "Michael Chong"
+   ],
+   "aliases": [
+    "Malaysian Chinese Association"
+   ],
+   "profile": "Shell of its former self; 2 federal seats (Ayer Hitam, Tanjung Piai); survivalist"
+  },
+  {
+   "name": "MIC",
+   "bloc": "BN",
+   "founded": 1946,
+   "ideology": "Indian-Malaysian representation",
+   "mp_seats": 1,
+   "dun_seats": 6,
+   "leaders": [
+    "S. Sivasubramaniam",
+    "S. Vigneswaran",
+    "M. Saravanan",
+    "Subramaniam Sathasivam (Dr S. Subramaniam)",
+    "M. Asojan (Asojan Muniyandy)"
+   ],
+   "aliases": [
+    "Malaysian Indian Congress"
+   ],
+   "profile": "1 federal seat (Cameron Highlands); symbol of BN's Indian decline"
+  },
+  {
+   "name": "MUDA",
+   "bloc": "PH",
+   "founded": 2020,
+   "ideology": "Youth politics, multi-racial reform",
+   "mp_seats": 1,
+   "dun_seats": 0,
+   "leaders": [
+    "Syed Saddiq Syed Abdul Rahman",
+    "Amira Aisya Abdul Aziz",
+    "Amir Hariri Abdul Hadi",
+    "Lim Wei Jiet"
+   ],
+   "aliases": [
+    "Malaysian United Democratic Alliance"
+   ],
+   "profile": "Syed Saddiq's youth party; 1 seat (Muar); relevance fading"
+  },
+  {
+   "name": "PAS",
+   "bloc": "PN",
+   "founded": 1951,
+   "ideology": "Political Islam, Malay supremacy, conservative",
+   "mp_seats": 43,
+   "dun_seats": 147,
+   "leaders": [
+    "Takiyuddin Hassan",
+    "Tuan Ibrahim Tuan Man",
+    "Idris Ahmad",
+    "Ahmad Marzuk Shaary",
+    "Ahmad Fadhli Shaari",
+    "Siti Zailah Mohd Yusoff",
+    "Nik Muhammad Zawawi Salleh",
+    "Abdul Hadi Awang"
+   ],
+   "aliases": [
+    "Parti Islam Se-Malaysia",
+    "Islamic Party of Malaysia"
+   ],
+   "profile": "Largest single party (43 seats); dominant force in PN; deep grassroots machinery in the Malay Belt"
+  },
+  {
+   "name": "PBB",
+   "bloc": "GPS",
+   "founded": 1973,
+   "ideology": "Sarawak bumiputera dominance, Sarawak-first",
+   "mp_seats": 14,
+   "dun_seats": 47,
+   "leaders": [
+    "Fadillah Yusof",
+    "Alexander Nanta Linggi",
+    "Abang Abdul Rahman Zohari bin Abang Openg (Abang Johari)",
+    "Douglas Uggah Embas",
+    "Stephen Rundi Utom"
+   ],
+   "aliases": [
+    "Parti Pesaka Bumiputera Bersatu"
+   ],
+   "profile": "GPS's dominant component (14 federal seats); Abang Johari's power base"
+  },
+  {
+   "name": "PBM",
+   "bloc": "IND",
+   "founded": 2021,
+   "ideology": "Pragmatic, cross-coalition",
+   "mp_seats": 0,
+   "dun_seats": 0,
+   "leaders": [
+    "Zuraida Kamaruddin"
+   ],
+   "aliases": [
+    "Parti Bangsa Malaysia"
+   ],
+   "profile": "Zuraida Kamaruddin's party; 1 seat"
+  },
+  {
+   "name": "PBRS",
+   "bloc": "BN",
+   "founded": 1994,
+   "ideology": "Sabah BN representation",
+   "mp_seats": 1,
+   "dun_seats": 1,
+   "leaders": [
+    "Arthur Joseph Kurup"
+   ],
+   "aliases": [
+    "Parti Bersatu Rakyat Sabah"
+   ],
+   "profile": "BN Sabah component; 1 federal seat"
+  },
+  {
+   "name": "PBS",
+   "bloc": "GRS",
+   "founded": 1985,
+   "ideology": "Sabah Kadazan-Dusun rights",
+   "mp_seats": 1,
+   "dun_seats": 6,
+   "leaders": [],
+   "aliases": [
+    "Parti Bersatu Sabah",
+    "United Sabah Party"
+   ],
+   "profile": "GRS component — Maximus Ongkili; 1 federal seat"
+  },
+  {
+   "name": "PDP",
+   "bloc": "GPS",
+   "founded": 2002,
+   "ideology": "Bintulu development, business pragmatism",
+   "mp_seats": 2,
+   "dun_seats": 5,
+   "leaders": [
+    "Tiong King Sing"
+   ],
+   "aliases": [
+    "Progressive Democratic Party"
+   ],
+   "profile": "GPS component — Tiong King Sing; 2 federal seats"
+  },
+  {
+   "name": "PEJUANG",
+   "bloc": "PN",
+   "founded": 2020,
+   "ideology": "Malay nationalism (Mahathir's vehicle)",
+   "mp_seats": 0,
+   "dun_seats": 0,
+   "leaders": [
+    "Mukhriz Mahathir",
+    "Amiruddin Hamzah"
+   ],
+   "aliases": [
+    "Parti Pejuang Tanah Air"
+   ],
+   "profile": "Mukhriz Mahathir's party; joined PN 2026; Mukhriz deputy chair"
+  },
+  {
+   "name": "PH",
+   "bloc": "PH",
+   "founded": 2015,
+   "ideology": "Multi-racial reformism (PKR-DAP-AMANAH)",
+   "mp_seats": 78,
+   "dun_seats": 123,
+   "leaders": [],
+   "aliases": [
+    "Pakatan Harapan",
+    "Alliance of Hope"
+   ],
+   "profile": "Ruling coalition component — PKR 29, DAP 40, AMANAH 8 seats; incumbent but BN competes locally"
+  },
+  {
+   "name": "PKR",
+   "bloc": "PH",
+   "founded": 2003,
+   "ideology": "Reformism, centrist, multi-racial",
+   "mp_seats": 29,
+   "dun_seats": 33,
+   "leaders": [
+    "Anwar Ibrahim",
+    "Chang Lih Kang",
+    "Saifuddin Abdullah",
+    "Ramanan Ramakrishnan",
+    "Wan Azizah Wan Ismail",
+    "Mohamed Azmin bin Ali",
+    "Tengku Zafrul Aziz",
+    "Zuraida Kamaruddin"
+   ],
+   "aliases": [
+    "Parti Keadilan Rakyat",
+    "People's Justice Party"
+   ],
+   "profile": "Anwar's party; 29 seats; urban/suburban Malay base squeezed between PN and Bersama"
+  },
+  {
+   "name": "PN",
+   "bloc": "PN",
+   "founded": 2020,
+   "ideology": "Malay-Islamist opposition (PAS-BERSATU-WAWASAN)",
+   "mp_seats": 68,
+   "dun_seats": 208,
+   "leaders": [],
+   "aliases": [
+    "Perikatan Nasional",
+    "National Alliance"
+   ],
+   "profile": "PAS 43, WAWASAN 6, BERSATU rump 6 seats; PAS-dominant after 2026 split"
+  },
+  {
+   "name": "PRS",
+   "bloc": "GPS",
+   "founded": 2004,
+   "ideology": "Iban rural developmentalism, Sarawak-first",
+   "mp_seats": 5,
+   "dun_seats": 11,
+   "leaders": [
+    "James Jemut Masing"
+   ],
+   "aliases": [
+    "Parti Rakyat Sarawak"
+   ],
+   "profile": "GPS component — Iban rural base; 5 federal seats"
+  },
+  {
+   "name": "STAR",
+   "bloc": "GRS",
+   "founded": 2016,
+   "ideology": "Kadazan-Dusun rights, MA63 maximalism",
+   "mp_seats": 0,
+   "dun_seats": 2,
+   "leaders": [
+    "Jeffrey Kitingan"
+   ],
+   "aliases": [
+    "Parti Solidariti Tanah Airku"
+   ],
+   "profile": "GRS component — Jeffrey Kitingan"
+  },
+  {
+   "name": "SUPP",
+   "bloc": "GPS",
+   "founded": 1959,
+   "ideology": "Chinese-urban representation, Sarawak-first",
+   "mp_seats": 2,
+   "dun_seats": 13,
+   "leaders": [
+    "Richard Riot Jaem",
+    "Sim Kui Hian"
+   ],
+   "aliases": [
+    "Sarawak United Peoples Party"
+   ],
+   "profile": "GPS component — Chinese urban base; 2 federal seats"
+  },
+  {
+   "name": "UMNO",
+   "bloc": "BN",
+   "founded": 1946,
+   "ideology": "Malay nationalism, conservatism, establishment",
+   "mp_seats": 26,
+   "dun_seats": 104,
+   "leaders": [
+    "Ahmad Zahid Hamidi",
+    "Ismail Sabri Yaakob",
+    "Johari Abdul Ghani",
+    "Mohamad Hasan",
+    "Noraini Ahmad",
+    "Hishammuddin Hussein",
+    "Mohamed Khaled Nordin",
+    "Azalina Othman Said"
+   ],
+   "aliases": [
+    "United Malays National Organisation",
+    "Pertubuhan Kebangsaan Melayu Bersatu"
+   ],
+   "profile": "Malay-establishment party; BN's dominant component; resurgent after Johor +17pp and N9 +14pp in 2026"
+  },
+  {
+   "name": "UPKO",
+   "bloc": "PH",
+   "founded": 2019,
+   "ideology": "Kadazan-Dusun rights, PH reformism",
+   "mp_seats": 2,
+   "dun_seats": 3,
+   "leaders": [
+    "Ewon Benedick"
+   ],
+   "aliases": [
+    "United Progressive Kinabalu Organisation"
+   ],
+   "profile": "PH-aligned Sabah party — Ewon Benedick; 1 federal seat"
+  },
+  {
+   "name": "WARISAN",
+   "bloc": "WARISAN",
+   "founded": 2016,
+   "ideology": "Sabah nationalism, multi-racial, progressive",
+   "mp_seats": 0,
+   "dun_seats": 25,
+   "leaders": [
+    "Mohd Shafie Apdal",
+    "Junz Wong",
+    "Jannie Lasimbang",
+    "Peter Anthony"
+   ],
+   "aliases": [
+    "Parti Warisan Sabah",
+    "Heritage Party"
+   ],
+   "profile": "Shafie Apdal's party; 3 federal seats; 2025 DUN surge (25/73 — biggest bloc)"
+  },
+  {
+   "name": "WAWASAN",
+   "bloc": "PN",
+   "founded": 2026,
+   "ideology": "Malay nationalist, PAS-aligned, Islamist-nationalist pragmatism",
+   "mp_seats": 6,
+   "dun_seats": 3,
+   "leaders": [
+    "Wan Ahmad Fayhsal Wan Ahmad Kamal",
+    "Hamzah Zainudin",
+    "Saifuddin Abdullah",
+    "Wan Saiful Wan Jan",
+    "Azahar Hassan"
+   ],
+   "aliases": [
+    "Parti Wawasan Negara"
+   ],
+   "profile": "New (13 Jun 2026); Hamzah Zainudin's ejected Bersatu faction; PN's second force; weak machinery"
+  }
+ ]
+}

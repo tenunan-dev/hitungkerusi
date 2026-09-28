@@ -1,0 +1,43 @@
+seat,constituency,w_2021,r_2021,margin_2021,w_party,proj_winner,proj_margin,flip
+N.01 Tanah Rata,Tanah Rata,PH,BN,14.42,DAP,PH,2.72,False
+N.02 Jelai,Jelai,BN,PN,52.67,UMNO,BN,85.67,False
+N.03 Padang Tengku,Padang Tengku,BN,PN,3.65,UMNO,BN,36.65,False
+N.04 Cheka,Cheka,PN,BN,12.18,PAS,BN,20.82,True
+N.05 Benta,Benta,BN,PH,23.86,UMNO,BN,35.56,False
+N.06 Batu Talam,Batu Talam,BN,PN,21.88,UMNO,BN,54.88,False
+N.07 Tras,Tras,PH,BN,49.31,DAP,PH,37.61,False
+N.08 Dong,Dong,BN,PN,9.31,UMNO,BN,42.31,False
+N.09 Tahan,Tahan,PN,BN,12.96,PAS,BN,20.04,True
+N.10 Damak,Damak,PN,PH,11.79,PAS,PH,9.51,True
+N.11 Pulau Tawar,Pulau Tawar,PN,BN,15.12,PAS,BN,17.88,True
+N.12 Beserah,Beserah,PN,PH,31.81,PAS,PN,10.51,False
+N.13 Semambu,Semambu,PH,PN,5.01,PKR,PH,26.31,False
+N.14 Teruntum,Teruntum,PH,BN,50.21,PKR,PH,38.51,False
+N.15 Tanjung Lumpur,Tanjung Lumpur,PN,BN,36.83,PAS,PN,3.83,False
+N.16 Inderapura,Inderapura,BN,PN,7.02,UMNO,BN,40.02,False
+N.17 Sungai Lembing,Sungai Lembing,PN,BN,8.19,PAS,BN,24.81,True
+N.18 Lepar,Lepar,PN,BN,2.55,BERSATU,BN,30.45,True
+N.19 Panching,Panching,PN,BN,30.76,PAS,BN,2.24,True
+N.20 Pulau Manis,Pulau Manis,PN,BN,17.71,PAS,BN,15.29,True
+N.21 Peramu Jaya,Peramu Jaya,BN,PN,25.36,UMNO,BN,58.36,False
+N.22 Bebar,Bebar,BN,PN,42.68,UMNO,BN,75.68,False
+N.23 Chini,Chini,BN,PN,11.15,UMNO,BN,44.15,False
+N.24 Luit,Luit,PN,BN,10.76,PAS,BN,22.24,True
+N.25 Kuala Sentul,Kuala Sentul,PN,BN,2.04,BERSATU,BN,30.96,True
+N.26 Chenor,Chenor,PN,BN,18.04,PAS,BN,14.96,True
+N.27 Jenderak,Jenderak,BN,PN,15.53,UMNO,BN,48.53,False
+N.28 Kerdau,Kerdau,BN,PN,17.33,UMNO,BN,50.33,False
+N.29 Jengka,Jengka,PN,BN,29.11,PAS,BN,3.89,True
+N.30 Mentakab,Mentakab,PH,PN,16.51,DAP,PH,37.81,False
+N.31 Lanchang,Lanchang,PN,BN,2.3,PAS,BN,30.7,True
+N.32 Kuala Semantan,Kuala Semantan,PN,BN,7.55,PAS,BN,25.45,True
+N.33 Bilut,Bilut,PH,BN,21.19,DAP,PH,9.49,False
+N.34 Ketari,Ketari,PH,BN,0.62,DAP,BN,11.08,True
+N.35 Sabai,Sabai,BN,PH,1.09,MIC,BN,12.79,False
+N.36 Pelangai,Pelangai,BN,PN,38.3,UMNO,BN,71.3,False
+N.37 Guai,Guai,BN,PN,16.56,UMNO,BN,49.56,False
+N.38 Triang,Triang,PH,BN,40.35,DAP,PH,28.65,False
+N.39 Kemayan,Kemayan,BN,PN,33.49,UMNO,BN,66.49,False
+N.40 Bukit Ibam,Bukit Ibam,PN,BN,10.91,PAS,BN,22.09,True
+N.41 Muadzam Shah,Muadzam Shah,BN,PN,5.95,UMNO,BN,38.95,False
+N.42 Tioman,Tioman,BN,PN,3.68,UMNO,BN,36.68,False

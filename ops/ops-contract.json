@@ -1,0 +1,683 @@
+{
+  "schema": "ge16.ops-contract.v1",
+  "contract_version": "1.9.0",
+  "repository_domain": "OPS",
+  "purpose": "GE16 operational control-plane contract; bounded manual one-stage execution requires the explicit versioned authorization clause. Structural migration is complete. Historical V2 activity remains evidence only; scheduled fires require owner-key authorization; scheduler mutation, gateway start, and deployment by this runner remain forbidden.",
+  "allowed_domain_call_graph": [
+    "1_DATA->2_ANALYTICS",
+    "2_ANALYTICS->3_OUTPUTS",
+    "3_OUTPUTS->4_DELIVERY",
+    "4_DELIVERY->5_WEBSITES"
+  ],
+  "domain_rules": {
+    "cross_domain_mutation": "forbidden",
+    "website_writes": "forbidden; 5_WEBSITES consumes immutable 4_DELIVERY artifacts",
+    "manifest": "every task and cron run records a versioned manifest before handoff",
+    "gates": "every task and cron run records all declared gate outcomes before handoff"
+  },
+  "migration": {
+    "lock_retired": true,
+    "lock_retired_at_utc": "2026-09-18T00:08:10Z",
+    "lock_retirement_reason": "structural migration complete; pipeline verified through Round 3",
+    "permanent_controls": {
+      "domain_call_graph": "1_DATA->2_ANALYTICS->3_OUTPUTS->4_DELIVERY->5_WEBSITES",
+      "scheduler_registry_write": "forbidden-from-repository",
+      "deployment": "owner-authorized-release-gate-only"
+    },
+    "bounded_live_execution": {
+      "version": "1.3.0",
+      "manual_execution_enabled": true,
+      "authorization": "external-owner-approval-required",
+      "execution_mode": "manual-one-stage",
+      "allowed_stages": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "unavailable_stages": {},
+      "stage_five": "isolated-dry-run-only",
+      "recurring_scheduler_execution": {
+        "mode": "owner-key-authorisation",
+        "key_requirement": "embedded-owner-key-required",
+        "key_binding": {
+          "delivery": "/Users/faisal.muthalib/.ge16-keys/one-shot/<stage>-<phase>-<ts>.json",
+          "rotation": "on owner instruction only",
+          "revocation": "manual_execution_enabled=false kills all modes"
+        }
+      },
+      "scheduler_mutation": "forbidden",
+      "deployment": "forbidden",
+      "gateway_start": "forbidden",
+      "scheduler_registry_read_only": "/Users/faisal.muthalib/.hermes/profiles/coding/cron/jobs.json",
+      "script_reference_access": "read-only-for-hash-verification-and-owner-sandbox-execution",
+      "authorization_lifetime_seconds": 900,
+      "exclusive_lock": "external-owner-only-process-wide-nonblocking",
+      "child_environment": {
+        "PATH": "/usr/bin:/bin",
+        "PYTHONDONTWRITEBYTECODE": "1"
+      },
+      "child_output": "discard",
+      "residual_risk": "No rollback or snapshots; failed runs can leave owner-domain changes. The advisory lock serializes this runner only. External writers, unpinned imports and unrestricted reads remain outside that guarantee.",
+      "scheduler_bindings": [
+        {
+          "stage_number": 1,
+          "id": "441fedd48bc8",
+          "enabled": false,
+          "state": "paused",
+          "manual_one_shot_allowed": true,
+          "scheduled_fire": {
+            "enabled": true,
+            "state": "scheduled",
+            "owner_key_required": true
+          }
+        },
+        {
+          "stage_number": 2,
+          "id": "2b0a9111c836",
+          "enabled": false,
+          "state": "paused",
+          "manual_one_shot_allowed": true,
+          "scheduled_fire": {
+            "enabled": true,
+            "state": "scheduled",
+            "owner_key_required": true
+          }
+        },
+        {
+          "stage_number": 3,
+          "id": "c4cebfce9fb0",
+          "enabled": false,
+          "state": "paused",
+          "manual_one_shot_allowed": true,
+          "scheduled_fire": {
+            "enabled": true,
+            "state": "scheduled",
+            "owner_key_required": true
+          }
+        },
+        {
+          "stage_number": 4,
+          "id": "152172eb38fd",
+          "enabled": false,
+          "state": "paused",
+          "manual_one_shot_allowed": true,
+          "scheduled_fire": {
+            "enabled": true,
+            "state": "scheduled",
+            "owner_key_required": true
+          }
+        }
+      ],
+      "script_sha256": {
+        "1_DATA/scripts/collect/track_ge16_news.py": "fb0e0340f83db20f6e7962e70d71e2c094bd95e1f7e1bff89657fb3152147db0",
+        "1_DATA/scripts/collect/track_ge16_polls.py": "3b33955c955529dee7a28f5e3d129613bd64599a80f7da7b045cb394004dd1f0",
+        "1_DATA/scripts/collect/track_ge16_candidates.py": "c00fdbf137aa325fa273f717ad81ec7cb879a5ae8733cf9914371498fec7903a",
+        "1_DATA/scripts/refresh_canonical_data.py": "c9bae59ce73572b7b0273fe5de459a33089965eb41ebafac2a648b307919bcf6",
+        "1_DATA/scripts/validate_canonical_data.py": "e52130c52b46266fcc05670e2ac4dc30467c1405e9e78a0976c8030394f02899",
+        "2_ANALYTICS/02_FORECAST/engine/forecast_engine.py": "f020eacb572c74419ceb7b96a083148dabd6e16246fba00f1abd5a7f94812753",
+        "2_ANALYTICS/02_FORECAST/engine/report_builder.py": "d705ef5f016695a2e6ab495e2e53b1b8132cbc98a81e29ff330cfa68ebe7adc0",
+        "2_ANALYTICS/02_FORECAST/engine/state_report_builder.py": "c88e9f1222f980ca3f4bfc813f7b20d75d76423b908c8a5d9fb2588b7692883a",
+        "2_ANALYTICS/05_AUTOMATION/publish_stage_manifests.py": "22e89ea52000be70ff2c9db0bfbf2d73796584a43d49d526c35df63b1aa56b32",
+        "2_ANALYTICS/automation/qa/audit_ms_en_sections.py": "8c85dc858e9d8cae9c3e2fbde2311799e2db0b312876014e93016649c3618292",
+        "2_ANALYTICS/automation/qa/audit_state_number_parity.py": "5ef4a72817c15bb23918978346229e9900b90ad2b1ec4a0aeaba5acf63d412d5",
+        "3_OUTPUTS/scripts/seal_release_intake.py": "fbec9e8efcf4bed601b76315851aa67da1b21bbe5a61c8b8f58312f4bc9483fe",
+        "4_DELIVERY/scripts/publish_delivery.py": "185a2ee73215b4ef35d72baa847b03480050fb0b17e53c0398e0b600b1a819ca",
+        "2_ANALYTICS/automation/delivery/publish_delivery.py": "f569e2a60edd90ba4322dc7c32efef5eeb8bc642e5669f29d65c80fb49167316",
+        "2_ANALYTICS/automation/outputs/stage_current_release.py": "4a79af8428f150e3a6111aed62ec537c6e3653d24371bb05b6a5a2b3d5b48022",
+        "2_ANALYTICS/automation/outputs/build_release_payloads.py": "81570fe20ee0261817f2c715e26399e29a130b63175bb7f3fe9f6d3f3050a22f",
+        "3_OUTPUTS/scripts/validate_release_intake.py": "45dadc237f71850bb1e9f6551560d90b6832aa1c9415fae401818c0d5653fb57"
+      },
+      "modules_pinned": [
+        "2_ANALYTICS/automation/delivery/publish_delivery.py",
+        "2_ANALYTICS/automation/outputs/stage_current_release.py",
+        "2_ANALYTICS/automation/outputs/build_release_payloads.py",
+        "3_OUTPUTS/scripts/validate_release_intake.py"
+      ],
+      "committed_module_sha256": {
+        "655064f7994a970ca400bd8b73c5fb9c96600b72:validate_release_intake.py": "909a7c5fc2f547a32806d8513b03bf6a19662315d0d244a3f6e899c71bde71b6",
+        "655064f7994a970ca400bd8b73c5fb9c96600b72:scripts/validate_release_intake.py": "909a7c5fc2f547a32806d8513b03bf6a19662315d0d244a3f6e899c71bde71b6"
+      },
+      "owner_public_key": {
+        "path": "OPS/security/owner_ed25519.pub",
+        "algorithm": "ed25519",
+        "public_key_b64": "MCowBQYDK2VwAyEAIHvi8ezkQTA3cjuEGgFQ9aY9N33kAw9BJ0RST0B3zPM=",
+        "key_sha256": "e590fcbe2b45b75095aded5bc9958216a25ca96edff554d752864bad1bc34fe6"
+      }
+    },
+    "historical_activity_evidence": {
+      "version": "1.0.0",
+      "classification": "immutable-pre-lock-history-not-authorization",
+      "records": [
+        {
+          "id": "historical-release-H-20260905-01",
+          "activity_type": "release",
+          "evidence_ref": "4_DELIVERY/EXCHANGE.md#H-20260905-01",
+          "evidence_status": "recorded",
+          "delivery_id": "H-20260905-01",
+          "historical_outcome": "internal-delivery-published-external-deployment-blocked",
+          "disposition": "historical-only"
+        },
+        {
+          "id": "historical-cron-H-20260904-05",
+          "activity_type": "cron",
+          "evidence_ref": "4_DELIVERY/EXCHANGE.md#H-20260904-05",
+          "evidence_status": "recorded",
+          "cron_job_ids": [
+            "2f817443c8e9",
+            "4c3dee85457f",
+            "22f17e2baabd",
+            "a62815d7de8a",
+            "b539a7a77c39"
+          ],
+          "historical_outcome": "v2-cron-cutover-recorded",
+          "disposition": "historical-only"
+        }
+      ]
+    }
+  },
+  "codex_responsibilities": {
+    "terra": {
+      "authorities": [
+        "contract-interpretation",
+        "contract-review",
+        "contract-enforcement"
+      ]
+    },
+    "luna": {
+      "authorities": [
+        "independent-review",
+        "independent-audit",
+        "independent-test",
+        "deterministic-validation",
+        "evidence-reporting"
+      ]
+    }
+  },
+  "task_contracts": [
+    {
+      "id": "ops-contract-validation",
+      "version": "1.1.0",
+      "owner_domain": "OPS",
+      "reads_from": [],
+      "writes_to": [
+        "OPS"
+      ],
+      "mutable_writes": [
+        "OPS"
+      ],
+      "downstream_allowed": [],
+      "manifest_required": true,
+      "gate_records_required": [
+        "contract-schema-valid",
+        "retired-migration-lock-confirmed"
+      ]
+    }
+  ],
+  "cron_contracts": [
+    {
+      "id": "ge16-cron-data-collection-validation",
+      "version": "1.4.0",
+      "owner_domain": "1_DATA",
+      "reads_from": [
+        "1_DATA"
+      ],
+      "writes_to": [
+        "1_DATA"
+      ],
+      "mutable_writes": [
+        "1_DATA"
+      ],
+      "downstream_allowed": [
+        "2_ANALYTICS"
+      ],
+      "immediate_upstream": null,
+      "immediate_downstream": "2_ANALYTICS",
+      "required_immutable_inputs": [
+        "1_DATA/source-snapshot manifest sha256"
+      ],
+      "freshness_lineage_requirements": [
+        "source snapshot timestamps within declared collection window",
+        "source manifest SHA-256 recorded"
+      ],
+      "output_manifest_refs": [
+        "1_DATA/manifest/ge16-data-handoff.json#sha256"
+      ],
+      "isolated_adapter": [
+        "data-stage-1a",
+        "data-stage-1b"
+      ],
+      "deterministic_validation_commands": [
+        "python3 OPS/cron/run_stage.py --contract ge16-cron-data-collection-validation --version 1.4.0"
+      ],
+      "stop_conditions": [
+        "missing or stale source manifest",
+        "source validation failure",
+        "required gate failure",
+        "runner unavailable"
+      ],
+      "notification_result": "concise stage, manifest, freshness, gate status, and stop reason",
+      "scheduler_binding": {
+        "migration_job_id": "441fedd48bc8",
+        "schedule": "0 22 * * 5",
+        "timezone": "Asia/Kuala_Lumpur",
+        "dependencies": [],
+        "enabled": false,
+        "delivery": "local",
+        "model": "z-ai/glm-5.3-flash",
+        "provider": "nous",
+        "model_snapshot": "z-ai/glm-5.3-flash",
+        "provider_snapshot": "nous",
+        "workdir": "/Users/faisal.muthalib/Documents/HermesWorkFolder/Malaysia General Election v2"
+      },
+      "manifest_required": true,
+      "gate_records_required": [
+        "data-source-lineage-valid",
+        "data-freshness-valid",
+        "data-validation-passed"
+      ]
+    },
+    {
+      "id": "ge16-cron-analytics-forecast-reports-social",
+      "version": "1.4.0",
+      "owner_domain": "2_ANALYTICS",
+      "reads_from": [
+        "1_DATA",
+        "2_ANALYTICS"
+      ],
+      "writes_to": [
+        "2_ANALYTICS"
+      ],
+      "mutable_writes": [
+        "2_ANALYTICS"
+      ],
+      "downstream_allowed": [
+        "3_OUTPUTS"
+      ],
+      "immediate_upstream": "1_DATA",
+      "immediate_downstream": "3_OUTPUTS",
+      "required_immutable_inputs": [
+        "1_DATA/manifest/ge16-data-handoff.json#sha256"
+      ],
+      "freshness_lineage_requirements": [
+        "immediate 1_DATA manifest is current",
+        "input manifest SHA-256 and passed gates are recorded"
+      ],
+      "output_manifest_refs": [
+        "2_ANALYTICS/manifest/ge16-analytics-handoff.json#sha256"
+      ],
+      "isolated_adapter": "analytics-stage-2",
+      "deterministic_validation_commands": [
+        "python3 OPS/cron/run_stage.py --contract ge16-cron-analytics-forecast-reports-social --version 1.4.0"
+      ],
+      "stop_conditions": [
+        "missing, stale, or failed 1_DATA manifest",
+        "lineage mismatch",
+        "forecast validation failure",
+        "runner unavailable"
+      ],
+      "notification_result": "concise stage, input/output manifests, forecast validation, freshness, and stop reason",
+      "scheduler_binding": {
+        "migration_job_id": "2b0a9111c836",
+        "schedule": "0 1 * * 6",
+        "timezone": "Asia/Kuala_Lumpur",
+        "dependencies": [
+          "441fedd48bc8"
+        ],
+        "enabled": false,
+        "delivery": "local",
+        "model": "deepseek/deepseek-v4-pro",
+        "provider": "nous",
+        "model_snapshot": "deepseek/deepseek-v4-pro",
+        "provider_snapshot": "nous",
+        "workdir": "/Users/faisal.muthalib/Documents/HermesWorkFolder/Malaysia General Election v2"
+      },
+      "manifest_required": true,
+      "gate_records_required": [
+        "analytics-input-lineage-valid",
+        "forecast-validation-passed",
+        "reports-validation-passed",
+        "social-output-validation-passed"
+      ]
+    },
+    {
+      "id": "ge16-cron-outputs-intake-sealing",
+      "version": "1.4.0",
+      "owner_domain": "3_OUTPUTS",
+      "reads_from": [
+        "2_ANALYTICS",
+        "3_OUTPUTS"
+      ],
+      "writes_to": [
+        "3_OUTPUTS"
+      ],
+      "mutable_writes": [
+        "3_OUTPUTS"
+      ],
+      "downstream_allowed": [
+        "4_DELIVERY"
+      ],
+      "immediate_upstream": "2_ANALYTICS",
+      "immediate_downstream": "4_DELIVERY",
+      "required_immutable_inputs": [
+        "2_ANALYTICS/manifest/ge16-analytics-handoff.json#sha256"
+      ],
+      "freshness_lineage_requirements": [
+        "immediate 2_ANALYTICS manifest is current",
+        "input hashes and gate evidence are preserved"
+      ],
+      "output_manifest_refs": [
+        "3_OUTPUTS/manifest/ge16-release-seal.json#sha256"
+      ],
+      "isolated_adapter": "outputs-stage-3",
+      "deterministic_validation_commands": [
+        "python3 OPS/cron/run_stage.py --contract ge16-cron-outputs-intake-sealing --version 1.4.0"
+      ],
+      "stop_conditions": [
+        "missing or unsealed analytical input",
+        "lineage mismatch",
+        "output validation failure",
+        "runner unavailable"
+      ],
+      "notification_result": "concise stage, sealed release identifier, manifest references, validation status, and stop reason",
+      "scheduler_binding": {
+        "migration_job_id": "c4cebfce9fb0",
+        "schedule": "0 3 * * 6",
+        "timezone": "Asia/Kuala_Lumpur",
+        "dependencies": [
+          "2b0a9111c836"
+        ],
+        "enabled": false,
+        "delivery": "local",
+        "model": "z-ai/glm-5.3-flash",
+        "provider": "nous",
+        "model_snapshot": "z-ai/glm-5.3-flash",
+        "provider_snapshot": "nous",
+        "workdir": "/Users/faisal.muthalib/Documents/HermesWorkFolder/Malaysia General Election v2"
+      },
+      "manifest_required": true,
+      "gate_records_required": [
+        "outputs-input-lineage-valid",
+        "outputs-seal-integrity-valid",
+        "outputs-validation-passed"
+      ]
+    },
+    {
+      "id": "ge16-cron-delivery-publish-validation",
+      "version": "1.4.0",
+      "owner_domain": "4_DELIVERY",
+      "reads_from": [
+        "3_OUTPUTS",
+        "4_DELIVERY"
+      ],
+      "writes_to": [
+        "4_DELIVERY"
+      ],
+      "mutable_writes": [
+        "4_DELIVERY"
+      ],
+      "downstream_allowed": [
+        "5_WEBSITES"
+      ],
+      "immediate_upstream": "3_OUTPUTS",
+      "immediate_downstream": "5_WEBSITES",
+      "required_immutable_inputs": [
+        "3_OUTPUTS/manifest/ge16-release-seal.json#sha256"
+      ],
+      "freshness_lineage_requirements": [
+        "immediate 3_OUTPUTS seal is current",
+        "delivery manifest binds all output hashes and gate evidence"
+      ],
+      "output_manifest_refs": [
+        "4_DELIVERY/manifest/ge16-delivery.json#sha256"
+      ],
+      "isolated_adapter": "delivery-stage-4",
+      "deterministic_validation_commands": [
+        "python3 OPS/cron/run_stage.py --contract ge16-cron-delivery-publish-validation --version 1.4.0"
+      ],
+      "stop_conditions": [
+        "missing or stale output seal",
+        "manifest mismatch",
+        "delivery validation failure",
+        "runner unavailable"
+      ],
+      "notification_result": "concise stage, delivery ID, manifest SHA-256, validation status, and stop reason",
+      "scheduler_binding": {
+        "migration_job_id": "152172eb38fd",
+        "schedule": "0 5 * * 6",
+        "timezone": "Asia/Kuala_Lumpur",
+        "dependencies": [
+          "c4cebfce9fb0"
+        ],
+        "enabled": false,
+        "delivery": "local",
+        "model": "z-ai/glm-5.3-flash",
+        "provider": "nous",
+        "model_snapshot": "z-ai/glm-5.3-flash",
+        "provider_snapshot": "nous",
+        "workdir": "/Users/faisal.muthalib/Documents/HermesWorkFolder/Malaysia General Election v2"
+      },
+      "manifest_required": true,
+      "gate_records_required": [
+        "delivery-input-lineage-valid",
+        "delivery-manifest-valid",
+        "delivery-validation-passed"
+      ]
+    },
+    {
+      "id": "ge16-cron-websites-build-release-gate",
+      "version": "1.5.0",
+      "owner_domain": "5_WEBSITES",
+      "reads_from": [
+        "4_DELIVERY",
+        "5_WEBSITES"
+      ],
+      "writes_to": [
+        "5_WEBSITES"
+      ],
+      "mutable_writes": [],
+      "downstream_allowed": [],
+      "immediate_upstream": "4_DELIVERY",
+      "immediate_downstream": null,
+      "required_immutable_inputs": [
+        "4_DELIVERY/manifest/ge16-delivery.json#sha256"
+      ],
+      "freshness_lineage_requirements": [
+        "exact delivery ID and delivery manifest SHA-256 match",
+        "exact Vercel Git SHA and Vercel manifest bind to the approved delivery",
+        "GitHub repository tenunan-dev/hitungkerusi222 is the exact Vercel mirror/source"
+      ],
+      "output_manifest_refs": [
+        "5_WEBSITES/manifest/ge16-release-gate.json#sha256"
+      ],
+      "isolated_adapter": "websites-stage-5",
+      "deterministic_validation_commands": [
+        "python3 OPS/cron/run_stage.py --contract ge16-cron-websites-build-release-gate --version 1.5.0"
+      ],
+      "stop_conditions": [
+        "owner-authorized release gate not satisfied",
+        "missing approval, Vercel manifest, or exact SHA",
+        "failed GitHub mirror or Vercel readback gate",
+        "runner unavailable"
+      ],
+      "notification_result": "concise stage, delivery ID, authorization, exact SHAs, gates/readback, and stop reason",
+      "scheduler_binding": {
+        "migration_job_id": "9194211d627e",
+        "schedule": "30 5 * * 6",
+        "timezone": "Asia/Kuala_Lumpur",
+        "dependencies": [
+          "152172eb38fd"
+        ],
+        "enabled": true,
+        "delivery": "local",
+        "model": "z-ai/glm-5.3-flash",
+        "provider": "nous",
+        "model_snapshot": "z-ai/glm-5.3-flash",
+        "provider_snapshot": "nous",
+        "workdir": "/Users/faisal.muthalib/Documents/HermesWorkFolder/Malaysia General Election v2"
+      },
+      "release_authorization_requirements": {
+        "delivery_id_pattern": "^H-[0-9]{8}-[0-9]{2}$",
+        "vercel_git_sha_pattern": "^[0-9a-f]{40}$",
+        "delivery_manifest_sha256_pattern": "^sha256:[0-9a-f]{64}$",
+        "authorization_state": "exact-release-record-required",
+        "required_gates": [
+          "website-delivery-lineage-valid",
+          "website-build-passed",
+          "github-mirror-parity-passed",
+          "vercel-manifest-bound",
+          "vercel-post-deploy-readback-recorded",
+          "release-authorization-approved"
+        ],
+        "direct_vercel_cli": "required",
+        "vercel_post_deploy_readback": "recorded-required",
+        "github_mirror_parity": "exact-required",
+        "git_integration_deployment": "forbidden"
+      },
+      "manifest_required": true,
+      "gate_records_required": [
+        "website-delivery-lineage-valid",
+        "website-build-passed",
+        "github-mirror-parity-passed",
+        "vercel-manifest-bound",
+        "vercel-post-deploy-readback-recorded",
+        "release-authorization-approved"
+      ]
+    },
+    {
+      "id": "ge16-cron-analytics-authoring",
+      "version": "1.0.0",
+      "owner_domain": "2_ANALYTICS",
+      "optional_stage": true,
+      "reads_from": [
+        "2_ANALYTICS"
+      ],
+      "writes_to": [
+        "2_ANALYTICS"
+      ],
+      "mutable_writes": [
+        "2_ANALYTICS"
+      ],
+      "downstream_allowed": [
+        "3_OUTPUTS"
+      ],
+      "immediate_upstream": "2_ANALYTICS",
+      "immediate_downstream": "3_OUTPUTS",
+      "required_immutable_inputs": [
+        "2_ANALYTICS/03_REPORTS/federal/latest and 2_ANALYTICS/03_REPORTS/states/*/latest are read-only inputs"
+      ],
+      "freshness_lineage_requirements": [
+        "the same cycle's deterministic 2_ANALYTICS editions are the fact source",
+        "the reference pack hash and the per-language writer config hash are recorded in the authoring manifest"
+      ],
+      "output_manifest_refs": [
+        "2_ANALYTICS/work/reports/authoring/GE16-authoring-*.json#sha256"
+      ],
+      "deterministic_validation_commands": [
+        "python3 2_ANALYTICS/02_FORECAST/engine/author_reports.py --list-sections"
+      ],
+      "stop_conditions": [
+        "writer transport failure with no authored section",
+        "no writer in the language chain verified a section (a pass with nothing authored publishes no edition)",
+        "edition violates the reader rule",
+        "runner unavailable"
+      ],
+      "notification_result": "concise stage, edition paths (or that nothing was published and why), the writer chain per language, which writer wrote each section, and stop reason",
+      "manifest_required": true,
+      "gate_records_required": [
+        "authoring-verification-recorded"
+      ],
+      "scheduler_binding": {
+        "migration_job_id": "ge16-authoring",
+        "schedule": "0 2 * * 6",
+        "timezone": "Asia/Kuala_Lumpur",
+        "dependencies": [
+          "2b0a9111c836"
+        ],
+        "enabled": false,
+        "delivery": "local",
+        "model": "deepseek/deepseek-v4-pro",
+        "provider": "nous",
+        "model_snapshot": "deepseek/deepseek-v4-pro",
+        "provider_snapshot": "nous",
+        "workdir": "/Users/faisal.muthalib/Documents/HermesWorkFolder/Malaysia General Election v2"
+      }
+    },
+    {
+      "id": "ge16-cron-chain-orchestrator",
+      "version": "1.0.0",
+      "owner_domain": "OPS",
+      "optional_stage": true,
+      "reads_from": [
+        "OPS"
+      ],
+      "writes_to": [
+        "OPS"
+      ],
+      "mutable_writes": [],
+      "downstream_allowed": [],
+      "immediate_upstream": null,
+      "immediate_downstream": null,
+      "required_immutable_inputs": [
+        "1_DATA/manifest/ge16-data-handoff.json, 2_ANALYTICS/manifest/ge16-analytics-handoff.json, 3_OUTPUTS/manifest/ge16-release-seal.json, 4_DELIVERY/manifest/ge16-delivery.json and 5_WEBSITES/manifest/ge16-release-gate.json are read-only observations of their owner domains",
+        "each stage's one-shot owner-signed fire key is a read-only owner artifact under /Users/faisal.muthalib/.ge16-keys/one-shot"
+      ],
+      "freshness_lineage_requirements": [
+        "a stage counts as complete only when its handoff manifest exists, differs by content hash from the snapshot taken at run start, and cites the recorded SHA-256 of the immediate predecessor manifest",
+        "every executed stage binds the exact contract id and version and a fresh owner-signed one-shot key whose lifetime never exceeds 15 minutes"
+      ],
+      "output_manifest_refs": [
+        "OPS/logs/chain/ge16-chain-<run_id>.json#sha256"
+      ],
+      "deterministic_validation_commands": [
+        "python3 OPS/cron/ge16_chain_runner.py --status"
+      ],
+      "stop_conditions": [
+        "a stage handoff missing, unchanged, or not bound to the recorded predecessor SHA-256 within its window",
+        "an owner key missing, expired, or refused",
+        "the 12-hour run deadline exceeded",
+        "runner unavailable"
+      ],
+      "notification_result": "concise chain run id, per-stage status, Stage 5 release gate state, and stop reason",
+      "manifest_required": true,
+      "gate_records_required": [
+        "chain-run-complete-recorded"
+      ],
+      "scheduler_binding": {
+        "migration_job_id": "ge16-chain",
+        "schedule": "0 22 * * 5",
+        "timezone": "Asia/Kuala_Lumpur",
+        "dependencies": [],
+        "enabled": false,
+        "delivery": "local",
+        "model": "deepseek/deepseek-v4-pro",
+        "provider": "nous",
+        "model_snapshot": "deepseek/deepseek-v4-pro",
+        "provider_snapshot": "nous",
+        "workdir": "/Users/faisal.muthalib/Documents/HermesWorkFolder/Malaysia General Election v2"
+      }
+    }
+  ],
+  "required_manifest_record": {
+    "version": "1.0.0",
+    "required_fields": [
+      "run_id",
+      "contract_id",
+      "contract_version",
+      "owner_domain",
+      "input_manifest_refs",
+      "output_manifest_refs",
+      "created_at_utc"
+    ]
+  },
+  "required_gate_record": {
+    "version": "1.0.0",
+    "required_fields": [
+      "run_id",
+      "gate_id",
+      "status",
+      "checked_at_utc",
+      "evidence_ref"
+    ]
+  }
+}

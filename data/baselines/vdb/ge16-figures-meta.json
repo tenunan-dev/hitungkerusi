@@ -1,0 +1,1419 @@
+{
+ "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+ "dim": 384,
+ "count": 134,
+ "items": [
+  {
+   "name": "Ahmad Zahid Hamidi",
+   "role": "UMNO President (since 2018) / Barisan Nasional Chairman / Deputy Prime Minister & Minister of Rural and Regional Development (since Dec 2022)",
+   "party": "UMNO",
+   "bloc": "BN",
+   "seat": "P.075 Bagan Datuk",
+   "prominence": 0.98,
+   "aliases": [
+    "zahid",
+    "ahmad zahid"
+   ],
+   "profile": "UMNO's crisis-survival president who rebuilt BN from its 2018 nadir into the south's dominant force by 2026, but remains permanently shadowed by corruption litigation and internal opposition to his leadership style."
+  },
+  {
+   "name": "Mohammad Najib Abdul Razak",
+   "role": "Former Prime Minister (2009-2018) / former UMNO President & BN Chairman — imprisoned, legacy influence on UMNO base",
+   "party": "UMNO",
+   "bloc": "BN",
+   "seat": "P.085 Pekan (former; disqualified after conviction)",
+   "prominence": 0.95,
+   "aliases": [],
+   "profile": "Malaysia's only convicted former PM, whose 1MDB scandal toppled BN in 2018 but whose 'Bossku' persona still mobilizes UMNO's rural base — a live question for GE16 as his release campaign resonates within the party."
+  },
+  {
+   "name": "Mohamad Hasan (Tok Mat)",
+   "role": "UMNO Deputy President / BN Deputy Chairman / Minister of Foreign Affairs (since Dec 2023)",
+   "party": "UMNO",
+   "bloc": "BN",
+   "seat": "P.132 Rembau; Rantau (Negeri Sembilan state seat)",
+   "prominence": 0.9,
+   "aliases": [],
+   "profile": "UMNO's most electorally successful state leader of the 2000s and now Foreign Minister; the deputy president whose quiet competence is widely seen as the party's safest face for a solo GE16 campaign."
+  },
+  {
+   "name": "Ismail Sabri Yaakob",
+   "role": "Former Prime Minister (Aug 2021-Nov 2022) / Bera UMNO division chief",
+   "party": "UMNO",
+   "bloc": "BN",
+   "seat": "P.090 Bera",
+   "prominence": 0.85,
+   "aliases": [],
+   "profile": "The accidental ninth PM who inherited a collapsing coalition, survived a year of crisis government, and now watches BN's 2026 resurgence from the backbench as a potential elder statesman."
+  },
+  {
+   "name": "Khairy Jamaluddin",
+   "role": "Former UMNO Youth chief & Minister — expelled from UMNO (Jan 2023); now broadcaster/podcast host (Keluar Sekejap, Hot FM)",
+   "party": "UMNO",
+   "bloc": "BN",
+   "seat": "P.132 Rembau (2008-2022); contested P.107 Sungai Buloh in 2022 (lost)",
+   "prominence": 0.88,
+   "aliases": [
+    "khairy"
+   ],
+   "profile": "UMNO's lost modernizer — expelled after challenging Zahid, he has become Malaysia's most influential political podcaster and the unofficial standard-bearer of the anti-Zahid faction ahead of GE16."
+  },
+  {
+   "name": "Hishammuddin Hussein",
+   "role": "Former Senior Minister & Defence Minister — senior UMNO elder, sidelined from current leadership",
+   "party": "UMNO",
+   "bloc": "BN",
+   "seat": "P.153 Sembrong (2004-2022; did not contest GE15)",
+   "prominence": 0.8,
+   "aliases": [
+    "hishammuddin",
+    "hisham"
+   ],
+   "profile": "Third-generation UMNO royalty who held every top security portfolio, now a senior elder watching his nephew Onn Hafiz carry the family's political future in Johor."
+  },
+  {
+   "name": "Tengku Zafrul Aziz",
+   "role": "Former UMNO Supreme Council member & Minister — left UMNO for PKR (May 2025); now Senior Political Advisor to the PM (since Mar 2026)",
+   "party": "UMNO",
+   "bloc": "BN",
+   "seat": "None (Senator 2020-2022, 2023-2025; lost P.096 Kuala Selangor in GE15)",
+   "prominence": 0.78,
+   "aliases": [
+    "zafrul",
+    "tengku zafrul"
+   ],
+   "profile": "The banker-minister who jumped from UMNO to PKR in 2025 — a symbol of BN's technocratic drain and of Anwar's poaching of BN talent, now advising the PM from inside PH."
+  },
+  {
+   "name": "Azalina Othman Said",
+   "role": "UMNO Vice-President / Minister in the Prime Minister's Department (Law & Institutional Reform, since Dec 2022)",
+   "party": "UMNO",
+   "bloc": "BN",
+   "seat": "P.157 Pengerang",
+   "prominence": 0.82,
+   "aliases": [],
+   "profile": "UMNO's most senior woman — a trailblazing lawyer-politician running law and institutional reform for the unity government while anchoring BN's legal defence narrative."
+  },
+  {
+   "name": "Johari Abdul Ghani",
+   "role": "UMNO Vice-President / BN Treasurer-General / Minister of Investment, Trade and Industry (since Dec 2025)",
+   "party": "UMNO",
+   "bloc": "BN",
+   "seat": "P.119 Titiwangsa (the only BN MP in Klang Valley)",
+   "prominence": 0.8,
+   "aliases": [],
+   "profile": "UMNO's accountant-in-chief and Klang Valley's only BN MP — the party's urban professional face, now running investment policy as PH-BN federal cooperation deepens."
+  },
+  {
+   "name": "Mohamed Khaled Nordin",
+   "role": "UMNO Vice-President / Minister of Defence (since Dec 2023)",
+   "party": "UMNO",
+   "bloc": "BN",
+   "seat": "P.156 Kota Tinggi",
+   "prominence": 0.78,
+   "aliases": [],
+   "profile": "The former Johor MB and now Defence Minister — a tested administrator whose seniority gives UMNO real cabinet weight in the unity government."
+  },
+  {
+   "name": "Ahmad Maslan",
+   "role": "UMNO Johor Deputy Chairman / Pontian division chief / Deputy Minister of Works (since Dec 2023)",
+   "party": "UMNO",
+   "bloc": "BN",
+   "seat": "P.164 Pontian",
+   "prominence": 0.7,
+   "aliases": [],
+   "profile": "UMNO's veteran fixer and former secretary-general — the party's administrative backbone in Johor and a dependable federal deputy minister."
+  },
+  {
+   "name": "Asyraf Wajdi Dusuki",
+   "role": "UMNO Secretary-General (since Mar 2023) / MARA Chairman (since Mar 2023)",
+   "party": "UMNO",
+   "bloc": "BN",
+   "seat": "None (Senator 2014-2018)",
+   "prominence": 0.72,
+   "aliases": [],
+   "profile": "The religious-affairs technocrat who beat Khairy for UMNO Youth and now runs the party as secretary-general — Zahid's organizational anchor and public attack-dog."
+  },
+  {
+   "name": "Muhamad Akmal Saleh",
+   "role": "UMNO Youth Chief (15th, since Mar 2023) / Jasin UMNO division chief",
+   "party": "UMNO",
+   "bloc": "BN",
+   "seat": "Merlimau (Melaka state seat)",
+   "prominence": 0.7,
+   "aliases": [],
+   "profile": "UMNO Youth's combative young doctor — a social-media-savvy Malay-rights firebrand whose controversies both energise the base and alarm BN's non-Malay allies."
+  },
+  {
+   "name": "Noraini Ahmad",
+   "role": "UMNO Wanita Chief (since Jun 2018) / Minister of Plantation and Commodities (since Dec 2025)",
+   "party": "UMNO",
+   "bloc": "BN",
+   "seat": "P.147 Parit Sulong",
+   "prominence": 0.68,
+   "aliases": [],
+   "profile": "UMNO's Wanita chief and a cabinet minister who has bounced back from demotion to full minister — the party's main channel to female and commodity-sector voters."
+  },
+  {
+   "name": "Onn Hafiz Ghazi",
+   "role": "19th Menteri Besar of Johor (since Mar 2022) / Johor UMNO Chairman (since 2023) / Johor BN Chairman (since 2024)",
+   "party": "UMNO",
+   "bloc": "BN",
+   "seat": "Machap (Johor state seat)",
+   "prominence": 0.85,
+   "aliases": [],
+   "profile": "The 47-year-old Johor MB who delivered BN's biggest 2026 victory — dynastic heir of the Onn-Hussein line and the strongest argument that BN can win alone."
+  },
+  {
+   "name": "Wan Rosdy Wan Ismail",
+   "role": "14th Menteri Besar of Pahang (since May 2018) / UMNO Vice-President (since Mar 2023) / Pahang UMNO Chairman",
+   "party": "UMNO",
+   "bloc": "BN",
+   "seat": "Jelai (Pahang state seat)",
+   "prominence": 0.72,
+   "aliases": [],
+   "profile": "The quietly effective Pahang MB who held BN's rural heartland through the 2018 and 2022 storms and now sits in UMNO's top leadership."
+  },
+  {
+   "name": "Saarani Mohamad",
+   "role": "13th Menteri Besar of Perak (since Dec 2020) / Perak UMNO & BN Chairman",
+   "party": "UMNO",
+   "bloc": "BN",
+   "seat": "Kota Tampan (Perak state seat)",
+   "prominence": 0.68,
+   "aliases": [],
+   "profile": "The teacher-turned-MB who has kept Perak stable under a BN-PH arrangement — living proof of BN's split personality between federal cooperation and solo ambitions."
+  },
+  {
+   "name": "Ab Rauf Yusoh",
+   "role": "13th Chief Minister of Melaka (since Mar 2023) / Melaka UMNO & BN Chairman (since Jul 2018)",
+   "party": "UMNO",
+   "bloc": "BN",
+   "seat": "Tanjung Bidara (Melaka state seat)",
+   "prominence": 0.65,
+   "aliases": [],
+   "profile": "Melaka's BN chairman-CM steering the state toward possible BN-PN cooperation — a bellwether for whether the pact spreads ahead of GE16."
+  },
+  {
+   "name": "Ismail Lasim",
+   "role": "9th/12th Menteri Besar of Negeri Sembilan (since Aug 2026) / N9 UMNO deputy chairman & information chief / Kuala Pilah division chief",
+   "party": "UMNO",
+   "bloc": "BN",
+   "seat": "Senaling (Negeri Sembilan state seat; also Juasseh 2018-2023)",
+   "prominence": 0.6,
+   "aliases": [],
+   "profile": "The veteran Tok Mat lieutenant who reclaimed Negeri Sembilan for BN in 2026 — the fresh face of BN's southern resurgence at state level."
+  },
+  {
+   "name": "Bung Moktar Radin",
+   "role": "Former Sabah UMNO & BN Chairman (2018-2025) / former Sabah Deputy CM I (2020-2023) — died in office 5 Dec 2025, legacy influence",
+   "party": "UMNO",
+   "bloc": "BN",
+   "seat": "P.187 Kinabatangan (1999 until death, Dec 2025); Lamag (Sabah state seat)",
+   "prominence": 0.6,
+   "aliases": [],
+   "profile": "The gruff Kinabatangan boss who held Sabah UMNO together through defeat and coalition rupture; his 2025 death removed BN's most formidable Sabah operator on the eve of GE16."
+  },
+  {
+   "name": "Noh Omar",
+   "role": "Former Minister & Selangor UMNO/BN chairman — left UMNO for Bersatu (joined Jan 2025); now Bersatu Supreme Council member",
+   "party": "UMNO",
+   "bloc": "BN",
+   "seat": "P.095 Tanjong Karang (1995-2022)",
+   "prominence": 0.6,
+   "aliases": [],
+   "profile": "The former Selangor UMNO boss who jumped to Bersatu in 2025 — emblematic of the Malay-old-guard outflow from BN into PN as GE16 approaches."
+  },
+  {
+   "name": "Annuar Musa",
+   "role": "Former BN Secretary-General & Minister — expelled from UMNO (Dec 2022); joined PAS (Mar 2023); now PAS Central Working Committee member",
+   "party": "UMNO",
+   "bloc": "BN",
+   "seat": "P.026 Ketereh (2013-2022); also Peringat MP 1995-1999",
+   "prominence": 0.65,
+   "aliases": [],
+   "profile": "UMNO's eloquent strategist turned PAS stalwart — the highest-profile UMNO defector to the Islamist camp, now relevant again as BN-PN pacts bloom."
+  },
+  {
+   "name": "Shahrir Abdul Samad",
+   "role": "Former Johor MB & Minister / former BN Backbenchers Club chairman — UMNO elder statesman",
+   "party": "UMNO",
+   "bloc": "BN",
+   "seat": "P.160 Johor Bahru (1978-1990, 2004-2018)",
+   "prominence": 0.55,
+   "aliases": [],
+   "profile": "The former Johor MB and veteran parliamentarian who embodies UMNO's parliamentary-establishment tradition — a voice of continuity as the party picks a GE16 course."
+  },
+  {
+   "name": "Wee Ka Siong",
+   "role": "11th MCA President (since Nov 2018) / Ayer Hitam MP",
+   "party": "MCA",
+   "bloc": "BN",
+   "seat": "P.148 Ayer Hitam",
+   "prominence": 0.85,
+   "aliases": [
+    "wee ka siong",
+    "wks"
+   ],
+   "profile": "MCA's survivalist president who has kept the party's two federal seats through two brutal elections — now betting on BN's resurgence while fighting for a larger Chinese voice in a Malay-first coalition."
+  },
+  {
+   "name": "Liow Tiong Lai",
+   "role": "10th MCA President (2013-2018) / former Minister — MCA elder statesman",
+   "party": "MCA",
+   "bloc": "BN",
+   "seat": "P.089 Bentong (1999-2018; lost GE14)",
+   "prominence": 0.7,
+   "aliases": [],
+   "profile": "The former health and transport minister who led MCA through its GE13-GE14 collapse — an elder voice on how MCA must rebuild its Chinese support."
+  },
+  {
+   "name": "Wee Jeck Seng",
+   "role": "MCA Vice-President (since Sep 2023) / Tanjung Piai MP / KTMB Chairman-designate",
+   "party": "MCA",
+   "bloc": "BN",
+   "seat": "P.165 Tanjung Piai",
+   "prominence": 0.6,
+   "aliases": [],
+   "profile": "MCA's by-election hero and Tanjung Piai incumbent — one of only two MCA MPs, holding the party's southern beachhead inside BN's Johor stronghold."
+  },
+  {
+   "name": "Chong Sin Woon",
+   "role": "MCA Secretary-General (since Sep 2019)",
+   "party": "MCA",
+   "bloc": "BN",
+   "seat": "None (Senator 2014-2020; contested Seremban in 2018, lost)",
+   "prominence": 0.55,
+   "aliases": [],
+   "profile": "MCA's secretary-general and former education deputy minister — the party's chief organiser as it tries to convert BN's 2026 Malay resurgence into Chinese support."
+  },
+  {
+   "name": "Lim Ban Hong",
+   "role": "MCA Vice-President (since Nov 2018) / Melaka MCA Chairman / Kelebang state assemblyman",
+   "party": "MCA",
+   "bloc": "BN",
+   "seat": "Kelebang (Melaka state seat)",
+   "prominence": 0.5,
+   "aliases": [],
+   "profile": "MCA's Melaka chief and trade-deputy-minister veteran — the party's state-level anchor in a Melaka election that could be the next BN-PN test."
+  },
+  {
+   "name": "Ti Lian Ker",
+   "role": "MCA Kuantan division chief / former MCA Vice-President (2018-2023) / former Senator (2018-2024)",
+   "party": "MCA",
+   "bloc": "BN",
+   "seat": "None (Senator 2018-2024; ex-MLA Teruntum 2004-2008, Indera Mahkota 1995-2004)",
+   "prominence": 0.45,
+   "aliases": [],
+   "profile": "MCA's interfaith advocate and former national-unity deputy minister — the party's bridge to Buddhist and non-Malay religious constituencies."
+  },
+  {
+   "name": "Yew Teong Look",
+   "role": "Former MCA Vice-President (2018-2023) / former Wangsa Maju MP — MCA elder",
+   "party": "MCA",
+   "bloc": "BN",
+   "seat": "P.116 Wangsa Maju (2004-2008)",
+   "prominence": 0.35,
+   "aliases": [],
+   "profile": "A veteran MCA federal figure from the pre-2008 era — part of the party's institutional memory as it contests for relevance."
+  },
+  {
+   "name": "Michael Chong",
+   "role": "Long-serving Chairman of MCA Public Services & Complaints Department / MCA central committee figure",
+   "party": "MCA",
+   "bloc": "BN",
+   "seat": "None (party functionary and public face, not an elected MP)",
+   "prominence": 0.45,
+   "aliases": [],
+   "profile": "The face of MCA's complaints bureau — a media-perennial whose community-service profile is the party's most direct link to ordinary Chinese voters."
+  },
+  {
+   "name": "S. Sivasubramaniam",
+   "role": "11th MIC President (since Jul 2024)",
+   "party": "MIC",
+   "bloc": "BN",
+   "seat": "None (contested P.062 Sungai Siput in GE15, lost)",
+   "prominence": 0.6,
+   "aliases": [],
+   "profile": "MIC's president since 2024, tasked with reviving a party reduced to one MP — his challenge is converting BN's Malay resurgence into Indian-community support at GE16."
+  },
+  {
+   "name": "S. Vigneswaran",
+   "role": "10th MIC President (2018-2024) / PM's Special Envoy to South Asia (since Nov 2021)",
+   "party": "MIC",
+   "bloc": "BN",
+   "seat": "P.111 Kota Raja (2004-2008)",
+   "prominence": 0.65,
+   "aliases": [],
+   "profile": "The former Senate president who ran MIC through its 2018-2024 wilderness — now the party's elder, still holding a federal envoy post."
+  },
+  {
+   "name": "M. Saravanan",
+   "role": "MIC Deputy President / Tapah MP — MIC's sole federal MP",
+   "party": "MIC",
+   "bloc": "BN",
+   "seat": "P.077 Tapah",
+   "prominence": 0.7,
+   "aliases": [],
+   "profile": "MIC's only MP and former human-resources minister — the party's most experienced federal operator, now number two under Sivasubramaniam."
+  },
+  {
+   "name": "Subramaniam Sathasivam (Dr S. Subramaniam)",
+   "role": "9th MIC President (2013-2018) / former Minister — MIC elder statesman",
+   "party": "MIC",
+   "bloc": "BN",
+   "seat": "P.140 Segamat (2004-2018)",
+   "prominence": 0.55,
+   "aliases": [],
+   "profile": "The doctor-politician who led MIC through its last years of federal power — a respected elder whose 2018 defeat closed MIC's era of ministerial influence."
+  },
+  {
+   "name": "M. Asojan (Asojan Muniyandy)",
+   "role": "MIC Johor Chairman (since Nov 2016) / former Gambir state assemblyman",
+   "party": "MIC",
+   "bloc": "BN",
+   "seat": "Gambir (Johor state seat, former)",
+   "prominence": 0.35,
+   "aliases": [],
+   "profile": "MIC's Johor boss, whose grassroots machinery rode BN's 2026 Johor landslide — a state-level operator who matters for MIC's GE16 seat claims in the south."
+  },
+  {
+   "name": "Arthur Joseph Kurup",
+   "role": "2nd PBRS President (since Jan 2023) / Sabah BN Chairman (since Jan 2026) / Minister of Natural Resources & Environmental Sustainability (since Dec 2025)",
+   "party": "PBRS",
+   "bloc": "BN",
+   "seat": "P.182 Pensiangan; Sook (Sabah state seat, since Nov 2025)",
+   "prominence": 0.7,
+   "aliases": [],
+   "profile": "The young PBRS president who inherited his father's party and has been fast-tracked to cabinet — Sabah BN's new chairman as it tries to rebuild after Bung Moktar's death."
+  },
+  {
+   "name": "Abang Abdul Rahman Zohari Abang Openg",
+   "role": "Premier of Sarawak / GPS Chairman / PBB President",
+   "party": "GPS",
+   "bloc": "East Malaysia & Others",
+   "seat": "Satok (N.11, Sarawak DUN)",
+   "prominence": 0.95,
+   "aliases": [
+    "abang johari",
+    "johari openg"
+   ],
+   "profile": "Sarawak's longest-effective premier; GPS's undisputed leader who has converted Sarawak autonomy into a federal bargaining chip, keeping 23 seats safe for the unity government's majority."
+  },
+  {
+   "name": "Fadillah Haji Yusof",
+   "role": "Deputy Prime Minister II / GPS (PBB) / Energy Transition Minister",
+   "party": "GPS",
+   "bloc": "East Malaysia & Others",
+   "seat": "P.192 Petra Jaya",
+   "prominence": 0.9,
+   "aliases": [
+    "fadillah"
+   ],
+   "profile": "Sarawak's man in Putrajaya — DPM II and GPS's federal anchor, balancing MA63 advocacy with loyalty to the unity government."
+  },
+  {
+   "name": "Stephen Rundi Utom",
+   "role": "Sarawak Deputy Premier II / PBB vice-president",
+   "party": "GPS",
+   "bloc": "East Malaysia & Others",
+   "seat": "Kemena (N.70)",
+   "prominence": 0.6,
+   "aliases": [],
+   "profile": "Long-serving PBB state minister and one of Abang Johari's two deputy premiers; utilities and food-security portfolio holder."
+  },
+  {
+   "name": "Douglas Uggah Embas",
+   "role": "Sarawak Deputy Premier I / PBB deputy president",
+   "party": "GPS",
+   "bloc": "East Malaysia & Others",
+   "seat": "Bukit Saban (N.39)",
+   "prominence": 0.75,
+   "aliases": [],
+   "profile": "PBB's number two and the lead negotiator on MA63; the man who sets Sarawak's deadlines with the federal government."
+  },
+  {
+   "name": "Alexander Nanta Linggi",
+   "role": "GPS Sec-Gen / PBB Supreme Council",
+   "party": "GPS",
+   "bloc": "East Malaysia & Others",
+   "seat": "P.213 Kapit",
+   "prominence": 0.55,
+   "aliases": [],
+   "profile": "GPS secretary-general and Works Minister; Kapit's long-serving MP representing the upper Rajang."
+  },
+  {
+   "name": "James Jemut Masing",
+   "role": "PRS President / former Sarawak Deputy Chief Minister (deceased 2021 — legacy)",
+   "party": "GPS",
+   "bloc": "East Malaysia & Others",
+   "seat": "Baleh (N.63, held by family)",
+   "prominence": 0.5,
+   "aliases": [],
+   "profile": "Founding PRS president and iconic Iban leader; his legacy dominates Baleh and rural Sarawak politics."
+  },
+  {
+   "name": "Joseph Salang Gandum",
+   "role": "PRS deputy president / former federal minister",
+   "party": "GPS",
+   "bloc": "East Malaysia & Others",
+   "seat": "P.203 Lubok Antu",
+   "prominence": 0.5,
+   "aliases": [],
+   "profile": "Veteran PRS leader and Iban federal voice from Lubok Antu, straddling the Sarawak-Kalimantan borderlands."
+  },
+  {
+   "name": "Richard Riot Jaem",
+   "role": "SUPP advisor / former federal minister",
+   "party": "GPS",
+   "bloc": "East Malaysia & Others",
+   "seat": "P.202 Serian (retired 2022)",
+   "prominence": 0.45,
+   "aliases": [],
+   "profile": "Long-serving SUPP federal minister who represented Serian for three decades, bridging Dayak and Chinese constituencies."
+  },
+  {
+   "name": "Sim Kui Hian",
+   "role": "SUPP president / Sarawak Deputy Premier III",
+   "party": "GPS",
+   "bloc": "East Malaysia & Others",
+   "seat": "Batu Kawa (N.19)",
+   "prominence": 0.55,
+   "aliases": [],
+   "profile": "SUPP president and third deputy premier; the Chinese vote's anchor in Sarawak's GPS."
+  },
+  {
+   "name": "Tiong King Sing",
+   "role": "PDP president / federal minister",
+   "party": "GPS",
+   "bloc": "East Malaysia & Others",
+   "seat": "P.214 Bintulu",
+   "prominence": 0.5,
+   "aliases": [],
+   "profile": "Wealthy Bintulu tycoon-politician leading PDP; tourism minister whose business network anchors GPS's economic wing."
+  },
+  {
+   "name": "Hajiji Noor",
+   "role": "Sabah Chief Minister / GRS Chairman / GAGASAN President",
+   "party": "GRS",
+   "bloc": "East Malaysia & Others",
+   "seat": "Sulaman (N.11, Sabah DUN)",
+   "prominence": 0.85,
+   "aliases": [
+    "hajiji"
+   ],
+   "profile": "Sabah's chief minister steering GRS through a fragile coalition with PH while managing the WARISAN surge of 2025."
+  },
+  {
+   "name": "Maximus Ongkili",
+   "role": "PBS President / former federal minister",
+   "party": "GRS",
+   "bloc": "East Malaysia & Others",
+   "seat": "P.172 Kota Marudu (retired 2022)",
+   "prominence": 0.6,
+   "aliases": [],
+   "profile": "PBS's veteran Kadazan-Dusun leader; the conscience voice for non-Muslim Bumiputera interests inside GRS."
+  },
+  {
+   "name": "Jeffrey Kitingan",
+   "role": "STAR President / Sabah Deputy Chief Minister I",
+   "party": "GRS",
+   "bloc": "East Malaysia & Others",
+   "seat": "Tambunan (N.31)",
+   "prominence": 0.6,
+   "aliases": [
+    "kitingan"
+   ],
+   "profile": "Veteran Kadazan-Dusun rights campaigner and Harvard-educated DCM; the ideological heart of GRS's MA63 push."
+  },
+  {
+   "name": "Ewon Benedick",
+   "role": "UPKO President / federal minister (PH-aligned, Sabah)",
+   "party": "GRS",
+   "bloc": "East Malaysia & Others",
+   "seat": "P.170 Penampang",
+   "prominence": 0.6,
+   "aliases": [],
+   "profile": "Young Kadazan-Dusun minister who took UPKO fully into PH — a key PH beachhead in Sabah."
+  },
+  {
+   "name": "Shafie Apdal",
+   "role": "WARISAN President / former Sabah Chief Minister",
+   "party": "WARISAN",
+   "bloc": "East Malaysia & Others",
+   "seat": "P.172 Semporna",
+   "prominence": 0.8,
+   "aliases": [
+    "shafie",
+    "warisan shafie"
+   ],
+   "profile": "WARISAN's founder-leader; 2025 DUN surge re-established him as Sabah's leading opposition figure."
+  },
+  {
+   "name": "Junz Wong",
+   "role": "WARISAN deputy president / former Sabah minister",
+   "party": "WARISAN",
+   "bloc": "East Malaysia & Others",
+   "seat": "Tanjong Papat (N.55)",
+   "prominence": 0.5,
+   "aliases": [],
+   "profile": "WARISAN's deputy and Sandakan-base leader; young corporate-professional face of the party."
+  },
+  {
+   "name": "Jannie Lasimbang",
+   "role": "WARISAN vice-president / former MP",
+   "party": "WARISAN",
+   "bloc": "East Malaysia & Others",
+   "seat": "P.175 Papar (former)",
+   "prominence": 0.45,
+   "aliases": [],
+   "profile": "Rights lawyer and former Papar MP; WARISAN's voice on indigenous and human-rights issues."
+  },
+  {
+   "name": "Peter Anthony",
+   "role": "KDM President / former Sabah minister",
+   "party": "KDM",
+   "bloc": "East Malaysia & Others",
+   "seat": "Melalap (N.34)",
+   "prominence": 0.4,
+   "aliases": [],
+   "profile": "Controversial KDM founder whose forgery conviction complicates his seat's status; represents Kadazan-Dusun welfare politics."
+  },
+  {
+   "name": "Zuraida Kamaruddin",
+   "role": "PBM President / former federal minister",
+   "party": "PBM",
+   "bloc": "East Malaysia & Others",
+   "seat": "P.109 Ampang (lost 2022)",
+   "prominence": 0.45,
+   "aliases": [],
+   "profile": "Serial defector who ended up founding PBM; her Ampang loss marked the end of her front-rank career."
+  },
+  {
+   "name": "Maszlee Malik",
+   "role": "Independent / former Education Minister (originally PKR, then independent)",
+   "party": "IND",
+   "bloc": "East Malaysia & Others",
+   "seat": "P.153 Simpang Renggam (lost 2022)",
+   "prominence": 0.55,
+   "aliases": [
+    "maszlee"
+   ],
+   "profile": "Former education minister returned to Parliament as an independent in the 2024 Pulai by-election — a wildcard in Johor."
+  },
+  {
+   "name": "Khalid Samad",
+   "role": "Independent / former Federal Territories Minister (ex-AMANAH)",
+   "party": "IND",
+   "bloc": "East Malaysia & Others",
+   "seat": "P.117 Shah Alam (lost 2022)",
+   "prominence": 0.4,
+   "aliases": [],
+   "profile": "Veteran progressive-Islamist figure now outside party politics; occasional commentator on unity-government issues."
+  },
+  {
+   "name": "Anwar Ibrahim",
+   "role": "10th Prime Minister of Malaysia; Minister of Finance; President of PKR; Chairman of Pakatan Harapan",
+   "party": "PKR",
+   "bloc": "PH",
+   "seat": "Tambun (P063)",
+   "prominence": 1.0,
+   "aliases": [],
+   "profile": "Malaysia's longest-running reformist leader and current PM; the anchor of PH and the Unity Government, whose GE16 fortunes depend on PKR's squeezed Malay base and the Bersama splinter."
+  },
+  {
+   "name": "Wan Azizah Wan Ismail",
+   "role": "PKR founding president & party advisor; former Deputy Prime Minister (2018–2020); MP Bandar Tun Razak; spouse of PM Anwar",
+   "party": "PKR",
+   "bloc": "PH",
+   "seat": "Bandar Tun Razak (P124)",
+   "prominence": 0.8,
+   "aliases": [
+    "wan azizah",
+    "dr wan azizah"
+   ],
+   "profile": "The matriarch of Reformasi who founded PKR and broke gender barriers at the highest levels; remains a symbolic anchor of PKR's founding generation."
+  },
+  {
+   "name": "Nurul Izzah Anwar",
+   "role": "Deputy President of PKR (2025–); MP Pandan (by-election 2025)",
+   "party": "PKR",
+   "bloc": "PH",
+   "seat": "Pandan (P100)",
+   "prominence": 0.85,
+   "aliases": [
+    "nurul izzah"
+   ],
+   "profile": "PKR's most prominent second-generation reformist and now its deputy president; her Pandan victory over Rafizi consolidated the Anwar camp's grip on the party."
+  },
+  {
+   "name": "Saifuddin Nasution Ismail",
+   "role": "Minister of Home Affairs; Secretary-General of Pakatan Harapan; Senator; PKR management committee advisor",
+   "party": "PKR",
+   "bloc": "PH",
+   "seat": "Senator (Dewan Negara; former MP Kulim-Bandar Baharu P018)",
+   "prominence": 0.8,
+   "aliases": [],
+   "profile": "PKR's chief administrator and PH's secretary-general; as Home Minister he has been a lightning rod for civil-liberties criticism but remains central to the government's machinery."
+  },
+  {
+   "name": "Amirudin Shari",
+   "role": "16th Menteri Besar of Selangor (2018–); PKR Vice-President; MP Gombak; PH Selangor chairman",
+   "party": "PKR",
+   "bloc": "PH",
+   "seat": "Gombak (P098); MLA Sungai Tua",
+   "prominence": 0.8,
+   "aliases": [],
+   "profile": "Two-term Selangor MB and the lynchpin of PKR's richest state; his state machinery is the party's GE16 electoral backbone."
+  },
+  {
+   "name": "Chang Lih Kang",
+   "role": "Minister of Science, Technology & Innovation (2022–); PKR Vice-President; MP Tanjong Malim",
+   "party": "PKR",
+   "bloc": "PH",
+   "seat": "Tanjong Malim (P077)",
+   "prominence": 0.65,
+   "aliases": [],
+   "profile": "PKR's top ethnic-Chinese leader and MOSTI minister; a dependable technocrat whose Tanjong Malim seat is contested PH–BN territory in GE16."
+  },
+  {
+   "name": "Fahmi Fadzil",
+   "role": "Minister of Communications (2023–); Government Spokesperson; PKR Information Chief; MP Lembah Pantai",
+   "party": "PKR",
+   "bloc": "PH",
+   "seat": "Lembah Pantai (P121)",
+   "prominence": 0.7,
+   "aliases": [],
+   "profile": "PH's chief communicator and a rare PKR figure who holds an urban mixed seat; central to the government's GE16 messaging."
+  },
+  {
+   "name": "Sim Tze Tzin",
+   "role": "Deputy Minister of Investment, Trade & Industry (2025–); Political Secretary to the PKR President; MP Bayan Baru",
+   "party": "PKR",
+   "bloc": "PH",
+   "seat": "Bayan Baru (P052)",
+   "prominence": 0.5,
+   "aliases": [],
+   "profile": "Penang-based PKR vice-presidential contender and policy workhorse; a bridge between PKR's reformist alumni and the current leadership."
+  },
+  {
+   "name": "William Leong Jee Keen",
+   "role": "MP Selayang (2008–); Chair, Major Public Appointments Select Committee; PKR Treasurer-General",
+   "party": "PKR",
+   "bloc": "PH",
+   "seat": "Selayang (P097)",
+   "prominence": 0.5,
+   "aliases": [],
+   "profile": "A veteran PKR institutionalist who anchors the party's parliamentary oversight work; Selayang is a frontline seat against the PN surge."
+  },
+  {
+   "name": "Lee Chean Chung",
+   "role": "MP Petaling Jaya (2022–); PKR Communications Director; Chair, Centre for Regional Strategic Studies",
+   "party": "PKR",
+   "bloc": "PH",
+   "seat": "Petaling Jaya (P105)",
+   "prominence": 0.5,
+   "aliases": [],
+   "profile": "PKR's urban policy face in the safest non-Malay-majority seat; represents the party's professional, reformist strand."
+  },
+  {
+   "name": "Akmal Nasrullah Mohd Nasir",
+   "role": "Minister of Economy (2025–); MP Johor Bahru; ex-PKR Youth Chief",
+   "party": "PKR",
+   "bloc": "PH",
+   "seat": "Johor Bahru (P160)",
+   "prominence": 0.6,
+   "aliases": [],
+   "profile": "The youthful Economy Minister who inherited Rafizi's portfolio; his Johor Bahru seat is a key test of whether PKR's urban-Malay base holds."
+  },
+  {
+   "name": "Ramanan Ramakrishnan",
+   "role": "Minister of Human Resources (2025–); PKR Vice-President; MP Sungai Buloh",
+   "party": "PKR",
+   "bloc": "PH",
+   "seat": "Sungai Buloh (P107)",
+   "prominence": 0.55,
+   "aliases": [],
+   "profile": "PKR's rising Tamil leader and HR minister; symbolises the party's multiracial ambitions in the Unity Government."
+  },
+  {
+   "name": "Anthony Loke Siew Fook",
+   "role": "Secretary-General of DAP (2022–); Minister of Transport; MP Seremban",
+   "party": "DAP",
+   "bloc": "PH",
+   "seat": "Seremban (P128)",
+   "prominence": 0.95,
+   "aliases": [
+    "loke",
+    "anthony loke"
+   ],
+   "profile": "DAP's de facto leader and a steady institutionalist; the Chennah defeat and his N9 resignation (Aug 2026) frame DAP's GE16 risk narrative."
+  },
+  {
+   "name": "Lim Guan Eng",
+   "role": "DAP Advisor (2025–); former DAP National Chairman (2022–2025); MP Bagan; former Finance Minister",
+   "party": "DAP",
+   "bloc": "PH",
+   "seat": "Bagan (P043)",
+   "prominence": 0.9,
+   "aliases": [
+    "guan eng",
+    "lge"
+   ],
+   "profile": "The dominant DAP figure of the past two decades; now in an advisory role as the party renews its leadership around Loke and Gobind."
+  },
+  {
+   "name": "Lim Kit Siang",
+   "role": "DAP founding-generation leader (retired); longest-serving Leader of the Opposition; MP for 8 terms",
+   "party": "DAP",
+   "bloc": "PH",
+   "seat": "Retired (no seat)",
+   "prominence": 0.8,
+   "aliases": [
+    "kit siang"
+   ],
+   "profile": "The architect of the Malaysian Malaysia movement and DAP's founding father; retired but still the moral reference point of the party."
+  },
+  {
+   "name": "Gobind Singh Deo",
+   "role": "National Chairman of DAP (2025–); Minister of Digital (2023–); MP Damansara",
+   "party": "DAP",
+   "bloc": "PH",
+   "seat": "Damansara (P106)",
+   "prominence": 0.85,
+   "aliases": [
+    "gobind singh",
+    "gobind"
+   ],
+   "profile": "DAP's National Chairman and Digital Minister; his rise to the chairmanship in 2025 marks the handover from the Lim generation to a new leadership core."
+  },
+  {
+   "name": "Teresa Kok Suh Sim",
+   "role": "MP Seputeh (1999–); Deputy Chair, Public Accounts Committee (2024–); former Minister of Primary Industries",
+   "party": "DAP",
+   "bloc": "PH",
+   "seat": "Seputeh (P122)",
+   "prominence": 0.7,
+   "aliases": [],
+   "profile": "DAP's most outspoken veteran and a fixture of Seputeh; her no-nonsense style keeps her a national headline-maker on religious-freedom and governance issues."
+  },
+  {
+   "name": "Hannah Yeoh Tseow Suan",
+   "role": "Minister in the PM's Department (Federal Territories) (2025–); MP Segambut; DAP Deputy Secretary-General",
+   "party": "DAP",
+   "bloc": "PH",
+   "seat": "Segambut (P117)",
+   "prominence": 0.8,
+   "aliases": [],
+   "profile": "A flagship of DAP's generational renewal; her Federal Territories role gives KL voters direct cabinet representation ahead of GE16."
+  },
+  {
+   "name": "Nga Kor Ming",
+   "role": "Minister of Housing & Local Government (2022–); Deputy National Chairman of DAP (2025–); MP Teluk Intan",
+   "party": "DAP",
+   "bloc": "PH",
+   "seat": "Teluk Intan (P076)",
+   "prominence": 0.75,
+   "aliases": [
+    "nga"
+   ],
+   "profile": "DAP's deputy chairman and a pugnacious Perak boss; a prolific ministry operator whose Teluk Intan seat is contested territory in GE16."
+  },
+  {
+   "name": "Chow Kon Yeow",
+   "role": "5th Chief Minister of Penang (2018–); MLA Padang Kota; MP Batu Kawan; PH Penang chairman",
+   "party": "DAP",
+   "bloc": "PH",
+   "seat": "Batu Kawan (P046); MLA Padang Kota",
+   "prominence": 0.75,
+   "aliases": [],
+   "profile": "The steady hand of Penang's DAP government for two terms; his state's strong fiscal record is PH's showcase in the north."
+  },
+  {
+   "name": "Steven Sim Chee Keong",
+   "role": "Minister of Entrepreneur & Cooperatives Development (2025–); MP Bukit Mertajam; DAP Deputy Secretary-General; Penang DAP chairman",
+   "party": "DAP",
+   "bloc": "PH",
+   "seat": "Bukit Mertajam (P045)",
+   "prominence": 0.7,
+   "aliases": [],
+   "profile": "A fast-rising DAP moderniser running two ministries in three years; a central figure in the party's Penang and national renewal."
+  },
+  {
+   "name": "Yeo Bee Yin",
+   "role": "MP Puchong (2022–); DAP National Publicity Secretary; Selangor DAP secretary; Chair, PSC on Women, Children & Community Development",
+   "party": "DAP",
+   "bloc": "PH",
+   "seat": "Puchong (P103)",
+   "prominence": 0.6,
+   "aliases": [],
+   "profile": "DAP's clean-tech standard-bearer and a leading female voice; her technocratic profile is central to DAP's urban professional appeal."
+  },
+  {
+   "name": "Liew Chin Tong",
+   "role": "Deputy Minister of Investment, Trade & Industry (2023–); MP Iskandar Puteri; MLA Perling; DAP National Strategic Director",
+   "party": "DAP",
+   "bloc": "PH",
+   "seat": "Iskandar Puteri (P162); MLA Perling",
+   "prominence": 0.65,
+   "aliases": [],
+   "profile": "DAP's chief electoral strategist and a prolific political author; his Iskandar Puteri base anchors DAP's Johor push."
+  },
+  {
+   "name": "Teo Nie Ching",
+   "role": "Deputy Minister of Communications (2023–); MP Kulai; DAP Women Chief; Johor DAP chair; DAP National Vice-Chairperson",
+   "party": "DAP",
+   "bloc": "PH",
+   "seat": "Kulai (P163)",
+   "prominence": 0.6,
+   "aliases": [],
+   "profile": "DAP's women's chief and Johor boss; a key operator in the southern state where PH is fighting the BN resurgence."
+  },
+  {
+   "name": "Tan Kok Wai",
+   "role": "MP Cheras (1995–); longest-serving MP in the Dewan Rakyat; former DAP National Chairman; FT PH chairman",
+   "party": "DAP",
+   "bloc": "PH",
+   "seat": "Cheras (P123)",
+   "prominence": 0.6,
+   "aliases": [],
+   "profile": "The dean of the Dewan Rakyat and a DAP institutional pillar; his Cheras seat is among the party's safest."
+  },
+  {
+   "name": "M. Kulasegaran (Kula)",
+   "role": "Deputy Minister in the PM's Department (Law & Institutional Reform) (2023–); MP Ipoh Barat (2004–)",
+   "party": "DAP",
+   "bloc": "PH",
+   "seat": "Ipoh Barat (P065)",
+   "prominence": 0.55,
+   "aliases": [],
+   "profile": "DAP's senior Indian-Malaysian leader and a champion of labour law; his graceful step-back from party polls signals DAP's leadership renewal."
+  },
+  {
+   "name": "Zairil Khir Johari",
+   "role": "Penang EXCO member; MLA Tanjong Bunga; DAP Penang vice-chairman; former MP Bukit Bendera",
+   "party": "DAP",
+   "bloc": "PH",
+   "seat": "Tanjong Bunga (Penang DUN)",
+   "prominence": 0.45,
+   "aliases": [],
+   "profile": "DAP's most prominent Malay leader and a Penang EXCO member; his presence counters the 'anti-Malay' narrative aimed at DAP."
+  },
+  {
+   "name": "Mohamad Sabu (Mat Sabu)",
+   "role": "President of AMANAH (2015–); Minister of Agriculture & Food Security; MP Kota Raja",
+   "party": "AMANAH",
+   "bloc": "PH",
+   "seat": "Kota Raja (P111)",
+   "prominence": 0.85,
+   "aliases": [],
+   "profile": "AMANAH's founding president and moral anchor; the 'Mat Sabu' story — from ISA detainee to cabinet minister — embodies the progressive-Islam strand of PH."
+  },
+  {
+   "name": "Dr. Dzulkefly Ahmad",
+   "role": "Minister of Health (2023–); AMANAH Vice-President; MP Kuala Selangor",
+   "party": "AMANAH",
+   "bloc": "PH",
+   "seat": "Kuala Selangor (P096)",
+   "prominence": 0.7,
+   "aliases": [],
+   "profile": "AMANAH's policy brain and two-time Health Minister; his scientific background anchors the party's technocratic-progressive identity."
+  },
+  {
+   "name": "Mujahid Yusof Rawa",
+   "role": "Deputy President of AMANAH (2023–); Senator; Perak PH chairman; former Minister of Religious Affairs",
+   "party": "AMANAH",
+   "bloc": "PH",
+   "seat": "Senator (Dewan Negara)",
+   "prominence": 0.6,
+   "aliases": [],
+   "profile": "AMANAH's deputy president and a rare figure fluent in both Islamic and reformist discourses; bridges AMANAH's PAS heritage and PH's pluralism."
+  },
+  {
+   "name": "Mahfuz Omar",
+   "role": "Vice-President of AMANAH (2021–); Chairman, Farmers' Organisation Authority (2023–); former MP Pokok Sena",
+   "party": "AMANAH",
+   "bloc": "PH",
+   "seat": "None (agency chairman; former MP Pokok Sena P008)",
+   "prominence": 0.55,
+   "aliases": [],
+   "profile": "AMANAH's Kedah veteran and a bridge between the party and the rural Malay base; his defection from PAS symbolised the 2018 opposition realignment."
+  },
+  {
+   "name": "Aminolhuda Hassan",
+   "role": "AMANAH Johor chairman (2015–); MP Sri Gading; former Johor PH chairman; former Johor EXCO",
+   "party": "AMANAH",
+   "bloc": "PH",
+   "seat": "Sri Gading (P149)",
+   "prominence": 0.5,
+   "aliases": [],
+   "profile": "AMANAH's Johor boss and the MP for Sri Gading — a seat the base-case projection has flipping to BN on the Johor swing; a frontline GE16 incumbent."
+  },
+  {
+   "name": "Hasan Bahrom",
+   "role": "Chairman, Yayasan Dakwah Islamiah Malaysia (YADIM) (2025–); former MP Tampin; AMANAH leader",
+   "party": "AMANAH",
+   "bloc": "PH",
+   "seat": "None (former MP Tampin P133)",
+   "prominence": 0.4,
+   "aliases": [],
+   "profile": "AMANAH's YADIM chairman and a former Tampin MP; represents the party's post-PAS institutional strand."
+  },
+  {
+   "name": "Syed Saddiq Syed Abdul Rahman",
+   "role": "Founding President of MUDA; MP Muar; former Minister of Youth & Sports; Undi18 champion",
+   "party": "MUDA",
+   "bloc": "PH",
+   "seat": "Muar (P146)",
+   "prominence": 0.85,
+   "aliases": [
+    "syed saddiq",
+    "saddiq"
+   ],
+   "profile": "The face of Malaysia's youth-politics wave and MUDA's founder; his conviction, comeback and Muar seat make him the party's make-or-break figure for GE16."
+  },
+  {
+   "name": "Amira Aisya Abdul Aziz",
+   "role": "Acting President / Deputy President of MUDA; former MLA Puteri Wangsa (2022–2026); co-founder",
+   "party": "MUDA",
+   "bloc": "PH",
+   "seat": "None (lost Puteri Wangsa in Johor 2026)",
+   "prominence": 0.55,
+   "aliases": [],
+   "profile": "MUDA's acting president and organisational backbone; her Puteri Wangsa defeat in Johor 2026 underscores the party's electoral fragility."
+  },
+  {
+   "name": "Amir Hariri Abdul Hadi",
+   "role": "Co-founder; founding and 3rd Secretary-General of MUDA (2020–2021, 2022–2025)",
+   "party": "MUDA",
+   "bloc": "PH",
+   "seat": "None",
+   "prominence": 0.4,
+   "aliases": [],
+   "profile": "MUDA's chief organiser and a human-rights campaigner; the movement muscle behind the party's youth mobilisation."
+  },
+  {
+   "name": "Lim Wei Jiet",
+   "role": "Co-founder of MUDA; constitutional lawyer; former party vice-president",
+   "party": "MUDA",
+   "bloc": "PH",
+   "seat": "None",
+   "prominence": 0.35,
+   "aliases": [],
+   "profile": "MUDA's founding lawyer whose courtroom work won the party its registration; the legal conscience of the youth-reform project."
+  },
+  {
+   "name": "Rafizi Ramli",
+   "role": "De facto leader / co-founder of Bersama (2026–); former Minister of Economy (2022–2025); former PKR Deputy President; ex-MP Pandan",
+   "party": "Bersama",
+   "bloc": "PH",
+   "seat": "None (former MP Pandan P100)",
+   "prominence": 0.9,
+   "aliases": [
+    "rafizi"
+   ],
+   "profile": "The most consequential PKR defector of the decade; his Bersama splinter directly targets PKR's urban-Malay base and is the biggest internal threat to PH's GE16 arithmetic."
+  },
+  {
+   "name": "Nik Nazmi Nik Ahmad",
+   "role": "Deputy de facto leader / co-founder of Bersama (2026–); former Minister of Natural Resources & Environmental Sustainability; ex-MP Setiawangsa",
+   "party": "Bersama",
+   "bloc": "PH",
+   "seat": "None (former MP Setiawangsa P118)",
+   "prominence": 0.8,
+   "aliases": [
+    "nik nazmi"
+   ],
+   "profile": "Rafizi's closest ally and Bersama's number two; his resignation from cabinet and Setiawangsa's vacancy marked the formal rupture of PKR's reformist wing."
+  },
+  {
+   "name": "Ahmad Syukri Che Abdul Razab",
+   "role": "President of Parti Bersama Malaysia (nominal head)",
+   "party": "Bersama",
+   "bloc": "PH",
+   "seat": "None",
+   "prominence": 0.3,
+   "aliases": [],
+   "profile": "The nominal president of Bersama; a low-profile figurehead who enabled the Rafizi–Nik Nazmi relaunch."
+  },
+  {
+   "name": "Matthew Lai Jun-Loong",
+   "role": "Vice-President of Parti Bersama Malaysia",
+   "party": "Bersama",
+   "bloc": "PH",
+   "seat": "None",
+   "prominence": 0.25,
+   "aliases": [],
+   "profile": "A member of Bersama's founding leadership slate; part of the party's bid to project a young, inclusive third force."
+  },
+  {
+   "name": "Abdul Hadi Awang",
+   "role": "PAS President (since 2002); MP Marang (P037); former Terengganu MB (1999-2004)",
+   "party": "PAS",
+   "bloc": "PN",
+   "seat": "P037 Marang, Terengganu (MP 1990-2004 and since 2008)",
+   "prominence": 0.98,
+   "aliases": [
+    "hadi awang",
+    "hadi"
+   ],
+   "profile": "PAS's supreme leader and Malaysia's longest-serving party president; the anchor of the Malay-Muslim 'Green Wave' and the broker of PN's 2026 pro-PAS restructuring."
+  },
+  {
+   "name": "Ahmad Samsuri Mokhtar",
+   "role": "PN Chairman (2026); 15th Menteri Besar of Terengganu (since 2018); MP Kemaman (P040); PAS Vice President",
+   "party": "PAS",
+   "bloc": "PN",
+   "seat": "P040 Kemaman (MP since Dec 2023 by-election); Ru Rendang state seat, Terengganu (since 2018)",
+   "prominence": 0.95,
+   "aliases": [
+    "samsuri",
+    "ahmad samsuri"
+   ],
+   "profile": "PAS's modern, engineer-administrator face - Terengganu MB and, since the 2026 restructure, PN's chairman and nominal head of the opposition coalition ahead of GE16."
+  },
+  {
+   "name": "Tuan Ibrahim Tuan Man",
+   "role": "PAS Deputy President (since 2015); PN Deputy Chairman (2026); MP Kubang Kerian (P024); Pahang state Opposition Leader",
+   "party": "PAS",
+   "bloc": "PN",
+   "seat": "P024 Kubang Kerian (MP since 2018); Cheka state seat, Pahang (since 2022)",
+   "prominence": 0.93,
+   "aliases": [
+    "tuan ibrahim"
+   ],
+   "profile": "PAS's deputy president and environment-and-water minister in both PN-era cabinets; a key administrator of the ulama establishment that now dominates PN."
+  },
+  {
+   "name": "Takiyuddin Hassan",
+   "role": "PAS Secretary-General (since 2015); PN Secretary-General (2026); MP Kota Bharu (P021)",
+   "party": "PAS",
+   "bloc": "PN",
+   "seat": "P021 Kota Bharu, Kelantan (MP since 2013)",
+   "prominence": 0.9,
+   "aliases": [
+    "takiyuddin"
+   ],
+   "profile": "PAS's chief administrator and parliamentary whip - the party's organisational engine and, since 2026, secretary-general of the restructured PN."
+  },
+  {
+   "name": "Muhammad Sanusi Md Nor",
+   "role": "14th Menteri Besar of Kedah (since May 2020); PN Elections Director (2026); MLA Jeneri",
+   "party": "PAS",
+   "bloc": "PN",
+   "seat": "Jeneri state seat, Kedah (MLA since 2018)",
+   "prominence": 0.92,
+   "aliases": [
+    "sanusi"
+   ],
+   "profile": "Kedah's combative MB and the loudest voice of the 'Green Wave' - now PN's elections director and chief GE16 campaign strategist."
+  },
+  {
+   "name": "Mohd Nassuruddin Daud",
+   "role": "Menteri Besar of Kelantan (since Aug 2023); MLA Meranti; Kelantan PAS information chief",
+   "party": "PAS",
+   "bloc": "PN",
+   "seat": "Meranti state seat, Kelantan (MLA since 1995)",
+   "prominence": 0.85,
+   "aliases": [],
+   "profile": "Kelantan's MB and a veteran of the state's PAS machine - keeper of PAS's longest-governed state ahead of GE16."
+  },
+  {
+   "name": "Hashim Jasin",
+   "role": "4th Mursyidul Am (Spiritual Leader) of PAS (since Oct 2016)",
+   "party": "PAS",
+   "bloc": "PN",
+   "seat": "None (former MP Arau 1998-1999; former MLA Sanglang 1999-2013)",
+   "prominence": 0.8,
+   "aliases": [],
+   "profile": "PAS's 87-year-old spiritual leader - the religious authority sanctioning the party's political strategy, including the 2026 PN realignment."
+  },
+  {
+   "name": "Idris Ahmad",
+   "role": "PAS Vice President; MP Bagan Serai (P058); former Minister of Religious Affairs",
+   "party": "PAS",
+   "bloc": "PN",
+   "seat": "P058 Bagan Serai, Perak (MP since 2022; earlier MP Bukit Gantang 2013-2018)",
+   "prominence": 0.82,
+   "aliases": [],
+   "profile": "A PAS vice president and former religious-affairs minister who bridges the party's federal MPs and its ulama agenda."
+  },
+  {
+   "name": "Ahmad Yahaya",
+   "role": "Head of PAS Dewan Ulamak (ulama council, since 2021); MP Pokok Sena (P008); PAS Kedah commissioner",
+   "party": "PAS",
+   "bloc": "PN",
+   "seat": "P008 Pokok Sena, Kedah (MP since 2022; earlier MLA Alor Mengkudu 2013-2018)",
+   "prominence": 0.72,
+   "aliases": [],
+   "profile": "Head of PAS's ulama council and Kedah's PAS commissioner - a senior religious-administrative figure in the party's Kedah heartland."
+  },
+  {
+   "name": "Siti Zailah Mohd Yusoff",
+   "role": "PAS Women's Chief (Muslimat); MP Rantau Panjang (P023); former Deputy Minister",
+   "party": "PAS",
+   "bloc": "PN",
+   "seat": "P023 Rantau Panjang, Kelantan (MP since 2008)",
+   "prominence": 0.75,
+   "aliases": [],
+   "profile": "PAS's women's wing chief and its most senior female MP - the party's voice on women and family policy."
+  },
+  {
+   "name": "Ahmad Fadhli Shaari",
+   "role": "PAS Information Chief (since Nov 2023); MP Pasir Mas (P022); former PAS and PN Youth chief",
+   "party": "PAS",
+   "bloc": "PN",
+   "seat": "P022 Pasir Mas, Kelantan (MP since 2018)",
+   "prominence": 0.78,
+   "aliases": [],
+   "profile": "PAS's information chief and social-media frontman - the party's communications engine for the GE16 campaign."
+  },
+  {
+   "name": "Khairil Nizam Khirudin",
+   "role": "MP Jerantut (P081); former PAS Information Chief and PAS/PN Youth chief",
+   "party": "PAS",
+   "bloc": "PN",
+   "seat": "P081 Jerantut, Pahang (MP since 2022; Senator 2020-2022)",
+   "prominence": 0.72,
+   "aliases": [],
+   "profile": "An engineer-turned-MP whose Jerantut win symbolised PAS's 2022 penetration of Pahang; a key youth-wing organiser."
+  },
+  {
+   "name": "Ahmad Amzad Hashim",
+   "role": "MP Kuala Terengganu (P036); former Deputy Minister; PAS federal bench veteran",
+   "party": "PAS",
+   "bloc": "PN",
+   "seat": "P036 Kuala Terengganu (MP 2018-2023 and since Aug 2023)",
+   "prominence": 0.75,
+   "aliases": [],
+   "profile": "Kuala Terengganu's MP and a former deputy minister - part of the Terengganu PAS machine underpinning Samsuri's national rise."
+  },
+  {
+   "name": "Ahmad Marzuk Shaary",
+   "role": "MP Pengkalan Chepa (P020); PAS Central Working Committee member; former Deputy Minister",
+   "party": "PAS",
+   "bloc": "PN",
+   "seat": "P020 Pengkalan Chepa, Kelantan (MP since 2018; earlier MP Bachok 2013-2018)",
+   "prominence": 0.72,
+   "aliases": [],
+   "profile": "Pengkalan Chepa MP and former religious-affairs deputy minister - a central-committee workhorse of the Kelantan machine."
+  },
+  {
+   "name": "Nik Muhammad Zawawi Salleh",
+   "role": "MP Pasir Puteh (P028); former Deputy Minister of Agriculture; former Dewan Ulamak chief",
+   "party": "PAS",
+   "bloc": "PN",
+   "seat": "P028 Pasir Puteh, Kelantan (MP since 2018)",
+   "prominence": 0.7,
+   "aliases": [],
+   "profile": "Al-Azhar-trained MP for Pasir Puteh and former ulama-council chief - a senior religious-academic voice in PAS's federal bench."
+  },
+  {
+   "name": "Muhammad Khalil Abdul Hadi",
+   "role": "Terengganu state EXCO member; MLA Batu Buruk; eldest son of Abdul Hadi Awang",
+   "party": "PAS",
+   "bloc": "PN",
+   "seat": "Batu Buruk state seat, Terengganu (MLA since 2018)",
+   "prominence": 0.7,
+   "aliases": [],
+   "profile": "Hadi Awang's eldest son and a Terengganu EXCO member - the most visible face of PAS's emerging dynastic succession."
+  },
+  {
+   "name": "Mohd Shukri Ramli",
+   "role": "Former 10th Menteri Besar of Perlis (Nov 2022 - Dec 2025); MLA Sanglang",
+   "party": "PAS",
+   "bloc": "PN",
+   "seat": "Sanglang state seat, Perlis (MLA since 2013)",
+   "prominence": 0.72,
+   "aliases": [],
+   "profile": "PAS's first Perlis MB whose December 2025 fall to Bersatu's faction triggered the rupture that reshaped PN in 2026."
+  },
+  {
+   "name": "Nik Abdul Aziz Nik Mat",
+   "role": "Deceased (d. 12 Feb 2015); former Mursyidul Am and 12th Menteri Besar of Kelantan (1990-2013)",
+   "party": "PAS",
+   "bloc": "PN",
+   "seat": "None - historical figure (former MLA Chempaka, Kelantan)",
+   "prominence": 0.85,
+   "aliases": [],
+   "profile": "The late spiritual father of modern PAS - its Kelantan founding MB whose ulama-governance model remains the party's ideological template."
+  },
+  {
+   "name": "Muhyiddin Yassin",
+   "role": "BERSATU President (since 2016); 8th Prime Minister (2020-2021); PN Deputy Chairman (2026); no current seat",
+   "party": "BERSATU",
+   "bloc": "PN",
+   "seat": "None - lost P143 Pagoh, Johor in GE15 (Nov 2022); earlier MP Pagoh 1978-1986 and 1995-2022",
+   "prominence": 0.97,
+   "aliases": [
+    "muhyiddin",
+    "tan sri muhyiddin"
+   ],
+   "profile": "Former PM and Bersatu's founder-president, now head of a rump party of ~6 MPs after the 2026 split - a diminished but still-federal kingmaker figure in PN."
+  },
+  {
+   "name": "Mohamed Azmin Ali",
+   "role": "BERSATU Secretary-General (since Nov 2024); Selangor state Opposition Leader; MLA Hulu Kelang",
+   "party": "BERSATU",
+   "bloc": "PN",
+   "seat": "Hulu Kelang state seat, Selangor (MLA since Aug 2023; ex-MP Gombak 2008-2022)",
+   "prominence": 0.9,
+   "aliases": [],
+   "profile": "Bersatu's secretary-general and its most operationally skilled survivor - the man running the rump party's machine after the 2026 split."
+  },
+  {
+   "name": "Ahmad Faizal Azumu",
+   "role": "BERSATU Vice President (since Nov 2024); PN Information Chief (since Dec 2024); former Perak MB",
+   "party": "BERSATU",
+   "bloc": "PN",
+   "seat": "None - lost P063 Tambun in GE15; earlier MP Tambun 2018-2022",
+   "prominence": 0.82,
+   "aliases": [],
+   "profile": "Two-time Perak MB and Bersatu vice president - the rump's public spokesman, holding the party's youth and Perak networks together."
+  },
+  {
+   "name": "Mohd Radzi Md Jidin",
+   "role": "BERSATU Vice President; MP Putrajaya (P125); former Education Minister",
+   "party": "BERSATU",
+   "bloc": "PN",
+   "seat": "P125 Putrajaya (MP since Nov 2022)",
+   "prominence": 0.8,
+   "aliases": [],
+   "profile": "Putrajaya MP and former education minister - the rump's most qualified technocrat and one of its few surviving loyal MPs."
+  },
+  {
+   "name": "Ronald Kiandee",
+   "role": "MP Beluran (Sabah); BERSATU Sabah chairman; suspended from Bersatu (2026); former Agriculture Minister",
+   "party": "BERSATU",
+   "bloc": "PN",
+   "seat": "Beluran, Sabah (MP since 1999)",
+   "prominence": 0.78,
+   "aliases": [],
+   "profile": "PN's most senior East Malaysian - a veteran Sabah MP and former minister whose 2026 suspension leaves Bersatu's Borneo flank in question."
+  },
+  {
+   "name": "Mas Ermieyati Samsudin",
+   "role": "BERSATU Women's Chief; MP Masjid Tanah; Public Accounts Committee Chairperson (since 2023)",
+   "party": "BERSATU",
+   "bloc": "PN",
+   "seat": "Masjid Tanah, Melaka (MP since 2013)",
+   "prominence": 0.78,
+   "aliases": [],
+   "profile": "Bersatu's women's chief and PAC chair - a rare opposition oversight post-holder and the rump's senior female MP."
+  },
+  {
+   "name": "Saifuddin Abdullah",
+   "role": "MP Indera Mahkota (P082); BERSATU and PN Pahang chairman; former Foreign Minister",
+   "party": "BERSATU",
+   "bloc": "PN",
+   "seat": "P082 Indera Mahkota, Pahang (MP since 2018; earlier MP Temerloh 2008-2013)",
+   "prominence": 0.76,
+   "aliases": [],
+   "profile": "Pahang's PN chairman and a former foreign minister - the rump's intellectual and Pahang anchor."
+  },
+  {
+   "name": "Abu Bakar Hamzah",
+   "role": "10th Menteri Besar of Perlis (since 28 Dec 2025); Perlis BERSATU chairman; MLA Kuala Perlis",
+   "party": "BERSATU",
+   "bloc": "PN",
+   "seat": "Kuala Perlis state seat, Perlis (MLA since 2022)",
+   "prominence": 0.75,
+   "aliases": [],
+   "profile": "Bersatu's sole chief minister after the December 2025 Perlis coup - the man whose ascent triggered the PAS-Bersatu rupture."
+  },
+  {
+   "name": "Hamzah Zainudin",
+   "role": "WAWASAN President (since 13 Jun 2026); 19th Leader of the Opposition; MP Larut (P056); PN Deputy Chairman",
+   "party": "WAWASAN",
+   "bloc": "PN",
+   "seat": "P056 Larut, Perak (MP since 2008)",
+   "prominence": 0.94,
+   "aliases": [
+    "hamzah"
+   ],
+   "profile": "The 'operator' who built the 2020 Sheraton Move and, in 2026, split Bersatu to found WAWASAN - now Leader of the Opposition with PAS's backing."
+  },
+  {
+   "name": "Wan Saiful Wan Jan",
+   "role": "WAWASAN founding member (Reset Malaysia initiator); MP Tasek Gelugor (P042)",
+   "party": "WAWASAN",
+   "bloc": "PN",
+   "seat": "P042 Tasek Gelugor, Penang (MP since Nov 2022)",
+   "prominence": 0.74,
+   "aliases": [],
+   "profile": "The policy wonk who triggered the 2025-26 Bersatu implosion with his leadership-transition campaign, then co-founded WAWASAN."
+  },
+  {
+   "name": "Wan Ahmad Fayhsal Wan Ahmad Kamal",
+   "role": "WAWASAN founding member; MP Machang (P029); former Deputy Minister; ex-Bersatu Youth chief",
+   "party": "WAWASAN",
+   "bloc": "PN",
+   "seat": "P029 Machang, Kelantan (MP since Nov 2022; Senator 2020-2022)",
+   "prominence": 0.72,
+   "aliases": [],
+   "profile": "The young ex-Bersatu firebrand expelled alongside Hamzah in February 2026 - now a leading face of WAWASAN's Malay-nationalist youth wing."
+  },
+  {
+   "name": "Syed Abu Hussin Hafiz Syed Abdul Fasal",
+   "role": "MP Bukit Gantang (P059); ex-BERSATU; part of the ex-Bersatu parliamentary bloc aligned with WAWASAN (per 2026 project timeline)",
+   "party": "WAWASAN",
+   "bloc": "PN",
+   "seat": "P059 Bukit Gantang, Perak (MP since 2018)",
+   "prominence": 0.7,
+   "aliases": [],
+   "profile": "Bukit Gantang's MP and a survivor of Bersatu's 2023-24 defection wars - listed among the ex-Bersatu MPs around WAWASAN's 2026 formation."
+  },
+  {
+   "name": "Azahar Hassan",
+   "role": "WAWASAN Senator (Perlis)",
+   "party": "WAWASAN",
+   "bloc": "PN",
+   "seat": "Senator (Dewan Negara), Perlis",
+   "prominence": 0.5,
+   "aliases": [],
+   "profile": "WAWASAN's Perlis senator - a low-profile upper-house representative of the new party's state network."
+  },
+  {
+   "name": "Dominic Lau Hoe Chai",
+   "role": "GERAKAN President (since Nov 2018); PN Deputy Chairman (2026); former Senator",
+   "party": "GERAKAN",
+   "bloc": "PN",
+   "seat": "None (Senator Nov 2021-Nov 2024)",
+   "prominence": 0.7,
+   "aliases": [],
+   "profile": "Gerakan's president and PN's deputy chairman - the face of PN's non-Malay outreach despite his party holding zero seats."
+  },
+  {
+   "name": "Oh Tong Keong",
+   "role": "GERAKAN Deputy President (since Nov 2018, re-elected 2023)",
+   "party": "GERAKAN",
+   "bloc": "PN",
+   "seat": "None",
+   "prominence": 0.55,
+   "aliases": [],
+   "profile": "Gerakan's deputy president and Penang organiser - number two in PN's smallest component party."
+  },
+  {
+   "name": "Mukhriz Mahathir",
+   "role": "PEJUANG President (since Aug 2020); PN Deputy Chairman (2026); son of Mahathir Mohamad",
+   "party": "PEJUANG",
+   "bloc": "PN",
+   "seat": "None - lost P005 Jerlun in GE15; earlier MP Jerlun 2008-2013 and 2018-2022",
+   "prominence": 0.85,
+   "aliases": [
+    "mukhriz"
+   ],
+   "profile": "Mahathir's son and Pejuang's president - after years in the political wilderness, brought his party into PN in 2026 as deputy chairman."
+  },
+  {
+   "name": "Amiruddin Hamzah",
+   "role": "PEJUANG founding Secretary-General (since Aug 2020); former Deputy Finance Minister",
+   "party": "PEJUANG",
+   "bloc": "PN",
+   "seat": "None - lost P006 Kubang Pasu in GE15; earlier MP Kubang Pasu 2018-2022",
+   "prominence": 0.6,
+   "aliases": [],
+   "profile": "Pejuang's founding secretary-general and former deputy finance minister - Mukhriz's organisational right hand."
+  }
+ ]
+}

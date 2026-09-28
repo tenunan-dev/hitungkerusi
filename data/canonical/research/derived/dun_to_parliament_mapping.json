@@ -1,0 +1,3602 @@
+[
+  {
+    "parliament": "P001",
+    "parliament_name": "Padang Besar",
+    "dun": "N.01",
+    "dun_name": "Titi Tinggi"
+  },
+  {
+    "parliament": "P001",
+    "parliament_name": "Padang Besar",
+    "dun": "N.02",
+    "dun_name": "Beseri"
+  },
+  {
+    "parliament": "P001",
+    "parliament_name": "Padang Besar",
+    "dun": "N.03",
+    "dun_name": "Chuping"
+  },
+  {
+    "parliament": "P001",
+    "parliament_name": "Padang Besar",
+    "dun": "N.04",
+    "dun_name": "Mata Ayer"
+  },
+  {
+    "parliament": "P001",
+    "parliament_name": "Padang Besar",
+    "dun": "N.05",
+    "dun_name": "Santan"
+  },
+  {
+    "parliament": "P002",
+    "parliament_name": "Kangar",
+    "dun": "N.06",
+    "dun_name": "Bintong"
+  },
+  {
+    "parliament": "P002",
+    "parliament_name": "Kangar",
+    "dun": "N.07",
+    "dun_name": "Sena"
+  },
+  {
+    "parliament": "P002",
+    "parliament_name": "Kangar",
+    "dun": "N.08",
+    "dun_name": "Indera Kayangan"
+  },
+  {
+    "parliament": "P002",
+    "parliament_name": "Kangar",
+    "dun": "N.09",
+    "dun_name": "Kuala Perlis"
+  },
+  {
+    "parliament": "P002",
+    "parliament_name": "Kangar",
+    "dun": "N.10",
+    "dun_name": "Kayang"
+  },
+  {
+    "parliament": "P003",
+    "parliament_name": "Arau",
+    "dun": "N.11",
+    "dun_name": "Pauh"
+  },
+  {
+    "parliament": "P003",
+    "parliament_name": "Arau",
+    "dun": "N.12",
+    "dun_name": "Tambun Tulang"
+  },
+  {
+    "parliament": "P003",
+    "parliament_name": "Arau",
+    "dun": "N.13",
+    "dun_name": "Guar Sanji"
+  },
+  {
+    "parliament": "P003",
+    "parliament_name": "Arau",
+    "dun": "N.14",
+    "dun_name": "Simpang Empat"
+  },
+  {
+    "parliament": "P003",
+    "parliament_name": "Arau",
+    "dun": "N.15",
+    "dun_name": "Sanglang"
+  },
+  {
+    "parliament": "P004",
+    "parliament_name": "Langkawi",
+    "dun": "N.01",
+    "dun_name": "Ayer Hangat"
+  },
+  {
+    "parliament": "P004",
+    "parliament_name": "Langkawi",
+    "dun": "N.02",
+    "dun_name": "Kuah"
+  },
+  {
+    "parliament": "P005",
+    "parliament_name": "Jerlun",
+    "dun": "N.03",
+    "dun_name": "Kota Siputeh"
+  },
+  {
+    "parliament": "P005",
+    "parliament_name": "Jerlun",
+    "dun": "N.04",
+    "dun_name": "Ayer Hitam"
+  },
+  {
+    "parliament": "P006",
+    "parliament_name": "Kubang Pasu",
+    "dun": "N.05",
+    "dun_name": "Bukit Kayu Hitam"
+  },
+  {
+    "parliament": "P006",
+    "parliament_name": "Kubang Pasu",
+    "dun": "N.06",
+    "dun_name": "Jitra"
+  },
+  {
+    "parliament": "P007",
+    "parliament_name": "Padang Terap",
+    "dun": "N.07",
+    "dun_name": "Kuala Nerang"
+  },
+  {
+    "parliament": "P007",
+    "parliament_name": "Padang Terap",
+    "dun": "N.08",
+    "dun_name": "Pedu"
+  },
+  {
+    "parliament": "P008",
+    "parliament_name": "Pokok Sena",
+    "dun": "N.09",
+    "dun_name": "Bukit Lada"
+  },
+  {
+    "parliament": "P008",
+    "parliament_name": "Pokok Sena",
+    "dun": "N.10",
+    "dun_name": "Bukit Pinang"
+  },
+  {
+    "parliament": "P008",
+    "parliament_name": "Pokok Sena",
+    "dun": "N.11",
+    "dun_name": "Derga"
+  },
+  {
+    "parliament": "P009",
+    "parliament_name": "Alor Setar",
+    "dun": "N.12",
+    "dun_name": "Suka Menanti"
+  },
+  {
+    "parliament": "P009",
+    "parliament_name": "Alor Setar",
+    "dun": "N.13",
+    "dun_name": "Kota Darul Aman"
+  },
+  {
+    "parliament": "P009",
+    "parliament_name": "Alor Setar",
+    "dun": "N.14",
+    "dun_name": "Alor Mengkudu"
+  },
+  {
+    "parliament": "P010",
+    "parliament_name": "Kuala Kedah",
+    "dun": "N.15",
+    "dun_name": "Anak Bukit"
+  },
+  {
+    "parliament": "P010",
+    "parliament_name": "Kuala Kedah",
+    "dun": "N.16",
+    "dun_name": "Kubang Rotan"
+  },
+  {
+    "parliament": "P010",
+    "parliament_name": "Kuala Kedah",
+    "dun": "N.17",
+    "dun_name": "Pengkalan Kundor"
+  },
+  {
+    "parliament": "P011",
+    "parliament_name": "Pendang",
+    "dun": "N.18",
+    "dun_name": "Tokai"
+  },
+  {
+    "parliament": "P011",
+    "parliament_name": "Pendang",
+    "dun": "N.19",
+    "dun_name": "Sungai Tiang"
+  },
+  {
+    "parliament": "P012",
+    "parliament_name": "Jerai",
+    "dun": "N.20",
+    "dun_name": "Sungai Limau"
+  },
+  {
+    "parliament": "P012",
+    "parliament_name": "Jerai",
+    "dun": "N.21",
+    "dun_name": "Guar Chempedak"
+  },
+  {
+    "parliament": "P012",
+    "parliament_name": "Jerai",
+    "dun": "N.22",
+    "dun_name": "Gurun"
+  },
+  {
+    "parliament": "P013",
+    "parliament_name": "Sik",
+    "dun": "N.23",
+    "dun_name": "Belantek"
+  },
+  {
+    "parliament": "P013",
+    "parliament_name": "Sik",
+    "dun": "N.24",
+    "dun_name": "Jeneri"
+  },
+  {
+    "parliament": "P014",
+    "parliament_name": "Merbok",
+    "dun": "N.25",
+    "dun_name": "Bukit Selambau"
+  },
+  {
+    "parliament": "P014",
+    "parliament_name": "Merbok",
+    "dun": "N.26",
+    "dun_name": "Tanjong Dawai"
+  },
+  {
+    "parliament": "P015",
+    "parliament_name": "Sungai Petani",
+    "dun": "N.27",
+    "dun_name": "Pantai Merdeka"
+  },
+  {
+    "parliament": "P015",
+    "parliament_name": "Sungai Petani",
+    "dun": "N.28",
+    "dun_name": "Bakar Arang"
+  },
+  {
+    "parliament": "P015",
+    "parliament_name": "Sungai Petani",
+    "dun": "N.29",
+    "dun_name": "Sidam"
+  },
+  {
+    "parliament": "P016",
+    "parliament_name": "Baling",
+    "dun": "N.30",
+    "dun_name": "Bayu"
+  },
+  {
+    "parliament": "P016",
+    "parliament_name": "Baling",
+    "dun": "N.31",
+    "dun_name": "Kupang"
+  },
+  {
+    "parliament": "P016",
+    "parliament_name": "Baling",
+    "dun": "N.32",
+    "dun_name": "Kuala Ketil"
+  },
+  {
+    "parliament": "P017",
+    "parliament_name": "Padang Serai",
+    "dun": "N.33",
+    "dun_name": "Merbau Pulas"
+  },
+  {
+    "parliament": "P017",
+    "parliament_name": "Padang Serai",
+    "dun": "N.34",
+    "dun_name": "Lunas"
+  },
+  {
+    "parliament": "P018",
+    "parliament_name": "Kulim-Bandar Baharu",
+    "dun": "N.35",
+    "dun_name": "Kulim"
+  },
+  {
+    "parliament": "P018",
+    "parliament_name": "Kulim-Bandar Baharu",
+    "dun": "N.36",
+    "dun_name": "Bandar Baharu"
+  },
+  {
+    "parliament": "P019",
+    "parliament_name": "Tumpat",
+    "dun": "N.01",
+    "dun_name": "Pengkalan Kubor"
+  },
+  {
+    "parliament": "P019",
+    "parliament_name": "Tumpat",
+    "dun": "N.02",
+    "dun_name": "Kelaboran"
+  },
+  {
+    "parliament": "P019",
+    "parliament_name": "Tumpat",
+    "dun": "N.03",
+    "dun_name": "Pasir Pekan"
+  },
+  {
+    "parliament": "P019",
+    "parliament_name": "Tumpat",
+    "dun": "N.04",
+    "dun_name": "Wakaf Bharu"
+  },
+  {
+    "parliament": "P020",
+    "parliament_name": "Pengkalan Chepa",
+    "dun": "N.05",
+    "dun_name": "Kijang"
+  },
+  {
+    "parliament": "P020",
+    "parliament_name": "Pengkalan Chepa",
+    "dun": "N.06",
+    "dun_name": "Chempaka"
+  },
+  {
+    "parliament": "P020",
+    "parliament_name": "Pengkalan Chepa",
+    "dun": "N.07",
+    "dun_name": "Panchor"
+  },
+  {
+    "parliament": "P021",
+    "parliament_name": "Kota Bharu",
+    "dun": "N.08",
+    "dun_name": "Tanjong Mas"
+  },
+  {
+    "parliament": "P021",
+    "parliament_name": "Kota Bharu",
+    "dun": "N.09",
+    "dun_name": "Kota Lama"
+  },
+  {
+    "parliament": "P021",
+    "parliament_name": "Kota Bharu",
+    "dun": "N.10",
+    "dun_name": "Bunut Payong"
+  },
+  {
+    "parliament": "P022",
+    "parliament_name": "Pasir Mas",
+    "dun": "N.11",
+    "dun_name": "Tendong"
+  },
+  {
+    "parliament": "P022",
+    "parliament_name": "Pasir Mas",
+    "dun": "N.12",
+    "dun_name": "Pengkalan Pasir"
+  },
+  {
+    "parliament": "P022",
+    "parliament_name": "Pasir Mas",
+    "dun": "N.13",
+    "dun_name": "Meranti"
+  },
+  {
+    "parliament": "P023",
+    "parliament_name": "Rantau Panjang",
+    "dun": "N.14",
+    "dun_name": "Chetok"
+  },
+  {
+    "parliament": "P023",
+    "parliament_name": "Rantau Panjang",
+    "dun": "N.15",
+    "dun_name": "Gual Periok"
+  },
+  {
+    "parliament": "P023",
+    "parliament_name": "Rantau Panjang",
+    "dun": "N.16",
+    "dun_name": "Apam Putra"
+  },
+  {
+    "parliament": "P024",
+    "parliament_name": "Kubang Kerian",
+    "dun": "N.17",
+    "dun_name": "Salor"
+  },
+  {
+    "parliament": "P024",
+    "parliament_name": "Kubang Kerian",
+    "dun": "N.18",
+    "dun_name": "Pasir Tumboh"
+  },
+  {
+    "parliament": "P024",
+    "parliament_name": "Kubang Kerian",
+    "dun": "N.19",
+    "dun_name": "Demit"
+  },
+  {
+    "parliament": "P025",
+    "parliament_name": "Bachok",
+    "dun": "N.20",
+    "dun_name": "Tawang"
+  },
+  {
+    "parliament": "P025",
+    "parliament_name": "Bachok",
+    "dun": "N.21",
+    "dun_name": "Pantai Irama"
+  },
+  {
+    "parliament": "P025",
+    "parliament_name": "Bachok",
+    "dun": "N.22",
+    "dun_name": "Jelawat"
+  },
+  {
+    "parliament": "P026",
+    "parliament_name": "Ketereh",
+    "dun": "N.23",
+    "dun_name": "Melor"
+  },
+  {
+    "parliament": "P026",
+    "parliament_name": "Ketereh",
+    "dun": "N.24",
+    "dun_name": "Kadok"
+  },
+  {
+    "parliament": "P026",
+    "parliament_name": "Ketereh",
+    "dun": "N.25",
+    "dun_name": "Kok Lanas"
+  },
+  {
+    "parliament": "P027",
+    "parliament_name": "Tanah Merah",
+    "dun": "N.26",
+    "dun_name": "Bukit Panau"
+  },
+  {
+    "parliament": "P027",
+    "parliament_name": "Tanah Merah",
+    "dun": "N.27",
+    "dun_name": "Gual Ipoh"
+  },
+  {
+    "parliament": "P027",
+    "parliament_name": "Tanah Merah",
+    "dun": "N.28",
+    "dun_name": "Kemahang"
+  },
+  {
+    "parliament": "P028",
+    "parliament_name": "Pasir Puteh",
+    "dun": "N.29",
+    "dun_name": "Selising"
+  },
+  {
+    "parliament": "P028",
+    "parliament_name": "Pasir Puteh",
+    "dun": "N.30",
+    "dun_name": "Limbongan"
+  },
+  {
+    "parliament": "P028",
+    "parliament_name": "Pasir Puteh",
+    "dun": "N.31",
+    "dun_name": "Semerak"
+  },
+  {
+    "parliament": "P028",
+    "parliament_name": "Pasir Puteh",
+    "dun": "N.32",
+    "dun_name": "Gaal"
+  },
+  {
+    "parliament": "P029",
+    "parliament_name": "Machang",
+    "dun": "N.33",
+    "dun_name": "Pulai Chondong"
+  },
+  {
+    "parliament": "P029",
+    "parliament_name": "Machang",
+    "dun": "N.34",
+    "dun_name": "Temangan"
+  },
+  {
+    "parliament": "P029",
+    "parliament_name": "Machang",
+    "dun": "N.35",
+    "dun_name": "Kemuning"
+  },
+  {
+    "parliament": "P030",
+    "parliament_name": "Jeli",
+    "dun": "N.36",
+    "dun_name": "Bukit Bunga"
+  },
+  {
+    "parliament": "P030",
+    "parliament_name": "Jeli",
+    "dun": "N.37",
+    "dun_name": "Air Lanas"
+  },
+  {
+    "parliament": "P030",
+    "parliament_name": "Jeli",
+    "dun": "N.38",
+    "dun_name": "Kuala Balah"
+  },
+  {
+    "parliament": "P031",
+    "parliament_name": "Kuala Krai",
+    "dun": "N.39",
+    "dun_name": "Mengkebang"
+  },
+  {
+    "parliament": "P031",
+    "parliament_name": "Kuala Krai",
+    "dun": "N.40",
+    "dun_name": "Guchil"
+  },
+  {
+    "parliament": "P031",
+    "parliament_name": "Kuala Krai",
+    "dun": "N.41",
+    "dun_name": "Manek Urai"
+  },
+  {
+    "parliament": "P031",
+    "parliament_name": "Kuala Krai",
+    "dun": "N.42",
+    "dun_name": "Dabong"
+  },
+  {
+    "parliament": "P032",
+    "parliament_name": "Gua Musang",
+    "dun": "N.43",
+    "dun_name": "Nenggiri"
+  },
+  {
+    "parliament": "P032",
+    "parliament_name": "Gua Musang",
+    "dun": "N.44",
+    "dun_name": "Paloh"
+  },
+  {
+    "parliament": "P032",
+    "parliament_name": "Gua Musang",
+    "dun": "N.45",
+    "dun_name": "Galas"
+  },
+  {
+    "parliament": "P033",
+    "parliament_name": "Besut",
+    "dun": "N.01",
+    "dun_name": "Kuala Besut"
+  },
+  {
+    "parliament": "P033",
+    "parliament_name": "Besut",
+    "dun": "N.02",
+    "dun_name": "Kota Putera"
+  },
+  {
+    "parliament": "P033",
+    "parliament_name": "Besut",
+    "dun": "N.03",
+    "dun_name": "Jertih"
+  },
+  {
+    "parliament": "P033",
+    "parliament_name": "Besut",
+    "dun": "N.04",
+    "dun_name": "Hulu Besut"
+  },
+  {
+    "parliament": "P034",
+    "parliament_name": "Setiu",
+    "dun": "N.05",
+    "dun_name": "Jabi"
+  },
+  {
+    "parliament": "P034",
+    "parliament_name": "Setiu",
+    "dun": "N.06",
+    "dun_name": "Permaisuri"
+  },
+  {
+    "parliament": "P034",
+    "parliament_name": "Setiu",
+    "dun": "N.07",
+    "dun_name": "Langkap"
+  },
+  {
+    "parliament": "P034",
+    "parliament_name": "Setiu",
+    "dun": "N.08",
+    "dun_name": "Batu Rakit"
+  },
+  {
+    "parliament": "P035",
+    "parliament_name": "Kuala Nerus",
+    "dun": "N.09",
+    "dun_name": "Tepuh"
+  },
+  {
+    "parliament": "P035",
+    "parliament_name": "Kuala Nerus",
+    "dun": "N.10",
+    "dun_name": "Buluh Gading"
+  },
+  {
+    "parliament": "P035",
+    "parliament_name": "Kuala Nerus",
+    "dun": "N.11",
+    "dun_name": "Seberang Takir"
+  },
+  {
+    "parliament": "P035",
+    "parliament_name": "Kuala Nerus",
+    "dun": "N.12",
+    "dun_name": "Bukit Tunggal"
+  },
+  {
+    "parliament": "P036",
+    "parliament_name": "Kuala Terengganu",
+    "dun": "N.13",
+    "dun_name": "Wakaf Mempelam"
+  },
+  {
+    "parliament": "P036",
+    "parliament_name": "Kuala Terengganu",
+    "dun": "N.14",
+    "dun_name": "Bandar"
+  },
+  {
+    "parliament": "P036",
+    "parliament_name": "Kuala Terengganu",
+    "dun": "N.15",
+    "dun_name": "Ladang"
+  },
+  {
+    "parliament": "P036",
+    "parliament_name": "Kuala Terengganu",
+    "dun": "N.16",
+    "dun_name": "Batu Buruk"
+  },
+  {
+    "parliament": "P037",
+    "parliament_name": "Marang",
+    "dun": "N.17",
+    "dun_name": "Alur Limbat"
+  },
+  {
+    "parliament": "P037",
+    "parliament_name": "Marang",
+    "dun": "N.18",
+    "dun_name": "Bukit Payung"
+  },
+  {
+    "parliament": "P037",
+    "parliament_name": "Marang",
+    "dun": "N.19",
+    "dun_name": "Ru Rendang"
+  },
+  {
+    "parliament": "P037",
+    "parliament_name": "Marang",
+    "dun": "N.20",
+    "dun_name": "Pengkalan Berangan"
+  },
+  {
+    "parliament": "P038",
+    "parliament_name": "Hulu Terengganu",
+    "dun": "N.21",
+    "dun_name": "Telemung"
+  },
+  {
+    "parliament": "P038",
+    "parliament_name": "Hulu Terengganu",
+    "dun": "N.22",
+    "dun_name": "Manir"
+  },
+  {
+    "parliament": "P038",
+    "parliament_name": "Hulu Terengganu",
+    "dun": "N.23",
+    "dun_name": "Kuala Berang"
+  },
+  {
+    "parliament": "P038",
+    "parliament_name": "Hulu Terengganu",
+    "dun": "N.24",
+    "dun_name": "Ajil"
+  },
+  {
+    "parliament": "P039",
+    "parliament_name": "Dungun",
+    "dun": "N.25",
+    "dun_name": "Bukit Besi"
+  },
+  {
+    "parliament": "P039",
+    "parliament_name": "Dungun",
+    "dun": "N.26",
+    "dun_name": "Rantau Abang"
+  },
+  {
+    "parliament": "P039",
+    "parliament_name": "Dungun",
+    "dun": "N.27",
+    "dun_name": "Sura"
+  },
+  {
+    "parliament": "P039",
+    "parliament_name": "Dungun",
+    "dun": "N.28",
+    "dun_name": "Paka"
+  },
+  {
+    "parliament": "P040",
+    "parliament_name": "Kemaman",
+    "dun": "N.29",
+    "dun_name": "Kemasik"
+  },
+  {
+    "parliament": "P040",
+    "parliament_name": "Kemaman",
+    "dun": "N.30",
+    "dun_name": "Kijal"
+  },
+  {
+    "parliament": "P040",
+    "parliament_name": "Kemaman",
+    "dun": "N.31",
+    "dun_name": "Cukai"
+  },
+  {
+    "parliament": "P040",
+    "parliament_name": "Kemaman",
+    "dun": "N.32",
+    "dun_name": "Air Putih"
+  },
+  {
+    "parliament": "P041",
+    "parliament_name": "Kepala Batas",
+    "dun": "N.01",
+    "dun_name": "Penaga"
+  },
+  {
+    "parliament": "P041",
+    "parliament_name": "Kepala Batas",
+    "dun": "N.02",
+    "dun_name": "Bertam"
+  },
+  {
+    "parliament": "P041",
+    "parliament_name": "Kepala Batas",
+    "dun": "N.03",
+    "dun_name": "Pinang Tunggal"
+  },
+  {
+    "parliament": "P042",
+    "parliament_name": "Tasek Gelugor",
+    "dun": "N.04",
+    "dun_name": "Permatang Berangan"
+  },
+  {
+    "parliament": "P042",
+    "parliament_name": "Tasek Gelugor",
+    "dun": "N.05",
+    "dun_name": "Sungai Dua"
+  },
+  {
+    "parliament": "P042",
+    "parliament_name": "Tasek Gelugor",
+    "dun": "N.06",
+    "dun_name": "Telok Ayer Tawar"
+  },
+  {
+    "parliament": "P043",
+    "parliament_name": "Bagan",
+    "dun": "N.07",
+    "dun_name": "Sungai Puyu"
+  },
+  {
+    "parliament": "P043",
+    "parliament_name": "Bagan",
+    "dun": "N.08",
+    "dun_name": "Bagan Jermal"
+  },
+  {
+    "parliament": "P043",
+    "parliament_name": "Bagan",
+    "dun": "N.09",
+    "dun_name": "Bagan Dalam"
+  },
+  {
+    "parliament": "P044",
+    "parliament_name": "Permatang Pauh",
+    "dun": "N.10",
+    "dun_name": "Seberang Jaya"
+  },
+  {
+    "parliament": "P044",
+    "parliament_name": "Permatang Pauh",
+    "dun": "N.11",
+    "dun_name": "Permatang Pasir"
+  },
+  {
+    "parliament": "P044",
+    "parliament_name": "Permatang Pauh",
+    "dun": "N.12",
+    "dun_name": "Penanti"
+  },
+  {
+    "parliament": "P045",
+    "parliament_name": "Bukit Mertajam",
+    "dun": "N.13",
+    "dun_name": "Berapit"
+  },
+  {
+    "parliament": "P045",
+    "parliament_name": "Bukit Mertajam",
+    "dun": "N.14",
+    "dun_name": "Machang Bubuk"
+  },
+  {
+    "parliament": "P045",
+    "parliament_name": "Bukit Mertajam",
+    "dun": "N.15",
+    "dun_name": "Padang Lalang"
+  },
+  {
+    "parliament": "P046",
+    "parliament_name": "Batu Kawan",
+    "dun": "N.16",
+    "dun_name": "Perai"
+  },
+  {
+    "parliament": "P046",
+    "parliament_name": "Batu Kawan",
+    "dun": "N.17",
+    "dun_name": "Bukit Tengah"
+  },
+  {
+    "parliament": "P046",
+    "parliament_name": "Batu Kawan",
+    "dun": "N.18",
+    "dun_name": "Bukit Tambun"
+  },
+  {
+    "parliament": "P047",
+    "parliament_name": "Nibong Tebal",
+    "dun": "N.19",
+    "dun_name": "Jawi"
+  },
+  {
+    "parliament": "P047",
+    "parliament_name": "Nibong Tebal",
+    "dun": "N.20",
+    "dun_name": "Sungai Bakap"
+  },
+  {
+    "parliament": "P047",
+    "parliament_name": "Nibong Tebal",
+    "dun": "N.21",
+    "dun_name": "Sungai Acheh"
+  },
+  {
+    "parliament": "P048",
+    "parliament_name": "Bukit Bendera",
+    "dun": "N.22",
+    "dun_name": "Tanjong Bunga"
+  },
+  {
+    "parliament": "P048",
+    "parliament_name": "Bukit Bendera",
+    "dun": "N.23",
+    "dun_name": "Air Putih"
+  },
+  {
+    "parliament": "P048",
+    "parliament_name": "Bukit Bendera",
+    "dun": "N.24",
+    "dun_name": "Kebun Bunga"
+  },
+  {
+    "parliament": "P048",
+    "parliament_name": "Bukit Bendera",
+    "dun": "N.25",
+    "dun_name": "Pulau Tikus"
+  },
+  {
+    "parliament": "P049",
+    "parliament_name": "Tanjong",
+    "dun": "N.26",
+    "dun_name": "Padang Kota"
+  },
+  {
+    "parliament": "P049",
+    "parliament_name": "Tanjong",
+    "dun": "N.27",
+    "dun_name": "Pengkalan Kota"
+  },
+  {
+    "parliament": "P049",
+    "parliament_name": "Tanjong",
+    "dun": "N.28",
+    "dun_name": "Komtar"
+  },
+  {
+    "parliament": "P050",
+    "parliament_name": "Jelutong",
+    "dun": "N.29",
+    "dun_name": "Datok Keramat"
+  },
+  {
+    "parliament": "P050",
+    "parliament_name": "Jelutong",
+    "dun": "N.30",
+    "dun_name": "Sungai Pinang"
+  },
+  {
+    "parliament": "P050",
+    "parliament_name": "Jelutong",
+    "dun": "N.31",
+    "dun_name": "Batu Lancang"
+  },
+  {
+    "parliament": "P051",
+    "parliament_name": "Bukit Gelugor",
+    "dun": "N.32",
+    "dun_name": "Seri Delima"
+  },
+  {
+    "parliament": "P051",
+    "parliament_name": "Bukit Gelugor",
+    "dun": "N.33",
+    "dun_name": "Air Itam"
+  },
+  {
+    "parliament": "P051",
+    "parliament_name": "Bukit Gelugor",
+    "dun": "N.34",
+    "dun_name": "Paya Terubong"
+  },
+  {
+    "parliament": "P052",
+    "parliament_name": "Bayan Baru",
+    "dun": "N.35",
+    "dun_name": "Batu Uban"
+  },
+  {
+    "parliament": "P052",
+    "parliament_name": "Bayan Baru",
+    "dun": "N.36",
+    "dun_name": "Pantai Jerejak"
+  },
+  {
+    "parliament": "P052",
+    "parliament_name": "Bayan Baru",
+    "dun": "N.37",
+    "dun_name": "Batu Maung"
+  },
+  {
+    "parliament": "P053",
+    "parliament_name": "Balik Pulau",
+    "dun": "N.38",
+    "dun_name": "Bayan Lepas"
+  },
+  {
+    "parliament": "P053",
+    "parliament_name": "Balik Pulau",
+    "dun": "N.39",
+    "dun_name": "Pulau Betong"
+  },
+  {
+    "parliament": "P053",
+    "parliament_name": "Balik Pulau",
+    "dun": "N.40",
+    "dun_name": "Telok Bahang"
+  },
+  {
+    "parliament": "P054",
+    "parliament_name": "Gerik",
+    "dun": "N.01",
+    "dun_name": "Pengkalan Hulu"
+  },
+  {
+    "parliament": "P054",
+    "parliament_name": "Gerik",
+    "dun": "N.02",
+    "dun_name": "Temenggor"
+  },
+  {
+    "parliament": "P055",
+    "parliament_name": "Lenggong",
+    "dun": "N.03",
+    "dun_name": "Kenering"
+  },
+  {
+    "parliament": "P055",
+    "parliament_name": "Lenggong",
+    "dun": "N.04",
+    "dun_name": "Kota Tampan"
+  },
+  {
+    "parliament": "P056",
+    "parliament_name": "Larut",
+    "dun": "N.05",
+    "dun_name": "Selama"
+  },
+  {
+    "parliament": "P056",
+    "parliament_name": "Larut",
+    "dun": "N.06",
+    "dun_name": "Kubu Gajah"
+  },
+  {
+    "parliament": "P056",
+    "parliament_name": "Larut",
+    "dun": "N.07",
+    "dun_name": "Batu Kurau"
+  },
+  {
+    "parliament": "P057",
+    "parliament_name": "Parit Buntar",
+    "dun": "N.08",
+    "dun_name": "Titi Serong"
+  },
+  {
+    "parliament": "P057",
+    "parliament_name": "Parit Buntar",
+    "dun": "N.09",
+    "dun_name": "Kuala Kurau"
+  },
+  {
+    "parliament": "P058",
+    "parliament_name": "Bagan Serai",
+    "dun": "N.10",
+    "dun_name": "Alor Pongsu"
+  },
+  {
+    "parliament": "P058",
+    "parliament_name": "Bagan Serai",
+    "dun": "N.11",
+    "dun_name": "Gunong Semanggol"
+  },
+  {
+    "parliament": "P058",
+    "parliament_name": "Bagan Serai",
+    "dun": "N.12",
+    "dun_name": "Selinsing"
+  },
+  {
+    "parliament": "P059",
+    "parliament_name": "Bukit Gantang",
+    "dun": "N.13",
+    "dun_name": "Kuala Sepetang"
+  },
+  {
+    "parliament": "P059",
+    "parliament_name": "Bukit Gantang",
+    "dun": "N.14",
+    "dun_name": "Changkat Jering"
+  },
+  {
+    "parliament": "P059",
+    "parliament_name": "Bukit Gantang",
+    "dun": "N.15",
+    "dun_name": "Trong"
+  },
+  {
+    "parliament": "P060",
+    "parliament_name": "Taiping",
+    "dun": "N.16",
+    "dun_name": "Kamunting"
+  },
+  {
+    "parliament": "P060",
+    "parliament_name": "Taiping",
+    "dun": "N.17",
+    "dun_name": "Pokok Assam"
+  },
+  {
+    "parliament": "P060",
+    "parliament_name": "Taiping",
+    "dun": "N.18",
+    "dun_name": "Aulong"
+  },
+  {
+    "parliament": "P061",
+    "parliament_name": "Padang Rengas",
+    "dun": "N.19",
+    "dun_name": "Chenderoh"
+  },
+  {
+    "parliament": "P061",
+    "parliament_name": "Padang Rengas",
+    "dun": "N.20",
+    "dun_name": "Lubok Merbau"
+  },
+  {
+    "parliament": "P062",
+    "parliament_name": "Sungai Siput",
+    "dun": "N.21",
+    "dun_name": "Lintang"
+  },
+  {
+    "parliament": "P062",
+    "parliament_name": "Sungai Siput",
+    "dun": "N.22",
+    "dun_name": "Jalong"
+  },
+  {
+    "parliament": "P063",
+    "parliament_name": "Tambun",
+    "dun": "N.23",
+    "dun_name": "Manjoi"
+  },
+  {
+    "parliament": "P063",
+    "parliament_name": "Tambun",
+    "dun": "N.24",
+    "dun_name": "Hulu Kinta"
+  },
+  {
+    "parliament": "P064",
+    "parliament_name": "Ipoh Timor",
+    "dun": "N.25",
+    "dun_name": "Canning"
+  },
+  {
+    "parliament": "P064",
+    "parliament_name": "Ipoh Timor",
+    "dun": "N.26",
+    "dun_name": "Tebing Tinggi"
+  },
+  {
+    "parliament": "P064",
+    "parliament_name": "Ipoh Timor",
+    "dun": "N.27",
+    "dun_name": "Pasir Pinji"
+  },
+  {
+    "parliament": "P065",
+    "parliament_name": "Ipoh Barat",
+    "dun": "N.28",
+    "dun_name": "Bercham"
+  },
+  {
+    "parliament": "P065",
+    "parliament_name": "Ipoh Barat",
+    "dun": "N.29",
+    "dun_name": "Kepayang"
+  },
+  {
+    "parliament": "P065",
+    "parliament_name": "Ipoh Barat",
+    "dun": "N.30",
+    "dun_name": "Buntong"
+  },
+  {
+    "parliament": "P066",
+    "parliament_name": "Batu Gajah",
+    "dun": "N.31",
+    "dun_name": "Jelapang"
+  },
+  {
+    "parliament": "P066",
+    "parliament_name": "Batu Gajah",
+    "dun": "N.32",
+    "dun_name": "Menglembu"
+  },
+  {
+    "parliament": "P066",
+    "parliament_name": "Batu Gajah",
+    "dun": "N.33",
+    "dun_name": "Tronoh"
+  },
+  {
+    "parliament": "P067",
+    "parliament_name": "Kuala Kangsar",
+    "dun": "N.34",
+    "dun_name": "Bukit Chandan"
+  },
+  {
+    "parliament": "P067",
+    "parliament_name": "Kuala Kangsar",
+    "dun": "N.35",
+    "dun_name": "Manong"
+  },
+  {
+    "parliament": "P068",
+    "parliament_name": "Beruas",
+    "dun": "N.36",
+    "dun_name": "Pengkalan Baharu"
+  },
+  {
+    "parliament": "P068",
+    "parliament_name": "Beruas",
+    "dun": "N.37",
+    "dun_name": "Pantai Remis"
+  },
+  {
+    "parliament": "P068",
+    "parliament_name": "Beruas",
+    "dun": "N.38",
+    "dun_name": "Astaka"
+  },
+  {
+    "parliament": "P069",
+    "parliament_name": "Parit",
+    "dun": "N.39",
+    "dun_name": "Belanja"
+  },
+  {
+    "parliament": "P069",
+    "parliament_name": "Parit",
+    "dun": "N.40",
+    "dun_name": "Bota"
+  },
+  {
+    "parliament": "P070",
+    "parliament_name": "Kampar",
+    "dun": "N.41",
+    "dun_name": "Malim Nawar"
+  },
+  {
+    "parliament": "P070",
+    "parliament_name": "Kampar",
+    "dun": "N.42",
+    "dun_name": "Keranji"
+  },
+  {
+    "parliament": "P070",
+    "parliament_name": "Kampar",
+    "dun": "N.43",
+    "dun_name": "Tulang Sekah"
+  },
+  {
+    "parliament": "P071",
+    "parliament_name": "Gopeng",
+    "dun": "N.44",
+    "dun_name": "Sungai Rapat"
+  },
+  {
+    "parliament": "P071",
+    "parliament_name": "Gopeng",
+    "dun": "N.45",
+    "dun_name": "Simpang Pulai"
+  },
+  {
+    "parliament": "P071",
+    "parliament_name": "Gopeng",
+    "dun": "N.46",
+    "dun_name": "Teja"
+  },
+  {
+    "parliament": "P072",
+    "parliament_name": "Tapah",
+    "dun": "N.47",
+    "dun_name": "Chenderiang"
+  },
+  {
+    "parliament": "P072",
+    "parliament_name": "Tapah",
+    "dun": "N.48",
+    "dun_name": "Ayer Kuning"
+  },
+  {
+    "parliament": "P073",
+    "parliament_name": "Pasir Salak",
+    "dun": "N.49",
+    "dun_name": "Sungai Manik"
+  },
+  {
+    "parliament": "P073",
+    "parliament_name": "Pasir Salak",
+    "dun": "N.50",
+    "dun_name": "Kampong Gajah"
+  },
+  {
+    "parliament": "P074",
+    "parliament_name": "Lumut",
+    "dun": "N.51",
+    "dun_name": "Pasir Panjang"
+  },
+  {
+    "parliament": "P074",
+    "parliament_name": "Lumut",
+    "dun": "N.52",
+    "dun_name": "Pangkor"
+  },
+  {
+    "parliament": "P075",
+    "parliament_name": "Bagan Datuk",
+    "dun": "N.53",
+    "dun_name": "Rungkup"
+  },
+  {
+    "parliament": "P075",
+    "parliament_name": "Bagan Datuk",
+    "dun": "N.54",
+    "dun_name": "Hutan Melintang"
+  },
+  {
+    "parliament": "P076",
+    "parliament_name": "Teluk Intan",
+    "dun": "N.55",
+    "dun_name": "Pasir Bedamar"
+  },
+  {
+    "parliament": "P076",
+    "parliament_name": "Teluk Intan",
+    "dun": "N.56",
+    "dun_name": "Changkat Jong"
+  },
+  {
+    "parliament": "P077",
+    "parliament_name": "Tanjong Malim",
+    "dun": "N.57",
+    "dun_name": "Sungkai"
+  },
+  {
+    "parliament": "P077",
+    "parliament_name": "Tanjong Malim",
+    "dun": "N.58",
+    "dun_name": "Slim"
+  },
+  {
+    "parliament": "P077",
+    "parliament_name": "Tanjong Malim",
+    "dun": "N.59",
+    "dun_name": "Behrang"
+  },
+  {
+    "parliament": "P078",
+    "parliament_name": "Cameron Highlands",
+    "dun": "N.01",
+    "dun_name": "Tanah Rata"
+  },
+  {
+    "parliament": "P078",
+    "parliament_name": "Cameron Highlands",
+    "dun": "N.02",
+    "dun_name": "Jelai"
+  },
+  {
+    "parliament": "P079",
+    "parliament_name": "Lipis",
+    "dun": "N.03",
+    "dun_name": "Padang Tengku"
+  },
+  {
+    "parliament": "P079",
+    "parliament_name": "Lipis",
+    "dun": "N.04",
+    "dun_name": "Cheka"
+  },
+  {
+    "parliament": "P079",
+    "parliament_name": "Lipis",
+    "dun": "N.05",
+    "dun_name": "Benta"
+  },
+  {
+    "parliament": "P080",
+    "parliament_name": "Raub",
+    "dun": "N.06",
+    "dun_name": "Batu Talam"
+  },
+  {
+    "parliament": "P080",
+    "parliament_name": "Raub",
+    "dun": "N.07",
+    "dun_name": "Tras"
+  },
+  {
+    "parliament": "P080",
+    "parliament_name": "Raub",
+    "dun": "N.08",
+    "dun_name": "Dong"
+  },
+  {
+    "parliament": "P081",
+    "parliament_name": "Jerantut",
+    "dun": "N.09",
+    "dun_name": "Tahan"
+  },
+  {
+    "parliament": "P081",
+    "parliament_name": "Jerantut",
+    "dun": "N.10",
+    "dun_name": "Damak"
+  },
+  {
+    "parliament": "P081",
+    "parliament_name": "Jerantut",
+    "dun": "N.11",
+    "dun_name": "Pulau Tawar"
+  },
+  {
+    "parliament": "P082",
+    "parliament_name": "Indera Mahkota",
+    "dun": "N.12",
+    "dun_name": "Beserah"
+  },
+  {
+    "parliament": "P082",
+    "parliament_name": "Indera Mahkota",
+    "dun": "N.13",
+    "dun_name": "Semambu"
+  },
+  {
+    "parliament": "P083",
+    "parliament_name": "Kuantan",
+    "dun": "N.14",
+    "dun_name": "Teruntum"
+  },
+  {
+    "parliament": "P083",
+    "parliament_name": "Kuantan",
+    "dun": "N.15",
+    "dun_name": "Tanjung Lumpur"
+  },
+  {
+    "parliament": "P083",
+    "parliament_name": "Kuantan",
+    "dun": "N.16",
+    "dun_name": "Inderapura"
+  },
+  {
+    "parliament": "P084",
+    "parliament_name": "Paya Besar",
+    "dun": "N.17",
+    "dun_name": "Sungai Lembing"
+  },
+  {
+    "parliament": "P084",
+    "parliament_name": "Paya Besar",
+    "dun": "N.18",
+    "dun_name": "Lepar"
+  },
+  {
+    "parliament": "P084",
+    "parliament_name": "Paya Besar",
+    "dun": "N.19",
+    "dun_name": "Panching"
+  },
+  {
+    "parliament": "P085",
+    "parliament_name": "Pekan",
+    "dun": "N.20",
+    "dun_name": "Pulau Manis"
+  },
+  {
+    "parliament": "P085",
+    "parliament_name": "Pekan",
+    "dun": "N.21",
+    "dun_name": "Peramu Jaya"
+  },
+  {
+    "parliament": "P085",
+    "parliament_name": "Pekan",
+    "dun": "N.22",
+    "dun_name": "Bebar"
+  },
+  {
+    "parliament": "P085",
+    "parliament_name": "Pekan",
+    "dun": "N.23",
+    "dun_name": "Chini"
+  },
+  {
+    "parliament": "P086",
+    "parliament_name": "Maran",
+    "dun": "N.24",
+    "dun_name": "Luit"
+  },
+  {
+    "parliament": "P086",
+    "parliament_name": "Maran",
+    "dun": "N.25",
+    "dun_name": "Kuala Sentul"
+  },
+  {
+    "parliament": "P086",
+    "parliament_name": "Maran",
+    "dun": "N.26",
+    "dun_name": "Chenor"
+  },
+  {
+    "parliament": "P087",
+    "parliament_name": "Kuala Krau",
+    "dun": "N.27",
+    "dun_name": "Jenderak"
+  },
+  {
+    "parliament": "P087",
+    "parliament_name": "Kuala Krau",
+    "dun": "N.28",
+    "dun_name": "Kerdau"
+  },
+  {
+    "parliament": "P087",
+    "parliament_name": "Kuala Krau",
+    "dun": "N.29",
+    "dun_name": "Jengka"
+  },
+  {
+    "parliament": "P088",
+    "parliament_name": "Temerloh",
+    "dun": "N.30",
+    "dun_name": "Mentakab"
+  },
+  {
+    "parliament": "P088",
+    "parliament_name": "Temerloh",
+    "dun": "N.31",
+    "dun_name": "Lanchang"
+  },
+  {
+    "parliament": "P088",
+    "parliament_name": "Temerloh",
+    "dun": "N.32",
+    "dun_name": "Kuala Semantan"
+  },
+  {
+    "parliament": "P089",
+    "parliament_name": "Bentong",
+    "dun": "N.33",
+    "dun_name": "Bilut"
+  },
+  {
+    "parliament": "P089",
+    "parliament_name": "Bentong",
+    "dun": "N.34",
+    "dun_name": "Ketari"
+  },
+  {
+    "parliament": "P089",
+    "parliament_name": "Bentong",
+    "dun": "N.35",
+    "dun_name": "Sabai"
+  },
+  {
+    "parliament": "P089",
+    "parliament_name": "Bentong",
+    "dun": "N.36",
+    "dun_name": "Pelangai"
+  },
+  {
+    "parliament": "P090",
+    "parliament_name": "Bera",
+    "dun": "N.37",
+    "dun_name": "Guai"
+  },
+  {
+    "parliament": "P090",
+    "parliament_name": "Bera",
+    "dun": "N.38",
+    "dun_name": "Triang"
+  },
+  {
+    "parliament": "P090",
+    "parliament_name": "Bera",
+    "dun": "N.39",
+    "dun_name": "Kemayan"
+  },
+  {
+    "parliament": "P091",
+    "parliament_name": "Rompin",
+    "dun": "N.40",
+    "dun_name": "Bukit Ibam"
+  },
+  {
+    "parliament": "P091",
+    "parliament_name": "Rompin",
+    "dun": "N.41",
+    "dun_name": "Muadzam Shah"
+  },
+  {
+    "parliament": "P091",
+    "parliament_name": "Rompin",
+    "dun": "N.42",
+    "dun_name": "Tioman"
+  },
+  {
+    "parliament": "P092",
+    "parliament_name": "Sabak Bernam",
+    "dun": "N.01",
+    "dun_name": "Sungai Air Tawar"
+  },
+  {
+    "parliament": "P092",
+    "parliament_name": "Sabak Bernam",
+    "dun": "N.02",
+    "dun_name": "Sabak"
+  },
+  {
+    "parliament": "P093",
+    "parliament_name": "Sungai Besar",
+    "dun": "N.03",
+    "dun_name": "Sungai Panjang"
+  },
+  {
+    "parliament": "P093",
+    "parliament_name": "Sungai Besar",
+    "dun": "N.04",
+    "dun_name": "Sekinchan"
+  },
+  {
+    "parliament": "P094",
+    "parliament_name": "Hulu Selangor",
+    "dun": "N.05",
+    "dun_name": "Hulu Bernam"
+  },
+  {
+    "parliament": "P094",
+    "parliament_name": "Hulu Selangor",
+    "dun": "N.06",
+    "dun_name": "Kuala Kubu Baharu"
+  },
+  {
+    "parliament": "P094",
+    "parliament_name": "Hulu Selangor",
+    "dun": "N.07",
+    "dun_name": "Batang Kali"
+  },
+  {
+    "parliament": "P095",
+    "parliament_name": "Tanjong Karang",
+    "dun": "N.08",
+    "dun_name": "Sungai Burong"
+  },
+  {
+    "parliament": "P095",
+    "parliament_name": "Tanjong Karang",
+    "dun": "N.09",
+    "dun_name": "Permatang"
+  },
+  {
+    "parliament": "P096",
+    "parliament_name": "Kuala Selangor",
+    "dun": "N.10",
+    "dun_name": "Bukit Melawati"
+  },
+  {
+    "parliament": "P096",
+    "parliament_name": "Kuala Selangor",
+    "dun": "N.11",
+    "dun_name": "Ijok"
+  },
+  {
+    "parliament": "P096",
+    "parliament_name": "Kuala Selangor",
+    "dun": "N.12",
+    "dun_name": "Jeram"
+  },
+  {
+    "parliament": "P097",
+    "parliament_name": "Selayang",
+    "dun": "N.13",
+    "dun_name": "Kuang"
+  },
+  {
+    "parliament": "P097",
+    "parliament_name": "Selayang",
+    "dun": "N.14",
+    "dun_name": "Rawang"
+  },
+  {
+    "parliament": "P097",
+    "parliament_name": "Selayang",
+    "dun": "N.15",
+    "dun_name": "Taman Templer"
+  },
+  {
+    "parliament": "P098",
+    "parliament_name": "Gombak",
+    "dun": "N.16",
+    "dun_name": "Sungai Tua"
+  },
+  {
+    "parliament": "P098",
+    "parliament_name": "Gombak",
+    "dun": "N.17",
+    "dun_name": "Gombak Setia"
+  },
+  {
+    "parliament": "P098",
+    "parliament_name": "Gombak",
+    "dun": "N.18",
+    "dun_name": "Hulu Kelang"
+  },
+  {
+    "parliament": "P099",
+    "parliament_name": "Ampang",
+    "dun": "N.19",
+    "dun_name": "Bukit Antarabangsa"
+  },
+  {
+    "parliament": "P099",
+    "parliament_name": "Ampang",
+    "dun": "N.20",
+    "dun_name": "Lembah Jaya"
+  },
+  {
+    "parliament": "P100",
+    "parliament_name": "Pandan",
+    "dun": "N.21",
+    "dun_name": "Pandan Indah"
+  },
+  {
+    "parliament": "P100",
+    "parliament_name": "Pandan",
+    "dun": "N.22",
+    "dun_name": "Teratai"
+  },
+  {
+    "parliament": "P101",
+    "parliament_name": "Hulu Langat",
+    "dun": "N.23",
+    "dun_name": "Dusun Tua"
+  },
+  {
+    "parliament": "P101",
+    "parliament_name": "Hulu Langat",
+    "dun": "N.24",
+    "dun_name": "Semenyih"
+  },
+  {
+    "parliament": "P102",
+    "parliament_name": "Bangi",
+    "dun": "N.25",
+    "dun_name": "Kajang"
+  },
+  {
+    "parliament": "P102",
+    "parliament_name": "Bangi",
+    "dun": "N.26",
+    "dun_name": "Sungai Ramal"
+  },
+  {
+    "parliament": "P102",
+    "parliament_name": "Bangi",
+    "dun": "N.27",
+    "dun_name": "Balakong"
+  },
+  {
+    "parliament": "P103",
+    "parliament_name": "Puchong",
+    "dun": "N.28",
+    "dun_name": "Seri Kembangan"
+  },
+  {
+    "parliament": "P103",
+    "parliament_name": "Puchong",
+    "dun": "N.29",
+    "dun_name": "Seri Serdang"
+  },
+  {
+    "parliament": "P104",
+    "parliament_name": "Subang",
+    "dun": "N.30",
+    "dun_name": "Kinrara"
+  },
+  {
+    "parliament": "P104",
+    "parliament_name": "Subang",
+    "dun": "N.31",
+    "dun_name": "Subang Jaya"
+  },
+  {
+    "parliament": "P105",
+    "parliament_name": "Petaling Jaya",
+    "dun": "N.32",
+    "dun_name": "Seri Setia"
+  },
+  {
+    "parliament": "P105",
+    "parliament_name": "Petaling Jaya",
+    "dun": "N.33",
+    "dun_name": "Taman Medan"
+  },
+  {
+    "parliament": "P105",
+    "parliament_name": "Petaling Jaya",
+    "dun": "N.34",
+    "dun_name": "Bukit Gasing"
+  },
+  {
+    "parliament": "P106",
+    "parliament_name": "Damansara",
+    "dun": "N.35",
+    "dun_name": "Kampung Tunku"
+  },
+  {
+    "parliament": "P106",
+    "parliament_name": "Damansara",
+    "dun": "N.36",
+    "dun_name": "Bandar Utama"
+  },
+  {
+    "parliament": "P106",
+    "parliament_name": "Damansara",
+    "dun": "N.37",
+    "dun_name": "Bukit Lanjan"
+  },
+  {
+    "parliament": "P107",
+    "parliament_name": "Sungai Buloh",
+    "dun": "N.38",
+    "dun_name": "Paya Jaras"
+  },
+  {
+    "parliament": "P107",
+    "parliament_name": "Sungai Buloh",
+    "dun": "N.39",
+    "dun_name": "Kota Damansara"
+  },
+  {
+    "parliament": "P108",
+    "parliament_name": "Shah Alam",
+    "dun": "N.40",
+    "dun_name": "Kota Anggerik"
+  },
+  {
+    "parliament": "P108",
+    "parliament_name": "Shah Alam",
+    "dun": "N.41",
+    "dun_name": "Batu Tiga"
+  },
+  {
+    "parliament": "P109",
+    "parliament_name": "Kapar",
+    "dun": "N.42",
+    "dun_name": "Meru"
+  },
+  {
+    "parliament": "P109",
+    "parliament_name": "Kapar",
+    "dun": "N.43",
+    "dun_name": "Sementa"
+  },
+  {
+    "parliament": "P109",
+    "parliament_name": "Kapar",
+    "dun": "N.44",
+    "dun_name": "Selat Klang"
+  },
+  {
+    "parliament": "P110",
+    "parliament_name": "Klang",
+    "dun": "N.45",
+    "dun_name": "Bandar Baru Klang"
+  },
+  {
+    "parliament": "P110",
+    "parliament_name": "Klang",
+    "dun": "N.46",
+    "dun_name": "Pelabuhan Klang"
+  },
+  {
+    "parliament": "P110",
+    "parliament_name": "Klang",
+    "dun": "N.47",
+    "dun_name": "Pandamaran"
+  },
+  {
+    "parliament": "P111",
+    "parliament_name": "Kota Raja",
+    "dun": "N.48",
+    "dun_name": "Sentosa"
+  },
+  {
+    "parliament": "P111",
+    "parliament_name": "Kota Raja",
+    "dun": "N.49",
+    "dun_name": "Sungai Kandis"
+  },
+  {
+    "parliament": "P111",
+    "parliament_name": "Kota Raja",
+    "dun": "N.50",
+    "dun_name": "Kota Kemuning"
+  },
+  {
+    "parliament": "P112",
+    "parliament_name": "Kuala Langat",
+    "dun": "N.51",
+    "dun_name": "Sijangkang"
+  },
+  {
+    "parliament": "P112",
+    "parliament_name": "Kuala Langat",
+    "dun": "N.52",
+    "dun_name": "Banting"
+  },
+  {
+    "parliament": "P112",
+    "parliament_name": "Kuala Langat",
+    "dun": "N.53",
+    "dun_name": "Morib"
+  },
+  {
+    "parliament": "P113",
+    "parliament_name": "Sepang",
+    "dun": "N.54",
+    "dun_name": "Tanjong Sepat"
+  },
+  {
+    "parliament": "P113",
+    "parliament_name": "Sepang",
+    "dun": "N.55",
+    "dun_name": "Dengkil"
+  },
+  {
+    "parliament": "P113",
+    "parliament_name": "Sepang",
+    "dun": "N.56",
+    "dun_name": "Sungai Pelek"
+  },
+  {
+    "parliament": "P126",
+    "parliament_name": "Jelebu",
+    "dun": "N.01",
+    "dun_name": "Chennah"
+  },
+  {
+    "parliament": "P126",
+    "parliament_name": "Jelebu",
+    "dun": "N.02",
+    "dun_name": "Pertang"
+  },
+  {
+    "parliament": "P126",
+    "parliament_name": "Jelebu",
+    "dun": "N.03",
+    "dun_name": "Sungai Lui"
+  },
+  {
+    "parliament": "P126",
+    "parliament_name": "Jelebu",
+    "dun": "N.04",
+    "dun_name": "Klawang"
+  },
+  {
+    "parliament": "P127",
+    "parliament_name": "Jempol",
+    "dun": "N.05",
+    "dun_name": "Serting"
+  },
+  {
+    "parliament": "P127",
+    "parliament_name": "Jempol",
+    "dun": "N.06",
+    "dun_name": "Palong"
+  },
+  {
+    "parliament": "P127",
+    "parliament_name": "Jempol",
+    "dun": "N.07",
+    "dun_name": "Jeram Padang"
+  },
+  {
+    "parliament": "P127",
+    "parliament_name": "Jempol",
+    "dun": "N.08",
+    "dun_name": "Bahau"
+  },
+  {
+    "parliament": "P128",
+    "parliament_name": "Seremban",
+    "dun": "N.09",
+    "dun_name": "Lenggeng"
+  },
+  {
+    "parliament": "P128",
+    "parliament_name": "Seremban",
+    "dun": "N.10",
+    "dun_name": "Nilai"
+  },
+  {
+    "parliament": "P128",
+    "parliament_name": "Seremban",
+    "dun": "N.11",
+    "dun_name": "Lobak"
+  },
+  {
+    "parliament": "P128",
+    "parliament_name": "Seremban",
+    "dun": "N.12",
+    "dun_name": "Temiang"
+  },
+  {
+    "parliament": "P128",
+    "parliament_name": "Seremban",
+    "dun": "N.13",
+    "dun_name": "Sikamat"
+  },
+  {
+    "parliament": "P128",
+    "parliament_name": "Seremban",
+    "dun": "N.14",
+    "dun_name": "Ampangan"
+  },
+  {
+    "parliament": "P129",
+    "parliament_name": "Kuala Pilah",
+    "dun": "N.15",
+    "dun_name": "Juasseh"
+  },
+  {
+    "parliament": "P129",
+    "parliament_name": "Kuala Pilah",
+    "dun": "N.16",
+    "dun_name": "Seri Menanti"
+  },
+  {
+    "parliament": "P129",
+    "parliament_name": "Kuala Pilah",
+    "dun": "N.17",
+    "dun_name": "Senaling"
+  },
+  {
+    "parliament": "P129",
+    "parliament_name": "Kuala Pilah",
+    "dun": "N.18",
+    "dun_name": "Pilah"
+  },
+  {
+    "parliament": "P129",
+    "parliament_name": "Kuala Pilah",
+    "dun": "N.19",
+    "dun_name": "Johol"
+  },
+  {
+    "parliament": "P130",
+    "parliament_name": "Rasah",
+    "dun": "N.20",
+    "dun_name": "Labu"
+  },
+  {
+    "parliament": "P130",
+    "parliament_name": "Rasah",
+    "dun": "N.21",
+    "dun_name": "Bukit Kepayang"
+  },
+  {
+    "parliament": "P130",
+    "parliament_name": "Rasah",
+    "dun": "N.22",
+    "dun_name": "Rahang"
+  },
+  {
+    "parliament": "P130",
+    "parliament_name": "Rasah",
+    "dun": "N.23",
+    "dun_name": "Mambau"
+  },
+  {
+    "parliament": "P130",
+    "parliament_name": "Rasah",
+    "dun": "N.24",
+    "dun_name": "Seremban Jaya"
+  },
+  {
+    "parliament": "P131",
+    "parliament_name": "Rembau",
+    "dun": "N.25",
+    "dun_name": "Paroi"
+  },
+  {
+    "parliament": "P131",
+    "parliament_name": "Rembau",
+    "dun": "N.26",
+    "dun_name": "Chembong"
+  },
+  {
+    "parliament": "P131",
+    "parliament_name": "Rembau",
+    "dun": "N.27",
+    "dun_name": "Rantau"
+  },
+  {
+    "parliament": "P131",
+    "parliament_name": "Rembau",
+    "dun": "N.28",
+    "dun_name": "Kota"
+  },
+  {
+    "parliament": "P132",
+    "parliament_name": "Port Dickson",
+    "dun": "N.29",
+    "dun_name": "Chuah"
+  },
+  {
+    "parliament": "P132",
+    "parliament_name": "Port Dickson",
+    "dun": "N.30",
+    "dun_name": "Lukut"
+  },
+  {
+    "parliament": "P132",
+    "parliament_name": "Port Dickson",
+    "dun": "N.31",
+    "dun_name": "Bagan Pinang"
+  },
+  {
+    "parliament": "P132",
+    "parliament_name": "Port Dickson",
+    "dun": "N.32",
+    "dun_name": "Linggi"
+  },
+  {
+    "parliament": "P132",
+    "parliament_name": "Port Dickson",
+    "dun": "N.33",
+    "dun_name": "Sri Tanjung"
+  },
+  {
+    "parliament": "P133",
+    "parliament_name": "Tampin",
+    "dun": "N.34",
+    "dun_name": "Gemas"
+  },
+  {
+    "parliament": "P133",
+    "parliament_name": "Tampin",
+    "dun": "N.35",
+    "dun_name": "Gemencheh"
+  },
+  {
+    "parliament": "P133",
+    "parliament_name": "Tampin",
+    "dun": "N.36",
+    "dun_name": "Repah"
+  },
+  {
+    "parliament": "P134",
+    "parliament_name": "Masjid Tanah",
+    "dun": "N.01",
+    "dun_name": "Kuala Linggi"
+  },
+  {
+    "parliament": "P134",
+    "parliament_name": "Masjid Tanah",
+    "dun": "N.02",
+    "dun_name": "Tanjung Bidara"
+  },
+  {
+    "parliament": "P134",
+    "parliament_name": "Masjid Tanah",
+    "dun": "N.03",
+    "dun_name": "Ayer Limau"
+  },
+  {
+    "parliament": "P134",
+    "parliament_name": "Masjid Tanah",
+    "dun": "N.04",
+    "dun_name": "Lendu"
+  },
+  {
+    "parliament": "P134",
+    "parliament_name": "Masjid Tanah",
+    "dun": "N.05",
+    "dun_name": "Taboh Naning"
+  },
+  {
+    "parliament": "P135",
+    "parliament_name": "Alor Gajah",
+    "dun": "N.06",
+    "dun_name": "Rembia"
+  },
+  {
+    "parliament": "P135",
+    "parliament_name": "Alor Gajah",
+    "dun": "N.07",
+    "dun_name": "Gadek"
+  },
+  {
+    "parliament": "P135",
+    "parliament_name": "Alor Gajah",
+    "dun": "N.08",
+    "dun_name": "Machap Jaya"
+  },
+  {
+    "parliament": "P135",
+    "parliament_name": "Alor Gajah",
+    "dun": "N.09",
+    "dun_name": "Durian Tunggal"
+  },
+  {
+    "parliament": "P135",
+    "parliament_name": "Alor Gajah",
+    "dun": "N.10",
+    "dun_name": "Asahan"
+  },
+  {
+    "parliament": "P136",
+    "parliament_name": "Tangga Batu",
+    "dun": "N.11",
+    "dun_name": "Sungai Udang"
+  },
+  {
+    "parliament": "P136",
+    "parliament_name": "Tangga Batu",
+    "dun": "N.12",
+    "dun_name": "Pantai Kundor"
+  },
+  {
+    "parliament": "P136",
+    "parliament_name": "Tangga Batu",
+    "dun": "N.13",
+    "dun_name": "Paya Rumput"
+  },
+  {
+    "parliament": "P136",
+    "parliament_name": "Tangga Batu",
+    "dun": "N.14",
+    "dun_name": "Kelebang"
+  },
+  {
+    "parliament": "P137",
+    "parliament_name": "Hang Tuah Jaya",
+    "dun": "N.15",
+    "dun_name": "Pengkalan Batu"
+  },
+  {
+    "parliament": "P137",
+    "parliament_name": "Hang Tuah Jaya",
+    "dun": "N.16",
+    "dun_name": "Ayer Keroh"
+  },
+  {
+    "parliament": "P137",
+    "parliament_name": "Hang Tuah Jaya",
+    "dun": "N.17",
+    "dun_name": "Bukit Katil"
+  },
+  {
+    "parliament": "P137",
+    "parliament_name": "Hang Tuah Jaya",
+    "dun": "N.18",
+    "dun_name": "Ayer Molek"
+  },
+  {
+    "parliament": "P138",
+    "parliament_name": "Kota Melaka",
+    "dun": "N.19",
+    "dun_name": "Kesidang"
+  },
+  {
+    "parliament": "P138",
+    "parliament_name": "Kota Melaka",
+    "dun": "N.20",
+    "dun_name": "Kota Laksamana"
+  },
+  {
+    "parliament": "P138",
+    "parliament_name": "Kota Melaka",
+    "dun": "N.21",
+    "dun_name": "Duyong"
+  },
+  {
+    "parliament": "P138",
+    "parliament_name": "Kota Melaka",
+    "dun": "N.22",
+    "dun_name": "Bandar Hilir"
+  },
+  {
+    "parliament": "P138",
+    "parliament_name": "Kota Melaka",
+    "dun": "N.23",
+    "dun_name": "Telok Mas"
+  },
+  {
+    "parliament": "P139",
+    "parliament_name": "Jasin",
+    "dun": "N.24",
+    "dun_name": "Bemban"
+  },
+  {
+    "parliament": "P139",
+    "parliament_name": "Jasin",
+    "dun": "N.25",
+    "dun_name": "Rim"
+  },
+  {
+    "parliament": "P139",
+    "parliament_name": "Jasin",
+    "dun": "N.26",
+    "dun_name": "Serkam"
+  },
+  {
+    "parliament": "P139",
+    "parliament_name": "Jasin",
+    "dun": "N.27",
+    "dun_name": "Merlimau"
+  },
+  {
+    "parliament": "P139",
+    "parliament_name": "Jasin",
+    "dun": "N.28",
+    "dun_name": "Sungai Rambai"
+  },
+  {
+    "parliament": "P140",
+    "parliament_name": "Segamat",
+    "dun": "N.01",
+    "dun_name": "Buloh Kasap"
+  },
+  {
+    "parliament": "P140",
+    "parliament_name": "Segamat",
+    "dun": "N.02",
+    "dun_name": "Jementah"
+  },
+  {
+    "parliament": "P141",
+    "parliament_name": "Sekijang",
+    "dun": "N.03",
+    "dun_name": "Pemanis"
+  },
+  {
+    "parliament": "P141",
+    "parliament_name": "Sekijang",
+    "dun": "N.04",
+    "dun_name": "Kemelah"
+  },
+  {
+    "parliament": "P142",
+    "parliament_name": "Labis",
+    "dun": "N.05",
+    "dun_name": "Tenang"
+  },
+  {
+    "parliament": "P142",
+    "parliament_name": "Labis",
+    "dun": "N.06",
+    "dun_name": "Bekok"
+  },
+  {
+    "parliament": "P143",
+    "parliament_name": "Pagoh",
+    "dun": "N.07",
+    "dun_name": "Bukit Kepong"
+  },
+  {
+    "parliament": "P143",
+    "parliament_name": "Pagoh",
+    "dun": "N.08",
+    "dun_name": "Bukit Pasir"
+  },
+  {
+    "parliament": "P144",
+    "parliament_name": "Ledang",
+    "dun": "N.09",
+    "dun_name": "Gambir"
+  },
+  {
+    "parliament": "P144",
+    "parliament_name": "Ledang",
+    "dun": "N.10",
+    "dun_name": "Tangkak"
+  },
+  {
+    "parliament": "P144",
+    "parliament_name": "Ledang",
+    "dun": "N.11",
+    "dun_name": "Serom"
+  },
+  {
+    "parliament": "P145",
+    "parliament_name": "Bakri",
+    "dun": "N.12",
+    "dun_name": "Bentayan"
+  },
+  {
+    "parliament": "P145",
+    "parliament_name": "Bakri",
+    "dun": "N.13",
+    "dun_name": "Simpang Jeram"
+  },
+  {
+    "parliament": "P145",
+    "parliament_name": "Bakri",
+    "dun": "N.14",
+    "dun_name": "Bukit Naning"
+  },
+  {
+    "parliament": "P146",
+    "parliament_name": "Muar",
+    "dun": "N.15",
+    "dun_name": "Maharani"
+  },
+  {
+    "parliament": "P146",
+    "parliament_name": "Muar",
+    "dun": "N.16",
+    "dun_name": "Sungai Balang"
+  },
+  {
+    "parliament": "P147",
+    "parliament_name": "Parit Sulong",
+    "dun": "N.17",
+    "dun_name": "Semerah"
+  },
+  {
+    "parliament": "P147",
+    "parliament_name": "Parit Sulong",
+    "dun": "N.18",
+    "dun_name": "Sri Medan"
+  },
+  {
+    "parliament": "P148",
+    "parliament_name": "Ayer Hitam",
+    "dun": "N.19",
+    "dun_name": "Yong Peng"
+  },
+  {
+    "parliament": "P148",
+    "parliament_name": "Ayer Hitam",
+    "dun": "N.20",
+    "dun_name": "Semarang"
+  },
+  {
+    "parliament": "P149",
+    "parliament_name": "Sri Gading",
+    "dun": "N.21",
+    "dun_name": "Parit Yaani"
+  },
+  {
+    "parliament": "P149",
+    "parliament_name": "Sri Gading",
+    "dun": "N.22",
+    "dun_name": "Parit Raja"
+  },
+  {
+    "parliament": "P150",
+    "parliament_name": "Batu Pahat",
+    "dun": "N.23",
+    "dun_name": "Penggaram"
+  },
+  {
+    "parliament": "P150",
+    "parliament_name": "Batu Pahat",
+    "dun": "N.24",
+    "dun_name": "Senggarang"
+  },
+  {
+    "parliament": "P150",
+    "parliament_name": "Batu Pahat",
+    "dun": "N.25",
+    "dun_name": "Rengit"
+  },
+  {
+    "parliament": "P151",
+    "parliament_name": "Simpang Renggam",
+    "dun": "N.26",
+    "dun_name": "Machap"
+  },
+  {
+    "parliament": "P151",
+    "parliament_name": "Simpang Renggam",
+    "dun": "N.27",
+    "dun_name": "Layang-Layang"
+  },
+  {
+    "parliament": "P152",
+    "parliament_name": "Kluang",
+    "dun": "N.28",
+    "dun_name": "Mengkibol"
+  },
+  {
+    "parliament": "P152",
+    "parliament_name": "Kluang",
+    "dun": "N.29",
+    "dun_name": "Mahkota"
+  },
+  {
+    "parliament": "P153",
+    "parliament_name": "Sembrong",
+    "dun": "N.30",
+    "dun_name": "Paloh"
+  },
+  {
+    "parliament": "P153",
+    "parliament_name": "Sembrong",
+    "dun": "N.31",
+    "dun_name": "Kahang"
+  },
+  {
+    "parliament": "P154",
+    "parliament_name": "Mersing",
+    "dun": "N.32",
+    "dun_name": "Endau"
+  },
+  {
+    "parliament": "P154",
+    "parliament_name": "Mersing",
+    "dun": "N.33",
+    "dun_name": "Tenggaroh"
+  },
+  {
+    "parliament": "P155",
+    "parliament_name": "Tenggara",
+    "dun": "N.34",
+    "dun_name": "Panti"
+  },
+  {
+    "parliament": "P155",
+    "parliament_name": "Tenggara",
+    "dun": "N.35",
+    "dun_name": "Pasir Raja"
+  },
+  {
+    "parliament": "P156",
+    "parliament_name": "Kota Tinggi",
+    "dun": "N.36",
+    "dun_name": "Sedili"
+  },
+  {
+    "parliament": "P156",
+    "parliament_name": "Kota Tinggi",
+    "dun": "N.37",
+    "dun_name": "Johor Lama"
+  },
+  {
+    "parliament": "P157",
+    "parliament_name": "Pengerang",
+    "dun": "N.38",
+    "dun_name": "Penawar"
+  },
+  {
+    "parliament": "P157",
+    "parliament_name": "Pengerang",
+    "dun": "N.39",
+    "dun_name": "Tanjung Surat"
+  },
+  {
+    "parliament": "P158",
+    "parliament_name": "Tebrau",
+    "dun": "N.40",
+    "dun_name": "Tiram"
+  },
+  {
+    "parliament": "P158",
+    "parliament_name": "Tebrau",
+    "dun": "N.41",
+    "dun_name": "Puteri Wangsa"
+  },
+  {
+    "parliament": "P159",
+    "parliament_name": "Pasir Gudang",
+    "dun": "N.42",
+    "dun_name": "Johor Jaya"
+  },
+  {
+    "parliament": "P159",
+    "parliament_name": "Pasir Gudang",
+    "dun": "N.43",
+    "dun_name": "Permas"
+  },
+  {
+    "parliament": "P160",
+    "parliament_name": "Johor Bahru",
+    "dun": "N.44",
+    "dun_name": "Larkin"
+  },
+  {
+    "parliament": "P160",
+    "parliament_name": "Johor Bahru",
+    "dun": "N.45",
+    "dun_name": "Stulang"
+  },
+  {
+    "parliament": "P161",
+    "parliament_name": "Pulai",
+    "dun": "N.46",
+    "dun_name": "Perling"
+  },
+  {
+    "parliament": "P161",
+    "parliament_name": "Pulai",
+    "dun": "N.47",
+    "dun_name": "Kempas"
+  },
+  {
+    "parliament": "P162",
+    "parliament_name": "Iskandar Puteri",
+    "dun": "N.48",
+    "dun_name": "Skudai"
+  },
+  {
+    "parliament": "P162",
+    "parliament_name": "Iskandar Puteri",
+    "dun": "N.49",
+    "dun_name": "Kota Iskandar"
+  },
+  {
+    "parliament": "P163",
+    "parliament_name": "Kulai",
+    "dun": "N.50",
+    "dun_name": "Bukit Permai"
+  },
+  {
+    "parliament": "P163",
+    "parliament_name": "Kulai",
+    "dun": "N.51",
+    "dun_name": "Bukit Batu"
+  },
+  {
+    "parliament": "P163",
+    "parliament_name": "Kulai",
+    "dun": "N.52",
+    "dun_name": "Senai"
+  },
+  {
+    "parliament": "P164",
+    "parliament_name": "Pontian",
+    "dun": "N.53",
+    "dun_name": "Benut"
+  },
+  {
+    "parliament": "P164",
+    "parliament_name": "Pontian",
+    "dun": "N.54",
+    "dun_name": "Pulai Sebatang"
+  },
+  {
+    "parliament": "P165",
+    "parliament_name": "Tanjung Piai",
+    "dun": "N.55",
+    "dun_name": "Pekan Nanas"
+  },
+  {
+    "parliament": "P165",
+    "parliament_name": "Tanjung Piai",
+    "dun": "N.56",
+    "dun_name": "Kukup"
+  },
+  {
+    "parliament": "P167",
+    "parliament_name": "Kudat",
+    "dun": "N.01",
+    "dun_name": "Banggi"
+  },
+  {
+    "parliament": "P167",
+    "parliament_name": "Kudat",
+    "dun": "N.02",
+    "dun_name": "Bengkoka"
+  },
+  {
+    "parliament": "P167",
+    "parliament_name": "Kudat",
+    "dun": "N.03",
+    "dun_name": "Pitas"
+  },
+  {
+    "parliament": "P167",
+    "parliament_name": "Kudat",
+    "dun": "N.04",
+    "dun_name": "Tanjong Kapor"
+  },
+  {
+    "parliament": "P168",
+    "parliament_name": "Kota Marudu",
+    "dun": "N.05",
+    "dun_name": "Matunggong"
+  },
+  {
+    "parliament": "P168",
+    "parliament_name": "Kota Marudu",
+    "dun": "N.06",
+    "dun_name": "Bandau"
+  },
+  {
+    "parliament": "P168",
+    "parliament_name": "Kota Marudu",
+    "dun": "N.07",
+    "dun_name": "Tandek"
+  },
+  {
+    "parliament": "P169",
+    "parliament_name": "Kota Belud",
+    "dun": "N.08",
+    "dun_name": "Pintasan"
+  },
+  {
+    "parliament": "P169",
+    "parliament_name": "Kota Belud",
+    "dun": "N.09",
+    "dun_name": "Tempasuk"
+  },
+  {
+    "parliament": "P169",
+    "parliament_name": "Kota Belud",
+    "dun": "N.10",
+    "dun_name": "Usukan"
+  },
+  {
+    "parliament": "P169",
+    "parliament_name": "Kota Belud",
+    "dun": "N.11",
+    "dun_name": "Kadamaian"
+  },
+  {
+    "parliament": "P170",
+    "parliament_name": "Tuaran",
+    "dun": "N.12",
+    "dun_name": "Sulaman"
+  },
+  {
+    "parliament": "P170",
+    "parliament_name": "Tuaran",
+    "dun": "N.13",
+    "dun_name": "Pantai Dalit"
+  },
+  {
+    "parliament": "P170",
+    "parliament_name": "Tuaran",
+    "dun": "N.14",
+    "dun_name": "Tamparuli"
+  },
+  {
+    "parliament": "P170",
+    "parliament_name": "Tuaran",
+    "dun": "N.15",
+    "dun_name": "Kiulu"
+  },
+  {
+    "parliament": "P171",
+    "parliament_name": "Sepanggar",
+    "dun": "N.16",
+    "dun_name": "Karambunai"
+  },
+  {
+    "parliament": "P171",
+    "parliament_name": "Sepanggar",
+    "dun": "N.17",
+    "dun_name": "Darau"
+  },
+  {
+    "parliament": "P171",
+    "parliament_name": "Sepanggar",
+    "dun": "N.18",
+    "dun_name": "Inanam"
+  },
+  {
+    "parliament": "P172",
+    "parliament_name": "Kota Kinabalu",
+    "dun": "N.19",
+    "dun_name": "Likas"
+  },
+  {
+    "parliament": "P172",
+    "parliament_name": "Kota Kinabalu",
+    "dun": "N.20",
+    "dun_name": "Api-Api"
+  },
+  {
+    "parliament": "P172",
+    "parliament_name": "Kota Kinabalu",
+    "dun": "N.21",
+    "dun_name": "Luyang"
+  },
+  {
+    "parliament": "P173",
+    "parliament_name": "Putatan",
+    "dun": "N.22",
+    "dun_name": "Tanjong Aru"
+  },
+  {
+    "parliament": "P173",
+    "parliament_name": "Putatan",
+    "dun": "N.23",
+    "dun_name": "Petagas"
+  },
+  {
+    "parliament": "P173",
+    "parliament_name": "Putatan",
+    "dun": "N.24",
+    "dun_name": "Tanjung Keramat"
+  },
+  {
+    "parliament": "P174",
+    "parliament_name": "Penampang",
+    "dun": "N.25",
+    "dun_name": "Kapayan"
+  },
+  {
+    "parliament": "P174",
+    "parliament_name": "Penampang",
+    "dun": "N.26",
+    "dun_name": "Moyog"
+  },
+  {
+    "parliament": "P175",
+    "parliament_name": "Papar",
+    "dun": "N.27",
+    "dun_name": "Limbahau"
+  },
+  {
+    "parliament": "P175",
+    "parliament_name": "Papar",
+    "dun": "N.28",
+    "dun_name": "Kawang"
+  },
+  {
+    "parliament": "P175",
+    "parliament_name": "Papar",
+    "dun": "N.29",
+    "dun_name": "Pantai Manis"
+  },
+  {
+    "parliament": "P176",
+    "parliament_name": "Kimanis",
+    "dun": "N.30",
+    "dun_name": "Bongawan"
+  },
+  {
+    "parliament": "P176",
+    "parliament_name": "Kimanis",
+    "dun": "N.31",
+    "dun_name": "Membakut"
+  },
+  {
+    "parliament": "P177",
+    "parliament_name": "Beaufort",
+    "dun": "N.32",
+    "dun_name": "Klias"
+  },
+  {
+    "parliament": "P177",
+    "parliament_name": "Beaufort",
+    "dun": "N.33",
+    "dun_name": "Kuala Penyu"
+  },
+  {
+    "parliament": "P178",
+    "parliament_name": "Sipitang",
+    "dun": "N.34",
+    "dun_name": "Lumadan"
+  },
+  {
+    "parliament": "P178",
+    "parliament_name": "Sipitang",
+    "dun": "N.35",
+    "dun_name": "Sindumin"
+  },
+  {
+    "parliament": "P179",
+    "parliament_name": "Ranau",
+    "dun": "N.36",
+    "dun_name": "Kundasang"
+  },
+  {
+    "parliament": "P179",
+    "parliament_name": "Ranau",
+    "dun": "N.37",
+    "dun_name": "Karanaan"
+  },
+  {
+    "parliament": "P179",
+    "parliament_name": "Ranau",
+    "dun": "N.38",
+    "dun_name": "Paginatan"
+  },
+  {
+    "parliament": "P180",
+    "parliament_name": "Keningau",
+    "dun": "N.39",
+    "dun_name": "Tambunan"
+  },
+  {
+    "parliament": "P180",
+    "parliament_name": "Keningau",
+    "dun": "N.40",
+    "dun_name": "Bingkor"
+  },
+  {
+    "parliament": "P180",
+    "parliament_name": "Keningau",
+    "dun": "N.41",
+    "dun_name": "Liawan"
+  },
+  {
+    "parliament": "P181",
+    "parliament_name": "Tenom",
+    "dun": "N.42",
+    "dun_name": "Melalap"
+  },
+  {
+    "parliament": "P181",
+    "parliament_name": "Tenom",
+    "dun": "N.43",
+    "dun_name": "Kemabong"
+  },
+  {
+    "parliament": "P182",
+    "parliament_name": "Pensiangan",
+    "dun": "N.44",
+    "dun_name": "Tulid"
+  },
+  {
+    "parliament": "P182",
+    "parliament_name": "Pensiangan",
+    "dun": "N.45",
+    "dun_name": "Sook"
+  },
+  {
+    "parliament": "P182",
+    "parliament_name": "Pensiangan",
+    "dun": "N.46",
+    "dun_name": "Nabawan"
+  },
+  {
+    "parliament": "P183",
+    "parliament_name": "Beluran",
+    "dun": "N.47",
+    "dun_name": "Telupid"
+  },
+  {
+    "parliament": "P183",
+    "parliament_name": "Beluran",
+    "dun": "N.48",
+    "dun_name": "Sugut"
+  },
+  {
+    "parliament": "P183",
+    "parliament_name": "Beluran",
+    "dun": "N.49",
+    "dun_name": "Labuk"
+  },
+  {
+    "parliament": "P184",
+    "parliament_name": "Libaran",
+    "dun": "N.50",
+    "dun_name": "Gum-Gum"
+  },
+  {
+    "parliament": "P184",
+    "parliament_name": "Libaran",
+    "dun": "N.51",
+    "dun_name": "Sungai Manila"
+  },
+  {
+    "parliament": "P184",
+    "parliament_name": "Libaran",
+    "dun": "N.52",
+    "dun_name": "Sungai Sibuga"
+  },
+  {
+    "parliament": "P185",
+    "parliament_name": "Batu Sapi",
+    "dun": "N.53",
+    "dun_name": "Sekong"
+  },
+  {
+    "parliament": "P185",
+    "parliament_name": "Batu Sapi",
+    "dun": "N.54",
+    "dun_name": "Karamunting"
+  },
+  {
+    "parliament": "P186",
+    "parliament_name": "Sandakan",
+    "dun": "N.55",
+    "dun_name": "Elopura"
+  },
+  {
+    "parliament": "P186",
+    "parliament_name": "Sandakan",
+    "dun": "N.56",
+    "dun_name": "Tanjong Papat"
+  },
+  {
+    "parliament": "P187",
+    "parliament_name": "Kinabatangan",
+    "dun": "N.57",
+    "dun_name": "Kuamut"
+  },
+  {
+    "parliament": "P187",
+    "parliament_name": "Kinabatangan",
+    "dun": "N.58",
+    "dun_name": "Lamag"
+  },
+  {
+    "parliament": "P187",
+    "parliament_name": "Kinabatangan",
+    "dun": "N.59",
+    "dun_name": "Sukau"
+  },
+  {
+    "parliament": "P188",
+    "parliament_name": "Lahad Datu",
+    "dun": "N.60",
+    "dun_name": "Tungku"
+  },
+  {
+    "parliament": "P188",
+    "parliament_name": "Lahad Datu",
+    "dun": "N.61",
+    "dun_name": "Segama"
+  },
+  {
+    "parliament": "P188",
+    "parliament_name": "Lahad Datu",
+    "dun": "N.62",
+    "dun_name": "Silam"
+  },
+  {
+    "parliament": "P188",
+    "parliament_name": "Lahad Datu",
+    "dun": "N.63",
+    "dun_name": "Kunak"
+  },
+  {
+    "parliament": "P189",
+    "parliament_name": "Semporna",
+    "dun": "N.64",
+    "dun_name": "Sulabayan"
+  },
+  {
+    "parliament": "P189",
+    "parliament_name": "Semporna",
+    "dun": "N.65",
+    "dun_name": "Senallang"
+  },
+  {
+    "parliament": "P189",
+    "parliament_name": "Semporna",
+    "dun": "N.66",
+    "dun_name": "Bugaya"
+  },
+  {
+    "parliament": "P190",
+    "parliament_name": "Tawau",
+    "dun": "N.67",
+    "dun_name": "Balung"
+  },
+  {
+    "parliament": "P190",
+    "parliament_name": "Tawau",
+    "dun": "N.68",
+    "dun_name": "Apas"
+  },
+  {
+    "parliament": "P190",
+    "parliament_name": "Tawau",
+    "dun": "N.69",
+    "dun_name": "Sri Tanjong"
+  },
+  {
+    "parliament": "P191",
+    "parliament_name": "Kalabakan",
+    "dun": "N.70",
+    "dun_name": "Kukusan"
+  },
+  {
+    "parliament": "P191",
+    "parliament_name": "Kalabakan",
+    "dun": "N.71",
+    "dun_name": "Tanjong Batu"
+  },
+  {
+    "parliament": "P191",
+    "parliament_name": "Kalabakan",
+    "dun": "N.72",
+    "dun_name": "Merotai"
+  },
+  {
+    "parliament": "P191",
+    "parliament_name": "Kalabakan",
+    "dun": "N.73",
+    "dun_name": "Sebatik"
+  },
+  {
+    "parliament": "P192",
+    "parliament_name": "Mas Gading",
+    "dun": "N.01",
+    "dun_name": "Opar"
+  },
+  {
+    "parliament": "P192",
+    "parliament_name": "Mas Gading",
+    "dun": "N.02",
+    "dun_name": "Tasik Biru"
+  },
+  {
+    "parliament": "P193",
+    "parliament_name": "Santubong",
+    "dun": "N.03",
+    "dun_name": "Tanjong Datu"
+  },
+  {
+    "parliament": "P193",
+    "parliament_name": "Santubong",
+    "dun": "N.04",
+    "dun_name": "Pantai Damai"
+  },
+  {
+    "parliament": "P193",
+    "parliament_name": "Santubong",
+    "dun": "N.05",
+    "dun_name": "Demak Laut"
+  },
+  {
+    "parliament": "P194",
+    "parliament_name": "Petra Jaya",
+    "dun": "N.06",
+    "dun_name": "Tupong"
+  },
+  {
+    "parliament": "P194",
+    "parliament_name": "Petra Jaya",
+    "dun": "N.07",
+    "dun_name": "Samariang"
+  },
+  {
+    "parliament": "P194",
+    "parliament_name": "Petra Jaya",
+    "dun": "N.08",
+    "dun_name": "Satok"
+  },
+  {
+    "parliament": "P195",
+    "parliament_name": "Bandar Kuching",
+    "dun": "N.09",
+    "dun_name": "Padungan"
+  },
+  {
+    "parliament": "P195",
+    "parliament_name": "Bandar Kuching",
+    "dun": "N.10",
+    "dun_name": "Pending"
+  },
+  {
+    "parliament": "P195",
+    "parliament_name": "Bandar Kuching",
+    "dun": "N.11",
+    "dun_name": "Batu Lintang"
+  },
+  {
+    "parliament": "P196",
+    "parliament_name": "Stampin",
+    "dun": "N.12",
+    "dun_name": "Kota Sentosa"
+  },
+  {
+    "parliament": "P196",
+    "parliament_name": "Stampin",
+    "dun": "N.13",
+    "dun_name": "Batu Kitang"
+  },
+  {
+    "parliament": "P196",
+    "parliament_name": "Stampin",
+    "dun": "N.14",
+    "dun_name": "Batu Kawah"
+  },
+  {
+    "parliament": "P197",
+    "parliament_name": "Kota Samarahan",
+    "dun": "N.15",
+    "dun_name": "Asajaya"
+  },
+  {
+    "parliament": "P197",
+    "parliament_name": "Kota Samarahan",
+    "dun": "N.16",
+    "dun_name": "Muara Tuang"
+  },
+  {
+    "parliament": "P197",
+    "parliament_name": "Kota Samarahan",
+    "dun": "N.17",
+    "dun_name": "Stakan"
+  },
+  {
+    "parliament": "P198",
+    "parliament_name": "Puncak Borneo",
+    "dun": "N.18",
+    "dun_name": "Serembu"
+  },
+  {
+    "parliament": "P198",
+    "parliament_name": "Puncak Borneo",
+    "dun": "N.19",
+    "dun_name": "Mambong"
+  },
+  {
+    "parliament": "P198",
+    "parliament_name": "Puncak Borneo",
+    "dun": "N.20",
+    "dun_name": "Tarat"
+  },
+  {
+    "parliament": "P199",
+    "parliament_name": "Serian",
+    "dun": "N.21",
+    "dun_name": "Tebedu"
+  },
+  {
+    "parliament": "P199",
+    "parliament_name": "Serian",
+    "dun": "N.22",
+    "dun_name": "Kedup"
+  },
+  {
+    "parliament": "P199",
+    "parliament_name": "Serian",
+    "dun": "N.23",
+    "dun_name": "Bukit Semuja"
+  },
+  {
+    "parliament": "P200",
+    "parliament_name": "Batang Sadong",
+    "dun": "N.24",
+    "dun_name": "Sadong Jaya"
+  },
+  {
+    "parliament": "P200",
+    "parliament_name": "Batang Sadong",
+    "dun": "N.25",
+    "dun_name": "Simunjan"
+  },
+  {
+    "parliament": "P200",
+    "parliament_name": "Batang Sadong",
+    "dun": "N.26",
+    "dun_name": "Gedong"
+  },
+  {
+    "parliament": "P201",
+    "parliament_name": "Batang Lupar",
+    "dun": "N.27",
+    "dun_name": "Sebuyau"
+  },
+  {
+    "parliament": "P201",
+    "parliament_name": "Batang Lupar",
+    "dun": "N.28",
+    "dun_name": "Lingga"
+  },
+  {
+    "parliament": "P201",
+    "parliament_name": "Batang Lupar",
+    "dun": "N.29",
+    "dun_name": "Beting Maro"
+  },
+  {
+    "parliament": "P202",
+    "parliament_name": "Sri Aman",
+    "dun": "N.30",
+    "dun_name": "Balai Ringin"
+  },
+  {
+    "parliament": "P202",
+    "parliament_name": "Sri Aman",
+    "dun": "N.31",
+    "dun_name": "Bukit Begunan"
+  },
+  {
+    "parliament": "P202",
+    "parliament_name": "Sri Aman",
+    "dun": "N.32",
+    "dun_name": "Simanggang"
+  },
+  {
+    "parliament": "P203",
+    "parliament_name": "Lubok Antu",
+    "dun": "N.33",
+    "dun_name": "Engkilili"
+  },
+  {
+    "parliament": "P203",
+    "parliament_name": "Lubok Antu",
+    "dun": "N.34",
+    "dun_name": "Batang Ai"
+  },
+  {
+    "parliament": "P204",
+    "parliament_name": "Betong",
+    "dun": "N.35",
+    "dun_name": "Saribas"
+  },
+  {
+    "parliament": "P204",
+    "parliament_name": "Betong",
+    "dun": "N.36",
+    "dun_name": "Layar"
+  },
+  {
+    "parliament": "P204",
+    "parliament_name": "Betong",
+    "dun": "N.37",
+    "dun_name": "Bukit Saban"
+  },
+  {
+    "parliament": "P205",
+    "parliament_name": "Saratok",
+    "dun": "N.38",
+    "dun_name": "Kalaka"
+  },
+  {
+    "parliament": "P205",
+    "parliament_name": "Saratok",
+    "dun": "N.39",
+    "dun_name": "Krian"
+  },
+  {
+    "parliament": "P205",
+    "parliament_name": "Saratok",
+    "dun": "N.40",
+    "dun_name": "Kabong"
+  },
+  {
+    "parliament": "P206",
+    "parliament_name": "Tanjong Manis",
+    "dun": "N.41",
+    "dun_name": "Kuala Rajang"
+  },
+  {
+    "parliament": "P206",
+    "parliament_name": "Tanjong Manis",
+    "dun": "N.42",
+    "dun_name": "Semop"
+  },
+  {
+    "parliament": "P207",
+    "parliament_name": "Igan",
+    "dun": "N.43",
+    "dun_name": "Daro"
+  },
+  {
+    "parliament": "P207",
+    "parliament_name": "Igan",
+    "dun": "N.44",
+    "dun_name": "Jemoreng"
+  },
+  {
+    "parliament": "P208",
+    "parliament_name": "Sarikei",
+    "dun": "N.45",
+    "dun_name": "Repok"
+  },
+  {
+    "parliament": "P208",
+    "parliament_name": "Sarikei",
+    "dun": "N.46",
+    "dun_name": "Meradong"
+  },
+  {
+    "parliament": "P209",
+    "parliament_name": "Julau",
+    "dun": "N.47",
+    "dun_name": "Pakan"
+  },
+  {
+    "parliament": "P209",
+    "parliament_name": "Julau",
+    "dun": "N.48",
+    "dun_name": "Meluan"
+  },
+  {
+    "parliament": "P210",
+    "parliament_name": "Kanowit",
+    "dun": "N.49",
+    "dun_name": "Ngemah"
+  },
+  {
+    "parliament": "P210",
+    "parliament_name": "Kanowit",
+    "dun": "N.50",
+    "dun_name": "Machan"
+  },
+  {
+    "parliament": "P211",
+    "parliament_name": "Lanang",
+    "dun": "N.51",
+    "dun_name": "Bukit Assek"
+  },
+  {
+    "parliament": "P211",
+    "parliament_name": "Lanang",
+    "dun": "N.52",
+    "dun_name": "Dudong"
+  },
+  {
+    "parliament": "P212",
+    "parliament_name": "Sibu",
+    "dun": "N.53",
+    "dun_name": "Bawang Assan"
+  },
+  {
+    "parliament": "P212",
+    "parliament_name": "Sibu",
+    "dun": "N.54",
+    "dun_name": "Pelawan"
+  },
+  {
+    "parliament": "P212",
+    "parliament_name": "Sibu",
+    "dun": "N.55",
+    "dun_name": "Nangka"
+  },
+  {
+    "parliament": "P213",
+    "parliament_name": "Mukah",
+    "dun": "N.56",
+    "dun_name": "Dalat"
+  },
+  {
+    "parliament": "P213",
+    "parliament_name": "Mukah",
+    "dun": "N.57",
+    "dun_name": "Tellian"
+  },
+  {
+    "parliament": "P213",
+    "parliament_name": "Mukah",
+    "dun": "N.58",
+    "dun_name": "Balingian"
+  },
+  {
+    "parliament": "P214",
+    "parliament_name": "Selangau",
+    "dun": "N.59",
+    "dun_name": "Tamin"
+  },
+  {
+    "parliament": "P214",
+    "parliament_name": "Selangau",
+    "dun": "N.60",
+    "dun_name": "Kakus"
+  },
+  {
+    "parliament": "P215",
+    "parliament_name": "Kapit",
+    "dun": "N.61",
+    "dun_name": "Pelagus"
+  },
+  {
+    "parliament": "P215",
+    "parliament_name": "Kapit",
+    "dun": "N.62",
+    "dun_name": "Katibas"
+  },
+  {
+    "parliament": "P215",
+    "parliament_name": "Kapit",
+    "dun": "N.63",
+    "dun_name": "Bukit Goram"
+  },
+  {
+    "parliament": "P216",
+    "parliament_name": "Hulu Rajang",
+    "dun": "N.64",
+    "dun_name": "Baleh"
+  },
+  {
+    "parliament": "P216",
+    "parliament_name": "Hulu Rajang",
+    "dun": "N.65",
+    "dun_name": "Belaga"
+  },
+  {
+    "parliament": "P216",
+    "parliament_name": "Hulu Rajang",
+    "dun": "N.66",
+    "dun_name": "Murum"
+  },
+  {
+    "parliament": "P217",
+    "parliament_name": "Bintulu",
+    "dun": "N.67",
+    "dun_name": "Jepak"
+  },
+  {
+    "parliament": "P217",
+    "parliament_name": "Bintulu",
+    "dun": "N.68",
+    "dun_name": "Tanjong Batu"
+  },
+  {
+    "parliament": "P217",
+    "parliament_name": "Bintulu",
+    "dun": "N.69",
+    "dun_name": "Kemena"
+  },
+  {
+    "parliament": "P217",
+    "parliament_name": "Bintulu",
+    "dun": "N.70",
+    "dun_name": "Samalaju"
+  },
+  {
+    "parliament": "P218",
+    "parliament_name": "Sibuti",
+    "dun": "N.71",
+    "dun_name": "Bekenu"
+  },
+  {
+    "parliament": "P218",
+    "parliament_name": "Sibuti",
+    "dun": "N.72",
+    "dun_name": "Lambir"
+  },
+  {
+    "parliament": "P219",
+    "parliament_name": "Miri",
+    "dun": "N.73",
+    "dun_name": "Piasau"
+  },
+  {
+    "parliament": "P219",
+    "parliament_name": "Miri",
+    "dun": "N.74",
+    "dun_name": "Pujut"
+  },
+  {
+    "parliament": "P219",
+    "parliament_name": "Miri",
+    "dun": "N.75",
+    "dun_name": "Senadin"
+  },
+  {
+    "parliament": "P220",
+    "parliament_name": "Baram",
+    "dun": "N.76",
+    "dun_name": "Marudi"
+  },
+  {
+    "parliament": "P220",
+    "parliament_name": "Baram",
+    "dun": "N.77",
+    "dun_name": "Telang Usan"
+  },
+  {
+    "parliament": "P220",
+    "parliament_name": "Baram",
+    "dun": "N.78",
+    "dun_name": "Mulu"
+  },
+  {
+    "parliament": "P221",
+    "parliament_name": "Limbang",
+    "dun": "N.79",
+    "dun_name": "Bukit Kota"
+  },
+  {
+    "parliament": "P221",
+    "parliament_name": "Limbang",
+    "dun": "N.80",
+    "dun_name": "Batu Danau"
+  },
+  {
+    "parliament": "P222",
+    "parliament_name": "Lawas",
+    "dun": "N.81",
+    "dun_name": "Ba'kelalan"
+  },
+  {
+    "parliament": "P222",
+    "parliament_name": "Lawas",
+    "dun": "N.82",
+    "dun_name": "Bukit Sari"
+  }
+]

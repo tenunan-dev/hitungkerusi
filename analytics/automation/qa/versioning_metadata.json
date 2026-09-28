@@ -1,0 +1,14 @@
+{
+  "source_classification": "OPS 8c1852b:migration/evidence/ge16-w03-automation-classification.json",
+  "versioned": "2026-09-11",
+    "destination_status": "Canonical state-composition input resolves from sibling DATA; the legacy app-source audit target remains unchanged.",
+    "runtime_inputs": {
+        "required_canonical_data": ["research/states/national-composition-summary.md"],
+        "optional_inputs": []
+    },
+  "files": [
+    {"original_path": "05_AUTOMATION/audit_dun_composition.py", "sha256": "f0dce4c07d0e31c0e80efbe6c1eb3a847d074fdb7afd26f5df72dd0cc973f2d5", "target": "automation/qa/audit_dun_composition.py"},
+    {"original_path": "05_AUTOMATION/audit_ms_en_sections.py", "sha256": "9ecbd538377c4812e26afbcef036f6ac918ca58f29b3149c9bb63795ea955b2a", "target": "automation/qa/audit_ms_en_sections.py"},
+    {"original_path": "05_AUTOMATION/audit_state_number_parity.py", "sha256": "b50ebc96ae9a6fac535b87b1964d47949ec22c19e3f32f3e760ff3c5e15cca31", "target": "automation/qa/audit_state_number_parity.py"}
+  ]
+}

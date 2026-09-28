@@ -1,0 +1,19 @@
+# Canonical source bytes are authoritative; these attributes affect diff checks only.
+research/derived/ge16-per-seat-projection.csv whitespace=cr-at-eol
+"research/states/DUN Johor/dun-election-results-latest.csv" whitespace=cr-at-eol
+"research/states/DUN Johor/federal-election-results-latest.csv" whitespace=cr-at-eol
+"research/states/DUN Kedah/dun-election-results-latest.csv" whitespace=cr-at-eol
+"research/states/DUN Kelantan/dun-election-results-latest.csv" whitespace=cr-at-eol
+"research/states/DUN Melaka/dun-election-results-latest.csv" whitespace=cr-at-eol
+"research/states/DUN Negeri Sembilan/dun-election-results-latest.csv" whitespace=cr-at-eol
+"research/states/DUN Pahang/dun-election-results-latest.csv" whitespace=cr-at-eol
+"research/states/DUN Perak/dun-election-results-latest.csv" whitespace=cr-at-eol
+"research/states/DUN Perlis/dun-election-results-latest.csv" whitespace=cr-at-eol
+"research/states/DUN Pulau Pinang/dun-election-results-latest.csv" whitespace=cr-at-eol
+"research/states/DUN Sabah/dun-election-results-latest.csv" whitespace=cr-at-eol
+"research/states/DUN Sabah/sabah-2018-2020-swing-by-seat.csv" whitespace=cr-at-eol
+"research/states/DUN Sabah/sabah-seat-delineation-map.csv" whitespace=cr-at-eol
+"research/states/DUN Sarawak/dun-election-results-latest.csv" whitespace=cr-at-eol
+"research/states/DUN Selangor/dun-election-results-latest.csv" whitespace=cr-at-eol
+"research/states/DUN Terengganu/dun-election-results-latest.csv" whitespace=cr-at-eol
+research/derived/ge16-per-seat-flip-narratives.md whitespace=-blank-at-eof

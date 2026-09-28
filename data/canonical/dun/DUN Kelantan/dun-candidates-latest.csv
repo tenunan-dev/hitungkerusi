@@ -1,0 +1,97 @@
+seat,name,party,coalition,votes,votes_perc,rank,result,sex,ethnicity,age
+N.01 Pengkalan Kubor,Wan Roslan bin Wan Hamat (Ustaz Lan),PAS,PN,14043,63.6986301369863,1,won,M,Malay,57
+N.01 Pengkalan Kubor,Zulkifli bin Abdullah (Tok Krawat),UMNO,BN,8003,36.3013698630137,2,lost,M,Malay,59
+N.02 Kelaboran,Mohd Adanan bin Hassan (Cikgu Nan),PAS,PN,15890,70.9121742234916,1,won,M,Malay,68
+N.02 Kelaboran,Mohd Rosdi bin Razali,UMNO,BN,6518,29.087825776508392,2,lost,M,Malay,40
+N.03 Pasir Pekan,Ahmad bin Yakob (Ustaz Mad),PAS,PN,18783,75.87558069076954,1,won,M,Malay,73
+N.03 Pasir Pekan,Mohamad Zamakh Sari bin Ibrahim,PKR,PH,5972,24.124419309230458,2,lost,M,Malay,51
+N.04 Wakaf Bharu,Mohd Rusli bin Abdullah,PAS,PN,15522,67.73137845267705,1,won,M,Malay,52
+N.04 Wakaf Bharu,Abdul Mannan bin Md Said (Abe Nan),UMNO,BN,7395,32.268621547322944,2,lost,M,Malay,44
+N.05 Kijang,Izani bin Husin,PAS,PN,14552,75.80745988747655,1,won,M,Malay,60
+N.05 Kijang,Haris bin Hussin,UMNO,BN,4644,24.192540112523442,2,lost,M,Malay,48
+N.06 Chempaka,Nik Asma' Bahrum bin Nik Abdullah,PAS,PN,16728,74.45918276506721,1,won,M,Malay,51
+N.06 Chempaka,Nik Normi binti Nik Ayub,UMNO,BN,5504,24.499243300988162,2,lost,F,Malay,50
+N.06 Chempaka,Ibrahim bin Sulong (Abe Li Tok Gawa),BEBAS,ALONE,234,1.0415739339446275,3,lost_deposit,M,Malay,70
+N.07 Panchor,Mohd Amar bin Abdullah (Nik Amar),PAS,PN,18700,70.00074867110878,1,won,M,Malay,64
+N.07 Panchor,Syed Mohd Alidustur bin Syed Mohd Zain,PKR,PH,8014,29.99925132889122,2,lost,M,Malay,50
+N.08 Tanjong Mas,Rohani binti Ibrahim (Kak Ani),PAS,PN,17529,66.2346495371245,1,won,F,Malay,58
+N.08 Tanjong Mas,Zinda Khalil Sastro bin Hassan,PKR,PH,8936,33.765350462875496,2,lost,M,Malay,47
+N.09 Kota Lama,Hafidzah binti Mustakim,AMANAH,PH,9691,49.97679335774328,1,won,F,Malay,59
+N.09 Kota Lama,Zamri bin Ismail,PAS,PN,9489,48.935072971997315,2,lost,M,Malay,61
+N.09 Kota Lama,Tan Boon Kian (Andy Tan @ Awang),PRM,ALONE,126,0.6497859831880769,3,lost_deposit,M,Chinese,55
+N.09 Kota Lama,Izat Bukhary bin Ismail Bukhary,BEBAS,ALONE,85,0.43834768707132177,4,lost_deposit,M,Malay,56
+N.10 Bunut Payong,Shaari bin Mat Yaman,PAS,PN,13887,62.65565782349757,1,won,M,Malay,58
+N.10 Bunut Payong,Mohamed Hasnan bin Che Hussin,UMNO,BN,8277,37.34434217650244,2,lost,M,Malay,65
+N.11 Tendong,Rozi bin Muhamad,PAS,PN,12360,61.923847695390776,1,won,M,Malay,51
+N.11 Tendong,Noor Hariri bin Mohamed Noor (Abe Hariri),UMNO,BN,6514,32.635270541082164,2,lost,M,Malay,44
+N.11 Tendong,Suzainal Adnan bin Sukri,BEBAS,ALONE,1086,5.440881763527054,3,lost_deposit,M,Malay,44
+N.12 Pengkalan Pasir,Mohamad Nasriff bin Daud @ Daud Yatimee,PAS,PN,13077,70.71324284864544,1,won,M,Malay,57
+N.12 Pengkalan Pasir,Rushdan bin Mustafa,AMANAH,PH,5416,29.286757151354564,2,lost,M,Malay,60
+N.13 Meranti,Mohd Nassuruddin bin Daud,PAS,PN,13260,76.35609812276863,1,won,M,Malay,58
+N.13 Meranti,Zahri bin Omar (Tok Gawa Zahri),UMNO,BN,4106,23.64390187723137,2,lost,M,Malay,57
+N.14 Chetok,Zuraidin bin Abdullah,PAS,PN,12202,74.37976226760135,1,won,M,Malay,54
+N.14 Chetok,Mohamad Ezzat Zahrim bin Mohd Hanuzi,PKR,PH,4203,25.62023773239866,2,lost,M,Malay,33
+N.15 Gual Periok,Kamaruzaman bin Mohamad,PAS,PN,11557,64.18772563176896,1,won,M,Malay,50
+N.15 Gual Periok,Anuar bin Mohamad (Abe Wa),UMNO,BN,6448,35.812274368231044,2,lost,M,Malay,44
+N.16 Apam Putra,Zamakhshari bin Muhamad (Abe Zam),PAS,PN,10606,61.11911485045813,1,won,M,Malay,52
+N.16 Apam Putra,Akbar bin Salim,UMNO,BN,6747,38.88088514954187,2,lost,M,Malay,47
+N.17 Salor,Saizol bin Ismail (Abe Joe),PAS,PN,15893,71.1860610946878,1,won,M,Malay,43
+N.17 Salor,Mohamad bin Husain (Adik Mad),UMNO,BN,6433,28.81393890531219,2,lost,M,Malay,40
+N.18 Pasir Tumboh,Abd Rahman bin Yunus,PAS,PN,17814,76.60617528167197,1,won,M,Malay,60
+N.18 Pasir Tumboh,Naziratul Aini binti Muhamad Sayuty (Aina Sayuty),PKR,PH,5440,23.39382471832803,2,lost,F,Malay,37
+N.19 Demit,Mohd Asri bin Mat Daud,PAS,PN,18683,75.39243775473145,1,won,M,Malay,46
+N.19 Demit,Ismail bin Ghani (Tok Weil),AMANAH,PH,6098,24.607562245268554,2,lost,M,Malay,69
+N.20 Tawang,Harun bin Ismail,PAS,PN,21665,79.219686997221,1,won,M,Malay,52
+N.20 Tawang,Che Mat Isa bin Che Dir,AMANAH,PH,5683,20.780313002778996,2,lost,M,Malay,72
+N.21 Pantai Irama,Mohd Huzaimy bin Che Husin (Haji Mie),PAS,PN,17779,70.80728025807478,1,won,M,Malay,58
+N.21 Pantai Irama,Zakiah binti Md Noor (Kak Yah),UMNO,BN,7330,29.192719741925206,2,lost,F,Malay,63
+N.22 Jelawat,Zameri bin Mat Nawang (Loyar Zameri),PAS,PN,16885,69.0903883137608,1,won,M,Malay,54
+N.22 Jelawat,Yusri bin Che Noh,UMNO,BN,7277,29.776177421334754,2,lost,M,Malay,52
+N.22 Jelawat,Zulkarnain bin Haron (Baba Zul),BEBAS,ALONE,277,1.133434264904456,3,lost_deposit,M,Malay,62
+N.23 Melor,Wan Rohimi bin Wan Daud,PAS,PN,12688,70.12656828607749,1,won,M,Malay,48
+N.23 Melor,Azmi bin Ishak,UMNO,BN,5405,29.87343171392251,2,lost,M,Malay,62
+N.24 Kadok,Azami bin Mohd Nor,PAS,PN,10584,76.98014401047348,1,won,M,Malay,66
+N.24 Kadok,Mohd Azizan bin Abdul Razak @ Rajab,AMANAH,PH,3165,23.019855989526512,2,lost,M,Malay,51
+N.25 Kok Lanas,Mohamed Farid bin Mohamed Zawawi,BERSATU,PN,15478,68.07406430047939,1,won,M,Malay,56
+N.25 Kok Lanas,Ahmad bin Deraman (Abe Mat Jelira),UMNO,BN,7259,31.925935699520608,2,lost,M,Malay,56
+N.26 Bukit Panau,Abdul Fattah bin Mahmood,PAS,PN,22582,79.13512755817213,1,won,M,Malay,60
+N.26 Bukit Panau,Samsu Adabi bin Mamat,AMANAH,PH,5954,20.864872441827867,2,lost,M,Malay,54
+N.27 Gual Ipoh,Bahari bin Mohamad Nor,BERSATU,PN,10320,70.26143790849673,1,won,M,Malay,55
+N.27 Gual Ipoh,Zuhairi bin Zakaria (Jeri),UMNO,BN,4368,29.73856209150327,2,lost,M,Malay,32
+N.28 Kemahang,Md Anizam bin Ab Rahman,PAS,PN,10375,77.20068457474515,1,won,M,Malay,69
+N.28 Kemahang,Mazli bin Mustafa (Abe Jek),UMNO,BN,3064,22.799315425254854,2,lost,M,Malay,56
+N.29 Selising,Tuan Mohd Saripudin bin Tuan Ismail,PAS,PN,12481,69.11235395093858,1,won,M,Malay,51
+N.29 Selising,Hashim bin Ismail,UMNO,BN,5578,30.887646049061413,2,lost,M,Malay,57
+N.30 Limbongan,Nor Asilah binti Mohamed Zin,PAS,PN,15183,73.04435677860099,1,won,F,Malay,50
+N.30 Limbongan,Kamaruddin bin Mat Zin (Cikgu Din),PKR,PH,5603,26.95564322139902,2,lost,M,Malay,57
+N.31 Semerak,Nor Sham bin Sulaiman (Norsham Cikgu Abang),PAS,PN,11531,66.90843681095508,1,won,M,Malay,58
+N.31 Semerak,Marshela binti Ali (Shela Cikgu Ali Golok),UMNO,BN,5703,33.09156318904491,2,lost,F,Malay,41
+N.32 Gaal,Mohd Rodzi bin Ja'afar,PAS,PN,10388,72.64843695363312,1,won,M,Malay,55
+N.32 Gaal,Mohd Aliff Nasir bin Mat Nasin,UMNO,BN,3911,27.351563046366877,2,lost,M,Malay,36
+N.33 Pulai Chondong,Azhar bin Salleh,PAS,PN,11636,67.5137800986365,1,won,M,Malay,56
+N.33 Pulai Chondong,Muhammad Fakhran bin Che Jusoh @ Yusoff,UMNO,BN,5599,32.486219901363505,2,lost,M,Malay,26
+N.34 Temangan,Mohamed Fadzli bin Hassan,PAS,PN,11446,73.2544,1,won,M,Malay,55
+N.34 Temangan,Abdul Kadir bin Othman,AMANAH,PH,3967,25.3888,2,lost,M,Malay,61
+N.34 Temangan,Fauzi bin Seman,BEBAS,ALONE,212,1.3568,3,lost_deposit,M,Malay,60
+N.35 Kemuning,Ahmad Zakhran bin Mat Noor,PAS,PN,13168,63.77064264613298,1,won,M,Malay,41
+N.35 Kemuning,Mohd Fakaruddin bin Ismail (Abe Fakarudin),UMNO,BN,7481,36.229357353867016,2,lost,M,Malay,44
+N.36 Bukit Bunga,Mohd Almidi bin Jaafar,BERSATU,PN,8540,66.05816831683168,1,won,M,Malay,48
+N.36 Bukit Bunga,Mohd Adhan bin Kechik,UMNO,BN,4388,33.94183168316832,2,lost,M,Malay,68
+N.37 Air Lanas,Kamarudin bin Mohd Nor,BERSATU,PN,9535,67.81167769006473,1,won,M,Malay,76
+N.37 Air Lanas,Nasrul Hadi bin Kamaruzaman,UMNO,BN,4526,32.18832230993528,2,lost,M,Malay,42
+N.38 Kuala Balah,Abdul Hadi bin Awang Kechil,PAS,PN,6186,63.309794289223206,1,won,M,Malay,70
+N.38 Kuala Balah,Muhammad Yamin Anuar bin Mat Zin,UMNO,BN,3585,36.690205710776794,2,lost,M,Malay,37
+N.39 Mengkebang,Zubir bin Abu Bakar,PAS,PN,12531,78.63821775964858,1,won,M,Malay,50
+N.39 Mengkebang,Mohd Shukri bin Ishak (Abe Yie),PKR,PH,3404,21.361782240351427,2,lost,M,Malay,64
+N.40 Guchil,Hilmi bin Abdullah (Lawyer Mie),PAS,PN,10826,70.49094934236228,1,won,M,Malay,46
+N.40 Guchil,Zuber bin Hassan,UMNO,BN,4532,29.509050657637715,2,lost,M,Malay,61
+N.41 Manek Urai,Mohd Fauzi bin Abdullah (Abe Uji),PAS,PN,10355,78.32829046898638,1,won,M,Malay,64
+N.41 Manek Urai,Suzaini Adlina binti Sukri (Che Nie),UMNO,BN,2865,21.671709531013615,2,lost,F,Malay,50
+N.42 Dabong,Ku Mohd Zaki bin Ku Hussin (Tok Ime Ku Zaki),PAS,PN,5772,63.44251483842602,1,won,M,Malay,51
+N.42 Dabong,Ahmad Firdaus bin Muhammad (Abe Firdaus),UMNO,BN,3326,36.55748516157397,2,lost,M,Malay,41
+N.43 Nenggiri,Mohd Azizi bin Abu Naim,BERSATU,PN,6517,53.31315445026178,1,won,M,Malay,51
+N.43 Nenggiri,Ab Aziz bin Yusoff,UMNO,BN,5707,46.68684554973822,2,lost,M,Malay,62
+N.44 Paloh,Shaari bin Mat Hussain,BERSATU,PN,7407,58.743754461099215,1,won,M,Malay,61
+N.44 Paloh,Amran bin Arifin,UMNO,BN,5202,41.256245538900785,2,lost,M,Malay,46
+N.45 Galas,Mohd Syahbuddin bin Hashim (Abe Din),UMNO,BN,10742,59.19435719402656,1,won,M,Malay,43
+N.45 Galas,Mohd Tarmizi bin Abd Rahman (Ustaz Ji),PAS,PN,7405,40.80564280597344,2,lost,M,Malay,46

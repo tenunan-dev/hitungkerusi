@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hitung Kerusi 222 — peneroka negeri dan kerusi Parlimen mengikut negeri.">
+  <title>Negeri — Hitung Kerusi 222</title>
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="states federal">
+  <!-- THESIS: State analysis is a peer to the national picture, not a buried filter. OWN-WORLD: The shared civic wayfinding system uses a restrained geographic tint. STORY: choose a state, see its electoral clock and parliamentary evidence, then inspect every seat. FIRST VIEWPORT: state selector, election clock, and seat context share equal prominence. FORM: Civic wayfinding board, seed fe6a62ce. FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md -->
+  <div id="topbar-root"></div>
+  <main>
+    <section class="section state-intro" id="state-intro">
+      <div class="container">
+        <div class="overview-question">
+          <p class="state-eyebrow">Pilihan raya negeri</p>
+          <h1 id="state-title">Negeri</h1>
+          <p id="state-summary">Pilih negeri untuk melihat kedudukan pilihan raya negeri dan kerusi Parlimennya.</p>
+        </div>
+        <div class="state-picker-wrap">
+          <label for="state-dashboard-select">Pilih negeri</label>
+          <select id="state-dashboard-select"></select>
+          <div class="state-picker-links">
+            <a class="state-map-link" id="state-map-link" href="/app/maps.html">Buka peta kerusi</a>
+            <a class="state-report-link" id="state-report-link" href="/state/sarawak.html">Baca laporan negeri</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="state-stat-grid" id="state-stats"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container state-detail-grid">
+        <section class="state-panel">
+          <h2>Gambaran negeri</h2>
+          <div id="state-composition"></div>
+        </section>
+        <section class="state-panel">
+          <h2>Kerusi paling rapat</h2>
+          <div id="state-tight"></div>
+        </section>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 id="state-seats-heading">Kerusi Parlimen</h2>
+        <p class="muted">Data di bawah ialah kerusi Parlimen dalam negeri yang dipilih; ia dilabel berasingan daripada maklumat pilihan raya DUN.</p>
+        <div class="table-wrap">
+          <table class="state-seat-table">
+            <thead><tr><th>Kerusi</th><th>Kawasan</th><th>GE15</th><th>Unjuran</th><th>Margin PRU16</th></tr></thead>
+            <tbody id="state-seats"></tbody>
+          </table>
+        </div>
+        <p class="compact-followup" id="state-seats-note"></p>
+      </div>
+    </section>
+  </main>
+  <footer><div class="container"><p>Hitung Kerusi 222 · Unjuran telus PRU16 · Sumber: EC · ElectionData.MY / MECo · DOSM · Parlimen</p></div></footer>
+  <script src="/js/data.js"></script>
+  <script src="/js/dun-data.js"></script>
+  <script src="/js/components.js"></script>
+  <script src="/js/app-states.js"></script>
+</body>
+</html>

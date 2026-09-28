@@ -1,0 +1,151 @@
+seat,name,party,coalition,votes,votes_perc,rank,result,sex,ethnicity,age
+N.01 Tanah Rata,Ho Chi Yang,DAP,PH,9856,53.04343146224638,1,won,M,Chinese,27
+N.01 Tanah Rata,Wong Yap Wah,MCA,BN,7372,39.67493676336042,2,lost,M,Chinese,38
+N.01 Tanah Rata,Lai Chii Wen,GERAKAN,PN,1353,7.2816317743931975,3,lost_deposit,M,Chinese,45
+N.02 Jelai,Wan Rosdy bin Wan Ismail,UMNO,BN,10058,68.8244149445737,1,won,M,Malay,64
+N.02 Jelai,Abdul Rasid Mohamed Ali,BERSATU,PN,3118,21.335705487888326,2,lost,M,Malay,57
+N.02 Jelai,Ismail bin Mohd Hussin,PKR,PH,1438,9.839879567537977,3,lost_deposit,M,Malay,51
+N.03 Padang Tengku,Mustapa bin Long,UMNO,BN,7198,47.14435420487293,1,won,M,Malay,61
+N.03 Padang Tengku,Muhamad Khaider bin Kamil,PAS,PN,6691,43.82368352108986,2,lost,M,Malay,32
+N.03 Padang Tengku,Ruzi bin Yusuff,AMANAH,PH,1203,7.879224521875819,3,lost_deposit,M,Malay,54
+N.03 Padang Tengku,Mohd Rustam bin Mustapha,PEJUANG,GTA,176,1.1527377521613833,4,lost_deposit,M,Malay,40
+N.04 Cheka,Tuan Ibrahim bin Tuan Man,PAS,PN,5634,45.505209595347715,1,won,M,Malay,62
+N.04 Cheka,Ho Fong Mee,MCA,BN,4411,35.62717066472821,2,lost,M,Chinese,58
+N.04 Cheka,Rasid bin Muhamad,PKR,PH,2255,18.213391486955818,3,lost,M,Malay,63
+N.04 Cheka,Aishaton binti Abu Bakar,PEJUANG,GTA,81,0.6542282529682578,4,lost_deposit,F,Malay,46
+N.05 Benta,Mohd Soffi bin Abdul Razak,UMNO,BN,3948,48.21101477591891,1,won,M,Malay,65
+N.05 Benta,Rizal bin Jamin,PKR,PH,2427,29.637318353889363,2,lost,M,Malay,50
+N.05 Benta,Nor Alias bin Ibrahim,BERSATU,PN,1814,22.151666870191722,3,lost,M,Malay,57
+N.06 Batu Talam,Abd.Aziz bin Mat Kiram,UMNO,BN,7992,52.98329355608592,1,won,M,Malay,62
+N.06 Batu Talam,Ahmad Sabri bin Mat Dui,BERSATU,PN,5123,33.96313975072925,2,lost,M,Malay,33
+N.06 Batu Talam,Shahuddin bin Abdul Rahman,PKR,PH,1969,13.053566693184832,3,lost,M,Malay,65
+N.07 Tras,Tengku Zulpuri Shah bin Raja Puji,DAP,PH,17255,62.3239182258181,1,won,M,Malay,58
+N.07 Tras,Lim Teck Hoe,MCA,BN,5858,21.158708372462616,2,lost,M,Chinese,46
+N.07 Tras,Amirul Mukminin Kuek Abdullah,GERAKAN,PN,4233,15.289315899732717,3,lost,M,Chinese,44
+N.07 Tras,Mohd Tahir bin Kassim,PEJUANG,GTA,340,1.2280575019865636,4,lost_deposit,M,Malay,63
+N.08 Dong,Fadzli bin Mohamad Kamal,UMNO,BN,6142,45.3384513176349,1,won,M,Malay,42
+N.08 Dong,Tengku Shah Amir bin Tengku Perang,PAS,PN,5096,37.61718461652026,2,lost,M,Malay,54
+N.08 Dong,Mohd Abd Jawaad bin Abd Ghafar(Razmin),AMANAH,PH,2309,17.044364065844835,3,lost,M,Malay,37
+N.09 Tahan,Mohd Zakhwan bin Ahmad Badarddin,PAS,PN,8777,53.96581406787998,1,won,M,Malay,43
+N.09 Tahan,Faezah binti Ishak,UMNO,BN,6763,41.582636497786524,2,lost,F,Malay,35
+N.09 Tahan,Mohd Abd Talib bin Mohd Tahar,AMANAH,PH,724,4.451549434333497,3,lost_deposit,M,Malay,59
+N.10 Damak,Zuridan bin Mohd Daud,PAS,PN,10883,41.527072919449004,1,won,M,Malay,51
+N.10 Damak,Mohamad Rafly bin Mohd Satar,PKR,PH,8587,32.76605487083604,2,lost,M,Malay,61
+N.10 Damak,Muhamad Fasal bin Jamlus,UMNO,BN,6655,25.393978707978782,3,lost,M,Malay,41
+N.10 Damak,Izzuddin bin Ismail,BEBAS,ALONE,82,0.31289350173617736,4,lost_deposit,M,Malay,68
+N.11 Pulau Tawar,Yohanis bin Ahmad,PAS,PN,12955,53.4469243780684,1,won,M,Malay,44
+N.11 Pulau Tawar,Nazri bin Ngah,UMNO,BN,9552,39.40756631874252,2,lost,M,Malay,64
+N.11 Pulau Tawar,Norani bin Muhd (Mohd Arshad),AMANAH,PH,1129,4.657782911836296,3,lost_deposit,M,Malay,53
+N.11 Pulau Tawar,Ridzuan bin Mansor,BEBAS,ALONE,553,2.2814472544246875,4,lost_deposit,M,Malay,48
+N.11 Pulau Tawar,Mohd Rosidi bin Hassan,PEJUANG,GTA,50,0.2062791369280911,5,lost_deposit,M,Malay,40
+N.12 Beserah,Andansura bin Rabu,PAS,PN,23867,51.79582890253695,1,won,M,Malay,56
+N.12 Beserah,Zulkifli bin Mohamed,AMANAH,PH,12346,26.793116170055775,2,lost,M,Malay,49
+N.12 Beserah,Mustaffar Kamal bin Ab Hamid,UMNO,BN,9346,20.282558215239046,3,lost,M,Malay,69
+N.12 Beserah,Mohd Pauzi bin Taib,PEJUANG,GTA,394,0.8550532780659302,4,lost_deposit,M,Malay,65
+N.12 Beserah,Joseph Tang Sian Yew,BEBAS,ALONE,126,0.2734434341023026,5,lost_deposit,M,Chinese,45
+N.13 Semambu,Chan Chun Kuang,PKR,PH,18902,40.01100715465052,1,won,M,Chinese,30
+N.13 Semambu,Zulfadhli bin Zakariah,PAS,PN,17098,36.19237119512299,2,lost,M,Malay,34
+N.13 Semambu,Mohd Khairul Hisham bin Omar,UMNO,BN,10422,22.060878032259428,3,lost,M,Malay,50
+N.13 Semambu,Rashidah binti Abdul Rahman,BERJASA,GTA,820,1.7357436179670633,4,lost_deposit,F,Malay,38
+N.14 Teruntum,Sim Chon Siang,PKR,PH,12983,58.63252495145193,1,won,M,Chinese,56
+N.14 Teruntum,Tee Choon Ser,MCA,BN,4304,19.437293952942237,2,lost,F,Chinese,41
+N.14 Teruntum,Yap Kim Heng,GERAKAN,PN,3676,16.601183218172785,3,lost,M,Chinese,60
+N.14 Teruntum,Khairul Afifie bin Abdullah,PEJUANG,GTA,1180,5.328997877433049,4,lost_deposit,M,Malay,43
+N.15 Tanjung Lumpur,Rosli bin Abdul Jabar,PAS,PN,16699,54.98156196496773,1,won,M,Malay,56
+N.15 Tanjung Lumpur,Nara bin Nordin,UMNO,BN,7710,25.385223231924144,2,lost,M,Malay,49
+N.15 Tanjung Lumpur,Sabrina binti Md Yusoff,AMANAH,PH,5796,19.08336625839589,3,lost,F,Malay,56
+N.15 Tanjung Lumpur,Ab 'Alim bin Ruslam Ahmad,PEJUANG,GTA,167,0.549848544712235,4,lost_deposit,M,Malay,59
+N.16 Inderapura,Shaik Fauzan bin Sharif,UMNO,BN,7029,46.152330925804335,1,won,M,Malay,57
+N.16 Inderapura,Mohamed Hafizal bin Mohamed Shah,PAS,PN,6107,40.09848982271832,2,lost,M,Malay,41
+N.16 Inderapura,Fakhrul Anuar bin Zulkawi,PKR,PH,2030,13.328956007879187,3,lost,M,Malay,53
+N.16 Inderapura,Norashikin binti Ismail,PEJUANG,GTA,64,0.42022324359816154,4,lost_deposit,F,Malay,-1
+N.17 Sungai Lembing,Mohamad Ayub bin Mat Ashri,PAS,PN,6962,47.3798829454199,1,won,M,Malay,34
+N.17 Sungai Lembing,Umor Arbain bin Dollah,UMNO,BN,5908,40.20688716482918,2,lost,M,Malay,64
+N.17 Sungai Lembing,Ahmad bin Omar,PKR,PH,1738,11.827956989247312,3,lost_deposit,M,Malay,67
+N.17 Sungai Lembing,Anuar bin Mohd Tajuddin,PEJUANG,GTA,86,0.5852729005036069,4,lost_deposit,M,Malay,50
+N.18 Lepar,Mohd Yazid bin Mohd Yunus,BERSATU,PN,8436,42.77456647398844,1,won,M,Malay,52
+N.18 Lepar,Abd Rahim bin Muda,UMNO,BN,8017,40.65003549335767,2,lost,M,Malay,57
+N.18 Lepar,Muhammad Ibrohim bin Mazalan,AMANAH,PH,3166,16.053138626914105,3,lost,M,Malay,39
+N.18 Lepar,Rosminahar bin Mohd Amin,PEJUANG,GTA,103,0.522259405739783,4,lost_deposit,M,Malay,62
+N.19 Panching,Mohd Tarmizi bin Yahaya,PAS,PN,15167,55.01069964818106,1,won,M,Malay,47
+N.19 Panching,Fauziah binti Abd Wahab,UMNO,BN,8031,29.12843204816655,2,lost,F,Malay,59
+N.19 Panching,Haslindalina binti Hashim,PKR,PH,4243,15.389358383809073,3,lost,F,Malay,48
+N.19 Panching,Afif Syairol bin Abdul Rahim,PEJUANG,GTA,130,0.47150991984331364,4,lost_deposit,M,Malay,50
+N.20 Pulau Manis,Mohammad Rafiq Khan bin Ahmad Khan,PAS,PN,13064,54.211967798157524,1,won,M,Malay,35
+N.20 Pulau Manis,Khairuddin bin Mahmud,UMNO,BN,9133,37.89941073948045,2,lost,M,Malay,70
+N.20 Pulau Manis,Muhammad Khairil bin Khalid,DAP,PH,1901,7.888621462362022,3,lost_deposit,M,Malay,33
+N.21 Peramu Jaya,Mohamad Nizar bin Mohamad Najib,UMNO,BN,19337,57.627775294292945,1,won,M,Malay,44
+N.21 Peramu Jaya,Abu Talib bin Muhammad,BERSATU,PN,11514,34.3138131426017,2,lost,M,Malay,69
+N.21 Peramu Jaya,Tugimon bin Abdul Hamid,AMANAH,PH,2511,7.483236477425123,3,lost_deposit,M,Malay,64
+N.21 Peramu Jaya,Tengku Zainul Hisham Tengku Hussin,BEBAS,ALONE,193,0.5751750856802266,4,lost_deposit,M,Malay,66
+N.22 Bebar,Mohammad Fakhruddin bin Mohd Ariff,UMNO,BN,10485,67.37132943519887,1,won,M,Malay,56
+N.22 Bebar,Narzatul Haidar bin Sakim,BERSATU,PN,4212,27.064190708732248,2,lost,M,Malay,44
+N.22 Bebar,Ibrahim bin Sulaiman,AMANAH,PH,866,5.564479856068881,3,lost_deposit,M,Malay,64
+N.23 Chini,Mohd Sharim bin Md Zain,UMNO,BN,10588,53.24884329108831,1,won,M,Malay,43
+N.23 Chini,Fahrur Rozi bin Jalaluddin,PAS,PN,8463,42.56185878092939,2,lost,M,Malay,36
+N.23 Chini,Mohamad Yazid bin Che Mat,PKR,PH,833,4.189297927982297,3,lost_deposit,M,Malay,48
+N.24 Luit,Mohd Sofian bin Abd Jalil,PAS,PN,6002,48.31750120753502,1,won,M,Malay,61
+N.24 Luit,Jamaluddin bin Md. Marzuki,UMNO,BN,4836,38.930928996940914,2,lost,M,Malay,45
+N.24 Luit,Mohd Afandi bin Abd Rani,PKR,PH,1584,12.75156979552407,3,lost,M,Malay,58
+N.25 Kuala Sentul,Jasri bin Jamaludin,BERSATU,PN,6016,46.227140003073615,1,won,M,Malay,53
+N.25 Kuala Sentul,Mohd Khairuddin bin Mohd Ali Hanafiah,UMNO,BN,5775,44.37528815122176,2,lost,M,Malay,40
+N.25 Kuala Sentul,Amran bin Tahir,PKR,PH,1223,9.397571845704626,3,lost_deposit,M,Malay,47
+N.26 Chenor,Mujibur Rahman bin Ishak,PAS,PN,8855,56.61402723611022,1,won,M,Malay,50
+N.26 Chenor,Saiful Anuar bin Mokhtar,UMNO,BN,6149,39.31334313662809,2,lost,M,Malay,49
+N.26 Chenor,Nor Hisham bin Mohd Suki,AMANAH,PH,637,4.072629627261684,3,lost_deposit,M,Malay,48
+N.27 Jenderak,Rodzuan bin Zaaba,UMNO,BN,5409,50.032374433447416,1,won,M,Malay,53
+N.27 Jenderak,Md Anuar bin Daud,PAS,PN,3955,36.58310979557858,2,lost,M,Malay,38
+N.27 Jenderak,Mohamad Hafez bin Harun,PKR,PH,1447,13.384515770974009,3,lost,M,Malay,45
+N.28 Kerdau,Syed Ibrahim bin Syed Ahmad,UMNO,BN,6531,53.88169292962627,1,won,M,Malay,55
+N.28 Kerdau,Mohd Arhan bin Mohd Saludin,BERSATU,PN,4602,37.96716442537744,2,lost,M,Malay,59
+N.28 Kerdau,Ahmad Arif bin Md Daud,AMANAH,PH,988,8.151142644996288,3,lost_deposit,M,Malay,30
+N.29 Jengka,Shahril Azman bin Abd Halim,PAS,PN,15309,61.66767371601208,1,won,M,Malay,50
+N.29 Jengka,Norhasmimi binti Abdul Ghani,UMNO,BN,8405,33.85699899295066,2,lost,F,Malay,47
+N.29 Jengka,Jamaluddin bin Abd Rahim,AMANAH,PH,1111,4.475327291037261,3,lost_deposit,M,Malay,56
+N.30 Mentakab,Woo Chee Wan,DAP,PH,12905,45.38261358840906,1,won,M,Chinese,63
+N.30 Mentakab,Mohd Yusoff bin Abdullah,BERSATU,PN,9248,32.52215501477001,2,lost,M,Malay,59
+N.30 Mentakab,Wong Tze Shiang,MCA,BN,5996,21.085947390631592,3,lost,M,Chinese,43
+N.30 Mentakab,Abdul Wahab bin Kadir,PUTRA,GTA,287,1.0092840061893376,4,lost_deposit,M,Malay,55
+N.31 Lanchang,Hassan bin Omar,PAS,PN,10024,40.14738865748158,1,won,M,Malay,60
+N.31 Lanchang,Razmi bin Sudin,UMNO,BN,9573,38.341076578019866,2,lost,M,Malay,50
+N.31 Lanchang,Rosli bin Ismail (Ahmad),PKR,PH,4840,19.3848125600769,3,lost,M,Malay,62
+N.31 Lanchang,Zaini bin Mohamad,PEJUANG,GTA,328,1.31368151233579,4,lost_deposit,M,Malay,55
+N.31 Lanchang,Abd Jamil bin Yaakub,PRM,ALONE,203,0.8130406920858699,5,lost_deposit,M,Malay,46
+N.32 Kuala Semantan,Hassanuddin bin Salim,PAS,PN,12386,42.451245844329435,1,won,M,Malay,54
+N.32 Kuala Semantan,Nor Azmi bin Mat Ludin,UMNO,BN,10648,36.49449909175035,2,lost,M,Malay,59
+N.32 Kuala Semantan,Azizul Shah bin Mohd Noor,AMANAH,PH,5918,20.283099701819925,3,lost,M,Malay,44
+N.32 Kuala Semantan,Mohd Syafiq bin Mohd Khaidir,PEJUANG,GTA,225,0.7711553621002845,4,lost_deposit,M,Malay,28
+N.33 Bilut,Lee Chin Chen,DAP,PH,8895,48.146143437077136,1,won,M,Chinese,38
+N.33 Bilut,Wong Siew Mun,MCA,BN,5784,31.307171853856563,2,lost,F,Chinese,32
+N.33 Bilut,Sri Chandra a/l Balabedha,GERAKAN,PN,3363,18.20297699594046,3,lost,M,Indian,46
+N.33 Bilut,Mohd Shokri bin Mahmood,PUTRA,GTA,433,2.3437077131258457,4,lost_deposit,M,Malay,61
+N.34 Ketari,Thomas Su Keong Siong,DAP,PH,9722,41.17049208096892,1,won,M,Chinese,56
+N.34 Ketari,Amizar bin Abu Adam,UMNO,BN,9602,40.66231896332684,2,lost,M,Malay,49
+N.34 Ketari,Tan Wei Leong (William Tan),GERAKAN,PN,4290,18.167188955704244,3,lost,M,Chinese,41
+N.35 Sabai,Arumugam a/l Veerappa Pillai,MIC,BN,4444,37.51794005909667,1,won,M,Indian,59
+N.35 Sabai,Kamache a/p A Doray Rajoo,DAP,PH,4348,36.707471506964964,2,lost,F,Indian,52
+N.35 Sabai,Nurul Qomar bin Abdol Talib,BERSATU,PN,3053,25.774588433938373,3,lost,M,Malay,37
+N.36 Pelangai,Johari bin Harun,UMNO,BN,7308,57.70688566013897,1,won,M,Malay,52
+N.36 Pelangai,Kasim bin Samat,PAS,PN,3260,25.742261528742894,2,lost,M,Malay,61
+N.36 Pelangai,Ahmed Wafiuddin bin Shamsuri,AMANAH,PH,2031,16.037586860391663,3,lost,M,Malay,27
+N.36 Pelangai,Isa bin Ahmad Isma,PUTRA,GTA,65,0.5132659507264687,4,lost_deposit,M,Malay,-1
+N.37 Guai,Sabariah binti Saidan,UMNO,BN,9425,49.462083442665964,1,won,F,Malay,54
+N.37 Guai,Nor Hashimah binti Mat Noh,BERSATU,PN,6747,35.40802938861191,2,lost,F,Malay,52
+N.37 Guai,Noraini binti Abdul Ghani,AMANAH,PH,1906,10.002623983206508,3,lost_deposit,F,Malay,57
+N.37 Guai,Jafari bin Mohd Yusof,BEBAS,ALONE,977,5.127263185515613,4,lost_deposit,M,Malay,50
+N.38 Triang,Leong Yu Man,DAP,PH,10816,57.01634159198735,1,won,F,Chinese,37
+N.38 Triang,Yee Cheng Hwa,MCA,BN,4597,24.232999472851873,2,lost,M,Chinese,44
+N.38 Triang,Muhamad Izzuddin bin Zulkifli,BERSATU,PN,3557,18.75065893516078,3,lost,M,Malay,31
+N.39 Kemayan,Khaizulnizam bin Mohamad Zuldin,UMNO,BN,13778,66.74417478079737,1,won,M,Malay,41
+N.39 Kemayan,Shapuan bin Hussin,PAS,PN,6865,33.255825219202634,2,lost,M,Malay,61
+N.40 Bukit Ibam,Nazri bin Ahmad,PAS,PN,12488,52.87940379403794,1,won,M,Malay,47
+N.40 Bukit Ibam,Samsiah binti Arshad,UMNO,BN,10032,42.47967479674797,2,lost,F,Malay,64
+N.40 Bukit Ibam,Barirah binti Mohd Mokhtar,PKR,PH,1096,4.6409214092140925,3,lost_deposit,F,Malay,61
+N.41 Muadzam Shah,Razali bin Kassim,UMNO,BN,10990,49.35111590102834,1,won,M,Malay,53
+N.41 Muadzam Shah,Jaafar bin Mustaffa,BERSATU,PN,9756,43.80978041223225,2,lost,M,Malay,52
+N.41 Muadzam Shah,Norlaily binti Forizad,PKR,PH,1523,6.8391036867394135,3,lost_deposit,F,Malay,34
+N.42 Tioman,Johari bin Hussain,UMNO,BN,8080,48.945965592440025,1,won,M,Malay,49
+N.42 Tioman,Nor Idayu binti Hashim,PAS,PN,7507,45.474921250302884,2,lost,F,Malay,35
+N.42 Tioman,Mohd Fadzli bin Mohd Ramly,AMANAH,PH,784,4.749212503028835,3,lost_deposit,M,Malay,44
+N.42 Tioman,Osman bin A.Bakar,PEJUANG,GTA,79,0.47855585170826265,4,lost_deposit,M,Malay,66
+N.42 Tioman,Sulaiman bin Bakar,BEBAS,ALONE,58,0.3513448025199903,5,lost_deposit,M,Malay,57

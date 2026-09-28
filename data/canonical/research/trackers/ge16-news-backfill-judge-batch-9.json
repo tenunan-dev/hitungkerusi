@@ -1,0 +1,228 @@
+{
+ "schema": "ge16.news-backfill-judge-batch.v1",
+ "batch": 9,
+ "collection_id": "2026-09-26T06:06:07+00:00",
+ "count": 20,
+ "items": [
+  {
+   "query": "GE16 Malaysia",
+   "title": "Ramasamy: Blame PAS if PH emerges triumphant in GE16, PMX returns to office for a 2nd term in office",
+   "desc": "&lt;a href=\"https://news.google.com/rss/articles/CBMiwgFBVV95cUxNVkFtTTE0aENFWmZvOUZ3dHZORFRiZDNNSDJYaUZPazl6QjZZUVR1RGp1YWF1LXlzVkhGd05wbFdlSXZ1clg1ZDN4dTdBX3lrdHdxLUlrZk5fYy1DMFV6LVRGTkdlVS15UkRnRTYwdkJoNDJIY0hmRTUwYzVDY2xXUWJiWFFsejFSeGtmdWVwODhtemJPS1BaZGpQak91WkdaTUtWeVU0LS1tU3d1SFhnZmZwanhkdlRpejRVU1g1Yl9Cdw?oc=5\" target=\"_blank\"&gt;Ramasamy: Blame PAS if PH emerges triumphant in GE16, PMX r",
+   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNVkFtTTE0aENFWmZvOUZ3dHZORFRiZDNNSDJYaUZPazl6QjZZUVR1RGp1YWF1LXlzVkhGd05wbFdlSXZ1clg1ZDN4dTdBX3lrdHdxLUlrZk5fYy1DMFV6LVRGTkdlVS15UkRnRTYwdkJoNDJIY0hmRTUwYzVDY2xXUWJiWFFsejFSeGtmdWVwODhtemJPS1BaZGpQak91WkdaTUtWeVU0LS1tU3d1SFhnZmZwanhkdlRpejRVU1g1Yl9Cdw?oc=5",
+   "date": "2026-06-08T07:00:00+00:00",
+   "source": "Focus Malaysia",
+   "found_at": "2026-09-26T06:06:07+00:00",
+   "channel": "google-news",
+   "collection_id": "2026-09-26T06:06:07+00:00"
+  },
+  {
+   "query": "Barisan Nasional",
+   "title": "Zahid: BN is at the ready",
+   "desc": "&lt;a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE00WVV2SXZlQnRjWWVPWHoyVklsODdZdUxkNldRTTB1R0pCNWhYOEN4dDVjOWdEcjhhanhJUUo4SmJTdXQyZ2ptNjROaDdqWWtfRzMyNklBUUFYSGN3djl4N1hNaFRzbnJBR3Z1Qk9ZdWRFakNmdXo3UGZrNTVWbFE?oc=5\" target=\"_blank\"&gt;Zahid: BN is at the ready&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;The Star&lt;/font&gt;",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE00WVV2SXZlQnRjWWVPWHoyVklsODdZdUxkNldRTTB1R0pCNWhYOEN4dDVjOWdEcjhhanhJUUo4SmJTdXQyZ2ptNjROaDdqWWtfRzMyNklBUUFYSGN3djl4N1hNaFRzbnJBR3Z1Qk9ZdWRFakNmdXo3UGZrNTVWbFE?oc=5",
+   "date": "2026-05-04T07:00:00+00:00",
+   "source": "The Star",
+   "found_at": "2026-09-26T06:06:07+00:00",
+   "channel": "google-news",
+   "collection_id": "2026-09-26T06:06:07+00:00"
+  },
+  {
+   "query": "Malaysia parliament",
+   "title": "Parliament Malaysia Open Day 2026: What you need to know before you go",
+   "desc": "&lt;a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE1TWkxuWENueGc5eUlKNEl0NmFCaTVlOWluSXAtTk5VRDc5SW9mZGxkeXJDSWpkSW1JODZHQzk1RW14WkV5RUFFNEppLWozUXdQRE1tektqZ1pEem9aV2U1ZXZsZm5MWDhQcU1XcEViZUhuVzlGZ2lXUzhtMExEUlU?oc=5\" target=\"_blank\"&gt;Parliament Malaysia Open Day 2026: What you need to know before you go&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;SoyaCincau&lt;/font&gt",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1TWkxuWENueGc5eUlKNEl0NmFCaTVlOWluSXAtTk5VRDc5SW9mZGxkeXJDSWpkSW1JODZHQzk1RW14WkV5RUFFNEppLWozUXdQRE1tektqZ1pEem9aV2U1ZXZsZm5MWDhQcU1XcEViZUhuVzlGZ2lXUzhtMExEUlU?oc=5",
+   "date": "2026-09-09T07:00:00+00:00",
+   "source": "SoyaCincau",
+   "found_at": "2026-09-26T06:06:07+00:00",
+   "channel": "google-news",
+   "collection_id": "2026-09-26T06:06:07+00:00"
+  },
+  {
+   "query": "Malaysia by-election 2026",
+   "title": "PRNNS: Postal vote count begins across Negeri Sembilan as election results loom",
+   "desc": "&lt;a href=\"https://news.google.com/rss/articles/CBMiwgFBVV95cUxOcHYzQXdHdkViNVJtREZlRE1MNHBkaGVKV3FQdThacWJ4WkxWYmd3cVBVWURIYS1TYkJoWS1la0t5V21BOEstOEtBSENXZldtY0QyRkdfNktyOHhFS2JtekRxbVRFMTlsaE1kS0FJTE5LRjRNT21TWXdMczlGWXZUYmNtQ1ZidzhkMjFiaDloVEYtNGh6WEVTY2ZjcEN4dzMxWXhONmtETWpRTEsxQng0Qk1yMExENFZXMmNvQUtaX1REdw?oc=5\" target=\"_blank\"&gt;PRNNS: Postal vote count begins across Negeri Sembilan as e",
+   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOcHYzQXdHdkViNVJtREZlRE1MNHBkaGVKV3FQdThacWJ4WkxWYmd3cVBVWURIYS1TYkJoWS1la0t5V21BOEstOEtBSENXZldtY0QyRkdfNktyOHhFS2JtekRxbVRFMTlsaE1kS0FJTE5LRjRNT21TWXdMczlGWXZUYmNtQ1ZidzhkMjFiaDloVEYtNGh6WEVTY2ZjcEN4dzMxWXhONmtETWpRTEsxQng0Qk1yMExENFZXMmNvQUtaX1REdw?oc=5",
+   "date": "2026-08-01T07:00:00+00:00",
+   "source": "The Vibes",
+   "found_at": "2026-09-26T06:06:07+00:00",
+   "channel": "google-news",
+   "collection_id": "2026-09-26T06:06:07+00:00"
+  },
+  {
+   "query": "pilihan raya Malaysia",
+   "title": "Johor polls: 2.7 mil voters ready to decide state's future",
+   "desc": "&lt;a href=\"https://news.google.com/rss/articles/CBMiqAFBVV95cUxPRTdvdlJnY1dweWNiQWRrUzF5OTZtLV9hbkNMUmNiV1F4NkRUZUhuZ2dTSF9Qb0Y5dW5DcmJXdjdodXNKODRyeVpOcDhHM3dyTmlfREFndWRwNlF2RDA1eTNYQnN3S05tcTFCeFlmZnNpN1JJMHYyVmNqMlV5UzE2aWgxZ2FaTm1uZW1fRk02MS0yXzBtakN2Y1FtY3A5QTY1WXRwbTFEeDE?oc=5\" target=\"_blank\"&gt;Johor polls: 2.7 mil voters ready to decide state's future&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;fo",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPRTdvdlJnY1dweWNiQWRrUzF5OTZtLV9hbkNMUmNiV1F4NkRUZUhuZ2dTSF9Qb0Y5dW5DcmJXdjdodXNKODRyeVpOcDhHM3dyTmlfREFndWRwNlF2RDA1eTNYQnN3S05tcTFCeFlmZnNpN1JJMHYyVmNqMlV5UzE2aWgxZ2FaTm1uZW1fRk02MS0yXzBtakN2Y1FtY3A5QTY1WXRwbTFEeDE?oc=5",
+   "date": "2026-07-10T07:00:00+00:00",
+   "source": "NST Online",
+   "found_at": "2026-09-26T06:06:07+00:00",
+   "channel": "google-news",
+   "collection_id": "2026-09-26T06:06:07+00:00"
+  },
+  {
+   "query": "Malaysia coalition politics",
+   "title": "Malaysia’s Anwar Faces A Reformist Archrival",
+   "desc": "&lt;a href=\"https://news.google.com/rss/articles/CBMijAFBVV95cUxNdGl0aGZZYkZxa29UYno5cUE2YTRfMTN2ZUhnUVlRMndNSFNFZVMxWVMtVi1QckNHTG05a2NjZDFiYUpBQjJuWGtqcmsyUDZBLWE0SzcyRTQ3dlJsV3RtY3NhWEZDa0p2ZjJlUGFuaFZQZ2hJNVpZZ1lta3M3SE55QlpoMnNuRUVtMDgxNg?oc=5\" target=\"_blank\"&gt;Malaysia’s Anwar Faces A Reformist Archrival&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;Asia Sentinel&lt;/font&gt;",
+   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNdGl0aGZZYkZxa29UYno5cUE2YTRfMTN2ZUhnUVlRMndNSFNFZVMxWVMtVi1QckNHTG05a2NjZDFiYUpBQjJuWGtqcmsyUDZBLWE0SzcyRTQ3dlJsV3RtY3NhWEZDa0p2ZjJlUGFuaFZQZ2hJNVpZZ1lta3M3SE55QlpoMnNuRUVtMDgxNg?oc=5",
+   "date": "2026-06-08T07:00:00+00:00",
+   "source": "Asia Sentinel",
+   "found_at": "2026-09-26T06:06:07+00:00",
+   "channel": "google-news",
+   "collection_id": "2026-09-26T06:06:07+00:00"
+  },
+  {
+   "query": "Barisan Nasional",
+   "title": "MIC stays cool to Zahid’s stand on BN going solo",
+   "desc": "&lt;a href=\"https://news.google.com/rss/articles/CBMirAFBVV95cUxQNmI5UzI3SlU5WTFoV0VWNlZjQjNzM2F3WlFQNFo5dHhPdk5BZU1GUVVoQWxEVzV2OFRCZjBTbmJ6RHJmMGljMm5RYU1oTXBnUzVTaXZKb1FiSk5pX214VlBwN2xwWnhyWFFuSVZySVdDTzNHckJKZ2JwcU0zNEs1OWdFWURWR2FUY0lpS0F4REdMcmkwMi1IaHloZElYTkZobkRwOXJ0enZuOVhG?oc=5\" target=\"_blank\"&gt;MIC stays cool to Zahid’s stand on BN going solo&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font co",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQNmI5UzI3SlU5WTFoV0VWNlZjQjNzM2F3WlFQNFo5dHhPdk5BZU1GUVVoQWxEVzV2OFRCZjBTbmJ6RHJmMGljMm5RYU1oTXBnUzVTaXZKb1FiSk5pX214VlBwN2xwWnhyWFFuSVZySVdDTzNHckJKZ2JwcU0zNEs1OWdFWURWR2FUY0lpS0F4REdMcmkwMi1IaHloZElYTkZobkRwOXJ0enZuOVhG?oc=5",
+   "date": "2026-05-03T07:00:00+00:00",
+   "source": "Free Malaysia Today",
+   "found_at": "2026-09-26T06:06:07+00:00",
+   "channel": "google-news",
+   "collection_id": "2026-09-26T06:06:07+00:00"
+  },
+  {
+   "query": "Pakatan Harapan",
+   "title": "Pakatan Harapan should not question King’s power to grant pardon — Asyraf",
+   "desc": "&lt;a href=\"https://news.google.com/rss/articles/CBMiUEFVX3lxTFBzZVJLOEpZZFFMaTNuQkJfQjZBb2NmOVhkcGZ0cm11RGVpcFZUU25taldZblhfb1puNXRzX1BkQ1dST05yck1zVFprWjdKeFU3?oc=5\" target=\"_blank\"&gt;Pakatan Harapan should not question King’s power to grant pardon — Asyraf&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;The Edge Malaysia&lt;/font&gt;",
+   "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBzZVJLOEpZZFFMaTNuQkJfQjZBb2NmOVhkcGZ0cm11RGVpcFZUU25taldZblhfb1puNXRzX1BkQ1dST05yck1zVFprWjdKeFU3?oc=5",
+   "date": "2026-09-09T07:00:00+00:00",
+   "source": "The Edge Malaysia",
+   "found_at": "2026-09-26T06:06:07+00:00",
+   "channel": "google-news",
+   "collection_id": "2026-09-26T06:06:07+00:00"
+  },
+  {
+   "query": "Malaysia election news",
+   "title": "PH concedes defeat in Negeri Sembilan with 11 seats, blames identity politics",
+   "desc": "&lt;a href=\"https://news.google.com/rss/articles/CBMiUEFVX3lxTE5jZ0lHR1E0dmQ1QThNb01wRGdubF9DLTRsOGFNSW1SRXEydW5Rd284Nk9XS04tXzlUMjhZS1d1R2lxX0F2b3EtVlB6YUFQLTFf?oc=5\" target=\"_blank\"&gt;PH concedes defeat in Negeri Sembilan with 11 seats, blames identity politics&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;The Edge Malaysia&lt;/font&gt;",
+   "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5jZ0lHR1E0dmQ1QThNb01wRGdubF9DLTRsOGFNSW1SRXEydW5Rd284Nk9XS04tXzlUMjhZS1d1R2lxX0F2b3EtVlB6YUFQLTFf?oc=5",
+   "date": "2026-08-01T07:00:00+00:00",
+   "source": "The Edge Malaysia",
+   "found_at": "2026-09-26T06:06:07+00:00",
+   "channel": "google-news",
+   "collection_id": "2026-09-26T06:06:07+00:00"
+  },
+  {
+   "query": "Malaysia politics",
+   "title": "Go big or go home: why numbers matter in Malaysia’s Johor election",
+   "desc": "&lt;a href=\"https://news.google.com/rss/articles/CBMiwAFBVV95cUxOU0FTblNYMkI5UE8waHJOVzRNQ2xBa3JjTU5SUVdFc2h0X0ZyNGwzMjUxdHJmNEg1VkRELXRBTEdERHZDQ1B2SkFHSmNiUnFRT2tXSDR0WXQ2T0JLWGJKeThkWFlLSGdqSDBpbmtRR2RZSk9CRXd5dmFQbWE1bUI4Sm1kdF9JMmhkaE13bVNkc0hMeTRtbEJLaGZ6NGJCWGY3anJ2ZjNkSk94em9aRWlOX2RPUms3NjJZN184bXpmcHDSAcABQVVfeXFMUHN1S1BDVWZVUnFPeW5ob3NTY1B6LW5Za25xQXljbUdQVnhDdnlVNFJjX3U1ckJaaUNmczVkUmh",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOU0FTblNYMkI5UE8waHJOVzRNQ2xBa3JjTU5SUVdFc2h0X0ZyNGwzMjUxdHJmNEg1VkRELXRBTEdERHZDQ1B2SkFHSmNiUnFRT2tXSDR0WXQ2T0JLWGJKeThkWFlLSGdqSDBpbmtRR2RZSk9CRXd5dmFQbWE1bUI4Sm1kdF9JMmhkaE13bVNkc0hMeTRtbEJLaGZ6NGJCWGY3anJ2ZjNkSk94em9aRWlOX2RPUms3NjJZN184bXpmcHDSAcABQVVfeXFMUHN1S1BDVWZVUnFPeW5ob3NTY1B6LW5Za25xQXljbUdQVnhDdnlVNFJjX3U1ckJaaUNmczVkUmhBLXNocW9meVpMaUNSOXF2MEUxM0g1cmNBYzczLXJPek42aGE0TC1FUmlQWVQwcC1tNGVWVzE5a2MxdzFmYnprVUVKRnlqYVlFNkVJYmFkT2NHRU9CTlh1N2tfRElsd3lTc1U5MW8tbHptcW5FUkJjZllZSnZKNkpPWG9FVzhORVhF?oc=5",
+   "date": "2026-07-10T07:00:00+00:00",
+   "source": "South China Morning Post",
+   "found_at": "2026-09-26T06:06:07+00:00",
+   "channel": "google-news",
+   "collection_id": "2026-09-26T06:06:07+00:00"
+  },
+  {
+   "query": "Barisan Nasional",
+   "title": "Johor polls: Barisan Nasional eyes another landslide, says Zahid",
+   "desc": "&lt;a href=\"https://news.google.com/rss/articles/CBMirAFBVV95cUxOY282QlRpSGxQOEJQeTNFU3B4ajQwTmdlX0hLeFZuU2oweTNEQjRxT1ZSSEN5YVlHRE9pa1pkUFREMHUyVTA1T1JvbUE5TXM4MjVVc01ORS1ITlI4ZERlRnFlYWE0c2ZCNnVZcFVEUHNLZFdXdDZRWXd1b05iRHFLOTNYX1lEVDZwWXpDODBnVXA3VklLbUZZUmxGSUY1RldkOXhJeHkzdWhoYi1Y?oc=5\" target=\"_blank\"&gt;Johor polls: Barisan Nasional eyes another landslide, says Zahid&lt;/a&gt;&amp;nbsp;&amp;",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOY282QlRpSGxQOEJQeTNFU3B4ajQwTmdlX0hLeFZuU2oweTNEQjRxT1ZSSEN5YVlHRE9pa1pkUFREMHUyVTA1T1JvbUE5TXM4MjVVc01ORS1ITlI4ZERlRnFlYWE0c2ZCNnVZcFVEUHNLZFdXdDZRWXd1b05iRHFLOTNYX1lEVDZwWXpDODBnVXA3VklLbUZZUmxGSUY1RldkOXhJeHkzdWhoYi1Y?oc=5",
+   "date": "2026-06-08T07:00:00+00:00",
+   "source": "The Vibes",
+   "found_at": "2026-09-26T06:06:07+00:00",
+   "channel": "google-news",
+   "collection_id": "2026-09-26T06:06:07+00:00"
+  },
+  {
+   "query": "GE16 Malaysia",
+   "title": "BN almost certain to go solo in GE16, says Zahid",
+   "desc": "&lt;a href=\"https://news.google.com/rss/articles/CBMirAFBVV95cUxQUURWQlFqS3RvY0NRN3lTdldSTDVUZjFCX0lhRXUtV2J1by1kb3NLN004UnZGbk1vMTZ4SHNfTGY4aFUwU1JheEVzcWowOFNjWmlocWtCOE9NZjVsY1VkT1IyRzdiUmNvWVNvMnJvWXFZSXh1Z2JyTDlKamVRdE5qcnl0VUxTY1l2S0Z6RjBYYXpTbnBIRDBjYmFtbXhNVFRNa2c5RG5PRy15Xzhf?oc=5\" target=\"_blank\"&gt;BN almost certain to go solo in GE16, says Zahid&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font co",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQUURWQlFqS3RvY0NRN3lTdldSTDVUZjFCX0lhRXUtV2J1by1kb3NLN004UnZGbk1vMTZ4SHNfTGY4aFUwU1JheEVzcWowOFNjWmlocWtCOE9NZjVsY1VkT1IyRzdiUmNvWVNvMnJvWXFZSXh1Z2JyTDlKamVRdE5qcnl0VUxTY1l2S0Z6RjBYYXpTbnBIRDBjYmFtbXhNVFRNa2c5RG5PRy15Xzhf?oc=5",
+   "date": "2026-05-03T07:00:00+00:00",
+   "source": "Free Malaysia Today",
+   "found_at": "2026-09-26T06:06:07+00:00",
+   "channel": "google-news",
+   "collection_id": "2026-09-26T06:06:07+00:00"
+  },
+  {
+   "query": "GN:astroawani",
+   "title": "As Trump takes center stage in Dallas, Republicans debate a future without him",
+   "desc": "&lt;a href=\"https://news.google.com/rss/articles/CBMivAFBVV95cUxPbFBfMTR1M1BaVVVab09GNDFWZ1R6UEVlQ1ZUcmlYdHd3TS1JaVdseE9aNWRuZ3U2NW8tWTlsNnJDcjZpd3VOZWRqcXFTWkRDbElEZnJmVHZpcDZvdlR1cVc5dHRMblpTWUlrbUhCZEk0aHhuWExQRE53LUM3NTFSdU1FYWNCQmVqLUNCLTE3aXdBS2tjVFhua1JMdkFQZUppcXJPOWJWTFNLOWJGVklaRWVMY0hQRkdEQ0Jmbw?oc=5\" target=\"_blank\"&gt;As Trump takes center stage in Dallas, Republicans debate a future ",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPbFBfMTR1M1BaVVVab09GNDFWZ1R6UEVlQ1ZUcmlYdHd3TS1JaVdseE9aNWRuZ3U2NW8tWTlsNnJDcjZpd3VOZWRqcXFTWkRDbElEZnJmVHZpcDZvdlR1cVc5dHRMblpTWUlrbUhCZEk0aHhuWExQRE53LUM3NTFSdU1FYWNCQmVqLUNCLTE3aXdBS2tjVFhua1JMdkFQZUppcXJPOWJWTFNLOWJGVklaRWVMY0hQRkdEQ0Jmbw?oc=5",
+   "date": "2026-09-09T07:00:00+00:00",
+   "source": "Awani International",
+   "found_at": "2026-09-26T06:06:07+00:00",
+   "channel": "google-news",
+   "collection_id": "2026-09-26T06:06:07+00:00"
+  },
+  {
+   "query": "Pakatan Harapan",
+   "title": "Negri polls: Pakatan will cross 19-seat mark, secure majority, says Aminuddin",
+   "desc": "&lt;a href=\"https://news.google.com/rss/articles/CBMiwgFBVV95cUxNSUFjM0MyMmFYY2w2bDhRaXp6STd6VnE4bHdxQWVfSTdFemlUYkh0a21VbzFObENKejNWYS1QV3UtcVhUTm93YWk4YlFvSEZPN1daUzFYb3kwZG1aMjdEdzNra2diSDBhcjZlSVBBeWFnOU5YcHpYbU1iYWhFTGE1a0pKdWtVdFA4aHdyOTF3UTJhNTFjY0V1MEU1Q1pVdWtDT3RTOGJKUXRuUTA0cXpGV3RoLWNickNFdEtpdWxCeGxBZw?oc=5\" target=\"_blank\"&gt;Negri polls: Pakatan will cross 19-seat mark, secure majori",
+   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNSUFjM0MyMmFYY2w2bDhRaXp6STd6VnE4bHdxQWVfSTdFemlUYkh0a21VbzFObENKejNWYS1QV3UtcVhUTm93YWk4YlFvSEZPN1daUzFYb3kwZG1aMjdEdzNra2diSDBhcjZlSVBBeWFnOU5YcHpYbU1iYWhFTGE1a0pKdWtVdFA4aHdyOTF3UTJhNTFjY0V1MEU1Q1pVdWtDT3RTOGJKUXRuUTA0cXpGV3RoLWNickNFdEtpdWxCeGxBZw?oc=5",
+   "date": "2026-08-01T07:00:00+00:00",
+   "source": "The Star",
+   "found_at": "2026-09-26T06:06:07+00:00",
+   "channel": "google-news",
+   "collection_id": "2026-09-26T06:06:07+00:00"
+  },
+  {
+   "query": "Malaysia by-election 2026",
+   "title": "Final campaign hours as voters set to decide Johor's future on Saturday",
+   "desc": "&lt;a href=\"https://news.google.com/rss/articles/CBMiUEFVX3lxTE93VDNmSl9MUnJreGRkZTZ1ZDFFNnIwczFjdFJnTHNYUmlpTGd4UE5sS24tUzM2Z2JnLWxfU2o5dEM5TXNvWFFNMjF2b0tLZ25j?oc=5\" target=\"_blank\"&gt;Final campaign hours as voters set to decide Johor's future on Saturday&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;The Edge Malaysia&lt;/font&gt;",
+   "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE93VDNmSl9MUnJreGRkZTZ1ZDFFNnIwczFjdFJnTHNYUmlpTGd4UE5sS24tUzM2Z2JnLWxfU2o5dEM5TXNvWFFNMjF2b0tLZ25j?oc=5",
+   "date": "2026-07-10T07:00:00+00:00",
+   "source": "The Edge Malaysia",
+   "found_at": "2026-09-26T06:06:07+00:00",
+   "channel": "google-news",
+   "collection_id": "2026-09-26T06:06:07+00:00"
+  },
+  {
+   "query": "GN:astroawani",
+   "title": "Bangladesh ex-PM Hasina says ban on her party should be lifted",
+   "desc": "&lt;a href=\"https://news.google.com/rss/articles/CBMirwFBVV95cUxOakJwTkUwY1dkS0c5Zk1MMWdPVDFXcVllOG5VRnVDZDJnVHZIM2ZXUmdxVlJ0dDBfNkRMZ3BJQTR4aVU4Z2hNWlgzSGQ2SFdLZ2lUdkhVR28xdkp2UEM3UU1NUU5fcE5Dak9RdlFYQzNkckZOWGNySngxcnFIaU56ekc5VFVISldZanhxZ2h4ZXBqcEpwZlRRbV9vT1M0UklRTWZGeGNJMS1KS1JhbURr?oc=5\" target=\"_blank\"&gt;Bangladesh ex-PM Hasina says ban on her party should be lifted&lt;/a&gt;&amp;nbsp;&am",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOakJwTkUwY1dkS0c5Zk1MMWdPVDFXcVllOG5VRnVDZDJnVHZIM2ZXUmdxVlJ0dDBfNkRMZ3BJQTR4aVU4Z2hNWlgzSGQ2SFdLZ2lUdkhVR28xdkp2UEM3UU1NUU5fcE5Dak9RdlFYQzNkckZOWGNySngxcnFIaU56ekc5VFVISldZanhxZ2h4ZXBqcEpwZlRRbV9vT1M0UklRTWZGeGNJMS1KS1JhbURr?oc=5",
+   "date": "2026-06-08T07:00:00+00:00",
+   "source": "Awani International",
+   "found_at": "2026-09-26T06:06:07+00:00",
+   "channel": "google-news",
+   "collection_id": "2026-09-26T06:06:07+00:00"
+  },
+  {
+   "query": "Malaysia candidate GE16",
+   "title": "BN 'almost certain' to go solo in contesting Malaysia's next general election, says DPM Zahid",
+   "desc": "&lt;a href=\"https://news.google.com/rss/articles/CBMikgFBVV95cUxNd2RLOXlfSFBRMVF2eC1xNUNybHVZR2Q5MGFjNlZjYkxHVE5DYWxGZHhxVFM1c0tzUHc5Q1prNEp2UjV4eElzRTlfQlFNd01QenRvWURPNU51SHdjSnhMUEE5bWk5SENITjN2bUx6dmNVeW95ZE1KTl8zVXEyY0oxQXQzLWNJUmdPUEJaSmR4ZXI5Zw?oc=5\" target=\"_blank\"&gt;BN 'almost certain' to go solo in contesting Malaysia's next general election, says DPM Zahid&lt;/a&gt;&amp;nbsp;&amp;nbsp;",
+   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNd2RLOXlfSFBRMVF2eC1xNUNybHVZR2Q5MGFjNlZjYkxHVE5DYWxGZHhxVFM1c0tzUHc5Q1prNEp2UjV4eElzRTlfQlFNd01QenRvWURPNU51SHdjSnhMUEE5bWk5SENITjN2bUx6dmNVeW95ZE1KTl8zVXEyY0oxQXQzLWNJUmdPUEJaSmR4ZXI5Zw?oc=5",
+   "date": "2026-05-03T07:00:00+00:00",
+   "source": "CNA",
+   "found_at": "2026-09-26T06:06:07+00:00",
+   "channel": "google-news",
+   "collection_id": "2026-09-26T06:06:07+00:00"
+  },
+  {
+   "query": "GN:bernama",
+   "title": "Political Financing Bill Needs Clear Penalties, Independent Regulator",
+   "desc": "&lt;a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE0zUG90bl8wd1Buamw1N2ZhTkg4TnNld1JwUkYwYjVNVEpHRDRMXzY0ZzJoQV9qNmk4azl2dW1FUVRFQXNHU1Nkb2NFQzdpQmMzSGlOSHBwYm5QZw?oc=5\" target=\"_blank\"&gt;Political Financing Bill Needs Clear Penalties, Independent Regulator - MACC&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;bernama&lt;/font&gt;",
+   "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE0zUG90bl8wd1Buamw1N2ZhTkg4TnNld1JwUkYwYjVNVEpHRDRMXzY0ZzJoQV9qNmk4azl2dW1FUVRFQXNHU1Nkb2NFQzdpQmMzSGlOSHBwYm5QZw?oc=5",
+   "date": "2026-09-08T07:00:00+00:00",
+   "source": "MACC - bernama",
+   "found_at": "2026-09-26T06:06:07+00:00",
+   "channel": "google-news",
+   "collection_id": "2026-09-26T06:06:07+00:00"
+  },
+  {
+   "query": "Barisan Nasional",
+   "title": "Negri polls: BN-PN set to form state govt after capturing 25 seats, claims Umno sec-gen Asyraf",
+   "desc": "&lt;a href=\"https://news.google.com/rss/articles/CBMi2gFBVV95cUxPNFpmQmRqNWd4Nmttcy0yVkh4dXkxQUFZOVh0YTdPSmJSV0NSSEZpWEZwWExIXzZac2tVRFY3SFFOUlVqRV9UNUJsTHlLUVF4VlROTWFXZE9aaG1LbjBrZjdpWV96MnVqQUxzdTdjTjd3SldyMEdCSGNSS21TTDh2NENabDY4S25fcEMtYkxWcXdlSTRvSHFVeDkyRXIxeTI2bjBHSnZMOS1OM1gxY2Q4d2R5YlhvQ2NOYUhZR0g5cEpKZGtrX3VRdWRheDl5UVl0RVNZQjlrZ2VUUQ?oc=5\" target=\"_blank\"&gt;Negri polls: BN-PN set to f",
+   "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPNFpmQmRqNWd4Nmttcy0yVkh4dXkxQUFZOVh0YTdPSmJSV0NSSEZpWEZwWExIXzZac2tVRFY3SFFOUlVqRV9UNUJsTHlLUVF4VlROTWFXZE9aaG1LbjBrZjdpWV96MnVqQUxzdTdjTjd3SldyMEdCSGNSS21TTDh2NENabDY4S25fcEMtYkxWcXdlSTRvSHFVeDkyRXIxeTI2bjBHSnZMOS1OM1gxY2Q4d2R5YlhvQ2NOYUhZR0g5cEpKZGtrX3VRdWRheDl5UVl0RVNZQjlrZ2VUUQ?oc=5",
+   "date": "2026-08-01T07:00:00+00:00",
+   "source": "The Star",
+   "found_at": "2026-09-26T06:06:07+00:00",
+   "channel": "google-news",
+   "collection_id": "2026-09-26T06:06:07+00:00"
+  },
+  {
+   "query": "Malaysia parliament",
+   "title": "Malaysia’s Anwar Faces Royal Upheaval",
+   "desc": "&lt;a href=\"https://news.google.com/rss/articles/CBMid0FVX3lxTE5pbWhoMndKYWdMeFRhR2lJRVltUVVTZmJFMk82ZVJPM0NuRE5ONUlhemF0T1B4aFo2aTA1MkxYelcwQllYVVlFVHZJME9xQXdfaGhuMUUtd05yMXdXWUV0bGZ6R0VoZlFYb212eU9peXl4eFl0QkJB?oc=5\" target=\"_blank\"&gt;Malaysia’s Anwar Faces Royal Upheaval&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;Asia Sentinel&lt;/font&gt;",
+   "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5pbWhoMndKYWdMeFRhR2lJRVltUVVTZmJFMk82ZVJPM0NuRE5ONUlhemF0T1B4aFo2aTA1MkxYelcwQllYVVlFVHZJME9xQXdfaGhuMUUtd05yMXdXWUV0bGZ6R0VoZlFYb212eU9peXl4eFl0QkJB?oc=5",
+   "date": "2026-07-09T07:00:00+00:00",
+   "source": "Asia Sentinel",
+   "found_at": "2026-09-26T06:06:07+00:00",
+   "channel": "google-news",
+   "collection_id": "2026-09-26T06:06:07+00:00"
+  }
+ ]
+}

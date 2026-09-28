@@ -1,0 +1,119 @@
+{
+ "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+ "dim": 384,
+ "count": 28,
+ "items": [
+  {
+   "id": "cluster:BERSATU:muhyiddin",
+   "name": "BERSATU:muhyiddin"
+  },
+  {
+   "id": "cluster:Bersama:rafizi",
+   "name": "Bersama:rafizi"
+  },
+  {
+   "id": "cluster:DAP:lim",
+   "name": "DAP:lim"
+  },
+  {
+   "id": "cluster:DAP:loke",
+   "name": "DAP:loke"
+  },
+  {
+   "id": "cluster:GRS:hajiji",
+   "name": "GRS:hajiji"
+  },
+  {
+   "id": "cluster:GRS:pbs",
+   "name": "GRS:pbs"
+  },
+  {
+   "id": "cluster:GRS:star",
+   "name": "GRS:star"
+  },
+  {
+   "id": "cluster:KDM:peter",
+   "name": "KDM:peter"
+  },
+  {
+   "id": "cluster:MCA:wee",
+   "name": "MCA:wee"
+  },
+  {
+   "id": "cluster:MIC:siva",
+   "name": "MIC:siva"
+  },
+  {
+   "id": "cluster:MIC:vigneswaran",
+   "name": "MIC:vigneswaran"
+  },
+  {
+   "id": "cluster:MUDA:saddiq",
+   "name": "MUDA:saddiq"
+  },
+  {
+   "id": "cluster:PAS:hadi",
+   "name": "PAS:hadi"
+  },
+  {
+   "id": "cluster:PAS:hadi_dynasty",
+   "name": "PAS:hadi_dynasty"
+  },
+  {
+   "id": "cluster:PAS:samsuri",
+   "name": "PAS:samsuri"
+  },
+  {
+   "id": "cluster:PBB:abang_johari",
+   "name": "PBB:abang_johari"
+  },
+  {
+   "id": "cluster:PBM:zuraida",
+   "name": "PBM:zuraida"
+  },
+  {
+   "id": "cluster:PKR:anwar_core",
+   "name": "PKR:anwar_core"
+  },
+  {
+   "id": "cluster:PKR:independent",
+   "name": "PKR:independent"
+  },
+  {
+   "id": "cluster:PKR:reformist",
+   "name": "PKR:reformist"
+  },
+  {
+   "id": "cluster:UMNO:anti_zahid",
+   "name": "UMNO:anti_zahid"
+  },
+  {
+   "id": "cluster:UMNO:najib",
+   "name": "UMNO:najib"
+  },
+  {
+   "id": "cluster:UMNO:neutral",
+   "name": "UMNO:neutral"
+  },
+  {
+   "id": "cluster:UMNO:old_guard",
+   "name": "UMNO:old_guard"
+  },
+  {
+   "id": "cluster:UMNO:technocrat",
+   "name": "UMNO:technocrat"
+  },
+  {
+   "id": "cluster:UMNO:zahid",
+   "name": "UMNO:zahid"
+  },
+  {
+   "id": "cluster:WARISAN:shafie",
+   "name": "WARISAN:shafie"
+  },
+  {
+   "id": "cluster:WAWASAN:hamzah",
+   "name": "WAWASAN:hamzah"
+  }
+ ]
+}

@@ -1,0 +1,16 @@
+seat,constituency,w_2021,r_2021,margin_2021,w_party,proj_winner,proj_margin,flip
+N.01 Titi Tinggi,Titi Tinggi,PN,BN,51.03,BERSATU,PN,18.03,False
+N.02 Beseri,Beseri,PN,BN,14.89,PAS,BN,18.11,True
+N.03 Chuping,Chuping,PN,BN,25.95,PAS,BN,7.05,True
+N.04 Mata Ayer,Mata Ayer,PN,BN,29.65,PAS,BN,3.35,True
+N.05 Santan,Santan,PN,BN,28.5,PAS,BN,4.5,True
+N.06 Bintong,Bintong,PN,BN,41.94,PAS,PN,8.94,False
+N.07 Sena,Sena,PN,PH,24.69,BERSATU,PN,3.39,False
+N.08 Indera Kayangan,Indera Kayangan,PH,PN,24.05,PKR,PH,45.35,False
+N.09 Kuala Perlis,Kuala Perlis,PN,PH,2.46,BERSATU,PH,18.84,True
+N.10 Kayang,Kayang,PN,BN,35.85,PAS,PN,2.85,False
+N.11 Pauh,Pauh,PN,BN,29.26,BERSATU,BN,3.74,True
+N.12 Tambun Tulang,Tambun Tulang,PN,BN,29.49,BERSATU,BN,3.51,True
+N.13 Guar Sanji,Guar Sanji,PN,BN,61.21,PAS,PN,28.21,False
+N.14 Simpang Empat,Simpang Empat,PN,BN,59.22,PAS,PN,26.22,False
+N.15 Sanglang,Sanglang,PN,BN,48.42,PAS,PN,15.42,False

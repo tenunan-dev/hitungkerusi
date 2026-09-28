@@ -1,0 +1,78 @@
+{
+ "generated_at": "2026-09-22T17:03:33.864608+00:00",
+ "state": "Perlis",
+ "scenarios": [
+  {
+   "scenario": "Status quo (last result)",
+   "category": "parametric",
+   "PH": 1,
+   "PN": 14,
+   "flips": 0,
+   "seats_total": 15,
+   "provenance": {
+    "derivation": "quantitative-scenario",
+    "evidence": [
+     {
+      "repository": "DATA",
+      "path": "research/states/DUN Perlis/dun-election-results-latest.csv",
+      "sha256": "75aa5ba2baf965a734b04633be5f874ad2697ba42c6bd3425d996b94966bd475"
+     }
+    ]
+   }
+  },
+  {
+   "scenario": "Southern resurgence (Johor/N9 2026)",
+   "category": "parametric",
+   "BN": 6,
+   "PH": 2,
+   "PN": 7,
+   "flips": 7,
+   "seats_total": 15,
+   "provenance": {
+    "derivation": "quantitative-scenario",
+    "evidence": [
+     {
+      "repository": "DATA",
+      "path": "research/states/DUN Perlis/dun-election-results-latest.csv",
+      "sha256": "75aa5ba2baf965a734b04633be5f874ad2697ba42c6bd3425d996b94966bd475"
+     }
+    ]
+   }
+  },
+  {
+   "scenario": "Green wave 2023 (Kedah/Penang/Selangor)",
+   "category": "parametric",
+   "PN": 15,
+   "flips": 1,
+   "seats_total": 15,
+   "provenance": {
+    "derivation": "quantitative-scenario",
+    "evidence": [
+     {
+      "repository": "DATA",
+      "path": "research/states/DUN Perlis/dun-election-results-latest.csv",
+      "sha256": "75aa5ba2baf965a734b04633be5f874ad2697ba42c6bd3425d996b94966bd475"
+     }
+    ]
+   }
+  },
+  {
+   "scenario": "Bersatu split (−6pp PN in Bersatu-held)",
+   "category": "parametric",
+   "PH": 2,
+   "PN": 13,
+   "flips": 1,
+   "seats_total": 15,
+   "provenance": {
+    "derivation": "quantitative-scenario",
+    "evidence": [
+     {
+      "repository": "DATA",
+      "path": "research/states/DUN Perlis/dun-election-results-latest.csv",
+      "sha256": "75aa5ba2baf965a734b04633be5f874ad2697ba42c6bd3425d996b94966bd475"
+     }
+    ]
+   }
+  }
+ ]
+}

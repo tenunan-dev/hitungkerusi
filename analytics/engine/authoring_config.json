@@ -1,0 +1,58 @@
+{
+  "provider": "custom",
+  "base_url": "https://api.ilmu.ai/v1",
+  "api_key_env": "HERMES_CUSTOM_ILMU_API_KEY",
+  "model": "ilmu-v3.1",
+  "temperature": 0.7,
+  "max_tokens": 8000,
+  "timeout_s": 240,
+  "languages": {
+    "en": {
+      "provider": "deepseek",
+      "base_url": "https://api.deepseek.com",
+      "api_key_env": "DEEPSEEK_API_KEY",
+      "model": "deepseek-chat",
+      "temperature": 0.7,
+      "max_tokens": 8192,
+      "timeout_s": 240,
+      "fallbacks": [
+        {
+          "provider": "custom",
+          "base_url": "https://opencode.ai/zen/go/v1",
+          "api_key_env": "OPENCODE_GO_API_KEY",
+          "model": "glm-5.3-flash",
+          "max_tokens": 20000,
+          "timeout_s": 240,
+          "session_header": "ge16-authoring-cron"
+        }
+      ]
+    },
+    "ms": {
+      "provider": "custom",
+      "base_url": "https://api.ilmu.ai/v1",
+      "api_key_env": "HERMES_CUSTOM_ILMU_API_KEY",
+      "model": "ilmu-v3.1",
+      "temperature": 0.7,
+      "max_tokens": 8000,
+      "timeout_s": 240,
+      "fallbacks": [
+        {
+          "provider": "custom",
+          "base_url": "https://api.ilmu.ai/v1",
+          "api_key_env": "HERMES_CUSTOM_ILMU_API_KEY",
+          "model": "ilmu-mini-v3.3",
+          "max_tokens": 8000,
+          "timeout_s": 240
+        },
+        {
+          "provider": "deepseek",
+          "base_url": "https://api.deepseek.com",
+          "api_key_env": "DEEPSEEK_API_KEY",
+          "model": "deepseek-chat",
+          "max_tokens": 8192,
+          "timeout_s": 240
+        }
+      ]
+    }
+  }
+}

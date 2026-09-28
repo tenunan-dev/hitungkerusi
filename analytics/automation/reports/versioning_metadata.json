@@ -1,0 +1,19 @@
+{
+  "source_classification": "OPS 8c1852b:migration/evidence/ge16-w03-automation-classification.json",
+  "versioned": "2026-09-11",
+    "destination_status": "State deep-dives read sibling DATA and write generated output under work/reports/latest.",
+    "runtime_inputs": {
+        "required_canonical_data": [
+            "research/federal/ge16-battleground-seats-master.csv",
+            "research/derived/master-list-222-parliamentary-seats.csv",
+            "research/derived/voter-demographics-by-constituency-ge15.csv",
+            "research/raw/meco-byelections-stats-1957-2026.csv"
+        ],
+        "optional_inputs": []
+    },
+  "files": [
+    {"original_path": "05_AUTOMATION/archive_superseded_reports.py", "sha256": "2bc6d76c83960112d0ce9681b205650e99b826ed1d9e455e24be9bf1f5b33636", "target": "automation/reports/archive_superseded_reports.py"},
+    {"original_path": "05_AUTOMATION/md2docx.py", "sha256": "2fa6805420f27cd3cb4d11559db60eb5cbde35f62416ab339308565bfac736a6", "target": "automation/reports/md2docx.py"},
+    {"original_path": "05_AUTOMATION/state_deepdives.py", "sha256": "804741802cfb6f5c737a3ef8bb2d6c9506e9d2db429dc50fd33100e5d246046f", "target": "automation/reports/state_deepdives.py"}
+  ]
+}

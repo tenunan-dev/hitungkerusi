@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d1b2a"/>
+      <stop offset="100%" stop-color="#1b2838"/>
+    </linearGradient>
+  </defs>
+  <rect width="32" height="32" rx="5" fill="url(#bg)"/>
+  <!-- parliament dome silhouette -->
+  <path d="M10 18 L10 13 Q16 5 22 13 L22 18 Z" fill="#2a4a7f" opacity="0.6"/>
+  <!-- "222" number -->
+  <text x="16" y="24" text-anchor="middle" fill="#4a9eff" font-family="'Inter','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="800" letter-spacing="-0.5">222</text>
+  <!-- small accent dot -->
+  <circle cx="16" cy="6" r="1.5" fill="#e94560"/>
+</svg>

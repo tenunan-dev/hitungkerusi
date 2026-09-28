@@ -1,0 +1,19 @@
+# V3 pinned requirements — derived from V2 2_ANALYTICS/.venv inventory (P0.6) minus
+# transitive pins that pip resolves (kept explicit where the V2 version is load-bearing).
+#
+# Python floor: 3.11 (pyenv 3.12.10 available; V2 ran dual interpreters 3.9/3.12 — V3 pins ONE).
+# All versions below mirror the exact V2 versions (51-distro inventory, 2026-09-28).
+#
+# --- direct runtime dependencies ---
+numpy==2.0.2
+pandas==2.3.3
+fastembed==0.7.4
+onnxruntime==1.19.2
+# --- optional per P0.6: OPS cryptography (stdlib fallback exists; include for parity) ---
+cryptography>=42
+# --- declared-but-unvendored imports found in P0.6 (docx, mwparserfromhell) ---
+python-docx>=1.1.0
+# --- test tooling ---
+pytest==8.4.2
+# --- contract validation (from V2 OPS requirements-py39.txt) ---
+jsonschema==4.25.1
