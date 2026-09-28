@@ -4,16 +4,32 @@
 The manifest bytes are deterministic. An atomic replacement on every successful
 refresh also records validation freshness in its mtime, even with unchanged data.
 No output path is caller selectable; all writes use the opened DATA directory.
+
+P2.3 run mode (default): this script is also the run orchestrator. ``--run``
+creates a run directory under ``data/work/`` (work_paths.new_run), wires the
+existing collector staging knobs to it (work_paths.apply_env — zero collector
+changes), runs the collectors so every tracker write lands in the run dir,
+then PROMOTES the staged tracker outputs into canonical and records a
+``ge16.edition.promotion.v1`` manifest whose ``lineage.run_id`` names the run,
+before refreshing provenance. ``--no-run`` is exactly the pre-P2.3 behavior:
+collectors are not invoked, no run dir exists, only provenance refreshes.
 """
+import argparse
 import hashlib
 import json
 import os
+import shutil
 import stat
+import subprocess
 import sys
+import time
 import uuid
 from pathlib import Path, PurePosixPath
 
 ROOT = Path(__file__).resolve().parents[1] / "canonical"  # V3: canonical tree lives at data/canonical
+SCRIPTS_ROOT = Path(__file__).resolve().parent
+REPOSITORY_ROOT = Path(__file__).resolve().parents[2]
+COLLECT_ROOT = SCRIPTS_ROOT / "collect"
 MANIFEST = "canonical-data-provenance.json"
 CANONICAL_ROOTS = ("research/raw", "research/derived", "research/trackers",
                    "research/federal", "geo", "research/states")
@@ -24,6 +40,16 @@ COLLECTOR_FILES = {
     "polls": ("ge16-poll-tracker-log.md", "ge16-polls-tracked.json"),
     "candidates": ("ge16-candidate-tracker-log.md", "ge16-candidates-tracked.json"),
 }
+#: The collectors a staged run invokes, in order. Their tracker writes are
+#: routed into the run dir by the env knobs work_paths.apply_env() exports;
+#: these modules themselves are never modified for run scoping (P2.3 rule).
+DEFAULT_COLLECTORS = ("track_ge16_news.py", "track_ge16_polls.py", "track_ge16_candidates.py")
+PROMOTION_SCHEMA = "ge16.edition.promotion.v1"
+TRACKERS_RELATIVE = Path("research") / "trackers"
+
+if str(SCRIPTS_ROOT) not in sys.path:
+    sys.path.insert(0, str(SCRIPTS_ROOT))
+import work_paths  # noqa: E402  (sibling module; conftest puts data/ on sys.path too)
 
 
 def current_source(destination):
@@ -164,9 +190,188 @@ def refresh(root=ROOT):
         os.close(root_fd)
 
 
+# ----------------------------------------------------------------- P2.3 run layer
+
+def _sha256_file(path):
+    digest = hashlib.sha256()
+    with open(path, "rb") as handle:
+        for chunk in iter(lambda: handle.read(1 << 20), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
+
+
+def stage_collectors(run, commands=None, env=None, cwd=None):
+    """Run the collectors as subprocesses under the run's staged environment.
+
+    Their combined stdout/stderr is kept per collector in ``run/logs/`` (the
+    live cron flow reads collector stdout; a run dir must be self-describing).
+    A nonzero collector exit fails the whole stage BEFORE any promotion — the
+    run layer never half-promotes a broken collect, mirroring the collectors'
+    own all-or-nothing commit contract.
+    """
+    if commands is None:
+        commands = [[sys.executable, str(COLLECT_ROOT / name)] for name in DEFAULT_COLLECTORS]
+    results = []
+    for command in commands:
+        script = next((part for part in command[1:] if part.endswith(".py")), command[0])
+        log_path = run.logs / (Path(script).stem + ".log")
+        completed = subprocess.run(
+            [str(part) for part in command],
+            capture_output=True, text=True,
+            env=dict(os.environ if env is None else env),
+            cwd=str(cwd or REPOSITORY_ROOT),
+        )
+        log_path.write_text(
+            f"$ {' '.join(str(part) for part in command)}\n"
+            f"exit={completed.returncode}\n"
+            f"--- stdout ---\n{completed.stdout}"
+            f"--- stderr ---\n{completed.stderr}", encoding="utf-8")
+        results.append({"command": [str(part) for part in command],
+                        "script": Path(script).name,
+                        "returncode": completed.returncode,
+                        "log": str(log_path)})
+        if completed.returncode != 0:
+            raise RuntimeError(
+                "collector failed (exit %d), promotion refused: %s — log: %s"
+                % (completed.returncode, command, log_path))
+    return results
+
+
+def promote(run, canonical_root=ROOT):
+    """Copy the run's staged tracker outputs into canonical, deterministically.
+
+    Staged tracker outputs are flat files (the outdir staging layout keeps live
+    basenames), so promotion is a per-file copy sorted by name: two runs with
+    identical staged bytes promote identical file sets, and promoting the same
+    run twice copies nothing the second time (byte-identical targets are
+    skipped, so even mtimes do not move). Promotion only ever ADDS or replaces
+    whole files; nothing under canonical is ever deleted by it.
+    """
+    canonical_root = Path(canonical_root)
+    destination = canonical_root / TRACKERS_RELATIVE
+    destination.mkdir(parents=True, exist_ok=True)
+    promoted, unchanged = [], []
+    staged_files = sorted((path for path in run.trackers.iterdir() if path.is_file()),
+                          key=lambda path: os.fsencode(path.name))
+    for staged in staged_files:
+        digest = _sha256_file(staged)
+        relative = (TRACKERS_RELATIVE / staged.name).as_posix()
+        target = destination / staged.name
+        if target.is_file() and _sha256_file(target) == digest:
+            unchanged.append({"file": relative, "sha256": digest})
+            continue
+        shutil.copy2(staged, target)
+        promoted.append({"file": relative, "sha256": digest,
+                         "disposition": "staged-tracker-output"})
+    return promoted, unchanged
+
+
+def _edition_module():
+    """Load the P2.2 edition helper by path (its package dir is ``import/``)."""
+    import importlib.util
+    path = SCRIPTS_ROOT / "import" / "edition.py"
+    spec = importlib.util.spec_from_file_location("ge16_edition_module_for_promotion", path)
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
+
+
+def write_promotion_edition(run, promoted, unchanged, canonical_root=ROOT,
+                            prior=None, now=None):
+    """Record one ``ge16.edition.promotion.v1`` manifest bound to the run.
+
+    Reuses the P2.2 edition helpers (timestamp shape, prior-id scan) so both
+    edition kinds share one chain in ``canonical/editions/``; the importer's
+    own writer and the frozen ``ge16.edition.v1`` schema are untouched.
+    """
+    edition = _edition_module()
+    editions_dir = Path(canonical_root) / "editions"
+    editions_dir.mkdir(parents=True, exist_ok=True)
+    while True:
+        edition_id, created_at = edition.utc_timestamps(now)
+        if prior is None:
+            prior = edition.prior_edition_id(str(editions_dir))
+        manifest = {
+            "schema": PROMOTION_SCHEMA,
+            "edition_id": edition_id,
+            "created_at": created_at,
+            "content_hashes": {entry["file"]: entry["sha256"] for entry in promoted},
+            "lineage": {"prior_edition": prior, "run_id": run.run_id,
+                        "inputs": promoted},
+            "row_counts": {"promoted_files": len(promoted),
+                           "unchanged_files": len(unchanged)},
+            "note": "P2.3 refresh promotion: run-staged tracker outputs copied into "
+                    "canonical; file paths are canonical-root-relative.",
+        }
+        path = editions_dir / f"edition-{edition_id}.json"
+        if not path.exists():
+            break
+        if now is not None:
+            raise ValueError(f"edition already exists: {path} (pinned clock collision)")
+        time.sleep(0.05)
+        now = None
+    with open(path, "w", encoding="utf-8") as handle:
+        json.dump(manifest, handle, indent=2, ensure_ascii=False, sort_keys=True)
+        handle.write("\n")
+    return edition_id, str(path)
+
+
+def staged_refresh(label="", canonical_root=ROOT, collector_commands=None, now=None):
+    """One full run-scoped refresh: run -> stage -> promote -> edition -> refresh.
+
+    Returns the run summary (also printed by ``main --run``). The provenance
+    refresh at the end is exactly the pre-P2.3 ``refresh()`` — promotion only
+    ever adds canonical files, so its fail-closed corpus-shrink guard holds.
+    """
+    canonical_root = Path(canonical_root)
+    prior_edition = _edition_module().prior_edition_id(str(canonical_root / "editions"))
+    run = work_paths.new_run(label=label, data_root=canonical_root.parent,
+                             inputs_edition=prior_edition)
+    work_paths.apply_env(run)
+    staged = stage_collectors(run, commands=collector_commands)
+    promoted, unchanged = promote(run, canonical_root)
+    edition_id, edition_path = write_promotion_edition(
+        run, promoted, unchanged, canonical_root, prior=prior_edition, now=now)
+    files = refresh(canonical_root)
+    return {"run_id": run.run_id, "run_dir": str(run.root),
+            "label": label, "inputs_edition": prior_edition,
+            "collectors": staged, "promoted": promoted, "unchanged": unchanged,
+            "edition_id": edition_id, "edition_path": edition_path,
+            "files": files}
+
+
+def main(argv=None, canonical_root=None):
+    root = Path(canonical_root) if canonical_root else ROOT
+    parser = argparse.ArgumentParser(
+        description="Refresh canonical provenance; --run (default) wraps the "
+                    "refresh in a run-scoped staged collect + promotion.")
+    parser.add_argument("--run", dest="run", action="store_true", default=True,
+                        help="Create a run under data/work/, stage collectors "
+                             "into it, promote into canonical, write a promotion "
+                             "edition, then refresh provenance (default).")
+    parser.add_argument("--no-run", dest="run", action="store_false",
+                        help="Pre-P2.3 behavior exactly: refresh provenance only; "
+                             "no run dir, no collector invocation, no promotion.")
+    parser.add_argument("--label", default="", help="Run label recorded in run.json.")
+    args = parser.parse_args(argv)
+    if not args.run:
+        print(f"canonical refresh passed: files={refresh(root)}")
+        return 0
+    summary = staged_refresh(label=args.label, canonical_root=root)
+    print(f"run {summary['run_id']} (label={summary['label']!r}) -> {summary['run_dir']}")
+    for collector in summary["collectors"]:
+        print(f"collector exit={collector['returncode']}: {collector['script']} "
+              f"(log: {collector['log']})")
+    print(f"promotion: {len(summary['promoted'])} file(s) copied, "
+          f"{len(summary['unchanged'])} already current; edition {summary['edition_id']} "
+          f"(lineage.run_id={summary['run_id']})")
+    print(f"canonical refresh passed: files={summary['files']}")
+    return 0
+
+
 if __name__ == "__main__":
     try:
-        print(f"canonical refresh passed: files={refresh()}")
-    except (OSError, ValueError, KeyError) as error:
+        raise SystemExit(main())
+    except (OSError, ValueError, KeyError, RuntimeError) as error:
         print(f"canonical refresh failed: {error}", file=sys.stderr)
         raise SystemExit(1)

@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ge16:schema:edition-promotion.v1",
+  "title": "ge16.edition.promotion.v1",
+  "description": "One immutable snapshot per refresh promotion run (P2.3). Same shape as ge16.edition.v1 plus lineage.run_id, which binds the edition to the run-scoped working directory whose staged tracker outputs were promoted into canonical. The frozen ge16.edition.v1 (P2.2 import editions) is unchanged; promotion is a distinct artifact kind and never written by the importer.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "edition_id", "created_at", "content_hashes", "lineage"],
+  "properties": {
+    "schema": {"const": "ge16.edition.promotion.v1"},
+    "edition_id": {"type": "string", "pattern": "^\\d{8}T\\d{6}Z$"},
+    "created_at": {"type": "string", "minLength": 1},
+    "content_hashes": {
+      "type": "object",
+      "propertyNames": {"type": "string", "minLength": 1},
+      "additionalProperties": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+    },
+    "lineage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["prior_edition", "run_id", "inputs"],
+      "properties": {
+        "prior_edition": {"type": ["string", "null"], "pattern": "^[a-zA-Z0-9_:\\-]*$"},
+        "run_id": {"type": "string", "pattern": "^\\d{8}T\\d{6}Z-[0-9a-f]{8}$"},
+        "inputs": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["file", "sha256", "disposition"],
+            "properties": {
+              "file": {"type": "string", "minLength": 1},
+              "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+              "disposition": {"type": "string", "minLength": 1, "description": "staged-tracker-output for files copied into canonical by the promotion step."}
+            }
+          }
+        }
+      }
+    },
+    "row_counts": {
+      "type": "object",
+      "propertyNames": {"type": "string", "minLength": 1},
+      "additionalProperties": {"type": "integer", "minimum": 0}
+    },
+    "note": {"type": "string"}
+  }
+}

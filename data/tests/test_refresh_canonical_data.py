@@ -1,11 +1,14 @@
 import copy
 import hashlib
 import importlib.util
+import io
 import json
 import os
 from pathlib import Path
 import tempfile
 import unittest
+from contextlib import redirect_stdout
+from unittest import mock
 
 SCRIPT = Path(__file__).resolve().parents[1] / "scripts/refresh_canonical_data.py"
 spec = importlib.util.spec_from_file_location("refresh_canonical_data", SCRIPT)
@@ -130,6 +133,58 @@ class RefreshTests(unittest.TestCase):
             with self.assertRaises(ValueError):
                 refresh.refresh(self.root)
             self.assertEqual(raw, self.path.read_text())
+
+
+class RunModeParityTests(unittest.TestCase):
+    """P2.3 CLI surface: --no-run is byte-for-byte the pre-P2.3 behavior."""
+
+    def setUp(self):
+        temporary = tempfile.TemporaryDirectory(dir="/private/tmp")
+        self.addCleanup(temporary.cleanup)
+        self.parent = Path(temporary.name)
+        self.root = self.parent / "1_DATA"
+        self.root.mkdir()
+        for path in refresh.CANONICAL_ROOTS:
+            (self.root / path).mkdir(parents=True, exist_ok=True)
+        original = json.loads((Path(__file__).resolve().parents[1] / "canonical" / refresh.MANIFEST).read_text())
+        original["files"] = [{
+            "destination_path": "research/raw/existing.csv", "bytes": 1,
+            "sha256": "0" * 64,
+            "historic_source_path": "../HERMES/01_RESEARCH/data/raw/existing.csv",
+        }]
+        original["methodology_inputs"] = []
+        (self.root / refresh.MANIFEST).write_text(json.dumps(original))
+        (self.root / "research/raw/existing.csv").write_bytes(b"x,y\r\n1,2\r\n")
+
+    def test_no_run_main_is_exactly_the_prew_p23_invocation(self):
+        files = refresh.refresh(self.root)  # pre-change code path, directly
+        first = self.path_manifest_bytes()
+        os.utime(self.root / refresh.MANIFEST, (1, 1))
+        output = io.StringIO()
+        with redirect_stdout(output), mock.patch.dict(os.environ, {}, clear=False):
+            for knob in ("GE16_RUN_DIR", "GE16_TRACKER_OUT_DIR", "GE16_SELFHEAL_STATE"):
+                os.environ.pop(knob, None)
+            code = refresh.main(["--no-run"], canonical_root=self.root)
+        self.assertEqual(code, 0)
+        self.assertEqual(output.getvalue(), f"canonical refresh passed: files={files}\n")
+        self.assertEqual(first, self.path_manifest_bytes())  # deterministic bytes
+        self.assertFalse((self.parent / "work").exists())  # no run dir anywhere
+
+    def test_bare_argv_defaults_to_run_mode(self):
+        stub = {"run_id": "20260929T000000Z-00000000", "run_dir": "/tmp/x",
+                "label": "", "collectors": [], "promoted": [], "unchanged": [],
+                "edition_id": "20260929T000000Z", "edition_path": "/tmp/e",
+                "files": 0}
+        with mock.patch.object(refresh, "staged_refresh", return_value=stub) as patched:
+            output = io.StringIO()
+            with redirect_stdout(output):
+                code = refresh.main([], canonical_root=self.root)
+        self.assertEqual(code, 0)
+        patched.assert_called_once_with(label="", canonical_root=self.root)
+        self.assertIn("run 20260929T000000Z-00000000", output.getvalue())
+
+    def path_manifest_bytes(self):
+        return (self.root / refresh.MANIFEST).read_bytes()
 
 
 if __name__ == "__main__":

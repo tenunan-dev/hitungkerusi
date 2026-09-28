@@ -20,6 +20,8 @@ __pycache__/
 # --- Working state (durable evidence never lives here) ---
 var/
 work/
+# Run-scoped working dirs (P2.3): reproducible from editions; never committed.
+/data/work/
 *.log
 
 # --- OS / editor noise ---
