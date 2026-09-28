@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ge16:schema:edition.v1",
+  "title": "ge16.edition.v1",
+  "description": "One immutable snapshot per import run (owner-ruled cadence). edition_id is the run UTC timestamp; content_hashes bind the exact source bytes so a rebuild can identify its snapshot (P2.10).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "edition_id", "created_at", "content_hashes", "lineage"],
+  "properties": {
+    "schema": {"const": "ge16.edition.v1"},
+    "edition_id": {"type": "string", "pattern": "^\\d{8}T\\d{6}Z$"},
+    "created_at": {"type": "string", "minLength": 1},
+    "content_hashes": {
+      "type": "object",
+      "propertyNames": {"type": "string", "minLength": 1},
+      "additionalProperties": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+    },
+    "lineage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["prior_edition", "inputs"],
+      "properties": {
+        "prior_edition": {"type": ["string", "null"], "pattern": "^[a-zA-Z0-9_:\\-]*$"},
+        "inputs": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["file", "sha256", "disposition"],
+            "properties": {
+              "file": {"type": "string", "minLength": 1},
+              "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+              "disposition": {"type": "string", "minLength": 1, "description": "Content-class disposition applied by the importer (e.g. accepted-corpus, judged-batch)."}
+            }
+          }
+        }
+      }
+    },
+    "row_counts": {
+      "type": "object",
+      "propertyNames": {"type": "string", "minLength": 1},
+      "additionalProperties": {"type": "integer", "minimum": 0}
+    },
+    "note": {"type": "string"}
+  }
+}

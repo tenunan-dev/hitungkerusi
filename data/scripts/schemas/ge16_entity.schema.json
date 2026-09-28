@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ge16:schema:entity.v1",
+  "title": "ge16.entity.v1",
+  "description": "Registry row. Seeded from the controlled vocabulary; new entries only enter through owner approval of an entity candidate (nothing auto-promotes).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "entity_id", "type", "label", "first_seen"],
+  "properties": {
+    "schema": {"const": "ge16.entity.v1"},
+    "entity_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$"},
+    "type": {"enum": ["party", "bloc", "seat", "source", "person", "org"]},
+    "label": {"type": "string", "minLength": 1},
+    "label_ms": {"type": "string"},
+    "aliases": {"type": "array", "items": {"type": "string"}},
+    "first_seen": {"type": "string"},
+    "notes": {"type": "string"},
+    "approved_by": {"type": "string", "description": "Owner identity recorded at promotion time (candidates flow only)."},
+    "approved_at": {"type": "string"},
+    "approved_from_candidate": {"type": "string", "pattern": "^cand-[0-9a-f]{12}$"}
+  }
+}

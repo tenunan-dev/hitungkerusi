@@ -1,0 +1,358 @@
+{
+  "entities": [
+    {
+      "entity_id": "bn",
+      "first_seen": "2026-09-28",
+      "label": "BN",
+      "notes": "Seed vocabulary entry (P2.2).",
+      "schema": "ge16.entity.v1",
+      "type": "bloc"
+    },
+    {
+      "entity_id": "gps",
+      "first_seen": "2026-09-28",
+      "label": "GPS",
+      "notes": "Seed vocabulary entry (P2.2).",
+      "schema": "ge16.entity.v1",
+      "type": "bloc"
+    },
+    {
+      "entity_id": "grs",
+      "first_seen": "2026-09-28",
+      "label": "GRS",
+      "notes": "Seed vocabulary entry (P2.2).",
+      "schema": "ge16.entity.v1",
+      "type": "bloc"
+    },
+    {
+      "entity_id": "muda",
+      "first_seen": "2026-09-28",
+      "label": "MUDA",
+      "notes": "Seed vocabulary entry (P2.2).",
+      "schema": "ge16.entity.v1",
+      "type": "bloc"
+    },
+    {
+      "entity_id": "ph",
+      "first_seen": "2026-09-28",
+      "label": "PH",
+      "notes": "Seed vocabulary entry (P2.2).",
+      "schema": "ge16.entity.v1",
+      "type": "bloc"
+    },
+    {
+      "entity_id": "pn",
+      "first_seen": "2026-09-28",
+      "label": "PN",
+      "notes": "Seed vocabulary entry (P2.2).",
+      "schema": "ge16.entity.v1",
+      "type": "bloc"
+    },
+    {
+      "entity_id": "amanah",
+      "first_seen": "2026-09-28",
+      "label": "Amanah",
+      "notes": "Seed vocabulary entry (P2.2).",
+      "schema": "ge16.entity.v1",
+      "type": "party"
+    },
+    {
+      "entity_id": "bersatu",
+      "first_seen": "2026-09-28",
+      "label": "Bersatu",
+      "notes": "Seed vocabulary entry (P2.2).",
+      "schema": "ge16.entity.v1",
+      "type": "party"
+    },
+    {
+      "entity_id": "dap",
+      "first_seen": "2026-09-28",
+      "label": "DAP",
+      "notes": "Seed vocabulary entry (P2.2).",
+      "schema": "ge16.entity.v1",
+      "type": "party"
+    },
+    {
+      "entity_id": "gerakan",
+      "first_seen": "2026-09-28",
+      "label": "Gerakan",
+      "notes": "Seed vocabulary entry (P2.2).",
+      "schema": "ge16.entity.v1",
+      "type": "party"
+    },
+    {
+      "entity_id": "kdm",
+      "first_seen": "2026-09-28",
+      "label": "KDM",
+      "notes": "Seed vocabulary entry (P2.2).",
+      "schema": "ge16.entity.v1",
+      "type": "party"
+    },
+    {
+      "entity_id": "mca",
+      "first_seen": "2026-09-28",
+      "label": "MCA",
+      "notes": "Seed vocabulary entry (P2.2).",
+      "schema": "ge16.entity.v1",
+      "type": "party"
+    },
+    {
+      "entity_id": "mic",
+      "first_seen": "2026-09-28",
+      "label": "MIC",
+      "notes": "Seed vocabulary entry (P2.2).",
+      "schema": "ge16.entity.v1",
+      "type": "party"
+    },
+    {
+      "entity_id": "pas",
+      "first_seen": "2026-09-28",
+      "label": "PAS",
+      "notes": "Seed vocabulary entry (P2.2).",
+      "schema": "ge16.entity.v1",
+      "type": "party"
+    },
+    {
+      "entity_id": "pbk",
+      "first_seen": "2026-09-28",
+      "label": "PBK",
+      "notes": "Seed vocabulary entry (P2.2).",
+      "schema": "ge16.entity.v1",
+      "type": "party"
+    },
+    {
+      "entity_id": "pbm",
+      "first_seen": "2026-09-28",
+      "label": "PBM",
+      "notes": "Seed vocabulary entry (P2.2).",
+      "schema": "ge16.entity.v1",
+      "type": "party"
+    },
+    {
+      "entity_id": "pbs",
+      "first_seen": "2026-09-28",
+      "label": "PBS",
+      "notes": "Seed vocabulary entry (P2.2).",
+      "schema": "ge16.entity.v1",
+      "type": "party"
+    },
+    {
+      "entity_id": "pdp",
+      "first_seen": "2026-09-28",
+      "label": "PDP",
+      "notes": "Seed vocabulary entry (P2.2).",
+      "schema": "ge16.entity.v1",
+      "type": "party"
+    },
+    {
+      "entity_id": "pkr",
+      "first_seen": "2026-09-28",
+      "label": "PKR",
+      "notes": "Seed vocabulary entry (P2.2).",
+      "schema": "ge16.entity.v1",
+      "type": "party"
+    },
+    {
+      "entity_id": "star",
+      "first_seen": "2026-09-28",
+      "label": "STAR",
+      "notes": "Seed vocabulary entry (P2.2).",
+      "schema": "ge16.entity.v1",
+      "type": "party"
+    },
+    {
+      "entity_id": "supp",
+      "first_seen": "2026-09-28",
+      "label": "SUPP",
+      "notes": "Seed vocabulary entry (P2.2).",
+      "schema": "ge16.entity.v1",
+      "type": "party"
+    },
+    {
+      "entity_id": "umno",
+      "first_seen": "2026-09-28",
+      "label": "UMNO",
+      "notes": "Seed vocabulary entry (P2.2).",
+      "schema": "ge16.entity.v1",
+      "type": "party"
+    },
+    {
+      "entity_id": "upko",
+      "first_seen": "2026-09-28",
+      "label": "UPKO",
+      "notes": "Seed vocabulary entry (P2.2).",
+      "schema": "ge16.entity.v1",
+      "type": "party"
+    },
+    {
+      "entity_id": "warisan",
+      "first_seen": "2026-09-28",
+      "label": "WARISAN",
+      "notes": "Seed vocabulary entry (P2.2).",
+      "schema": "ge16.entity.v1",
+      "type": "party"
+    },
+    {
+      "entity_id": "astro-awani",
+      "first_seen": "2026-09-28",
+      "label": "Astro Awani",
+      "notes": "Seed vocabulary entry (P2.2).",
+      "schema": "ge16.entity.v1",
+      "type": "source"
+    },
+    {
+      "entity_id": "astroawani",
+      "first_seen": "2026-09-28",
+      "label": "Astroawani",
+      "notes": "Seed vocabulary entry (P2.2).",
+      "schema": "ge16.entity.v1",
+      "type": "source"
+    },
+    {
+      "entity_id": "cna",
+      "first_seen": "2026-09-28",
+      "label": "CNA",
+      "notes": "Seed vocabulary entry (P2.2).",
+      "schema": "ge16.entity.v1",
+      "type": "source"
+    },
+    {
+      "entity_id": "free-malaysia-today",
+      "first_seen": "2026-09-28",
+      "label": "Free Malaysia Today",
+      "notes": "Seed vocabulary entry (P2.2).",
+      "schema": "ge16.entity.v1",
+      "type": "source"
+    },
+    {
+      "entity_id": "google-news",
+      "first_seen": "2026-09-28",
+      "label": "Google News",
+      "notes": "Seed vocabulary entry (P2.2).",
+      "schema": "ge16.entity.v1",
+      "type": "source"
+    },
+    {
+      "entity_id": "malay-mail",
+      "first_seen": "2026-09-28",
+      "label": "Malay Mail",
+      "notes": "Seed vocabulary entry (P2.2).",
+      "schema": "ge16.entity.v1",
+      "type": "source"
+    },
+    {
+      "entity_id": "malay-mail-gn",
+      "first_seen": "2026-09-28",
+      "label": "Malay Mail [GN]",
+      "notes": "Seed vocabulary entry (P2.2).",
+      "schema": "ge16.entity.v1",
+      "type": "source"
+    },
+    {
+      "entity_id": "malaysiakini",
+      "first_seen": "2026-09-28",
+      "label": "Malaysiakini",
+      "notes": "Seed vocabulary entry (P2.2).",
+      "schema": "ge16.entity.v1",
+      "type": "source"
+    },
+    {
+      "entity_id": "malaysiakini-gn",
+      "first_seen": "2026-09-28",
+      "label": "Malaysiakini [GN]",
+      "notes": "Seed vocabulary entry (P2.2).",
+      "schema": "ge16.entity.v1",
+      "type": "source"
+    },
+    {
+      "entity_id": "new-straits-times-gn",
+      "first_seen": "2026-09-28",
+      "label": "New Straits Times [GN]",
+      "notes": "Seed vocabulary entry (P2.2).",
+      "schema": "ge16.entity.v1",
+      "type": "source"
+    },
+    {
+      "entity_id": "nst-online",
+      "first_seen": "2026-09-28",
+      "label": "NST Online",
+      "notes": "Seed vocabulary entry (P2.2).",
+      "schema": "ge16.entity.v1",
+      "type": "source"
+    },
+    {
+      "entity_id": "south-china-morning-post",
+      "first_seen": "2026-09-28",
+      "label": "South China Morning Post",
+      "notes": "Seed vocabulary entry (P2.2).",
+      "schema": "ge16.entity.v1",
+      "type": "source"
+    },
+    {
+      "entity_id": "the-edge-malaysia",
+      "first_seen": "2026-09-28",
+      "label": "The Edge Malaysia",
+      "notes": "Seed vocabulary entry (P2.2).",
+      "schema": "ge16.entity.v1",
+      "type": "source"
+    },
+    {
+      "entity_id": "the-malaysian-reserve",
+      "first_seen": "2026-09-28",
+      "label": "The Malaysian Reserve",
+      "notes": "Seed vocabulary entry (P2.2).",
+      "schema": "ge16.entity.v1",
+      "type": "source"
+    },
+    {
+      "entity_id": "the-star",
+      "first_seen": "2026-09-28",
+      "label": "The Star",
+      "notes": "Seed vocabulary entry (P2.2).",
+      "schema": "ge16.entity.v1",
+      "type": "source"
+    },
+    {
+      "entity_id": "the-star-gn",
+      "first_seen": "2026-09-28",
+      "label": "The Star [GN]",
+      "notes": "Seed vocabulary entry (P2.2).",
+      "schema": "ge16.entity.v1",
+      "type": "source"
+    },
+    {
+      "entity_id": "the-straits-times",
+      "first_seen": "2026-09-28",
+      "label": "The Straits Times",
+      "notes": "Seed vocabulary entry (P2.2).",
+      "schema": "ge16.entity.v1",
+      "type": "source"
+    },
+    {
+      "entity_id": "the-sun-malaysia",
+      "first_seen": "2026-09-28",
+      "label": "The Sun Malaysia",
+      "notes": "Seed vocabulary entry (P2.2).",
+      "schema": "ge16.entity.v1",
+      "type": "source"
+    },
+    {
+      "entity_id": "the-vibes",
+      "first_seen": "2026-09-28",
+      "label": "The Vibes",
+      "notes": "Seed vocabulary entry (P2.2).",
+      "schema": "ge16.entity.v1",
+      "type": "source"
+    },
+    {
+      "entity_id": "utusan-malaysia",
+      "first_seen": "2026-09-28",
+      "label": "Utusan Malaysia",
+      "notes": "Seed vocabulary entry (P2.2).",
+      "schema": "ge16.entity.v1",
+      "type": "source"
+    }
+  ],
+  "schema": "ge16.entity-registry.v1",
+  "seeded_from": "seed-vocabulary.json"
+}

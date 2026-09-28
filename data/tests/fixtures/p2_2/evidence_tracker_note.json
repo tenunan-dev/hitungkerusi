@@ -1,0 +1,15 @@
+{
+  "schema": "ge16.evidence.v1",
+  "evidence_id": "evfedcba9876543210",
+  "kind": "tracker-note",
+  "payload": {
+    "seen": "Ilham Centre|7 marginal seats marked as key battlegrounds in Johor polls - Free Malaysia Today"
+  },
+  "source_ref": {
+    "file": "data/canonical/research/trackers/ge16-polls-tracked.json",
+    "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+  },
+  "collected_at": "2026-09-26T06:10:47+00:00",
+  "normalizer_v": "normalize_link.v1",
+  "notes": "P0.5: seen-key ≠ verified poll/candidate"
+}

@@ -1,0 +1,38 @@
+{
+  "schema": "ge16.seed-vocabulary.v1",
+  "created": "2026-09-28",
+  "note": "P2.2 packet seed. Controlled vocabulary for entity matching; anything that survives alias normalization without matching a label becomes an entity candidate (status: proposed) and never auto-enters entities.json. Seats are empty at seed by design: DUN/Parliament codes come from data/canonical/dun and geo, not news text. Sources are the top-20 'source' values visible in ge16-news-accepted.json by frequency.",
+  "blocs": ["BN", "PH", "PN", "GPS", "GRS", "MUDA"],
+  "parties": ["UMNO", "MCA", "MIC", "PKR", "DAP", "Amanah", "UPKO", "Bersatu", "PAS", "Gerakan", "WARISAN", "PBS", "STAR", "PBK", "PDP", "SUPP", "PBM", "KDM"],
+  "seats": [],
+  "sources": [
+    "Free Malaysia Today",
+    "The Star",
+    "Google News",
+    "Malay Mail",
+    "NST Online",
+    "Malaysiakini",
+    "The Edge Malaysia",
+    "The Vibes",
+    "South China Morning Post",
+    "Astroawani",
+    "The Star [GN]",
+    "CNA",
+    "Malaysiakini [GN]",
+    "New Straits Times [GN]",
+    "Malay Mail [GN]",
+    "The Straits Times",
+    "The Malaysian Reserve",
+    "Utusan Malaysia",
+    "Astro Awani",
+    "The Sun Malaysia"
+  ],
+  "aliases": {
+    "PPBM": {"canonical": "Bersatu", "note": "Historic registration name (Parti Pribumi Bersatu Malaysia)."},
+    "PN-Bersatu": {"canonical": "Bersatu", "note": "Coalition-prefixed press usage."}
+  },
+  "matching": {
+    "normalize": "strip + casefold",
+    "rule": "A string matches when its normalized form equals any seed label (any type) or alias key; matched strings create no candidates. Unmatched strings become candidates typed by the field they appeared in."
+  }
+}

@@ -1,0 +1,321 @@
+{
+  "content_hashes": {
+    "data/canonical/entities/seed-vocabulary.json": "3d0b66aacfec399aa1c0d523a96cfed60f6b56a6dc0f2167bd2170ae4b76382e",
+    "data/canonical/research/trackers/ge16-candidate-tracker-log.md": "a1b4f3cf612174d0c55aa1e3b9baa66219be1ebf3b9ac950a86e74c1aaf702ae",
+    "data/canonical/research/trackers/ge16-candidates-tracked.json": "a2d4c95a241c45bc26de3abc605c582a52ab9910d5be0fc6660af86cdf766af4",
+    "data/canonical/research/trackers/ge16-general-news-log.md": "b5bd9b05166189fd0806547efad9e589e3594a18b8bc779ed99e733b758c59b9",
+    "data/canonical/research/trackers/ge16-general-news-tracked.json": "33d89e7ccae99ce8a3effc3a86b003b0827ad9ee4576033146ef8236194dab18",
+    "data/canonical/research/trackers/ge16-news-accepted.json": "6b6040967da8407e0d844ff5b23946c2560b54475307e4517c538417f3d337b1",
+    "data/canonical/research/trackers/ge16-news-backfill-candidates.json": "c42f1cd6979bbb988b30e7225fe4b1af45aa9839ffb771e465984fc75065f197",
+    "data/canonical/research/trackers/ge16-news-backfill-judge-batch-1.json": "450f04a774e321ef379d614601082decb37b309ba78193c1dd071e8fbf60a511",
+    "data/canonical/research/trackers/ge16-news-backfill-judge-batch-2.json": "9f5e4d95d24fa25d93e9fa1c85d56eede2e934e4141438dfe33944a5258bd504",
+    "data/canonical/research/trackers/ge16-news-backfill-judge-batch-3.json": "46ee5289d9e0630508978272df0664525606f19b42c33fd49fe6a9f5ebc88a0e",
+    "data/canonical/research/trackers/ge16-news-backfill-judge-batch-4.json": "24c356a9b0950cf8d95126395246470601805ea5263958e0d051405441b57613",
+    "data/canonical/research/trackers/ge16-news-backfill-judge-batch-5.json": "98ed22ac80e74564b7a77721be1b246d41825bd11353f44a2059b4d8d1dc86d4",
+    "data/canonical/research/trackers/ge16-news-backfill-judge-batch-6.json": "e52fd5a2cc02d0447f3c8f64f35ef13c06c3fd92c31ea7b1e4d2779a9867089e",
+    "data/canonical/research/trackers/ge16-news-backfill-judge-batch-7.json": "715decccc1f0f38941158f7c12094b265b411e25b644845a29ea73c5641f6f17",
+    "data/canonical/research/trackers/ge16-news-backfill-judge-batch-8.json": "d237059d0d72ba48a2ea1ce0b796761bf85c9e2fa5e90fd74240311c7764e673",
+    "data/canonical/research/trackers/ge16-news-backfill-judge-batch-9.json": "92187431964265d812de9e64a07e7cae9dd4fe698c1035dff2f9652a066404a5",
+    "data/canonical/research/trackers/ge16-news-backfill-judge-manifest.json": "49335079b4435049640d540b00b46113a92ee84967bec86c25fad1bbe8bb8938",
+    "data/canonical/research/trackers/ge16-news-backfill-judged-batch-1.json": "4c642b853069cd251ac2db4d312e700719aa9aa3f1a2fd74c498d856a4bfa98d",
+    "data/canonical/research/trackers/ge16-news-backfill-judged-batch-10.json": "3fb0604a1b28d454ba0e32740b3de69b52c86f582d4c7df9f4d373c2d6a3669b",
+    "data/canonical/research/trackers/ge16-news-backfill-judged-batch-11.json": "a2bd17ce43707876dcfee447d13e9fcb6c5bcf80ffedbcc0a49b83cd04aeb3f5",
+    "data/canonical/research/trackers/ge16-news-backfill-judged-batch-12.json": "08390503826e56cb2821d886f6865770c589812ca8cd25d5486968044d8008e6",
+    "data/canonical/research/trackers/ge16-news-backfill-judged-batch-13.json": "97a6d64c25d53c226b33d7362321ccd6804f3ef6a98a1ec06ebb974bc3b58836",
+    "data/canonical/research/trackers/ge16-news-backfill-judged-batch-14.json": "650b37d3346ce7afba9fc6d677cd148a3d31914f687e4fd936eecf088ea10901",
+    "data/canonical/research/trackers/ge16-news-backfill-judged-batch-15.json": "6ed3f27d695ccdd68f585ec25184420c8e92e39962689e9f7719ee50e7d90d5c",
+    "data/canonical/research/trackers/ge16-news-backfill-judged-batch-16.json": "e0461dad43576bccebf1b4af66abb2dae2ce303e54df7a33115bd08fcb20b383",
+    "data/canonical/research/trackers/ge16-news-backfill-judged-batch-17.json": "1f86509a140a6cc0403f46ababe03905a61e836863d06d0a64efb015a7474293",
+    "data/canonical/research/trackers/ge16-news-backfill-judged-batch-18.json": "942e6882a39f1c362e583909a3330ff16e38d2524f8118a1ea6183abc5bc8743",
+    "data/canonical/research/trackers/ge16-news-backfill-judged-batch-19.json": "8fcc852f6b6509e3cef9f80dbb2a3ffa77e2deff1905484a74d64949e4681a57",
+    "data/canonical/research/trackers/ge16-news-backfill-judged-batch-2.json": "e78fc0e940305956b38deb5a905cb9338623d7fda31027fc471aaf09303c8681",
+    "data/canonical/research/trackers/ge16-news-backfill-judged-batch-20.json": "dc872bad5af81522bdde2579cfc5f32fcbc5920250ad4ae1d4bedbe4ca3803bf",
+    "data/canonical/research/trackers/ge16-news-backfill-judged-batch-21.json": "9d299cb61ae38b9c82a671a479c2572db4a9aa9ffa9e8fb03c93f0389b1cc455",
+    "data/canonical/research/trackers/ge16-news-backfill-judged-batch-22.json": "a35c0c5f59350efb1ff81742c27a1571b5088dbdee89de638d6f23a4417675d5",
+    "data/canonical/research/trackers/ge16-news-backfill-judged-batch-23.json": "164260a79b17c63a1a8bface9306a974d349db6a721686dcc0469b8e3438aeb3",
+    "data/canonical/research/trackers/ge16-news-backfill-judged-batch-24.json": "8e412d1195d5318f4c6122292b3b2c8795732159f89cc8e643d66948c272748e",
+    "data/canonical/research/trackers/ge16-news-backfill-judged-batch-3.json": "020330573ba4dc9ce3e93036e0a134199b65a5bb370220887164555a13572db9",
+    "data/canonical/research/trackers/ge16-news-backfill-judged-batch-4.json": "b74a96ecef4c56b0ae824c810aefa622044032a0e91e216afc7e464d3613aeeb",
+    "data/canonical/research/trackers/ge16-news-backfill-judged-batch-5.json": "8c48881388f03eba27547873deba132dd850438e62d114d5835662d6febb1219",
+    "data/canonical/research/trackers/ge16-news-backfill-judged-batch-6.json": "7b308c313326bf9a405c90ffed8c981a6f57bb20ce54191808a93c6c4199cc13",
+    "data/canonical/research/trackers/ge16-news-backfill-judged-batch-7.json": "868497868a19a17289e747b9f70c5329f65843f86891201fade3e49a7ba7a878",
+    "data/canonical/research/trackers/ge16-news-backfill-judged-batch-8.json": "2a82354f782d05cfb97a887476e5642042f487044c0db4a9c469679bf97e15d7",
+    "data/canonical/research/trackers/ge16-news-backfill-judged-batch-9.json": "d227585b3efb6aceb104b3e1dcf5a1bbe79945d9e6872de361ac0bf5ef03503e",
+    "data/canonical/research/trackers/ge16-news-backfill-verdicts.jsonl": "3dbe6e98260acff761122daf921c2848cd6ab9e634fcaaad7581fd3d7e0c4079",
+    "data/canonical/research/trackers/ge16-news-candidates.json": "e2428e1152e74db5a2628a6bc62db2ff4dafbaab31239fb6639b7e656c0da2f9",
+    "data/canonical/research/trackers/ge16-news-feed.json": "9a1a3ff8f1b732f12f813139158ef87d6811d02c03b88c274fef46247c430a74",
+    "data/canonical/research/trackers/ge16-news-judged.json": "cb13f06e04cf6da5256e6dd4011e790baf07d58871e36ae28d14de6bb08bfd11",
+    "data/canonical/research/trackers/ge16-news-seen-pending.json": "c363817f385bcea61a66b6b7cb9cb60a4797f20fc03d9cc5574a71c058affbeb",
+    "data/canonical/research/trackers/ge16-poll-tracker-log.md": "28796f4b7ecad0df011236979f356e1a3b50db459959fda25ad0f7256a3c3a0a",
+    "data/canonical/research/trackers/ge16-polls-tracked.json": "c641f8494ede3238fe5ac165d745b29913ca19b3360d0122f5bae7b7a9240756",
+    "data/canonical/research/trackers/ge16-selfheal-state.json": "b4aa38f021e2a4ee8c1ce84535d17b07ce387e4166e3273b16bb2d28f284c249"
+  },
+  "created_at": "2026-09-28T14:52:47+00:00",
+  "edition_id": "20260928T145247Z",
+  "lineage": {
+    "inputs": [
+      {
+        "disposition": "narrative-log",
+        "file": "data/canonical/research/trackers/ge16-candidate-tracker-log.md",
+        "sha256": "a1b4f3cf612174d0c55aa1e3b9baa66219be1ebf3b9ac950a86e74c1aaf702ae"
+      },
+      {
+        "disposition": "tracked-list",
+        "file": "data/canonical/research/trackers/ge16-candidates-tracked.json",
+        "sha256": "a2d4c95a241c45bc26de3abc605c582a52ab9910d5be0fc6660af86cdf766af4"
+      },
+      {
+        "disposition": "narrative-log",
+        "file": "data/canonical/research/trackers/ge16-general-news-log.md",
+        "sha256": "b5bd9b05166189fd0806547efad9e589e3594a18b8bc779ed99e733b758c59b9"
+      },
+      {
+        "disposition": "tracked-list",
+        "file": "data/canonical/research/trackers/ge16-general-news-tracked.json",
+        "sha256": "33d89e7ccae99ce8a3effc3a86b003b0827ad9ee4576033146ef8236194dab18"
+      },
+      {
+        "disposition": "accepted-corpus",
+        "file": "data/canonical/research/trackers/ge16-news-accepted.json",
+        "sha256": "6b6040967da8407e0d844ff5b23946c2560b54475307e4517c538417f3d337b1"
+      },
+      {
+        "disposition": "queue",
+        "file": "data/canonical/research/trackers/ge16-news-backfill-candidates.json",
+        "sha256": "c42f1cd6979bbb988b30e7225fe4b1af45aa9839ffb771e465984fc75065f197"
+      },
+      {
+        "disposition": "queue",
+        "file": "data/canonical/research/trackers/ge16-news-backfill-judge-batch-1.json",
+        "sha256": "450f04a774e321ef379d614601082decb37b309ba78193c1dd071e8fbf60a511"
+      },
+      {
+        "disposition": "queue",
+        "file": "data/canonical/research/trackers/ge16-news-backfill-judge-batch-2.json",
+        "sha256": "9f5e4d95d24fa25d93e9fa1c85d56eede2e934e4141438dfe33944a5258bd504"
+      },
+      {
+        "disposition": "queue",
+        "file": "data/canonical/research/trackers/ge16-news-backfill-judge-batch-3.json",
+        "sha256": "46ee5289d9e0630508978272df0664525606f19b42c33fd49fe6a9f5ebc88a0e"
+      },
+      {
+        "disposition": "queue",
+        "file": "data/canonical/research/trackers/ge16-news-backfill-judge-batch-4.json",
+        "sha256": "24c356a9b0950cf8d95126395246470601805ea5263958e0d051405441b57613"
+      },
+      {
+        "disposition": "queue",
+        "file": "data/canonical/research/trackers/ge16-news-backfill-judge-batch-5.json",
+        "sha256": "98ed22ac80e74564b7a77721be1b246d41825bd11353f44a2059b4d8d1dc86d4"
+      },
+      {
+        "disposition": "queue",
+        "file": "data/canonical/research/trackers/ge16-news-backfill-judge-batch-6.json",
+        "sha256": "e52fd5a2cc02d0447f3c8f64f35ef13c06c3fd92c31ea7b1e4d2779a9867089e"
+      },
+      {
+        "disposition": "queue",
+        "file": "data/canonical/research/trackers/ge16-news-backfill-judge-batch-7.json",
+        "sha256": "715decccc1f0f38941158f7c12094b265b411e25b644845a29ea73c5641f6f17"
+      },
+      {
+        "disposition": "queue",
+        "file": "data/canonical/research/trackers/ge16-news-backfill-judge-batch-8.json",
+        "sha256": "d237059d0d72ba48a2ea1ce0b796761bf85c9e2fa5e90fd74240311c7764e673"
+      },
+      {
+        "disposition": "queue",
+        "file": "data/canonical/research/trackers/ge16-news-backfill-judge-batch-9.json",
+        "sha256": "92187431964265d812de9e64a07e7cae9dd4fe698c1035dff2f9652a066404a5"
+      },
+      {
+        "disposition": "unrecognized",
+        "file": "data/canonical/research/trackers/ge16-news-backfill-judge-manifest.json",
+        "sha256": "49335079b4435049640d540b00b46113a92ee84967bec86c25fad1bbe8bb8938"
+      },
+      {
+        "disposition": "judged-batch",
+        "file": "data/canonical/research/trackers/ge16-news-backfill-judged-batch-1.json",
+        "sha256": "4c642b853069cd251ac2db4d312e700719aa9aa3f1a2fd74c498d856a4bfa98d"
+      },
+      {
+        "disposition": "judged-batch",
+        "file": "data/canonical/research/trackers/ge16-news-backfill-judged-batch-10.json",
+        "sha256": "3fb0604a1b28d454ba0e32740b3de69b52c86f582d4c7df9f4d373c2d6a3669b"
+      },
+      {
+        "disposition": "judged-batch",
+        "file": "data/canonical/research/trackers/ge16-news-backfill-judged-batch-11.json",
+        "sha256": "a2bd17ce43707876dcfee447d13e9fcb6c5bcf80ffedbcc0a49b83cd04aeb3f5"
+      },
+      {
+        "disposition": "judged-batch",
+        "file": "data/canonical/research/trackers/ge16-news-backfill-judged-batch-12.json",
+        "sha256": "08390503826e56cb2821d886f6865770c589812ca8cd25d5486968044d8008e6"
+      },
+      {
+        "disposition": "judged-batch",
+        "file": "data/canonical/research/trackers/ge16-news-backfill-judged-batch-13.json",
+        "sha256": "97a6d64c25d53c226b33d7362321ccd6804f3ef6a98a1ec06ebb974bc3b58836"
+      },
+      {
+        "disposition": "judged-batch",
+        "file": "data/canonical/research/trackers/ge16-news-backfill-judged-batch-14.json",
+        "sha256": "650b37d3346ce7afba9fc6d677cd148a3d31914f687e4fd936eecf088ea10901"
+      },
+      {
+        "disposition": "judged-batch",
+        "file": "data/canonical/research/trackers/ge16-news-backfill-judged-batch-15.json",
+        "sha256": "6ed3f27d695ccdd68f585ec25184420c8e92e39962689e9f7719ee50e7d90d5c"
+      },
+      {
+        "disposition": "judged-batch",
+        "file": "data/canonical/research/trackers/ge16-news-backfill-judged-batch-16.json",
+        "sha256": "e0461dad43576bccebf1b4af66abb2dae2ce303e54df7a33115bd08fcb20b383"
+      },
+      {
+        "disposition": "judged-batch",
+        "file": "data/canonical/research/trackers/ge16-news-backfill-judged-batch-17.json",
+        "sha256": "1f86509a140a6cc0403f46ababe03905a61e836863d06d0a64efb015a7474293"
+      },
+      {
+        "disposition": "judged-batch",
+        "file": "data/canonical/research/trackers/ge16-news-backfill-judged-batch-18.json",
+        "sha256": "942e6882a39f1c362e583909a3330ff16e38d2524f8118a1ea6183abc5bc8743"
+      },
+      {
+        "disposition": "judged-batch",
+        "file": "data/canonical/research/trackers/ge16-news-backfill-judged-batch-19.json",
+        "sha256": "8fcc852f6b6509e3cef9f80dbb2a3ffa77e2deff1905484a74d64949e4681a57"
+      },
+      {
+        "disposition": "judged-batch",
+        "file": "data/canonical/research/trackers/ge16-news-backfill-judged-batch-2.json",
+        "sha256": "e78fc0e940305956b38deb5a905cb9338623d7fda31027fc471aaf09303c8681"
+      },
+      {
+        "disposition": "judged-batch",
+        "file": "data/canonical/research/trackers/ge16-news-backfill-judged-batch-20.json",
+        "sha256": "dc872bad5af81522bdde2579cfc5f32fcbc5920250ad4ae1d4bedbe4ca3803bf"
+      },
+      {
+        "disposition": "judged-batch",
+        "file": "data/canonical/research/trackers/ge16-news-backfill-judged-batch-21.json",
+        "sha256": "9d299cb61ae38b9c82a671a479c2572db4a9aa9ffa9e8fb03c93f0389b1cc455"
+      },
+      {
+        "disposition": "judged-batch",
+        "file": "data/canonical/research/trackers/ge16-news-backfill-judged-batch-22.json",
+        "sha256": "a35c0c5f59350efb1ff81742c27a1571b5088dbdee89de638d6f23a4417675d5"
+      },
+      {
+        "disposition": "judged-batch",
+        "file": "data/canonical/research/trackers/ge16-news-backfill-judged-batch-23.json",
+        "sha256": "164260a79b17c63a1a8bface9306a974d349db6a721686dcc0469b8e3438aeb3"
+      },
+      {
+        "disposition": "judged-batch",
+        "file": "data/canonical/research/trackers/ge16-news-backfill-judged-batch-24.json",
+        "sha256": "8e412d1195d5318f4c6122292b3b2c8795732159f89cc8e643d66948c272748e"
+      },
+      {
+        "disposition": "judged-batch",
+        "file": "data/canonical/research/trackers/ge16-news-backfill-judged-batch-3.json",
+        "sha256": "020330573ba4dc9ce3e93036e0a134199b65a5bb370220887164555a13572db9"
+      },
+      {
+        "disposition": "judged-batch",
+        "file": "data/canonical/research/trackers/ge16-news-backfill-judged-batch-4.json",
+        "sha256": "b74a96ecef4c56b0ae824c810aefa622044032a0e91e216afc7e464d3613aeeb"
+      },
+      {
+        "disposition": "judged-batch",
+        "file": "data/canonical/research/trackers/ge16-news-backfill-judged-batch-5.json",
+        "sha256": "8c48881388f03eba27547873deba132dd850438e62d114d5835662d6febb1219"
+      },
+      {
+        "disposition": "judged-batch",
+        "file": "data/canonical/research/trackers/ge16-news-backfill-judged-batch-6.json",
+        "sha256": "7b308c313326bf9a405c90ffed8c981a6f57bb20ce54191808a93c6c4199cc13"
+      },
+      {
+        "disposition": "judged-batch",
+        "file": "data/canonical/research/trackers/ge16-news-backfill-judged-batch-7.json",
+        "sha256": "868497868a19a17289e747b9f70c5329f65843f86891201fade3e49a7ba7a878"
+      },
+      {
+        "disposition": "judged-batch",
+        "file": "data/canonical/research/trackers/ge16-news-backfill-judged-batch-8.json",
+        "sha256": "2a82354f782d05cfb97a887476e5642042f487044c0db4a9c469679bf97e15d7"
+      },
+      {
+        "disposition": "judged-batch",
+        "file": "data/canonical/research/trackers/ge16-news-backfill-judged-batch-9.json",
+        "sha256": "d227585b3efb6aceb104b3e1dcf5a1bbe79945d9e6872de361ac0bf5ef03503e"
+      },
+      {
+        "disposition": "verdicts-log",
+        "file": "data/canonical/research/trackers/ge16-news-backfill-verdicts.jsonl",
+        "sha256": "3dbe6e98260acff761122daf921c2848cd6ab9e634fcaaad7581fd3d7e0c4079"
+      },
+      {
+        "disposition": "queue",
+        "file": "data/canonical/research/trackers/ge16-news-candidates.json",
+        "sha256": "e2428e1152e74db5a2628a6bc62db2ff4dafbaab31239fb6639b7e656c0da2f9"
+      },
+      {
+        "disposition": "queue",
+        "file": "data/canonical/research/trackers/ge16-news-feed.json",
+        "sha256": "9a1a3ff8f1b732f12f813139158ef87d6811d02c03b88c274fef46247c430a74"
+      },
+      {
+        "disposition": "live-judged",
+        "file": "data/canonical/research/trackers/ge16-news-judged.json",
+        "sha256": "cb13f06e04cf6da5256e6dd4011e790baf07d58871e36ae28d14de6bb08bfd11"
+      },
+      {
+        "disposition": "queue",
+        "file": "data/canonical/research/trackers/ge16-news-seen-pending.json",
+        "sha256": "c363817f385bcea61a66b6b7cb9cb60a4797f20fc03d9cc5574a71c058affbeb"
+      },
+      {
+        "disposition": "narrative-log",
+        "file": "data/canonical/research/trackers/ge16-poll-tracker-log.md",
+        "sha256": "28796f4b7ecad0df011236979f356e1a3b50db459959fda25ad0f7256a3c3a0a"
+      },
+      {
+        "disposition": "tracked-list",
+        "file": "data/canonical/research/trackers/ge16-polls-tracked.json",
+        "sha256": "c641f8494ede3238fe5ac165d745b29913ca19b3360d0122f5bae7b7a9240756"
+      },
+      {
+        "disposition": "unrecognized",
+        "file": "data/canonical/research/trackers/ge16-selfheal-state.json",
+        "sha256": "b4aa38f021e2a4ee8c1ce84535d17b07ce387e4166e3273b16bb2d28f284c249"
+      },
+      {
+        "disposition": "entity-seed-vocabulary",
+        "file": "data/canonical/entities/seed-vocabulary.json",
+        "sha256": "3d0b66aacfec399aa1c0d523a96cfed60f6b56a6dc0f2167bd2170ae4b76382e"
+      }
+    ],
+    "prior_edition": "20260928T145226Z"
+  },
+  "note": "P2.2 import run (evidence/judgment canonicalization of V2 tracker artifacts).",
+  "row_counts": {
+    "entity_candidates_total": 211,
+    "evidence_by_kind": {
+      "news": 2621,
+      "tracker-note": 18460
+    },
+    "evidence_total": 21081,
+    "judgments_by_origin": {
+      "accepted-corpus-inline": 1261,
+      "judged-batch": 934,
+      "orphaned-flag": 811
+    },
+    "judgments_total": 3006
+  },
+  "schema": "ge16.edition.v1"
+}

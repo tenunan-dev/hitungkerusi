@@ -1,0 +1,12 @@
+{
+  "schema": "ge16.entity-candidate.v1",
+  "candidate_id": "cand-0123456789ab",
+  "candidate_string": "PEJUANG",
+  "proposed_type": "party",
+  "seen_in": [
+    "ev0123456789abcdef"
+  ],
+  "occurrences": 4,
+  "proposed_at": "2026-09-28T09:00:00+00:00",
+  "status": "proposed"
+}

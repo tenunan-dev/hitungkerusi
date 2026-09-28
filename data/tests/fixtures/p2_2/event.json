@@ -1,0 +1,18 @@
+{
+  "schema": "ge16.event.v1",
+  "event_id": "evt0123456789ab",
+  "kind": "coalition-talks",
+  "date": "2026-09-20",
+  "title": "BN and PH hold seat negotiations",
+  "description": "Sample P2.8 story row.",
+  "actors": [
+    "bn",
+    "ph"
+  ],
+  "sources": [
+    "ev0123456789abcdef",
+    "evfedcba9876543210"
+  ],
+  "thread_id": "th-coalition-2026-09",
+  "confidence": "medium"
+}

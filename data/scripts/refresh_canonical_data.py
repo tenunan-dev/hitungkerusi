@@ -111,7 +111,11 @@ def refresh(root=ROOT):
                         raise ValueError("symlinked canonical directory")
                 for name in sorted(names, key=os.fsencode):
                     destination = (Path(current) / name).relative_to(root).as_posix()
-                    # transient-filename exclusion deferred to P2.1 (content/consumer classification) — review R1
+                    # Canonical inputs are selected by P2.1 disposition (canonical-input-candidate),
+                    # never by filename: this walk hashes EVERY file under the approved roots and
+                    # excludes nothing (the P1.7 R1 filename exclusion was reverted and stays out).
+                    # Working-state vs durable-evidence is a content classification recorded in
+                    # evidence/P2/P2.1-artifact-classification.json, applied by the P2.2 importer.
                     raw = read_file(root_fd, destination)
                     entry = dict(previous[destination]) if destination in previous else {
                         "destination_path": destination, "bytes": 0, "sha256": "",

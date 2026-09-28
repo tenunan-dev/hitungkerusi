@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ge16:schema:entity-candidate.v1",
+  "title": "ge16.entity-candidate.v1",
+  "description": "Auto-proposed entity candidate. Any judgment/evidence string that survives alias normalization without matching the controlled vocabulary becomes a row here; nothing auto-enters entities.json.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "candidate_id", "candidate_string", "proposed_type", "seen_in", "occurrences", "proposed_at", "status"],
+  "properties": {
+    "schema": {"const": "ge16.entity-candidate.v1"},
+    "candidate_id": {"type": "string", "pattern": "^cand-[0-9a-f]{12}$"},
+    "candidate_string": {"type": "string", "minLength": 1},
+    "proposed_type": {"enum": ["party", "bloc", "seat", "source", "person", "org"]},
+    "seen_in": {"type": "array", "items": {"type": "string", "pattern": "^ev[0-9a-f]{16}$"}},
+    "occurrences": {"type": "integer", "minimum": 1},
+    "proposed_at": {"type": "string"},
+    "status": {"enum": ["proposed", "approved", "rejected"]}
+  }
+}

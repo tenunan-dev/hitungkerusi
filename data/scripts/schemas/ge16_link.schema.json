@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ge16:schema:link.v1",
+  "title": "ge16.link.v1",
+  "description": "Typed graph edge. Every edge cites what asserted it. Written from P2.8 (story building) onward; validated against fixtures now. dupe_of edges are decided by a judgment, never by the importer.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "link_id", "src", "rel", "dst", "asserted_by", "asserted_at"],
+  "properties": {
+    "schema": {"const": "ge16.link.v1"},
+    "link_id": {"type": "string", "pattern": "^lk[0-9a-f]{12}$"},
+    "src": {"type": "string", "minLength": 1, "description": "Entity, evidence, or event id."},
+    "rel": {"enum": ["mentions", "belongs_to", "contests", "published_by", "supersedes", "dupe_of"]},
+    "dst": {"type": "string", "minLength": 1},
+    "evidence_id": {"type": "string", "pattern": "^ev[0-9a-f]{16}$"},
+    "asserted_by": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "id"],
+      "properties": {
+        "kind": {"enum": ["judgment", "collector", "curator"]},
+        "id": {"type": "string", "minLength": 1, "description": "judgment_id, collector name, or owner identity."}
+      }
+    },
+    "asserted_at": {"type": "string"}
+  }
+}

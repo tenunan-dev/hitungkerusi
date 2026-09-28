@@ -1,0 +1,30 @@
+{
+  "schema": "ge16.judgment.v1",
+  "judgment_id": "jgfedcba987654",
+  "evidence_id": "ev0123456789abcdef",
+  "verdict": "accept",
+  "category": "coalition",
+  "blocs": [
+    "PH"
+  ],
+  "parties": [
+    "DAP"
+  ],
+  "seats": [],
+  "score": 0.9,
+  "lang": "en",
+  "judge": {
+    "model": null,
+    "by": null,
+    "run_id": null
+  },
+  "judged_at": "2026-09-26T05:42:53+00:00",
+  "basis": {
+    "origin": "orphaned-flag",
+    "verifiable": false,
+    "batch_file": null,
+    "source_sha256": null,
+    "verdict_line": null
+  },
+  "confidence_note": "Backfill flag references a judged batch that no longer exists (P2.1 Finding 3); source_recovery liveness probe recorded on the evidence row; full re-judge is P2.7."
+}

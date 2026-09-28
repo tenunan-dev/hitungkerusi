@@ -1,0 +1,10 @@
+{
+  "schema": "ge16.entity.v1",
+  "entity_id": "pejuang",
+  "type": "party",
+  "label": "PEJUANG",
+  "first_seen": "2026-09-28",
+  "approved_by": "owner",
+  "approved_at": "2026-09-28T10:00:00+00:00",
+  "approved_from_candidate": "cand-0123456789ab"
+}

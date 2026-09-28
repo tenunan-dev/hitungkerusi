@@ -1,7 +1,9 @@
 # --- Local-only planning & evidence (owner decision 2, P1.1 escalation D2) ---
+# Root-anchored: only the repository-level planning/evidence dir is local-only.
+# data/canonical/evidence/ (P2.2 durable canonical rows) IS committed.
 PLAN.md
 TAKEOVER.md
-evidence/
+/evidence/
 archive/
 OWNER-DECISIONS.md
 

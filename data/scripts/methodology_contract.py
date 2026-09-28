@@ -2,8 +2,11 @@
 
 import re
 
-
-# transient-filename exclusion deferred to P2.1 (content/consumer classification) — review R1
+# Canonical inputs are selected by P2.1 disposition (canonical-input-candidate),
+# never by filename: the tuples below are the approved methodology imports by
+# legacy+canonical path pair, and nothing is excluded by name anywhere (the
+# P1.7 R1 transient-filename exclusion was reverted). Dispositions for the
+# tracker/backfill artifacts live in evidence/P2/P2.1-artifact-classification.json.
 METHODOLOGY_INPUTS = (
     (
         "01_RESEARCH/data/notes/byelections-malaysia-1957-2026.md",

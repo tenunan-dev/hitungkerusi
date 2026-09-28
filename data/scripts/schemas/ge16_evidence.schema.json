@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ge16:schema:evidence.v1",
+  "title": "ge16.evidence.v1",
+  "description": "Immutable observation row. Never edited after write; corrections are new rows with supersedes. IDs are deterministic (normalize_link.v1 + sha256) so re-import adds no rows.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "evidence_id", "kind", "payload", "source_ref", "collected_at", "normalizer_v"],
+  "properties": {
+    "schema": {"const": "ge16.evidence.v1"},
+    "evidence_id": {"type": "string", "pattern": "^ev[0-9a-f]{16}$"},
+    "kind": {"enum": ["news", "tracker-note", "baseline", "geo", "dun-result"]},
+    "payload": {
+      "type": "object",
+      "description": "Original source fields, verbatim. No importer rewriting."
+    },
+    "source_ref": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["file", "sha256"],
+      "properties": {
+        "file": {"type": "string", "minLength": 1, "description": "Repository-relative path of the artifact the row was read from."},
+        "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "offset": {"type": "integer", "minimum": 0, "description": "Optional positional index of the row inside the source file."}
+      }
+    },
+    "collected_at": {"type": "string", "description": "Source-file collection/commit clock (envelope field). May be empty when the source records none."},
+    "normalizer_v": {"type": "string", "pattern": "^normalize_link\\.v[0-9]+$"},
+    "supersedes": {"type": "string", "pattern": "^ev[0-9a-f]{16}$"},
+    "notes": {"type": "string"},
+    "source_recovery": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["checked_at", "http_status", "final_url", "ok"],
+      "description": "Owner-ruled liveness probe for evidence whose only judgment provenance is an orphaned backfill flag (P2.2 brief decision 2). Real HTTP results only.",
+      "properties": {
+        "checked_at": {"type": "string"},
+        "http_status": {"type": ["integer", "null"]},
+        "final_url": {"type": "string"},
+        "ok": {"type": "boolean"},
+        "error": {"type": ["string", "null"], "description": "Null when the probe succeeded."}
+      }
+    }
+  }
+}

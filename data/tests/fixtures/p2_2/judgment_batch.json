@@ -1,0 +1,29 @@
+{
+  "schema": "ge16.judgment.v1",
+  "judgment_id": "jg0123456789ab",
+  "evidence_id": "ev0123456789abcdef",
+  "verdict": "accept",
+  "category": "legal",
+  "blocs": [],
+  "parties": [
+    "UMNO"
+  ],
+  "seats": [],
+  "score": 0.8,
+  "lang": "ms",
+  "judge": {
+    "model": "deepseek-chat",
+    "by": "deepseek",
+    "run_id": "2026-09-26T06:06:07+00:00"
+  },
+  "judged_at": "2026-09-26T06:08:12+00:00",
+  "basis": {
+    "origin": "judged-batch",
+    "verifiable": true,
+    "batch_file": "data/canonical/research/trackers/ge16-news-backfill-judged-batch-1.json",
+    "batch_file_sha256": "4c642b853069cd251ac2db4d312e700719aa9aa3f1a2fd74c498d856a4bfa98d",
+    "embedded_source_sha256": "450f04a774e321ef379d614601082decb37b309ba78193c1dd071e8fbf60a511",
+    "source_hash_semantics": "embedded hash refers to the judged input generation of ge16-news-backfill-candidates.json at judge time; input generation was overwritten in V2 (P2.1 Finding 2). Verifiable binding is batch_file_sha256.",
+    "verdict_line": null
+  }
+}

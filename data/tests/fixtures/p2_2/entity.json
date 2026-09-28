@@ -1,0 +1,12 @@
+{
+  "schema": "ge16.entity.v1",
+  "entity_id": "umno",
+  "type": "party",
+  "label": "UMNO",
+  "label_ms": "Pertubuhan Kebangsaan Melayu Bersatu",
+  "aliases": [
+    "Barisan Nasional component party"
+  ],
+  "first_seen": "2026-09-28",
+  "notes": "Seed vocabulary entry."
+}

@@ -1,0 +1,13 @@
+{
+  "schema": "ge16.link.v1",
+  "link_id": "lk0123456789ab",
+  "src": "ev0123456789abcdef",
+  "rel": "mentions",
+  "dst": "umno",
+  "evidence_id": "ev0123456789abcdef",
+  "asserted_by": {
+    "kind": "judgment",
+    "id": "jg0123456789ab"
+  },
+  "asserted_at": "2026-09-26T06:08:12+00:00"
+}

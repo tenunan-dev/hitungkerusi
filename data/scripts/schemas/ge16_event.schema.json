@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ge16:schema:event.v1",
+  "title": "ge16.event.v1",
+  "description": "Dated occurrence built in P2.8 from judgments, never from raw tracker strings (P0.5). Schema written and fixture-validated in P2.2; rows populate later.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "event_id", "kind", "date", "title", "sources"],
+  "properties": {
+    "schema": {"const": "ge16.event.v1"},
+    "event_id": {"type": "string", "pattern": "^evt[0-9a-f]{12}$"},
+    "kind": {"type": "string", "minLength": 1},
+    "date": {"type": "string", "minLength": 1},
+    "title": {"type": "string", "minLength": 1},
+    "description": {"type": "string"},
+    "actors": {"type": "array", "items": {"type": "string", "minLength": 1}},
+    "sources": {"type": "array", "items": {"type": "string", "pattern": "^ev[0-9a-f]{16}$"}},
+    "thread_id": {"type": "string"},
+    "confidence": {"enum": ["high", "medium", "low"]}
+  }
+}

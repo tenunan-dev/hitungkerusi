@@ -1,0 +1,30 @@
+{
+  "schema": "ge16.judgment.v1",
+  "judgment_id": "jg112233445566",
+  "evidence_id": "ev0123456789abcdef",
+  "verdict": "accept",
+  "category": "election",
+  "blocs": [
+    "BN"
+  ],
+  "parties": [
+    "UMNO"
+  ],
+  "seats": [],
+  "score": 0.7,
+  "lang": "en",
+  "judge": {
+    "model": null,
+    "by": null,
+    "run_id": null
+  },
+  "judged_at": "2026-09-26T06:09:16+00:00",
+  "basis": {
+    "origin": "accepted-corpus-inline",
+    "verifiable": true,
+    "batch_file": "data/canonical/research/trackers/ge16-news-accepted.json",
+    "source_sha256": "6b6040967da8407e0d844ff5b23946c2560b54475307e4517c538417f3d337b1",
+    "verdict_line": null
+  },
+  "confidence_note": "Weekly-corpus merged record; judge identity not retained by the V2 commit path."
+}

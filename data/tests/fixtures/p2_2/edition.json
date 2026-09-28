@@ -1,0 +1,23 @@
+{
+  "schema": "ge16.edition.v1",
+  "edition_id": "20260928T120000Z",
+  "created_at": "2026-09-28T12:00:00+00:00",
+  "content_hashes": {
+    "data/canonical/research/trackers/ge16-news-accepted.json": "6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b"
+  },
+  "lineage": {
+    "prior_edition": null,
+    "inputs": [
+      {
+        "file": "data/canonical/research/trackers/ge16-news-accepted.json",
+        "sha256": "6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b",
+        "disposition": "accepted-corpus"
+      }
+    ]
+  },
+  "row_counts": {
+    "evidence": 2213,
+    "judgments": 2623
+  },
+  "note": "Fixture edition."
+}

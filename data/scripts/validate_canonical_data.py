@@ -693,7 +693,11 @@ def _validate_selected(manifest_path: Path, import_audit_root: Optional[Path] = 
         )
         for relative_path, file_path in files_under(destination_root, "destination tree").items():
             destination_files[f"{destination_root_string}/{relative_path}"] = file_path
-    # transient-filename exclusion deferred to P2.1 (content/consumer classification) — review R1
+    # Canonical inputs are selected by P2.1 disposition (canonical-input-candidate),
+    # never by filename: this check compares the manifest against the FULL destination
+    # tree with no name-based exclusion (the P1.7 R1 exclusion was reverted). Working-state
+    # vs durable-evidence content classification is recorded in
+    # evidence/P2/P2.1-artifact-classification.json and applied by the P2.2 importer.
     if set(by_destination) != set(destination_files):
         raise ValidationError("destination tree differs from manifest")
 

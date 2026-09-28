@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ge16:schema:judgment.v1",
+  "title": "ge16.judgment.v1",
+  "description": "Verdict about evidence. Many judgments per evidence are allowed; all retained for audit. Unmatched bloc/party/seat strings keep their raw values here and surface separately as entity candidates (never blocking an import).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "judgment_id", "evidence_id", "verdict", "judged_at", "basis"],
+  "properties": {
+    "schema": {"const": "ge16.judgment.v1"},
+    "judgment_id": {"type": "string", "pattern": "^jg[0-9a-f]{12}$"},
+    "evidence_id": {"type": "string", "pattern": "^ev[0-9a-f]{16}$"},
+    "verdict": {"enum": ["accept", "reject"]},
+    "category": {"type": "string"},
+    "blocs": {"type": "array", "items": {"type": "string"}},
+    "parties": {"type": "array", "items": {"type": "string"}},
+    "seats": {"type": "array", "items": {"type": "string"}},
+    "score": {"type": "number", "minimum": 0, "maximum": 1},
+    "lang": {"type": "string"},
+    "judge": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["model", "by", "run_id"],
+      "description": "Judge identity as retained by the source. Null where the merged corpus did not keep it.",
+      "properties": {
+        "model": {"type": ["string", "null"]},
+        "by": {"type": ["string", "null"]},
+        "run_id": {"type": ["string", "null"]}
+      }
+    },
+    "judged_at": {"type": "string"},
+    "basis": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["origin", "verifiable"],
+      "properties": {
+        "origin": {"enum": ["judged-batch", "accepted-corpus-inline", "orphaned-flag"]},
+        "verifiable": {"type": "boolean"},
+        "batch_file": {"type": ["string", "null"], "description": "Repository-relative path of the surviving artifact backing the judgment, if any."},
+        "batch_file_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$", "description": "origin judged-batch only: import-time computed sha256 of the batch file itself. This is the verifiable binding — hashing the file named by batch_file yields exactly this value."},
+        "embedded_source_sha256": {"type": ["string", "null"], "pattern": "^[0-9a-f]{64}$", "description": "origin judged-batch only: the batch document's self-reported source_sha256, kept verbatim. It hashes the judged INPUT generation of ge16-news-backfill-candidates.json at judge time; that generation was overwritten in V2 (P2.1 Finding 2), so it cannot be reproduced from disk. See source_hash_semantics."},
+        "source_sha256": {"type": ["string", "null"], "pattern": "^[0-9a-f]{64}$", "description": "origin accepted-corpus-inline: sha256 of the accepted-corpus file backing the judgment (import-time computed). origin orphaned-flag: null."},
+        "source_hash_semantics": {"type": "string", "description": "origin judged-batch only: states which hash is auditor-verifiable and why embedded_source_sha256 points at an overwritten input generation."},
+        "verdict_line": {"type": ["string", "null"], "description": "Compact verdict line when the judgment is derived from verdicts.jsonl (parse_verdicts)."}
+      },
+      "allOf": [
+        {
+          "if": {"properties": {"origin": {"const": "judged-batch"}}},
+          "then": {"required": ["batch_file_sha256", "embedded_source_sha256", "source_hash_semantics"]}
+        }
+      ]
+    },
+    "confidence_note": {"type": "string"}
+  }
+}
