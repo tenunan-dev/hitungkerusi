@@ -27,8 +27,10 @@ reports, one internally consistent verified edition published to Vercel
 3. `TAKEOVER.md` — operational rails §0 for the main agent (local-only).
 4. The target domain's `AGENTS.md` (`data/`, `analytics/`, `site/`, `ops/`,
    `outputs/`, `delivery/`) — authored fresh in P1.8, review-approved.
-5. `docs/REUSE-MANIFEST.md` — the 60-row V2→V3 reuse contract (committed).
-6. `evidence/P0..P7/` — per-task packets, run outputs, review verdicts,
+5. `docs/ARCHITECTURE.md` — living architecture manual, as-built state
+   (committed). Read the sections for whatever subsystem you touch.
+6. `docs/REUSE-MANIFEST.md` — the 60-row V2→V3 reuse contract (committed).
+7. `evidence/P0..P7/` — per-task packets, run outputs, review verdicts,
    verification records (local-only).
 
 ## 3. Key owner decisions (details in evidence/P0/OWNER-DECISIONS.md)
