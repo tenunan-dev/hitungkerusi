@@ -26,7 +26,9 @@ Python 3.12 pinned (`requirements.txt` from the audited dependency inventory).
 first run, or restore from backup.
 
 ## Reading order for agents
-Each domain has an `AGENTS.md` with purpose, layout, verified commands, rules
-and don'ts. Read the domain's AGENTS.md before touching that domain. V2
-(`/Documents/HermesWorkFolder/Malaysia General Election v2`) is a read-only
-reference — never write there.
+1. `START-HERE.md` — session handoff: read order, owner decisions, working rules, current phase.
+2. Each domain's `AGENTS.md` — purpose, layout, verified commands, rules and don'ts. Read before touching that domain.
+3. `docs/REUSE-MANIFEST.md` — V2→V3 reuse dispositions (60 rows, verified).
+V2 (`/Documents/HermesWorkFolder/Malaysia General Election v2`) is a read-only
+reference — never write there. `PLAN.md`, `TAKEOVER.md`, `evidence/` and
+`archive/` are local-only (gitignored) and exist only in the owner's working copy.
