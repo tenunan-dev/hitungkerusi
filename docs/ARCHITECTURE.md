@@ -10,8 +10,9 @@ commit `0dd89c5` (P2.3 complete; P2.2 `738d13a` pushed).
 
 An autonomous Malaysian election-research and forecasting application:
 source-backed knowledge accumulation over an append-only, provenance-hashed
-evidence corpus; a reproducible 222-seat parliamentary forecast (plus
-applicable state forecasts); readable EN/MS reports; one internally
+evidence corpus; a reproducible 222-seat federal parliamentary forecast AND
+state (DUN) forecasts for all applicable state legislatures — federal and
+state scope are co-equal; readable EN/MS reports; one internally
 consistent verified edition published to Vercel (`hitungkerusi.fyi`).
 
 - Repo: `github.com/tenunan-dev/hitungkerusi`, branch `main`, public.
@@ -47,10 +48,11 @@ START-HERE.md, README.md, IDEA.md, ARCHITECTURE.md   committed
 | `entities/entities.json` | registry, `ge16.entity-registry.v1`: 44 seeded entities (schema `seeded_from: seed-vocabulary.json`) | entity CLI only |
 | `entities/entity-candidates.jsonl` | 211 auto-proposed entities, all `status: proposed`, **never auto-promoted** | import scan |
 | `entities/seed-vocabulary.json` | controlled vocab seed (6 blocs, 18 parties, sources) | hand-authored |
-| `evidence/dupe-of-candidates.json` | 154 accepted-corpus link collisions as candidate duplicates | importer |
+| `evidence/dupe-of-candidates.json` | 308 proposed duplicate-link candidates (154 accepted-corpus + 141 queue + 12 tracked-list + 1 judged-batch; `source_class` per row) | importer |
 | `editions/edition-<UTCts>.json` | immutable snapshot manifests (§3.3) | edition/promotion writers |
 | `dun/`, `geo/`, `research/` | verified DUN baseline (600/600), geo crosswalks, V2 tracker mirrors | P1 verified pipeline |
-| `events/`, `links/` | **empty by design** — populated in P2.8 from judgments | future P2.8 builder |
+| `events/` | `ge16-events.db` — P2.5 baseline migration snapshot (512 events / 2,141 entities / 315 sources / 117 stories); P2.8 rebuilds it from V3 judgments | P2.5 migration → P2.8 builder |
+| `links/` | **empty by design** — populated in P2.8 from judgments | future P2.8 builder |
 
 **Core invariant — evidence/judgment separation:** an evidence row records
 what was observed (never edited; corrections are new rows with `supersedes`);
@@ -239,9 +241,14 @@ packet (tier + acceptance criteria + prohibitions, router line)
 2. In-flight V2 queue judgments were not imported (inputs postdate their
    outputs' producing commit) — those items exist as evidence only, awaiting
    P2.7 re-judging.
-3. 154 duplicate-link candidates unresolved pending owner review.
+3. 308 duplicate-link candidates (154 accepted-corpus + 141 queue + 12
+   tracked-list + 1 judged-batch) unresolved pending owner review. The
+   P2.2 report's "154" counted the accepted-corpus class only; the
+   audit (2026-09-29) caught the prose/file mismatch — full breakdown
+   is authoritative in `dupe-of-candidates.json`.
 4. 211 entity candidates await owner approval (`entity_candidates.py list`).
-5. `events/` and `links/` are empty until P2.8.
+5. `events/` holds the P2.5 baseline-migration snapshot (`ge16-events.db`);
+   it is rebuilt from V3 judgments in P2.8. `links/` is empty until P2.8.
 6.270 of 292 probe URLs are Google News wrappers — wrapper liveness, not
    publisher liveness.
 7. `apply_env` env-restore scoping deferred until a second caller exists.

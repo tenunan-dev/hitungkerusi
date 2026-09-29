@@ -8,7 +8,8 @@ Committed to the repo (safe to read after a fresh clone). Last updated
 
 HitungKerusi 222 — an autonomous Malaysian election-research and forecasting
 application: source-backed knowledge accumulation, a reproducible 222-seat
-parliamentary forecast plus applicable state forecasts, readable EN/MS
+federal parliamentary forecast AND state (DUN) forecasts for all applicable
+state legislatures — federal and state scope are co-equal — readable EN/MS
 reports, one internally consistent verified edition published to Vercel
 (`hitungkerusi.fyi`).
 
@@ -81,20 +82,29 @@ reports, one internally consistent verified edition published to Vercel
 
 ## 6. Current position (keep this block current)
 
-- P0 ✅ P1 ✅ — P1.1–P1.9 verified 2026-09-28; first push `cf89d9a` on `main`.
-- Next: **P2.1** — classify every tracker/backfill artifact by content,
-  consumer and retention need BEFORE any exclusion logic; then P2.2
-  schema/identity for evidence, judgments, events, entities, links, source
-  revisions.
-- Phase order: P2 evidence model → P3 analytics/reports → P4 runner remap →
-  P5 release/publish → P6 integration verification → P7 live cutover
-  (owner-gated).
+- P0 ✅ P1 ✅ P2.1–P2.5 ✅ — P2.5 verified 2026-09-29; HEAD `4754534`
+  (baseline migration, edition `20260929T064041Z`, suite 238/238).
+- Next: **P2.6** — baseline/incremental collection modes with explicit
+  windows + source checkpoints; scope includes normalizing per-state
+  federal-results staging (owner seat-coverage addition, 2026-09-29).
+- Objective (corrected 2026-09-29): federal 222-seat AND state DUN
+  forecasts are co-equal scope.
+- Phase order: P2 evidence model (P2.6–P2.10 remain) → P3 analytics/reports
+  → P4 runner remap → P5 release/publish → P6 integration verification →
+  P7 live cutover (owner-gated).
 
 ## 7. Known open items
 
 - OD7 label wording: owner to supply (blocks 3 tests by design choice).
+- OD1 polls store: no dedicated P2 task yet — scheduled decision recorded
+  in PLAN.md §8 (fold into P2.8 or defer explicitly; auditor finding 3).
 - `site/AGENTS.md:9` cosmetic nit (js/css/assets/geo read as nested under
   `state/`; they are siblings) — needs an approval-capable client to edit
   AGENTS.md files.
-- ZCode 5-hour quota walls possible; failover per runner registry
-  (OpenCode deepseek-flash implements / deepseek-v4-pro reviews).
+- ZCode long-run lane down 2026-09-29 (server-side cancels); lane B
+  active until tomorrow (Claude implements, ZCode reviews). OpenCode
+  `nous` provider disabled in its config — deepseek failover down.
+- P2.4 advisory: `work_paths.apply_env` env-restore scoping needed before
+  any second in-process caller. P2.5 advisories A1–A3 logged non-blocking.
+- P2.4 verifier gap: `dupe-of-candidates.json` not covered by edition
+  `row_counts` — fold into P2.6+ work before P2.8 (auditor finding 5).
