@@ -330,6 +330,12 @@ tables/invariants above against the actual tree, re-verify stated counts,
 add new sections for new subsystems, and record the update in the changelog
 below. The manual is committed; updates ride the phase's push.
 
+**Plain-language companion:** `docs/ARCHITECTURE-APPENDIX-A.md` explains the
+data layer file-by-file in plain language — what each file/function does,
+who calls whom, and a who-writes-what map. It is updated on the same
+milestones; when the two documents disagree, §3's spec wins and both get
+fixed together.
+
 ### Changelog
 
 | Date | Commit | Change |
@@ -337,4 +343,5 @@ below. The manual is committed; updates ride the phase's push.
 | 2026-09-28 | `0dd89c5` | Initial manual: state as of P2.3 complete (P2.2 pushed `738d13a`, P2.3 local). |
 | 2026-09-29 | (P2.4, local) | §3.3/§4: read-only integrity verifier (`integrity.py`) + refresh run-mode gate; suite 203→226. |
 | 2026-09-29 | (P2.5, local) | §3.3/§4: baseline migration (`migrate_baseline.py`, events DB 512 events/2,141 entities landed, edition `20260929T064041Z`); suite 226→238; key-aware edition selection in test helpers. |
-| 2026-09-29 | (P2.6, local) | §3.4/§3.8/§4: source checkpoints + complete accepted archive (2,367 items) + per-state federal-results derivation (222 seats, zero dups) + staging-contract tests; candidates collector outdir fix; provenance manifest 149→162; suite 238→261. |
+| 2026-09-29 | (P2.6, local) | §3.4/§3.8/§4: source checkpoints + complete accepted archive (2,367 items) + per-state federal-results derivation (222 seats, zero dups) + staging-contract tests; candidates collector outdir fix; provenance manifest 149→162; suite 238→264. |
+| 2026-09-29 | (P2.6 addendum, local) | Added `ARCHITECTURE-APPENDIX-A.md` — plain-language data-layer manual (per-file/per-function how-it-works, call relationships, who-writes-what map), linked from §8; rides the P2.6 push. |
