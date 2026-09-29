@@ -98,6 +98,26 @@ history) with explicit `source_hash_semantics`.
 - Currently 3 editions (P2.2 import chain `20260928T142216Z` → …`145304Z`;
   P2.3 promotion editions follow the same pattern).
 
+- **P2.5 baseline migration** — `data/scripts/migrate_baseline.py`, idempotent
+  and content-diff-driven (`inventory`/`migrate --stage`/`migrate --promote`):
+  diffs the six P1.3 canonical-data-provenance roots plus the one named gap
+  (V2 `2_ANALYTICS/work/events/ge16-events.db`) against `data/canonical/`,
+  stages missing/changed items under `data/work/<run_id>/baseline-stage/`
+  (the events DB via the sqlite3 backup API — a consistent snapshot, never a
+  live copy — with per-table row-count sidecars, since backup-API output is
+  not byte-identical to the source and equivalence is judged by
+  `integrity_check`+row counts, not raw sha256), then promotes into canonical
+  only after verifying staged sha256s and refusing any destination collision.
+  A successful promote writes one more `ge16.edition.v1` manifest (reused
+  verbatim — the brief's proposed `ge16.edition.baseline-migration.v1` +
+  `lineage.kind` would violate the frozen schema's and `integrity.py`'s
+  `additionalProperties: false`/known-schema checks) and gates on
+  `verify-chain` + `verify-edition`. Every P0.7 disposition row not covered by
+  the file diff or the events-DB migration is recorded as `out-of-scope` with
+  its own reason — nothing is silently dropped. Landed: `data/canonical/events/ge16-events.db`
+  (512 events / 2,141 entities / 315 sources / 117 stories), edition
+  `20260929T064041Z`.
+
 ### 3.4 Schemas — `data/scripts/schemas/` (8 files)
 
 `ge16_{evidence,judgment,entity,entity-candidate,link,event,edition}.schema.json`
@@ -151,8 +171,19 @@ row back to the V2 bytes it came from.
 
 ## 4. Testing — `data/tests/`
 
-203 tests green as of `0dd89c5`; **226** as of P2.4 (pytest,
-`-p no:cacheprovider`, `PYTHONDONTWRITEBYTECODE=1`). Notable pins:
+203 tests green as of `0dd89c5`; **238** as of P2.5 (pytest,
+`-p no:cacheprovider`, `PYTHONDONTWRITEBYTECODE=1`; ~11 min full run).
+Notable pins:
+
+- Baseline migration (P2.5): idempotency (re-run stages nothing; empty
+  promote is a zero-write no-op), collision refusal (canonical
+  byte-identical on refusal), backup-API snapshot equivalence
+  (integrity_check + per-table counts, not raw sha), verifier gate
+  re-invoked independently of promote's self-report, V2 bytes/mtimes
+  pinned untouched.
+- Edition selection is key-aware: editions are multi-kind under the frozen
+  schema, so tests select the baseline edition by the row-count key they
+  exercise (`latest_corpus_edition`), matching `verify-recorded`'s walk.
 
 - Determinism: repeated import/promotion adds no duplicates; identical runs
   produce identical file sets.
@@ -230,3 +261,4 @@ below. The manual is committed; updates ride the phase's push.
 |---|---|---|
 | 2026-09-28 | `0dd89c5` | Initial manual: state as of P2.3 complete (P2.2 pushed `738d13a`, P2.3 local). |
 | 2026-09-29 | (P2.4, local) | §3.3/§4: read-only integrity verifier (`integrity.py`) + refresh run-mode gate; suite 203→226. |
+| 2026-09-29 | (P2.5, local) | §3.3/§4: baseline migration (`migrate_baseline.py`, events DB 512 events/2,141 entities landed, edition `20260929T064041Z`); suite 226→238; key-aware edition selection in test helpers. |

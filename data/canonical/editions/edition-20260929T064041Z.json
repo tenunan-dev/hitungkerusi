@@ -1,0 +1,47 @@
+{
+  "content_hashes": {
+    "events/ge16-events.db": "2fe03279ef1de89cf8488e70818397d9dca662ef7b18612ba058be406f8f9c6a"
+  },
+  "created_at": "2026-09-29T06:40:41+00:00",
+  "edition_id": "20260929T064041Z",
+  "lineage": {
+    "inputs": [
+      {
+        "disposition": "baseline-migration-snapshot",
+        "file": "events/ge16-events.db",
+        "sha256": "2fe03279ef1de89cf8488e70818397d9dca662ef7b18612ba058be406f8f9c6a"
+      }
+    ],
+    "prior_edition": "20260928T145304Z"
+  },
+  "note": "P2.5 baseline migration: staged run 20260929T064033Z-99e54cd5; items: events/ge16-events.db. Design brief proposed schema=ge16.edition.baseline-migration.v1 + lineage.kind=baseline-migration; reused ge16.edition.v1 verbatim instead (frozen schema + integrity.py structural check both reject unrecognized schema/lineage fields; see migrate_baseline.py module docstring).",
+  "row_counts": {
+    "events_db.claim_reviews": 80,
+    "events_db.dossier_notes": 82,
+    "events_db.entities": 2141,
+    "events_db.entities_fts": 2141,
+    "events_db.entities_fts_config": 1,
+    "events_db.entities_fts_content": 2141,
+    "events_db.entities_fts_data": 35,
+    "events_db.entities_fts_docsize": 2141,
+    "events_db.entities_fts_idx": 31,
+    "events_db.event_entities": 1560,
+    "events_db.event_links": 52,
+    "events_db.event_metrics": 410,
+    "events_db.event_sources": 559,
+    "events_db.events": 512,
+    "events_db.events_fts": 512,
+    "events_db.events_fts_config": 1,
+    "events_db.events_fts_content": 512,
+    "events_db.events_fts_data": 43,
+    "events_db.events_fts_docsize": 512,
+    "events_db.events_fts_idx": 41,
+    "events_db.ingest_runs": 1,
+    "events_db.schema_meta": 3,
+    "events_db.sources": 315,
+    "events_db.stories": 117,
+    "events_db.story_events": 512,
+    "migrated_files": 1
+  },
+  "schema": "ge16.edition.v1"
+}

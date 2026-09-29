@@ -59,11 +59,31 @@ def edition_ids(canonical_root: Path):
 
 
 def latest_row_counts(canonical_root: Path):
-    latest = edition_ids(canonical_root)[-1]
+    return latest_row_counts_at(canonical_root, edition_ids(canonical_root)[-1])
+
+
+def latest_row_counts_at(canonical_root: Path, edition_id: str):
     manifest = json.loads(
-        (canonical_root / "editions" / f"edition-{latest}.json").read_text(
+        (canonical_root / "editions" / f"edition-{edition_id}.json").read_text(
             encoding="utf-8"))
     return manifest["row_counts"]
+
+
+def latest_corpus_edition(canonical_root: Path, key: str = "evidence_total"):
+    """Newest edition carrying corpus row_counts (import editions).
+
+    Editions are multi-kind under the frozen schema (P2.5 added migration
+    editions with `events_db.*` keys and no corpus counts), so "latest" is
+    not automatically a corpus edition. Select by the key the test needs —
+    the same rule verify-recorded uses for its baseline walk.
+    """
+    for edition_id in reversed(edition_ids(canonical_root)):
+        manifest = json.loads(
+            (canonical_root / "editions" / f"edition-{edition_id}.json").read_text(
+                encoding="utf-8"))
+        if key in (manifest.get("row_counts") or {}):
+            return edition_id
+    raise AssertionError(f"no edition carries row_counts key {key!r}")
 
 
 def count_store_rows(canonical_root: Path, relative_dir: str, prefix: str):
@@ -148,7 +168,7 @@ class TestCleanTree(CanonicalSandbox):
     """Brief §4.1 — clean tmp copy passes full + sampled; JSON parses; exit 0."""
 
     def test_every_subcommand_reports_clean_and_parses(self):
-        latest = edition_ids(self.canonical)[-1]
+        latest = latest_corpus_edition(self.canonical)
         paths_total = len(json.loads(
             (self.canonical / "editions" / f"edition-{latest}.json").read_text(
             encoding="utf-8"))["content_hashes"])
@@ -199,7 +219,7 @@ class TestCorruptByte(CanonicalSandbox):
     """Brief §4.2 — one corrupted byte -> MISMATCH detected, exit 1."""
 
     def test_edition_input_single_byte_flip_is_a_hash_mismatch(self):
-        latest = edition_ids(self.canonical)[-1]
+        latest = latest_corpus_edition(self.canonical)
         target = self.canonical / "entities" / "seed-vocabulary.json"
         raw = target.read_bytes()
         target.write_bytes(raw.replace(b":", b";", 1))  # one byte changed
@@ -247,7 +267,7 @@ class TestLostShard(CanonicalSandbox):
         self.assertEqual(sum(deficits.values()), lost)
 
     def test_deleted_edition_input_file_is_missing_path_exit_2(self):
-        latest = edition_ids(self.canonical)[-1]
+        latest = latest_corpus_edition(self.canonical)
         (self.canonical / "entities" / "seed-vocabulary.json").unlink()
         code, report = self.verify("verify-edition", latest)
         self.assertEqual(code, 2)
@@ -259,7 +279,8 @@ class TestUnrecordedAddition(CanonicalSandbox):
     """Brief §4.4 — an appended row no edition records is UNRECORDED, exit 1."""
 
     def test_appended_row_is_unrecorded_with_path_and_offset(self):
-        recorded_news = latest_row_counts(self.canonical)["evidence_by_kind"]["news"]
+        recorded_news = latest_row_counts_at(
+            self.canonical, latest_corpus_edition(self.canonical))["evidence_by_kind"]["news"]
         eid, shard, offset = append_evidence_row(
             self.canonical, "https://p24-fixture.example/unrecorded-addition")
         code, report = self.verify("verify-recorded")
@@ -297,7 +318,8 @@ class TestUnrecordedAddition(CanonicalSandbox):
         unrecorded_count == 1. Precondition: the live edition carries
         judgments_by_origin (all three origins) — the case the duplicate
         loop inflated in production data."""
-        recorded = latest_row_counts(self.canonical)
+        corpus_edition = latest_corpus_edition(self.canonical, "judgments_by_origin")
+        recorded = latest_row_counts_at(self.canonical, corpus_edition)
         self.assertIn("judgments_by_origin", recorded)
         shard_dir = self.canonical / "judgments"
         name = sorted(n for n in os.listdir(shard_dir)
@@ -325,8 +347,8 @@ class TestLegitimateSupersedes(CanonicalSandbox):
     """Brief §4.5 — a supersedes row recorded by a fresh edition passes."""
 
     def test_supersedes_addition_with_fresh_edition_verifies_clean(self):
-        latest = edition_ids(self.canonical)[-1]
-        counts = latest_row_counts(self.canonical)
+        latest = latest_corpus_edition(self.canonical)
+        counts = latest_row_counts_at(self.canonical, latest)
         with open(self.canonical / "evidence" / "evidence-0.jsonl",
                   encoding="utf-8") as handle:
             supersedes = json.loads(
@@ -359,7 +381,7 @@ class TestLegitimateSupersedes(CanonicalSandbox):
                          (len(edition_ids(self.canonical)), new_id))
 
     def test_baseline_scoping_an_old_edition_sees_the_row_as_unrecorded(self):
-        latest = edition_ids(self.canonical)[-1]
+        latest = latest_corpus_edition(self.canonical)
         append_evidence_row(self.canonical,
                             "https://p24-fixture.example/scoped-baseline")
         code, report = self.verify("verify-recorded", "--edition", latest)
@@ -457,7 +479,7 @@ class TestVerifierWritesNothing(CanonicalSandbox):
                           "utime", "chmod", "fchmod", "creat"}
 
     def test_every_subcommand_leaves_the_tree_bit_identical(self):
-        latest = edition_ids(self.canonical)[-1]
+        latest = latest_corpus_edition(self.canonical)
         before = tree_digest(self.canonical)
         for argv in (("verify-edition", latest), ("verify-chain",),
                      ("verify-corpus", "--full"), ("verify-corpus", "--sampled", "25"),
