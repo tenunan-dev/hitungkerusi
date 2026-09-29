@@ -13,6 +13,10 @@ then PROMOTES the staged tracker outputs into canonical and records a
 ``ge16.edition.promotion.v1`` manifest whose ``lineage.run_id`` names the run,
 before refreshing provenance. ``--no-run`` is exactly the pre-P2.3 behavior:
 collectors are not invoked, no run dir exists, only provenance refreshes.
+P2.4 adds a REPORT-ONLY integrity gate after promotion (run mode only):
+``verify-edition`` on the new manifest plus ``verify-corpus --sampled 500``
+(integrity.py); a nonzero verdict is a hard stop naming the edition id — the
+verifier never repairs or rolls back, the owner decides.
 """
 import argparse
 import hashlib
@@ -50,6 +54,7 @@ TRACKERS_RELATIVE = Path("research") / "trackers"
 if str(SCRIPTS_ROOT) not in sys.path:
     sys.path.insert(0, str(SCRIPTS_ROOT))
 import work_paths  # noqa: E402  (sibling module; conftest puts data/ on sys.path too)
+import integrity  # noqa: E402  (P2.4 read-only verifier; gates run mode below)
 
 
 def current_source(destination):
@@ -316,12 +321,50 @@ def write_promotion_edition(run, promoted, unchanged, canonical_root=ROOT,
     return edition_id, str(path)
 
 
-def staged_refresh(label="", canonical_root=ROOT, collector_commands=None, now=None):
-    """One full run-scoped refresh: run -> stage -> promote -> edition -> refresh.
+def post_promotion_gate(run, edition_id, canonical_root):
+    """P2.4 REPORT-ONLY gate: verify the new edition + a corpus sample.
 
-    Returns the run summary (also printed by ``main --run``). The provenance
-    refresh at the end is exactly the pre-P2.3 ``refresh()`` — promotion only
-    ever adds canonical files, so its fail-closed corpus-shrink guard holds.
+    Runs exactly the two checks the P2.4 brief wires into refresh run mode
+    (``verify-edition <new>`` + ``verify-corpus --sampled 500``), records both
+    JSON reports under ``run/logs/`` so the run dir stays self-describing,
+    and on any nonzero verdict raises with the edition id — a hard stop. The
+    verifier never repairs or rolls back: promotion has already landed its
+    files, and the owner decides what happens next. Never runs under
+    ``--no-run`` (that path has no run, no promotion, nothing to gate).
+    """
+    reports = [
+        integrity.verify_edition(edition_id, canonical_root=canonical_root),
+        integrity.verify_corpus(canonical_root=canonical_root, sample=500, seed=0),
+    ]
+    for report in reports:
+        (run.logs / f"integrity-{report['command']}.json").write_text(
+            json.dumps(report, indent=2, ensure_ascii=False, sort_keys=True) + "\n",
+            encoding="utf-8")
+    failed = [(report["command"], report["exit_code"], report["status"])
+              for report in reports if report["exit_code"]]
+    if failed:
+        (run.logs / "integrity-verify-failure.json").write_text(
+            json.dumps({"edition_id": edition_id, "failed": failed}, indent=2,
+                       ensure_ascii=False, sort_keys=True) + "\n", encoding="utf-8")
+        raise RuntimeError(
+            "post-promotion integrity gate failed for edition %s (%s): verifier is "
+            "report-only, canonical left exactly as promoted; reports in %s — "
+            "owner decides on repair" % (
+                edition_id,
+                ", ".join("%s exit %d (%s)" % failure for failure in failed),
+                run.logs))
+    return reports
+
+
+def staged_refresh(label="", canonical_root=ROOT, collector_commands=None, now=None):
+    """One full run-scoped refresh: run -> stage -> promote -> edition -> gate -> refresh.
+
+    Returns the run summary (also printed by ``main --run``). The P2.4 gate
+    sits between the promotion edition and the provenance refresh, so a
+    failed verification is a hard stop BEFORE provenance rewrites anything.
+    The refresh at the end is exactly the pre-P2.3 ``refresh()`` — promotion
+    only ever adds canonical files, so its fail-closed corpus-shrink guard
+    holds.
     """
     canonical_root = Path(canonical_root)
     prior_edition = _edition_module().prior_edition_id(str(canonical_root / "editions"))
@@ -332,11 +375,14 @@ def staged_refresh(label="", canonical_root=ROOT, collector_commands=None, now=N
     promoted, unchanged = promote(run, canonical_root)
     edition_id, edition_path = write_promotion_edition(
         run, promoted, unchanged, canonical_root, prior=prior_edition, now=now)
+    verified = post_promotion_gate(run, edition_id, canonical_root)
     files = refresh(canonical_root)
     return {"run_id": run.run_id, "run_dir": str(run.root),
             "label": label, "inputs_edition": prior_edition,
             "collectors": staged, "promoted": promoted, "unchanged": unchanged,
             "edition_id": edition_id, "edition_path": edition_path,
+            "integrity": [{"command": report["command"], "exit_code": report["exit_code"],
+                           "status": report["status"]} for report in verified],
             "files": files}
 
 
@@ -365,6 +411,9 @@ def main(argv=None, canonical_root=None):
     print(f"promotion: {len(summary['promoted'])} file(s) copied, "
           f"{len(summary['unchanged'])} already current; edition {summary['edition_id']} "
           f"(lineage.run_id={summary['run_id']})")
+    print("integrity gate: " + ", ".join(
+        f"{check['command']} exit={check['exit_code']} ({check['status']})"
+        for check in summary.get("integrity", ())))
     print(f"canonical refresh passed: files={summary['files']}")
     return 0
 

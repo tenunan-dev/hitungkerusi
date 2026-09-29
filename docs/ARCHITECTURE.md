@@ -81,6 +81,20 @@ history) with explicit `source_hash_semantics`.
   were promoted. Distinct schema; the frozen `ge16.edition.v1` is unchanged.
 - Editions chain via `lineage.prior_edition` — a rebuild can always name the
   exact source snapshot it consumed (P2.10 will test this).
+- **P2.4 verifier** — `data/scripts/integrity.py`, REPORT-ONLY (never
+  writes/repairs; zero write calls, AST-pinned): subcommands `verify-edition`
+  (re-hash every `content_hashes` path), `verify-chain` (broken
+  `prior_edition` links, duplicate ids, timestamp order, promotion
+  `run_id` resolvability — a pruned `data/work/` run is `run_pruned_ok`,
+  legal), `verify-corpus` (`--full|--sampled N`, seeded: schema, id
+  uniqueness, `evidence_id` re-derivation, judgment→evidence references,
+  basis batch-file hash re-check, dupe-candidate refs), and `verify-recorded`
+  (the additions rule: rows beyond every edition's `row_counts` are
+  UNRECORDED additions; deficits are lost rows). `--json` for machines; exit
+  codes 0 clean / 1 corrupt / 2 lost, worst wins. Wired into
+  `refresh_canonical_data.py` run mode only, after promotion: edition +
+  corpus checks, hard stop naming the edition on failure (`--no-run`
+  untouched).
 - Currently 3 editions (P2.2 import chain `20260928T142216Z` → …`145304Z`;
   P2.3 promotion editions follow the same pattern).
 
@@ -137,8 +151,8 @@ row back to the V2 bytes it came from.
 
 ## 4. Testing — `data/tests/`
 
-203 tests green as of `0dd89c5` (pytest, `-p no:cacheprovider`,
-`PYTHONDONTWRITEBYTECODE=1`). Notable pins:
+203 tests green as of `0dd89c5`; **226** as of P2.4 (pytest,
+`-p no:cacheprovider`, `PYTHONDONTWRITEBYTECODE=1`). Notable pins:
 
 - Determinism: repeated import/promotion adds no duplicates; identical runs
   produce identical file sets.
@@ -150,6 +164,11 @@ row back to the V2 bytes it came from.
 - Parity: `--no-run` byte-identical to pre-P2.3 invocation; unset env =
   today's exact path resolution.
 - Frozen-schema guard: P2.2 `ge16.edition.v1` fixture untouched by P2.3.
+- Read-only verifier (P2.4): every subcommand leaves a tmp canonical copy
+  bit-identical, and an AST walk pins zero filesystem-write calls in
+  `integrity.py`; each of the 8 defect classes (corrupt byte, lost file,
+  unrecorded row, legit supersedes, broken chain, sampling) injects a real
+  defect into a tmp copy.
 
 ## 5. Quality gates and how work moves
 
@@ -210,3 +229,4 @@ below. The manual is committed; updates ride the phase's push.
 | Date | Commit | Change |
 |---|---|---|
 | 2026-09-28 | `0dd89c5` | Initial manual: state as of P2.3 complete (P2.2 pushed `738d13a`, P2.3 local). |
+| 2026-09-29 | (P2.4, local) | §3.3/§4: read-only integrity verifier (`integrity.py`) + refresh run-mode gate; suite 203→226. |
