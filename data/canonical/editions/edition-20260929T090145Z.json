@@ -1,0 +1,110 @@
+{
+  "content_hashes": {
+    "archive/news-accepted/accepted.jsonl": "df83b4541557b0c407e64ccda921e5a260aa15847fddc3f6ec9cdc261841abc0",
+    "research/states/DUN Johor/federal-election-results-latest.csv": "8eb0416f434c2ece00521ae3da9eda52e15e052c4306d1ed61805b1edc9edee1",
+    "research/states/DUN Kedah/federal-election-results-latest.csv": "7d604ffc30933758be355782d8c07bbb8b73a9e231e76c16a39d6819fa1305f2",
+    "research/states/DUN Kelantan/federal-election-results-latest.csv": "c328dc199c5e833fcef3231743b492b004ae5e6792e0ba3e8ca085320f939d5a",
+    "research/states/DUN Melaka/federal-election-results-latest.csv": "2b4bc99958317f792f294e4bc73e4cc49c3370e97f51a6bd9235069ae3349a4b",
+    "research/states/DUN Negeri Sembilan/federal-election-results-latest.csv": "9cd3d9e81cf9c2dcdd5a70a2c2a6c05f8b60b5636e6979a00fc5ffe4c8e7f4df",
+    "research/states/DUN Pahang/federal-election-results-latest.csv": "1d088a7e416f58abc5f3f8f765b55a0e15988e65aeb126e024d6e18dd5c5088a",
+    "research/states/DUN Perak/federal-election-results-latest.csv": "c1f4ea149e082dabf430e645b5076ebb0c1b27253317ff6f0bce9691ef8f36ed",
+    "research/states/DUN Perlis/federal-election-results-latest.csv": "221f8cd2783891160dd600983147fe353343fb193856e5512733d5bfb93f2bf2",
+    "research/states/DUN Pulau Pinang/federal-election-results-latest.csv": "0249243a7c18d2847800ba56f92d613061ba8fc6945987ee4092b4c7700fe0eb",
+    "research/states/DUN Sabah/federal-election-results-latest.csv": "6c889a6c49ec368b2f453d812b2f97dcba63ae21f0d77819e098afb6be6dd14b",
+    "research/states/DUN Sarawak/federal-election-results-latest.csv": "047ef051e81178d4c15c4d3a85c9c612f8c61fe260c7478c51109b9a01768185",
+    "research/states/DUN Selangor/federal-election-results-latest.csv": "b487d1385ed73b29334663f276aa10da2bb9cd260245d04d09de2063d01dac78",
+    "research/states/DUN Terengganu/federal-election-results-latest.csv": "8ead3ed88813eff7be80acd139c82a3e17efc7cffb16ccba92a5247c8f7beb9a",
+    "research/states/federal-territories/federal-election-results-latest.csv": "f7239a2ba35a2c62ca902679cea039d3d937d54e33555212bce388b8b4968110"
+  },
+  "created_at": "2026-09-29T09:01:45+00:00",
+  "edition_id": "20260929T090145Z",
+  "lineage": {
+    "inputs": [
+      {
+        "disposition": "archive-baseline-seed",
+        "file": "archive/news-accepted/accepted.jsonl",
+        "sha256": "df83b4541557b0c407e64ccda921e5a260aa15847fddc3f6ec9cdc261841abc0"
+      },
+      {
+        "disposition": "federal-results-derivation",
+        "file": "research/states/DUN Kedah/federal-election-results-latest.csv",
+        "sha256": "7d604ffc30933758be355782d8c07bbb8b73a9e231e76c16a39d6819fa1305f2"
+      },
+      {
+        "disposition": "federal-results-derivation",
+        "file": "research/states/DUN Kelantan/federal-election-results-latest.csv",
+        "sha256": "c328dc199c5e833fcef3231743b492b004ae5e6792e0ba3e8ca085320f939d5a"
+      },
+      {
+        "disposition": "federal-results-derivation",
+        "file": "research/states/DUN Melaka/federal-election-results-latest.csv",
+        "sha256": "2b4bc99958317f792f294e4bc73e4cc49c3370e97f51a6bd9235069ae3349a4b"
+      },
+      {
+        "disposition": "federal-results-derivation",
+        "file": "research/states/DUN Negeri Sembilan/federal-election-results-latest.csv",
+        "sha256": "9cd3d9e81cf9c2dcdd5a70a2c2a6c05f8b60b5636e6979a00fc5ffe4c8e7f4df"
+      },
+      {
+        "disposition": "federal-results-derivation",
+        "file": "research/states/DUN Pahang/federal-election-results-latest.csv",
+        "sha256": "1d088a7e416f58abc5f3f8f765b55a0e15988e65aeb126e024d6e18dd5c5088a"
+      },
+      {
+        "disposition": "federal-results-derivation",
+        "file": "research/states/DUN Perak/federal-election-results-latest.csv",
+        "sha256": "c1f4ea149e082dabf430e645b5076ebb0c1b27253317ff6f0bce9691ef8f36ed"
+      },
+      {
+        "disposition": "federal-results-derivation",
+        "file": "research/states/DUN Perlis/federal-election-results-latest.csv",
+        "sha256": "221f8cd2783891160dd600983147fe353343fb193856e5512733d5bfb93f2bf2"
+      },
+      {
+        "disposition": "federal-results-derivation",
+        "file": "research/states/DUN Pulau Pinang/federal-election-results-latest.csv",
+        "sha256": "0249243a7c18d2847800ba56f92d613061ba8fc6945987ee4092b4c7700fe0eb"
+      },
+      {
+        "disposition": "federal-results-derivation",
+        "file": "research/states/DUN Sabah/federal-election-results-latest.csv",
+        "sha256": "6c889a6c49ec368b2f453d812b2f97dcba63ae21f0d77819e098afb6be6dd14b"
+      },
+      {
+        "disposition": "federal-results-derivation",
+        "file": "research/states/DUN Sarawak/federal-election-results-latest.csv",
+        "sha256": "047ef051e81178d4c15c4d3a85c9c612f8c61fe260c7478c51109b9a01768185"
+      },
+      {
+        "disposition": "federal-results-derivation",
+        "file": "research/states/DUN Selangor/federal-election-results-latest.csv",
+        "sha256": "b487d1385ed73b29334663f276aa10da2bb9cd260245d04d09de2063d01dac78"
+      },
+      {
+        "disposition": "federal-results-derivation",
+        "file": "research/states/DUN Terengganu/federal-election-results-latest.csv",
+        "sha256": "8ead3ed88813eff7be80acd139c82a3e17efc7cffb16ccba92a5247c8f7beb9a"
+      },
+      {
+        "disposition": "federal-results-derivation",
+        "file": "research/states/federal-territories/federal-election-results-latest.csv",
+        "sha256": "f7239a2ba35a2c62ca902679cea039d3d937d54e33555212bce388b8b4968110"
+      },
+      {
+        "disposition": "federal-results-derivation:already-present",
+        "file": "research/states/DUN Johor/federal-election-results-latest.csv",
+        "sha256": "8eb0416f434c2ece00521ae3da9eda52e15e052c4306d1ed61805b1edc9edee1"
+      }
+    ],
+    "prior_edition": "20260929T064041Z"
+  },
+  "note": "P2.6: baseline-seeded the complete accepted-news archive from the live ge16-news-accepted.json corpus (2,367 items, dedup by normalized-link+content identity; archive/news-accepted/accepted.jsonl landed in a prior local write this same packet), and derived the 14 per-state/territory federal-election-results-latest.csv files (222 seats total, 13 DUN dirs + federal-territories) from meco-candidates-ge15-federal.csv + meco-federal-election-candidates-1955-2022.csv. DUN Johor's pre-existing file reproduced byte-identically by the same derivation (recorded already-present, not rewritten); the other 13 files are new.",
+  "row_counts": {
+    "archive_items": 2367,
+    "federal_results_files_promoted": 13,
+    "federal_results_files_total": 14,
+    "federal_results_files_unchanged": 1,
+    "federal_results_rows_total": 222
+  },
+  "schema": "ge16.edition.v1"
+}

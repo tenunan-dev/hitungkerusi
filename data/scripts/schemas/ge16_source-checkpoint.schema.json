@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ge16:schema:source-checkpoint.v1",
+  "title": "ge16.source-checkpoint.v1",
+  "description": "One record per source per collection cycle (P2.6). Written after each successful baseline/incremental collection: what window was swept, how many items were seen/accepted, and which run produced it. An incremental run's window_start is the prior checkpoint's window_end (P2.6 brief §2.1).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "source_id", "window_start", "window_end", "items_seen", "items_accepted", "collected_at", "run_id"],
+  "properties": {
+    "schema": {"const": "ge16.source-checkpoint.v1"},
+    "source_id": {"type": "string", "minLength": 1},
+    "window_start": {"type": "string", "format": "date-time"},
+    "window_end": {"type": "string", "format": "date-time"},
+    "items_seen": {"type": "integer", "minimum": 0},
+    "items_accepted": {"type": "integer", "minimum": 0},
+    "collected_at": {"type": "string", "format": "date-time"},
+    "run_id": {"type": "string", "pattern": "^\\d{8}T\\d{6}Z-[0-9a-f]{8}$"},
+    "mode": {"type": "string", "enum": ["baseline", "incremental"]}
+  }
+}

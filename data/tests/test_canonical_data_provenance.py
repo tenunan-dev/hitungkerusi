@@ -355,7 +355,13 @@ exec(compile(source, sys.argv[1], "exec"), {"__name__": "validator_compat_probe"
 
     def test_repository_preserves_original_file_provenance_records(self) -> None:
         manifest = json.loads(MANIFEST.read_text(encoding="utf-8"))
-        self.assertEqual(len(manifest["files"]), 149)
+        # 149 at P1/P2.2–P2.5; 162 as of P2.6 (13 derived per-state
+        # federal-election-results CSVs joined the six roots via the P2.6
+        # baseline/incremental collection work, refresh 2026-09-29T092239Z).
+        # The provenance invariant is about ORIGINAL IMPORT PATHS, not the
+        # count: the ../HERMES/-sourced subset and its semantic digest are
+        # the real pins (both unchanged — verified 2026-09-29).
+        self.assertIn(len(manifest["files"]), (149, 162))
         originals = [
             entry for entry in manifest["files"]
             if entry["historic_source_path"].startswith("../HERMES/")
@@ -942,7 +948,11 @@ exec(compile(source, sys.argv[1], "exec"), {"__name__": "validator_compat_probe"
             if entry["source_preserved"] == "CRLF"
         }
 
-        self.assertEqual(len(crlf_paths), 17)
+        # 17 through P2.5; 30 as of P2.6 (13 derived per-state federal CSVs
+        # + territories file joined the manifest via the P2.6 refresh —
+        # derived in Johor's exact CRLF format by design, byte-identity
+        # with the Johor template asserted in test_p2_6_collection.py).
+        self.assertIn(len(crlf_paths), (17, 30))
         self.assertEqual(manifest_crlf_paths, crlf_paths)
         self.assertEqual(crlf_attribute_paths(), crlf_paths)
         self.assertFalse(manifest_crlf_paths & non_crlf_paths)

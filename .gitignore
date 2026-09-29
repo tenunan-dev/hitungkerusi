@@ -4,8 +4,15 @@
 PLAN.md
 TAKEOVER.md
 /evidence/
-archive/
+/archive/
 OWNER-DECISIONS.md
+
+# --- P2.6 exception: the canonical accepted-news archive IS committed ---
+# (owner decision 2026-09-29, MAJOR 3 remediation: a durable archive that a
+# fresh clone cannot see is not durable. Root-anchoring /archive/ above keeps
+# the original root-level archive dir ignored; this negation re-includes the
+# canonical tree's archive.)
+!data/canonical/archive/
 
 # --- Local-only model cache (owner decision 1, P1.1 escalation D1: 235 MB ONNX > GitHub 100 MB) ---
 models/

@@ -1,0 +1,11 @@
+{
+  "schema": "ge16.source-checkpoint.v1",
+  "source_id": "news",
+  "window_start": "2026-01-01T00:00:00+00:00",
+  "window_end": "2026-09-29T04:00:00+00:00",
+  "items_seen": 2500,
+  "items_accepted": 2367,
+  "collected_at": "2026-09-29T04:00:05+00:00",
+  "run_id": "20260929T040000Z-ba972a1a",
+  "mode": "baseline"
+}

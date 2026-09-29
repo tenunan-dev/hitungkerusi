@@ -431,7 +431,7 @@ class RealDataTests(unittest.TestCase):
         by_source = counts["evidence"]["by_source_class"]
         self.assertEqual(by_source["accepted-corpus"], 2213)  # 2367 items - 154 collisions
         self.assertEqual(by_source["judged-batch"], 6)
-        self.assertEqual(counts["evidence"]["by_kind"]["tracker-note"], 18460)
+        self.assertEqual(counts["evidence"]["by_kind"]["tracker-note"], 18463)  # 18460 at P2.2 close + 3 new candidate items from the 2026-09-29T092131Z staged run (run log: track_ge16_candidates.log)
         accepted_collisions = [c for c in counts["collisions"]
                                if c["source_class"] == "accepted-corpus"]
         self.assertEqual(len(accepted_collisions), 154)

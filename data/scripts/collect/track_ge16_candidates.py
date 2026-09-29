@@ -18,6 +18,14 @@ import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
+# P2.6 deviation (adjudicated 2026-09-29): this collector predated the
+# outdir staging contract its two siblings use. Without it, a staged run
+# writes candidate log/db LIVE into canonical, bypassing GE16_TRACKER_OUT_DIR
+# and corrupting edition pins (evidence/P2/P2.6-parent-verify-notes.md).
+# Same 3-call routing pattern as track_ge16_polls.py — the minimal change
+# that restores the P2.3 staging invariant.
+import ge16_tracker_outdir as outdir  # noqa: E402
+
 def resolve_data_root(anchor=None):
     """Find the DATA repository root independently of cwd."""
     # V3 (P1.7): monorepo — canonical tree is <root>/data/canonical
@@ -98,15 +106,16 @@ def fetch(url: str) -> str:
 
 
 def load_db():
-    if os.path.exists(DB):
-        with open(DB) as f:
-            return json.load(f)
-    return {"seen": []}
+    path = outdir.r(DB)
+    if not os.path.exists(path):
+        return {"seen": []}
+    with open(path) as f:
+        return json.load(f)
 
 
 def save_db(db):
     db["generated_at"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
-    with open(DB, "w") as f:
+    with open(outdir.w(DB), "w") as f:
         json.dump(db, f, indent=2)
 
 
@@ -125,7 +134,7 @@ def dynamic_window_days():
     since_last = interval
     try:
         d = load_db()
-        ts = d.get("generated_at", "")
+        ts = d.get("generated_at") or ""
         if ts:
             last = datetime.fromisoformat(ts.replace("Z", "+00:00").split("[")[0])
             if last.tzinfo is None:
@@ -191,7 +200,7 @@ def main():
     if new_items:
         db["seen"] = sorted(seen)
         save_db(db)
-        with open(LOG, "a") as f:
+        with open(outdir.a(LOG), "a") as f:
             f.write(f"\n## Scan {now} — {len(new_items)} new candidate/seat items\n")
             for item in new_items:
                 f.write(f"- **[{item['query']}]** {item['title']} — {item['link']}\n")

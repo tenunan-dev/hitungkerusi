@@ -120,11 +120,12 @@ history) with explicit `source_hash_semantics`.
   (512 events / 2,141 entities / 315 sources / 117 stories), edition
   `20260929T064041Z`.
 
-### 3.4 Schemas — `data/scripts/schemas/` (8 files)
+### 3.4 Schemas — `data/scripts/schemas/` (9 files)
 
 `ge16_{evidence,judgment,entity,entity-candidate,link,event,edition}.schema.json`
-+ `ge16_edition-promotion.schema.json`. All records jsonschema-validated
-(jsonschema, pinned). Event/link schemas ship now, populated in P2.8.
++ `ge16_edition-promotion.schema.json` + `ge16_source-checkpoint.schema.json`
+(P2.6). All records jsonschema-validated (jsonschema, pinned). Event/link
+schemas ship now, populated in P2.8.
 
 ### 3.5 Import pipeline — `data/scripts/import/`
 
@@ -171,10 +172,77 @@ V2 artifact (read-only, sha256-recorded in P2.1 classification)
 Every hop is hash-bound; any future audit can walk the chain from a canonical
 row back to the V2 bytes it came from.
 
+### 3.8 Source checkpoints, the complete news archive, and federal-results derivation (P2.6)
+
+- **Checkpoints** — `data/canonical/checkpoints/<source_id>.json`
+  (`ge16.source-checkpoint.v1`, one file per source — chosen over a single
+  bundle so independent-cadence sources never serialize around one writer;
+  see `data/scripts/source_checkpoints.py` module docstring §2.1). Records
+  `{window_start, window_end, items_seen, items_accepted, collected_at,
+  run_id, mode}` after a collection cycle. `compute_window(source, mode)`:
+  baseline sweeps from a declared start (default 2026-01-01, R08) to now;
+  incremental resumes exactly at the prior checkpoint's `window_end`. A true
+  no-op incremental (`items_seen == items_accepted == 0`) skips the write
+  entirely — stronger than the boundary's "only `collected_at` may mutate":
+  a no-op touches zero bytes.
+- **Complete accepted archive** — `data/canonical/archive/news-accepted/accepted.jsonl`,
+  append-only, one line per accepted news item, never rewritten. The rolling
+  `ge16-news-accepted.json` (2,367 items, byte-sensitive consumers) is
+  untouched; the archive is the durable superset. Identity for dedup: the
+  full item with its `link` normalized (`normalize_link.v1`) then hashed —
+  link-only identity was tried and rejected (148 pairs of genuinely distinct
+  accepted entries share one normalized link in the live corpus; it would
+  undercount below the 2,367 floor). Baseline seed: 2,367/2,367 items
+  appended, 0 skipped; re-seeding is byte-identical (0 appended). Committed
+  to the repo: the `.gitignore` `archive/` pattern is root-anchored
+  (`/archive/`, preserving the original root-level-archive ignore intent)
+  with `!data/canonical/archive/` re-including the canonical tree's archive
+  (owner decision 2026-09-29, MAJOR 3 — an uncommitted "durable" archive
+  would not survive a fresh clone). Provenance/edition coverage for it is
+  deferred to the P2.4-carryover work in P2.8 (verify-recorded extension),
+  recorded in PLAN §8.
+- **Mode layer** — `data/scripts/source_checkpoints.py` (its own
+  `python3 source_checkpoints.py {seed-archive|run --mode baseline|incremental}`
+  entry point, the brief's named alternative to editing the orchestrator).
+  Drives `track_ge16_news.py` unmodified via its pre-existing
+  `GE16_NEWS_MAX_DAYS` env knob (no new collector knob, no collector edit
+  beyond the adjudicated candidates-collector staging fix — the collector
+  diff allowlist covers exactly that one file). Failure policy: a non-zero
+  collector exit raises `CollectionCycleError` and writes NO checkpoint —
+  the failed window stays open and the next run retries from the same
+  `window_end`. Archive capture: each successful cycle reconciles the
+  archive against the rolling accepted corpus via idempotent re-seed
+  (`seed_archive_from_corpus` → `append_items` dedupe), so items accepted
+  by the async collect→judge→commit pipeline land exactly once, on the
+  first cycle after their commit (re-review remediation 2026-09-29).
+- **Per-state federal-results derivation** — `data/scripts/federal_results_derive.py`.
+  Recon finding: the brief's named central inputs
+  (`ge16-per-seat-projection.csv`, `ge16-battleground-seats-master.csv`)
+  lack the candidate-level fields (`winner`/`votes`/`majority`/
+  `previous_winner`) the existing `DUN Johor/federal-election-results-latest.csv`
+  template actually carries; byte-identity against Johor's 26 rows is only
+  achievable from the row-level source those rows were themselves built
+  from — `research/raw/meco-candidates-ge15-federal.csv` (GE-15, 945
+  candidate rows / 222 seats) for the current-election columns, and
+  `meco-federal-election-candidates-1955-2022.csv` (GE-14 rows) for
+  `previous_*`/`changed_hands`. The derivation is a pure function of those
+  two files (deterministic, idempotent, CRLF-preserving to match the
+  template byte-for-byte) and reproduces Johor's file byte-identically.
+  Output grouping (brief §5 open question): 13 `DUN <State>/` dirs (one per
+  state with an assembly) + one `federal-territories/` grouping file for
+  Kuala Lumpur (11) + Putrajaya (1) + Labuan (1) — 14 files total, every one
+  of the 222 seats in exactly one file (Sigma = 222).
+
 ## 4. Testing — `data/tests/`
 
-203 tests green as of `0dd89c5`; **238** as of P2.5 (pytest,
-`-p no:cacheprovider`, `PYTHONDONTWRITEBYTECODE=1`; ~11 min full run).
+203 tests green as of `0dd89c5`; **238** as of P2.5; **261** as of P2.6
+(pytest, `-p no:cacheprovider`, `PYTHONDONTWRITEBYTECODE=1`; ~11 min full
+run). P2.6 adds 20 collection-mode tests + 3 staging-contract tests
+(`test_p2_6_staging_contract.py`: every collector routes tracker writes
+through `ge16_tracker_outdir`, the env knob covers every
+`COLLECTOR_FILES` basename, and a staged subprocess run leaves live
+canonical tracker bytes+mtimes untouched — added after the candidates
+collector was found bypassing staging).
 Notable pins:
 
 - Baseline migration (P2.5): idempotency (re-run stages nothing; empty
@@ -269,3 +337,4 @@ below. The manual is committed; updates ride the phase's push.
 | 2026-09-28 | `0dd89c5` | Initial manual: state as of P2.3 complete (P2.2 pushed `738d13a`, P2.3 local). |
 | 2026-09-29 | (P2.4, local) | §3.3/§4: read-only integrity verifier (`integrity.py`) + refresh run-mode gate; suite 203→226. |
 | 2026-09-29 | (P2.5, local) | §3.3/§4: baseline migration (`migrate_baseline.py`, events DB 512 events/2,141 entities landed, edition `20260929T064041Z`); suite 226→238; key-aware edition selection in test helpers. |
+| 2026-09-29 | (P2.6, local) | §3.4/§3.8/§4: source checkpoints + complete accepted archive (2,367 items) + per-state federal-results derivation (222 seats, zero dups) + staging-contract tests; candidates collector outdir fix; provenance manifest 149→162; suite 238→261. |

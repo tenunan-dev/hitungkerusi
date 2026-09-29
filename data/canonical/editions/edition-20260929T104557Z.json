@@ -1,0 +1,30 @@
+{
+  "content_hashes": {
+    "research/trackers/ge16-news-candidates.json": "a51a70192e4f34ef870c136518f3ad93214d2b98de92a2b1c044d4a15c297635",
+    "research/trackers/ge16-news-seen-pending.json": "4802017800ce3db64cac2e455075ed2241b3c84692e51a13e00eca85c7a1a9fe"
+  },
+  "created_at": "2026-09-29T10:45:57+00:00",
+  "edition_id": "20260929T104557Z",
+  "lineage": {
+    "inputs": [
+      {
+        "disposition": "staged-tracker-output",
+        "file": "research/trackers/ge16-news-candidates.json",
+        "sha256": "a51a70192e4f34ef870c136518f3ad93214d2b98de92a2b1c044d4a15c297635"
+      },
+      {
+        "disposition": "staged-tracker-output",
+        "file": "research/trackers/ge16-news-seen-pending.json",
+        "sha256": "4802017800ce3db64cac2e455075ed2241b3c84692e51a13e00eca85c7a1a9fe"
+      }
+    ],
+    "prior_edition": "20260929T092239Z",
+    "run_id": "20260929T104437Z-6d2c5273"
+  },
+  "note": "P2.3 refresh promotion: run-staged tracker outputs copied into canonical; file paths are canonical-root-relative.",
+  "row_counts": {
+    "promoted_files": 2,
+    "unchanged_files": 0
+  },
+  "schema": "ge16.edition.promotion.v1"
+}

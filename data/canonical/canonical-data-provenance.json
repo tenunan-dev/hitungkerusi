@@ -22,7 +22,15 @@
         "source_preserved": "CRLF"
       },
       {
+        "destination_path": "research/states/DUN Kedah/federal-election-results-latest.csv",
+        "source_preserved": "CRLF"
+      },
+      {
         "destination_path": "research/states/DUN Kelantan/dun-election-results-latest.csv",
+        "source_preserved": "CRLF"
+      },
+      {
+        "destination_path": "research/states/DUN Kelantan/federal-election-results-latest.csv",
         "source_preserved": "CRLF"
       },
       {
@@ -30,7 +38,15 @@
         "source_preserved": "CRLF"
       },
       {
+        "destination_path": "research/states/DUN Melaka/federal-election-results-latest.csv",
+        "source_preserved": "CRLF"
+      },
+      {
         "destination_path": "research/states/DUN Negeri Sembilan/dun-election-results-latest.csv",
+        "source_preserved": "CRLF"
+      },
+      {
+        "destination_path": "research/states/DUN Negeri Sembilan/federal-election-results-latest.csv",
         "source_preserved": "CRLF"
       },
       {
@@ -38,7 +54,15 @@
         "source_preserved": "CRLF"
       },
       {
+        "destination_path": "research/states/DUN Pahang/federal-election-results-latest.csv",
+        "source_preserved": "CRLF"
+      },
+      {
         "destination_path": "research/states/DUN Perak/dun-election-results-latest.csv",
+        "source_preserved": "CRLF"
+      },
+      {
+        "destination_path": "research/states/DUN Perak/federal-election-results-latest.csv",
         "source_preserved": "CRLF"
       },
       {
@@ -46,11 +70,23 @@
         "source_preserved": "CRLF"
       },
       {
+        "destination_path": "research/states/DUN Perlis/federal-election-results-latest.csv",
+        "source_preserved": "CRLF"
+      },
+      {
         "destination_path": "research/states/DUN Pulau Pinang/dun-election-results-latest.csv",
         "source_preserved": "CRLF"
       },
       {
+        "destination_path": "research/states/DUN Pulau Pinang/federal-election-results-latest.csv",
+        "source_preserved": "CRLF"
+      },
+      {
         "destination_path": "research/states/DUN Sabah/dun-election-results-latest.csv",
+        "source_preserved": "CRLF"
+      },
+      {
+        "destination_path": "research/states/DUN Sabah/federal-election-results-latest.csv",
         "source_preserved": "CRLF"
       },
       {
@@ -66,11 +102,27 @@
         "source_preserved": "CRLF"
       },
       {
+        "destination_path": "research/states/DUN Sarawak/federal-election-results-latest.csv",
+        "source_preserved": "CRLF"
+      },
+      {
         "destination_path": "research/states/DUN Selangor/dun-election-results-latest.csv",
         "source_preserved": "CRLF"
       },
       {
+        "destination_path": "research/states/DUN Selangor/federal-election-results-latest.csv",
+        "source_preserved": "CRLF"
+      },
+      {
         "destination_path": "research/states/DUN Terengganu/dun-election-results-latest.csv",
+        "source_preserved": "CRLF"
+      },
+      {
+        "destination_path": "research/states/DUN Terengganu/federal-election-results-latest.csv",
+        "source_preserved": "CRLF"
+      },
+      {
+        "destination_path": "research/states/federal-territories/federal-election-results-latest.csv",
         "source_preserved": "CRLF"
       },
       {
@@ -238,14 +290,14 @@
     },
     {
       "destination_path": "research/trackers/ge16-candidate-tracker-log.md",
-      "bytes": 24399,
-      "sha256": "a1b4f3cf612174d0c55aa1e3b9baa66219be1ebf3b9ac950a86e74c1aaf702ae",
+      "bytes": 25934,
+      "sha256": "256aa8917d65fab37cbd3743d9fdf9f701005f6e818da66e69db5e5bf3526871",
       "historic_source_path": "../HERMES/01_RESEARCH/data/trackers/ge16-candidate-tracker-log.md"
     },
     {
       "destination_path": "research/trackers/ge16-candidates-tracked.json",
-      "bytes": 4342,
-      "sha256": "a2d4c95a241c45bc26de3abc605c582a52ab9910d5be0fc6660af86cdf766af4",
+      "bytes": 4644,
+      "sha256": "0511dce4ad1e71603543a56e5bbc39a0aa2e088036684ddc5105d8ae3a887608",
       "historic_source_path": "../HERMES/01_RESEARCH/data/trackers/ge16-candidates-tracked.json"
     },
     {
@@ -268,8 +320,8 @@
     },
     {
       "destination_path": "research/trackers/ge16-news-candidates.json",
-      "bytes": 207268,
-      "sha256": "e2428e1152e74db5a2628a6bc62db2ff4dafbaab31239fb6639b7e656c0da2f9",
+      "bytes": 158067,
+      "sha256": "a51a70192e4f34ef870c136518f3ad93214d2b98de92a2b1c044d4a15c297635",
       "historic_source_path": "../HERMES/01_RESEARCH/data/trackers/ge16-news-candidates.json"
     },
     {
@@ -759,6 +811,84 @@
       "historic_source_path": "../HERMES/01_RESEARCH/states/national-composition-summary.md"
     },
     {
+      "destination_path": "research/states/DUN Kedah/federal-election-results-latest.csv",
+      "bytes": 5164,
+      "sha256": "7d604ffc30933758be355782d8c07bbb8b73a9e231e76c16a39d6819fa1305f2",
+      "historic_source_path": "observed:scripts/refresh_canonical_data.py#research/states/DUN Kedah/federal-election-results-latest.csv"
+    },
+    {
+      "destination_path": "research/states/DUN Kelantan/federal-election-results-latest.csv",
+      "bytes": 5082,
+      "sha256": "c328dc199c5e833fcef3231743b492b004ae5e6792e0ba3e8ca085320f939d5a",
+      "historic_source_path": "observed:scripts/refresh_canonical_data.py#research/states/DUN Kelantan/federal-election-results-latest.csv"
+    },
+    {
+      "destination_path": "research/states/DUN Melaka/federal-election-results-latest.csv",
+      "bytes": 2267,
+      "sha256": "2b4bc99958317f792f294e4bc73e4cc49c3370e97f51a6bd9235069ae3349a4b",
+      "historic_source_path": "observed:scripts/refresh_canonical_data.py#research/states/DUN Melaka/federal-election-results-latest.csv"
+    },
+    {
+      "destination_path": "research/states/DUN Negeri Sembilan/federal-election-results-latest.csv",
+      "bytes": 3024,
+      "sha256": "9cd3d9e81cf9c2dcdd5a70a2c2a6c05f8b60b5636e6979a00fc5ffe4c8e7f4df",
+      "historic_source_path": "observed:scripts/refresh_canonical_data.py#research/states/DUN Negeri Sembilan/federal-election-results-latest.csv"
+    },
+    {
+      "destination_path": "research/states/DUN Pahang/federal-election-results-latest.csv",
+      "bytes": 4802,
+      "sha256": "1d088a7e416f58abc5f3f8f765b55a0e15988e65aeb126e024d6e18dd5c5088a",
+      "historic_source_path": "observed:scripts/refresh_canonical_data.py#research/states/DUN Pahang/federal-election-results-latest.csv"
+    },
+    {
+      "destination_path": "research/states/DUN Perak/federal-election-results-latest.csv",
+      "bytes": 8045,
+      "sha256": "c1f4ea149e082dabf430e645b5076ebb0c1b27253317ff6f0bce9691ef8f36ed",
+      "historic_source_path": "observed:scripts/refresh_canonical_data.py#research/states/DUN Perak/federal-election-results-latest.csv"
+    },
+    {
+      "destination_path": "research/states/DUN Perlis/federal-election-results-latest.csv",
+      "bytes": 1289,
+      "sha256": "221f8cd2783891160dd600983147fe353343fb193856e5512733d5bfb93f2bf2",
+      "historic_source_path": "observed:scripts/refresh_canonical_data.py#research/states/DUN Perlis/federal-election-results-latest.csv"
+    },
+    {
+      "destination_path": "research/states/DUN Pulau Pinang/federal-election-results-latest.csv",
+      "bytes": 4771,
+      "sha256": "0249243a7c18d2847800ba56f92d613061ba8fc6945987ee4092b4c7700fe0eb",
+      "historic_source_path": "observed:scripts/refresh_canonical_data.py#research/states/DUN Pulau Pinang/federal-election-results-latest.csv"
+    },
+    {
+      "destination_path": "research/states/DUN Sabah/federal-election-results-latest.csv",
+      "bytes": 8234,
+      "sha256": "6c889a6c49ec368b2f453d812b2f97dcba63ae21f0d77819e098afb6be6dd14b",
+      "historic_source_path": "observed:scripts/refresh_canonical_data.py#research/states/DUN Sabah/federal-election-results-latest.csv"
+    },
+    {
+      "destination_path": "research/states/DUN Sarawak/federal-election-results-latest.csv",
+      "bytes": 10139,
+      "sha256": "047ef051e81178d4c15c4d3a85c9c612f8c61fe260c7478c51109b9a01768185",
+      "historic_source_path": "observed:scripts/refresh_canonical_data.py#research/states/DUN Sarawak/federal-election-results-latest.csv"
+    },
+    {
+      "destination_path": "research/states/DUN Selangor/federal-election-results-latest.csv",
+      "bytes": 7524,
+      "sha256": "b487d1385ed73b29334663f276aa10da2bb9cd260245d04d09de2063d01dac78",
+      "historic_source_path": "observed:scripts/refresh_canonical_data.py#research/states/DUN Selangor/federal-election-results-latest.csv"
+    },
+    {
+      "destination_path": "research/states/DUN Terengganu/federal-election-results-latest.csv",
+      "bytes": 2990,
+      "sha256": "8ead3ed88813eff7be80acd139c82a3e17efc7cffb16ccba92a5247c8f7beb9a",
+      "historic_source_path": "observed:scripts/refresh_canonical_data.py#research/states/DUN Terengganu/federal-election-results-latest.csv"
+    },
+    {
+      "destination_path": "research/states/federal-territories/federal-election-results-latest.csv",
+      "bytes": 4747,
+      "sha256": "f7239a2ba35a2c62ca902679cea039d3d937d54e33555212bce388b8b4968110",
+      "historic_source_path": "observed:scripts/refresh_canonical_data.py#research/states/federal-territories/federal-election-results-latest.csv"
+    },
+    {
       "destination_path": "research/trackers/ge16-news-backfill-candidates.json",
       "bytes": 1236127,
       "sha256": "c42f1cd6979bbb988b30e7225fe4b1af45aa9839ffb771e465984fc75065f197",
@@ -976,8 +1106,8 @@
     },
     {
       "destination_path": "research/trackers/ge16-news-seen-pending.json",
-      "bytes": 423041,
-      "sha256": "c363817f385bcea61a66b6b7cb9cb60a4797f20fc03d9cc5574a71c058affbeb",
+      "bytes": 1290639,
+      "sha256": "4802017800ce3db64cac2e455075ed2241b3c84692e51a13e00eca85c7a1a9fe",
       "historic_source_path": "observed:scripts/refresh_canonical_data.py#research/trackers/ge16-news-seen-pending.json"
     },
     {

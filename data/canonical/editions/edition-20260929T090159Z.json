@@ -1,0 +1,22 @@
+{
+  "content_hashes": {
+    "checkpoints/news.json": "599ad504fbe65d3bb0a631cfb44d6ac08c1d7b2357e81f0b8299b7900b398ef8"
+  },
+  "created_at": "2026-09-29T09:01:59+00:00",
+  "edition_id": "20260929T090159Z",
+  "lineage": {
+    "inputs": [
+      {
+        "disposition": "source-checkpoint-baseline",
+        "file": "checkpoints/news.json",
+        "sha256": "599ad504fbe65d3bb0a631cfb44d6ac08c1d7b2357e81f0b8299b7900b398ef8"
+      }
+    ],
+    "prior_edition": "20260929T090145Z"
+  },
+  "note": "P2.6: news source checkpoint recorded for the baseline archive-seed run above (window 2026-01-01 -> collection time, items_seen=items_accepted=2367).",
+  "row_counts": {
+    "checkpoint_files": 1
+  },
+  "schema": "ge16.edition.v1"
+}
