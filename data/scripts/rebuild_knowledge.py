@@ -553,11 +553,11 @@ def _table_rows(connection, table):
 def reconcile(baseline_path, new_path):
     """Row-level diff of every RECONCILED_TABLES table between the P2.5
     baseline and the fresh rebuild. Every removed row is classed
-    ``pending_rederivation`` with per-row ``detail`` carrying the best
-    available citation (R1 MINOR-3 remediation: the blanket class is now
-    honest about being provisional — the additive-promotion ruling §5b
-    RETAINS these rows in canonical as ``retained_v2_no_v3_coverage`` —
-    and the unexplained-removals gate fires on missing/``none`` classes)."""
+    ``v2_only_no_v3_evidence`` (REBUILD_REASON_V2_ONLY) with per-row
+    ``detail`` carrying the best available citation — the additive-promotion
+    ruling §5b RETAINS these rows in canonical (the retention report key is
+    ``retained_v2_no_v3_coverage``); the unexplained-removals gate fires on
+    missing/``none`` classes."""
     baseline_con = sqlite3.connect(str(baseline_path))
     new_con = sqlite3.connect(str(new_path))
     report = {"generated_at": _now_iso(), "tables": {}}
@@ -637,8 +637,10 @@ def promote_rebuild(canonical_root=CANONICAL_ROOT, data_root=None, now=None):
     ``merge_additive`` copies every v2_baseline row from the live DB
     (retaining V2 knowledge — entities incl. the 222 P + 606 DUN, stories,
     dossier notes, event metrics), tags rebuilt rows v3_rebuild, and
-    dedupes on natural keys (v3 wins event content on collision). Rows the
-    rebuild cannot re-derive are RETAINED and reported as
+    dedupes on natural keys (the V2 row is retained verbatim on collision
+    — it carries reviewer-approved dossier content; the colliding V3 row
+    is a re-derivation of the same fact). Rows the rebuild cannot
+    re-derive are RETAINED and reported as
     ``retained_v2_no_v3_coverage``."""
     import work_paths
     refresh = _load_sibling("refresh_canonical_data.py", "p28_rebuild_refresh")
@@ -656,7 +658,9 @@ def promote_rebuild(canonical_root=CANONICAL_ROOT, data_root=None, now=None):
                            "v2_baseline source); none found")
     merged_path = knowledge_dir / "ge16-events-merged.db"
     retained_v2 = merge_additive(live_db, built_path, merged_path)
+    retained_rows_total = retained_v2.pop("_retained_v2_rows_total", 0)
     report["retained_v2_no_v3_coverage"] = retained_v2
+    report["retained_v2_rows_total"] = retained_rows_total
     report["merge"] = "additive (origin-tagged v2_baseline + v3_rebuild)"
 
     target = canonical_root / "events" / "ge16-events.db"
@@ -673,9 +677,10 @@ def promote_rebuild(canonical_root=CANONICAL_ROOT, data_root=None, now=None):
         extra_row_counts={f"events_{name}_total": count
                           for name, count in counts.items()},
         note="P2.8 ADDITIVE events merge: v3_rebuild rows added to the "
-             "retained v2_baseline knowledge (%d retained V2-only rows "
-             "listed in reconciliation); %d events rebuilt from V3 "
-             "evidence." % (len(retained_v2), stats["events"]))
+             "retained v2_baseline knowledge (%d V2 rows retained on "
+             "natural-key collisions, per-table detail in reconciliation); "
+             "%d events rebuilt from V3 evidence."
+             % (retained_rows_total, stats["events"]))
     reports = refresh.post_promotion_gate(run, edition_id, canonical_root)
     return edition_id, edition_path, reports, stats, report
 
@@ -707,13 +712,19 @@ def merge_additive(live_db, rebuilt_db, merged_path):
     connection = sqlite3.connect(str(merged_path))
     rebuilt = sqlite3.connect(str(rebuilt_db))
     retained_report = {}
+    retained_v2_rows = 0
     try:
-        # The rebuilt DB may predate the origin column (schema drift across
-        # remediation rounds) — ensure it before reading.
-        rebuilt_cols = [c[1] for c in rebuilt.execute("PRAGMA table_info(events)")]
-        if "origin" not in rebuilt_cols:
-            rebuilt.execute(
-                "ALTER TABLE events ADD COLUMN origin TEXT NOT NULL DEFAULT 'v3_rebuild'")
+        # R2-1 fix: ensure the origin column on BOTH sides. The committed
+        # live baseline predates the origin column; without this the merged
+        # DB ships untagged while every report claims origin-tagging.
+        for con, default in ((connection, "v2_baseline"), (rebuilt, "v3_rebuild")):
+            for table in ("entities", "events"):
+                cols = [c[1] for c in con.execute(f"PRAGMA table_info({table})")]
+                if "origin" not in cols:
+                    con.execute(
+                        f"ALTER TABLE {table} ADD COLUMN origin TEXT NOT NULL "
+                        f"DEFAULT '{default}'")
+        connection.commit()
         rebuilt.commit()
         for table, key_spec in _MERGE_TABLES.items():
             if key_spec is None:
@@ -730,7 +741,9 @@ def merge_additive(live_db, rebuilt_db, merged_path):
                 keys = [key_spec]
             else:
                 keys = list(key_spec)
-            # which rebuilt keys already exist in the live DB (v3 wins content)
+            # which rebuilt keys already exist in the live DB — each one is a
+            # row we RETAIN in its V2 form (V2 wins collisions; a colliding
+            # V3 row is a re-derivation of the same underlying fact)
             live_keys = set()
             for row in connection.execute(
                     f"SELECT {', '.join(keys)} FROM {table}"):
@@ -741,16 +754,18 @@ def merge_additive(live_db, rebuilt_db, merged_path):
                 key_tuple = tuple(record[k] for k in keys)
                 if key_tuple in live_keys:
                     colliding.append(key_tuple)
-                    continue  # natural-key collision: V3 content wins, V2 row untouched
+                    continue  # natural-key collision: V2 row retained verbatim
                 placeholders = ", ".join(f":{c}" for c in shared)
                 connection.execute(
                     f"INSERT OR IGNORE INTO {table} ({', '.join(shared)}) "
                     f"VALUES ({placeholders})", record)
-            retained_report[table] = {"collisions_v3_wins": len(colliding)}
+            retained_report[table] = {"collisions_v2_retained": len(colliding)}
+            retained_v2_rows += len(colliding)
         connection.commit()
     finally:
         connection.close()
         rebuilt.close()
+    retained_report["_retained_v2_rows_total"] = retained_v2_rows
     return retained_report
 
 

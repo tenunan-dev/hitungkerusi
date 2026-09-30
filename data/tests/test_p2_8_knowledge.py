@@ -264,17 +264,9 @@ class OrphanedFlagPromoteE2ETests(unittest.TestCase):
 # verbatim, v3_rebuild rows added), V2 row count invariant across merge,
 # and second-promotion no_changes.
 class AdditiveMergeTests(unittest.TestCase):
-    def _add_origin_columns(self, canon):
-        import sqlite3
-        con = sqlite3.connect(str(canon / "events" / "ge16-events.db"))
-        entity_cols = [c[1] for c in con.execute("PRAGMA table_info(entities)")]
-        event_cols = [c[1] for c in con.execute("PRAGMA table_info(events)")]
-        if "origin" not in entity_cols:
-            con.execute("ALTER TABLE entities ADD COLUMN origin TEXT NOT NULL DEFAULT 'v2_baseline'")
-        if "origin" not in event_cols:
-            con.execute("ALTER TABLE events ADD COLUMN origin TEXT NOT NULL DEFAULT 'v2_baseline'")
-        con.commit()
-        return con
+    # R2-1: the pre-ALTER helper was REMOVED — the tests below deliberately
+    # run against the raw committed baseline (no origin column) so the
+    # merge's own ensure-origin path is what gets exercised.
 
     def test_merge_preserves_v2_and_adds_v3(self):
         import shutil
@@ -284,11 +276,15 @@ class AdditiveMergeTests(unittest.TestCase):
 
         tmp, canon = _scratch_canonical()
         self.addCleanup(lambda: shutil.rmtree(tmp, ignore_errors=True))
-        con = self._add_origin_columns(canon)
-        v2_entities, v2_events = con.execute(
+        # R2-1: NO pre-ALTER here — the committed baseline lacks the origin
+        # column and merge_additive must tag it. Capture the V2 counts from
+        # a read-only connection first.
+        import sqlite3 as _sq
+        con0 = _sq.connect(str(canon / "events" / "ge16-events.db"))
+        v2_entities, v2_events = con0.execute(
             "SELECT (SELECT COUNT(*) FROM entities), (SELECT COUNT(*) FROM events)"
         ).fetchone()
-        con.close()
+        con0.close()
 
         edition_id, _, reports, stats, report = RK.promote_rebuild(canonical_root=canon)
         self.assertIsNotNone(edition_id)
@@ -296,6 +292,11 @@ class AdditiveMergeTests(unittest.TestCase):
             self.assertEqual(r["exit_code"], 0)
 
         con = sqlite3.connect(str(canon / "events" / "ge16-events.db"))
+        # R2-1: the merged DB must carry origin columns on BOTH tables
+        entity_cols = [c[1] for c in con.execute("PRAGMA table_info(entities)")]
+        event_cols = [c[1] for c in con.execute("PRAGMA table_info(events)")]
+        self.assertIn("origin", entity_cols)
+        self.assertIn("origin", event_cols)
         self.assertEqual(
             con.execute("SELECT COUNT(*) FROM events WHERE origin='v2_baseline'").fetchone()[0],
             v2_events, "every V2 event row must survive the merge verbatim")
@@ -318,7 +319,9 @@ class AdditiveMergeTests(unittest.TestCase):
 
         tmp, canon = _scratch_canonical()
         self.addCleanup(lambda: shutil.rmtree(tmp, ignore_errors=True))
-        self._add_origin_columns(canon).close()
+        # R2-1: no pre-ALTER — the merge itself must handle the untagged
+        # committed baseline (and the second run's no_changes must hold on
+        # the tagged result).
         first, _, _, _, _ = RK.promote_rebuild(canonical_root=canon)
         self.assertIsNotNone(first)
         second, _, _, _, _ = RK.promote_rebuild(canonical_root=canon)

@@ -305,7 +305,7 @@ row back to the V2 bytes it came from.
   result raises (a silent empty crosswalk is a broken build).
 - **Vectors** (`vectors_build.py`): sqlite vector collections over news
   (embeds `payload.desc` when present — never a title duplicate),
-  events, and dossier notes; counts published per collection as
+  evidence, and dossier notes; counts published per collection as
   `vectors_*_total`.
 - **Polls store** (`polls_store.py`): judged poll-observation rows
   (OD1) with latest-accept-wins citation semantics; publishes
@@ -318,6 +318,14 @@ row back to the V2 bytes it came from.
   recording ancestor edition, so a promotion that records only its own
   deltas still inherits the full baseline (tampering with any derived
   file becomes a visible deficit/excess).
+- **Merge collision semantics (R2 fix)**: on a natural-key collision the
+  V2 row is retained verbatim and the colliding V3 row skipped (V2
+  carries the reviewer-approved dossier; the V3 row is a re-derivation).
+  `merge_additive` ensures the `origin` columns on BOTH sides before
+  merging — the committed baseline predates the column — so a raw
+  promote_rebuild ships a tagged DB; the retention report counts
+  `collisions_v2_retained` per table + a `_retained_v2_rows_total`, and
+  removed-row reason class is `v2_only_no_v3_evidence`.
 
 ## 4. Testing — `data/tests/`
 
