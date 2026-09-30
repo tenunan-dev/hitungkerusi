@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ge16:schema:judgment-run.v1",
+  "title": "ge16.judgment-run.v1",
+  "description": "Resumable judgment-run state (P2.7). One file per run under data/work/<run_id>/judge/run-state.json. A partial run (any pending/pending-approval item, or a failed item) must report complete: false — a partial run can never claim completion.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "run_id", "judge", "item_class", "total_items", "decided",
+               "failed", "next_index", "started_at", "updated_at", "expectations",
+               "counts", "complete"],
+  "properties": {
+    "schema": {"const": "ge16.judgment-run.v1"},
+    "run_id": {"type": "string", "pattern": "^\\d{8}T\\d{6}Z-[0-9a-f]{8}$"},
+    "judge": {"type": "string", "minLength": 1, "description": "Judge identity string, e.g. probe/1.0 or claude-sonnet-5/<version>."},
+    "item_class": {"enum": ["orphaned-flag", "queue-evidence"]},
+    "total_items": {"type": "integer", "minimum": 0},
+    "decided": {"type": "integer", "minimum": 0},
+    "failed": {"type": "integer", "minimum": 0},
+    "next_index": {"type": "integer", "minimum": 0},
+    "started_at": {"type": "string", "minLength": 1},
+    "updated_at": {"type": "string", "minLength": 1},
+    "expectations": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["verified", "rejected-stale", "unresolved"],
+      "properties": {
+        "verified": {"type": ["integer", "null"], "minimum": 0},
+        "rejected-stale": {"type": ["integer", "null"], "minimum": 0},
+        "unresolved": {"type": ["integer", "null"], "minimum": 0}
+      }
+    },
+    "counts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["verified", "rejected-stale", "unresolved", "pending", "pending-approval"],
+      "properties": {
+        "verified": {"type": "integer", "minimum": 0},
+        "rejected-stale": {"type": "integer", "minimum": 0},
+        "unresolved": {"type": "integer", "minimum": 0},
+        "pending": {"type": "integer", "minimum": 0},
+        "pending-approval": {"type": "integer", "minimum": 0}
+      }
+    },
+    "complete": {"type": "boolean"}
+  }
+}

@@ -282,12 +282,20 @@ def _edition_module():
 
 
 def write_promotion_edition(run, promoted, unchanged, canonical_root=ROOT,
-                            prior=None, now=None):
+                            prior=None, now=None, extra_row_counts=None, note=None):
     """Record one ``ge16.edition.promotion.v1`` manifest bound to the run.
 
     Reuses the P2.2 edition helpers (timestamp shape, prior-id scan) so both
     edition kinds share one chain in ``canonical/editions/``; the importer's
     own writer and the frozen ``ge16.edition.v1`` schema are untouched.
+
+    ``extra_row_counts`` (P2.7): a promotion that adds corpus rows (judgment
+    supersessions, not just staged tracker files) must publish current
+    FLAT corpus totals (e.g. ``evidence_total``, ``judgments_total``) so
+    ``integrity.verify_recorded``'s additions rule has a baseline that
+    accounts for them — its promotion-row_counts schema only allows
+    integer values (no by-kind/by-origin breakdown) per
+    ``ge16_edition-promotion.schema.json``.
     """
     edition = _edition_module()
     editions_dir = Path(canonical_root) / "editions"
@@ -296,6 +304,9 @@ def write_promotion_edition(run, promoted, unchanged, canonical_root=ROOT,
         edition_id, created_at = edition.utc_timestamps(now)
         if prior is None:
             prior = edition.prior_edition_id(str(editions_dir))
+        row_counts = {"promoted_files": len(promoted), "unchanged_files": len(unchanged)}
+        if extra_row_counts:
+            row_counts.update(extra_row_counts)
         manifest = {
             "schema": PROMOTION_SCHEMA,
             "edition_id": edition_id,
@@ -303,9 +314,8 @@ def write_promotion_edition(run, promoted, unchanged, canonical_root=ROOT,
             "content_hashes": {entry["file"]: entry["sha256"] for entry in promoted},
             "lineage": {"prior_edition": prior, "run_id": run.run_id,
                         "inputs": promoted},
-            "row_counts": {"promoted_files": len(promoted),
-                           "unchanged_files": len(unchanged)},
-            "note": "P2.3 refresh promotion: run-staged tracker outputs copied into "
+            "row_counts": row_counts,
+            "note": note or "P2.3 refresh promotion: run-staged tracker outputs copied into "
                     "canonical; file paths are canonical-root-relative.",
         }
         path = editions_dir / f"edition-{edition_id}.json"

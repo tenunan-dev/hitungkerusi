@@ -1,6 +1,7 @@
 # Appendix A — The data layer in plain language (how each file works)
 
-*Added 2026-09-29 (P2.6 complete, commit `7caccc4`). This appendix explains the
+*Added 2026-09-29 (P2.6 complete, commit `7caccc4`); updated 2026-09-30 (P2.7,
+A.10 added). This appendix explains the
 same system as §3, but in plain language: what each file is for, how its
 functions work, and who calls whom. When §3 and this appendix disagree, §3 is
 the spec and this appendix is the explanation — file an issue by updating both.*
@@ -227,7 +228,53 @@ dropped.
 
 ---
 
-## A.10 File-relationship map (who writes what)
+## A.10 `data/scripts/judge_runs.py` — resumable judgment runs (P2.7)
+
+A judgment run decides a fixed, ordered list of items (orphaned-flag
+judgments or queue evidence) one at a time, writing its progress after
+every single item so a crash never loses or repeats work.
+
+- **The two files a run keeps**: `data/work/<run_id>/judge/run-state.json`
+  (counters: how many decided, how many left, is it done) and
+  `decisions.jsonl` (one line per decision, never rewritten — only
+  appended). Kill the process mid-run, restart it with the same item list,
+  and it picks up exactly where it left off — verified with a real
+  `SIGKILL`, not a simulated one.
+- **What a decision looks like**: for each item, a probe checks whether its
+  source URL is still alive (`publisher_probe`/`classify_probe`, the only
+  place that makes a real HTTP call — everywhere else takes a stubbed
+  prober function instead). Three outcomes: `verified` (publisher answers
+  200), `rejected-stale` (wrapper-only redirect, or a 404/410), `unresolved`
+  (timeout or error — try again later, nothing changes yet).
+- **Never overwriting history**: judgments are supposed to be append-only,
+  so a re-decided item doesn't edit the old row — it writes a new one and
+  notes in plain text which judgment it supersedes (the frozen judgment
+  schema has no `supersedes` field to use, unlike evidence rows, so the
+  note carries it instead).
+- **The 498-row re-judge**: of 811 live orphaned-flag judgments, 498 have no
+  surviving batch file behind them at all (the true re-judge target); the
+  other 313 already have a different, surviving judgment backing the same
+  evidence, so they're left alone on purpose (recorded in the run's
+  `run-notes.json`, not silently skipped). `select_orphaned_flag_subset`
+  throws loudly if the live corpus ever stops splitting 498/313.
+- **Promotion reuses the existing pipeline**: `promote_orphaned_flag_run`
+  doesn't invent a new way to write to canonical — it hands its new
+  judgment rows to the same `write_promotion_edition` +
+  `post_promotion_gate` functions `refresh_canonical_data.py` already uses
+  for tracker promotions. One addition: `write_promotion_edition` now
+  accepts an optional `extra_row_counts` so a promotion that adds corpus
+  rows (not just tracker files) can tell the verifier its new totals —
+  otherwise `verify-recorded` would see the new judgment rows as
+  unexplained.
+- **The queue-evidence scaffold is deliberately incomplete**: it probes and
+  records decisions for evidence rows that have no judgment yet, but never
+  promotes anything to canonical in this phase — `rejected-stale` results
+  sit in `review-queue.jsonl` waiting for an owner to approve them by hand.
+  That's P2.8's job to finish.
+
+---
+
+## A.11 File-relationship map (who writes what)
 
 ```
 collectors (collect/)                    source_checkpoints.py
@@ -256,7 +303,7 @@ record everything; the verifier reads everything and writes nothing.
 
 ---
 
-## A.11 Invariants worth remembering (plain versions)
+## A.12 Invariants worth remembering (plain versions)
 
 1. **Same input, same row** — ids come from content, so re-importing never
    duplicates.

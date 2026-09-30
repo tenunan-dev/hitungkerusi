@@ -233,9 +233,56 @@ row back to the V2 bytes it came from.
   Kuala Lumpur (11) + Putrajaya (1) + Labuan (1) — 14 files total, every one
   of the 222 seats in exactly one file (Sigma = 222).
 
+### 3.9 Judgment runs — `data/scripts/judge_runs.py` (P2.7)
+
+- **Resumable judgment run**: an ordered, fixed item list decided one item
+  at a time, checkpointing after every item (`data/work/<run_id>/judge/`:
+  `run-state.json` = `ge16.judgment-run.v1`, `decisions.jsonl` append-only).
+  `open_run`/`resume`/`record_decision`/`close_run` — a killed run resumes
+  exactly after the last recorded decision (real `SIGKILL` test, not a
+  mock); a torn last JSONL line (crash mid-write) is discarded and that
+  item re-decided. `close_run`'s `complete` is `false` whenever any item is
+  pending or pending-approval — a partial run can never claim completion.
+- **Source-bound decisions**: `input_sha256` (the exact probed input) reuses
+  the frozen judgment schema's existing `basis.source_sha256` slot; the
+  judge identity lives in `judge.model`/`judge.by` — no schema edits. A
+  changed `input_sha256` for the same evidence records a NEW decision row
+  (supersession noted in `confidence_note`, since the frozen schema has no
+  `supersedes` slot on judgments); same-hash re-decisions are a no-op.
+- **Owner-ruled three-way probe** (`publisher_probe`): publisher 200 →
+  `verified` (maps to `accept`); wrapper-only (Google News) or 404/410 →
+  `rejected-stale` (`reject`); probe error/timeout → `unresolved` (no
+  supersede, stays flagged). The network hop lives behind one seam
+  (`default_prober`) — tests stub it, zero real HTTP.
+- **Orphaned-flag re-judge**: 811 live `orphaned-flag` judgments split into
+  a 498-row no-surviving-batch subset (the true re-judge target; note
+  prefix `"Backfill flag whose generating batch no longer exists"`) and 313
+  disagree rows (evidence already backed by a surviving judged-batch
+  judgment — excluded, recorded explicitly in the run's `run-notes.json`,
+  not silently dropped). `select_orphaned_flag_subset` fails loudly if the
+  live corpus doesn't split 498/313. Promotion (`promote_orphaned_flag_run`)
+  reuses `refresh_canonical_data.write_promotion_edition` +
+  `post_promotion_gate` verbatim — no second promotion path. `write_promotion_edition`
+  gained an optional `extra_row_counts` param (flat ints only, matching
+  `ge16_edition-promotion.schema.json`) so a corpus-row-adding promotion
+  publishes current `evidence_total`/`judgments_total`, keeping
+  `verify-recorded`'s additions-rule baseline accurate — the first
+  promotion kind to add evidence/judgment rows outside the import path.
+- **Queue-evidence scaffold**: same machinery over queue-sourced evidence
+  rows with no judgment yet; `rejected-stale` outcomes land in
+  `review-queue.jsonl` and are never auto-applied (no supersede target —
+  a queue item has no prior judgment). Nothing promotes to canonical in
+  this phase (P2.8 scope); `close_run` reports every non-unresolved
+  decision as `pending-approval`, so this pass can never report complete.
+
 ## 4. Testing — `data/tests/`
 
-203 tests green as of `0dd89c5`; **238** as of P2.5; **261** as of P2.6
+203 tests green as of `0dd89c5`; **238** as of P2.5; **261** as of P2.6;
+**264** as of the P2.6 Appendix A pass; **283** as of P2.7 (19 new:
+resume-after-`SIGKILL`, torn-tail recovery, per-item idempotence,
+source-hash-binding supersession, run-state schema validation ×2,
+partial-vs-complete ×2, probe three-way mapping ×6, orphaned-flag corpus
+count guard ×2)
 (pytest, `-p no:cacheprovider`, `PYTHONDONTWRITEBYTECODE=1`; ~11 min full
 run). P2.6 adds 20 collection-mode tests + 3 staging-contract tests
 (`test_p2_6_staging_contract.py`: every collector routes tracker writes
@@ -305,10 +352,17 @@ packet (tier + acceptance criteria + prohibitions, router line)
 ## 7. Known limitations (honest ledger)
 
 1. 811 orphaned-flag judgments remain unverifiable by design (provenance
-   lost in V2); 292 liveness probes passed; full re-judge is P2.7.
+   lost in V2); 292 liveness probes passed. P2.7 built the resumable
+   re-judge machinery and validated it end-to-end (sandboxed corpus copy,
+   stubbed prober) against the live 498-row no-surviving-batch subset, but
+   has NOT executed the real pass (live network probes + promotion) against
+   production canonical — that is a separate, explicit invocation
+   (`judge_runs.py orphaned-flags --promote`), not run silently as a side
+   effect of building the machinery.
 2. In-flight V2 queue judgments were not imported (inputs postdate their
-   outputs' producing commit) — those items exist as evidence only, awaiting
-   P2.7 re-judging.
+   outputs' producing commit) — those items exist as evidence only. P2.7
+   built the queue-evidence scaffold (probe + decision recording); actual
+   promotion of queue-evidence judgments is P2.8 scope.
 3. 308 duplicate-link candidates (154 accepted-corpus + 141 queue + 12
    tracked-list + 1 judged-batch) unresolved pending owner review. The
    P2.2 report's "154" counted the accepted-corpus class only; the
@@ -345,3 +399,5 @@ fixed together.
 | 2026-09-29 | (P2.5, local) | §3.3/§4: baseline migration (`migrate_baseline.py`, events DB 512 events/2,141 entities landed, edition `20260929T064041Z`); suite 226→238; key-aware edition selection in test helpers. |
 | 2026-09-29 | (P2.6, local) | §3.4/§3.8/§4: source checkpoints + complete accepted archive (2,367 items) + per-state federal-results derivation (222 seats, zero dups) + staging-contract tests; candidates collector outdir fix; provenance manifest 149→162; suite 238→264. |
 | 2026-09-29 | (P2.6 addendum, local) | Added `ARCHITECTURE-APPENDIX-A.md` — plain-language data-layer manual (per-file/per-function how-it-works, call relationships, who-writes-what map), linked from §8; rides the P2.6 push. |
+| 2026-09-30 | (P2.7, local) | §3.9/§4/§7: resumable judgment-run machinery (`judge_runs.py`, `ge16.judgment-run.v1`); orphaned-flag re-judge (498-row no-surviving-batch subset, 313 disagree rows excluded explicitly) + queue-evidence scaffold; `write_promotion_edition` gained `extra_row_counts` for corpus-row-adding promotions; suite 264→281. |
+| 2026-09-30 | (P2.7 R1, local) | ZCode R1 REQUEST_CHANGES (F1 canonical-supersede linkage missing; F2 queue selector dead via filename-substring + empty-run-complete) → parent remediation: `supersedes_canonical_id` threading (envelope + confidence_note), `judge.run_id` binding (F3), pinned `QUEUE_CLASS_TRACKER_FILES` set (selector now finds 1,498 live rows), empty-run-never-complete; regression tests ×2; suite 281→283. MINORs F4–F7 + notes carried to P2.8 (PLAN). |
