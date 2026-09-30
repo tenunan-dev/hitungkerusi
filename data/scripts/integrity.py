@@ -51,6 +51,7 @@ import json
 import os
 import random
 import re
+import sqlite3
 from pathlib import Path, PurePosixPath
 
 import jsonschema
@@ -58,6 +59,57 @@ import jsonschema
 ROOT = Path(__file__).resolve().parents[1] / "canonical"
 SCHEMAS_DIR = Path(__file__).resolve().parent / "schemas"
 DEFAULT_SAMPLE = 500
+
+#: P2.8 verify-recorded extension (packet §1.5.7): derived artifacts not
+#: covered by the by-kind/by-origin breakdowns above. Each maps a
+#: ``row_counts`` key a promotion edition MAY record to the canonical-root-
+#: relative file it counts rows in; ``dupe_candidates_total`` counts a JSON
+#: array's length, the rest count JSONL lines. Additive only: an edition
+#: that records none of these keys is checked exactly as before.
+DERIVED_ROW_COUNT_FILES = {
+    "dupe_candidates_total": ("json_object_array:candidates",
+                              "evidence/dupe-of-candidates.json"),
+    "links_evidence_entity_total": ("jsonl", "links/evidence-entity.jsonl"),
+    "links_entity_entity_total": ("jsonl", "links/entity-entity.jsonl"),
+    "links_seat_state_total": ("jsonl", "links/seat-state.jsonl"),
+    "poll_observations_total": ("jsonl", "polls/poll-observations.jsonl"),
+    # P2.8 R1 MAJOR-1 remediation: vector collections (sqlite counts).
+    "vectors_news_total": ("sqlite:news", "vectors/vectors.db"),
+    "vectors_events_total": ("sqlite:events", "vectors/vectors.db"),
+    "vectors_dossier_notes_total": ("sqlite:dossier_notes", "vectors/vectors.db"),
+    # P2.8 R1 MAJOR-4 remediation (archive provenance): the complete
+    # accepted-news archive, registered as a derived artifact so the
+    # additions rule covers it (P2.6 carry).
+    "archive_items_total": ("jsonl", "archive/news-accepted/accepted.jsonl"),
+}
+
+
+def _derived_file_row_count(root, kind, relative_path):
+    path = root / relative_path
+    if not path.is_file():
+        return 0
+    if kind == "json_array":
+        return len(json.loads(path.read_text(encoding="utf-8")))
+    if kind.startswith("json_object_array:"):
+        # P2.8 R1 MAJOR-1 remediation: dupe-of-candidates.json is a dict
+        # {"candidates": [...], ...}, not a bare array — count the named
+        # member (the R1 reviewer measured 3 under the old array read).
+        member = kind.split(":", 1)[1]
+        document = json.loads(path.read_text(encoding="utf-8"))
+        return len(document.get(member, []))
+    if kind.startswith("sqlite:"):
+        # P2.8 R1 MAJOR-1 remediation: vector collections live in a sqlite
+        # DB — count rows in the named table.
+        table = kind.split(":", 1)[1]
+        connection = sqlite3.connect(path)
+        try:
+            return connection.execute(
+                f"SELECT COUNT(*) FROM {table}").fetchone()[0]
+        finally:
+            connection.close()
+    return sum(1 for line in path.read_text(encoding="utf-8").splitlines() if line.strip())
+
+
 #: Reports list findings in full up to this many entries per bucket, then
 #: summarize the remainder as one count (a wholesale corruption produces
 #: thousands of findings; the exit code and totals stay exact).
@@ -553,10 +605,34 @@ def verify_recorded(edition_id=None, canonical_root=ROOT):
             lost.append({"code": "chain_broken", **broken_at,
                          "detail": "baseline scope stops at the break"})
     # chain is newest-first: the baseline is the newest edition in scope that
-    # carries corpus row_counts (import editions; promotion editions do not).
-    baseline = next((step for step in chain
-                     if "evidence_total" in (step.get("row_counts") or {})), None)
-    recorded = (baseline.get("row_counts") or {}) if baseline else {}
+    # carries corpus row_counts. Promotion editions CAN carry them now
+    # (P2.6/P2.7 promotions publish flat totals; P2.8 R1 MAJOR-1 remediation:
+    # the walk stops at the newest edition recording evidence_total, and
+    # DEFICITS are not flagged against an older-than-newest baseline).
+    # Carry-forward rule (R1 MAJOR-1): an edition recording only PART of the
+    # known metrics inherits the missing ones from the previous qualifying
+    # edition, so a promotion edition recording judgments_total (but not
+    # evidence_by_kind) still baselines evidence counts from its ancestor.
+    baseline = None
+    recorded = {}
+    for step in chain:
+        step_counts = step.get("row_counts") or {}
+        if "evidence_total" in step_counts:
+            if baseline is None:
+                baseline = step
+                recorded = dict(step_counts)
+            else:
+                # newest qualifying edition first; inherit only metrics the
+                # newest one does not itself record (carry-forward).
+                for key, value in step_counts.items():
+                    recorded.setdefault(key, value)
+                if all(metric in step_counts
+                       for metric in DERIVED_ROW_COUNT_FILES) and \
+                        "evidence_by_kind" in step_counts:
+                    break
+    if baseline is None:
+        baseline = {}
+        recorded = {}
 
     evidence_rows, _ = _load_rows(root, "evidence", "evidence-", "evidence_id")
     judgment_rows, _ = _load_rows(root, "judgments", "judgment-", "judgment_id")
@@ -591,8 +667,20 @@ def verify_recorded(edition_id=None, canonical_root=ROOT):
     if "entity_candidates_total" in recorded:
         checks.append(("entity_candidates_total", "entity_candidate", None,
                        recorded["entity_candidates_total"]))
+    derived_checks = [(metric, DERIVED_ROW_COUNT_FILES[metric])
+                      for metric in DERIVED_ROW_COUNT_FILES if metric in recorded]
 
     unrecorded, lost_rows = [], []
+    for metric, (file_kind, relative_path) in derived_checks:
+        expected = recorded[metric]
+        on_disk = _derived_file_row_count(root, file_kind, relative_path)
+        if on_disk > expected:
+            unrecorded.append({"metric": metric, "recorded": expected, "on_disk": on_disk,
+                               "excess": on_disk - expected, "rows": [],
+                               "detail": f"derived file {relative_path} has more rows than recorded"})
+        elif on_disk < expected:
+            lost_rows.append({"metric": metric, "recorded": expected, "on_disk": on_disk,
+                              "deficit": expected - on_disk})
     for name, kind, bucket, expected in checks:
         rows = rows_for(kind, bucket)
         if len(rows) > expected:

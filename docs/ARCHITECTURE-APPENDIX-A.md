@@ -308,6 +308,11 @@ collectors (collect/)                    source_checkpoints.py
   import_evidence.py          judge_runs.py (P2.7; run dir first, then
   migrate_baseline.py          the SAME refresh promotion + gate)
   federal_results_derive.py
+        ▲
+  P2.8 builders — rebuild_knowledge.py (events + additive merge),
+  links_build.py, vectors_build.py, polls_store.py: all stage into a run
+  dir and promote through the same refresh gate; none writes canonical
+  directly
 ```
 
 Reading the map: collectors and the mode layer are the only things that
@@ -339,3 +344,11 @@ verifier reads everything and writes nothing.
 7. **Unresolved means try again, not verdict** — a timed-out probe decides
    nothing; its links never count as supersession (P2.7 owner ruling;
    P2.8's selector must respect this).
+8. **Rebuilds are additive, never replacement** — P2.8's events rebuild
+   merges into the live V2 DB (`merge_additive`): V2 rows keep their
+   reviewer-approved content and win natural-key collisions; new V3 rows
+   carry `origin='v3_rebuild'`. A rebuild that would drop V2 knowledge is
+   a bug, not a feature.
+9. **An empty selector is a broken selector** — `build_seat_state_links`
+   raising on zero rows is correct behavior: a silently-empty crosswalk
+   would pass the gate while knowing nothing (P2.8).

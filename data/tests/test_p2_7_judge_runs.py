@@ -245,10 +245,11 @@ class OrphanedFlagCountGuardTests(unittest.TestCase):
         self.assertEqual(disagree, 313, f"expected 313 disagree rows, found {disagree}")
 
     def test_pass_function_enforces_the_guard_before_proceeding(self):
-        import inspect
-        source = inspect.getsource(JR.run_orphaned_flag_pass)
-        self.assertIn("!= 811", source)
-        self.assertIn("!= 498", source)
+        # P2.8 F5: behavioral guard assertion, not a source-text match —
+        # the guard must actually raise on an inconsistent partition.
+        with self.assertRaises(RuntimeError):
+            JR.assert_orphaned_flag_counts_consistent(subset_count=1, disagree_count=1, total=100)
+        JR.assert_orphaned_flag_counts_consistent(subset_count=1, disagree_count=1, total=2)  # no raise
 
 
 class ResumeAfterKillTests(unittest.TestCase):

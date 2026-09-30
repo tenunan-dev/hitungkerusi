@@ -274,6 +274,50 @@ row back to the V2 bytes it came from.
   a queue item has no prior judgment). Nothing promotes to canonical in
   this phase (P2.8 scope); `close_run` reports every non-unresolved
   decision as `pending-approval`, so this pass can never report complete.
+  (R2-N1 caveat, now selector-enforced + regression-tested: unresolved
+  decisions may carry `supersedes` links in the work dir, but they never
+  shrink the re-judge target — a timeout is "try again", not a verdict.)
+
+### 3.10 Knowledge rebuild — `rebuild_knowledge.py`, `links_build.py`, `vectors_build.py`, `polls_store.py` (P2.8)
+
+- **Staged-promotion fence**: every builder CLI stages into a
+  `data/work/<run_id>/` run dir and promotes through
+  `write_promotion_edition` + `post_promotion_gate` — none writes
+  canonical directly; `no_changes` fires on identical input because
+  rebuild timestamps are content-derived (newest corpus edition id), not
+  wall-clock.
+- **Events rebuild + additive merge** (`rebuild_knowledge.py`): rebuilds
+  the events DB from accepted V3 evidence, then `merge_additive()` merges
+  with the live V2 baseline instead of replacing it. Rows are origin-tagged
+  (`v2_baseline` / `v3_rebuild`); on a natural-key collision the V2 row
+  stays (it carries the reviewer-approved dossier) and the colliding V3
+  row is skipped; genuinely-new V3 rows are inserted. V2 knowledge —
+  512 events, 2,141 entities (222 P + 606 DUN incl. Sabah anggaran), 117
+  stories, 82 dossier notes — is retained verbatim; the reconciliation
+  report records rows as `pending_rederivation` with the
+  `retained_v2_no_v3_coverage` citation. Sandbox-proven: 512 V2 + 2,217
+  V3 events = 2,729; second identical run → `no_changes`.
+- **Links** (`links_build.py`): evidence↔entity and entity↔entity rows
+  cite evidence_id/judgment_id + edition; seat↔state rows are structural
+  crosswalk from the P2.6 per-state federal CSVs (222 seats) plus the
+  DUN↔parliament mapping (600 rows) — they cite source_file + edition,
+  no judgment exists behind a seat's state membership. An empty selector
+  result raises (a silent empty crosswalk is a broken build).
+- **Vectors** (`vectors_build.py`): sqlite vector collections over news
+  (embeds `payload.desc` when present — never a title duplicate),
+  events, and dossier notes; counts published per collection as
+  `vectors_*_total`.
+- **Polls store** (`polls_store.py`): judged poll-observation rows
+  (OD1) with latest-accept-wins citation semantics; publishes
+  `poll_observations_total`.
+- **Integrity coupling** (`integrity.py`): derived-row counters cover all
+  new artifacts — links/polls JSONL, sqlite vector tables (`sqlite:` kind),
+  the dupe-of-candidates dict member (567, not 3), and the complete
+  accepted-news archive (`archive_items_total`, 2,367). The
+  verify-recorded walk carries missing metrics forward from the newest
+  recording ancestor edition, so a promotion that records only its own
+  deltas still inherits the full baseline (tampering with any derived
+  file becomes a visible deficit/excess).
 
 ## 4. Testing — `data/tests/`
 
@@ -401,3 +445,4 @@ fixed together.
 | 2026-09-29 | (P2.6 addendum, local) | Added `ARCHITECTURE-APPENDIX-A.md` — plain-language data-layer manual (per-file/per-function how-it-works, call relationships, who-writes-what map), linked from §8; rides the P2.6 push. |
 | 2026-09-30 | (P2.7, local) | §3.9/§4/§7: resumable judgment-run machinery (`judge_runs.py`, `ge16.judgment-run.v1`); orphaned-flag re-judge (498-row no-surviving-batch subset, 313 disagree rows excluded explicitly) + queue-evidence scaffold; `write_promotion_edition` gained `extra_row_counts` for corpus-row-adding promotions; suite 264→281. |
 | 2026-09-30 | (P2.7 R1, local) | ZCode R1 REQUEST_CHANGES (F1 canonical-supersede linkage missing; F2 queue selector dead via filename-substring + empty-run-complete) → parent remediation: `supersedes_canonical_id` threading (envelope + confidence_note), `judge.run_id` binding (F3), pinned `QUEUE_CLASS_TRACKER_FILES` set (selector now finds 1,498 live rows), empty-run-never-complete; regression tests ×2; suite 281→283. MINORs F4–F7 + notes carried to P2.8 (PLAN). |
+| 2026-09-30 | (P2.8, local) | §3.10/§4: knowledge rebuild layer — `rebuild_knowledge.py` (events DB rebuild from accepted V3 evidence), `links_build.py` (evidence↔entity, entity↔entity, seat↔state links from the P2.6 per-state CSVs + DUN↔parliament crosswalk: 222 federal + 600 DUN rows), `vectors_build.py` (sqlite vector collections), `polls_store.py` (judged poll-observation store); staged-promotion fence (all CLIs promote through the refresh gate); content-derived timestamps (identical input → `no_changes`); R1 remediation: counters fixed (dupe 567 not 3), carry-forward verify-recorded baselines, sqlite-derived counts, `archive_items_total` (2,367) registered, seat-state selector reads real inputs and raises when empty, additive events merge (`merge_additive`: origin-tagged `v2_baseline`/`v3_rebuild`, V2 rows win collisions, sandbox-proven 512 V2 + 2,217 V3 events = 2,729, second run `no_changes`); unresolved-never-supersedes selector negative test; suite 283→299. |

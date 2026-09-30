@@ -35,11 +35,11 @@
       "required": ["origin", "verifiable"],
       "properties": {
         "origin": {"enum": ["judged-batch", "accepted-corpus-inline", "orphaned-flag"]},
-        "verifiable": {"type": "boolean"},
+        "verifiable": {"type": "boolean", "description": "origin orphaned-flag (P2.8 F7 owner ruling, blessed): true means \"publisher reachable at judgment time\" — a liveness check, not a content-accuracy claim."},
         "batch_file": {"type": ["string", "null"], "description": "Repository-relative path of the surviving artifact backing the judgment, if any."},
         "batch_file_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$", "description": "origin judged-batch only: import-time computed sha256 of the batch file itself. This is the verifiable binding — hashing the file named by batch_file yields exactly this value."},
         "embedded_source_sha256": {"type": ["string", "null"], "pattern": "^[0-9a-f]{64}$", "description": "origin judged-batch only: the batch document's self-reported source_sha256, kept verbatim. It hashes the judged INPUT generation of ge16-news-backfill-candidates.json at judge time; that generation was overwritten in V2 (P2.1 Finding 2), so it cannot be reproduced from disk. See source_hash_semantics."},
-        "source_sha256": {"type": ["string", "null"], "pattern": "^[0-9a-f]{64}$", "description": "origin accepted-corpus-inline: sha256 of the accepted-corpus file backing the judgment (import-time computed). origin orphaned-flag: null."},
+        "source_sha256": {"type": ["string", "null"], "pattern": "^[0-9a-f]{64}$", "description": "origin accepted-corpus-inline: sha256 of the accepted-corpus file backing the judgment (import-time computed). origin orphaned-flag (P2.8 F7 owner ruling, blessed): sha256 of the probe input actually judged (the serialized probe result), not a hash of the article body."},
         "source_hash_semantics": {"type": "string", "description": "origin judged-batch only: states which hash is auditor-verifiable and why embedded_source_sha256 points at an overwritten input generation."},
         "verdict_line": {"type": ["string", "null"], "description": "Compact verdict line when the judgment is derived from verdicts.jsonl (parse_verdicts)."}
       },

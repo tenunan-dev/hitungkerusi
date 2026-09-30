@@ -26,6 +26,12 @@ Promotion (orphaned-flag re-judge only; queue-evidence is scaffold-only,
 see below) reuses the EXISTING refresh-run promotion layer
 (``refresh_canonical_data.write_promotion_edition`` + ``post_promotion_gate``)
 verbatim — this module does not open a second promotion path.
+
+Blessed semantics (P2.8 F7, owner ruling design brief §4.4): on an
+``orphaned-flag`` judgment row, ``basis.source_sha256`` is the sha256 of the
+probe input actually judged (the serialized probe result), not a hash of
+the article body; ``basis.verifiable: true`` means "publisher reachable at
+judgment time" — a liveness check, not a content-accuracy claim.
 """
 from __future__ import annotations
 
@@ -33,10 +39,12 @@ import hashlib
 import importlib.util
 import json
 import os
+import re
 import socket
 import sys
 import time
 import urllib.error
+import urllib.parse
 import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
@@ -286,6 +294,10 @@ def _to_judgment_row(evidence_id, verdict, reason, input_sha256, judge, judged_a
     ``confidence_note`` text instead; ``decisions.jsonl``'s own envelope
     (the ``supersedes`` key one level up, see :func:`record_decision`)
     carries it in structured form for programmatic use.
+
+    Blessed semantics (P2.8 F7): ``basis.source_sha256`` here is the sha256
+    of the probe input actually judged (not the article body); ``basis.
+    verifiable: true`` means "publisher reachable at judgment time".
     """
     mapped_verdict = "accept" if verdict == "verified" else "reject"
     note = f"P2.7 re-judge: {verdict} — {reason}"
@@ -417,13 +429,8 @@ def close_run(session, notes=None):
 
 # ---------------------------------------------------------------- probing
 
-def default_prober(url, timeout=8):
-    """One-hop HTTP HEAD (falling back to GET) — the network seam.
-
-    Real network I/O lives ONLY here; every caller that wants a stub passes
-    its own ``prober(url, timeout) -> dict`` callable instead.
-    """
-    request = urllib.request.Request(url, method="HEAD",
+def _http_request(url, method, timeout):
+    request = urllib.request.Request(url, method=method,
                                      headers={"User-Agent": "ge16-p2.7-probe/1.0"})
     try:
         with urllib.request.urlopen(request, timeout=timeout) as response:
@@ -434,8 +441,24 @@ def default_prober(url, timeout=8):
         return {"http_status": None, "final_url": url, "error": str(exc)}
 
 
+def default_prober(url, timeout=8):
+    """One-hop HTTP HEAD, falling back to one GET when the server refuses
+    HEAD (405/501) — the network seam. The timeout budget is split evenly
+    across the two attempts so the worst case still respects ``timeout``.
+
+    Real network I/O lives ONLY here; every caller that wants a stub passes
+    its own ``prober(url, timeout) -> dict`` callable instead.
+    """
+    half = max(timeout / 2, 1)
+    result = _http_request(url, "HEAD", half)
+    if result["http_status"] in (405, 501):
+        result = _http_request(url, "GET", half)
+    return result
+
+
 def _is_wrapper(url):
-    return any(host in url for host in WRAPPER_HOSTS)
+    hostname = urllib.parse.urlparse(url).hostname or ""
+    return hostname in WRAPPER_HOSTS
 
 
 def classify_probe(result):
@@ -496,13 +519,40 @@ def _load_evidence_index(canonical_root=CANONICAL_ROOT):
     return index
 
 
-def select_orphaned_flag_subset(canonical_root=CANONICAL_ROOT):
+_SUPERSEDES_RE = re.compile(r"\(supersedes (\S+)\)")
+
+
+def _already_superseded_judgment_ids(rows):
+    """judgment_ids that a LATER promoted row's ``confidence_note`` names as
+    superseded. Per R2-N1 (binding): only promoted rows (``verified``/
+    ``rejected-stale``) ever produce a judgment row with a supersede note —
+    an ``unresolved`` probe outcome never writes one (module docstring) — so
+    scanning judgment-row notes alone already excludes unresolved links;
+    no separate verdict filter is needed here."""
+    superseded = set()
+    for row in rows:
+        note = row.get("confidence_note", "") or ""
+        match = _SUPERSEDES_RE.search(note)
+        if match:
+            superseded.add(match.group(1))
+    return superseded
+
+
+def select_orphaned_flag_subset(canonical_root=CANONICAL_ROOT, include_already_superseded=False):
     """Return (no_surviving_batch_items, total_orphaned_flag_count,
     disagree_count). ``no_surviving_batch_items`` is a list of
     ``{"evidence_id", "url", "judgment_id"}`` dicts — the 498-row re-judge
-    target (design brief scoping correction; packet §1.2)."""
+    target (design brief scoping correction; packet §1.2).
+
+    ``include_already_superseded=False`` (P2.8 F4, default): excludes items
+    whose old judgment_id already appears in some later promoted judgment
+    row's supersede note — i.e. a probe decision already resolved it in a
+    prior promotion. Internal consistency is asserted by the caller via
+    ``subset_count + already_superseded_count == total_no_surviving_batch``,
+    never a hardcoded literal (the corpus grows across runs)."""
     rows = _load_judgment_rows(canonical_root)
     evidence_index = _load_evidence_index(canonical_root)
+    superseded_ids = _already_superseded_judgment_ids(rows) if not include_already_superseded else set()
     total = 0
     no_surviving_batch = []
     disagree = 0
@@ -513,6 +563,8 @@ def select_orphaned_flag_subset(canonical_root=CANONICAL_ROOT):
         total += 1
         note = row.get("confidence_note", "") or ""
         if note.startswith(NO_SURVIVING_BATCH_NOTE_PREFIX):
+            if row["judgment_id"] in superseded_ids:
+                continue
             evidence = evidence_index.get(row["evidence_id"], {})
             url = (evidence.get("payload") or {}).get("link") or (evidence.get("payload") or {}).get("url") or ""
             no_surviving_batch.append({
@@ -525,16 +577,31 @@ def select_orphaned_flag_subset(canonical_root=CANONICAL_ROOT):
     return no_surviving_batch, total, disagree
 
 
+def assert_orphaned_flag_counts_consistent(subset_count, disagree_count, total,
+                                           already_superseded_count=0):
+    """Internal-consistency count guard (P2.8 F4 remediation): derives its
+    expectation from the corpus itself instead of a hardcoded literal —
+    ``subset + disagree + already_superseded == total`` must hold, or the
+    selector's partition logic has a bug. Raises on mismatch."""
+    if subset_count + disagree_count + already_superseded_count != total:
+        raise RuntimeError(
+            "orphaned-flag count guard failed: subset(%d) + disagree(%d) + "
+            "already_superseded(%d) != total(%d)"
+            % (subset_count, disagree_count, already_superseded_count, total))
+
+
 def run_orphaned_flag_pass(run=None, canonical_root=CANONICAL_ROOT, judge="probe/1.0",
-                           prober=default_prober, data_root=None, now=None):
-    """Open (or resume) the 498-row re-judge run and probe every item that
-    is still pending. Does NOT promote — call :func:`promote_orphaned_flag_run`
-    separately once ``close_run`` reports the run complete."""
-    items, total, disagree = select_orphaned_flag_subset(canonical_root)
-    if total != 811:
-        raise RuntimeError(f"orphaned-flag corpus count guard failed: expected 811, found {total}")
-    if len(items) != 498:
-        raise RuntimeError(f"no-surviving-batch subset count guard failed: expected 498, found {len(items)}")
+                           prober=default_prober, data_root=None, now=None,
+                           include_already_superseded=False):
+    """Open (or resume) the no-surviving-batch re-judge run and probe every
+    item that is still pending. Does NOT promote — call
+    :func:`promote_orphaned_flag_run` separately once ``close_run`` reports
+    the run complete."""
+    items, total, disagree = select_orphaned_flag_subset(
+        canonical_root, include_already_superseded=include_already_superseded)
+    all_items, _, _ = select_orphaned_flag_subset(canonical_root, include_already_superseded=True)
+    already_superseded_count = len(all_items) - len(items)
+    assert_orphaned_flag_counts_consistent(len(items), disagree, total, already_superseded_count)
     expectations = {"verified": None, "rejected-stale": None, "unresolved": None}
     session = open_run(items, judge, run=run, item_class="orphaned-flag",
                        expectations=expectations, data_root=data_root, now=now)
@@ -552,13 +619,28 @@ def run_orphaned_flag_pass(run=None, canonical_root=CANONICAL_ROOT, judge="probe
     return session, summary
 
 
-def promote_orphaned_flag_run(session, canonical_root=CANONICAL_ROOT, prior=None, now=None):
+def promote_orphaned_flag_run(session, canonical_root=CANONICAL_ROOT, prior=None, now=None,
+                              disagree=None):
     """Promote a COMPLETE orphaned-flag run's promotable decisions into
     canonical/judgments/, reusing the refresh-run promotion + verifier gate
     layer verbatim (packet §1.2: 'Reuse it; do not build a second promotion
-    path')."""
+    path').
+
+    ``disagree`` (P2.8 R1 MINOR-7): the derived disagree count the pass
+    excluded; recorded in the edition note. Accepted as a parameter because
+    the session state does not carry it — callers (run_orphaned_flag_pass)
+    have it from the selector. Defaults to the sentinel derived from the
+    notes file when possible, else 0.
+    """
     if not session.state["complete"]:
         raise RuntimeError("refusing to promote: run is not complete (pending items remain)")
+    if disagree is None:
+        notes_path = session.run.judge / "run-notes.json"
+        if notes_path.is_file():
+            disagree = json.loads(notes_path.read_text(encoding="utf-8")).get(
+                "disagree_rows_excluded", 0)
+        else:
+            disagree = 0
     refresh = _load_sibling("refresh_canonical_data.py", "p27_judge_runs_refresh")
     import_evidence = _load_import_sibling("import_evidence.py", "p27_judge_runs_import_evidence")
 
@@ -586,15 +668,21 @@ def promote_orphaned_flag_run(session, canonical_root=CANONICAL_ROOT, prior=None
 
     evidence_total = sum(1 for _ in _load_evidence_index(canonical_root))
     judgments_total = len(_load_judgment_rows(canonical_root))
+    entity_candidates_path = Path(canonical_root) / "entities" / "entity-candidates.jsonl"
+    entity_candidates_total = 0
+    if entity_candidates_path.is_file():
+        with open(entity_candidates_path, encoding="utf-8") as handle:
+            entity_candidates_total = sum(1 for line in handle if line.strip())
     counts = session.state["counts"]
     edition_id, edition_path = refresh.write_promotion_edition(
         session.run, promoted, unchanged=[], canonical_root=canonical_root, prior=prior, now=now,
-        extra_row_counts={"evidence_total": evidence_total, "judgments_total": judgments_total},
+        extra_row_counts={"evidence_total": evidence_total, "judgments_total": judgments_total,
+                          "entity_candidates_total": entity_candidates_total},
         note=("P2.7 orphaned-flag re-judge promotion: %d of %d no-surviving-batch rows superseded "
               "(verified=%d, rejected-stale=%d, unresolved=%d retained-flagged); "
-              "313 disagree rows excluded (already backed by a surviving judged-batch judgment)."
+              "%d disagree rows excluded (already backed by a surviving judged-batch judgment)."
               % (added, session.state["total_items"], counts["verified"],
-                 counts["rejected-stale"], counts["unresolved"])))
+                 counts["rejected-stale"], counts["unresolved"], disagree)))
     reports = refresh.post_promotion_gate(session.run, edition_id, canonical_root)
     return edition_id, edition_path, reports
 
@@ -700,7 +788,11 @@ if __name__ == "__main__":
         session, summary = run_orphaned_flag_pass()
         print(json.dumps(summary, indent=2, sort_keys=True))
         if args.promote:
-            edition_id, edition_path, reports = promote_orphaned_flag_run(session)
+            notes = session.run.judge / "run-notes.json"
+            disagree = json.loads(notes.read_text(encoding="utf-8")).get(
+                "disagree_rows_excluded", 0) if notes.is_file() else 0
+            edition_id, edition_path, reports = promote_orphaned_flag_run(
+                session, disagree=disagree)
             print(json.dumps({"edition_id": edition_id, "edition_path": edition_path}, indent=2))
     else:
         session, summary = run_queue_evidence_pass()
