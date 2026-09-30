@@ -246,11 +246,20 @@ every single item so a crash never loses or repeats work.
   prober function instead). Three outcomes: `verified` (publisher answers
   200), `rejected-stale` (wrapper-only redirect, or a 404/410), `unresolved`
   (timeout or error — try again later, nothing changes yet).
-- **Never overwriting history**: judgments are supposed to be append-only,
-  so a re-decided item doesn't edit the old row — it writes a new one and
-  notes in plain text which judgment it supersedes (the frozen judgment
-  schema has no `supersedes` field to use, unlike evidence rows, so the
-  note carries it instead).
+- **Never overwriting history**: judgments are append-only, so a re-decided
+  item doesn't edit the old row — it writes a new one and notes in plain
+  text which judgment it supersedes (the frozen judgment schema has no
+  `supersedes` field to use, unlike evidence rows, so the note carries it
+  instead). The supersede target comes from two places, in order: a prior
+  decision in the SAME run (re-judged twice in one run), else the old
+  canonical judgment id threaded in explicitly
+  (`supersedes_canonical_id` — the orphaned-flag pass passes each item's
+  old `judgment_id`; review R1-F1). One caveat, recorded for P2.8
+  (R2-N1): an `unresolved` decision's envelope carries the old id too, but
+  unresolved NEVER supersedes — that link stays work-dir-only.
+- **Run identity is stamped on promoted rows**: `judge.run_id` on each
+  promoted `ge16.judgment.v1` row names the run dir that decided it
+  (review R1-F3), so canonical lineage points back to the decisions file.
 - **The 498-row re-judge**: of 811 live orphaned-flag judgments, 498 have no
   surviving batch file behind them at all (the true re-judge target); the
   other 313 already have a different, surviving judgment backing the same
@@ -270,7 +279,12 @@ every single item so a crash never loses or repeats work.
   records decisions for evidence rows that have no judgment yet, but never
   promotes anything to canonical in this phase — `rejected-stale` results
   sit in `review-queue.jsonl` waiting for an owner to approve them by hand.
-  That's P2.8's job to finish.
+  That's P2.8's job to finish. The selector matches on a pinned list of the
+  three queue-class tracker files (`QUEUE_CLASS_TRACKER_FILES` — seen-pending,
+  candidates, backfill-candidates), NOT a filename substring (review
+  R1-F2: the substring matched zero rows; the pinned list finds 1,498 live
+  rows). And a run that decides nothing reports `complete: false` —
+  deciding nothing demonstrates nothing.
 
 ---
 
@@ -290,16 +304,18 @@ collectors (collect/)                    source_checkpoints.py
         │ stage → promote → edition → integrity gate
         ▼
   data/canonical/** (evidence, judgments, entities, editions, research)
-        ▲
-  import_evidence.py (P2.2 corpus build; deterministic re-import)
-  migrate_baseline.py (P2.5 V2→V3 bridge; edition + gate)
-  federal_results_derive.py (P2.6; stage only, promotion copies)
+        ▲                          ▲
+  import_evidence.py          judge_runs.py (P2.7; run dir first, then
+  migrate_baseline.py          the SAME refresh promotion + gate)
+  federal_results_derive.py
 ```
 
 Reading the map: collectors and the mode layer are the only things that
 touch tracker files; the orchestrator is the only thing that promotes into
-canonical; the importer and migrator are the only bulk writers; editions
-record everything; the verifier reads everything and writes nothing.
+canonical — and P2.7's `judge_runs.py` deliberately reuses that same
+promotion + verifier gate rather than adding a second door; the importer
+and migrator are the only bulk writers; editions record everything; the
+verifier reads everything and writes nothing.
 
 ---
 
@@ -308,11 +324,18 @@ record everything; the verifier reads everything and writes nothing.
 1. **Same input, same row** — ids come from content, so re-importing never
    duplicates.
 2. **A failure never pretends progress** — failed cycles leave the window
-   open; nothing half-commits.
+   open; nothing half-commits. A run that decided nothing is never
+   "complete" (P2.7).
 3. **Nothing enters canonical quietly** — promotion + edition + verifier
-   gate, every time.
+   gate, every time. P2.7's judgment promotion uses the same door.
 4. **The verifier never repairs** — a human (or an adjudicated packet)
    decides what to do with a finding.
 5. **Working state is disposable; editions are forever** — you can delete
    `data/work/` and lose nothing but scratch (the chain records pruned runs
    as legal).
+6. **Supersede, never edit** — a new decision links to the old judgment by
+   id (in the note text, since the frozen schema reserves `supersedes` for
+   evidence rows); the old row is never touched (P2.7).
+7. **Unresolved means try again, not verdict** — a timed-out probe decides
+   nothing; its links never count as supersession (P2.7 owner ruling;
+   P2.8's selector must respect this).
