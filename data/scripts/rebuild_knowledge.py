@@ -659,7 +659,11 @@ def promote_rebuild(canonical_root=CANONICAL_ROOT, data_root=None, now=None):
     merged_path = knowledge_dir / "ge16-events-merged.db"
     retained_v2 = merge_additive(live_db, built_path, merged_path)
     retained_rows_total = retained_v2.pop("_retained_v2_rows_total", 0)
-    report["retained_v2_no_v3_coverage"] = retained_v2
+    # R3-3: split the report honestly — collision-retained rows (V2 wins on
+    # a natural key) vs the reconciliation's no-coverage inventory (V2-only
+    # rows classed v2_only_no_v3_evidence). The old single key mapped
+    # collision counts under a no-coverage name.
+    report["retained_v2_collisions"] = retained_v2
     report["retained_v2_rows_total"] = retained_rows_total
     report["merge"] = "additive (origin-tagged v2_baseline + v3_rebuild)"
 
@@ -744,10 +748,13 @@ def merge_additive(live_db, rebuilt_db, merged_path):
             # which rebuilt keys already exist in the live DB — each one is a
             # row we RETAIN in its V2 form (V2 wins collisions; a colliding
             # V3 row is a re-derivation of the same underlying fact)
+            # R3-1 fix: BOTH sides use tuples, so single-key tables match
+            # (the old scalar/tuple mix never matched — 315 real sources
+            # collisions reported as 0).
             live_keys = set()
             for row in connection.execute(
                     f"SELECT {', '.join(keys)} FROM {table}"):
-                live_keys.add(row if len(row) > 1 else row[0])
+                live_keys.add(tuple(row))
             for row in rebuilt.execute(
                     f"SELECT {', '.join(shared)} FROM {table}"):
                 record = dict(zip(shared, row))

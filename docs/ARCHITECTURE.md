@@ -294,7 +294,7 @@ row back to the V2 bytes it came from.
   row is skipped; genuinely-new V3 rows are inserted. V2 knowledge —
   512 events, 2,141 entities (222 P + 606 DUN incl. Sabah anggaran), 117
   stories, 82 dossier notes — is retained verbatim; the reconciliation
-  report records rows as `pending_rederivation` with the
+  report records removed rows as `v2_only_no_v3_evidence` with the
   `retained_v2_no_v3_coverage` citation. Sandbox-proven: 512 V2 + 2,217
   V3 events = 2,729; second identical run → `no_changes`.
 - **Links** (`links_build.py`): evidence↔entity and entity↔entity rows

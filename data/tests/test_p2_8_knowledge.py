@@ -309,7 +309,8 @@ class AdditiveMergeTests(unittest.TestCase):
         total_events = con.execute("SELECT COUNT(*) FROM events").fetchone()[0]
         self.assertEqual(total_events, v2_events + v3_events)
         con.close()
-        self.assertIn("retained_v2_no_v3_coverage", report)
+        self.assertIn("retained_v2_collisions", report)
+        self.assertIn("retained_v2_rows_total", report)
         self.assertIn("additive", report.get("merge", ""))
 
     def test_second_promotion_is_no_changes(self):
