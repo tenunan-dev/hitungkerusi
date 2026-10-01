@@ -2,7 +2,7 @@
 
 **Read this first.** It replaces stale chat memory with durable references.
 Committed to the repo (safe to read after a fresh clone). Last updated
-2026-09-28.
+**2026-10-01** (P2 phase close).
 
 ## 1. What this project is
 
@@ -82,28 +82,55 @@ reports, one internally consistent verified edition published to Vercel
 
 ## 6. Current position (keep this block current)
 
-- P0 ✅ P1 ✅ P2.1–P2.5 ✅ — P2.5 verified 2026-09-29; HEAD `4754534`
-  (baseline migration, edition `20260929T064041Z`, suite 238/238).
-- Next: **P2.6** — baseline/incremental collection modes with explicit
-  windows + source checkpoints; scope includes normalizing per-state
-  federal-results staging (owner seat-coverage addition, 2026-09-29).
-- Objective (corrected 2026-09-29): federal 222-seat AND state DUN
-  forecasts are co-equal scope.
-- Phase order: P2 evidence model (P2.6–P2.10 remain) → P3 analytics/reports
-  → P4 runner remap → P5 release/publish → P6 integration verification →
-  P7 live cutover (owner-gated).
+- P0 ✅ P1 ✅ **P2 COMPLETE** (P2.1–P2.10 + end-of-P2 manual gate) —
+  closed 2026-10-01; HEAD `d85668a` on `origin/main` (verified: 0 ahead,
+  tree clean). Suite **305/305** (`evidence/P2/P2.10-suite-full.log`).
+- P2 delivered (committed): collection modes + checkpoints + archive
+  (P2.6, `7caccc4`); resumable judgment runs (P2.7, `b01b1a9`);
+  knowledge rebuild layer — additive merge, links, vectors, polls store
+  (P2.8, `63b711b`+`5a9ad34`+`382e0d6`, R4 APPROVE 0 blocking);
+  DATA-COVERAGE.md + JSON manifest (P2.9, `3d89fa5`); charter test
+  matrix 8/8 (P2.10, `f7b4e75`); manual gate (P2.4–P2.10 subsystems,
+  `d85668a`). Full push batch `54004ca..d85668a`.
+- Next: **P3** — analytics/reports per PLAN.md. Read P3 rows in full
+  before dispatch.
+- Objective: federal 222-seat AND state DUN forecasts are co-equal scope.
+- Phase order: P3 analytics/reports → P4 runner remap → P5 release/publish
+  → P6 integration verification → P7 live cutover (owner-gated).
+
+## 6b. Carried into P3 / integration (do not lose these)
+
+- **Live promotions not yet run**: links/, vectors/, polls store are
+  code-complete + review-approved + sandbox-proven; `links/` is empty —
+  real promotion runs happen at integration (P6) or when P3 needs them.
+- **Live additive events merge** not run: sandbox-proven 512 V2 + 2,217
+  V3 = 2,729 events, origin-tagged; live canonical still shows the P2.5
+  baseline (512 events). The live DB needs the origin ALTER via the merge
+  itself — never a hand ALTER.
+- **498-row orphaned-flag re-judge**: machinery ready, real pass not
+  executed (`judge_runs.py orphaned-flags --promote`; live network).
+- **R2-4 (P2.9 carry)**: derived-counter/carry-forward machinery has no
+  dedicated tests yet (counters verified only by spot-check).
+- **Per-feed checkpoints**: current checkpoint registers one consolidated
+  `news` source_id.
+- **OD7 label wording** still owner-pending (blocks 3 tests by design).
+- Provenance manifest now **163 files** (data-coverage.json joined
+  research/derived in P2.9; refreshed + pins updated to (149,162,163)).
 
 ## 7. Known open items
 
 - OD7 label wording: owner to supply (blocks 3 tests by design choice).
-- OD1 polls store: no dedicated P2 task yet — scheduled decision recorded
-  in PLAN.md §8 (fold into P2.8 or defer explicitly; auditor finding 3).
+- ~~OD1 polls store~~: **delivered in P2.8** (`polls_store.py`, judged
+  poll-observation store; sandbox-proven; live promotion pending).
 - `site/AGENTS.md:9` cosmetic nit (js/css/assets/geo read as nested under
   `state/`; they are siblings) — needs an approval-capable client to edit
   AGENTS.md files.
-- ZCode long-run lane down 2026-09-29 (server-side cancels); lane B
-  active until tomorrow (Claude implements, ZCode reviews). OpenCode
-  `nous` provider disabled in its config — deepseek failover down.
+- ZCode long-run lane flaky (server-side "Turn was cancelled" ×2 in the
+  P2.8 R3 review, 2026-09-30) — after two clean cancels, switch the seat
+  to OpenCode adjudicator (`~/.opencode/bin/opencode run --model
+  zai/glm-5.3`); that lane completed R3+R4 successfully. Launch pattern:
+  `node /Applications/ZCode.app/Contents/Resources/glm/zcode.cjs --prompt
+  ... --cwd ...` (bare `zcode` is NOT on PATH).
 - P2.4 advisory: `work_paths.apply_env` env-restore scoping needed before
   any second in-process caller. P2.5 advisories A1–A3 logged non-blocking.
 - P2.4 verifier gap: `dupe-of-candidates.json` not covered by edition
