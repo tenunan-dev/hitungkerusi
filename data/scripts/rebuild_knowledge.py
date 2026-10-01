@@ -556,7 +556,7 @@ def reconcile(baseline_path, new_path):
     ``v2_only_no_v3_evidence`` (REBUILD_REASON_V2_ONLY) with per-row
     ``detail`` carrying the best available citation — the additive-promotion
     ruling §5b RETAINS these rows in canonical (the retention report key is
-    ``retained_v2_no_v3_coverage``); the unexplained-removals gate fires on
+    ``retained_v2_collisions``); the unexplained-removals gate fires on
     missing/``none`` classes."""
     baseline_con = sqlite3.connect(str(baseline_path))
     new_con = sqlite3.connect(str(new_path))
@@ -574,9 +574,11 @@ def reconcile(baseline_path, new_path):
             report["tables"][table] = {
                 "added_count": len(added), "changed_count": len(changed), "removed_count": len(removed),
                 "removed": [{"key": key, "reason_class": REBUILD_REASON_V2_ONLY,
-                             "detail": "retained_v2_no_v3_coverage under the additive-promotion "
-                                       "ruling (brief §5b): row is kept in canonical; re-derive "
-                                       "when V3 entity granularity covers it",
+                             "detail": "V2 row retained verbatim on natural-key "
+                                       "collision (collision telemetry: "
+                                       "retained_v2_collisions) under the "
+                                       "additive-promotion ruling (brief §5b); "
+                                       "re-derive when V3 entity granularity covers it",
                              "citation": "P2.5 baseline row; not yet re-derivable from V3 evidence"}
                             for key in removed],
             }
@@ -640,8 +642,8 @@ def promote_rebuild(canonical_root=CANONICAL_ROOT, data_root=None, now=None):
     dedupes on natural keys (the V2 row is retained verbatim on collision
     — it carries reviewer-approved dossier content; the colliding V3 row
     is a re-derivation of the same fact). Rows the rebuild cannot
-    re-derive are RETAINED and reported as
-    ``retained_v2_no_v3_coverage``."""
+    re-derive are RETAINED; collision telemetry lands in
+    ``report["retained_v2_collisions"]`` + ``retained_v2_rows_total``."""
     import work_paths
     refresh = _load_sibling("refresh_canonical_data.py", "p28_rebuild_refresh")
 

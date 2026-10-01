@@ -311,6 +311,14 @@ class AdditiveMergeTests(unittest.TestCase):
         con.close()
         self.assertIn("retained_v2_collisions", report)
         self.assertIn("retained_v2_rows_total", report)
+        # R4-2 regression pin: the live copy carries 315 real sources
+        # collisions — assertGreater, not presence-only, so an R3-1
+        # recurrence (counter silently 0) fails here.
+        self.assertGreater(
+            report["retained_v2_collisions"]["sources"]["collisions_v2_retained"], 0)
+        self.assertEqual(report["retained_v2_rows_total"],
+                         sum(t["collisions_v2_retained"]
+                             for t in report["retained_v2_collisions"].values()))
         self.assertIn("additive", report.get("merge", ""))
 
     def test_second_promotion_is_no_changes(self):
