@@ -1,0 +1,96 @@
+{
+  "schema": "ge16.data-coverage.v1",
+  "generated_at_edition": "20260929T104845Z",
+  "generated_at": "2026-10-01",
+  "note": "Coverage by dataset and source, machine-readable companion to docs/DATA-COVERAGE.md. Counts are from the canonical tree as of edition 20260929T104845Z plus the P2.5 events baseline (not yet superseded by a live P2.8 promotion - see limitations.knowledge_rebuild).",
+  "datasets": {
+    "evidence_news": {
+      "total": 3717,
+      "by_source_tracker": {
+        "ge16-news-accepted.json": 2213,
+        "ge16-news-seen-pending.json": 1164,
+        "ge16-news-candidates.json": 258,
+        "ge16-news-backfill-candidates.json": 76,
+        "ge16-news-backfill-judged-batches": 6
+      },
+      "publishers_distinct": 172,
+      "top_publishers": {
+        "Free Malaysia Today": 499,
+        "Google News": 302,
+        "The Star": 226,
+        "The Vibes": 207,
+        "Malay Mail": 199,
+        "NST Online": 185,
+        "New Straits Times [GN]": 147,
+        "Malaysiakini": 147,
+        "The Star [GN]": 144,
+        "Malay Mail [GN]": 138,
+        "The Edge Malaysia": 121,
+        "The Edge Malaysia [GN]": 101
+      },
+      "warning": "Counts include candidates/pending/backfill staging trackers. Only accepted+judged news is durable corpus (archive: 2,367 items)."
+    },
+    "evidence_tracker_notes": {
+      "total": 18463,
+      "by_source_tracker": {
+        "ge16-general-news-tracked.json": 18179,
+        "ge16-polls-tracked.json": 234,
+        "ge16-candidates-tracked.json": 50
+      },
+      "warning": "tracker-note rows record what trackers SAW, not verified facts. Tracker links are NOT verified polls."
+    },
+    "judgments": {
+      "total": 3006,
+      "verdict_accept": 3006,
+      "by_origin": {
+        "accepted-corpus-inline": 1261,
+        "judged-batch": 934,
+        "orphaned-flag": 811
+      },
+      "warning": "orphaned-flag rows (811) are backfill flags whose generating batch no longer exists; 498-row no-surviving-batch subset is the re-judge target (P2.7 machinery, run pending)."
+    },
+    "archive_news_accepted": {
+      "total": 2367,
+      "window": "2026-01-01T00:00:00+00:00 -> 2026-09-29T09:01:50Z",
+      "checkpoint": "data/canonical/checkpoints/news.json (source_id=news, 9 source feeds)"
+    },
+    "events_db": {
+      "events": 512,
+      "entities": 2141,
+      "entities_by_type": {
+        "person": 1236,
+        "seat": 828,
+        "party": 30,
+        "institution": 22,
+        "state": 16,
+        "bloc": 9
+      },
+      "stories": 117,
+      "dossier_notes": 82,
+      "provenance": "P2.5 V2 baseline migration (edition-chained, backup-API snapshot)"
+    },
+    "seat_coverage": {
+      "federal_seats": 222,
+      "dun_seats": 600,
+      "note": "222 P-entities + 606 DUN entities incl. 14 Sabah 'anggaran' variants; 13 CSVs + territory file; geo coverage x13 states"
+    },
+    "links": {
+      "status": "NOT BUILT LIVE",
+      "note": "links_build.py exists and is tested (222 federal seat-state + 600 DUN crosswalk from real inputs); the live promotion has not been run - links/ is empty as of this snapshot."
+    },
+    "vectors": {
+      "status": "NOT BUILT LIVE",
+      "note": "vectors_build.py exists and is tested; live promotion pending integration run."
+    },
+    "polls_store": {
+      "status": "NOT BUILT LIVE",
+      "note": "polls_store.py exists and is tested (OD1); live promotion pending. Tracker seen-keys are NOT poll observations."
+    }
+  },
+  "limitations": {
+    "knowledge_rebuild": "P2.8 rebuild+additive-merge is code-complete, review-approved, and sandbox-proven (512 V2 + 2,217 V3 events = 2,729); the live canonical merge runs at integration, so live counts above still reflect the P2.5 baseline.",
+    "orphaned_flag_rejudge": "498-row re-judge machinery ready; the actual re-judgment run has not executed.",
+    "news_window": "News collection window opens 2026-01-01; pre-2026 coverage is only what V2 carried.",
+    "single_checkpoint_source": "Checkpoint file currently registers one consolidated 'news' source_id; per-feed checkpoints land with the next incremental collection cycle."
+  }
+}
