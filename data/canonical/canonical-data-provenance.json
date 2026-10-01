@@ -811,6 +811,12 @@
       "historic_source_path": "../HERMES/01_RESEARCH/states/national-composition-summary.md"
     },
     {
+      "destination_path": "research/derived/data-coverage.json",
+      "bytes": 4132,
+      "sha256": "fb6b9553c540395ae60e60c91f5b3c98c4d5af9428bc3c38f7e17294a4c4cc88",
+      "historic_source_path": "observed:scripts/refresh_canonical_data.py#research/derived/data-coverage.json"
+    },
+    {
       "destination_path": "research/states/DUN Kedah/federal-election-results-latest.csv",
       "bytes": 5164,
       "sha256": "7d604ffc30933758be355782d8c07bbb8b73a9e231e76c16a39d6819fa1305f2",

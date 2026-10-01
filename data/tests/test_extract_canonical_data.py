@@ -85,7 +85,8 @@ class CanonicalDataExtractionTests(unittest.TestCase):
         self.assertEqual(manifest["schema"], "data.canonical-provenance.v2")
         # 149 = 111 imported originals + 38 observed (baseline backfill sweep 7a19acd, absorbed by refresh 2026-09-26);
         # 162 as of P2.6 = 149 + 13 derived per-state federal-election-results CSVs (P2.6 collection, refresh 2026-09-29T092239Z)
-        self.assertIn(len(manifest["files"]), (149, 162))
+        # 163 as of P2.9 = 162 + research/derived/data-coverage.json (machine-readable coverage manifest)
+        self.assertIn(len(manifest["files"]), (149, 162, 163))
         self.assertEqual(len(manifest["methodology_inputs"]), 14)
         self.assertEqual(
             [

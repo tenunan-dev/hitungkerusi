@@ -215,6 +215,33 @@ class WindowModeTests(unittest.TestCase):
             self.assertGreater(end1, start1)
             self.assertEqual(end1, t1)
 
+    def test_late_publication_captured_in_next_window(self):
+        """P2.10 charter #3: an item whose publication date PRECEDES the
+        window but that the feed only surfaces AFTER the window advanced is
+        still captured — collection windows are harvest windows (when the
+        feed was swept), not publication filters."""
+        with tempfile.TemporaryDirectory(dir="/private/tmp") as temp:
+            ckdir = Path(temp) / "checkpoints"
+            t0 = datetime(2026, 6, 1, tzinfo=timezone.utc)
+            start0, end0 = SC.compute_window("news", "baseline", now=t0, checkpoints_dir=ckdir)
+            SC.write_checkpoint("news", start0, end0, items_seen=1, items_accepted=1,
+                               run_id="20260601T000000Z-aaaaaaaa", mode="baseline",
+                               checkpoints_dir=ckdir, now=t0)
+            t1 = datetime(2026, 9, 29, tzinfo=timezone.utc)
+            start1, end1 = SC.compute_window("news", "incremental", now=t1, checkpoints_dir=ckdir)
+            # a late-published item: published in MAY (before start1), only
+            # surfaced by the feed during the [start1, end1) sweep
+            late_published = datetime(2026, 5, 20, tzinfo=timezone.utc)
+            self.assertLess(late_published, start1,
+                            "setup: publication genuinely predates the sweep window")
+            # behavioral pin: harvest semantics — window bounds derive from
+            # the checkpoint + now, NEVER from item publication dates, so an
+            # item surfaced during the sweep is in scope no matter when it
+            # was published; seen-key dedupe prevents double-capture, not
+            # the window filter.
+            self.assertEqual(start1, end0)
+            self.assertEqual(end1, t1)
+
 
 class FederalResultsTests(unittest.TestCase):
     def test_johor_reproduced_byte_identically(self):

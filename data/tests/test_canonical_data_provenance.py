@@ -357,11 +357,13 @@ exec(compile(source, sys.argv[1], "exec"), {"__name__": "validator_compat_probe"
         manifest = json.loads(MANIFEST.read_text(encoding="utf-8"))
         # 149 at P1/P2.2–P2.5; 162 as of P2.6 (13 derived per-state
         # federal-election-results CSVs joined the six roots via the P2.6
-        # baseline/incremental collection work, refresh 2026-09-29T092239Z).
+        # baseline/incremental collection work, refresh 2026-09-29T092239Z);
+        # 163 as of P2.9 (research/derived/data-coverage.json, the
+        # machine-readable coverage manifest, joined research/derived).
         # The provenance invariant is about ORIGINAL IMPORT PATHS, not the
         # count: the ../HERMES/-sourced subset and its semantic digest are
         # the real pins (both unchanged — verified 2026-09-29).
-        self.assertIn(len(manifest["files"]), (149, 162))
+        self.assertIn(len(manifest["files"]), (149, 162, 163))
         originals = [
             entry for entry in manifest["files"]
             if entry["historic_source_path"].startswith("../HERMES/")

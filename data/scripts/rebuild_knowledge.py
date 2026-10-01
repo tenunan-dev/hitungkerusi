@@ -608,6 +608,11 @@ def run(canonical_root=CANONICAL_ROOT, run_dir=None, now=None):
     out_path.parent.mkdir(parents=True, exist_ok=True)
     built_path, stats = rebuild(canonical_root, out_path=out_path, now=now)
     report = reconcile(baseline_path, built_path)
+    # P2.10 charter #8: the rebuild must NAME the exact source snapshot it
+    # built from (the content-derived corpus edition id).
+    report["source_edition_id"] = stats.get("source_edition_id") if isinstance(stats, dict) else None
+    if not report["source_edition_id"]:
+        report["source_edition_id"] = _newest_corpus_edition_id(canonical_root, now=now)
     if report["unexplained_removals"]:
         raise RuntimeError(f"rebuild refused: unexplained removals in {report['unexplained_removals']}")
     if run_dir:
