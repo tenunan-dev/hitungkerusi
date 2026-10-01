@@ -288,6 +288,27 @@ every single item so a crash never loses or repeats work.
 
 ---
 
+## A.13 `rebuild_knowledge.py` + the P2.8 builder family (plain version)
+
+Four files build knowledge from accepted evidence:
+`rebuild_knowledge.py` (events + the additive merge), `links_build.py`
+(three link kinds), `vectors_build.py` (sqlite vector collections),
+`polls_store.py` (judged poll observations). The flow is always:
+**stage into a run dir → build → merge/dedupe → promote through the
+refresh gate**. None of them writes canonical directly.
+
+The interesting part is `merge_additive()`: it copies the live V2 DB,
+adds the origin columns to BOTH sides (the committed baseline predates
+the column), inserts genuinely-new V3 rows, and skips any V3 row whose
+natural key already exists — that V2 row stays verbatim because it
+carries the reviewer-approved dossier. The reconciliation report counts
+those as `collisions_v2_retained`, sums them into
+`retained_v2_rows_total`, and names the exact source edition in
+`source_edition_id`. A second identical run produces `no_changes`
+(content-derived timestamps).
+
+---
+
 ## A.11 File-relationship map (who writes what)
 
 ```
@@ -352,3 +373,10 @@ verifier reads everything and writes nothing.
 9. **An empty selector is a broken selector** — `build_seat_state_links`
    raising on zero rows is correct behavior: a silently-empty crosswalk
    would pass the gate while knowing nothing (P2.8).
+10. **Coverage pages never invent numbers** — `docs/DATA-COVERAGE.md` and
+   its JSON companion record `"status": "NOT BUILT LIVE"` for anything
+   that has not had a real promotion run; a zero that looks like a fact is
+   worse than an honest "not built" (P2.9).
+11. **Every chartered behavior has a pinning test** — P2.10's gap audit
+   mapped all 8 charter behaviors to specific tests; a new behavior
+   without a pinning test is incomplete work (P2.10).

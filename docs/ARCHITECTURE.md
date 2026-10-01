@@ -330,19 +330,14 @@ row back to the V2 bytes it came from.
 ## 4. Testing — `data/tests/`
 
 203 tests green as of `0dd89c5`; **238** as of P2.5; **261** as of P2.6;
-**264** as of the P2.6 Appendix A pass; **283** as of P2.7 (19 new:
-resume-after-`SIGKILL`, torn-tail recovery, per-item idempotence,
-source-hash-binding supersession, run-state schema validation ×2,
-partial-vs-complete ×2, probe three-way mapping ×6, orphaned-flag corpus
-count guard ×2)
-(pytest, `-p no:cacheprovider`, `PYTHONDONTWRITEBYTECODE=1`; ~11 min full
-run). P2.6 adds 20 collection-mode tests + 3 staging-contract tests
-(`test_p2_6_staging_contract.py`: every collector routes tracker writes
-through `ge16_tracker_outdir`, the env knob covers every
-`COLLECTOR_FILES` basename, and a staged subprocess run leaves live
-canonical tracker bytes+mtimes untouched — added after the candidates
-collector was found bypassing staging).
-Notable pins:
+**264** as of the P2.6 Appendix A pass; **283** as of P2.7; **299** as of
+P2.8; **305** as of P2.10 (pytest, `-p no:cacheprovider`,
+`PYTHONDONTWRITEBYTECODE=1`; ~9–13 min full run). P2.8 adds the knowledge
+layer suites (rebuild determinism, additive-merge invariance ×2,
+links/vectors/polls, promotion wiring, unresolved-never-supersedes
+selector negative test). P2.9 adds the coverage-manifest invariants.
+P2.10 closes the charter matrix — 8/8 behaviors pinned
+(`test_p2_10_charter.py` + late-publication in the collection suite).
 
 - Baseline migration (P2.5): idempotency (re-run stages nothing; empty
   promote is a zero-write no-op), collision refusal (canonical
@@ -400,6 +395,16 @@ packet (tier + acceptance criteria + prohibitions, router line)
   dispositions), enforced by test.
 - **Stable ids**: content-derived, re-import-stable; identity rules are
   versioned functions.
+- **Additive rebuilds (P2.8, owner-ruled §5b)**: a rebuild merges into the
+  live baseline (origin-tagged rows); V2 knowledge is never dropped.
+- **Rebuild collisions (P2.8)**: on a natural-key collision the V2 row is
+  retained verbatim (reviewer-approved dossier content); the colliding V3
+  row is skipped.
+- **Unresolved never supersedes (P2.7 owner ruling, selector-enforced
+  P2.8)**: a timed-out probe decides nothing; its links never shrink the
+  re-judge target.
+- **Empty selector = broken selector (P2.8)**: `build_seat_state_links`
+  raises on zero rows — a silently-empty crosswalk passes no gate.
 
 ## 7. Known limitations (honest ledger)
 
@@ -421,11 +426,22 @@ packet (tier + acceptance criteria + prohibitions, router line)
    audit (2026-09-29) caught the prose/file mismatch — full breakdown
    is authoritative in `dupe-of-candidates.json`.
 4. 211 entity candidates await owner approval (`entity_candidates.py list`).
-5. `events/` holds the P2.5 baseline-migration snapshot (`ge16-events.db`);
-   it is rebuilt from V3 judgments in P2.8. `links/` is empty until P2.8.
-6.270 of 292 probe URLs are Google News wrappers — wrapper liveness, not
+5. `events/` holds the P2.5 baseline + P2.8's reviewed-but-not-yet-run
+   additive merge (`merge_additive` is code-complete, R4-APPROVED, and
+   sandbox-proven at 512 V2 + 2,217 V3 = 2,729 events; the live canonical
+   merge runs at integration). `links/`, `vectors/`, and the polls store
+   are code-complete + sandbox-proven but NOT BUILT LIVE — see
+   `docs/DATA-COVERAGE.md` (`"status": "NOT BUILT LIVE"` rows; no
+   fabricated counts).
+6. 270 of 292 probe URLs are Google News wrappers — wrapper liveness, not
    publisher liveness.
 7. `apply_env` env-restore scoping deferred until a second caller exists.
+8. The events DB sits outside edition digests (it predates DB hashing);
+   its integrity anchors are the P2.5 baseline digest marker + row-level
+   reconciliation — pinned by `test_live_db_drift_from_baseline_digest_fails`.
+9. P2.9 carries: derived-counter/carry-forward tests (R2-4); per-feed
+   checkpoints; the live promotions + live additive merge at integration;
+   the 498-row orphaned-flag re-judge run.
 
 ## 8. Maintenance rule
 
@@ -456,3 +472,4 @@ fixed together.
 | 2026-09-30 | (P2.8, local) | §3.10/§4: knowledge rebuild layer — `rebuild_knowledge.py` (events DB rebuild from accepted V3 evidence), `links_build.py` (evidence↔entity, entity↔entity, seat↔state links from the P2.6 per-state CSVs + DUN↔parliament crosswalk: 222 federal + 600 DUN rows), `vectors_build.py` (sqlite vector collections), `polls_store.py` (judged poll-observation store); staged-promotion fence (all CLIs promote through the refresh gate); content-derived timestamps (identical input → `no_changes`); R1 remediation: counters fixed (dupe 567 not 3), carry-forward verify-recorded baselines, sqlite-derived counts, `archive_items_total` (2,367) registered, seat-state selector reads real inputs and raises when empty, additive events merge (`merge_additive`: origin-tagged `v2_baseline`/`v3_rebuild`, V2 rows win collisions, sandbox-proven 512 V2 + 2,217 V3 events = 2,729, second run `no_changes`); unresolved-never-supersedes selector negative test; suite 283→299. |
 | 2026-10-01 | (P2.8 R2–R4 + push, `2a89933`) | R2 REQUEST_CHANGES (origin columns only ensured on rebuilt side; tests masked by pre-ALTER) → fixed: ensure-origin on both sides, tests de-masked, RAW-copy probe 2,729 tagged. R3 (OpenCode adjudicator after ZCode ×2 cancel): collision counter tuple/scalar mismatch (315 sources collisions reported 0) → tuple-normalized both sides. R4 **APPROVE 0 blocking**; R4-1 stale-name sweep + R4-2 regression pins (sources>0, total=sum) in `2a89933`. Push batch `54004ca..2a89933` verified (origin==main). |
 | 2026-10-01 | (P2.9, local) | `docs/DATA-COVERAGE.md` + machine-readable `data/canonical/research/derived/data-coverage.json` (`ge16.data-coverage.v1`): coverage by dataset and by source; tracker-links-NOT-verified-polls rule; links/vectors/polls recorded as NOT BUILT LIVE (no fabricated counts); JSON sums asserted programmatically. |
+| 2026-10-01 | (P2.10 + end-of-P2, `f7b4e75`+) | Charter test matrix closed: 8/8 behaviors pinned (gap audit `evidence/P2/P2.10-gap-audit.md`; 6 new tests in `test_p2_10_charter.py` + collection suite); `source_edition_id` added to the rebuild reconciliation report; provenance manifest refreshed to 163 files (data-coverage.json joined research/derived); stale count pins updated in both suites. End-of-P2 manual pass: §4 suite ledger 283→305, §6 four new owner decisions, §7 limitations rewritten (NOT-BUILT-LIVE ledger, events-DB integrity anchors, P2.9+ carries); Appendix A A.13 builder-family plain walkthrough + invariants 10/11. Suite 305/305. |
