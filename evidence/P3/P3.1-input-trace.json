@@ -1,0 +1,1510 @@
+{
+  "packet": "P3.1",
+  "title": "Forecast engine input-reader trace",
+  "generated": "2026-10-01",
+  "scope": "analytics/engine/** (forecast_engine, config, data_roots, author_reports, report_builder, reference_pack, state_report_builder, federal_ms_render, log_utils, common/log_utils, authoring_config.json, README.md)",
+  "method": "Full read of all engine modules; every read primitive (pd.read_csv / json.load / sqlite3.connect / open / urlopen / importlib-exec / exists-check anchors) recorded with runtime resolution. DATA_ROOTS resolved by probe with .venv/bin/python3 (PYTHONPATH cleared). No engine CLI was run; no repo paths created.",
+  "resolver_probe": {
+    "repository_root": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3",
+    "data_root": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/data",
+    "domains": {
+      "raw": true,
+      "derived": true,
+      "trackers": true,
+      "federal": true,
+      "geo": true,
+      "states": true
+    },
+    "note": "resolve via v3_paths (requirements.txt marker walk); HITUNGKERUSI_ROOT env override available (tests)"
+  },
+  "counts_by_classification": {
+    "a": 10,
+    "b": 34,
+    "c": 57,
+    "d": 2,
+    "uncategorized": 3
+  },
+  "classification_key": {
+    "a": "INFORMS MODEL MATH (probabilities / seat projections / scenario numbers)",
+    "b": "INFORMS NARRATIVE / METADATA (citations, provenance bindings, report prose, QA)",
+    "c": "DANGLING (path cannot resolve in V3)",
+    "d": "BESIDE-IT (stored in the repo but never read by analysis code in scope)"
+  },
+  "verdict": "NOT database-driven. Every number on the model-math path comes from five canonical CSVs under data/canonical/research/{federal,derived} plus hand-curated constants in analytics/engine/config.py (FACTORS/MACRO, and EVENT_SHOCKS which is currently EMPTY). No sqlite3/DB read exists anywhere in the math path. The subsystem's only database readers are report_builder's story-ledger queries (narrative section 2.1, state scoping, reference-pack story claims) and they point at ROOT/work/events/ge16-events.db, which does not exist in V3, so even that narrative read currently fails closed to 'ledger not built'. The live canonical events DB at data/canonical/events/ge16-events.db (512 events, 117 stories, P2.8) is BESIDE the engine: nothing in analytics/engine reads it. Database evidence has entered the model only through human curation — the config.py EVENT_SHOCKS review of 2026-09-24 was performed against work/events/ge16-events.db and its outcome was to REMOVE all shocks — so the correct claim is 'CSV-driven model math with human-curated factor constants; database evidence informs narrative prose (and would inform it only after P3.2/P4 resolve the events-DB path), never the probabilities as of this trace.' Additionally, the whole report/pack/authoring layer is anchored on the absent V2 output tree (02_FORECAST/, work/, 03_REPORTS/, 05_AUTOMATION/): four unguarded reads (report_builder.py:71 FORECAST_JSON, :919 SCENARIOS, reference_pack.py:703/:984 SCENARIOS) crash those CLIs outright in V3, matching the recorded P4-class test baseline.",
+  "dangling_inventory": [
+    {
+      "path": "02_FORECAST/outputs/{latest,history}",
+      "referenced_from": [
+        "forecast_engine.py:40-41,616,825-869",
+        "report_builder.py:50",
+        "state_report_builder.py:122,587,615",
+        "reference_pack.py (via rb.FORECAST_JSON)",
+        "log_utils.py:97,113,120"
+      ],
+      "actual": "absent at V3 root; engine CLI would create it on run",
+      "proposed_owner": "P4 (02_FORECAST->engine import remap class)"
+    },
+    {
+      "path": "02_FORECAST/engine/config.py",
+      "referenced_from": [
+        "report_builder.py:51,78-80",
+        "state_report_builder.py:62,594-600"
+      ],
+      "actual": "analytics/engine/config.py",
+      "proposed_owner": "P4"
+    },
+    {
+      "path": "work/scenarios/{projection_scenarios.json,scenario_meta.json}",
+      "referenced_from": [
+        "forecast_engine.py:617,703-704,720-721,762,786",
+        "report_builder.py:57,885-888,919",
+        "reference_pack.py:474,703,984",
+        "state_report_builder.py:123,588,653"
+      ],
+      "actual": "absent; analytics/automation/paths.py defines work/forecast/latest + work/reports/latest as the V3 generated-artifact roots",
+      "proposed_owner": "P3.2 (dependency reorder onto the V3 work layout)"
+    },
+    {
+      "path": "work/events/ge16-events.db",
+      "referenced_from": [
+        "report_builder.py:93,119,243",
+        "reference_pack.py:481,599 (label)",
+        "config.py:44 (provenance comment only)"
+      ],
+      "actual": "live canonical DB is data/canonical/events/ge16-events.db (512 events)",
+      "proposed_owner": "P3.2 preferred (point the narrative reader at the canonical DATA DB); P4 alternative (regenerate a work/events copy at V3 root) — label only"
+    },
+    {
+      "path": "work/figures/state_fingerprints.json",
+      "referenced_from": [
+        "state_report_builder.py:68,86,96"
+      ],
+      "actual": "absent (README also stale: says .cache/)",
+      "proposed_owner": "P3.2"
+    },
+    {
+      "path": "work/reports/{reference,authoring}",
+      "referenced_from": [
+        "reference_pack.py:65,1263",
+        "author_reports.py:102-103,1715,1773"
+      ],
+      "actual": "absent; authoring manifest/pack outputs",
+      "proposed_owner": "P3.2"
+    },
+    {
+      "path": "work/tracking (common/log_utils.py)",
+      "referenced_from": [
+        "common/log_utils.py:26-33"
+      ],
+      "actual": "absent; matches analytics/automation/paths.py work/tracking convention",
+      "proposed_owner": "P3.2"
+    },
+    {
+      "path": "05_AUTOMATION/{projection_scenarios.json,scenario_meta.json,md2docx.py}",
+      "referenced_from": [
+        "forecast_engine.py:705-706 (guard)",
+        "report_builder.py:2321-2323"
+      ],
+      "actual": "absent; a V3 md2docx exists under analytics/automation/md2docx/",
+      "proposed_owner": "P4 (legacy-layout remap)"
+    },
+    {
+      "path": "03_REPORTS/{federal,states,ai}",
+      "referenced_from": [
+        "report_builder.py:41-43,1444-1447,1550-1559,2300-2316,2356",
+        "state_report_builder.py:53,1123-1134,1159-1168,4266-4286,4302",
+        "author_reports.py:101,105-110,1715",
+        "federal_ms_render.py:763-764"
+      ],
+      "actual": "absent at V3 root (delivery/outputs trees exist elsewhere)",
+      "proposed_owner": "P4"
+    },
+    {
+      "path": "CHANGELOG.md / STATUS.md / .tracking (log_utils.py)",
+      "referenced_from": [
+        "log_utils.py:22-25,58,123,139,176,178"
+      ],
+      "actual": "absent; legacy audit tool at repo root",
+      "proposed_owner": "P4"
+    }
+  ],
+  "entries": [
+    {
+      "file": "analytics/engine/forecast_engine.py",
+      "line": 36,
+      "kind": "constant",
+      "path_expr": "ROOT = dirnamex3(__file__)",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3",
+      "exists": true,
+      "consumer": "all engine modules",
+      "call_chain": "module import time",
+      "classification": null,
+      "note": "Resolves correctly in V3: analytics/engine -> repo root."
+    },
+    {
+      "file": "analytics/engine/forecast_engine.py",
+      "line": 37,
+      "kind": "import",
+      "path_expr": "resolve_data_roots(repository_root=ROOT)",
+      "resolved_path": "via v3_paths.data_root",
+      "exists": true,
+      "consumer": "module import time",
+      "call_chain": "data_roots.resolve_data_roots",
+      "classification": "b",
+      "note": "Real resolver (probed): data_root=data/canonical, all six domains validated present."
+    },
+    {
+      "file": "analytics/engine/forecast_engine.py",
+      "line": 38,
+      "kind": "constant",
+      "path_expr": "R = DATA_ROOTS.derived",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/data/canonical/research/derived",
+      "exists": true,
+      "consumer": "load_baseline/load_state_swings/load_boundary_swings",
+      "call_chain": "main -> loaders",
+      "classification": "a",
+      "note": "Derived-domain anchor for the model-math CSVs."
+    },
+    {
+      "file": "analytics/engine/forecast_engine.py",
+      "line": 39,
+      "kind": "constant",
+      "path_expr": "P = DATA_ROOTS.federal",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/data/canonical/research/federal",
+      "exists": true,
+      "consumer": "load_baseline",
+      "call_chain": "main -> load_baseline",
+      "classification": "a",
+      "note": "Federal-domain anchor for the projection-model CSV."
+    },
+    {
+      "file": "analytics/engine/forecast_engine.py",
+      "line": 40,
+      "kind": "constant",
+      "path_expr": "OUT = ROOT/02_FORECAST/outputs/latest",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/02_FORECAST/outputs/latest",
+      "exists": false,
+      "consumer": "main (write); refresh_scenario_meta_evidence (read, guarded)",
+      "call_chain": "main -> makedirs/open(w); refresh_scenario_meta_evidence default forecast_path",
+      "classification": "c",
+      "note": "Dangling write target: would create 02_FORECAST/ at V3 root when main runs (why CLI main is prohibited in this trace). Owner label: P4 remap."
+    },
+    {
+      "file": "analytics/engine/forecast_engine.py",
+      "line": 41,
+      "kind": "constant",
+      "path_expr": "HIST = ROOT/02_FORECAST/outputs/history",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/02_FORECAST/outputs/history",
+      "exists": false,
+      "consumer": "main (shutil.copy write)",
+      "call_chain": "main",
+      "classification": "c",
+      "note": "Dangling write target, same class as OUT. Owner label: P4 remap."
+    },
+    {
+      "file": "analytics/engine/forecast_engine.py",
+      "line": "72",
+      "kind": "read_csv",
+      "path_expr": "P/ge16-projection-model.csv",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/data/canonical/research/federal/ge16-projection-model.csv",
+      "exists": true,
+      "consumer": "load_baseline",
+      "call_chain": "main -> project_seats/build_swing_map/monte_carlo/build_scenarios -> load_baseline",
+      "classification": "a",
+      "note": "Per-seat GE15 winner/runner-up/margin baseline: the identity layer of every probability and seat projection."
+    },
+    {
+      "file": "analytics/engine/forecast_engine.py",
+      "line": "73",
+      "kind": "read_csv",
+      "path_expr": "R/ge15-results-by-constituency-full.csv",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/data/canonical/research/derived/ge15-results-by-constituency-full.csv",
+      "exists": true,
+      "consumer": "load_baseline",
+      "call_chain": "main -> loaders",
+      "classification": "a",
+      "note": "Merges state_std + constituency names; state keys the swing map."
+    },
+    {
+      "file": "analytics/engine/forecast_engine.py",
+      "line": "74",
+      "kind": "read_csv",
+      "path_expr": "R/voter-demographics-by-constituency-ge15.csv",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/data/canonical/research/derived/voter-demographics-by-constituency-ge15.csv",
+      "exists": true,
+      "consumer": "load_baseline",
+      "call_chain": "main -> loaders",
+      "classification": "a",
+      "note": "malay_pct/youth_pct drive ethnic_swing_mod and the youth modulation multiplier in build_swing_map."
+    },
+    {
+      "file": "analytics/engine/forecast_engine.py",
+      "line": "98",
+      "kind": "read_csv",
+      "path_expr": "R/swing_se_to_se.csv (guarded os.path.exists)",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/data/canonical/research/derived/swing_se_to_se.csv",
+      "exists": true,
+      "consumer": "load_state_swings",
+      "call_chain": "main -> load_state_swings -> build_swing_map",
+      "classification": "a",
+      "note": "Post-GE15 state-election swings (revealed preference); guarded read, file present."
+    },
+    {
+      "file": "analytics/engine/forecast_engine.py",
+      "line": "117",
+      "kind": "read_csv",
+      "path_expr": "R/swing_boundary_grouped.csv (guarded)",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/data/canonical/research/derived/swing_boundary_grouped.csv",
+      "exists": true,
+      "consumer": "load_boundary_swings",
+      "call_chain": "main -> load_boundary_swings -> build_swing_map",
+      "classification": "a",
+      "note": "Per-parliament DUN-boundary swings; overrides state-level swings per bloc. Not in parent's lead list; verified present."
+    },
+    {
+      "file": "analytics/engine/forecast_engine.py",
+      "line": 417,
+      "kind": "open",
+      "path_expr": "open(path,\"rb\") in sha256_file (streaming digest)",
+      "resolved_path": "inputs: forecast output (L623, dangling) + news feed (L508, exists)",
+      "exists": null,
+      "consumer": "refresh_scenario_meta_evidence/load_feed_records",
+      "call_chain": "main -> refresh_scenario_meta_evidence -> sha256_file",
+      "classification": "b",
+      "note": "Provenance digests only; never touches seat math."
+    },
+    {
+      "file": "analytics/engine/forecast_engine.py",
+      "line": 509,
+      "kind": "open+json.load",
+      "path_expr": "feed_path default = DATA_ROOTS.trackers/ge16-news-feed.json",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/data/canonical/research/trackers/ge16-news-feed.json",
+      "exists": true,
+      "consumer": "load_feed_records",
+      "call_chain": "main -> refresh_scenario_meta_evidence -> load_feed_records",
+      "classification": "b",
+      "note": "Feed (120 items) used to record-bind narrative-scenario evidence ids/digests; guarded, fails closed to (None,None).",
+      "also_lines": [
+        510
+      ]
+    },
+    {
+      "file": "analytics/engine/forecast_engine.py",
+      "line": 616,
+      "kind": "open",
+      "path_expr": "forecast_path default = OUT/ge16-forecast-latest.json",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/02_FORECAST/outputs/latest/ge16-forecast-latest.json",
+      "exists": false,
+      "consumer": "refresh_scenario_meta_evidence",
+      "call_chain": "main --scenarios -> refresh_scenario_meta_evidence; default run tail call",
+      "classification": "c",
+      "note": "Guarded by os.path.exists (L621): returns empty report today. Engine's own OUTPUT, so this is provenance re-binding, not math input. Owner label: P4 remap."
+    },
+    {
+      "file": "analytics/engine/forecast_engine.py",
+      "line": 617,
+      "kind": "open",
+      "path_expr": "meta_path default = ROOT/work/scenarios/scenario_meta.json",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/work/scenarios/scenario_meta.json",
+      "exists": false,
+      "consumer": "refresh_scenario_meta_evidence",
+      "call_chain": "main -> refresh_scenario_meta_evidence",
+      "classification": "c",
+      "note": "Guarded jointly with forecast_path; never created by the engine. Owner label: P3.2 reorder."
+    },
+    {
+      "file": "analytics/engine/forecast_engine.py",
+      "line": 618,
+      "kind": "constant",
+      "path_expr": "feed_path = DATA_ROOTS.trackers/ge16-news-feed.json",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/data/canonical/research/trackers/ge16-news-feed.json",
+      "exists": true,
+      "consumer": "refresh_scenario_meta_evidence",
+      "call_chain": "main",
+      "classification": "b",
+      "note": "Same feed file as L509 default; resolves."
+    },
+    {
+      "file": "analytics/engine/forecast_engine.py",
+      "line": 625,
+      "kind": "open+json.load",
+      "path_expr": "open(meta_path) guarded by L621 exists-check",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/work/scenarios/scenario_meta.json",
+      "exists": false,
+      "consumer": "refresh_scenario_meta_evidence",
+      "call_chain": "main",
+      "classification": "c",
+      "note": "Unreachable while both guard paths are absent; when reached, re-binds provenance digests only. Owner label: P3.2 reorder.",
+      "also_lines": [
+        626,
+        663
+      ]
+    },
+    {
+      "file": "analytics/engine/forecast_engine.py",
+      "line": 703,
+      "kind": "constant",
+      "path_expr": "scen_path = ROOT/work/scenarios/projection_scenarios.json",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/work/scenarios/projection_scenarios.json",
+      "exists": false,
+      "consumer": "main --scenarios (read L720, write L762)",
+      "call_chain": "CLI --scenarios",
+      "classification": "c",
+      "note": "Owner label: P3.2 reorder (generated-artifact dependency)."
+    },
+    {
+      "file": "analytics/engine/forecast_engine.py",
+      "line": 704,
+      "kind": "constant",
+      "path_expr": "meta_path = ROOT/work/scenarios/scenario_meta.json",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/work/scenarios/scenario_meta.json",
+      "exists": false,
+      "consumer": "main --scenarios (read L721, write L786)",
+      "call_chain": "CLI --scenarios",
+      "classification": "c",
+      "note": "Same work-tree dependency; also refreshed via refresh_scenario_meta_evidence."
+    },
+    {
+      "file": "analytics/engine/forecast_engine.py",
+      "line": 705,
+      "kind": "exists-check",
+      "path_expr": "legacy_scen_path = ROOT/05_AUTOMATION/projection_scenarios.json",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/05_AUTOMATION/projection_scenarios.json",
+      "exists": false,
+      "consumer": "main --scenarios stale-legacy guard (L707-719)",
+      "call_chain": "CLI --scenarios",
+      "classification": "c",
+      "note": "Legacy V2 location; exists() is false so the RuntimeError guard never fires in V3. Owner label: P4 remap."
+    },
+    {
+      "file": "analytics/engine/forecast_engine.py",
+      "line": 706,
+      "kind": "exists-check",
+      "path_expr": "legacy_meta_path = ROOT/05_AUTOMATION/scenario_meta.json",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/05_AUTOMATION/scenario_meta.json",
+      "exists": false,
+      "consumer": "main --scenarios stale-legacy guard",
+      "call_chain": "CLI --scenarios",
+      "classification": "c",
+      "note": "Owner label: P4 remap."
+    },
+    {
+      "file": "analytics/engine/forecast_engine.py",
+      "line": 720,
+      "kind": "open+json.load",
+      "path_expr": "json.load(open(scen_path)) guarded",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/work/scenarios/projection_scenarios.json",
+      "exists": false,
+      "consumer": "main --scenarios (retained-narrative merge)",
+      "call_chain": "CLI --scenarios",
+      "classification": "c",
+      "note": "Guarded: defaults to {}; the reviewed-narrative preservation layer is inert in V3."
+    },
+    {
+      "file": "analytics/engine/forecast_engine.py",
+      "line": 721,
+      "kind": "open+json.load",
+      "path_expr": "json.load(open(meta_path)) guarded",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/work/scenarios/scenario_meta.json",
+      "exists": false,
+      "consumer": "main --scenarios",
+      "call_chain": "CLI --scenarios",
+      "classification": "c",
+      "note": "Guarded: defaults to {}."
+    },
+    {
+      "file": "analytics/engine/forecast_engine.py",
+      "line": 825,
+      "kind": "write",
+      "path_expr": "os.makedirs(OUT/HIST); open(latest_path,'w'); shutil.copy to HIST",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/02_FORECAST/outputs/...",
+      "exists": false,
+      "consumer": "main",
+      "call_chain": "CLI base run",
+      "classification": "c",
+      "note": "Write side (recorded for the prohibition rationale): running main would create 02_FORECAST/ at V3 root.",
+      "also_lines": [
+        826,
+        862,
+        863,
+        869
+      ]
+    },
+    {
+      "file": "analytics/engine/forecast_engine.py",
+      "line": 761,
+      "kind": "write",
+      "path_expr": "os.makedirs(dirname(scen_path)); open(scen_path,'w'); open(meta_path,'w')",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/work/scenarios/...",
+      "exists": false,
+      "consumer": "main --scenarios",
+      "call_chain": "CLI --scenarios",
+      "classification": "c",
+      "note": "Write side: would create work/scenarios at V3 root.",
+      "also_lines": [
+        762,
+        786
+      ]
+    },
+    {
+      "file": "analytics/engine/config.py",
+      "line": "11-18",
+      "kind": "constants",
+      "path_expr": "FACTORS dict",
+      "resolved_path": "(no file read: imported by forecast_engine L33)",
+      "exists": null,
+      "consumer": "build_swing_map/economic_term",
+      "call_chain": "forecast_engine import -> math",
+      "classification": "a",
+      "note": "Factor weights feed the economic/approval distribution into seat swings."
+    },
+    {
+      "file": "analytics/engine/config.py",
+      "line": "23-37",
+      "kind": "constants",
+      "path_expr": "MACRO dict (gdp/cpi/ringgit/approval/pm_pref)",
+      "resolved_path": "(no file read: imported)",
+      "exists": null,
+      "consumer": "economic_term/build_swing_map",
+      "call_chain": "forecast_engine import -> math",
+      "classification": "a",
+      "note": "gdp_yoy/cpi_yoy/approval_delta are the live numeric terms of economic_term(); values hand-updated weekly from DOSM/BNM/Merdeka per comments."
+    },
+    {
+      "file": "analytics/engine/config.py",
+      "line": "42-64",
+      "kind": "constants",
+      "path_expr": "EVENT_SHOCKS = {} (empty)",
+      "resolved_path": "(no file read: imported)",
+      "exists": null,
+      "consumer": "build_swing_map seat-shock branch (L234-236)",
+      "call_chain": "forecast_engine import -> math",
+      "classification": "a",
+      "note": "THE channel through which DB evidence WOULD enter math — but it is hand-curated constants, currently EMPTY. Provenance comment (L43-44): 'Reviewed 2026-09-24 against work/events/ge16-events.db; removals below.' That path is the stale V2 location; the live canonical DB is data/canonical/events/ge16-events.db. No runtime code reads any events DB into math: DB evidence entered only via that human review (which removed all shocks)."
+    },
+    {
+      "file": "analytics/engine/config.py",
+      "line": "74-83",
+      "kind": "constants",
+      "path_expr": "VACANCIES dict (3 seats)",
+      "resolved_path": "(no file read: imported)",
+      "exists": null,
+      "consumer": "load_baseline vacated flag + vacancy_status metadata",
+      "call_chain": "forecast_engine import",
+      "classification": "b",
+      "note": "Per config's own comment (L59-61): ZERO numeric effect; consumed only as occupancy metadata (vacancy_status column)."
+    },
+    {
+      "file": "analytics/engine/data_roots.py",
+      "line": "52-57",
+      "kind": "import",
+      "path_expr": "sys.path.insert(parents[1]) + import v3_paths",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/v3_paths.py",
+      "exists": true,
+      "consumer": "resolve_repository_root",
+      "call_chain": "resolve_data_roots",
+      "classification": "b",
+      "note": "Resolver machinery; v3_paths exists at repo root and marker-walks to requirements.txt."
+    },
+    {
+      "file": "analytics/engine/data_roots.py",
+      "line": "74-79",
+      "kind": "import",
+      "path_expr": "import v3_paths; data_root(repository)",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/data",
+      "exists": true,
+      "consumer": "resolve_data_roots",
+      "call_chain": "engine modules",
+      "classification": "b",
+      "note": "data/ exists; validated by probe."
+    },
+    {
+      "file": "analytics/engine/data_roots.py",
+      "line": "82-92",
+      "kind": "exists-check",
+      "path_expr": "validation of 6 CANONICAL_DATA_PATHS domains",
+      "resolved_path": "raw/derived/trackers/federal/states under data/canonical/research + data/geo",
+      "exists": true,
+      "consumer": "resolve_data_roots",
+      "call_chain": "engine modules",
+      "classification": "b",
+      "note": "All six is_dir() checks pass in V3 (probed 2026-10-01); raises DataRootResolutionError when missing."
+    },
+    {
+      "file": "analytics/engine/report_builder.py",
+      "line": 41,
+      "kind": "constant",
+      "path_expr": "REPORT = ROOT/03_REPORTS",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/03_REPORTS",
+      "exists": false,
+      "consumer": "save (writes); scan_changes/narrative_diff (reads, guarded)",
+      "call_chain": "CLI main",
+      "classification": "c",
+      "note": "03_REPORTS absent at V3 root. Owner label: P4 remap."
+    },
+    {
+      "file": "analytics/engine/report_builder.py",
+      "line": 50,
+      "kind": "constant",
+      "path_expr": "FORECAST_JSON = ROOT/02_FORECAST/outputs/latest/ge16-forecast-latest.json",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/02_FORECAST/outputs/latest/ge16-forecast-latest.json",
+      "exists": false,
+      "consumer": "load_forecast (L71, UNGUARDED)",
+      "call_chain": "CLI main -> build_report -> load_forecast; reference_pack 701/982",
+      "classification": "c",
+      "note": "First crash point of report_builder in V3: open() raises before anything renders. Downstream consumer of engine math (would be b once path resolves). Owner label: P4 remap."
+    },
+    {
+      "file": "analytics/engine/report_builder.py",
+      "line": 51,
+      "kind": "constant",
+      "path_expr": "CONFIG = ROOT/02_FORECAST/engine/config.py",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/02_FORECAST/engine/config.py",
+      "exists": false,
+      "consumer": "load_config importlib exec (L78-80)",
+      "call_chain": "CLI main -> build_report; reference_pack 702/983",
+      "classification": "c",
+      "note": "Dangling: the real file lives at analytics/engine/config.py (the P4 02_FORECAST->engine remap class). Would be b (prose/weight tables re-reading constants the engine already consumed)."
+    },
+    {
+      "file": "analytics/engine/report_builder.py",
+      "line": 52,
+      "kind": "constant",
+      "path_expr": "SWINGS = DATA_ROOTS.derived/swing_se_to_se.csv",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/data/canonical/research/derived/swing_se_to_se.csv",
+      "exists": true,
+      "consumer": "load_csv -> compute_swing_stats",
+      "call_chain": "build_report",
+      "classification": "b",
+      "note": "Report-side statistics table; the math path reads the same file inside forecast_engine."
+    },
+    {
+      "file": "analytics/engine/report_builder.py",
+      "line": 53,
+      "kind": "constant",
+      "path_expr": "MASTER = derived/master-list-222-parliamentary-seats.csv",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/data/canonical/research/derived/master-list-222-parliamentary-seats.csv",
+      "exists": true,
+      "consumer": "load_csv",
+      "call_chain": "build_report",
+      "classification": "b",
+      "note": "Seat register for report inventory."
+    },
+    {
+      "file": "analytics/engine/report_builder.py",
+      "line": 54,
+      "kind": "constant",
+      "path_expr": "DEMOG = derived/voter-demographics-by-constituency-ge15.csv",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/data/canonical/research/derived/voter-demographics-by-constituency-ge15.csv",
+      "exists": true,
+      "consumer": "load_csv -> compute_demog_stats",
+      "call_chain": "build_report",
+      "classification": "b",
+      "note": "Electorate statistics section."
+    },
+    {
+      "file": "analytics/engine/report_builder.py",
+      "line": 55,
+      "kind": "constant",
+      "path_expr": "GE15 = derived/ge15-results-by-constituency-full.csv",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/data/canonical/research/derived/ge15-results-by-constituency-full.csv",
+      "exists": true,
+      "consumer": "load_csv -> compute_ge15_stats",
+      "call_chain": "build_report",
+      "classification": "b",
+      "note": "GE15 baseline tables in the report."
+    },
+    {
+      "file": "analytics/engine/report_builder.py",
+      "line": 56,
+      "kind": "constant",
+      "path_expr": "BATTLEGROUNDS = federal/ge16-battleground-seats-master.csv",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/data/canonical/research/federal/ge16-battleground-seats-master.csv",
+      "exists": true,
+      "consumer": "load_csv -> compute_battleground_stats",
+      "call_chain": "build_report; state_report_builder L124/589/683; reference_pack",
+      "classification": "b",
+      "note": "Battleground tier tables."
+    },
+    {
+      "file": "analytics/engine/report_builder.py",
+      "line": 57,
+      "kind": "constant",
+      "path_expr": "SCENARIOS = ROOT/work/scenarios/projection_scenarios.json",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/work/scenarios/projection_scenarios.json",
+      "exists": false,
+      "consumer": "json.load(open()) at L919 (UNGUARDED); reference_pack L703/984",
+      "call_chain": "build_report; reference_pack",
+      "classification": "c",
+      "note": "Second crash point (after forecast JSON); scenario tables in report + claim packs. Owner label: P3.2 reorder."
+    },
+    {
+      "file": "analytics/engine/report_builder.py",
+      "line": "58-61",
+      "kind": "constant",
+      "path_expr": "TRACKER_LOGS poll/candidate/general-news (trackers domain)",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/data/canonical/research/trackers/ge16-{poll-tracker,candidate-tracker,general-news}-log.md",
+      "exists": true,
+      "consumer": "load_week_signals (L612); scan_changes (L1474)",
+      "call_chain": "build_report",
+      "classification": "b",
+      "note": "All three logs exist; weekly signals table + change scan."
+    },
+    {
+      "file": "analytics/engine/report_builder.py",
+      "line": 63,
+      "kind": "constant",
+      "path_expr": "NEWS_FEED = trackers/ge16-news-feed.json",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/data/canonical/research/trackers/ge16-news-feed.json",
+      "exists": true,
+      "consumer": "load_week_signals (L587)",
+      "call_chain": "build_report; reference_pack _input_paths",
+      "classification": "b",
+      "note": "LLM-judged feed preferred for the signals section (120 items)."
+    },
+    {
+      "file": "analytics/engine/report_builder.py",
+      "line": 93,
+      "kind": "constant",
+      "path_expr": "EVENTS_DB = ROOT/work/events/ge16-events.db",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/work/events/ge16-events.db",
+      "exists": false,
+      "consumer": "read_story_threads (L119); qualifying_story_ids_for_state (L243)",
+      "call_chain": "build_report -> read_story_threads; state_report_builder -> read_state_story_threads; reference_pack -> _add_story_claims",
+      "classification": "c",
+      "note": "THE story-ledger read. Guarded by exists() -> renders 'ledger not built' honest line. The live canonical DB (data/canonical/events/ge16-events.db, 512 events/117 stories, P2.8) is NOT at this path — nothing in analytics/engine reads it. Owner label: P3.2 reorder (read canonical DATA location) / P4 remap (restore work/events) — label only."
+    },
+    {
+      "file": "analytics/engine/report_builder.py",
+      "line": 71,
+      "kind": "open+json.load",
+      "path_expr": "open(FORECAST_JSON)",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/02_FORECAST/outputs/latest/ge16-forecast-latest.json",
+      "exists": false,
+      "consumer": "load_forecast",
+      "call_chain": "build_report; reference_pack build_*_pack",
+      "classification": "c",
+      "note": "Unguarded: FileNotFoundError in V3. Reads the engine's OUTPUT (deterministic/MC/flips) — narrative consumer of math, not math itself.",
+      "also_lines": [
+        72
+      ]
+    },
+    {
+      "file": "analytics/engine/report_builder.py",
+      "line": 78,
+      "kind": "import",
+      "path_expr": "importlib exec of CONFIG",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/02_FORECAST/engine/config.py",
+      "exists": false,
+      "consumer": "load_config",
+      "call_chain": "build_report; reference_pack",
+      "classification": "c",
+      "note": "spec.loader.exec_module on a missing file: fails. Config constants reach the report only through this dangling echo of the V2 layout."
+    },
+    {
+      "file": "analytics/engine/report_builder.py",
+      "line": 119,
+      "kind": "sqlite3.connect",
+      "path_expr": "sqlite3.connect(\"file:{EVENTS_DB}?mode=ro\", uri=True)",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/work/events/ge16-events.db",
+      "exists": false,
+      "consumer": "read_story_threads",
+      "call_chain": "build_report -> section 2.1; state reports; reference_pack story claims",
+      "classification": "c",
+      "note": "Guarded by exists() at L116; read-only URI connection. Narrative-only DB read (stories/v_story_current), zero contact with probabilities."
+    },
+    {
+      "file": "analytics/engine/report_builder.py",
+      "line": 243,
+      "kind": "sqlite3.connect",
+      "path_expr": "sqlite3.connect(\"file:{EVENTS_DB}?mode=ro\", uri=True)",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/work/events/ge16-events.db",
+      "exists": false,
+      "consumer": "qualifying_story_ids_for_state",
+      "call_chain": "read_state_story_threads -> state_report_builder sec7_story_threads",
+      "classification": "c",
+      "note": "State-scoped story qualification (T1.5); same dangling DB."
+    },
+    {
+      "file": "analytics/engine/report_builder.py",
+      "line": 255,
+      "kind": "json.loads",
+      "path_expr": "json.loads(row['attrs_json']) (in-memory DB column)",
+      "resolved_path": "n/a (stdlib parse of a string already read from SQLite)",
+      "exists": null,
+      "consumer": "qualifying_story_ids_for_state",
+      "call_chain": "state story scoping",
+      "classification": null,
+      "note": "N/A for path tracing: parses an in-memory string, no file path."
+    },
+    {
+      "file": "analytics/engine/report_builder.py",
+      "line": 543,
+      "kind": "open",
+      "path_expr": "load_csv: open(path) csv.DictReader",
+      "resolved_path": "parameterised: SWINGS/MASTER/DEMOG/GE15/BATTLEGROUNDS (all exist)",
+      "exists": true,
+      "consumer": "load_csv",
+      "call_chain": "build_report; reference_pack",
+      "classification": "b",
+      "note": "Generic reader; every caller passes an existing canonical CSV."
+    },
+    {
+      "file": "analytics/engine/report_builder.py",
+      "line": 550,
+      "kind": "open",
+      "path_expr": "read_text: open(path).read()",
+      "resolved_path": "no caller passes a path — helper is dead code in this module",
+      "exists": null,
+      "consumer": "none",
+      "call_chain": "none",
+      "classification": null,
+      "note": "Defined but never called in report_builder (docstring names knowledge/*.md as sources, but no read exists — the §12 table cites them as strings only)."
+    },
+    {
+      "file": "analytics/engine/report_builder.py",
+      "line": 587,
+      "kind": "open+json.load",
+      "path_expr": "json.load(open(NEWS_FEED))",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/data/canonical/research/trackers/ge16-news-feed.json",
+      "exists": true,
+      "consumer": "load_week_signals",
+      "call_chain": "build_report section 1; reference_pack _add_signal_claims",
+      "classification": "b",
+      "note": "Judged-feed branch of the signals reader."
+    },
+    {
+      "file": "analytics/engine/report_builder.py",
+      "line": 612,
+      "kind": "open",
+      "path_expr": "open(tracker log, encoding=utf-8).read()",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/data/canonical/research/trackers/<three logs>",
+      "exists": true,
+      "consumer": "load_week_signals log-parse fallback",
+      "call_chain": "build_report",
+      "classification": "b",
+      "note": "Poll/candidate trackers parsed for the signals table."
+    },
+    {
+      "file": "analytics/engine/report_builder.py",
+      "line": 888,
+      "kind": "open+json.load",
+      "path_expr": "json.load(open(meta_path)) guarded",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/work/scenarios/scenario_meta.json",
+      "exists": false,
+      "consumer": "load_scenario_meta",
+      "call_chain": "build_report; reference_pack 704/985",
+      "classification": "c",
+      "note": "Guarded -> falls back to name-based parametric/narrative classification."
+    },
+    {
+      "file": "analytics/engine/report_builder.py",
+      "line": 919,
+      "kind": "open+json.load",
+      "path_expr": "json.load(open(SCENARIOS)) UNGUARDED",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/work/scenarios/projection_scenarios.json",
+      "exists": false,
+      "consumer": "build_report",
+      "call_chain": "CLI main",
+      "classification": "c",
+      "note": "Unguarded crash point for the scenario table."
+    },
+    {
+      "file": "analytics/engine/report_builder.py",
+      "line": 1447,
+      "kind": "open",
+      "path_expr": "open(prior latest report md) guarded by exists L1444",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/03_REPORTS/federal/latest/GE16_Malaysia_General_Election_Report.md",
+      "exists": false,
+      "consumer": "scan_changes (smart-update)",
+      "call_chain": "CLI main",
+      "classification": "c",
+      "note": "Guarded; prior-P50/flip-count diff is inert in V3."
+    },
+    {
+      "file": "analytics/engine/report_builder.py",
+      "line": 1474,
+      "kind": "open",
+      "path_expr": "open(TRACKER_LOGS[t]).read()[-2000:]",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/data/canonical/research/trackers/<three logs>",
+      "exists": true,
+      "consumer": "scan_changes scan-count compare",
+      "call_chain": "CLI main",
+      "classification": "b",
+      "note": "Exists; feeds change-detection only."
+    },
+    {
+      "file": "analytics/engine/report_builder.py",
+      "line": 1559,
+      "kind": "open",
+      "path_expr": "open(prior archive report) guarded",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/03_REPORTS/federal/archive/GE16-*/...",
+      "exists": false,
+      "consumer": "narrative_diff",
+      "call_chain": "CLI main",
+      "classification": "c",
+      "note": "Guarded by listdir result; inert."
+    },
+    {
+      "file": "analytics/engine/report_builder.py",
+      "line": 2308,
+      "kind": "open",
+      "path_expr": "open(arch_md).read() != report (write-compare)",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/03_REPORTS/federal/archive/...",
+      "exists": false,
+      "consumer": "save",
+      "call_chain": "CLI main",
+      "classification": "c",
+      "note": "Compare-before-write of the report archive snapshot.",
+      "also_lines": [
+        2309,
+        2314
+      ]
+    },
+    {
+      "file": "analytics/engine/report_builder.py",
+      "line": 2321,
+      "kind": "subprocess",
+      "path_expr": "05_AUTOMATION/md2docx.py guarded by exists",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/05_AUTOMATION/md2docx.py",
+      "exists": false,
+      "consumer": "make_docx (--docx)",
+      "call_chain": "CLI main",
+      "classification": "c",
+      "note": "Legacy location; note a V3 md2docx exists at analytics/automation/md2docx/. Owner label: P4 remap.",
+      "also_lines": [
+        2322,
+        2323
+      ]
+    },
+    {
+      "file": "analytics/engine/reference_pack.py",
+      "line": 65,
+      "kind": "constant",
+      "path_expr": "WORK_REFERENCE = ROOT/work/reports/reference",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/work/reports/reference",
+      "exists": false,
+      "consumer": "write_pack default base; author_reports PACK_DIR",
+      "call_chain": "CLI main; authoring pass",
+      "classification": "c",
+      "note": "Generated pack output base (also the pack input dir for authoring once built). Owner label: P3.2 reorder."
+    },
+    {
+      "file": "analytics/engine/reference_pack.py",
+      "line": 453,
+      "kind": "open",
+      "path_expr": "open(path,\"rb\") in _sha256 (fingerprint digest)",
+      "resolved_path": "source_fingerprints over _input_paths()",
+      "exists": null,
+      "consumer": "build_federal_pack/build_state_pack fingerprints",
+      "call_chain": "CLI main; authoring",
+      "classification": "b",
+      "note": "Provenance fingerprints. Silent-omission risk: OSError -> None -> the 5 currently-dangling inputs drop out of the fingerprint record without warning.",
+      "also_lines": [
+        454
+      ]
+    },
+    {
+      "file": "analytics/engine/reference_pack.py",
+      "line": "470-483",
+      "kind": "constant",
+      "path_expr": "_input_paths() 11 declared inputs",
+      "resolved_path": "exists: battlegrounds, master_222, demog, ge15, swings, news_feed (6); missing: forecast, scenarios, scenario_meta, config, events_db (5)",
+      "exists": null,
+      "consumer": "source_fingerprints",
+      "call_chain": "pack builds",
+      "classification": "b",
+      "note": "Declared input manifest; the 5 missing are the 02_FORECAST/work constants already recorded as (c) on report_builder."
+    },
+    {
+      "file": "analytics/engine/reference_pack.py",
+      "line": 599,
+      "kind": "label",
+      "path_expr": "src string \"work/events/ge16-events.db#v_story_current\"",
+      "resolved_path": "provenance LABEL attached to story claims (no open of its own)",
+      "exists": null,
+      "consumer": "_add_story_claims",
+      "call_chain": "build_federal_pack (fed) / build_state_pack (state scope)",
+      "classification": "b",
+      "note": "Provenance label vs actual read — answer: it is a LABEL. The data behind it comes from rb.read_story_threads() against the dangling work/events DB, so today these claims degrade to 'story_ledger:unavailable' with the same stale label."
+    },
+    {
+      "file": "analytics/engine/reference_pack.py",
+      "line": 703,
+      "kind": "open+json.load",
+      "path_expr": "json.load(open(rb.SCENARIOS)) UNGUARDED",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/work/scenarios/projection_scenarios.json",
+      "exists": false,
+      "consumer": "build_federal_pack",
+      "call_chain": "CLI main --all-states; author_reports run_pass (builds pack live)",
+      "classification": "c",
+      "note": "Unguarded crash point of the pack builder (and therefore the authoring chain) in V3."
+    },
+    {
+      "file": "analytics/engine/reference_pack.py",
+      "line": 984,
+      "kind": "open+json.load",
+      "path_expr": "json.load(open(rb.SCENARIOS)) UNGUARDED",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/work/scenarios/projection_scenarios.json",
+      "exists": false,
+      "consumer": "build_state_pack",
+      "call_chain": "same",
+      "classification": "c",
+      "note": "Same crash point for per-state packs."
+    },
+    {
+      "file": "analytics/engine/reference_pack.py",
+      "line": 1263,
+      "kind": "write",
+      "path_expr": "open(path,\"w\") in write_pack",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/work/reports/reference/...",
+      "exists": false,
+      "consumer": "write_pack",
+      "call_chain": "CLI main; authoring",
+      "classification": "c",
+      "note": "Write side; would create work/reports/reference at root.",
+      "also_lines": [
+        1264
+      ]
+    },
+    {
+      "file": "analytics/engine/reference_pack.py",
+      "line": 1404,
+      "kind": "open+json.load",
+      "path_expr": "load_pack: open(path) json.load",
+      "resolved_path": "pack JSON under PACK_DIR (work/reports/reference) or --pack-path",
+      "exists": false,
+      "consumer": "author_reports run_pass (L1808)",
+      "call_chain": "authoring pass",
+      "classification": "c",
+      "note": "Reads what write_pack produced; directory absent until a pack build succeeds (which L703 currently blocks).",
+      "also_lines": [
+        1405
+      ]
+    },
+    {
+      "file": "analytics/engine/author_reports.py",
+      "line": 100,
+      "kind": "constant",
+      "path_expr": "WRITER_CONFIG = HERE/authoring_config.json",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/analytics/engine/authoring_config.json",
+      "exists": true,
+      "consumer": "load_writer_config/_raw_writer_config/_fallback_blocks",
+      "call_chain": "CLI main; ops authoring cron (ge16-authoring)",
+      "classification": "b",
+      "note": "Local file exists with live writer chains (deepseek EN primary, ilmu MS primary, fallbacks). Tooling config only."
+    },
+    {
+      "file": "analytics/engine/author_reports.py",
+      "line": 101,
+      "kind": "constant",
+      "path_expr": "REPORT_AI = ROOT/03_REPORTS/ai",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/03_REPORTS/ai",
+      "exists": false,
+      "consumer": "output_paths (write)",
+      "call_chain": "authoring pass",
+      "classification": "c",
+      "note": "Write target; absent in V3. Owner label: P4 remap."
+    },
+    {
+      "file": "analytics/engine/author_reports.py",
+      "line": 102,
+      "kind": "constant",
+      "path_expr": "WORK_AUTHORING = ROOT/work/reports/authoring",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/work/reports/authoring",
+      "exists": false,
+      "consumer": "manifest_path (write)",
+      "call_chain": "authoring pass",
+      "classification": "c",
+      "note": "Write target. Owner label: P3.2 reorder."
+    },
+    {
+      "file": "analytics/engine/author_reports.py",
+      "line": 103,
+      "kind": "constant",
+      "path_expr": "PACK_DIR = rp.WORK_REFERENCE",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/work/reports/reference",
+      "exists": false,
+      "consumer": "default pack source",
+      "call_chain": "authoring pass",
+      "classification": "c",
+      "note": "See reference_pack L65/1404."
+    },
+    {
+      "file": "analytics/engine/author_reports.py",
+      "line": 105,
+      "kind": "constant",
+      "path_expr": "REPORT_AUTHORITY paths (03_REPORTS federal/state latest md)",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/03_REPORTS/...",
+      "exists": false,
+      "consumer": "none — dead constant (defined, never read)",
+      "call_chain": "none",
+      "classification": "c",
+      "note": "Dangling AND unused: no code reads REPORT_AUTHORITY after definition."
+    },
+    {
+      "file": "analytics/engine/author_reports.py",
+      "line": 176,
+      "kind": "open+json.load",
+      "path_expr": "open(path encoding=utf-8) in load_writer_config",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/analytics/engine/authoring_config.json",
+      "exists": true,
+      "consumer": "load_writer_config",
+      "call_chain": "run_pass -> writer chain; main --config override",
+      "classification": "b",
+      "note": "Guarded by exists; falls back to DEFAULT_WRITER_CONFIG when absent.",
+      "also_lines": [
+        177
+      ]
+    },
+    {
+      "file": "analytics/engine/author_reports.py",
+      "line": 227,
+      "kind": "open+json.load",
+      "path_expr": "open(path) in _raw_writer_config",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/analytics/engine/authoring_config.json",
+      "exists": true,
+      "consumer": "_fallback_blocks -> load_writer_chain",
+      "call_chain": "authoring pass",
+      "classification": "b",
+      "note": "Second read of the same file for the fallback chain.",
+      "also_lines": [
+        228
+      ]
+    },
+    {
+      "file": "analytics/engine/author_reports.py",
+      "line": 311,
+      "kind": "open",
+      "path_expr": "open(os.path.expanduser(\"~/.hermes/.env\"))",
+      "resolved_path": "~/.hermes/.env (OUTSIDE the repo)",
+      "exists": true,
+      "consumer": "load_api_key",
+      "call_chain": "LiveWriter._headers -> write",
+      "classification": "b",
+      "note": "Credential source (process env first). Exists on this machine; outside repo scope."
+    },
+    {
+      "file": "analytics/engine/author_reports.py",
+      "line": 349,
+      "kind": "network",
+      "path_expr": "urllib.request.urlopen(base_url/chat/completions)",
+      "resolved_path": "external LLM endpoint (config-driven: api.deepseek.com / api.ilmu.ai / opencode.ai)",
+      "exists": null,
+      "consumer": "LiveWriter.write",
+      "call_chain": "authoring pass section loop",
+      "classification": "b",
+      "note": "The only network read in the subsystem; produces narrative prose, never numbers (numbers are verified verbatim against the pack).",
+      "also_lines": [
+        350,
+        351
+      ]
+    },
+    {
+      "file": "analytics/engine/author_reports.py",
+      "line": 1715,
+      "kind": "write",
+      "path_expr": "open(edition/archive,\"w\") + manifest write L1773",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/03_REPORTS/ai + work/reports/authoring",
+      "exists": false,
+      "consumer": "write_outputs",
+      "call_chain": "authoring pass",
+      "classification": "c",
+      "note": "Write side; both targets dangling.",
+      "also_lines": [
+        1773
+      ]
+    },
+    {
+      "file": "analytics/engine/state_report_builder.py",
+      "line": 49,
+      "kind": "import",
+      "path_expr": "DATA_ROOTS = resolve_data_roots()",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/data/canonical (six domains)",
+      "exists": true,
+      "consumer": "module constants",
+      "call_chain": "module import",
+      "classification": "b",
+      "note": "Same resolver; probed OK."
+    },
+    {
+      "file": "analytics/engine/state_report_builder.py",
+      "line": 53,
+      "kind": "constant",
+      "path_expr": "REPORT_STATES = ROOT/03_REPORTS/states",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/03_REPORTS/states",
+      "exists": false,
+      "consumer": "save_state_report writes; compute_projection/deepdive legacy reads",
+      "call_chain": "CLI main --state/--all-states",
+      "classification": "c",
+      "note": "Owner label: P4 remap."
+    },
+    {
+      "file": "analytics/engine/state_report_builder.py",
+      "line": 62,
+      "kind": "constant",
+      "path_expr": "CONFIG = ROOT/02_FORECAST/engine/config.py",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/02_FORECAST/engine/config.py",
+      "exists": false,
+      "consumer": "load_config importlib exec (L597-599)",
+      "call_chain": "Tier-1 sections",
+      "classification": "c",
+      "note": "Dangling echo of V2 layout (real: analytics/engine/config.py). Would be b: reads MACRO/EVENT_SHOCKS/VACANCIES for prose."
+    },
+    {
+      "file": "analytics/engine/state_report_builder.py",
+      "line": 68,
+      "kind": "constant",
+      "path_expr": "FINGERPRINT_DB = ROOT/work/figures/state_fingerprints.json",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/work/figures/state_fingerprints.json",
+      "exists": false,
+      "consumer": "load_fingerprint_db (read L86) / save (write L96)",
+      "call_chain": "--skip-unchanged smart scan",
+      "classification": "c",
+      "note": "Guarded read -> {}; first run rebuilds all. Owner label: P3.2 reorder.",
+      "also_lines": [
+        96
+      ]
+    },
+    {
+      "file": "analytics/engine/state_report_builder.py",
+      "line": 76,
+      "kind": "open",
+      "path_expr": "open(path,\"rb\") in compute_file_hash (MD5)",
+      "resolved_path": "fingerprint inputs: DUN results/cands CSVs, MASTER_222, GE15_FULL, DEMOG, SWINGS, NATIONAL_COMP (exist) + Tier-1: forecast/scenarios (dangling), bg_master/factor_rankings/party_landscape (exist)",
+      "exists": null,
+      "consumer": "compute_state_fingerprints",
+      "call_chain": "--skip-unchanged",
+      "classification": "b",
+      "note": "Change-detection digests only; missing files hash to None and force rebuild of dependent sections.",
+      "also_lines": [
+        77,
+        78
+      ]
+    },
+    {
+      "file": "analytics/engine/state_report_builder.py",
+      "line": 86,
+      "kind": "open+json.load",
+      "path_expr": "open(FINGERPRINT_DB) guarded",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/work/figures/state_fingerprints.json",
+      "exists": false,
+      "consumer": "load_fingerprint_db",
+      "call_chain": "--skip-unchanged",
+      "classification": "c",
+      "note": "Guarded -> {}.",
+      "also_lines": [
+        87
+      ]
+    },
+    {
+      "file": "analytics/engine/state_report_builder.py",
+      "line": 615,
+      "kind": "open+json.load",
+      "path_expr": "open(FORECAST_JSON) guarded by exists L612",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/02_FORECAST/outputs/latest/ge16-forecast-latest.json",
+      "exists": false,
+      "consumer": "load_forecast_for_state",
+      "call_chain": "Tier-1 sections 6/8c/11",
+      "classification": "c",
+      "note": "Guarded -> None; sections degrade. Report reads the engine's OUTPUT (downstream of math).",
+      "also_lines": [
+        616
+      ]
+    },
+    {
+      "file": "analytics/engine/state_report_builder.py",
+      "line": 653,
+      "kind": "open+json.load",
+      "path_expr": "open(PROJECTION_SCENARIOS) guarded L650",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/work/scenarios/projection_scenarios.json",
+      "exists": false,
+      "consumer": "load_projection_scenarios_for_state",
+      "call_chain": "Tier-1 section 8a",
+      "classification": "c",
+      "note": "Guarded -> None.",
+      "also_lines": [
+        654
+      ]
+    },
+    {
+      "file": "analytics/engine/state_report_builder.py",
+      "line": 763,
+      "kind": "open",
+      "path_expr": "load_csv: open(path) guarded",
+      "resolved_path": "DUN results/cands CSVs (13/13 states verified), MASTER_222, BATTLEGROUNDS_MASTER, DUN <state>/*-prn-projection.csv (5 Tier-1 states)",
+      "exists": true,
+      "consumer": "load_csv",
+      "call_chain": "sections 2-6/9/10",
+      "classification": "b",
+      "note": "Report-side stats from canonical state data."
+    },
+    {
+      "file": "analytics/engine/state_report_builder.py",
+      "line": 770,
+      "kind": "open",
+      "path_expr": "read_text: open(path).read()",
+      "resolved_path": "NATIONAL_COMP, PARTY_LANDSCAPE (L746), THEORY (L2799), prn-projection-report.md fallback (03_REPORTS, dangling), battleground-deepdive (03_REPORTS, dangling)",
+      "exists": null,
+      "consumer": "read_text",
+      "call_chain": "sections 7/8/10/12",
+      "classification": "b",
+      "note": "Knowledge/notes reads resolve under data/canonical/research; the two 03_REPORTS markdown reads are guarded dangling fallbacks."
+    },
+    {
+      "file": "analytics/engine/state_report_builder.py",
+      "line": 1104,
+      "kind": "open+json.load",
+      "path_expr": "open(STATES_DIR/\"DUN <state>\"/\"<state>-state-scenarios.json\") guarded",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/data/canonical/research/states/DUN <state>/<state>-state-scenarios.json",
+      "exists": true,
+      "consumer": "compute_projection scenario table",
+      "call_chain": "section 9/8a",
+      "classification": "b",
+      "note": "Verified present for the 5 Tier-1 states (melaka/pahang/perak/perlis/sarawak-state-scenarios.json).",
+      "also_lines": [
+        1105
+      ]
+    },
+    {
+      "file": "analytics/engine/state_report_builder.py",
+      "line": 1123,
+      "kind": "open",
+      "path_expr": "read_text(report_path) — legacy prn-projection-report.md search",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/03_REPORTS/states/DUN <state>/...prn-projection-report.md",
+      "exists": false,
+      "consumer": "compute_projection fallback",
+      "call_chain": "section 9",
+      "classification": "c",
+      "note": "Only reached when the state-scenarios.json branch produced nothing; guarded by directory listing."
+    },
+    {
+      "file": "analytics/engine/state_report_builder.py",
+      "line": 1159,
+      "kind": "open",
+      "path_expr": "read_text(battleground-deepdive.md candidates)",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/03_REPORTS/states/DUN <state>/{latest/,}ge16-battleground-deepdive.md",
+      "exists": false,
+      "consumer": "parse_battleground_deepdive",
+      "call_chain": "section 10",
+      "classification": "c",
+      "note": "Guarded -> []; section falls back to bg_master CSV data."
+    },
+    {
+      "file": "analytics/engine/state_report_builder.py",
+      "line": 1190,
+      "kind": "open",
+      "path_expr": "read_text(DATA_ROOTS.trackers/<3 logs>) guarded",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/data/canonical/research/trackers/ge16-{poll,candidate,general-news}-log.md",
+      "exists": true,
+      "consumer": "state_signals_from_trackers",
+      "call_chain": "section 7 signals",
+      "classification": "b",
+      "note": "Exists; state-filtered tracker headlines."
+    },
+    {
+      "file": "analytics/engine/state_report_builder.py",
+      "line": 2799,
+      "kind": "open",
+      "path_expr": "read_text(THEORY) guarded",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/data/canonical/research/knowledge/forecast-theory.md",
+      "exists": true,
+      "consumer": "sec8 method section",
+      "call_chain": "Tier-1 method",
+      "classification": "b",
+      "note": "Theory doc quote for methodology prose."
+    },
+    {
+      "file": "analytics/engine/state_report_builder.py",
+      "line": 4277,
+      "kind": "open",
+      "path_expr": "open(arch_md).read() != report (write-compare)",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/03_REPORTS/states/...",
+      "exists": false,
+      "consumer": "save_state_report",
+      "call_chain": "CLI main",
+      "classification": "c",
+      "note": "Write-compare of archive snapshot.",
+      "also_lines": [
+        4278,
+        4283
+      ]
+    },
+    {
+      "file": "analytics/engine/state_report_builder.py",
+      "line": 4302,
+      "kind": "open",
+      "path_expr": "open(md_path) — re-reads this build's own output",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/03_REPORTS/states/DUN <state>/latest/...",
+      "exists": false,
+      "consumer": "md_to_docx",
+      "call_chain": "CLI main --docx",
+      "classification": "c",
+      "note": "Reads the file save_state_report just wrote (same dangling tree)."
+    },
+    {
+      "file": "analytics/engine/federal_ms_render.py",
+      "line": 763,
+      "kind": "open",
+      "path_expr": "open(en_md_path) + open(ms_md_path) in cross_build_gate",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/03_REPORTS/federal/latest/GE16_Malaysia_General_Election_Report{,_MS}.md (passed by report_builder main L2356-2358)",
+      "exists": false,
+      "consumer": "cross_build_gate EN-MS numeric parity",
+      "call_chain": "report_builder --lang ms tail",
+      "classification": "c",
+      "note": "QA gate over report outputs; guarded -> 'missing' branch. Owner label: P4 remap.",
+      "also_lines": [
+        764
+      ]
+    },
+    {
+      "file": "analytics/engine/log_utils.py",
+      "line": 22,
+      "kind": "constant",
+      "path_expr": "CHANGELOG = ROOT/CHANGELOG.md",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/CHANGELOG.md",
+      "exists": false,
+      "consumer": "append_changelog (read L58, writes)",
+      "call_chain": "cron audit main()",
+      "classification": "c",
+      "note": "Audit tooling, not analysis. Owner label: P4 remap.",
+      "also_lines": [
+        55,
+        58,
+        63,
+        68
+      ]
+    },
+    {
+      "file": "analytics/engine/log_utils.py",
+      "line": 23,
+      "kind": "constant",
+      "path_expr": "STATUS = ROOT/STATUS.md",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/STATUS.md",
+      "exists": false,
+      "consumer": "regenerate_status (write L178)",
+      "call_chain": "cron audit",
+      "classification": "c",
+      "note": "Write target.",
+      "also_lines": [
+        178
+      ]
+    },
+    {
+      "file": "analytics/engine/log_utils.py",
+      "line": 24,
+      "kind": "constant",
+      "path_expr": "TRACKING = ROOT/.tracking; RUNS = .tracking/runs",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/.tracking/runs",
+      "exists": false,
+      "consumer": "recent_runs (read L139), LATEST.json (read L176), write_run_record (write)",
+      "call_chain": "cron audit",
+      "classification": "c",
+      "note": "Run-record reads guarded -> empty tables.",
+      "also_lines": [
+        25,
+        84,
+        87,
+        123,
+        139,
+        176
+      ]
+    },
+    {
+      "file": "analytics/engine/log_utils.py",
+      "line": 95,
+      "kind": "exists-check",
+      "path_expr": "collect_state tracked paths: 01_RESEARCH trackers, 02_FORECAST outputs/logs/config, HitungKerusi js/data.js, 03_REPORTS md",
+      "resolved_path": "all seven under the absent V2 layout",
+      "exists": false,
+      "consumer": "collect_state",
+      "call_chain": "regenerate_status",
+      "classification": "c",
+      "note": "Every tracked path is filtered out by exists(); STATUS table renders empty of rows."
+    },
+    {
+      "file": "analytics/engine/log_utils.py",
+      "line": 120,
+      "kind": "open+json.load",
+      "path_expr": "json.load(open(02_FORECAST/outputs/latest/ge16-forecast-latest.json)) guarded",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/02_FORECAST/outputs/latest/ge16-forecast-latest.json",
+      "exists": false,
+      "consumer": "latest_forecast_numbers",
+      "call_chain": "regenerate_status",
+      "classification": "c",
+      "note": "Guarded -> 'n/a'."
+    },
+    {
+      "file": "analytics/engine/log_utils.py",
+      "line": 113,
+      "kind": "exists-check",
+      "path_expr": "02_FORECAST/outputs/history listing",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/02_FORECAST/outputs/history",
+      "exists": false,
+      "consumer": "history_count",
+      "call_chain": "regenerate_status",
+      "classification": "c",
+      "note": "Guarded -> 0 snapshots reported."
+    },
+    {
+      "file": "analytics/engine/common/log_utils.py",
+      "line": "26-33",
+      "kind": "constant",
+      "path_expr": "ROOT via parents[3]; TRACKING = ROOT/work/tracking (Task 4.1 split copy)",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/work/tracking",
+      "exists": false,
+      "consumer": "run-record reads/writes (L66-98, L136-152, L189-191)",
+      "call_chain": "cron audit",
+      "classification": "c",
+      "note": "Versioned copy whose tracking root is work/tracking — aligns with analytics/automation/paths.py work_root(); still dangling at V3 root. Owner label: P3.2 reorder.",
+      "also_lines": [
+        66,
+        69,
+        74,
+        79,
+        95,
+        98,
+        136,
+        152,
+        189,
+        191
+      ]
+    },
+    {
+      "file": "analytics/engine/common/log_utils.py",
+      "line": "106-117",
+      "kind": "exists-check",
+      "path_expr": "collect_state tracked paths -> work/tracking copies + 02_FORECAST outputs/config",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/work/tracking/... + 02_FORECAST/...",
+      "exists": false,
+      "consumer": "collect_state",
+      "call_chain": "regenerate_status",
+      "classification": "c",
+      "note": "Warns (RuntimeWarning) on missing generated tracking inputs by design."
+    },
+    {
+      "file": "data/canonical/events/ge16-events.db (repo-side)",
+      "line": 0,
+      "kind": "beside-it",
+      "path_expr": "live canonical events DB (P2.8 baseline + additive merge)",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/data/canonical/events/ge16-events.db",
+      "exists": true,
+      "consumer": "NO reader in analytics/engine/**",
+      "call_chain": "read by data/scripts + analytics/tools/events (builder/QA), not by the engine",
+      "classification": "d",
+      "note": "512 events / 117 stories verified on disk. The engine's only DB reader targets work/events/ge16-events.db. This is the 'stored beside the analysis' case the objective asks about."
+    },
+    {
+      "file": "data/canonical/events/ge16-events-p25-baseline.db (repo-side)",
+      "line": 0,
+      "kind": "beside-it",
+      "path_expr": "P2.8 frozen baseline DB + sha256 sidecar",
+      "resolved_path": "/Users/faisal.muthalib/Documents/HermesProjects/Malaysia General Election v3/data/canonical/events/ge16-events-p25-baseline.db",
+      "exists": true,
+      "consumer": "NO reader in analytics/engine/**",
+      "call_chain": "data-side provenance artifact",
+      "classification": "d",
+      "note": "Baseline identity for additive merges; never an engine input."
+    }
+  ]
+}
